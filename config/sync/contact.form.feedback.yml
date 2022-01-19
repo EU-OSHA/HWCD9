@@ -1,0 +1,14 @@
+uuid: df56f602-d876-4761-b9f3-6e766e290a78
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - hwc@bilbomatica.es
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
