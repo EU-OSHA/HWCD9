@@ -1,0 +1,39 @@
+uuid: af05bbde-fca7-4602-bf7d-98d24f16e168
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pa_highlights.body
+    - field.field.node.pa_highlights.field_image
+    - field.field.node.pa_highlights.field_language
+    - field.field.node.pa_highlights.field_metatags
+    - field.field.node.pa_highlights.field_xmlsitemap
+    - node.type.pa_highlights
+  module:
+    - text
+    - user
+id: node.pa_highlights.teaser
+targetEntityType: node
+bundle: pa_highlights
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_language: true
+  field_metatags: true
+  field_xmlsitemap: true
+  langcode: true

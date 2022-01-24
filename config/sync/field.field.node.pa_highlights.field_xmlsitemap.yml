@@ -1,0 +1,23 @@
+uuid: 8f2ae958-069a-4d1e-96ee-e6e75309bf6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_xmlsitemap
+    - node.type.pa_highlights
+id: node.pa_highlights.field_xmlsitemap
+field_name: field_xmlsitemap
+entity_type: node
+bundle: pa_highlights
+label: 'XML sitemap'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:xmlsitemap'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

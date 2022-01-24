@@ -1,0 +1,23 @@
+uuid: 115a8974-9e6d-4be9-ba67-978fba73699d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_xmlsitemap
+    - node.type.events
+id: node.events.field_xmlsitemap
+field_name: field_xmlsitemap
+entity_type: node
+bundle: events
+label: 'XML sitemap'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:xmlsitemap'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

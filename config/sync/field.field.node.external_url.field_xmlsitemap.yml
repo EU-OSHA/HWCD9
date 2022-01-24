@@ -1,0 +1,23 @@
+uuid: 8cc38fe9-533e-45ad-a06b-eb67e56d6940
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_xmlsitemap
+    - node.type.external_url
+id: node.external_url.field_xmlsitemap
+field_name: field_xmlsitemap
+entity_type: node
+bundle: external_url
+label: 'XML sitemap'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:xmlsitemap'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

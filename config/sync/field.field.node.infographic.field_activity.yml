@@ -1,0 +1,29 @@
+uuid: deb518e2-d6d9-4186-9ff9-f7720ceb7fcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - node.type.infographic
+    - taxonomy.vocabulary.activity
+id: node.infographic.field_activity
+field_name: field_activity
+entity_type: node
+bundle: infographic
+label: Activity
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity: activity
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

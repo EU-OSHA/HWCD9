@@ -1,0 +1,23 @@
+uuid: d3bce99a-0d36-4478-9642-2b0c3662fa1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_count
+    - node.type.press_release
+id: node.press_release.field_page_count
+field_name: field_page_count
+entity_type: node
+bundle: press_release
+label: 'Page count'
+description: 'Automatically calculated when saving. The count of pages of text in the default language (English).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

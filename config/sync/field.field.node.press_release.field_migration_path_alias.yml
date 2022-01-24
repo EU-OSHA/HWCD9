@@ -1,0 +1,19 @@
+uuid: 1a60592f-ffe7-4458-86ca-70003b9f08e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migration_path_alias
+    - node.type.press_release
+id: node.press_release.field_migration_path_alias
+field_name: field_migration_path_alias
+entity_type: node
+bundle: press_release
+label: 'Migration Path Alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

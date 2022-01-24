@@ -1,0 +1,21 @@
+uuid: 34cc7be8-b955-48e5-8388-f59562a5d8e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_publication_date
+    - node.type.publication
+id: node.publication.field_first_publication_date
+field_name: field_first_publication_date
+entity_type: node
+bundle: publication
+label: 'First publication date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1642760511
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

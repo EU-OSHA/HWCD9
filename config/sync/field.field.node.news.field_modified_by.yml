@@ -1,0 +1,29 @@
+uuid: 2a71dc21-ce0a-4f58-88ab-a62defc4db45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modified_by
+    - node.type.news
+id: node.news.field_modified_by
+field_name: field_modified_by
+entity_type: node
+bundle: news
+label: 'Modified by'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

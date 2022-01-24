@@ -1,0 +1,8 @@
+uuid: 28549397-ccb0-447a-abe7-c6158660f848
+langcode: en
+status: true
+dependencies: {  }
+name: 'Nace Codes'
+vid: nace_codes
+description: ''
+weight: 0

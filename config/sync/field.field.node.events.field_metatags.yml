@@ -1,0 +1,21 @@
+uuid: 1ad8dbe5-47e0-4362-9c84-af1f14dbe311
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.events
+  module:
+    - metatag
+id: node.events.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: events
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,19 @@
+uuid: 7f378223-72e8-404d-8c70-39d5b76881e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_notification_comment
+field_name: field_notification_comment
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

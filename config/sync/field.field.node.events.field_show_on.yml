@@ -1,0 +1,21 @@
+uuid: 69cd39db-1448-4e74-8a20-e7442705c524
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_on
+    - node.type.events
+  module:
+    - options
+id: node.events.field_show_on
+field_name: field_show_on
+entity_type: node
+bundle: events
+label: 'Show on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

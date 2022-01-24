@@ -1,0 +1,85 @@
+uuid: 0a08d2d8-9ecc-415f-aac8-0c4ff2d99c42
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publication.body
+    - field.field.node.publication.field_activity
+    - field.field.node.publication.field_aditional_resources
+    - field.field.node.publication.field_archived
+    - field.field.node.publication.field_author
+    - field.field.node.publication.field_banner_publications_office
+    - field.field.node.publication.field_character_count
+    - field.field.node.publication.field_cover_image
+    - field.field.node.publication.field_expiration_date
+    - field.field.node.publication.field_file
+    - field.field.node.publication.field_first_publication_date
+    - field.field.node.publication.field_metatags
+    - field.field.node.publication.field_migration_path_alias
+    - field.field.node.publication.field_modified_date
+    - field.field.node.publication.field_msd_priority_area
+    - field.field.node.publication.field_nace_codes
+    - field.field.node.publication.field_page_count
+    - field.field.node.publication.field_pages_count
+    - field.field.node.publication.field_pages_count_updated
+    - field.field.node.publication.field_publication_bookshop_id
+    - field.field.node.publication.field_publication_date
+    - field.field.node.publication.field_publication_related_res
+    - field.field.node.publication.field_publication_type
+    - field.field.node.publication.field_related_publications
+    - field.field.node.publication.field_show_on
+    - field.field.node.publication.field_tags
+    - field.field.node.publication.field_thesaurus
+    - field.field.node.publication.field_xmlsitemap
+    - node.type.publication
+  module:
+    - text
+    - user
+id: node.publication.teaser
+targetEntityType: node
+bundle: publication
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_activity: true
+  field_aditional_resources: true
+  field_archived: true
+  field_author: true
+  field_banner_publications_office: true
+  field_character_count: true
+  field_cover_image: true
+  field_expiration_date: true
+  field_file: true
+  field_first_publication_date: true
+  field_metatags: true
+  field_migration_path_alias: true
+  field_modified_date: true
+  field_msd_priority_area: true
+  field_nace_codes: true
+  field_page_count: true
+  field_pages_count: true
+  field_pages_count_updated: true
+  field_publication_bookshop_id: true
+  field_publication_date: true
+  field_publication_related_res: true
+  field_publication_type: true
+  field_related_publications: true
+  field_show_on: true
+  field_tags: true
+  field_thesaurus: true
+  field_xmlsitemap: true
+  langcode: true

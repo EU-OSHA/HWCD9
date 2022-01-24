@@ -1,0 +1,21 @@
+uuid: 8b618bea-2da4-483e-b552-ba3709b28778
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.slideshare
+  module:
+    - metatag
+id: node.slideshare.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: slideshare
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

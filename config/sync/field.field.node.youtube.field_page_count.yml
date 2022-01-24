@@ -1,0 +1,23 @@
+uuid: 2c83388b-6371-4dc2-906c-d9c45799d7a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_count
+    - node.type.youtube
+id: node.youtube.field_page_count
+field_name: field_page_count
+entity_type: node
+bundle: youtube
+label: 'Page count'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,43 @@
+uuid: 771a3dcd-d133-415a-a827-262a13828d81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slideshare.body
+    - field.field.node.slideshare.field_character_count
+    - field.field.node.slideshare.field_metatags
+    - field.field.node.slideshare.field_page_count
+    - field.field.node.slideshare.field_slideshare
+    - field.field.node.slideshare.field_slideshare_thumbnail
+    - field.field.node.slideshare.field_xmlsitemap
+    - node.type.slideshare
+  module:
+    - text
+    - user
+id: node.slideshare.teaser
+targetEntityType: node
+bundle: slideshare
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_character_count: true
+  field_metatags: true
+  field_page_count: true
+  field_slideshare: true
+  field_slideshare_thumbnail: true
+  field_xmlsitemap: true
+  langcode: true

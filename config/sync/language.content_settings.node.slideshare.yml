@@ -1,0 +1,11 @@
+uuid: 03a490a6-5ac9-4c7b-88e5-596f874bac66
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slideshare
+id: node.slideshare
+target_entity_type_id: node
+target_bundle: slideshare
+default_langcode: site_default
+language_alterable: false

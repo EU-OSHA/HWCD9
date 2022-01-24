@@ -1,0 +1,27 @@
+uuid: 3016d872-b88f-407b-b477-46b2fafbe4ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_documents
+    - node.type.events
+  module:
+    - file
+id: node.events.field_related_documents
+field_name: field_related_documents
+entity_type: node
+bundle: events
+label: 'Related documents'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx odt rtf txt csv xsl ods xslx ppt pptx epub'
+  max_filesize: '50'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

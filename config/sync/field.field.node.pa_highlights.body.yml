@@ -1,0 +1,23 @@
+uuid: 1a1eae8c-0571-4d02-99e5-534b954ea11d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pa_highlights
+  module:
+    - text
+id: node.pa_highlights.body
+field_name: body
+entity_type: node
+bundle: pa_highlights
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

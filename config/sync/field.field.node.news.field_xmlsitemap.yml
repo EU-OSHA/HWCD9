@@ -1,0 +1,23 @@
+uuid: a8e69670-9d8e-46d2-a837-f8c1a9dfadc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_xmlsitemap
+    - node.type.news
+id: node.news.field_xmlsitemap
+field_name: field_xmlsitemap
+entity_type: node
+bundle: news
+label: 'XML sitemap'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:xmlsitemap'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

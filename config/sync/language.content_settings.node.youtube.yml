@@ -1,0 +1,11 @@
+uuid: c98b709a-e476-4aed-bb4f-9e5ef7c64eb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.youtube
+id: node.youtube
+target_entity_type_id: node
+target_bundle: youtube
+default_langcode: site_default
+language_alterable: false

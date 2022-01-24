@@ -1,0 +1,27 @@
+uuid: 4a977392-3f3a-48e3-bd6c-5a7645aa015e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_in_amp
+field_name: field_event_in_amp
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Yes'
+      label: 'Yes'
+    -
+      value: 'No'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

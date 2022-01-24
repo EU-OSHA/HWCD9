@@ -1,0 +1,21 @@
+uuid: 4aaa4fe9-6cac-4355-88ec-8d66c21a9bef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_on
+    - node.type.news
+  module:
+    - options
+id: node.news.field_show_on
+field_name: field_show_on
+entity_type: node
+bundle: news
+label: 'Show on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

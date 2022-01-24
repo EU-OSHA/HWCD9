@@ -1,0 +1,23 @@
+uuid: 1456c708-e73e-4120-a96b-315cd183191a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_url
+    - node.type.external_url
+  module:
+    - link
+id: node.external_url.field_external_url
+field_name: field_external_url
+entity_type: node
+bundle: external_url
+label: 'External URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

@@ -1,0 +1,36 @@
+uuid: 3854ecbb-78d8-426e-a86c-1d2bf73bd8b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_event
+field_name: field_type_event
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Event
+      label: Event
+    -
+      value: Visit
+      label: Visit
+    -
+      value: Webminar
+      label: Webinar
+    -
+      value: 'I don´t know'
+      label: 'I don´t know'
+    -
+      value: FAST
+      label: FAST
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

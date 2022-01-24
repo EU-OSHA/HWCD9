@@ -1,0 +1,43 @@
+uuid: bc13a78e-0d73-42f8-85ca-53800c43f294
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.external_url.body
+    - field.field.node.external_url.field_character_count
+    - field.field.node.external_url.field_external_url
+    - field.field.node.external_url.field_image
+    - field.field.node.external_url.field_metatags
+    - field.field.node.external_url.field_pages_count
+    - field.field.node.external_url.field_xmlsitemap
+    - node.type.external_url
+  module:
+    - text
+    - user
+id: node.external_url.teaser
+targetEntityType: node
+bundle: external_url
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_character_count: true
+  field_external_url: true
+  field_image: true
+  field_metatags: true
+  field_pages_count: true
+  field_xmlsitemap: true
+  langcode: true

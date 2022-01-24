@@ -1,0 +1,29 @@
+uuid: ab6a0eae-6a00-45bd-acaa-e7e13301b1aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - node.type.publication
+    - taxonomy.vocabulary.activity
+id: node.publication.field_activity
+field_name: field_activity
+entity_type: node
+bundle: publication
+label: Activity
+description: 'Select Activity for this content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity: activity
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

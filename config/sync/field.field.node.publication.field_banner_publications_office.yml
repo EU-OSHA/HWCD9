@@ -1,0 +1,23 @@
+uuid: 3ef2515a-5ae5-49e5-8b26-06a2f7da5bae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_publications_office
+    - node.type.publication
+id: node.publication.field_banner_publications_office
+field_name: field_banner_publications_office
+entity_type: node
+bundle: publication
+label: 'Banner publications office'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

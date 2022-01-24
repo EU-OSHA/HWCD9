@@ -1,0 +1,21 @@
+uuid: 3f4f4d1c-fbe1-4528-945a-536465270c8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_publication_date
+    - node.type.news
+id: node.news.field_first_publication_date
+field_name: field_first_publication_date
+entity_type: node
+bundle: news
+label: 'First publication date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1642756115
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,23 @@
+uuid: ada3fd9f-23d8-4261-82b6-e0b1721c0299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.youtube
+  module:
+    - text
+id: node.youtube.body
+field_name: body
+entity_type: node
+bundle: youtube
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

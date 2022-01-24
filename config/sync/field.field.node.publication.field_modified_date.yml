@@ -1,0 +1,21 @@
+uuid: b3a1e310-b4ef-4e46-9ac0-6d28faf5b3cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modified_date
+    - node.type.publication
+  module:
+    - datetime
+id: node.publication.field_modified_date
+field_name: field_modified_date
+entity_type: node
+bundle: publication
+label: 'Modified Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

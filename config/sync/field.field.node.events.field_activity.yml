@@ -1,0 +1,29 @@
+uuid: 35837c0c-9c5f-41ab-8d61-e91789ffa3b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - node.type.events
+    - taxonomy.vocabulary.activity
+id: node.events.field_activity
+field_name: field_activity
+entity_type: node
+bundle: events
+label: Activity
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity: activity
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

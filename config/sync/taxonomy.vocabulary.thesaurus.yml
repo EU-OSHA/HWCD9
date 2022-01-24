@@ -1,0 +1,8 @@
+uuid: a2767fe2-63ac-4fa3-b0ee-30d35e16ede5
+langcode: en
+status: true
+dependencies: {  }
+name: Thesaurus
+vid: thesaurus
+description: ''
+weight: 0

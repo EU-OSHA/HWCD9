@@ -1,0 +1,21 @@
+uuid: d578b1d5-3ad0-4cf5-bf3a-f31e3ed4ee7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.youtube
+  module:
+    - metatag
+id: node.youtube.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: youtube
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

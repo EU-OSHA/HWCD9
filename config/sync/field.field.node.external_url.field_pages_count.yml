@@ -1,0 +1,23 @@
+uuid: eae78f44-be2c-4de8-ad28-13313313545a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pages_count
+    - node.type.external_url
+id: node.external_url.field_pages_count
+field_name: field_pages_count
+entity_type: node
+bundle: external_url
+label: 'Number of pages'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

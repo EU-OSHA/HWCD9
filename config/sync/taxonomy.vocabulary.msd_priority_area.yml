@@ -1,0 +1,8 @@
+uuid: df393013-cbd6-48e0-b1dc-62f3901f045b
+langcode: en
+status: true
+dependencies: {  }
+name: 'MSD Priority area'
+vid: msd_priority_area
+description: ''
+weight: 0

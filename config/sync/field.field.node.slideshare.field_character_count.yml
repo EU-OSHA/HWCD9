@@ -1,0 +1,23 @@
+uuid: 14433459-0451-4bb6-8068-d655153e9f4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_character_count
+    - node.type.slideshare
+id: node.slideshare.field_character_count
+field_name: field_character_count
+entity_type: node
+bundle: slideshare
+label: 'Character count'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

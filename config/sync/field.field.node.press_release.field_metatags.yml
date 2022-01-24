@@ -1,0 +1,21 @@
+uuid: bdcd4fcf-470d-436e-836b-4a57dd2a69dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.press_release
+  module:
+    - metatag
+id: node.press_release.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: press_release
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

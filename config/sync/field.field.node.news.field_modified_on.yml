@@ -1,0 +1,21 @@
+uuid: 382ae472-8e3a-405c-b8a4-7336f1cdc9a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modified_on
+    - node.type.news
+  module:
+    - datetime
+id: node.news.field_modified_on
+field_name: field_modified_on
+entity_type: node
+bundle: news
+label: 'Modified on'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

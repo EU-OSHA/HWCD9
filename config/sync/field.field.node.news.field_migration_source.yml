@@ -1,0 +1,21 @@
+uuid: 93a213e2-175f-4d29-b7db-cdacae1dc282
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migration_source
+    - node.type.news
+  module:
+    - options
+id: node.news.field_migration_source
+field_name: field_migration_source
+entity_type: node
+bundle: news
+label: 'Migrate Source'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

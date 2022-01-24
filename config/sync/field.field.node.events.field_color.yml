@@ -1,0 +1,21 @@
+uuid: 09bbd49f-0cbe-44d3-b51c-64220c4ff896
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color
+    - node.type.events
+  module:
+    - options
+id: node.events.field_color
+field_name: field_color
+entity_type: node
+bundle: events
+label: Color
+description: "Red: TBD - TBC <br />\r\nBlack - Confirmed <br />\r\nGrey - Only web or not attendance"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,21 @@
+uuid: 804cd935-7b54-4eb5-9280-d9742caf5ea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_first_publication_date
+    - node.type.infographic
+id: node.infographic.field_first_publication_date
+field_name: field_first_publication_date
+entity_type: node
+bundle: infographic
+label: 'First publication date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1642763688
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

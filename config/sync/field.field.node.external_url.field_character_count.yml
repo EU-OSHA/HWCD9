@@ -1,0 +1,23 @@
+uuid: 78df4ad0-690e-48df-b1fe-4a239a1daeea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_character_count
+    - node.type.external_url
+id: node.external_url.field_character_count
+field_name: field_character_count
+entity_type: node
+bundle: external_url
+label: 'Character count'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,21 @@
+uuid: 82c61fb5-df92-424a-a44d-f364e7b91869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.infographic
+  module:
+    - metatag
+id: node.infographic.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: infographic
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

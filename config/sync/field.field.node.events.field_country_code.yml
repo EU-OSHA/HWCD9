@@ -1,0 +1,21 @@
+uuid: f7ad43af-1adb-475c-a1ae-30002db1fbab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country_code
+    - node.type.events
+  module:
+    - options
+id: node.events.field_country_code
+field_name: field_country_code
+entity_type: node
+bundle: events
+label: Country
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

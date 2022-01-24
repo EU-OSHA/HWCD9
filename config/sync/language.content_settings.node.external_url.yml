@@ -1,0 +1,11 @@
+uuid: 132394fd-1192-4333-b98c-36ecff21c06d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_url
+id: node.external_url
+target_entity_type_id: node
+target_bundle: external_url
+default_langcode: site_default
+language_alterable: false

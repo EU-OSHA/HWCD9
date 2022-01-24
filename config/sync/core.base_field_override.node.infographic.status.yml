@@ -1,0 +1,22 @@
+uuid: 34462e3d-56c5-4aa9-a9df-f49e6b1247a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.infographic
+id: node.infographic.status
+field_name: status
+entity_type: node
+bundle: infographic
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: e7a2cfa0-462e-434d-9cc9-aa008a7d1309
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pz_image_caption
+    - node.type.news
+id: node.news.field_pz_image_caption
+field_name: field_pz_image_caption
+entity_type: node
+bundle: news
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

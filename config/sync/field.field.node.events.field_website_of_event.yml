@@ -1,0 +1,23 @@
+uuid: 8aac5889-b14e-4c76-93fc-ac4a63966805
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_of_event
+    - node.type.events
+  module:
+    - link
+id: node.events.field_website_of_event
+field_name: field_website_of_event
+entity_type: node
+bundle: events
+label: 'Website of event'
+description: 'Please insert here the URL of the website, where the event is promoted by its organiser and more information about the event can be found.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,41 @@
+uuid: d7f8e28c-8f49-4a21-8391-4364445847c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.youtube.body
+    - field.field.node.youtube.field_metatags
+    - field.field.node.youtube.field_page_count
+    - field.field.node.youtube.field_pages_count
+    - field.field.node.youtube.field_xmlsitemap
+    - field.field.node.youtube.field_youtube
+    - node.type.youtube
+  module:
+    - text
+    - user
+id: node.youtube.teaser
+targetEntityType: node
+bundle: youtube
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatags: true
+  field_page_count: true
+  field_pages_count: true
+  field_xmlsitemap: true
+  field_youtube: true
+  langcode: true

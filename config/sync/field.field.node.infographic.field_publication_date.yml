@@ -1,0 +1,21 @@
+uuid: 1318b04a-f75d-462d-a94a-c516d15a7332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.infographic
+  module:
+    - datetime
+id: node.infographic.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: infographic
+label: 'Publication date'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

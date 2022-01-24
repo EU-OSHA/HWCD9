@@ -1,0 +1,22 @@
+uuid: 08e09d42-d1e4-455c-ab99-0b1f9b0971c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pa_highlights
+id: node.pa_highlights.status
+field_name: status
+entity_type: node
+bundle: pa_highlights
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

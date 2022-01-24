@@ -1,0 +1,19 @@
+uuid: c043ffa8-c1dc-41ce-a254-fae42bbd3381
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agency_contact_reply
+    - node.type.events
+id: node.events.field_agency_contact_reply
+field_name: field_agency_contact_reply
+entity_type: node
+bundle: events
+label: Comments
+description: 'Please add here any information, which could be useful for decision-making purposes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
