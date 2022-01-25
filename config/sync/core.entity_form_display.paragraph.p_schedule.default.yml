@@ -1,0 +1,25 @@
+uuid: e5850078-e3b8-453d-a779-85e203e91304
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_schedule.field_schedule_items
+    - paragraphs.paragraphs_type.p_schedule
+id: paragraph.p_schedule.default
+targetEntityType: paragraph
+bundle: p_schedule
+mode: default
+content:
+  field_schedule_items:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

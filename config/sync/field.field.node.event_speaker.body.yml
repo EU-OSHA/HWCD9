@@ -1,16 +1,16 @@
-uuid: ada3fd9f-23d8-4261-82b6-e0b1721c0299
+uuid: 7477fa43-70e6-4287-838d-2bd4a9ba2359
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.youtube
+    - node.type.event_speaker
   module:
     - text
-id: node.youtube.body
+id: node.event_speaker.body
 field_name: body
 entity_type: node
-bundle: youtube
+bundle: event_speaker
 label: Body
 description: ''
 required: false

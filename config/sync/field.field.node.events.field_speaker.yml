@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_speaker
-    - node.type.article
+    - node.type.event_speaker
     - node.type.events
 id: node.events.field_speaker
 field_name: field_speaker
@@ -20,10 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      article: article
+      event_speaker: event_speaker
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: article
 field_type: entity_reference
