@@ -32,6 +32,7 @@ dependencies:
     - field.field.node.events.field_notification_comment
     - field.field.node.events.field_number_of_attendees
     - field.field.node.events.field_organizer
+    - field.field.node.events.field_paragraph
     - field.field.node.events.field_partner_id
     - field.field.node.events.field_photo_gallery
     - field.field.node.events.field_publications_exhibition_su
@@ -98,6 +99,7 @@ hidden:
   field_notification_comment: true
   field_number_of_attendees: true
   field_organizer: true
+  field_paragraph: true
   field_partner_id: true
   field_photo_gallery: true
   field_publications_exhibition_su: true

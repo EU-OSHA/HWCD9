@@ -1,0 +1,10 @@
+uuid: 39effd4c-07b2-433e-bb67-4b6caca5f9ff
+langcode: en
+status: true
+dependencies: {  }
+id: p_schedule
+label: Schedule
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 0fccb5e8-fd88-4e81-a4ee-0703ed441a3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_schedule.field_schedule_items
+    - paragraphs.paragraphs_type.p_schedule
+id: paragraph.p_schedule.default
+targetEntityType: paragraph
+bundle: p_schedule
+mode: default
+content:
+  field_schedule_items:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

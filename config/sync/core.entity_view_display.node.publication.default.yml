@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.publication.field_archived
     - field.field.node.publication.field_author
     - field.field.node.publication.field_banner_publications_office
+    - field.field.node.publication.field_booklet
     - field.field.node.publication.field_character_count
     - field.field.node.publication.field_cover_image
     - field.field.node.publication.field_expiration_date
@@ -102,6 +103,16 @@ content:
     region: content
   field_banner_publications_office:
     weight: 126
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_booklet:
+    weight: 130
     label: above
     settings:
       format: default

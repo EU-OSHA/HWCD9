@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.youtube.body
     - field.field.node.youtube.field_metatags
     - field.field.node.youtube.field_page_count
     - field.field.node.youtube.field_pages_count
@@ -12,20 +11,12 @@ dependencies:
     - node.type.youtube
   module:
     - metatag
-    - text
     - user
 id: node.youtube.default
 targetEntityType: node
 bundle: youtube
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_metatags:
     weight: 103
     label: above

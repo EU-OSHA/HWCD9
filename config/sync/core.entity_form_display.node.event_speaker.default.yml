@@ -1,28 +1,48 @@
-uuid: 99cf8bf2-a1aa-4eb1-8a3b-550cb668ea94
+uuid: 3317c782-e498-4e93-ac69-946676a54517
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.youtube.field_metatags
-    - field.field.node.youtube.field_page_count
-    - field.field.node.youtube.field_pages_count
-    - field.field.node.youtube.field_xmlsitemap
-    - field.field.node.youtube.field_youtube
-    - node.type.youtube
+    - field.field.node.event_speaker.body
+    - field.field.node.event_speaker.field_image
+    - field.field.node.event_speaker.field_metatags
+    - field.field.node.event_speaker.field_xmlsitemap
+    - image.style.thumbnail
+    - node.type.event_speaker
   module:
+    - image
     - metatag
     - path
-id: node.youtube.default
+    - text
+id: node.event_speaker.default
 targetEntityType: node
-bundle: youtube
+bundle: event_speaker
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_metatags:
     weight: 123
     settings:
@@ -30,31 +50,7 @@ content:
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_page_count:
-    weight: 127
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
-  field_pages_count:
-    weight: 126
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
   field_xmlsitemap:
-    weight: 122
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_youtube:
     weight: 124
     settings:
       match_operator: CONTAINS

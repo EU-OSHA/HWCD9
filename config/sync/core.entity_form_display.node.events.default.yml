@@ -31,6 +31,7 @@ dependencies:
     - field.field.node.events.field_notification_comment
     - field.field.node.events.field_number_of_attendees
     - field.field.node.events.field_organizer
+    - field.field.node.events.field_paragraph
     - field.field.node.events.field_partner_id
     - field.field.node.events.field_photo_gallery
     - field.field.node.events.field_publications_exhibition_su
@@ -54,6 +55,7 @@ dependencies:
     - file
     - link
     - metatag
+    - paragraphs
     - path
     - text
 third_party_settings:
@@ -291,6 +293,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_paragraph:
+    type: entity_reference_paragraphs
+    weight: 53
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_partner_id:
     weight: 17
