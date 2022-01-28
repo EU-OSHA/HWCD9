@@ -10,10 +10,8 @@ dependencies:
     - field.field.node.external_url.field_metatags
     - field.field.node.external_url.field_pages_count
     - field.field.node.external_url.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.external_url
   module:
-    - image
     - link
     - metatag
     - path
@@ -57,10 +55,12 @@ content:
   field_image:
     weight: 127
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_autocomplete
     region: content
   field_metatags:
     weight: 123

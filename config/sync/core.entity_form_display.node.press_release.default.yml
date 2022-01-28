@@ -17,11 +17,9 @@ dependencies:
     - field.field.node.press_release.field_quote
     - field.field.node.press_release.field_summary
     - field.field.node.press_release.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.press_release
   module:
     - datetime
-    - image
     - metatag
     - path
     - text
@@ -76,12 +74,14 @@ content:
     type: datetime_timestamp
     region: content
   field_image:
-    weight: 126
+    weight: 136
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_autocomplete
     region: content
   field_metatags:
     weight: 128

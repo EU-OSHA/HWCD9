@@ -54,7 +54,7 @@ content:
     region: content
   field_youtube:
     type: entity_reference_entity_view
-    weight: 104
+    weight: 108
     label: above
     settings:
       view_mode: default

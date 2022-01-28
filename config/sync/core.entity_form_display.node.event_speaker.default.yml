@@ -7,10 +7,8 @@ dependencies:
     - field.field.node.event_speaker.field_image
     - field.field.node.event_speaker.field_metatags
     - field.field.node.event_speaker.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.event_speaker
   module:
-    - image
     - metatag
     - path
     - text
@@ -36,12 +34,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    weight: 122
+    weight: 125
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_autocomplete
     region: content
   field_metatags:
     weight: 123

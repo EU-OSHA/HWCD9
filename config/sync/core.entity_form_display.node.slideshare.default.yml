@@ -10,11 +10,10 @@ dependencies:
     - field.field.node.slideshare.field_slideshare
     - field.field.node.slideshare.field_slideshare_thumbnail
     - field.field.node.slideshare.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.slideshare
   module:
-    - image
     - link
+    - media_library
     - metatag
     - path
     - text
@@ -69,12 +68,11 @@ content:
     type: link_default
     region: content
   field_slideshare_thumbnail:
-    weight: 127
+    type: media_library_widget
+    weight: 129
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_xmlsitemap:
     weight: 122

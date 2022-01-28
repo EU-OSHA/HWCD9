@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.file.field_xmlsitemap
     - node.type.file
   module:
-    - file
+    - media_library
     - metatag
     - path
     - text
@@ -35,11 +35,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_file:
+    type: media_library_widget
     weight: 124
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
-    type: file_generic
     region: content
   field_metatags:
     weight: 123

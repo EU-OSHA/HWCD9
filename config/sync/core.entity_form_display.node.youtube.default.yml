@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.youtube.field_youtube
     - node.type.youtube
   module:
+    - media_library
     - metatag
     - path
 id: node.youtube.default
@@ -55,14 +56,11 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_youtube:
-    weight: 124
+    type: media_library_widget
+    weight: 128
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select

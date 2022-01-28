@@ -26,11 +26,10 @@ dependencies:
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
     - field.field.node.news.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.news
   module:
     - datetime
-    - image
+    - media_library
     - metatag
     - path
     - text
@@ -96,20 +95,18 @@ content:
     type: datetime_timestamp
     region: content
   field_image:
-    weight: 123
+    type: media_library_widget
+    weight: 145
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_image_mail:
-    weight: 125
+    type: media_library_widget
+    weight: 146
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_metatags:
     weight: 128
