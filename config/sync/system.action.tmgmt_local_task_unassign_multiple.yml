@@ -1,0 +1,13 @@
+uuid: 1abb17e8-b7fa-40e5-b8c0-690636535df7
+langcode: en
+status: true
+dependencies:
+  module:
+    - tmgmt_local
+_core:
+  default_config_hash: oBYur9OsZfvE4RyiAWpaC_1Kr7ingybK88lACAZ3QLY
+id: tmgmt_local_task_unassign_multiple
+label: Unassign
+type: tmgmt_local_task
+plugin: tmgmt_local_task_unassign_multiple
+configuration: {  }

@@ -8,6 +8,7 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_translation: 0
   contact: 0
   contextual: 0
   datetime: 0
@@ -26,6 +27,7 @@ module:
   language: 0
   languagefield: 0
   link: 0
+  locale: 0
   media: 0
   media_library: 0
   menu_link_content: 0
@@ -43,12 +45,20 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  tmgmt: 0
+  tmgmt_content: 0
+  tmgmt_file: 0
+  tmgmt_language_combination: 0
+  tmgmt_local: 0
+  tmgmt_locale: 0
   token: 0
   toolbar: 0
   tour: 0
   user: 0
   views_ui: 0
+  workbench_access: 0
   xmlsitemap: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000
