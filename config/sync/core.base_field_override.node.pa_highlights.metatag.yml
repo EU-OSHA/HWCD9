@@ -1,0 +1,18 @@
+uuid: 97d6552f-4606-4243-b898-003ce447d257
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pa_highlights
+id: node.pa_highlights.metatag
+field_name: metatag
+entity_type: node
+bundle: pa_highlights
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

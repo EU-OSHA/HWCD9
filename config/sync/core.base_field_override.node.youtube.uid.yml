@@ -1,0 +1,20 @@
+uuid: 90f248b5-05b6-41f1-8ec9-de65a1d028e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.youtube
+id: node.youtube.uid
+field_name: uid
+entity_type: node
+bundle: youtube
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

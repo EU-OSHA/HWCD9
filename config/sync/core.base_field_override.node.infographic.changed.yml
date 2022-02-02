@@ -1,0 +1,18 @@
+uuid: 6475f4d8-ec57-4919-b853-8025d6a83605
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.infographic
+id: node.infographic.changed
+field_name: changed
+entity_type: node
+bundle: infographic
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

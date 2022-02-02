@@ -1,0 +1,18 @@
+uuid: 440883db-33bf-40fd-b268-5b1babf775f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event_speaker
+id: node.event_speaker.title
+field_name: title
+entity_type: node
+bundle: event_speaker
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: e7dc3c39-4951-4255-a2e4-b56d8ad041d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.youtube
+id: node.youtube.changed
+field_name: changed
+entity_type: node
+bundle: youtube
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

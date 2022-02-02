@@ -1,0 +1,47 @@
+label: Comentarios
+display:
+  default:
+    display_title: 'Por defecto'
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Restablecer
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementos por página'
+      fields:
+        subject:
+          label: Asunto
+        name:
+          label: Autor
+        operations:
+          label: Operaciones
+      filters:
+        subject:
+          expose:
+            label: Asunto
+        langcode:
+          expose:
+            label: Idioma
+      title: Comentarios
+  page_published:
+    display_options:
+      menu:
+        title: Comentarios
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: Asunto
+        langcode:
+          expose:
+            label: Idioma
+      fields:
+        subject:
+          label: Asunto
+        name:
+          label: Autor
+        operations:
+          label: Operaciones
