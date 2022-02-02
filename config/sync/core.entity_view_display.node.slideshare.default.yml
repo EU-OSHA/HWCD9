@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.slideshare.field_xmlsitemap
     - node.type.slideshare
   module:
-    - image
     - link
     - metatag
     - text
@@ -69,13 +68,13 @@ content:
     type: link
     region: content
   field_slideshare_thumbnail:
-    weight: 107
+    type: entity_reference_entity_view
+    weight: 109
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: image
     region: content
   field_xmlsitemap:
     weight: 102

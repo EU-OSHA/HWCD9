@@ -1,12 +1,11 @@
-uuid: a5db2283-2691-4cc6-8810-62e8e7a62072
+uuid: 3900bcb1-8a3f-49de-ab33-8b917bef507e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_file
+    - media.type.document
     - node.type.file
-  module:
-    - file
 id: node.file.field_file
 field_name: field_file
 entity_type: node
@@ -14,14 +13,17 @@ bundle: file
 label: File
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt pdf'
-  max_filesize: ''
-  description_field: false
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: file
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

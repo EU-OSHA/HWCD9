@@ -1,12 +1,11 @@
-uuid: 590f2436-c456-47a9-b244-13e743cc2219
+uuid: 13369ae6-a0a6-41d5-89f5-c5927ffe5ad3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_file
+    - media.type.document
     - node.type.infographic
-  module:
-    - file
 id: node.infographic.field_file
 field_name: field_file
 entity_type: node
@@ -18,10 +17,13 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: pdf
-  max_filesize: ''
-  description_field: false
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: file
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
