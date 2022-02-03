@@ -1,0 +1,19 @@
+uuid: d0a97407-6505-44b1-b23a-6ccaa53fd39d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ceo
+    - node.type.partner
+id: node.partner.field_ceo
+field_name: field_ceo
+entity_type: node
+bundle: partner
+label: CEO
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
