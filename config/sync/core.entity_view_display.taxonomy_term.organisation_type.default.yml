@@ -1,0 +1,31 @@
+uuid: 1de189e6-1d38-4af8-b7b1-994053d670cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.organisation_type.field_crm_code
+    - taxonomy.vocabulary.organisation_type
+  module:
+    - text
+id: taxonomy_term.organisation_type.default
+targetEntityType: taxonomy_term
+bundle: organisation_type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_crm_code:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

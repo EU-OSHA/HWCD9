@@ -1,0 +1,8 @@
+uuid: ddc1466d-f950-4511-a887-69722d7d8097
+langcode: en
+status: true
+dependencies: {  }
+name: 'Business Sector'
+vid: business_sector
+description: 'Partner - Business Sector'
+weight: 0
