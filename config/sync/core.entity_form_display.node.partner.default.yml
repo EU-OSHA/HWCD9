@@ -1,0 +1,179 @@
+uuid: 4b87aa68-38e7-43b0-88ab-c41e78bfb98c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.partner.field_general_email
+    - field.field.node.partner.field_general_phone
+    - field.field.node.partner.field_mission_statement
+    - field.field.node.partner.field_website
+    - field.field.node.partner.field_website_email
+    - node.type.partner
+  module:
+    - field_group
+    - link
+    - path
+third_party_settings:
+  field_group:
+    group_guid_organisation:
+      children:
+        - title
+        - field_general_email
+        - field_general_phone
+        - field_website
+        - field_website_email
+        - field_mission_statement
+      parent_name: ''
+      weight: 0
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: 'group-guid-organisation field-group-fieldset'
+        description: ''
+        open: true
+        required_fields: false
+      label: 'Guid organisation'
+    group_ph_address:
+      children: {  }
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: 'group-ph-address field-group-fieldset'
+        description: ''
+        open: true
+        required_fields: false
+      label: 'Ph Address'
+    group_guid_main_contact:
+      children: {  }
+      parent_name: ''
+      weight: 2
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: 'group-main-contact field-group-fieldset'
+        description: ''
+        open: true
+        required_fields: false
+      label: 'Main Contact'
+    group_ceo:
+      children: {  }
+      parent_name: ''
+      weight: 3
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: 'group-ceo field-group-fieldset'
+        description: ''
+        open: false
+        required_fields: false
+      label: CEO
+    group_category:
+      children: {  }
+      parent_name: ''
+      weight: 4
+      format_type: details
+      region: content
+      format_settings:
+        id: ''
+        classes: 'group-category field-group-fieldset'
+        description: ''
+        open: true
+        required_fields: false
+      label: Category
+id: node.partner.default
+targetEntityType: node
+bundle: partner
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_general_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_general_phone:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mission_statement:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_website:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_website_email:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  sticky: true
