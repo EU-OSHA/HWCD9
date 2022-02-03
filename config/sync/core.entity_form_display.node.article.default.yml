@@ -10,6 +10,7 @@ dependencies:
     - node.type.article
   module:
     - comment
+    - media_library
     - path
     - text
 _core:
@@ -44,12 +45,9 @@ content:
   field_image:
     weight: 121
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_tags:
     type: entity_reference_autocomplete_tags
@@ -102,6 +100,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

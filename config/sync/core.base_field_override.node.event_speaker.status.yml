@@ -1,0 +1,22 @@
+uuid: 766209c5-8337-4478-8ae9-b126a43f41f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event_speaker
+id: node.event_speaker.status
+field_name: status
+entity_type: node
+bundle: event_speaker
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 3b8201f2-5434-4c08-9ca3-8bbc9327a04f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.youtube
+id: node.youtube.sticky
+field_name: sticky
+entity_type: node
+bundle: youtube
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

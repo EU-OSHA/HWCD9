@@ -1,0 +1,18 @@
+uuid: 10fe6611-6660-4925-9e76-60877e34dcba
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.file
+id: node.file.metatag
+field_name: metatag
+entity_type: node
+bundle: file
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

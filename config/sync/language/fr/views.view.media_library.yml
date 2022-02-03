@@ -1,0 +1,37 @@
+display:
+  default:
+    display_title: 'Par défaut'
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Réinitialiser
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Éléments par page'
+      filters:
+        langcode:
+          expose:
+            label: Langue
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Modifier
+        delete_media:
+          text: Supprimer
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Tout
+  widget_table:
+    display_options:
+      fields:
+        uid:
+          label: Auteur
+      arguments:
+        bundle:
+          exception:
+            title: Tout

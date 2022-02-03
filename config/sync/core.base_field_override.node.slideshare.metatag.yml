@@ -1,0 +1,18 @@
+uuid: 2e14d8e1-c193-48ee-ac2f-1cc4c3b2d6a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slideshare
+id: node.slideshare.metatag
+field_name: metatag
+entity_type: node
+bundle: slideshare
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,18 @@
+uuid: 0ec73e24-64a4-42b3-b4cd-72029666d133
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nace_codes
+id: taxonomy_term.nace_codes.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: nace_codes
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,5 @@
+tips:
+  views-ui-format:
+    label: 'Format de sortie'
+  views-ui-fields:
+    label: Champs

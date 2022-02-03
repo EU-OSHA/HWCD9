@@ -1,0 +1,20 @@
+uuid: 95faaa4e-2935-4dec-accf-9a882b19ff7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pa_highlights
+  module:
+    - path
+id: node.pa_highlights.path
+field_name: path
+entity_type: node
+bundle: pa_highlights
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

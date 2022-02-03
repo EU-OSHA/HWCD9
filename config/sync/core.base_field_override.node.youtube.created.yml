@@ -1,0 +1,18 @@
+uuid: 7cc73fa2-a922-43bf-a3b4-c8b5bca4dd36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.youtube
+id: node.youtube.created
+field_name: created
+entity_type: node
+bundle: youtube
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created
