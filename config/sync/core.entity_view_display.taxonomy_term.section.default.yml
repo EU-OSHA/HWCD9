@@ -1,0 +1,31 @@
+uuid: ffbad974-16d5-4dcb-b47a-e705fc97b8cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.section.field_ldap_section_code
+    - taxonomy.vocabulary.section
+  module:
+    - text
+id: taxonomy_term.section.default
+targetEntityType: taxonomy_term
+bundle: section
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ldap_section_code:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,50 @@
+uuid: e0c0948e-180c-41d4-82e0-81f9a068fcdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.country.field_country_status
+    - field.field.taxonomy_term.country.field_flag
+    - field.field.taxonomy_term.country.field_iso2
+    - taxonomy.vocabulary.country
+  module:
+    - text
+id: taxonomy_term.country.default
+targetEntityType: taxonomy_term
+bundle: country
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_country_status:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_flag:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_iso2:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
