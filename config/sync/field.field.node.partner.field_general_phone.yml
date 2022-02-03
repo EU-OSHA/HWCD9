@@ -1,0 +1,19 @@
+uuid: 92303f1f-db12-4e81-a422-5dbc66d65b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_general_phone
+    - node.type.partner
+id: node.partner.field_general_phone
+field_name: field_general_phone
+entity_type: node
+bundle: partner
+label: 'General phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
