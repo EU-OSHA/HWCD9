@@ -1,0 +1,8 @@
+uuid: 53691039-3db4-45bb-8192-8967e5e0df46
+langcode: en
+status: true
+dependencies: {  }
+name: 'Country Status'
+vid: country_status
+description: ''
+weight: 0
