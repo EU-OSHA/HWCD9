@@ -1,14 +1,16 @@
-uuid: e6290dcd-9303-4733-a1da-e7a114a30f53
+uuid: 998a8fae-f58b-405d-a253-4feff3c8ddd5
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_pledge
-field_name: field_pledge
+id: node.field_position_identifier
+field_name: field_position_identifier
 entity_type: node
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

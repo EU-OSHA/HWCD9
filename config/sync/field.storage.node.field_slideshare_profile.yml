@@ -1,16 +1,16 @@
-uuid: e6290dcd-9303-4733-a1da-e7a114a30f53
+uuid: 4c82747d-3f03-4463-b2b8-038d86e35de9
 langcode: en
 status: true
 dependencies:
   module:
+    - link
     - node
-id: node.field_pledge
-field_name: field_pledge
+id: node.field_slideshare_profile
+field_name: field_slideshare_profile
 entity_type: node
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true

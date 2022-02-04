@@ -1,0 +1,23 @@
+uuid: 43734783-0559-48b8-9f97-e7f7d9c6a9bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshare_profile
+    - node.type.partner
+  module:
+    - link
+id: node.partner.field_slideshare_profile
+field_name: field_slideshare_profile
+entity_type: node
+bundle: partner
+label: 'Slideshare profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

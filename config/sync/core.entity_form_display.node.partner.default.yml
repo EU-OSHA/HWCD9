@@ -3,29 +3,43 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.partner.field_abbreviation_name
+    - field.field.node.partner.field_appform_status
     - field.field.node.partner.field_bussines_sector
     - field.field.node.partner.field_campaign_website
     - field.field.node.partner.field_ceo
     - field.field.node.partner.field_ceo_photo
+    - field.field.node.partner.field_country
+    - field.field.node.partner.field_facebook_profile
     - field.field.node.partner.field_general_email
     - field.field.node.partner.field_general_phone
+    - field.field.node.partner.field_google_plus_profile
     - field.field.node.partner.field_guid_main_contact
     - field.field.node.partner.field_guid_organisation
+    - field.field.node.partner.field_linkedin_profile
     - field.field.node.partner.field_logo
     - field.field.node.partner.field_main_contact
     - field.field.node.partner.field_main_contact_email
     - field.field.node.partner.field_mission_statement
+    - field.field.node.partner.field_organisation_rep
     - field.field.node.partner.field_orgtype
     - field.field.node.partner.field_partner_type
     - field.field.node.partner.field_ph_address
+    - field.field.node.partner.field_ph_address_extra
     - field.field.node.partner.field_ph_cp
+    - field.field.node.partner.field_ph_town
+    - field.field.node.partner.field_pinterest_profile
     - field.field.node.partner.field_pledge
+    - field.field.node.partner.field_position_identifier
     - field.field.node.partner.field_position_main_contact
     - field.field.node.partner.field_quote
+    - field.field.node.partner.field_slideshare_profile
     - field.field.node.partner.field_social_dialog_partner
+    - field.field.node.partner.field_twitter_profile
     - field.field.node.partner.field_website
     - field.field.node.partner.field_website_email
     - field.field.node.partner.field_workbench_access
+    - field.field.node.partner.field_youtube_profile
     - node.type.partner
   module:
     - field_group
@@ -129,10 +143,26 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_abbreviation_name:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_appform_status:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_bussines_sector:
     weight: 3
     settings: {  }
@@ -162,6 +192,20 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
+  field_country:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_facebook_profile:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_general_email:
     weight: 4
     settings:
@@ -178,6 +222,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_google_plus_profile:
+    weight: 16
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_guid_main_contact:
     weight: 28
     settings:
@@ -193,6 +245,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_linkedin_profile:
+    weight: 15
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_logo:
     type: media_library_widget
@@ -225,6 +285,14 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  field_organisation_rep:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_orgtype:
     weight: 2
     settings: {  }
@@ -245,6 +313,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_ph_address_extra:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_ph_cp:
     weight: 27
     settings:
@@ -253,8 +329,32 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_ph_town:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pinterest_profile:
+    weight: 17
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_pledge:
     weight: 36
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_position_identifier:
+    weight: 8
     settings:
       size: 60
       placeholder: ''
@@ -277,12 +377,28 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
+  field_slideshare_profile:
+    weight: 14
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_social_dialog_partner:
     weight: 37
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_twitter_profile:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_website:
     weight: 6
@@ -306,9 +422,17 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_youtube_profile:
+    weight: 13
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   path:
     type: path
-    weight: 8
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -316,7 +440,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 20
     region: content
     third_party_settings: {  }
   title:
@@ -328,13 +452,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60

@@ -1,14 +1,16 @@
-uuid: e6290dcd-9303-4733-a1da-e7a114a30f53
+uuid: e3e63a4c-c93f-4942-9fd5-64aa008b6bc6
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_pledge
-field_name: field_pledge
+id: node.field_ph_town
+field_name: field_ph_town
 entity_type: node
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

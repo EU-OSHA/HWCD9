@@ -1,16 +1,16 @@
-uuid: e6290dcd-9303-4733-a1da-e7a114a30f53
+uuid: aae90bd2-0bb0-4fc0-99e3-dfcf743de318
 langcode: en
 status: true
 dependencies:
   module:
+    - link
     - node
-id: node.field_pledge
-field_name: field_pledge
+id: node.field_facebook_profile
+field_name: field_facebook_profile
 entity_type: node
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true

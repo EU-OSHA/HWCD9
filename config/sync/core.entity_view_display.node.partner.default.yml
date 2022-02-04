@@ -3,29 +3,43 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.partner.field_abbreviation_name
+    - field.field.node.partner.field_appform_status
     - field.field.node.partner.field_bussines_sector
     - field.field.node.partner.field_campaign_website
     - field.field.node.partner.field_ceo
     - field.field.node.partner.field_ceo_photo
+    - field.field.node.partner.field_country
+    - field.field.node.partner.field_facebook_profile
     - field.field.node.partner.field_general_email
     - field.field.node.partner.field_general_phone
+    - field.field.node.partner.field_google_plus_profile
     - field.field.node.partner.field_guid_main_contact
     - field.field.node.partner.field_guid_organisation
+    - field.field.node.partner.field_linkedin_profile
     - field.field.node.partner.field_logo
     - field.field.node.partner.field_main_contact
     - field.field.node.partner.field_main_contact_email
     - field.field.node.partner.field_mission_statement
+    - field.field.node.partner.field_organisation_rep
     - field.field.node.partner.field_orgtype
     - field.field.node.partner.field_partner_type
     - field.field.node.partner.field_ph_address
+    - field.field.node.partner.field_ph_address_extra
     - field.field.node.partner.field_ph_cp
+    - field.field.node.partner.field_ph_town
+    - field.field.node.partner.field_pinterest_profile
     - field.field.node.partner.field_pledge
+    - field.field.node.partner.field_position_identifier
     - field.field.node.partner.field_position_main_contact
     - field.field.node.partner.field_quote
+    - field.field.node.partner.field_slideshare_profile
     - field.field.node.partner.field_social_dialog_partner
+    - field.field.node.partner.field_twitter_profile
     - field.field.node.partner.field_website
     - field.field.node.partner.field_website_email
     - field.field.node.partner.field_workbench_access
+    - field.field.node.partner.field_youtube_profile
     - node.type.partner
   module:
     - link
@@ -35,6 +49,22 @@ targetEntityType: node
 bundle: partner
 mode: default
 content:
+  field_abbreviation_name:
+    weight: 138
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_appform_status:
+    weight: 128
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_bussines_sector:
     weight: 109
     label: above
@@ -72,6 +102,26 @@ content:
       link: false
     third_party_settings: {  }
     region: content
+  field_country:
+    weight: 129
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_facebook_profile:
+    weight: 130
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_general_email:
     weight: 102
     label: above
@@ -86,6 +136,18 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_google_plus_profile:
+    weight: 135
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_guid_main_contact:
     weight: 115
@@ -102,6 +164,18 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_linkedin_profile:
+    weight: 134
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_logo:
     type: entity_reference_entity_view
@@ -134,6 +208,14 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
+  field_organisation_rep:
+    weight: 126
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_orgtype:
     weight: 108
     label: above
@@ -158,6 +240,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_ph_address_extra:
+    weight: 125
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_ph_cp:
     weight: 114
     label: above
@@ -166,8 +256,35 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_ph_town:
+    weight: 137
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pinterest_profile:
+    weight: 136
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_pledge:
-    weight: 123
+    weight: 139
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_position_identifier:
+    weight: 127
     label: above
     settings:
       link_to_entity: false
@@ -189,6 +306,18 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: content
+  field_slideshare_profile:
+    weight: 133
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_social_dialog_partner:
     weight: 124
     label: above
@@ -198,6 +327,18 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_twitter_profile:
+    weight: 131
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_website:
     weight: 104
@@ -225,6 +366,18 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_youtube_profile:
+    weight: 132
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100

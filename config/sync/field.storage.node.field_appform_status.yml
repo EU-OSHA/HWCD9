@@ -1,14 +1,16 @@
-uuid: e6290dcd-9303-4733-a1da-e7a114a30f53
+uuid: ba69ab7f-58fd-4965-bf44-8e1af3cc500e
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_pledge
-field_name: field_pledge
+id: node.field_appform_status
+field_name: field_appform_status
 entity_type: node
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false
