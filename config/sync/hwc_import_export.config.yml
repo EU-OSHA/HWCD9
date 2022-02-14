@@ -1,0 +1,6 @@
+ncw_events: /export/event/list
+ncw_taxonomy_activity: /export/taxonomy/activity
+ncw_endpoint: 'https://osha.europa.eu'
+ncw_taxonomy_country_status: /export/taxonomy/country_status
+ncw_publications: null
+ncw_publication: '/export/list/publication/campaign_2020-2022?3'

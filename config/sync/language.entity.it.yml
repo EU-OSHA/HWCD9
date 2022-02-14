@@ -1,0 +1,9 @@
+uuid: aa06d4ac-494b-427b-99af-875be536d1e4
+langcode: en
+status: true
+dependencies: {  }
+id: it
+label: Italian
+direction: ltr
+weight: 3
+locked: false
