@@ -11,7 +11,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: ncw_import_node
-label: Publications
+label: 'Publications es'
 source:
   plugin: url
   data_fetcher_plugin: http
@@ -44,6 +44,10 @@ source:
       name: field_file
       label: field_file
       selector: item/field_file/es/0
+    -
+      name: author
+      label: Author
+      selector: item/field_author/es/0
 process:
   nid: nid
   title:
@@ -130,6 +134,7 @@ process:
     -
       plugin: default_value
       default_value: '@document_media'
+  field_author/value: author/value
 destination:
   default_bundle: publication
   plugin: 'entity:node'

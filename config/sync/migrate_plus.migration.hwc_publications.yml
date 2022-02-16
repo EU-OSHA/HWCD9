@@ -37,26 +37,6 @@ source:
       label: Title
       selector: item/title_field/en
     -
-      name: status
-      label: Status
-      selector: item/status
-    -
-      name: created
-      label: Created
-      selector: item/created
-    -
-      name: changed
-      label: Changed
-      selector: item/changed
-    -
-      name: sticky
-      label: Sticky
-      selector: item/sticky
-    -
-      name: alias
-      label: Alias
-      selector: item/pathalias
-    -
       name: body
       label: Description
       selector: item/body/en/0
@@ -67,7 +47,7 @@ source:
     -
       name: publication_date
       label: 'Publication Date'
-      selector: item/field_publication_date/und
+      selector: item/field_publication_date
     -
       name: tags
       label: Tags
@@ -82,7 +62,7 @@ source:
       selector: item/field_author/en/0
     -
       name: page_count
-      label: Author
+      label: page_count
       selector: item/field_page_count/en/0
     -
       name: bookshop_id
@@ -116,6 +96,26 @@ source:
       name: field_file
       label: field_file
       selector: item/field_file/en/0
+    -
+      name: status
+      label: Status
+      selector: item/status
+    -
+      name: created
+      label: Created
+      selector: item/created
+    -
+      name: changed
+      label: Changed
+      selector: item/changed
+    -
+      name: sticky
+      label: Sticky
+      selector: item/sticky
+    -
+      name: alias
+      label: Alias
+      selector: item/pathalias
 process:
   nid: nid
   langcode: constants/lang
@@ -128,10 +128,6 @@ process:
     -
       plugin: default_value
       default_value: full_html
-  created: created
-  changed: changed
-  sticky: sticky
-  path/alias: alias
   field_publication_type:
     -
       plugin: hwc_taxonomy_term
@@ -140,6 +136,16 @@ process:
     -
       plugin: hwc_start_date
       source: publication_date
+  field_publication_date:
+    -
+      plugin: sub_process
+      source: '@start_date'
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: 'Y-m-d\TH:i:s'
+          source: value
   field_tags:
     -
       plugin: hwc_taxonomy_term
@@ -153,7 +159,6 @@ process:
   field_publication_bookshop_id/value: bookshop_id/value
   field_pages_count/value: pages_count/value
   field_show_on: show_on
-  field_thesaurus: thesaurus_2020
   field_nace_codes:
     -
       plugin: hwc_taxonomy_term
@@ -292,6 +297,11 @@ process:
     -
       plugin: default_value
       default_value: '@document_media'
+  status: status
+  created: created
+  changed: changed
+  sticky: sticky
+  path/alias: alias
 destination:
   default_bundle: publication
   plugin: 'entity:node'
