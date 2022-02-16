@@ -1,0 +1,19 @@
+uuid: 85694f33-11e2-4b80-b392-1cf5076c2725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_thesaurus_id
+    - taxonomy.vocabulary.chemical_and_biological_hazards_
+id: taxonomy_term.chemical_and_biological_hazards_.field_thesaurus_id
+field_name: field_thesaurus_id
+entity_type: taxonomy_term
+bundle: chemical_and_biological_hazards_
+label: 'Thesaurus code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

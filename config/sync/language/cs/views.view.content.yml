@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      fields:
+        name:
+          label: Autor
+        status:
+          label: Stav
+        operations:
+          label: Operace
+      filters:
+        status:
+          expose:
+            label: Stav
+        langcode:
+          expose:
+            label: Jazyk
+    display_title: Výchozí

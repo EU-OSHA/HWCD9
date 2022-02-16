@@ -1,0 +1,33 @@
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Рестартирай
+      filters:
+        langcode:
+          expose:
+            label: Език
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Редактирай
+        delete_media:
+          text: Изтриване
+  widget:
+    display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Всички
+  widget_table:
+    display_options:
+      fields:
+        uid:
+          label: Автор
+      arguments:
+        bundle:
+          exception:
+            title: Всички

@@ -1,0 +1,8 @@
+uuid: 370e2f9b-49fd-4934-b3f4-35b7dccfd835
+langcode: en
+status: true
+dependencies: {  }
+name: 'Contact Type'
+vid: contact_type
+description: 'Type of a Contact Person (ex: press contact, focal point)'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 3292cf8d-425d-499f-b8f6-04f573848182
+langcode: en
+status: true
+dependencies: {  }
+name: 'Level of prevention'
+vid: level_of_prevention
+description: ''
+weight: 0

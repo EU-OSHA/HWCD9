@@ -1,0 +1,40 @@
+uuid: 5a7805dc-0900-4cdc-b0b6-bef49fe3cc61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.chemical_hazards_related_to_heal.field_hazard_physical_state_code
+    - field.field.taxonomy_term.chemical_hazards_related_to_heal.field_thesaurus_id
+    - taxonomy.vocabulary.chemical_hazards_related_to_heal
+  module:
+    - text
+id: taxonomy_term.chemical_hazards_related_to_heal.default
+targetEntityType: taxonomy_term
+bundle: chemical_hazards_related_to_heal
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hazard_physical_state_code:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_thesaurus_id:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+display:
+  default:
+    display_title: Výchozí
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Položek na stránku'
+      fields:
+        type:
+          label: Typ
+        message:
+          label: Zpráva
+        link:
+          label: Operace
+      filters:
+        type:
+          expose:
+            label: Typ

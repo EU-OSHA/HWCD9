@@ -1,0 +1,11 @@
+uuid: 8100d591-6de9-4adb-be94-ed385d4ff77e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.proposal_for_target_groups
+id: taxonomy_term.proposal_for_target_groups
+target_entity_type_id: taxonomy_term
+target_bundle: proposal_for_target_groups
+default_langcode: site_default
+language_alterable: false

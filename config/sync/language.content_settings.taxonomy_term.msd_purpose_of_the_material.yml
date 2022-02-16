@@ -1,0 +1,11 @@
+uuid: 0f62858d-4631-4420-946d-0250ab983e02
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_purpose_of_the_material
+id: taxonomy_term.msd_purpose_of_the_material
+target_entity_type_id: taxonomy_term
+target_bundle: msd_purpose_of_the_material
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,51 @@
+uuid: ee63460b-149d-482b-91ef-2f87be8405c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_glossary
+  module:
+    - path
+    - text
+id: taxonomy_term.msd_glossary.default
+targetEntityType: taxonomy_term
+bundle: msd_glossary
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden: {  }

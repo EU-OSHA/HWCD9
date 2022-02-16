@@ -1,0 +1,8 @@
+uuid: 0400c333-4e8c-4568-8ba0-3bce0962d80a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Hashtag Terms'
+vid: hashtag_terms
+description: ''
+weight: 0

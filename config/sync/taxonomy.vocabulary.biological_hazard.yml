@@ -1,0 +1,8 @@
+uuid: a4bac6f4-d508-476b-b34e-5d2cb38686d0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Biological hazard'
+vid: biological_hazard
+description: ''
+weight: 0

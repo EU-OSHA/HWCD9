@@ -1,0 +1,8 @@
+uuid: 5de8dccd-c566-4d4f-b4fa-e54054c8c8aa
+langcode: en
+status: true
+dependencies: {  }
+name: 'MSD Type of visual resource'
+vid: msd_type_of_visual_resource
+description: ''
+weight: 0

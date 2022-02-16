@@ -1,0 +1,11 @@
+uuid: 16a80e79-d2c8-418c-95a3-c991ad41e239
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hashtag_terms
+id: taxonomy_term.hashtag_terms
+target_entity_type_id: taxonomy_term
+target_bundle: hashtag_terms
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: 94365e33-effa-4116-91a8-0153454ed048
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_prevention_measures_code
+    - taxonomy.vocabulary.level_of_prevention
+id: taxonomy_term.level_of_prevention.field_prevention_measures_code
+field_name: field_prevention_measures_code
+entity_type: taxonomy_term
+bundle: level_of_prevention
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

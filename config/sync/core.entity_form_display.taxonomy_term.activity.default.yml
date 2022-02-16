@@ -1,0 +1,69 @@
+uuid: c251c7a5-af72-4b69-a115-06c9f3c87027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.activity.field_activity_code
+    - field.field.taxonomy_term.activity.field_activity_level
+    - taxonomy.vocabulary.activity
+  module:
+    - path
+    - text
+id: taxonomy_term.activity.default
+targetEntityType: taxonomy_term
+bundle: activity
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_activity_code:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_activity_level:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden: {  }

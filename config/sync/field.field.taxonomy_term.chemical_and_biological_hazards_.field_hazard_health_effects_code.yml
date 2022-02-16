@@ -1,0 +1,19 @@
+uuid: 1d882b46-567a-485f-bf7e-4d21363f5018
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_hazard_health_effects_code
+    - taxonomy.vocabulary.chemical_and_biological_hazards_
+id: taxonomy_term.chemical_and_biological_hazards_.field_hazard_health_effects_code
+field_name: field_hazard_health_effects_code
+entity_type: taxonomy_term
+bundle: chemical_and_biological_hazards_
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

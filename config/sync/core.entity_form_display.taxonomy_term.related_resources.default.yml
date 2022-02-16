@@ -1,0 +1,79 @@
+uuid: 280d3452-2f38-46b2-b8a9-b626a9449a8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.related_resources.field_icon
+    - field.field.taxonomy_term.related_resources.field_resource_link
+    - field.field.taxonomy_term.related_resources.field_resource_type
+    - taxonomy.vocabulary.related_resources
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.related_resources.default
+targetEntityType: taxonomy_term
+bundle: related_resources
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_icon:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_resource_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_resource_type:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+hidden: {  }

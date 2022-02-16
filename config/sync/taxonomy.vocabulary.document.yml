@@ -1,0 +1,8 @@
+uuid: 338dcfe3-fb68-4363-a741-262ab784e3b1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Document Type'
+vid: document
+description: ''
+weight: 0

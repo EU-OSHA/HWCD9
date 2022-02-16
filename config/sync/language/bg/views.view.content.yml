@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Рестартирай
+      fields:
+        name:
+          label: Автор
+        status:
+          label: Статус
+        operations:
+          label: Действия
+      filters:
+        status:
+          expose:
+            label: Статус
+        langcode:
+          expose:
+            label: Език
+    display_title: 'По подразбиране'
