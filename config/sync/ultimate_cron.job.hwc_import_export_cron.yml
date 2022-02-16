@@ -1,0 +1,17 @@
+uuid: 8fb2ea0a-1e4d-4194-ae03-8a5f65422d72
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_import_export
+title: 'Default cron handler'
+id: hwc_import_export_cron
+weight: 0
+module: hwc_import_export
+callback: hwc_import_export_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
