@@ -1,0 +1,50 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+      filters:
+        name:
+          expose:
+            label: Name
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Edit
+        delete_media:
+          text: Delete
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Name
+      arguments:
+        bundle:
+          exception:
+            title: All
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Name
+        uid:
+          label: Author
+      filters:
+        name:
+          expose:
+            label: Name
+      arguments:
+        bundle:
+          exception:
+            title: All

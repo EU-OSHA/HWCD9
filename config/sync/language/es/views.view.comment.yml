@@ -1,0 +1,47 @@
+label: Comments
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+      fields:
+        subject:
+          label: Subject
+        name:
+          label: Author
+        operations:
+          label: Operations
+      filters:
+        subject:
+          expose:
+            label: Subject
+        langcode:
+          expose:
+            label: Language
+      title: Comments
+  page_published:
+    display_options:
+      menu:
+        title: Comments
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: Subject
+        langcode:
+          expose:
+            label: Language
+      fields:
+        subject:
+          label: Subject
+        name:
+          label: Author
+        operations:
+          label: Operations

@@ -1,0 +1,15 @@
+display:
+  default:
+    display_title: Default
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+      arguments:
+        tid:
+          exception:
+            title: All
