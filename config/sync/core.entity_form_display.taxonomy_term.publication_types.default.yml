@@ -1,37 +1,45 @@
-uuid: c251c7a5-af72-4b69-a115-06c9f3c87027
+uuid: 07b2d52b-c863-442b-8633-d33875a0a82d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.activity.field_activity_code
-    - field.field.taxonomy_term.activity.field_activity_level
-    - taxonomy.vocabulary.activity
+    - field.field.taxonomy_term.publication_types.field_image
+    - field.field.taxonomy_term.publication_types.field_main_category
+    - field.field.taxonomy_term.publication_types.field_publication_type_code
+    - taxonomy.vocabulary.publication_types
   module:
+    - media_library
     - path
     - text
-id: taxonomy_term.activity.default
+id: taxonomy_term.publication_types.default
 targetEntityType: taxonomy_term
-bundle: activity
+bundle: publication_types
 mode: default
 content:
   description:
     type: text_textarea
-    weight: 0
+    weight: 1
     region: content
     settings:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_activity_code:
-    weight: 5
+  field_image:
+    type: media_library_widget
+    weight: 7
     settings:
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: string_textfield
     region: content
-  field_activity_level:
+  field_main_category:
     weight: 6
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_publication_type_code:
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -47,7 +55,7 @@ content:
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
