@@ -1,0 +1,10 @@
+uuid: 631a7186-47f9-42c3-b673-c117fde8b860
+langcode: en
+status: true
+dependencies: {  }
+id: campaign_partner
+label: 'Campaign Partner'
+weight: 3
+is_admin: null
+permissions:
+  - 'use workbench access'
