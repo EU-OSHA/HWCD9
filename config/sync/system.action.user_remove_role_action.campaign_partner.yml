@@ -1,0 +1,14 @@
+uuid: f6ab2858-ae4c-42a7-850c-ee910bd2a9f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.campaign_partner
+  module:
+    - user
+id: user_remove_role_action.campaign_partner
+label: 'Remove the Campaign Partner role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: campaign_partner

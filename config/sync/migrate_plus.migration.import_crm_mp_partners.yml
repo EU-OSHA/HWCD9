@@ -133,6 +133,10 @@ source:
       label: field_appform_status
       selector: '@Textbox35'
     -
+      name: status
+      label: Status
+      selector: '@Textbox35'
+    -
       name: field_pinterest_profile
       label: field_pinterest_profile
       selector: '@Textbox36'
@@ -299,8 +303,12 @@ process:
         - title
   status:
     -
-      plugin: hwc_status
+      plugin: hwc_boolean
       source: field_appform_status
+  user:
+    -
+      plugin: hwc_user
+      source: field_main_contact_email
 destination:
   default_bundle: partner
   plugin: 'entity:node'
