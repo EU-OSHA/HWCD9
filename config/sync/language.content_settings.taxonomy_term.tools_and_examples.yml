@@ -1,0 +1,11 @@
+uuid: f96af792-6583-4e90-9c7c-4a997ff69d73
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tools_and_examples
+id: taxonomy_term.tools_and_examples
+target_entity_type_id: taxonomy_term
+target_bundle: tools_and_examples
+default_langcode: site_default
+language_alterable: false

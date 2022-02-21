@@ -1,0 +1,11 @@
+uuid: d981cb31-a86d-4097-9d85-8cd2c21c7f87
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_hazards
+id: taxonomy_term.msd_hazards
+target_entity_type_id: taxonomy_term
+target_bundle: msd_hazards
+default_langcode: site_default
+language_alterable: false

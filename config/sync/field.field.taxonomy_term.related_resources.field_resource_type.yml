@@ -1,0 +1,21 @@
+uuid: 355f3d93-9a59-455f-ad5f-26895a91817b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_resource_type
+    - taxonomy.vocabulary.related_resources
+  module:
+    - options
+id: taxonomy_term.related_resources.field_resource_type
+field_name: field_resource_type
+entity_type: taxonomy_term
+bundle: related_resources
+label: 'Resource type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

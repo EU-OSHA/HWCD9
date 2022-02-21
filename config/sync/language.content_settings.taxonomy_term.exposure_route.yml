@@ -1,0 +1,11 @@
+uuid: c576d535-e8ae-4031-9b13-fb84424d6636
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.exposure_route
+id: taxonomy_term.exposure_route
+target_entity_type_id: taxonomy_term
+target_bundle: exposure_route
+default_langcode: site_default
+language_alterable: false

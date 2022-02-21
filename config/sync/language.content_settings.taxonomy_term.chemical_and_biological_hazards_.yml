@@ -1,0 +1,11 @@
+uuid: ecaeaf93-60d9-4983-9130-46fcecf33a22
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chemical_and_biological_hazards_
+id: taxonomy_term.chemical_and_biological_hazards_
+target_entity_type_id: taxonomy_term
+target_bundle: chemical_and_biological_hazards_
+default_langcode: site_default
+language_alterable: false

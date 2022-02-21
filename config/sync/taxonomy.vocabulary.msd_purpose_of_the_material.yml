@@ -1,0 +1,8 @@
+uuid: 66b3cc59-3999-4c17-90cd-f43c3042ee89
+langcode: en
+status: true
+dependencies: {  }
+name: 'MSD Purpose of the material'
+vid: msd_purpose_of_the_material
+description: 'Purpose of the material'
+weight: 0

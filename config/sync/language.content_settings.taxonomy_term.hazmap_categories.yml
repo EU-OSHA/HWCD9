@@ -1,0 +1,11 @@
+uuid: 21c57dd1-c7fa-49f5-99f4-d2adfff769ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hazmap_categories
+id: taxonomy_term.hazmap_categories
+target_entity_type_id: taxonomy_term
+target_bundle: hazmap_categories
+default_langcode: site_default
+language_alterable: false

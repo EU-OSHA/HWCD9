@@ -1,0 +1,8 @@
+uuid: 5399931e-0af2-4c1c-a17f-4b90721fc00d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Chemical hazards related to health effects'
+vid: chemical_hazards_related_to_heal
+description: ''
+weight: 0

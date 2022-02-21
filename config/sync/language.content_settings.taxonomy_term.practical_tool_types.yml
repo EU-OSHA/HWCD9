@@ -1,0 +1,11 @@
+uuid: 31fb80cb-3ccf-4ecc-b755-d66ea0ce1479
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.practical_tool_types
+id: taxonomy_term.practical_tool_types
+target_entity_type_id: taxonomy_term
+target_bundle: practical_tool_types
+default_langcode: site_default
+language_alterable: false

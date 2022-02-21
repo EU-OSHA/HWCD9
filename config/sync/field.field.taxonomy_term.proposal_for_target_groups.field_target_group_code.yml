@@ -1,0 +1,19 @@
+uuid: 5d88de77-1e1a-45f3-be33-626e495a9d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_target_group_code
+    - taxonomy.vocabulary.proposal_for_target_groups
+id: taxonomy_term.proposal_for_target_groups.field_target_group_code
+field_name: field_target_group_code
+entity_type: taxonomy_term
+bundle: proposal_for_target_groups
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

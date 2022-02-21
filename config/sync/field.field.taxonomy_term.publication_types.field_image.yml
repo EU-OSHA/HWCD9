@@ -1,0 +1,29 @@
+uuid: 92953f00-c35b-4a18-877c-21ae90a97b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - media.type.image
+    - taxonomy.vocabulary.publication_types
+id: taxonomy_term.publication_types.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: publication_types
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

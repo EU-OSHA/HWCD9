@@ -1,9 +1,0 @@
-uuid: b411e732-0c10-4eeb-a7df-a896312464d5
-langcode: en
-status: true
-dependencies: {  }
-id: 'no'
-label: Norwegian
-direction: ltr
-weight: 8
-locked: false

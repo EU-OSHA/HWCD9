@@ -1,0 +1,11 @@
+uuid: 73e4bc06-f8c5-44b9-8f3f-9a66a7dcecee
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.related_resources
+id: taxonomy_term.related_resources
+target_entity_type_id: taxonomy_term
+target_bundle: related_resources
+default_langcode: site_default
+language_alterable: false

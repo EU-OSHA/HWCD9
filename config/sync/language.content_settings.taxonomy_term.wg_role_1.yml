@@ -1,0 +1,11 @@
+uuid: b6417f4d-6d0c-45ce-b1a6-79265e5e5463
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wg_role_1
+id: taxonomy_term.wg_role_1
+target_entity_type_id: taxonomy_term
+target_bundle: wg_role_1
+default_langcode: site_default
+language_alterable: false

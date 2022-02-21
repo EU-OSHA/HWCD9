@@ -1,0 +1,19 @@
+uuid: 91599b9c-f4fb-4eb0-9aaa-e975f7bf77dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_thesaurus_id
+    - taxonomy.vocabulary.level_of_prevention
+id: taxonomy_term.level_of_prevention.field_thesaurus_id
+field_name: field_thesaurus_id
+entity_type: taxonomy_term
+bundle: level_of_prevention
+label: 'Thesaurus code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

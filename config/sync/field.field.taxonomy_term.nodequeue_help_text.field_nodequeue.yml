@@ -1,0 +1,21 @@
+uuid: 87540e2b-32eb-4494-9599-b0b775eec5ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nodequeue
+    - taxonomy.vocabulary.nodequeue_help_text
+  module:
+    - options
+id: taxonomy_term.nodequeue_help_text.field_nodequeue
+field_name: field_nodequeue
+entity_type: taxonomy_term
+bundle: nodequeue_help_text
+label: Nodequeue
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,8 @@
+uuid: caf658d7-59a6-4159-931c-b05842e42383
+langcode: en
+status: true
+dependencies: {  }
+name: 'WG Category'
+vid: wg_category
+description: ''
+weight: 0

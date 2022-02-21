@@ -1,0 +1,84 @@
+uuid: b42c3eab-76e2-4614-b4b6-32af334af801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.newsletter_sections.field_background_color
+    - field.field.taxonomy_term.newsletter_sections.field_background_image
+    - field.field.taxonomy_term.newsletter_sections.field_icon
+    - field.field.taxonomy_term.newsletter_sections.field_newsletter_template
+    - taxonomy.vocabulary.newsletter_sections
+  module:
+    - media_library
+    - path
+    - text
+id: taxonomy_term.newsletter_sections.default
+targetEntityType: taxonomy_term
+bundle: newsletter_sections
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_background_color:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_background_image:
+    type: media_library_widget
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_icon:
+    type: media_library_widget
+    weight: 6
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_newsletter_template:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 7
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+hidden: {  }

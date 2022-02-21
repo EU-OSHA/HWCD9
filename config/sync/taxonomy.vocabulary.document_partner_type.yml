@@ -1,0 +1,8 @@
+uuid: c39ea963-2786-4a57-b56a-a314c708e6a0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Document partner type'
+vid: document_partner_type
+description: ''
+weight: 0

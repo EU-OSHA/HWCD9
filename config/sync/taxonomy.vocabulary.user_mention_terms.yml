@@ -1,0 +1,8 @@
+uuid: 0a580b27-c101-4bb8-beee-da47259a9870
+langcode: en
+status: true
+dependencies: {  }
+name: 'User Mention Terms'
+vid: user_mention_terms
+description: 'All of the users''s mentioned in tweets.'
+weight: 0

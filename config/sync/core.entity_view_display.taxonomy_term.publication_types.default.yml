@@ -1,0 +1,52 @@
+uuid: 487f7401-6645-4045-ba5f-cbcaf4e20def
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.publication_types.field_image
+    - field.field.taxonomy_term.publication_types.field_main_category
+    - field.field.taxonomy_term.publication_types.field_publication_type_code
+    - taxonomy.vocabulary.publication_types
+  module:
+    - text
+id: taxonomy_term.publication_types.default
+targetEntityType: taxonomy_term
+bundle: publication_types
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_main_category:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_publication_type_code:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,19 @@
+uuid: 4a462587-c36b-4ba1-9a22-d1b4d51656c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_partner_type_code
+    - taxonomy.vocabulary.document_partner_type
+id: taxonomy_term.document_partner_type.field_partner_type_code
+field_name: field_partner_type_code
+entity_type: taxonomy_term
+bundle: document_partner_type
+label: 'Partner type code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

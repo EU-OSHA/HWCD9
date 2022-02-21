@@ -1,0 +1,8 @@
+uuid: 6934c4d5-08b6-484b-aea2-80c1209fea95
+langcode: en
+status: true
+dependencies: {  }
+name: 'Hazmap categories'
+vid: hazmap_categories
+description: ''
+weight: 0

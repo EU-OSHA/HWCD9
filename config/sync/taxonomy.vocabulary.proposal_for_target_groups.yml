@@ -1,0 +1,8 @@
+uuid: f98f1fbb-3111-4a23-a1e6-0dc5b8dea675
+langcode: en
+status: true
+dependencies: {  }
+name: 'Proposal for target groups'
+vid: proposal_for_target_groups
+description: ''
+weight: 0

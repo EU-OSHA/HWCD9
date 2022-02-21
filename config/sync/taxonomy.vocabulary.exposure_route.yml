@@ -1,0 +1,8 @@
+uuid: a3719368-c4db-4437-8bc6-a3e31300d6e4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Exposure route'
+vid: exposure_route
+description: ''
+weight: 0

@@ -1,0 +1,19 @@
+uuid: cfb336a2-d88e-4999-b17b-b8c6427de29e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_biological_hazard_code
+    - taxonomy.vocabulary.biological_hazard
+id: taxonomy_term.biological_hazard.field_biological_hazard_code
+field_name: field_biological_hazard_code
+entity_type: taxonomy_term
+bundle: biological_hazard
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
