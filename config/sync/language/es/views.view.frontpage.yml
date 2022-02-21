@@ -3,9 +3,9 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Restablecer
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_label: 'Elementos por página'
-    display_title: 'Por defecto'
+            items_per_page_label: 'Items per page'
+    display_title: Default

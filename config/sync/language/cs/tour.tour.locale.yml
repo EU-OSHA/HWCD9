@@ -1,19 +1,19 @@
-label: Překlad
+label: Translation
 tips:
   locale-overview:
-    label: 'Překlad uživatelského rozhraní'
+    label: 'User interface translation'
   locale-language:
-    label: 'Jazyk překladu'
+    label: 'Translation language'
   locale-search:
-    label: Hledat
+    label: Search
   locale-filter:
-    label: 'Filtrovat výsledky vyhledávání'
+    label: 'Filter the search'
   locale-submit:
-    label: 'Použít vaše vyhledavací kritéria.'
-    body: 'Pro použití vyhledavacích kritérií, klikněte na tlačítko<em>Filtrovat</em>.'
+    label: 'Apply your search criteria'
+    body: 'To apply your search criteria, click on the <em>Filter</em> button.'
   locale-translate:
-    label: Přeložit
+    label: Translate
   locale-validate:
-    label: 'Validovat překlad'
+    label: 'Validate the translation'
   locale-continue:
-    label: 'Pokračování na'
+    label: 'Continuing on'

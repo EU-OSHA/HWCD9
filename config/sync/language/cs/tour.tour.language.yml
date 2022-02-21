@@ -1,4 +1,8 @@
-label: Jazyk
+label: Language
 tips:
   language-overview:
-    label: Jazyky
+    label: Languages
+  language-default:
+    label: 'Set a language as default'
+  language-continue:
+    label: 'Continuing on'

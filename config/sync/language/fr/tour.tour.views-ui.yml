@@ -1,5 +1,5 @@
 tips:
   views-ui-format:
-    label: 'Format de sortie'
+    label: 'Output format'
   views-ui-fields:
-    label: Champs
+    label: Fields

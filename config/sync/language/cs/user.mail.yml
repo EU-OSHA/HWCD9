@@ -1,24 +1,89 @@
 cancel_confirm:
-  subject: 'Žádost na zrušení uživatelského účtu [user:display-name] na webu [site:name]'
+  subject: 'Account cancellation request for [user:display-name] at [site:name]'
 password_reset:
-  body: "Zpráva pro uživatele [user:display-name]\r\n\r\nNa [site:name] byl uskutečněn požadavek na obnovení hesla k vašemu účtu.\r\n\r\nMůžete se nyní přihlásit kliknutím na následující odkaz, nebo jeho vložením do adresy internetového prohlížeče:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento odkaz pro přihlášení může být použit pouze jedenkrát a zavede vás na stránku, na které si budete moci nastavit své heslo. Platnost odkazu vyprší za jeden den.\r\n\r\n--  Tým [site:name]"
-  subject: 'Náhradní přihlašovací informace pro uživatele [user:display-name] na webu [site:name]'
+  body: |-
+    [user:display-name],
+
+    A request to reset the password for your account has been made at [site:name].
+
+    You may now log in by clicking this link or copying and pasting it into your browser:
+
+    [user:one-time-login-url]
+
+    This link can only be used once to log in and will lead you to a page where you can set your password. It expires after one day and nothing will happen if it's not used.
+
+    --  [site:name] team
+  subject: 'Replacement login information for [user:display-name] at [site:name]'
 register_admin_created:
-  body: "[user:display-name],\r\n\r\nadministrátor webu [site:name] pro vás vytvořil uživatelský účet. Můžete se nyní přihlásit kliknutím na následující odkaz, nebo jeho vložením do adresy internetového prohlížeče:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento odkaz pro přihlášení může být použit pouze jedenkrát a zavede vás na stránku, na které si budete moci nastavit své heslo.\r\n\r\nJakmile si změníte heslo, můžete se nadále přihlašovat na stránce [site:login-url], kde použijete:\r\n\r\nuživatelské jméno: [user:name]\r\nheslo: vaše heslo\r\n\r\n-- Tým [site:name]"
-  subject: 'Administrátor pro vás vytvořil účet na webu [site:name]'
+  body: |-
+    [user:display-name],
+
+    A site administrator at [site:name] has created an account for you. You may now log in by clicking this link or copying and pasting it into your browser:
+
+    [user:one-time-login-url]
+
+    This link can only be used once to log in and will lead you to a page where you can set your password.
+
+    After setting your password, you will be able to log in at [site:login-url] in the future using:
+
+    username: [user:name]
+    password: Your password
+
+    --  [site:name] team
+  subject: 'An administrator created an account for you at [site:name]'
 register_no_approval_required:
-  body: "[user:display-name],\r\n\r\nděkujeme za registraci na webu [site:name]. Můžete se nyní přihlásit kliknutím na následující odkaz, nebo jeho vložením do adresy internetového prohlížeče:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento odkaz pro přihlášení může být použit pouze jedenkrát a zavede vás na stránku, na které si budete moci nastavit své heslo.\r\n\r\nJakmile si změníte heslo, můžete se nadále přihlašovat na stránce [site:login-url], kde použijete:\r\n\r\nuživatelské jméno: [user:name]\r\nheslo: vaše heslo\r\n\r\n-- Tým [site:name]"
-  subject: 'Podrobnosti uživatelského účtu [user:display-name] na webu [site:name]'
+  body: |-
+    [user:display-name],
+
+    Thank you for registering at [site:name]. You may now log in by clicking this link or copying and pasting it into your browser:
+
+    [user:one-time-login-url]
+
+    This link can only be used once to log in and will lead you to a page where you can set your password.
+
+    After setting your password, you will be able to log in at [site:login-url] in the future using:
+
+    username: [user:name]
+    password: Your password
+
+    --  [site:name] team
+  subject: 'Account details for [user:display-name] at [site:name]'
 register_pending_approval:
-  subject: 'Podrobnosti uživatelského účtu [user:display-name] na webu [site:name] (čeká na schválení)'
+  subject: 'Account details for [user:display-name] at [site:name] (pending admin approval)'
 register_pending_approval_admin:
-  subject: 'Podrobnosti uživatelského účtu [user:display-name] na webu [site:name] (čeká na schválení)'
+  subject: 'Account details for [user:display-name] at [site:name] (pending admin approval)'
 status_activated:
-  body: "[user:display-name],\r\n\r\nVáš uživatelský účet na webu [site:name] byl aktivován. Můžete se nyní přihlásit kliknutím na následující odkaz, nebo jeho vložením do adresy internetového prohlížeče:\r\n\r\n[user:one-time-login-url]\r\n\r\nTento odkaz pro přihlášení může být použit pouze jedenkrát a zavede vás na stránku, na které si budete moci nastavit své heslo.\r\n\r\nJakmile si změníte heslo, můžete se nadále přihlašovat na stránce [site:login-url], kde použijete:\r\n\r\nuživatelské jméno: [user:account-name]\r\nheslo: vaše heslo\r\n\r\n-- Tým [site:name]"
-  subject: 'Podrobnosti uživatelského účtu [user:display-name] na webu [site:name] (schválen)'
+  body: |-
+    [user:display-name],
+
+    Your account at [site:name] has been activated.
+
+    You may now log in by clicking this link or copying and pasting it into your browser:
+
+    [user:one-time-login-url]
+
+    This link can only be used once to log in and will lead you to a page where you can set your password.
+
+    After setting your password, you will be able to log in at [site:login-url] in the future using:
+
+    username: [user:account-name]
+    password: Your password
+
+    --  [site:name] team
+  subject: 'Account details for [user:display-name] at [site:name] (approved)'
 status_blocked:
-  body: "[user:display-name],\r\n\r\nVáš uživatelský účet na webu [site:name] byl zablokován. \r\n\r\n-- Tým [site:name]"
-  subject: 'Podrobnosti uživatelského účtu [user:display-name] na webu [site:name] (zablokován)'
+  body: |-
+    [user:display-name],
+
+    Your account on [site:name] has been blocked.
+
+    --  [site:name] team
+  subject: 'Account details for [user:display-name] at [site:name] (blocked)'
 status_canceled:
-  body: "[user:display-name],\r\n\r\nVáš uživatelský účet na webu [site:name] byl zrušen. \r\n\r\n-- Tým [site:name]"
-  subject: 'Podrobnosti uživatelského účtu [user:display-name] na webu [site:name] (zrušeno)'
+  body: |-
+    [user:display-name],
+
+    Your account on [site:name] has been canceled.
+
+    --  [site:name] team
+  subject: 'Account details for [user:display-name] at [site:name] (canceled)'

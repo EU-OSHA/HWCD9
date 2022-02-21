@@ -3,19 +3,24 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Réinitialiser
+          reset_button_label: Reset
       fields:
+        title:
+          label: Title
         name:
-          label: Auteur
+          label: Author
         status:
-          label: État
+          label: Status
         operations:
-          label: Actions
+          label: Operations
       filters:
+        title:
+          expose:
+            label: Title
         status:
           expose:
-            label: État
+            label: Status
         langcode:
           expose:
-            label: Langue
-    display_title: 'Par défaut'
+            label: Language
+    display_title: Default

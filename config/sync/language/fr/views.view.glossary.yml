@@ -1,14 +1,16 @@
 display:
   default:
-    display_title: 'Par défaut'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Réinitialiser
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_label: 'Éléments par page'
+            items_per_page_label: 'Items per page'
       fields:
+        title:
+          label: Title
         name:
-          label: Auteur
+          label: Author

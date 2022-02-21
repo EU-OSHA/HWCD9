@@ -1,7 +1,10 @@
 display:
   default:
-    display_title: 'Por defecto'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Restablecer
+          reset_button_label: Reset
+  block_1:
+    display_options:
+      block_category: User

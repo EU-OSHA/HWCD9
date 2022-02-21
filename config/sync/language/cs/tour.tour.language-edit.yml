@@ -1,9 +1,9 @@
 tips:
   language-edit-langcode:
-    label: 'Kód jazyka'
+    label: 'Language code'
   language-edit-label:
-    label: 'Název jazyka'
+    label: 'Language name'
   language-edit-direction:
-    label: 'Směr textu'
+    label: 'Language direction'
   language-edit-continue:
-    label: 'Pokračování na'
+    label: 'Continuing on'

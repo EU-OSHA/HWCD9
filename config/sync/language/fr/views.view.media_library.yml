@@ -1,37 +1,50 @@
 display:
   default:
-    display_title: 'Par défaut'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Réinitialiser
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_label: 'Éléments par page'
+            items_per_page_label: 'Items per page'
       filters:
+        name:
+          expose:
+            label: Name
         langcode:
           expose:
-            label: Langue
+            label: Language
   page:
     display_options:
       fields:
         edit_media:
-          text: Modifier
+          text: Edit
         delete_media:
-          text: Supprimer
+          text: Delete
   widget:
     display_options:
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
-            title: Tout
+            title: All
   widget_table:
     display_options:
       fields:
+        name:
+          label: Name
         uid:
-          label: Auteur
+          label: Author
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
-            title: Tout
+            title: All

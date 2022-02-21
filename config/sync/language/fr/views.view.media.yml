@@ -1,27 +1,27 @@
 display:
   default:
-    display_title: 'Par défaut'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Réinitialiser
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_label: 'Éléments par page'
+            items_per_page_label: 'Items per page'
       fields:
         bundle:
           label: Type
         uid:
-          label: Auteur
+          label: Author
         status:
-          label: État
+          label: Status
         operations:
-          label: Actions
+          label: Operations
       filters:
         bundle:
           expose:
             label: Type
         langcode:
           expose:
-            label: Langue
+            label: Language

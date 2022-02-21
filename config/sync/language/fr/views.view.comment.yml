@@ -1,47 +1,47 @@
-label: Commentaires
+label: Comments
 display:
   default:
-    display_title: 'Par défaut'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Réinitialiser
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_label: 'Éléments par page'
+            items_per_page_label: 'Items per page'
       fields:
         subject:
-          label: Objet
+          label: Subject
         name:
-          label: Auteur
+          label: Author
         operations:
-          label: Actions
+          label: Operations
       filters:
         subject:
           expose:
-            label: Objet
+            label: Subject
         langcode:
           expose:
-            label: Langue
-      title: Commentaires
+            label: Language
+      title: Comments
   page_published:
     display_options:
       menu:
-        title: Commentaires
+        title: Comments
   page_unapproved:
     display_options:
       filters:
         subject:
           expose:
-            label: Objet
+            label: Subject
         langcode:
           expose:
-            label: Langue
+            label: Language
       fields:
         subject:
-          label: Objet
+          label: Subject
         name:
-          label: Auteur
+          label: Author
         operations:
-          label: Actions
+          label: Operations

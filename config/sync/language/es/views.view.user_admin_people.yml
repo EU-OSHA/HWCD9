@@ -1,32 +1,32 @@
 display:
   default:
-    display_title: 'Por defecto'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Restablecer
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_label: 'Elementos por página'
+            items_per_page_label: 'Items per page'
       fields:
         name:
-          label: 'Nombre de usuario'
+          label: Username
         status:
-          label: Estado
+          label: Status
           settings:
-            format_custom_true: Activo
+            format_custom_true: Active
         roles_target_id:
           label: Roles
         operations:
-          label: Operaciones
+          label: Operations
       filters:
         status:
           group_info:
-            label: Estado
+            label: Status
             group_items:
               1:
-                title: Activo
+                title: Active
         roles_target_id:
           expose:
-            label: Rol
+            label: Role

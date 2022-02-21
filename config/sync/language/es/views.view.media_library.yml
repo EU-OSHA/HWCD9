@@ -1,37 +1,50 @@
 display:
   default:
-    display_title: 'Por defecto'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Restablecer
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_label: 'Elementos por página'
+            items_per_page_label: 'Items per page'
       filters:
+        name:
+          expose:
+            label: Name
         langcode:
           expose:
-            label: Idioma
+            label: Language
   page:
     display_options:
       fields:
         edit_media:
-          text: Editar
+          text: Edit
         delete_media:
-          text: Eliminar
+          text: Delete
   widget:
     display_options:
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
-            title: Todo(s)
+            title: All
   widget_table:
     display_options:
       fields:
+        name:
+          label: Name
         uid:
-          label: Autor
+          label: Author
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
-            title: Todo(s)
+            title: All

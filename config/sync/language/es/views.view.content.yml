@@ -3,19 +3,24 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Restablecer
+          reset_button_label: Reset
       fields:
+        title:
+          label: Title
         name:
-          label: Autor
+          label: Author
         status:
-          label: Estado
+          label: Status
         operations:
-          label: Operaciones
+          label: Operations
       filters:
+        title:
+          expose:
+            label: Title
         status:
           expose:
-            label: Estado
+            label: Status
         langcode:
           expose:
-            label: Idioma
-    display_title: 'Por defecto'
+            label: Language
+    display_title: Default
