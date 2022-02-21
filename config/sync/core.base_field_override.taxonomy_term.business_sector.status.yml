@@ -1,0 +1,22 @@
+uuid: b429074b-a91f-4ca4-9df4-c441c61759aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.business_sector
+id: taxonomy_term.business_sector.status
+field_name: status
+entity_type: taxonomy_term
+bundle: business_sector
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

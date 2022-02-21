@@ -1,0 +1,8 @@
+uuid: 5095e9f6-32cf-4906-8ccb-99e35252f697
+langcode: en
+status: true
+dependencies: {  }
+name: Partner
+vid: section
+description: 'Content section category'
+weight: 0

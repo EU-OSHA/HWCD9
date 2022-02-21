@@ -1,4 +1,7 @@
 module:
+  action: 0
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -8,10 +11,17 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
+  config_translation: 0
   contact: 0
+  content_moderation: 0
+  content_moderation_notifications: 0
   contextual: 0
+  ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -22,19 +32,27 @@ module:
   filter: 0
   help: 0
   history: 0
+  hreflang: 0
+  hwc_crm_partners_migration: 0
+  hwc_import_export: 0
   image: 0
   language: 0
+  language_neutral_aliases: 0
   languagefield: 0
   link: 0
+  locale: 0
   media: 0
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
   migrate: 0
+  migrate_drupal: 0
+  migrate_file_to_media: 0
   migrate_plus: 0
+  migrate_tools: 0
   node: 0
-  oira_import_export: 0
+  node_export: 0
   options: 0
   page_cache: 0
   path: 0
@@ -51,9 +69,15 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_tweak: 0
+  ultimate_cron: 0
   user: 0
   views_ui: 0
+  workbench_access: 0
+  workflows: 0
+  pathauto: 1
   xmlsitemap: 1
+  content_translation: 10
   views: 10
   paragraphs: 11
   standard: 1000

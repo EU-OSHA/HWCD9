@@ -1,0 +1,18 @@
+uuid: 1e1f57d5-2fcc-4317-8cb1-2d69c9efba9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pa_highlights
+id: node.pa_highlights.changed
+field_name: changed
+entity_type: node
+bundle: pa_highlights
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

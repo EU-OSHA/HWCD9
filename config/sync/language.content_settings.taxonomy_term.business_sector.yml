@@ -1,0 +1,18 @@
+uuid: a35f2594-1f8a-472f-93b5-0bce4b2c447c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.business_sector
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.business_sector
+target_entity_type_id: taxonomy_term
+target_bundle: business_sector
+default_langcode: site_default
+language_alterable: false

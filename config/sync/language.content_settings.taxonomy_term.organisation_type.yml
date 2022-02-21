@@ -1,0 +1,18 @@
+uuid: 3d3eb0ca-2e67-4d4d-ae6c-38a87640506b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organisation_type
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.organisation_type
+target_entity_type_id: taxonomy_term
+target_bundle: organisation_type
+default_langcode: site_default
+language_alterable: false

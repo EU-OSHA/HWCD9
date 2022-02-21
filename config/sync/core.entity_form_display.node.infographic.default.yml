@@ -15,13 +15,11 @@ dependencies:
     - field.field.node.infographic.field_thumbnail
     - field.field.node.infographic.field_twin_infographics
     - field.field.node.infographic.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.infographic
   module:
     - datetime
-    - file
-    - image
     - link
+    - media_library
     - metatag
     - path
     - text
@@ -57,11 +55,14 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_file:
-    weight: 128
+    weight: 135
     settings:
-      progress_indicator: throbber
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: file_generic
+    type: entity_reference_autocomplete
     region: content
   field_first_publication_date:
     weight: 132
@@ -70,12 +71,11 @@ content:
     type: datetime_timestamp
     region: content
   field_image:
-    weight: 126
+    weight: 133
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
+    type: media_library_widget
     region: content
   field_infographic_url:
     weight: 124
@@ -109,12 +109,11 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_thumbnail:
-    weight: 127
+    type: media_library_widget
+    weight: 134
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_twin_infographics:
     weight: 129

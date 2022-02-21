@@ -1,0 +1,22 @@
+uuid: 0c46467e-5354-4cc3-827c-7c2a7a41ef27
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_priority_area
+id: taxonomy_term.msd_priority_area.status
+field_name: status
+entity_type: taxonomy_term
+bundle: msd_priority_area
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

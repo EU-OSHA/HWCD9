@@ -1,0 +1,20 @@
+uuid: f7a304fc-2b8f-467d-b341-597057a9e48a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_priority_area
+  module:
+    - path
+id: taxonomy_term.msd_priority_area.path
+field_name: path
+entity_type: taxonomy_term
+bundle: msd_priority_area
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

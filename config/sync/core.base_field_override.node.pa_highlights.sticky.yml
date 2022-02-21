@@ -1,0 +1,22 @@
+uuid: 8a142f1f-3613-48f4-9613-2e8a78b39c6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pa_highlights
+id: node.pa_highlights.sticky
+field_name: sticky
+entity_type: node
+bundle: pa_highlights
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

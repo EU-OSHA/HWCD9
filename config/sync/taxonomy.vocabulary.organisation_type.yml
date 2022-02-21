@@ -1,0 +1,8 @@
+uuid: df0ac474-7c8d-44e9-b611-a6b003c15eb6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Organisation type'
+vid: organisation_type
+description: 'Partner - Organisation type'
+weight: 0

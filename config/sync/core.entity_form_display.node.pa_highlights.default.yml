@@ -8,10 +8,8 @@ dependencies:
     - field.field.node.pa_highlights.field_language
     - field.field.node.pa_highlights.field_metatags
     - field.field.node.pa_highlights.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.pa_highlights
   module:
-    - image
     - languagefield
     - metatag
     - path
@@ -40,10 +38,12 @@ content:
   field_image:
     weight: 125
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
+    type: entity_reference_autocomplete
     region: content
   field_language:
     weight: 123

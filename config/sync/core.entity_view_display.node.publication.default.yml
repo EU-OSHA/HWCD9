@@ -36,8 +36,6 @@ dependencies:
   module:
     - datetime
     - field_group
-    - file
-    - image
     - metatag
     - options
     - text
@@ -131,13 +129,13 @@ content:
     type: number_integer
     region: content
   field_cover_image:
-    weight: 103
+    type: entity_reference_entity_view
+    weight: 131
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: image
     region: content
   field_expiration_date:
     weight: 105
@@ -149,12 +147,12 @@ content:
     type: datetime_default
     region: content
   field_file:
-    weight: 109
+    weight: 132
     label: above
     settings:
-      use_description_as_link_text: true
+      link: true
     third_party_settings: {  }
-    type: file_default
+    type: entity_reference_label
     region: content
   field_first_publication_date:
     weight: 118
@@ -253,12 +251,13 @@ content:
     type: datetime_default
     region: content
   field_publication_related_res:
-    weight: 111
+    type: entity_reference_entity_view
+    weight: 133
     label: above
     settings:
-      use_description_as_link_text: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: file_default
     region: content
   field_publication_type:
     weight: 102

@@ -32,13 +32,11 @@ dependencies:
     - field.field.node.publication.field_tags
     - field.field.node.publication.field_thesaurus
     - field.field.node.publication.field_xmlsitemap
-    - image.style.thumbnail
     - node.type.publication
   module:
     - datetime
     - field_group
-    - file
-    - image
+    - media_library
     - metatag
     - path
     - text
@@ -136,12 +134,11 @@ content:
     type: number
     region: content
   field_cover_image:
-    weight: 10
+    type: media_library_widget
+    weight: 45
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_expiration_date:
     weight: 12
@@ -150,11 +147,14 @@ content:
     type: datetime_default
     region: content
   field_file:
-    weight: 16
+    weight: 46
     settings:
-      progress_indicator: throbber
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: file_generic
+    type: entity_reference_autocomplete
     region: content
   field_first_publication_date:
     weight: 32
@@ -238,11 +238,11 @@ content:
     type: datetime_default
     region: content
   field_publication_related_res:
-    weight: 19
+    type: media_library_widget
+    weight: 47
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
-    type: file_generic
     region: content
   field_publication_type:
     weight: 9

@@ -1,12 +1,11 @@
-uuid: 8979605c-12fe-4ea1-8c73-3902d0ce3b8e
+uuid: f2e3b422-3cfd-4fa8-8694-940dc4883592
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
+    - media.type.image
     - node.type.pa_highlights
-  module:
-    - image
 id: node.pa_highlights.field_image
 field_name: field_image
 entity_type: node
@@ -14,25 +13,17 @@ bundle: pa_highlights
 label: Image
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: false
-  alt_field_required: false
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

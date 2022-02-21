@@ -1,27 +1,17 @@
-uuid: 92b37ec0-9a5a-4e6e-81f0-c95469b85d53
+uuid: c6b73ded-3aeb-4a2b-8534-237ad0aad92d
 langcode: en
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
     - node
 id: node.field_slideshare_thumbnail
 field_name: field_slideshare_thumbnail
 entity_type: node
-type: image
+type: entity_reference
 settings:
-  uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  target_type: file
-  display_field: false
-  display_default: false
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: -1
 translatable: true

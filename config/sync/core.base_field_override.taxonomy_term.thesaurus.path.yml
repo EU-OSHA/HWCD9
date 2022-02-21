@@ -1,0 +1,20 @@
+uuid: 4eddc29e-7528-438f-8428-71c71e9bc38c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.thesaurus
+  module:
+    - path
+id: taxonomy_term.thesaurus.path
+field_name: path
+entity_type: taxonomy_term
+bundle: thesaurus
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

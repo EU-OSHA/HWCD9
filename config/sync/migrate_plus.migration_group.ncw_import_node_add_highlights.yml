@@ -1,0 +1,15 @@
+uuid: 69ed0dc1-6776-42f7-bf9a-ba2a09b1f1f8
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - hwc_import_export
+id: ncw_import_node_add_highlights
+label: 'NCW Import Add Highlights'
+description: 'Migration of content from HWC and Oira'
+source_type: JSON
+module: null
+shared_configuration:
+  source:
+    key: migrate

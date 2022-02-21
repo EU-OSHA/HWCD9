@@ -1,0 +1,19 @@
+uuid: b8c3b321-682c-4ed9-96e5-9886653e9e7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ph_cp
+    - node.type.partner
+id: node.partner.field_ph_cp
+field_name: field_ph_cp
+entity_type: node
+bundle: partner
+label: 'Ph CP'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

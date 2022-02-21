@@ -1,12 +1,11 @@
-uuid: f50ab67e-3993-4cb7-849f-bbcde497ce7b
+uuid: a3225980-b612-4644-8018-098e8b5ee30d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_publication_related_res
+    - media.type.document
     - node.type.publication
-  module:
-    - file
 id: node.publication.field_publication_related_res
 field_name: field_publication_related_res
 entity_type: node
@@ -14,14 +13,17 @@ bundle: publication
 label: 'Resources (files)'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'pdf doc docx odt rtf txt csv xsl ods xslx ppt pptx epub'
-  max_filesize: '50 MB'
-  description_field: true
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: file
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
