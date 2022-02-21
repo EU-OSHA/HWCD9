@@ -1,21 +1,49 @@
+label: Content
 display:
   default:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
+        title:
+          label: Title
+        type:
+          label: 'Content type'
         name:
-          label: Автор
+          label: Author
         status:
-          label: Статус
+          label: Status
+          settings:
+            format_custom_true: Published
+        changed:
+          label: Updated
         operations:
-          label: Действия
+          label: Operations
       filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: 'Content type'
         status:
           expose:
-            label: Статус
+            label: Status
+          group_info:
+            group_items:
+              1:
+                title: Published
         langcode:
           expose:
-            label: Език
-    display_title: 'По подразбиране'
+            label: Language
+      title: Content
+    display_title: Default
+  page_1:
+    display_options:
+      menu:
+        title: Content
+      tab_options:
+        title: Content
+    display_title: Page

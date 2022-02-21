@@ -1,5 +1,5 @@
 tips:
   language-edit-langcode:
-    label: 'Код на език'
+    label: 'Language code'
   language-edit-label:
-    label: 'Име на език'
+    label: 'Language name'

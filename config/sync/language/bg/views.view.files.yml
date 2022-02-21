@@ -1,20 +1,30 @@
 display:
   default:
-    display_title: 'По подразбиране'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
+        filename:
+          label: Name
+        filesize:
+          label: Size
         status:
-          label: Статус
+          label: Status
+        changed:
+          label: 'Changed date'
       filters:
+        filename:
+          expose:
+            label: Filename
         status:
           expose:
-            label: Статус
+            label: Status
   page_2:
     display_options:
       arguments:
         fid:
           exception:
-            title: Всички
+            title: All

@@ -1,11 +1,15 @@
+label: 'Taxonomy term'
 display:
   default:
-    display_title: 'По подразбиране'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
       arguments:
         tid:
           exception:
-            title: Всички
+            title: All
+  page_1:
+    display_title: Page

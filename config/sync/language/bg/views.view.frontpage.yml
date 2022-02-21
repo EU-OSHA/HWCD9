@@ -3,5 +3,8 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
-    display_title: 'По подразбиране'
+          submit_button: Apply
+          reset_button_label: Reset
+    display_title: Default
+  page_1:
+    display_title: Page

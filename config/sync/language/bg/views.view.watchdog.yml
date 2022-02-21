@@ -1,18 +1,37 @@
+label: Watchdog
+description: 'Recent log messages'
 display:
   default:
-    display_title: 'По подразбиране'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
+        severity:
+          label: Severity
         type:
-          label: Тип
+          label: Type
+        timestamp:
+          label: Date
         message:
-          label: Съобщение
+          label: Message
+        name:
+          label: User
         link:
-          label: Действия
+          label: Operations
       filters:
         type:
           expose:
-            label: Тип
+            label: Type
+        severity:
+          expose:
+            label: Severity
+      title: 'Recent log messages'
+      empty:
+        area:
+          admin_label: 'No log messages available.'
+          content: 'No log messages available.'
+  page:
+    display_title: Page

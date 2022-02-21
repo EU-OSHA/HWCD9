@@ -1,43 +1,68 @@
-label: Коментари
+label: Comments
 display:
   default:
-    display_title: 'По подразбиране'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
+      pager:
+        options:
+          tags:
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
       fields:
+        comment_bulk_form:
+          action_title: Action
         subject:
-          label: Тема
+          label: Subject
         name:
-          label: Автор
+          label: Author
+        entity_id:
+          label: 'Posted in'
+        changed:
+          label: Updated
         operations:
-          label: Действия
+          label: Operations
       filters:
         subject:
           expose:
-            label: Тема
+            label: Subject
         langcode:
           expose:
-            label: Език
-      title: Коментари
+            label: Language
+      title: Comments
+      empty:
+        area_text_custom:
+          content: 'No comments available.'
+      use_more_text: more
   page_published:
+    display_title: 'Published comments'
     display_options:
       menu:
-        title: Коментари
+        title: Comments
   page_unapproved:
     display_options:
       filters:
         subject:
           expose:
-            label: Тема
+            label: Subject
         langcode:
           expose:
-            label: Език
+            label: Language
       fields:
+        comment_bulk_form:
+          action_title: Action
         subject:
-          label: Тема
+          label: Subject
         name:
-          label: Автор
+          label: Author
+        entity_id:
+          label: 'Posted in'
+        changed:
+          label: Updated
         operations:
-          label: Действия
+          label: Operations

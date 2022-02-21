@@ -1,33 +1,69 @@
 display:
   default:
-    display_title: 'По подразбиране'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
+      fields:
+        media_bulk_form:
+          action_title: Action
       filters:
+        status:
+          group_info:
+            label: Published
+            group_items:
+              1:
+                title: Published
+        name:
+          expose:
+            label: Name
         langcode:
           expose:
-            label: Език
+            label: Language
+      title: Media
   page:
+    display_title: Page
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Action
         edit_media:
-          text: Редактирай
+          text: Edit
         delete_media:
-          text: Изтриване
+          text: Delete
   widget:
     display_options:
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
-            title: Всички
+            title: All
+      header:
+        display_link_table:
+          label: Table
   widget_table:
     display_options:
       fields:
+        thumbnail__target_id:
+          label: Thumbnail
+        name:
+          label: Name
         uid:
-          label: Автор
+          label: Author
+        changed:
+          label: Updated
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
-            title: Всички
+            title: All
+      header:
+        display_link_table:
+          label: Table

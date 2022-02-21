@@ -1,28 +1,50 @@
+label: People
 display:
   default:
-    display_title: 'По подразбиране'
+    display_title: Default
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          submit_button: Filter
+          reset_button_label: Reset
       fields:
         name:
-          label: 'Потребителско име'
+          label: Username
         status:
-          label: Статус
+          label: Status
           settings:
-            format_custom_true: Активен
+            format_custom_true: Active
+            format_custom_false: Blocked
         roles_target_id:
-          label: Роли
+          label: Roles
+        created:
+          label: 'Member for'
+        access:
+          label: 'Last access'
         operations:
-          label: Действия
+          label: Operations
       filters:
         status:
           group_info:
-            label: Статус
+            label: Status
             group_items:
               1:
-                title: Активен
+                title: Active
+              2:
+                title: Blocked
         roles_target_id:
           expose:
-            label: Роля
+            label: Role
+        permission:
+          expose:
+            label: Permission
+      title: People
+      use_more_text: more
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: List
+      tab_options:
+        title: People
+        description: 'Manage user accounts, roles, and permissions.'
