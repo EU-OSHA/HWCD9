@@ -1,0 +1,20 @@
+uuid: 3a12b40c-2e3c-42c6-aaee-94b45a60b85c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_crm_guid
+  module:
+    - user
+id: user.user.field_crm_guid
+field_name: field_crm_guid
+entity_type: user
+bundle: user
+label: 'CRM GUID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

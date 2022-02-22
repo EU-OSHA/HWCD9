@@ -1,0 +1,14 @@
+uuid: df9d34f5-e69f-481e-a4a3-b31a150e37be
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.campaign_partner
+  module:
+    - user
+id: user_add_role_action.campaign_partner
+label: 'Add the Campaign Partner role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: campaign_partner
