@@ -1,0 +1,20 @@
+uuid: 95e7628a-79e2-4e0e-9217-2be547496045
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chemical_and_biological_hazards_
+  module:
+    - path
+id: taxonomy_term.chemical_and_biological_hazards_.path
+field_name: path
+entity_type: taxonomy_term
+bundle: chemical_and_biological_hazards_
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

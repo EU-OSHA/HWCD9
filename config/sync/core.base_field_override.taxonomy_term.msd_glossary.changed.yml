@@ -1,0 +1,18 @@
+uuid: c5a39023-830e-4867-a559-ef41c34ceb70
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_glossary
+id: taxonomy_term.msd_glossary.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: msd_glossary
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

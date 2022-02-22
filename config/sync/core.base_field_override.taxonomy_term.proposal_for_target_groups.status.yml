@@ -1,0 +1,22 @@
+uuid: 84f52a40-9c27-49b2-9792-b1a2ed6e80ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.proposal_for_target_groups
+id: taxonomy_term.proposal_for_target_groups.status
+field_name: status
+entity_type: taxonomy_term
+bundle: proposal_for_target_groups
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: b0e48a0d-019a-4338-a425-01ab207e9723
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.biological_hazard
+  module:
+    - path
+id: taxonomy_term.biological_hazard.path
+field_name: path
+entity_type: taxonomy_term
+bundle: biological_hazard
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

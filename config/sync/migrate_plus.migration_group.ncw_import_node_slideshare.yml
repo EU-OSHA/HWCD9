@@ -1,0 +1,15 @@
+uuid: 5a8973d6-f2e0-4e47-9810-78b46342e58a
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - hwc_import_export
+id: ncw_import_node_slideshare
+label: 'NCW Import SlideShare'
+description: 'Migration of content from HWC and Oira'
+source_type: JSON
+module: null
+shared_configuration:
+  source:
+    key: migrate

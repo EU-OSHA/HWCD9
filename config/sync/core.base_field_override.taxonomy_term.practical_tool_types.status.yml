@@ -1,0 +1,22 @@
+uuid: 9ce647fc-6838-4d56-9e94-5af61b73fadd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.practical_tool_types
+id: taxonomy_term.practical_tool_types.status
+field_name: status
+entity_type: taxonomy_term
+bundle: practical_tool_types
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

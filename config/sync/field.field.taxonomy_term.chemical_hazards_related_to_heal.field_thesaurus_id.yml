@@ -12,7 +12,7 @@ bundle: chemical_hazards_related_to_heal
 label: 'Thesaurus code'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

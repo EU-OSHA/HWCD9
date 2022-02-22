@@ -1,0 +1,18 @@
+uuid: dafa805b-6f78-4b54-a177-d4a30e840d62
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chemical_and_biological_hazards_
+id: taxonomy_term.chemical_and_biological_hazards_.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: chemical_and_biological_hazards_
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

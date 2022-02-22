@@ -1,0 +1,22 @@
+uuid: 816b8697-be0f-4f15-8c8e-7179325db5d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_health_effects
+id: taxonomy_term.msd_health_effects.status
+field_name: status
+entity_type: taxonomy_term
+bundle: msd_health_effects
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

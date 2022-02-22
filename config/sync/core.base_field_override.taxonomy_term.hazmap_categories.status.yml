@@ -1,0 +1,22 @@
+uuid: 008566da-fb7c-49b6-9a37-5779ea828605
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hazmap_categories
+id: taxonomy_term.hazmap_categories.status
+field_name: status
+entity_type: taxonomy_term
+bundle: hazmap_categories
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

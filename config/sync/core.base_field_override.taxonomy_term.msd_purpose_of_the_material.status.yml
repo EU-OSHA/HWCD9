@@ -1,0 +1,22 @@
+uuid: 083b3755-1e62-4342-8ea2-15e3f0bf4e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_purpose_of_the_material
+id: taxonomy_term.msd_purpose_of_the_material.status
+field_name: status
+entity_type: taxonomy_term
+bundle: msd_purpose_of_the_material
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

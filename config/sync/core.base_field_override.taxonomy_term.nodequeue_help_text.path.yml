@@ -1,0 +1,20 @@
+uuid: 25fe6d71-a8b6-4fad-9431-d729d3483123
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nodequeue_help_text
+  module:
+    - path
+id: taxonomy_term.nodequeue_help_text.path
+field_name: path
+entity_type: taxonomy_term
+bundle: nodequeue_help_text
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

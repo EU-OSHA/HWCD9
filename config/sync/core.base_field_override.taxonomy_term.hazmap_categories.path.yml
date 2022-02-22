@@ -1,0 +1,20 @@
+uuid: 13617516-9588-48a7-88dd-4fa949310b69
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hazmap_categories
+  module:
+    - path
+id: taxonomy_term.hazmap_categories.path
+field_name: path
+entity_type: taxonomy_term
+bundle: hazmap_categories
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

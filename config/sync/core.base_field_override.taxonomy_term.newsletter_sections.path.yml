@@ -1,0 +1,20 @@
+uuid: bddac033-8387-4c3e-9f56-744568d45954
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.newsletter_sections
+  module:
+    - path
+id: taxonomy_term.newsletter_sections.path
+field_name: path
+entity_type: taxonomy_term
+bundle: newsletter_sections
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

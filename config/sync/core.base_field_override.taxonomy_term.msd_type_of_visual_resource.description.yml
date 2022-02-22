@@ -1,0 +1,20 @@
+uuid: b8a3f68b-7ec5-401d-901b-2b324db74506
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_type_of_visual_resource
+  module:
+    - text
+id: taxonomy_term.msd_type_of_visual_resource.description
+field_name: description
+entity_type: taxonomy_term
+bundle: msd_type_of_visual_resource
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

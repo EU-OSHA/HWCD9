@@ -1,0 +1,18 @@
+uuid: 2d4f849c-b721-438d-9039-f243e7dadf03
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_target_audience
+id: taxonomy_term.msd_target_audience.name
+field_name: name
+entity_type: taxonomy_term
+bundle: msd_target_audience
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 3f6df156-4c3e-4784-bc27-916003c172d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.practical_tool_types
+id: taxonomy_term.practical_tool_types.name
+field_name: name
+entity_type: taxonomy_term
+bundle: practical_tool_types
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

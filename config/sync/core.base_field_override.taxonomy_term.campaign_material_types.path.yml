@@ -1,0 +1,20 @@
+uuid: e05f25ae-52d4-4810-9d72-d87fe2f0d988
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.campaign_material_types
+  module:
+    - path
+id: taxonomy_term.campaign_material_types.path
+field_name: path
+entity_type: taxonomy_term
+bundle: campaign_material_types
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

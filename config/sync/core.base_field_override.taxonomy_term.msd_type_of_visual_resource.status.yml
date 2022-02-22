@@ -1,0 +1,22 @@
+uuid: 7a678d42-521d-4bf7-8fac-37f1d90e6d6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_type_of_visual_resource
+id: taxonomy_term.msd_type_of_visual_resource.status
+field_name: status
+entity_type: taxonomy_term
+bundle: msd_type_of_visual_resource
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

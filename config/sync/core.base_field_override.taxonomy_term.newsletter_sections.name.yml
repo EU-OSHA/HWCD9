@@ -1,0 +1,18 @@
+uuid: 110df298-a2a3-4b86-978d-194bc9045be6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.newsletter_sections
+id: taxonomy_term.newsletter_sections.name
+field_name: name
+entity_type: taxonomy_term
+bundle: newsletter_sections
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

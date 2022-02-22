@@ -1,0 +1,18 @@
+uuid: 10f4d5f7-a1c2-4a89-aa0c-7562e2123ff4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chemical_and_biological_hazards_
+id: taxonomy_term.chemical_and_biological_hazards_.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: chemical_and_biological_hazards_
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: d741162c-7d0e-4cb1-ad64-3d725a0fbefe
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.hashtag_terms
+  module:
+    - path
+id: taxonomy_term.hashtag_terms.path
+field_name: path
+entity_type: taxonomy_term
+bundle: hashtag_terms
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

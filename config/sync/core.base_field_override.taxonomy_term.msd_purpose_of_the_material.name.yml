@@ -1,0 +1,18 @@
+uuid: b262b889-832b-47d7-8425-f030d496218d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_purpose_of_the_material
+id: taxonomy_term.msd_purpose_of_the_material.name
+field_name: name
+entity_type: taxonomy_term
+bundle: msd_purpose_of_the_material
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: 334e3b1a-4633-4154-953f-d97a63bd62cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.proposal_for_target_groups
+id: taxonomy_term.proposal_for_target_groups.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: proposal_for_target_groups
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,20 @@
+uuid: f77d4582-90fe-4aa6-8c50-c6a5bf2b1d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_health_effects
+  module:
+    - text
+id: taxonomy_term.msd_health_effects.description
+field_name: description
+entity_type: taxonomy_term
+bundle: msd_health_effects
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

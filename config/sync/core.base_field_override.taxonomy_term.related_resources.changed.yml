@@ -1,0 +1,18 @@
+uuid: 37f7603c-2803-4bd4-9278-22a07cb2fce3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.related_resources
+id: taxonomy_term.related_resources.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: related_resources
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

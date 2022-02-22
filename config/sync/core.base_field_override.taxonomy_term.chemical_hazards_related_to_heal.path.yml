@@ -1,0 +1,20 @@
+uuid: 6893f4b9-1bb3-4ec9-8e73-0ec036bdff32
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chemical_hazards_related_to_heal
+  module:
+    - path
+id: taxonomy_term.chemical_hazards_related_to_heal.path
+field_name: path
+entity_type: taxonomy_term
+bundle: chemical_hazards_related_to_heal
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

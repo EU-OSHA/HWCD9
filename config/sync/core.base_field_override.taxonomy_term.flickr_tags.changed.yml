@@ -1,0 +1,18 @@
+uuid: b99adcbd-2436-4151-baaa-8e681ca675c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.flickr_tags
+id: taxonomy_term.flickr_tags.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: flickr_tags
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

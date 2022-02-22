@@ -1,0 +1,20 @@
+uuid: 22723713-7b9f-4a5c-b168-555031033bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_worker_groups_covered
+  module:
+    - path
+id: taxonomy_term.msd_worker_groups_covered.path
+field_name: path
+entity_type: taxonomy_term
+bundle: msd_worker_groups_covered
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

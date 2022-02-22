@@ -62,7 +62,7 @@ process:
   content_translation_source: source
   content_translation_outdated: translate
 destination:
-  default_bundle: pa_highlights
+  default_bundle: news
   plugin: 'entity:node'
   translations: true
   destination_module: content_translation

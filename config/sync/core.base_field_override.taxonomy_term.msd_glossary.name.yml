@@ -1,0 +1,18 @@
+uuid: 82c10cf3-16bf-417b-9466-b7aa2a34f310
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_glossary
+id: taxonomy_term.msd_glossary.name
+field_name: name
+entity_type: taxonomy_term
+bundle: msd_glossary
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

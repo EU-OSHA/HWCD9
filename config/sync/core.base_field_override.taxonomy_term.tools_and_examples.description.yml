@@ -1,0 +1,20 @@
+uuid: 6a8611c0-78b9-4060-9866-fff0128e2a3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tools_and_examples
+  module:
+    - text
+id: taxonomy_term.tools_and_examples.description
+field_name: description
+entity_type: taxonomy_term
+bundle: tools_and_examples
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

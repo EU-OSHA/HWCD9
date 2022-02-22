@@ -1,0 +1,18 @@
+uuid: fa243a71-a4ba-4544-85c7-b720247bc596
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_worker_groups_covered
+id: taxonomy_term.msd_worker_groups_covered.name
+field_name: name
+entity_type: taxonomy_term
+bundle: msd_worker_groups_covered
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

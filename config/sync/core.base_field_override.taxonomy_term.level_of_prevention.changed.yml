@@ -1,0 +1,18 @@
+uuid: e8946abf-fc4b-4c23-97a9-ffdab8c6e470
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.level_of_prevention
+id: taxonomy_term.level_of_prevention.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: level_of_prevention
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed
