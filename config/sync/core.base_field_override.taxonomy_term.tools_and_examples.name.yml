@@ -1,0 +1,18 @@
+uuid: 214e3e54-9b05-4a1a-b658-99c1e5edbe6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tools_and_examples
+id: taxonomy_term.tools_and_examples.name
+field_name: name
+entity_type: taxonomy_term
+bundle: tools_and_examples
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

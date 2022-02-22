@@ -1,0 +1,18 @@
+uuid: f5142725-a523-41ea-89ef-333f29e88c3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.flickr_tags
+id: taxonomy_term.flickr_tags.name
+field_name: name
+entity_type: taxonomy_term
+bundle: flickr_tags
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

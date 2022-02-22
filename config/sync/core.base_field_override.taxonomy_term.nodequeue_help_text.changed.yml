@@ -1,0 +1,18 @@
+uuid: 70f1ed94-7740-4bec-95b5-e7a620a2f7c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nodequeue_help_text
+id: taxonomy_term.nodequeue_help_text.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: nodequeue_help_text
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: bc3bc3ff-75da-4197-80f3-1bef680e9a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chemical_hazards_related_to_heal
+id: taxonomy_term.chemical_hazards_related_to_heal.name
+field_name: name
+entity_type: taxonomy_term
+bundle: chemical_hazards_related_to_heal
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

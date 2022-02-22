@@ -1,0 +1,18 @@
+uuid: 88d9a37d-c269-4783-9913-75df2472d89a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.related_resources
+id: taxonomy_term.related_resources.name
+field_name: name
+entity_type: taxonomy_term
+bundle: related_resources
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

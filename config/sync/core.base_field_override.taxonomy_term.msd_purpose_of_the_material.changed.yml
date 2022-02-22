@@ -1,0 +1,18 @@
+uuid: 42f61909-c36f-40c3-a688-f0b6d2334652
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_purpose_of_the_material
+id: taxonomy_term.msd_purpose_of_the_material.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: msd_purpose_of_the_material
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

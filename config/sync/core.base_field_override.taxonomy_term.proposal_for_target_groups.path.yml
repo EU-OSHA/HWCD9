@@ -1,0 +1,20 @@
+uuid: 45509434-edc5-4580-bc65-c22317ef0083
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.proposal_for_target_groups
+  module:
+    - path
+id: taxonomy_term.proposal_for_target_groups.path
+field_name: path
+entity_type: taxonomy_term
+bundle: proposal_for_target_groups
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

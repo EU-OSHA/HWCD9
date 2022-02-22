@@ -1,0 +1,19 @@
+uuid: 4850185e-5329-49de-87cc-10abdcf22d84
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_pinterest_profile
+field_name: field_pinterest_profile
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+uuid: 2b5821df-cab7-4e3a-b2d6-4c2fc46c144f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.contact_type_of_sender
+id: taxonomy_term.contact_type_of_sender.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: contact_type_of_sender
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

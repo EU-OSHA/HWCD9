@@ -1,0 +1,18 @@
+uuid: d32169b8-1b84-4364-90d0-bedfbeb18186
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.biological_hazard
+id: taxonomy_term.biological_hazard.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: biological_hazard
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

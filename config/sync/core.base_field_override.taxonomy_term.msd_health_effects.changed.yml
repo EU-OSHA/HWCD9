@@ -1,0 +1,18 @@
+uuid: dd2ca005-2197-4d8f-805d-2fa1b2c6b7e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_health_effects
+id: taxonomy_term.msd_health_effects.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: msd_health_effects
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: 7209bd2e-d98f-4782-9626-885cb9b143bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_hazards
+  module:
+    - path
+id: taxonomy_term.msd_hazards.path
+field_name: path
+entity_type: taxonomy_term
+bundle: msd_hazards
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

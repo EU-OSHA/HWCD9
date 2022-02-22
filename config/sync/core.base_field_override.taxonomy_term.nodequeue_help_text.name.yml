@@ -1,0 +1,18 @@
+uuid: c2e70ac4-888e-4ed4-a8c5-a243e8007d6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nodequeue_help_text
+id: taxonomy_term.nodequeue_help_text.name
+field_name: name
+entity_type: taxonomy_term
+bundle: nodequeue_help_text
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

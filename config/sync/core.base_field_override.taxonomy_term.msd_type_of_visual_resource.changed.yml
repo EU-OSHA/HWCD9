@@ -1,0 +1,18 @@
+uuid: c7cdc8aa-2b4b-4332-91ee-4f30da1ab76b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_type_of_visual_resource
+id: taxonomy_term.msd_type_of_visual_resource.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: msd_type_of_visual_resource
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

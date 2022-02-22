@@ -1,0 +1,18 @@
+uuid: 706c2b94-cc44-4c71-8c5c-cdbe59567301
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_hazards
+id: taxonomy_term.msd_hazards.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: msd_hazards
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,20 @@
+uuid: dff4b6cd-2c12-4f1a-89c0-f712c4bbb659
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.chemical_and_biological_hazards_
+  module:
+    - text
+id: taxonomy_term.chemical_and_biological_hazards_.description
+field_name: description
+entity_type: taxonomy_term
+bundle: chemical_and_biological_hazards_
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

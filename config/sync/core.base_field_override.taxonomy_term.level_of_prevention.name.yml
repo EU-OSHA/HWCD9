@@ -1,0 +1,18 @@
+uuid: 785073f9-4d46-4f02-b2fb-44bf84e6607e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.level_of_prevention
+id: taxonomy_term.level_of_prevention.name
+field_name: name
+entity_type: taxonomy_term
+bundle: level_of_prevention
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

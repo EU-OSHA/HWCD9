@@ -1,0 +1,22 @@
+uuid: a3900a71-01c4-47c0-a11b-f923a15ea461
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.level_of_prevention
+id: taxonomy_term.level_of_prevention.status
+field_name: status
+entity_type: taxonomy_term
+bundle: level_of_prevention
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

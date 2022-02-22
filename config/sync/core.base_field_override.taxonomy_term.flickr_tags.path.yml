@@ -1,0 +1,20 @@
+uuid: b38496cf-0730-4534-bfd9-9f8f77f36f32
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.flickr_tags
+  module:
+    - path
+id: taxonomy_term.flickr_tags.path
+field_name: path
+entity_type: taxonomy_term
+bundle: flickr_tags
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

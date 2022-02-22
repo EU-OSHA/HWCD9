@@ -1,0 +1,46 @@
+uuid: 7f089975-8a0e-4eec-a023-17791784c151
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - hwc_import_export
+id: hwc_add_slideshare
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: ncw_import_node_add_slideshare
+label: 'Add SlideShare'
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: hwc_additional_json
+  include_raw_data: true
+  urls: ncw
+  content_type: add_slideshare
+  ids:
+    nid:
+      type: integer
+  item_selector: items/
+  constants:
+    lang: en
+    file_source: 'https://osha.europa.eu/sites/default/files'
+    file_dest: 'public://hwc/news'
+  fields:
+    -
+      name: nid
+      label: Nid
+      selector: item/nid
+    -
+      name: resources
+      label: Resources
+      selector: item/resources
+process:
+  nid: nid
+  langcode: constants/lang
+  field_aditional_resources: resources
+destination:
+  default_bundle: news
+  plugin: 'entity:node'
+migration_dependencies: {  }

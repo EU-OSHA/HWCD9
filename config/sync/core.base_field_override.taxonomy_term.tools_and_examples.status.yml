@@ -1,0 +1,22 @@
+uuid: 22abb709-0fde-48b7-b642-67aa2de296d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tools_and_examples
+id: taxonomy_term.tools_and_examples.status
+field_name: status
+entity_type: taxonomy_term
+bundle: tools_and_examples
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

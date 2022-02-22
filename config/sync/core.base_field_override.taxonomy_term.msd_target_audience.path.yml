@@ -1,0 +1,20 @@
+uuid: 4b7b75b8-666b-4e3b-880c-dcc848841ed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_target_audience
+  module:
+    - path
+id: taxonomy_term.msd_target_audience.path
+field_name: path
+entity_type: taxonomy_term
+bundle: msd_target_audience
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

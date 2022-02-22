@@ -1,0 +1,20 @@
+uuid: 3e04494a-40b9-46a7-a94b-260c7ee18615
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_purpose_of_the_material
+  module:
+    - path
+id: taxonomy_term.msd_purpose_of_the_material.path
+field_name: path
+entity_type: taxonomy_term
+bundle: msd_purpose_of_the_material
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

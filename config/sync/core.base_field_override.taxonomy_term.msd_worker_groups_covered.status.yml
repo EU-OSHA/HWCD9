@@ -1,0 +1,22 @@
+uuid: 8fcd4d71-924f-4746-883d-e4dc67fa2aa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_worker_groups_covered
+id: taxonomy_term.msd_worker_groups_covered.status
+field_name: status
+entity_type: taxonomy_term
+bundle: msd_worker_groups_covered
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

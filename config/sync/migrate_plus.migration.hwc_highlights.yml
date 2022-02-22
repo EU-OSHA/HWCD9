@@ -155,6 +155,6 @@ process:
       plugin: default_value
       default_value: '@media'
 destination:
-  default_bundle: pa_highlights
+  default_bundle: news
   plugin: 'entity:node'
 migration_dependencies: {  }

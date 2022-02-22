@@ -1,0 +1,22 @@
+uuid: 7b47c836-8089-4792-b1da-7c863fef2e2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_target_audience
+id: taxonomy_term.msd_target_audience.status
+field_name: status
+entity_type: taxonomy_term
+bundle: msd_target_audience
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

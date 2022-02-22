@@ -1,0 +1,22 @@
+uuid: 1a30df46-cc50-4fbb-a643-152332c20284
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organisation_type
+id: taxonomy_term.organisation_type.status
+field_name: status
+entity_type: taxonomy_term
+bundle: organisation_type
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
