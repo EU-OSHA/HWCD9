@@ -1,0 +1,8 @@
+uuid: e5273d54-23af-4bf0-9aa5-44525cb71069
+langcode: en
+status: true
+dependencies: {  }
+name: 'MSD Hazards'
+vid: msd_hazards
+description: ''
+weight: 0

@@ -1,0 +1,39 @@
+uuid: 0c71c476-681b-4bd4-a0bd-cba69e031ea5
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_newsletter_template
+field_name: field_newsletter_template
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Teaser (full width)'
+      label: 'Teaser (full width)'
+    -
+      value: 'Summary (full width)'
+      label: 'Summary (full width)'
+    -
+      value: 'Summary (half width)'
+      label: 'Summary (half width)'
+    -
+      value: 'HWC (full width)'
+      label: 'HWC (full width)'
+    -
+      value: 'Events (2 columns)'
+      label: 'Events (2 columns)'
+    -
+      value: 'Tweets (2 columns)'
+      label: 'Tweets (2 columns)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

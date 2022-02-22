@@ -1,0 +1,11 @@
+uuid: 54891f1e-07c3-4be1-b9ac-881f010314cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_worker_groups_covered
+id: taxonomy_term.msd_worker_groups_covered
+target_entity_type_id: taxonomy_term
+target_bundle: msd_worker_groups_covered
+default_langcode: site_default
+language_alterable: false

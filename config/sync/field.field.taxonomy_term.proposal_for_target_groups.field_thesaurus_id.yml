@@ -1,0 +1,19 @@
+uuid: 2991b7c6-e26e-49e8-9e3c-5806d22f103a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_thesaurus_id
+    - taxonomy.vocabulary.proposal_for_target_groups
+id: taxonomy_term.proposal_for_target_groups.field_thesaurus_id
+field_name: field_thesaurus_id
+entity_type: taxonomy_term
+bundle: proposal_for_target_groups
+label: 'Thesaurus code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

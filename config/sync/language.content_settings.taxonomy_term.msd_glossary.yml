@@ -1,0 +1,11 @@
+uuid: 6d98c4a5-c980-472f-b616-6486eccaf440
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_glossary
+id: taxonomy_term.msd_glossary
+target_entity_type_id: taxonomy_term
+target_bundle: msd_glossary
+default_langcode: site_default
+language_alterable: false

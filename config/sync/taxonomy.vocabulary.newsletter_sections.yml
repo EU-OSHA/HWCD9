@@ -1,0 +1,8 @@
+uuid: 6f87e4af-64fd-497f-afad-16872139b850
+langcode: en
+status: true
+dependencies: {  }
+name: 'Newsletter sections'
+vid: newsletter_sections
+description: ''
+weight: 0

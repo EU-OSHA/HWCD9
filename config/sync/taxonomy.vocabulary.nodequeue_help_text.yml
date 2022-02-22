@@ -1,0 +1,8 @@
+uuid: 6bc0e108-ecdb-40e4-969e-749725b49819
+langcode: en
+status: true
+dependencies: {  }
+name: 'Nodequeue help text'
+vid: nodequeue_help_text
+description: ''
+weight: 0

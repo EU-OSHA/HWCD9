@@ -1,0 +1,8 @@
+uuid: a2c55cf1-a9fd-4cf5-9e1d-ad56ad1e4cd3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Flickr tags'
+vid: flickr_tags
+description: 'Grab Flickr photos with these tags only. Comma separated.'
+weight: 0

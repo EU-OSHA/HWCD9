@@ -1,0 +1,8 @@
+uuid: cfa8dec7-b9dd-4c85-8eee-5287cff38d66
+langcode: en
+status: true
+dependencies: {  }
+name: 'MSD Target audience'
+vid: msd_target_audience
+description: 'Target audience'
+weight: 0

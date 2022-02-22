@@ -1,9 +1,0 @@
-uuid: 62391626-46c6-4a7b-bad0-cc0257fc0025
-langcode: en
-status: true
-dependencies: {  }
-id: pl
-label: Polish
-direction: ltr
-weight: 9
-locked: false

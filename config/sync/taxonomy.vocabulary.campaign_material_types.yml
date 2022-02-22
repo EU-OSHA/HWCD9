@@ -1,0 +1,8 @@
+uuid: 6df740df-5f57-46b2-a8f3-2b45dde72151
+langcode: en
+status: true
+dependencies: {  }
+name: 'Campaign Material Types'
+vid: campaign_material_types
+description: 'Campaign Material Types'
+weight: 0

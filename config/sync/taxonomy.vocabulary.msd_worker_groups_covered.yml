@@ -1,0 +1,8 @@
+uuid: 8d7b280f-87de-46f5-b47e-220f1baa78f9
+langcode: en
+status: true
+dependencies: {  }
+name: 'MSD Worker groups covered'
+vid: msd_worker_groups_covered
+description: ''
+weight: 0

@@ -1,0 +1,49 @@
+uuid: 0d479774-48df-4491-bfde-39b9f5bff3fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.level_of_prevention.field_prevention_level
+    - field.field.taxonomy_term.level_of_prevention.field_prevention_measures_code
+    - field.field.taxonomy_term.level_of_prevention.field_thesaurus_id
+    - taxonomy.vocabulary.level_of_prevention
+  module:
+    - text
+id: taxonomy_term.level_of_prevention.default
+targetEntityType: taxonomy_term
+bundle: level_of_prevention
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_prevention_level:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_prevention_measures_code:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_thesaurus_id:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

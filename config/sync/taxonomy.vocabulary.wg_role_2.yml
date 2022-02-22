@@ -1,0 +1,8 @@
+uuid: 1f820344-2687-458a-8312-3446633c023c
+langcode: en
+status: true
+dependencies: {  }
+name: 'WG Role 2'
+vid: wg_role_2
+description: ''
+weight: 0

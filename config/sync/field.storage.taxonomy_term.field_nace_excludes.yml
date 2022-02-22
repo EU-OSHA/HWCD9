@@ -1,0 +1,19 @@
+uuid: 514132df-cb81-4c5f-93c5-da1442703ca8
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_nace_excludes
+field_name: field_nace_excludes
+entity_type: taxonomy_term
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

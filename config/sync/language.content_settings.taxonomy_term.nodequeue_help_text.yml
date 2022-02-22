@@ -1,0 +1,11 @@
+uuid: 64135f2c-6eb1-4409-bf09-5050c4301ad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.nodequeue_help_text
+id: taxonomy_term.nodequeue_help_text
+target_entity_type_id: taxonomy_term
+target_bundle: nodequeue_help_text
+default_langcode: site_default
+language_alterable: false

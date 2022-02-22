@@ -1,0 +1,78 @@
+uuid: 23d6f040-1bd2-43e4-9ad3-bd98f4d8c11e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.level_of_prevention.field_prevention_level
+    - field.field.taxonomy_term.level_of_prevention.field_prevention_measures_code
+    - field.field.taxonomy_term.level_of_prevention.field_thesaurus_id
+    - taxonomy.vocabulary.level_of_prevention
+  module:
+    - path
+    - text
+id: taxonomy_term.level_of_prevention.default
+targetEntityType: taxonomy_term
+bundle: level_of_prevention
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_prevention_level:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_prevention_measures_code:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_thesaurus_id:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+hidden: {  }
