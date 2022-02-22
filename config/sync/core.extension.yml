@@ -53,6 +53,7 @@ module:
   migrate_tools: 0
   node: 0
   node_export: 0
+  oira_import_export: 0
   options: 0
   page_cache: 0
   path: 0
