@@ -1,0 +1,29 @@
+uuid: 3a844420-c2b4-4708-8a62-3075c40326fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bussines_sector
+    - node.type.partner
+    - taxonomy.vocabulary.business_sector
+id: node.partner.field_bussines_sector
+field_name: field_bussines_sector
+entity_type: node
+bundle: partner
+label: 'Bussines sector'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      business_sector: business_sector
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

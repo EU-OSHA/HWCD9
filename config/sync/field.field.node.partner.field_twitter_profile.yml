@@ -1,0 +1,23 @@
+uuid: 52016f1d-3aa3-495b-ac9f-e465db3108d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter_profile
+    - node.type.partner
+  module:
+    - link
+id: node.partner.field_twitter_profile
+field_name: field_twitter_profile
+entity_type: node
+bundle: partner
+label: 'Twitter profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link
