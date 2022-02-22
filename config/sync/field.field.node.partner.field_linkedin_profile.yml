@@ -1,0 +1,23 @@
+uuid: 76156846-f018-4010-a1a2-14be0db0e68d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_linkedin_profile
+    - node.type.partner
+  module:
+    - link
+id: node.partner.field_linkedin_profile
+field_name: field_linkedin_profile
+entity_type: node
+bundle: partner
+label: 'Linkedin profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

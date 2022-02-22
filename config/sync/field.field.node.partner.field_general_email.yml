@@ -1,0 +1,19 @@
+uuid: bb61d7e3-0951-4e5c-8a5b-c132dd6f1704
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_general_email
+    - node.type.partner
+id: node.partner.field_general_email
+field_name: field_general_email
+entity_type: node
+bundle: partner
+label: 'General email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
