@@ -1,0 +1,11 @@
+uuid: bfa468b7-9699-4a73-a853-e8f7b9f50d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_type_of_visual_resource
+id: taxonomy_term.msd_type_of_visual_resource
+target_entity_type_id: taxonomy_term
+target_bundle: msd_type_of_visual_resource
+default_langcode: site_default
+language_alterable: false

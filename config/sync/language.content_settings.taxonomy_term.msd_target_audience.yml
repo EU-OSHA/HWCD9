@@ -1,0 +1,11 @@
+uuid: 184c6bb5-6ce4-453c-8ceb-ffcb1a1a8937
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.msd_target_audience
+id: taxonomy_term.msd_target_audience
+target_entity_type_id: taxonomy_term
+target_bundle: msd_target_audience
+default_langcode: site_default
+language_alterable: false

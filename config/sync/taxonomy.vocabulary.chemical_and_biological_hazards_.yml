@@ -1,0 +1,8 @@
+uuid: c41ae320-bbea-4883-8791-af69f50e6031
+langcode: en
+status: true
+dependencies: {  }
+name: 'Chemical and biological hazards related to state and occurrence in the workplace'
+vid: chemical_and_biological_hazards_
+description: ''
+weight: 0

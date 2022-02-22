@@ -1,0 +1,11 @@
+uuid: cbf62f14-4748-46eb-b61c-7c6c8c229954
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.level_of_prevention
+id: taxonomy_term.level_of_prevention
+target_entity_type_id: taxonomy_term
+target_bundle: level_of_prevention
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: 1cd426b6-d5bd-4320-9d90-44abef5f3f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_nace_changes
+    - taxonomy.vocabulary.nace_codes
+id: taxonomy_term.nace_codes.field_nace_changes
+field_name: field_nace_changes
+entity_type: taxonomy_term
+bundle: nace_codes
+label: Changes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

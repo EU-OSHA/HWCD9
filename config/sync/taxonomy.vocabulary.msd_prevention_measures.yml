@@ -1,0 +1,8 @@
+uuid: ec5e4519-9608-4143-9bf2-c464f2a2c351
+langcode: en
+status: true
+dependencies: {  }
+name: 'MSD Prevention measures'
+vid: msd_prevention_measures
+description: ''
+weight: 0

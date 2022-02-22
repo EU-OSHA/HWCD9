@@ -1,0 +1,29 @@
+uuid: 118e7354-8e35-48df-b46c-fed845d64b52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icon
+    - media.type.image
+    - taxonomy.vocabulary.related_resources
+id: taxonomy_term.related_resources.field_icon
+field_name: field_icon
+entity_type: taxonomy_term
+bundle: related_resources
+label: 'Section icon'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

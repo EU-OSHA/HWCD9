@@ -1,0 +1,31 @@
+uuid: 1827677f-9b54-40ed-9f8a-5494d20ab1e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nodequeue_help_text.field_nodequeue
+    - taxonomy.vocabulary.nodequeue_help_text
+  module:
+    - options
+    - text
+id: taxonomy_term.nodequeue_help_text.default
+targetEntityType: taxonomy_term
+bundle: nodequeue_help_text
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nodequeue:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: faa61e47-ddce-4862-b6f5-1d59c42367f6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Related resources'
+vid: related_resources
+description: ''
+weight: 0

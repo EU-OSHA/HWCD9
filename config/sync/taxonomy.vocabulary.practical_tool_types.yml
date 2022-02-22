@@ -1,0 +1,8 @@
+uuid: edc6d42a-96fa-4ebc-99c1-ef9437419bf3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Practical tool types'
+vid: practical_tool_types
+description: ''
+weight: 0

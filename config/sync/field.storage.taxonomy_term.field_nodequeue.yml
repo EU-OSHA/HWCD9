@@ -1,0 +1,96 @@
+uuid: e3ffdf17-0eeb-472b-bac0-27a7a9302785
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_nodequeue
+field_name: field_nodequeue
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Case studies Slideshow'
+      label: 'Case studies Slideshow'
+    -
+      value: 'European Week events'
+      label: 'European Week events'
+    -
+      value: 'European Week news'
+      label: 'European Week news'
+    -
+      value: featured_gallery
+      label: featured_gallery
+    -
+      value: 'Featured Partner Frontpage'
+      label: 'Featured Partner Frontpage'
+    -
+      value: 'Featured Press Release'
+      label: 'Featured Press Release'
+    -
+      value: 'Good Practice Examples'
+      label: 'Good Practice Examples'
+    -
+      value: 'Good Practice Exchange news'
+      label: 'Good Practice Exchange news'
+    -
+      value: 'Good Practice Exchange events'
+      label: 'Good Practice Exchange events'
+    -
+      value: 'Good practice exchange intro'
+      label: 'Good practice exchange intro'
+    -
+      value: 'Homepage about the topic'
+      label: 'Homepage about the topic'
+    -
+      value: 'Homepage banners'
+      label: 'Homepage banners'
+    -
+      value: 'Homepage events'
+      label: 'Homepage events'
+    -
+      value: 'Homepage news'
+      label: 'Homepage news'
+    -
+      value: 'Homepage Recommended tools and resources'
+      label: 'Homepage Recommended tools and resources'
+    -
+      value: 'Most Popular Tools and Examples'
+      label: 'Most Popular Tools and Examples'
+    -
+      value: 'Press contacts'
+      label: 'Press contacts'
+    -
+      value: 'Press room events'
+      label: 'Press room events'
+    -
+      value: 'Press room news'
+      label: 'Press room news'
+    -
+      value: 'Publication Slideshow'
+      label: 'Publication Slideshow'
+    -
+      value: 'Splash banners'
+      label: 'Splash banners'
+    -
+      value: 'Splash campaign material'
+      label: 'Splash campaign material'
+    -
+      value: 'Splash events'
+      label: 'Splash events'
+    -
+      value: 'Splash news'
+      label: 'Splash news'
+    -
+      value: 'Tools and Examples'
+      label: 'Tools and Examples'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

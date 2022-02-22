@@ -1,0 +1,11 @@
+uuid: 1bc37fb8-5c5d-411d-98a1-f9c6c812937a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.campaign_material_types
+id: taxonomy_term.campaign_material_types
+target_entity_type_id: taxonomy_term
+target_bundle: campaign_material_types
+default_langcode: site_default
+language_alterable: false
