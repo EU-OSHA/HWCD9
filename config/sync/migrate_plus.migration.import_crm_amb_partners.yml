@@ -1,10 +1,12 @@
-uuid: 2fb9a708-34cb-4595-8161-674252491cd1
+uuid: 54a31045-2da6-4586-aec3-7c8e100ccf51
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - hwc_crm_partners_migration
+_core:
+  default_config_hash: IFTcm6jqPT0W3fxGaaX1pb8wEoXEkNmTmOlNnwPyBlg
 id: import_crm_amb_partners
 class: null
 field_plugin_method: null
@@ -252,31 +254,31 @@ process:
   field_position_main_contact: field_position_main_contact
   field_orgtype:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_orgtype
       vocabulary: organisation_type
       create: true
   field_bussines_sector:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_bussines_sector
       vocabulary: business_sector
       create: true
   field_partner_type:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_partner_type
       vocabulary: partner_types
       create: true
   field_country:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_country
       vocabulary: country
       create: true
   field_workbench_access:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_workbench_access
       vocabulary: section
       create: true

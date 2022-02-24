@@ -1,10 +1,12 @@
-uuid: b8b64ec5-f1ac-4ae0-96e4-260ed10b2f6c
+uuid: e25b76d1-6443-4c80-9a67-39711ea1fb6d
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - hwc_crm_partners_migration
+_core:
+  default_config_hash: SE6STU9jNetI1Luaj5-cn3-awWXBk7Z3GRGUZW1ZE9g
 id: hwc_crm_partners_migration
 label: 'CRM Partners Migration'
 description: 'Migration of partners from CRM'
