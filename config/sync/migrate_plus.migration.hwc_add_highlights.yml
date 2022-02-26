@@ -37,7 +37,11 @@ source:
       label: Resources
       selector: item/resources
 process:
-  nid: nid
+  nid:
+    -
+      plugin: migration_lookup
+      source: nid
+      migration: hwc_news
   langcode: constants/lang
   field_twin_infographics: resources
 destination:

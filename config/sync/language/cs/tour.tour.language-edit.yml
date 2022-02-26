@@ -1,9 +1,0 @@
-tips:
-  language-edit-langcode:
-    label: 'Language code'
-  language-edit-label:
-    label: 'Language name'
-  language-edit-direction:
-    label: 'Language direction'
-  language-edit-continue:
-    label: 'Continuing on'

@@ -1,4 +1,4 @@
-uuid: 64f5211e-a561-4661-87c7-08d9dad6ec50
+uuid: 466bafc2-d840-477c-8958-967ec9e258c0
 langcode: en
 status: true
 dependencies:
@@ -255,31 +255,31 @@ process:
   field_position_main_contact: field_position_main_contact
   field_orgtype:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_orgtype
       vocabulary: organisation_type
       create: true
   field_bussines_sector:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_bussines_sector
       vocabulary: business_sector
       create: true
   field_partner_type:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_partner_type
       vocabulary: partner_types
       create: true
   field_country:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_country
       vocabulary: country
       create: true
   field_workbench_access:
     -
-      plugin: oie_taxonomy_term_name
+      plugin: hwc_crm_taxonomy_term_name
       source: field_workbench_access
       vocabulary: section
       create: true
