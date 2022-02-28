@@ -1,0 +1,14 @@
+uuid: 69c75e92-974e-44c0-b8a9-4095ce353564
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.layout_validator
+  module:
+    - user
+id: user_remove_role_action.layout_validator
+label: 'Remove the Layout Validator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: layout_validator

@@ -1,0 +1,14 @@
+uuid: 4fbce79c-caba-4dde-a0a7-103c6f03c139
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.eu_osha_een_reviewers
+  module:
+    - user
+id: user_add_role_action.eu_osha_een_reviewers
+label: 'Add the EU-OSHA EEN Reviewers role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: eu_osha_een_reviewers

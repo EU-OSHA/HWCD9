@@ -1,0 +1,14 @@
+uuid: 6ceda3af-4753-4007-81d2-b375ef973a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hwc_staff_reviewers
+  module:
+    - user
+id: user_remove_role_action.hwc_staff_reviewers
+label: 'Remove the HWC Staff - Reviewers role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hwc_staff_reviewers

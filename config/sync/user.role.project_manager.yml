@@ -1,0 +1,15 @@
+uuid: 64836999-798f-4892-a8a2-d0c1a066725a
+langcode: en
+status: true
+dependencies: {  }
+id: project_manager
+label: 'Project Manager'
+weight: 7
+is_admin: null
+permissions:
+  - 'accept job item translation'
+  - 'use manualcrop'
+  - 'use text format audio_visual'
+  - 'use text format filtered_html'
+  - 'view translation job'
+  - 'view translation job item'

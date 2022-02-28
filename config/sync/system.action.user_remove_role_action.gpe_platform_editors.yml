@@ -1,0 +1,14 @@
+uuid: 5766a19c-fe85-416f-b5a7-31584045769b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gpe_platform_editors
+  module:
+    - user
+id: user_remove_role_action.gpe_platform_editors
+label: 'Remove the GPE Platform Editors role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gpe_platform_editors

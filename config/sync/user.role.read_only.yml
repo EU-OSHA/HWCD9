@@ -1,0 +1,14 @@
+uuid: 8de4eb4d-b8b0-4270-954d-baeca0e953aa
+langcode: en
+status: true
+dependencies: {  }
+id: read_only
+label: 'Read only'
+weight: 16
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access toolbar'
+  - 'view all unpublished content'
+  - 'view revisions'
+  - 'view the administration theme'

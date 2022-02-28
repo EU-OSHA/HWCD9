@@ -1,0 +1,20 @@
+uuid: 385c04ca-2dea-41b5-af66-45e030ec17ea
+langcode: en
+status: true
+dependencies: {  }
+id: content_validator
+label: 'Content Validator'
+weight: 6
+is_admin: null
+permissions:
+  - 'abort job item'
+  - 'access toolbar'
+  - 'preview layout validation'
+  - 'use manualcrop'
+  - 'use text format audio_visual'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'view needs content validation list'
+  - 'view the administration theme'
+  - 'view translation job'
+  - 'view translation job item'

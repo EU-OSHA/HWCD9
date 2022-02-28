@@ -1,0 +1,14 @@
+uuid: c86ed6ec-a774-49bb-b708-163c1b54aff6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.website_managers
+  module:
+    - user
+id: user_remove_role_action.website_managers
+label: 'Remove the Website Managers role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: website_managers

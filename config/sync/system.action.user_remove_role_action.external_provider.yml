@@ -1,0 +1,14 @@
+uuid: c2a8ea05-dcca-4409-abd9-7f012bcc8c21
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.external_provider
+  module:
+    - user
+id: user_remove_role_action.external_provider
+label: 'Remove the External Provider role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: external_provider

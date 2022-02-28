@@ -1,0 +1,36 @@
+uuid: 9a8f8f3c-ca4d-44c2-9169-5c7acaf6a380
+langcode: en
+status: true
+dependencies: {  }
+id: layout_validator
+label: 'Layout Validator'
+weight: 5
+is_admin: null
+permissions:
+  - 'abort job item'
+  - 'access toolbar'
+  - 'edit terms in 1'
+  - 'edit terms in 10'
+  - 'edit terms in 11'
+  - 'edit terms in 2'
+  - 'edit terms in 3'
+  - 'edit terms in 4'
+  - 'edit terms in 5'
+  - 'edit terms in 6'
+  - 'edit terms in 7'
+  - 'edit terms in 8'
+  - 'edit terms in 9'
+  - 'osha tmgmt upload translation file'
+  - 'preview layout validation'
+  - 'set job item to translated state'
+  - 'translate admin strings'
+  - 'translate interface'
+  - 'translate user-defined strings'
+  - 'use manualcrop'
+  - 'use text format audio_visual'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'view on translation content list'
+  - 'view the administration theme'
+  - 'view translation job'
+  - 'view translation job item'

@@ -1,0 +1,14 @@
+uuid: 978b116c-89f6-4e67-8d70-394a5129882d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.eu_osha_een_reviewers
+  module:
+    - user
+id: user_remove_role_action.eu_osha_een_reviewers
+label: 'Remove the EU-OSHA EEN Reviewers role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: eu_osha_een_reviewers

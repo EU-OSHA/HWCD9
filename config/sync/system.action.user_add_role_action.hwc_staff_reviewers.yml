@@ -1,0 +1,14 @@
+uuid: 37f46863-482a-44c5-abeb-db428475dc23
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hwc_staff_reviewers
+  module:
+    - user
+id: user_add_role_action.hwc_staff_reviewers
+label: 'Add the HWC Staff - Reviewers role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: hwc_staff_reviewers

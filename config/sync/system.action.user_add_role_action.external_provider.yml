@@ -1,0 +1,14 @@
+uuid: 7e365222-8c5b-4d84-908a-a16400333227
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.external_provider
+  module:
+    - user
+id: user_add_role_action.external_provider
+label: 'Add the External Provider role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: external_provider

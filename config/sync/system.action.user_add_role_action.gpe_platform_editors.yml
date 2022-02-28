@@ -1,0 +1,14 @@
+uuid: 1058f347-a748-4b0e-a00c-c12dd94b20a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gpe_platform_editors
+  module:
+    - user
+id: user_add_role_action.gpe_platform_editors
+label: 'Add the GPE Platform Editors role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gpe_platform_editors
