@@ -1,0 +1,20 @@
+uuid: 73415131-0cbc-43a1-8fb5-4b423d3bff06
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_topic
+id: node.tk_topic.menu_link
+field_name: menu_link
+entity_type: node
+bundle: tk_topic
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

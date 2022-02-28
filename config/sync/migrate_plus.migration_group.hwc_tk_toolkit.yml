@@ -1,0 +1,15 @@
+uuid: bb43786e-8cf9-417d-8497-cff96bfc5755
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - hwc_custom_migrations
+id: hwc_tk_toolkit
+label: 'Migrate TK Toolkit'
+description: 'Migration nodes from D7 to Drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate
