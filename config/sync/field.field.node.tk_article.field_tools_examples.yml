@@ -1,0 +1,29 @@
+uuid: 7fa11591-54b1-4ddd-a45b-4b8546897c57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tools_examples
+    - node.type.tk_article
+    - taxonomy.vocabulary.tools_and_examples
+id: node.tk_article.field_tools_examples
+field_name: field_tools_examples
+entity_type: node
+bundle: tk_article
+label: 'Tools & Examples'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tools_and_examples: tools_and_examples
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

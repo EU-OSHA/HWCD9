@@ -1,0 +1,21 @@
+uuid: 634cbade-cc8d-4c65-9f56-ac21818ed914
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.tk_article
+  module:
+    - datetime
+id: node.tk_article.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: tk_article
+label: 'Publication date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
