@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      fields:
+        subject:
+          label: Subject
+      filters:
+        subject:
+          expose:
+            label: Subject
+  page_unapproved:
+    display_options:
+      filters:
+        subject:
+          expose:
+            label: Subject
+      fields:
+        subject:
+          label: Subject
