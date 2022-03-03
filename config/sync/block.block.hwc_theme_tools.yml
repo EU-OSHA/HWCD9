@@ -1,4 +1,4 @@
-uuid: 54eec1cc-56de-4b3e-8441-39400a527711
+uuid: e368aa96-93c9-4185-9bc9-57c6dec0726d
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
   module:
     - system
   theme:
-    - bartik
+    - hwc_theme
 _core:
   default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
-id: bartik_tools
-theme: bartik
-region: sidebar_first
+id: hwc_theme_tools
+theme: hwc_theme
+region: top_header
 weight: 0
 provider: null
 plugin: 'system_menu_block:tools'

@@ -1,0 +1,22 @@
+uuid: 9ace767e-1e40-425d-9fbe-e3295dcc20ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hwc_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: hwc_theme_breadcrumbs
+theme: hwc_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

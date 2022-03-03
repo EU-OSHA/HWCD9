@@ -1,15 +1,15 @@
-uuid: 5137fbd1-68db-424a-9bb3-5c553b75251d
+uuid: 70b050d5-617c-45d0-b3aa-a208587893d2
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - bartik
+    - bootstrap_barrio_subtheme
 _core:
   default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
-id: bartik_search
-theme: bartik
+id: bootstrap_barrio_subtheme_search
+theme: bootstrap_barrio_subtheme
 region: sidebar_first
 weight: -1
 provider: null

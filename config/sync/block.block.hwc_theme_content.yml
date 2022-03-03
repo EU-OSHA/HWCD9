@@ -1,15 +1,15 @@
-uuid: ce1d99dd-a6a7-4461-84d7-5ef266bcfe5b
+uuid: 64c39220-c95b-438f-b343-86135ea84fb3
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - hwc_theme
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+id: hwc_theme_content
+theme: hwc_theme
 region: content
 weight: 0
 provider: null

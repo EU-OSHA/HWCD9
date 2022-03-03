@@ -6,8 +6,8 @@ core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
 
 libraries:
-  - allages_theme/bootstrap_cdn
-  - allages_theme/global-styling
+  - hwc_theme/bootstrap_cdn
+  - hwc_theme/global-styling
 
 regions:
   top_header: 'Top header'

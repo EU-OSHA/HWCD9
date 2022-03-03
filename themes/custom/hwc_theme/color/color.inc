@@ -115,7 +115,7 @@ $info = [
   ],
 
   // Preview files.
-  'preview_library' => 'allages_theme/color.preview',
+  'preview_library' => 'hwc_theme/color.preview',
   'preview_html' => 'color/preview.html',
 
   // Attachments.
