@@ -67,6 +67,10 @@ source:
 process:
   langcode: constants/lang
   title: title
+  uid:
+    -
+      plugin: hwc_author
+      source: ''
   body/0/value:
     -
       plugin: hwc_body
