@@ -1,0 +1,14 @@
+uuid: 19a8034e-0afc-4d1c-b2d0-b06aecc6de8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.superadministrators
+  module:
+    - user
+id: user_add_role_action.superadministrators
+label: 'Add the Superadministrators role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: superadministrators

@@ -1,0 +1,15 @@
+uuid: c45fc180-0655-4509-85b3-3cbb8c68b99e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - hwc_custom_migrations
+id: hwc_toolkit_example
+label: 'Migrate Toolkit Example'
+description: 'Migration nodes from D7 to Drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate

@@ -1,0 +1,14 @@
+uuid: f519b7f1-5701-4819-82e4-f41d089671c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.website_managers
+  module:
+    - user
+id: user_add_role_action.website_managers
+label: 'Add the Website Managers role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: website_managers

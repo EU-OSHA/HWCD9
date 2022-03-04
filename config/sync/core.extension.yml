@@ -18,8 +18,10 @@ module:
   content_moderation: 0
   content_moderation_notifications: 0
   contextual: 0
+  csv_serialization: 0
   ctools: 0
   datetime: 0
+  datetime_range: 0
   dblog: 0
   devel: 0
   dynamic_page_cache: 0
@@ -34,6 +36,7 @@ module:
   history: 0
   hreflang: 0
   hwc_crm_partners_migration: 0
+  hwc_custom_migrations: 0
   hwc_import_export: 0
   image: 0
   language: 0
@@ -73,9 +76,11 @@ module:
   twig_tweak: 0
   ultimate_cron: 0
   user: 0
+  views_data_export: 0
   views_ui: 0
   workbench_access: 0
   workflows: 0
+  xls_serialization: 0
   pathauto: 1
   xmlsitemap: 1
   content_translation: 10
@@ -83,8 +88,10 @@ module:
   paragraphs: 11
   standard: 1000
 theme:
-  bartik: 0
   seven: 0
+  bootstrap_barrio: 0
+  bootstrap_barrio_subtheme: 0
+  hwc_theme: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

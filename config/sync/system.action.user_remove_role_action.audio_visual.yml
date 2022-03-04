@@ -1,0 +1,14 @@
+uuid: b995cb81-ca9e-4ae2-b84a-972d442f4659
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.audio_visual
+  module:
+    - user
+id: user_remove_role_action.audio_visual
+label: 'Remove the Audio Visual role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: audio_visual

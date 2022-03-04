@@ -1,0 +1,19 @@
+uuid: 2d8bb348-827b-4173-8d37-76d6b4a5a3b3
+langcode: en
+status: true
+dependencies: {  }
+id: gpe_platform_editors
+label: 'GPE Platform Editors'
+weight: 17
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access my private workbench'
+  - 'access workbench access by role'
+  - 'create document content'
+  - 'delete own document content'
+  - 'edit any document content'
+  - 'edit own document content'
+  - 'select content section'
+  - 'use text format filtered_html'
+  - 'view the administration theme'

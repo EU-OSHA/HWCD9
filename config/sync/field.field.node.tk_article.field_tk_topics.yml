@@ -1,0 +1,29 @@
+uuid: b0dadac8-8c9a-479b-85f9-5ac64aa07a50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tk_topics
+    - node.type.tk_article
+    - node.type.tk_topic
+id: node.tk_article.field_tk_topics
+field_name: field_tk_topics
+entity_type: node
+bundle: tk_article
+label: Topics
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tk_topic: tk_topic
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

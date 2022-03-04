@@ -1,0 +1,20 @@
+uuid: 8f7663ac-a9ad-4943-bc53-32d68bd7ba9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_topic
+  module:
+    - path
+id: node.tk_topic.path
+field_name: path
+entity_type: node
+bundle: tk_topic
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

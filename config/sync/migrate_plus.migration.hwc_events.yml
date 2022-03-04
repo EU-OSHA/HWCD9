@@ -178,20 +178,32 @@ process:
       default_value: full_html
   field_type_event: type
   field_organizer: organisation
-  start_date:
+  field_start_date/value:
     -
-      plugin: hwc_start_date
-      source: date
-  field_start_date:
+      plugin: explode
+      source: date/value
+      delimiter: ', '
     -
-      plugin: sub_process
-      source: '@start_date'
-      process:
-        value:
-          plugin: format_date
-          from_format: Y-m-d
-          to_format: 'Y-m-d\TH:i:s'
-          source: value
+      plugin: extract
+      index:
+        - '0'
+    -
+      plugin: format_date
+      from_format: Y-m-d
+      to_format: 'Y-m-d\TH:i:s'
+  field_start_date/end_value:
+    -
+      plugin: explode
+      source: date/value
+      delimiter: ', '
+    -
+      plugin: extract
+      index:
+        - '1'
+    -
+      plugin: format_date
+      from_format: Y-m-d
+      to_format: 'Y-m-d\TH:i:s'
   field_location: location
   field_city: city/value
   field_country_code: country/value

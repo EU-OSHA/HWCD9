@@ -1,0 +1,14 @@
+uuid: 5c5b5b4d-eb70-4bec-bd1e-815f480bf16d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.audio_visual
+  module:
+    - user
+id: user_add_role_action.audio_visual
+label: 'Add the Audio Visual role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: audio_visual

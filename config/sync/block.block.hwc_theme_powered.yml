@@ -1,0 +1,22 @@
+uuid: c084cca7-e07b-4d21-9ef7-c2a3a41f4d8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hwc_theme
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: hwc_theme_powered
+theme: hwc_theme
+region: top_header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

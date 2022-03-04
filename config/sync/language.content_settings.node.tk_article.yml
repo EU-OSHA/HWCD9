@@ -1,0 +1,16 @@
+uuid: f7e46bdc-4cdf-4f2a-95d9-db4772e01261
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_article
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.tk_article
+target_entity_type_id: node
+target_bundle: tk_article
+default_langcode: site_default
+language_alterable: true

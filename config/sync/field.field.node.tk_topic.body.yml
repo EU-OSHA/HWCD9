@@ -1,0 +1,23 @@
+uuid: 1aae6a52-5a03-4c6a-afd4-370af5b6fc54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tk_topic
+  module:
+    - text
+id: node.tk_topic.body
+field_name: body
+entity_type: node
+bundle: tk_topic
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,18 @@
+uuid: a86818b3-9fc4-4bca-82c4-c8d28fe6f873
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_topic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.tk_topic
+target_entity_type_id: node
+target_bundle: tk_topic
+default_langcode: current_interface
+language_alterable: true

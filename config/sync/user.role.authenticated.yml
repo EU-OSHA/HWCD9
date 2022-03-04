@@ -5,16 +5,24 @@ dependencies: {  }
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
-label: 'Authenticated user'
+label: 'authenticated user'
 weight: 1
 is_admin: false
 permissions:
-  - 'access comments'
+  - 'access PDF version'
   - 'access content'
-  - 'access shortcuts'
-  - 'access site-wide contact form'
+  - 'access direct download file'
+  - 'access news feeds'
+  - 'access site map'
+  - 'diff view changes'
+  - 'display EU Cookie Compliance popup'
+  - 'download any document files'
+  - 'edit mimemail user settings'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'
-  - 'view media'
+  - 'use Search Autocomplete'
+  - 'use exclude node title'
+  - 'use manualcrop'
+  - 'view files'
+  - 'view newsletter_content_collection entity collections'

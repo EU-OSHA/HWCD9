@@ -1,0 +1,21 @@
+uuid: 9e6137c0-8676-4504-b69f-c457d7f31a51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tk_article_type
+    - node.type.tk_article
+  module:
+    - options
+id: node.tk_article.field_tk_article_type
+field_name: field_tk_article_type
+entity_type: node
+bundle: tk_article
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

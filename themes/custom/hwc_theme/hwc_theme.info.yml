@@ -1,0 +1,25 @@
+name: HWC23-25 Subtheme
+type: theme
+description: 'HWC23-25 SubTheme.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+libraries:
+  - hwc_theme/bootstrap_cdn
+  - hwc_theme/global-styling
+
+regions:
+  top_header: 'Top header'
+  top_header_form: 'Top header form'
+  header: 'Header'
+  header_form: 'Header form'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  highlighted: 'Highlighted'
+  breadcrumb: 'Breadcrumb'
+  front_content: 'Front page content'
+  allages_title: 'Allages Title'
+  content: 'Content'
+  footer_end: 'Footer end'

@@ -1,0 +1,35 @@
+uuid: d4d8f5d2-903d-4bc2-8172-dc31ded6763c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tk_topic.body
+    - field.field.node.tk_topic.field_image
+    - field.field.node.tk_topic.field_publication_date
+    - node.type.tk_topic
+  module:
+    - text
+    - user
+id: node.tk_topic.teaser
+targetEntityType: node
+bundle: tk_topic
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image: true
+  field_publication_date: true
+  langcode: true
