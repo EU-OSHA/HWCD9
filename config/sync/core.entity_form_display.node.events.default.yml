@@ -67,9 +67,8 @@ third_party_settings:
         - field_xmlsitemap
         - field_first_publication_date
         - field_migration_path_alias
-        - field_show_on
       parent_name: ''
-      weight: 47
+      weight: 48
       format_type: fieldset
       region: content
       format_settings:
@@ -85,7 +84,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
@@ -95,95 +94,17 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 34
     region: content
     settings: {  }
     third_party_settings: {  }
   field_activity:
-    weight: 18
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 12
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_adonis:
-    weight: 28
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_agency_contact_reply:
-    weight: 35
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_agency_initial_contact:
-    weight: 41
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_agency_rep_confirmed:
-    weight: 32
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_agency_role:
-    weight: 30
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_agenda:
-    weight: 31
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_city:
-    weight: 13
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_color:
-    weight: 36
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_contact_email:
-    weight: 22
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_contact_name:
-    weight: 20
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_contact_phone:
     weight: 21
     settings:
       size: 60
@@ -191,14 +112,88 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_country_code:
+  field_agency_contact_reply:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_agency_initial_contact:
+    weight: 42
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_agency_rep_confirmed:
+    weight: 25
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_agency_role:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_agenda:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_city:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: 'Event city.'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_color:
+    weight: 29
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_contact_email:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: 'Contact person e-mail.'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_name:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: 'Contact person name.'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_phone:
     weight: 14
+    settings:
+      size: 60
+      placeholder: 'Contact person phone number.'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_country_code:
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_event_in_amp:
-    weight: 43
+    weight: 44
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -210,33 +205,33 @@ content:
     type: datetime_timestamp
     region: content
   field_for_the_web:
-    weight: 26
+    weight: 19
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_key_performance:
-    weight: 27
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_location:
-    weight: 12
+    weight: 4
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Location of the event, e.g. name of venue, hall, hotel.'
     third_party_settings: {  }
     type: string_textfield
     region: content
   field_media_promotion:
-    weight: 34
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_metatags:
-    weight: 19
+    weight: 39
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -257,7 +252,7 @@ content:
     type: options_select
     region: content
   field_modified_by:
-    weight: 45
+    weight: 46
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -267,13 +262,13 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_modified_on:
-    weight: 37
+    weight: 40
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_notification_comment:
-    weight: 38
+    weight: 41
     settings:
       rows: 5
       placeholder: ''
@@ -281,23 +276,23 @@ content:
     type: string_textarea
     region: content
   field_number_of_attendees:
-    weight: 44
+    weight: 45
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_organizer:
-    weight: 10
+    weight: 1
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'The name of the organisation.'
     third_party_settings: {  }
     type: string_textfield
     region: content
   field_paragraph:
     type: entity_reference_paragraphs
-    weight: 48
+    weight: 9
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -308,7 +303,7 @@ content:
     third_party_settings: {  }
     region: content
   field_partner_id:
-    weight: 17
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -316,95 +311,87 @@ content:
     type: string_textfield
     region: content
   field_photo_gallery:
-    weight: 24
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 17
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_publications_exhibition_su:
-    weight: 33
+    weight: 26
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_related_documents:
-    weight: 15
+    weight: 8
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_satisfaction_rate:
-    weight: 42
+    weight: 43
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_show_eu_flag:
-    weight: 40
+    weight: 31
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_show_in_ncw:
-    weight: 39
+    weight: 30
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_show_on:
-    weight: 52
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_speaker:
-    weight: 16
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_start_date:
-    weight: 9
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_tags:
-    weight: 25
+    weight: 18
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
-      placeholder: ''
+      placeholder: 'Choose some options.'
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
   field_type_event:
-    weight: 11
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_unit_ref:
-    weight: 29
+    weight: 22
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_website_of_event:
-    weight: 23
+    weight: 16
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -412,7 +399,7 @@ content:
     type: link_default
     region: content
   field_wf_notification:
-    weight: 46
+    weight: 47
     settings:
       display_label: true
     third_party_settings: {  }
@@ -428,16 +415,9 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  langcode:
-    type: language_select
-    weight: 1
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 37
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -445,21 +425,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 35
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 38
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 36
     region: content
     third_party_settings: {  }
   title:
@@ -468,11 +448,11 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Event title. Max 150 characters.'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 33
     settings:
       match_operator: CONTAINS
       size: 60
@@ -480,4 +460,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
