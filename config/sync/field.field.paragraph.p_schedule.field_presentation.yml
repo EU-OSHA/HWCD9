@@ -1,0 +1,27 @@
+uuid: 84c9121c-6b8c-4687-92c5-ad5af3fa2ffc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_presentation
+    - paragraphs.paragraphs_type.p_schedule
+  module:
+    - file
+id: paragraph.p_schedule.field_presentation
+field_name: field_presentation
+entity_type: paragraph
+bundle: p_schedule
+label: Presentation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'events presentations'
+  file_extensions: 'txt pdf doc docx odt rtf csv xsl ods xslx ppt pptx epub'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

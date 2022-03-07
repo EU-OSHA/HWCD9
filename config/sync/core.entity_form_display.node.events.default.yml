@@ -47,6 +47,7 @@ dependencies:
     - field.field.node.events.field_unit_ref
     - field.field.node.events.field_website_of_event
     - field.field.node.events.field_wf_notification
+    - field.field.node.events.field_workbench_access
     - field.field.node.events.field_xmlsitemap
     - node.type.events
   module:
@@ -64,11 +65,10 @@ third_party_settings:
     group_contact:
       children:
         - field_migration_source
-        - field_xmlsitemap
         - field_first_publication_date
         - field_migration_path_alias
-      parent_name: ''
-      weight: 48
+      parent_name: group_hidden
+      weight: 50
       format_type: fieldset
       region: content
       format_settings:
@@ -77,6 +77,34 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Contact
+    group_hidden:
+      children:
+        - field_xmlsitemap
+        - field_modified_on
+        - field_notification_comment
+        - field_agency_initial_contact
+        - field_satisfaction_rate
+        - field_event_in_amp
+        - field_number_of_attendees
+        - field_modified_by
+        - field_wf_notification
+        - group_contact
+      parent_name: ''
+      weight: 42
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: hidden
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Hidden
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -94,7 +122,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 34
+    weight: 36
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -105,7 +133,7 @@ content:
     type: options_select
     region: content
   field_adonis:
-    weight: 21
+    weight: 22
     settings:
       size: 60
       placeholder: ''
@@ -113,7 +141,7 @@ content:
     type: string_textfield
     region: content
   field_agency_contact_reply:
-    weight: 28
+    weight: 29
     settings:
       size: 60
       placeholder: ''
@@ -121,7 +149,7 @@ content:
     type: string_textfield
     region: content
   field_agency_initial_contact:
-    weight: 42
+    weight: 44
     settings:
       size: 60
       placeholder: ''
@@ -129,7 +157,7 @@ content:
     type: string_textfield
     region: content
   field_agency_rep_confirmed:
-    weight: 25
+    weight: 26
     settings:
       size: 60
       placeholder: ''
@@ -137,13 +165,13 @@ content:
     type: string_textfield
     region: content
   field_agency_role:
-    weight: 23
+    weight: 24
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_agenda:
-    weight: 24
+    weight: 25
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -157,13 +185,13 @@ content:
     type: string_textfield
     region: content
   field_color:
-    weight: 29
+    weight: 30
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_contact_email:
-    weight: 15
+    weight: 16
     settings:
       size: 60
       placeholder: 'Contact person e-mail.'
@@ -171,7 +199,7 @@ content:
     type: string_textfield
     region: content
   field_contact_name:
-    weight: 13
+    weight: 14
     settings:
       size: 60
       placeholder: 'Contact person name.'
@@ -179,7 +207,7 @@ content:
     type: string_textfield
     region: content
   field_contact_phone:
-    weight: 14
+    weight: 15
     settings:
       size: 60
       placeholder: 'Contact person phone number.'
@@ -193,7 +221,7 @@ content:
     type: options_select
     region: content
   field_event_in_amp:
-    weight: 44
+    weight: 46
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -205,13 +233,13 @@ content:
     type: datetime_timestamp
     region: content
   field_for_the_web:
-    weight: 19
+    weight: 20
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_key_performance:
-    weight: 20
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -225,13 +253,13 @@ content:
     type: string_textfield
     region: content
   field_media_promotion:
-    weight: 27
+    weight: 28
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_metatags:
-    weight: 39
+    weight: 40
     settings:
       sidebar: true
     third_party_settings: {  }
@@ -252,7 +280,7 @@ content:
     type: options_select
     region: content
   field_modified_by:
-    weight: 46
+    weight: 48
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -262,13 +290,13 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_modified_on:
-    weight: 40
+    weight: 42
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_notification_comment:
-    weight: 41
+    weight: 43
     settings:
       rows: 5
       placeholder: ''
@@ -276,7 +304,7 @@ content:
     type: string_textarea
     region: content
   field_number_of_attendees:
-    weight: 45
+    weight: 47
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -311,13 +339,13 @@ content:
     type: string_textfield
     region: content
   field_photo_gallery:
-    weight: 17
+    weight: 18
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_publications_exhibition_su:
-    weight: 26
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -330,28 +358,28 @@ content:
     type: file_generic
     region: content
   field_satisfaction_rate:
-    weight: 43
+    weight: 45
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_show_eu_flag:
-    weight: 31
+    weight: 32
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_show_in_ncw:
-    weight: 30
+    weight: 31
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_show_on:
-    weight: 32
+    weight: 33
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -369,7 +397,7 @@ content:
     type: daterange_default
     region: content
   field_tags:
-    weight: 18
+    weight: 19
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -385,13 +413,13 @@ content:
     type: options_select
     region: content
   field_unit_ref:
-    weight: 22
+    weight: 23
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_website_of_event:
-    weight: 16
+    weight: 17
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -399,14 +427,20 @@ content:
     type: link_default
     region: content
   field_wf_notification:
-    weight: 47
+    weight: 49
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_workbench_access:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_xmlsitemap:
-    weight: 49
+    weight: 41
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -417,7 +451,7 @@ content:
     region: content
   path:
     type: path
-    weight: 37
+    weight: 34
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -425,21 +459,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 35
+    weight: 37
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 38
+    weight: 39
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 36
+    weight: 38
     region: content
     third_party_settings: {  }
   title:
@@ -452,7 +486,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 33
+    weight: 35
     settings:
       match_operator: CONTAINS
       size: 60
