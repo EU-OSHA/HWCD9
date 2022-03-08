@@ -9,7 +9,7 @@ id: node.events.field_adonis
 field_name: field_adonis
 entity_type: node
 bundle: events
-label: Ares/Adonis
+label: Ares
 description: 'References number of the invitation and the Agency’s reply must be included in this field.'
 required: false
 translatable: false

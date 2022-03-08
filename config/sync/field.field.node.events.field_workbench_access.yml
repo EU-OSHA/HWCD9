@@ -1,26 +1,26 @@
-uuid: 35837c0c-9c5f-41ab-8d61-e91789ffa3b9
+uuid: f11a08a4-739a-44de-ba48-c8efad62dddc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_activity
+    - field.storage.node.field_workbench_access
     - node.type.events
-    - taxonomy.vocabulary.activity
-id: node.events.field_activity
-field_name: field_activity
+    - taxonomy.vocabulary.section
+id: node.events.field_workbench_access
+field_name: field_workbench_access
 entity_type: node
 bundle: events
-label: Activity
-description: 'Select the appropriate EU-OSHA activity.'
-required: true
-translatable: false
+label: Partner
+description: 'Select the proper editorial group for this content.'
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      activity: activity
+      section: section
     sort:
       field: name
       direction: asc
