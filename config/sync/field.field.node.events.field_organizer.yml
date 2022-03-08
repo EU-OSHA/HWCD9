@@ -10,7 +10,7 @@ field_name: field_organizer
 entity_type: node
 bundle: events
 label: Organisation
-description: ''
+description: 'Please indicate here the organisation responsible for the organisation of the event. If an acronym exists for the organisation, please include “acronym (UPPERCASE) ‘-‘complete name (sentence case)”: (i.e. HSA – Health and Safety Authority)'
 required: true
 translatable: false
 default_value: {  }

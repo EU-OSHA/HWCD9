@@ -1,0 +1,21 @@
+uuid: 16d87cb5-b453-4050-9c44-f32dff36d678
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_speech_date
+    - paragraphs.paragraphs_type.p_schedule
+  module:
+    - datetime_range
+id: paragraph.p_schedule.field_speech_date
+field_name: field_speech_date
+entity_type: paragraph
+bundle: p_schedule
+label: 'Speech date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
