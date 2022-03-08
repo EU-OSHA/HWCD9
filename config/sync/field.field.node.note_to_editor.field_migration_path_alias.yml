@@ -1,0 +1,19 @@
+uuid: 1ca0e6bd-ca8d-49f3-b604-503108a0a4db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migration_path_alias
+    - node.type.note_to_editor
+id: node.note_to_editor.field_migration_path_alias
+field_name: field_migration_path_alias
+entity_type: node
+bundle: note_to_editor
+label: 'Migration Path Alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

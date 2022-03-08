@@ -1,0 +1,19 @@
+uuid: 2f3a7aed-a396-41d7-a1e0-0b588ae275bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participate_upcoming_descr
+    - node.type.gpa
+id: node.gpa.field_participate_upcoming_descr
+field_name: field_participate_upcoming_descr
+entity_type: node
+bundle: gpa
+label: 'Upcoming description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

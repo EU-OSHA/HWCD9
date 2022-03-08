@@ -1,0 +1,29 @@
+uuid: 17f973aa-69e4-4eb4-acd6-c62d6bf1b5da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sector_industry_covered
+    - node.type.practical_tool
+    - taxonomy.vocabulary.nace_codes
+id: node.practical_tool.field_sector_industry_covered
+field_name: field_sector_industry_covered
+entity_type: node
+bundle: practical_tool
+label: 'Sector / Industry covered'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      nace_codes: nace_codes
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

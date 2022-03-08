@@ -1,0 +1,21 @@
+uuid: c1dbb910-bc97-4334-a61e-1022ccd27064
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_item
+    - node.type.practical_tool
+  module:
+    - options
+id: node.practical_tool.field_type_of_item
+field_name: field_type_of_item
+entity_type: node
+bundle: practical_tool
+label: 'Type of item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

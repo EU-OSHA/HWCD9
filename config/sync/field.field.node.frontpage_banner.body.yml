@@ -1,0 +1,23 @@
+uuid: 11f49000-37c5-493f-90ff-26f8f94b7175
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.frontpage_banner
+  module:
+    - text
+id: node.frontpage_banner.body
+field_name: body
+entity_type: node
+bundle: frontpage_banner
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

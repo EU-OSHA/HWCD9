@@ -1,0 +1,43 @@
+uuid: e0667c2e-2854-4038-bed7-6cb935688e48
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gpa.body
+    - field.field.node.gpa.field_contact_details
+    - field.field.node.gpa.field_image
+    - field.field.node.gpa.field_introductory_text
+    - field.field.node.gpa.field_participate_date
+    - field.field.node.gpa.field_participate_description
+    - field.field.node.gpa.field_participate_upcoming_descr
+    - node.type.gpa
+  module:
+    - text
+    - user
+id: node.gpa.teaser
+targetEntityType: node
+bundle: gpa
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_contact_details: true
+  field_image: true
+  field_introductory_text: true
+  field_participate_date: true
+  field_participate_description: true
+  field_participate_upcoming_descr: true
+  langcode: true

@@ -1,0 +1,41 @@
+uuid: de67bccb-bf36-4b8d-bb38-e6c149d07c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_reference
+    - node.type.article
+    - node.type.campaign_materials
+    - node.type.events
+    - node.type.frontpage_banner
+    - node.type.news
+    - node.type.partner
+    - node.type.press_release
+    - node.type.publication
+id: node.frontpage_banner.field_content_reference
+field_name: field_content_reference
+entity_type: node
+bundle: frontpage_banner
+label: 'Find out more'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      campaign_materials: campaign_materials
+      events: events
+      news: news
+      partner: partner
+      press_release: press_release
+      publication: publication
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

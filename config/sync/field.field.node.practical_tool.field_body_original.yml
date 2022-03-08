@@ -1,0 +1,19 @@
+uuid: 413c024f-5764-41b1-a432-66d67fed67d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_original
+    - node.type.practical_tool
+id: node.practical_tool.field_body_original
+field_name: field_body_original
+entity_type: node
+bundle: practical_tool
+label: 'Description (original language)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

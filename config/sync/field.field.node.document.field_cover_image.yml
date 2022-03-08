@@ -1,0 +1,29 @@
+uuid: 3a3ede7a-6d64-4d2b-b422-0c439454f51e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cover_image
+    - media.type.image
+    - node.type.document
+id: node.document.field_cover_image
+field_name: field_cover_image
+entity_type: node
+bundle: document
+label: 'Cover image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: f4aa764d-3508-4eec-be9c-db4b7eecbb14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_health_effects
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_health_effects
+id: node.practical_tool.field_health_effects
+field_name: field_health_effects
+entity_type: node
+bundle: practical_tool
+label: 'Health effects'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_health_effects: msd_health_effects
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

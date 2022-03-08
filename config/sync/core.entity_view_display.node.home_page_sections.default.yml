@@ -1,0 +1,29 @@
+uuid: 575ae0b0-35a0-490c-881c-3d6c3701d346
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_page_sections.body
+    - node.type.home_page_sections
+  module:
+    - text
+    - user
+id: node.home_page_sections.default
+targetEntityType: node
+bundle: home_page_sections
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

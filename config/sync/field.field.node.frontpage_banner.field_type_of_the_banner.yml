@@ -1,0 +1,21 @@
+uuid: ed58e89d-7c1a-4c35-a21e-3a2c82d21668
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_the_banner
+    - node.type.frontpage_banner
+  module:
+    - options
+id: node.frontpage_banner.field_type_of_the_banner
+field_name: field_type_of_the_banner
+entity_type: node
+bundle: frontpage_banner
+label: 'Type of the banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

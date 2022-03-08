@@ -1,0 +1,29 @@
+uuid: 2218513c-8bac-4dea-ba7d-11671b92e622
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_audience
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_target_audience
+id: node.practical_tool.field_target_audience
+field_name: field_target_audience
+entity_type: node
+bundle: practical_tool
+label: 'Target audience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_target_audience: msd_target_audience
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

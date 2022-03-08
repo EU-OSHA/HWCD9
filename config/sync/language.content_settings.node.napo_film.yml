@@ -1,0 +1,11 @@
+uuid: 900c46c6-3fcf-402c-88a0-06f3daaa7a0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+id: node.napo_film
+target_entity_type_id: node
+target_bundle: napo_film
+default_langcode: site_default
+language_alterable: false

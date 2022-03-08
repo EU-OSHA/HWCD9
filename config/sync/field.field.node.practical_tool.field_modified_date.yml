@@ -1,0 +1,21 @@
+uuid: 1b27264c-ba34-424b-8fb6-47f395ba2aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modified_date
+    - node.type.practical_tool
+  module:
+    - datetime
+id: node.practical_tool.field_modified_date
+field_name: field_modified_date
+entity_type: node
+bundle: practical_tool
+label: 'Modified Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

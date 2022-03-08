@@ -1,0 +1,39 @@
+uuid: a3840cfb-ac7f-4b52-af39-fbe3a43878d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.frontpage_banner.body
+    - field.field.node.frontpage_banner.field_banner_video
+    - field.field.node.frontpage_banner.field_content_reference
+    - field.field.node.frontpage_banner.field_image
+    - field.field.node.frontpage_banner.field_type_of_the_banner
+    - node.type.frontpage_banner
+  module:
+    - text
+    - user
+id: node.frontpage_banner.teaser
+targetEntityType: node
+bundle: frontpage_banner
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_banner_video: true
+  field_content_reference: true
+  field_image: true
+  field_type_of_the_banner: true
+  langcode: true

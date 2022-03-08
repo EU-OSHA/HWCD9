@@ -1,0 +1,29 @@
+uuid: 3330050a-62af-4cb3-9d3e-e3210beda841
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_share_partner_type
+    - node.type.document
+    - taxonomy.vocabulary.document_partner_type
+id: node.document.field_share_partner_type
+field_name: field_share_partner_type
+entity_type: node
+bundle: document
+label: 'Type of partner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      document_partner_type: document_partner_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
