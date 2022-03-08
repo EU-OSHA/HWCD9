@@ -31,6 +31,7 @@ dependencies:
     - field.field.node.publication.field_show_on
     - field.field.node.publication.field_tags
     - field.field.node.publication.field_thesaurus
+    - field.field.node.publication.field_workbench_access
     - field.field.node.publication.field_xmlsitemap
     - node.type.publication
   module:
@@ -292,6 +293,14 @@ content:
     region: content
   field_thesaurus:
     weight: 124
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_workbench_access:
+    weight: 134
     label: above
     settings:
       link: true

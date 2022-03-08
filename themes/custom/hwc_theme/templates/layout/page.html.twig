@@ -1,0 +1,69 @@
+{% extends "@bootstrap_barrio/layout/page.html.twig" %}
+{% block head %}
+<div id="navbar" role="banner" class="{{ navbar_classes }}">
+  <div class="top-header-container">
+    <div class="top-header-content row">
+      <div class="push-right">
+        <div class="content-first-row">
+          <div class="font-size-print">
+            <span id="_smallify" class="a_small"><a title="{{ 'Smaller text' | trans }}">a</a></span>
+            <span id="_reset" class="a_medium"><a title="{{ 'Optimised defaults' | trans }}">a</a></span>
+            <span id="_biggify" class="a_big"><a title="{{ 'Bigger text' | trans }}">a</a></span>
+            <a href="#" onclick="if(window.print)window.print();" class="print-friendly" title="{{ 'Print page' | trans }}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <nav{{ navbar_attributes }}>
+      {% if page.primary_menu %}
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="CollapsingNavbar">
+            {{ page.primary_menu }}
+        </div>
+      {% endif %}
+      {% if sidebar_collapse %}
+        <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
+      {% endif %}
+    </nav>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="breadcrumb-fluid">
+  <div class="container"> {{ page.breadcrumb }}</div>
+</div>
+<div class="container">
+  <div class="row">
+      <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+      <section class="section">
+        {{ page.content }}
+      </section>
+      <aside class="section col-12 col-lg-3 sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+  <div class="{{ container }}" >
+    {% if page.footer_first %}
+      <div class="site-footer__first">
+        {{ page.footer_first }}
+      </div>
+    {% endif %}
+    {% if page.footer_end %}
+      <div class="site-footer__bottom">
+        {{ page.footer_end }}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

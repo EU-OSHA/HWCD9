@@ -1,19 +1,19 @@
-uuid: 6ff1f14f-d8c0-4777-a543-ac5053a57742
+uuid: b06d0032-33d3-43ba-a1d1-26e26683c8bd
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_workbench_access
-    - node.type.events
+    - node.type.article
     - taxonomy.vocabulary.section
-id: node.events.field_workbench_access
+id: node.article.field_workbench_access
 field_name: field_workbench_access
 entity_type: node
-bundle: events
+bundle: article
 label: Partner
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
