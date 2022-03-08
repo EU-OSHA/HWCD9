@@ -68,12 +68,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
   field_activity:
-    weight: 11
+    weight: 111
     label: above
     settings:
       link: true
@@ -81,7 +81,7 @@ content:
     type: entity_reference_label
     region: content
   field_adonis:
-    weight: 21
+    weight: 121
     label: above
     settings:
       link_to_entity: false
@@ -89,7 +89,7 @@ content:
     type: string
     region: content
   field_agency_contact_reply:
-    weight: 28
+    weight: 128
     label: above
     settings:
       link_to_entity: false
@@ -97,7 +97,7 @@ content:
     type: string
     region: content
   field_agency_initial_contact:
-    weight: 34
+    weight: 134
     label: above
     settings:
       link_to_entity: false
@@ -105,7 +105,7 @@ content:
     type: string
     region: content
   field_agency_rep_confirmed:
-    weight: 25
+    weight: 125
     label: above
     settings:
       link_to_entity: false
@@ -113,21 +113,21 @@ content:
     type: string
     region: content
   field_agency_role:
-    weight: 23
+    weight: 123
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_agenda:
-    weight: 24
+    weight: 124
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_city:
-    weight: 4
+    weight: 106
     label: above
     settings:
       link_to_entity: false
@@ -135,14 +135,14 @@ content:
     type: string
     region: content
   field_color:
-    weight: 29
+    weight: 129
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_contact_email:
-    weight: 15
+    weight: 115
     label: above
     settings:
       link_to_entity: false
@@ -150,7 +150,7 @@ content:
     type: string
     region: content
   field_contact_name:
-    weight: 13
+    weight: 113
     label: above
     settings:
       link_to_entity: false
@@ -158,7 +158,7 @@ content:
     type: string
     region: content
   field_contact_phone:
-    weight: 14
+    weight: 114
     label: above
     settings:
       link_to_entity: false
@@ -166,21 +166,21 @@ content:
     type: string
     region: content
   field_country_code:
-    weight: 5
+    weight: 107
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_event_in_amp:
-    weight: 36
+    weight: 136
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_first_publication_date:
-    weight: 42
+    weight: 142
     label: above
     settings:
       date_format: medium
@@ -190,21 +190,21 @@ content:
     type: timestamp
     region: content
   field_for_the_web:
-    weight: 19
+    weight: 119
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_key_performance:
-    weight: 20
+    weight: 120
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_location:
-    weight: 7
+    weight: 105
     label: above
     settings:
       link_to_entity: false
@@ -212,21 +212,21 @@ content:
     type: string
     region: content
   field_media_promotion:
-    weight: 27
+    weight: 127
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_metatags:
-    weight: 12
+    weight: 112
     label: above
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
     region: content
   field_migration_path_alias:
-    weight: 43
+    weight: 143
     label: above
     settings:
       link_to_entity: false
@@ -234,14 +234,14 @@ content:
     type: string
     region: content
   field_migration_source:
-    weight: 40
+    weight: 140
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_modified_by:
-    weight: 38
+    weight: 138
     label: above
     settings:
       link: true
@@ -249,7 +249,7 @@ content:
     type: entity_reference_label
     region: content
   field_modified_on:
-    weight: 30
+    weight: 130
     label: above
     settings:
       format_type: medium
@@ -258,14 +258,14 @@ content:
     type: datetime_default
     region: content
   field_notification_comment:
-    weight: 31
+    weight: 131
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_number_of_attendees:
-    weight: 37
+    weight: 137
     label: above
     settings:
       thousand_separator: ''
@@ -274,7 +274,7 @@ content:
     type: number_integer
     region: content
   field_organizer:
-    weight: 2
+    weight: 102
     label: above
     settings:
       link_to_entity: false
@@ -283,7 +283,7 @@ content:
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 45
+    weight: 145
     label: above
     settings:
       view_mode: default
@@ -291,7 +291,7 @@ content:
     third_party_settings: {  }
     region: content
   field_partner_id:
-    weight: 10
+    weight: 110
     label: above
     settings:
       link_to_entity: false
@@ -299,7 +299,7 @@ content:
     type: string
     region: content
   field_photo_gallery:
-    weight: 17
+    weight: 117
     label: above
     settings:
       link: true
@@ -307,14 +307,14 @@ content:
     type: entity_reference_label
     region: content
   field_publications_exhibition_su:
-    weight: 26
+    weight: 126
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_related_documents:
-    weight: 8
+    weight: 108
     label: above
     settings:
       use_description_as_link_text: true
@@ -322,7 +322,7 @@ content:
     type: file_default
     region: content
   field_satisfaction_rate:
-    weight: 35
+    weight: 135
     label: above
     settings:
       thousand_separator: ''
@@ -331,7 +331,7 @@ content:
     type: number_integer
     region: content
   field_show_eu_flag:
-    weight: 33
+    weight: 133
     label: above
     settings:
       format: default
@@ -341,7 +341,7 @@ content:
     type: boolean
     region: content
   field_show_in_ncw:
-    weight: 32
+    weight: 132
     label: above
     settings:
       format: default
@@ -351,14 +351,14 @@ content:
     type: boolean
     region: content
   field_show_on:
-    weight: 44
+    weight: 144
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_speaker:
-    weight: 9
+    weight: 109
     label: above
     settings:
       link: true
@@ -366,7 +366,7 @@ content:
     type: entity_reference_label
     region: content
   field_start_date:
-    weight: 3
+    weight: 146
     label: above
     settings:
       separator: '-'
@@ -376,7 +376,7 @@ content:
     type: daterange_default
     region: content
   field_tags:
-    weight: 18
+    weight: 118
     label: above
     settings:
       link: true
@@ -384,21 +384,21 @@ content:
     type: entity_reference_label
     region: content
   field_type_event:
-    weight: 6
+    weight: 104
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_unit_ref:
-    weight: 22
+    weight: 122
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_website_of_event:
-    weight: 16
+    weight: 116
     label: above
     settings:
       trim_length: 80
@@ -410,7 +410,7 @@ content:
     type: link
     region: content
   field_wf_notification:
-    weight: 39
+    weight: 139
     label: above
     settings:
       format: default
@@ -420,7 +420,7 @@ content:
     type: boolean
     region: content
   field_workbench_access:
-    weight: 46
+    weight: 147
     label: above
     settings:
       link: true
@@ -428,7 +428,7 @@ content:
     type: entity_reference_label
     region: content
   field_xmlsitemap:
-    weight: 41
+    weight: 141
     label: above
     settings:
       link: true
@@ -436,9 +436,9 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 0
-    region: content
+    weight: 100
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true

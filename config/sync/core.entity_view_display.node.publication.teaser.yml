@@ -32,6 +32,7 @@ dependencies:
     - field.field.node.publication.field_show_on
     - field.field.node.publication.field_tags
     - field.field.node.publication.field_thesaurus
+    - field.field.node.publication.field_workbench_access
     - field.field.node.publication.field_xmlsitemap
     - node.type.publication
   module:
@@ -83,5 +84,6 @@ hidden:
   field_show_on: true
   field_tags: true
   field_thesaurus: true
+  field_workbench_access: true
   field_xmlsitemap: true
   langcode: true
