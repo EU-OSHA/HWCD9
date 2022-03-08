@@ -1,0 +1,19 @@
+uuid: 5aedbe16-f00d-4b24-85ad-af42294f0f1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_speech_title
+    - paragraphs.paragraphs_type.p_schedule
+id: paragraph.p_schedule.field_speech_title
+field_name: field_speech_title
+entity_type: paragraph
+bundle: p_schedule
+label: 'Speech title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

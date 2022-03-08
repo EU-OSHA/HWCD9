@@ -5,13 +5,14 @@ dependencies:
   config:
     - field.storage.node.field_paragraph
     - node.type.events
+    - paragraphs.paragraphs_type.p_schedule
   module:
     - entity_reference_revisions
 id: node.events.field_paragraph
 field_name: field_paragraph
 entity_type: node
 bundle: events
-label: paragraph
+label: Schedule
 description: ''
 required: false
 translatable: false
@@ -21,9 +22,10 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles: null
+    target_bundles:
+      p_schedule: p_schedule
     target_bundles_drag_drop:
-      test_video:
+      p_schedule:
+        enabled: true
         weight: 2
-        enabled: false
 field_type: entity_reference_revisions
