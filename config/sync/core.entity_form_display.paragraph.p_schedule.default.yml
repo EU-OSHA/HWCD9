@@ -18,40 +18,40 @@ bundle: p_schedule
 mode: default
 content:
   field_conference_room:
+    type: string_textfield
     weight: 4
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_presentation:
+    type: file_generic
     weight: 3
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_schedule_items:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
     type: options_select
+    weight: 1
     region: content
-  field_speech_date:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+  field_speech_date:
     type: daterange_default
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_speech_title:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
 hidden:
   created: true
   status: true
