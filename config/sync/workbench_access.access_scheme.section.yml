@@ -31,9 +31,9 @@ scheme_settings:
       field: field_workbench_access
     -
       entity_type: node
-      bundle: article
+      bundle: publication
       field: field_workbench_access
     -
       entity_type: node
-      bundle: publication
+      bundle: article
       field: field_workbench_access
