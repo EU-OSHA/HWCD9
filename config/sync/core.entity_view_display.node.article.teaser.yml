@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_workbench_access
     - node.type.article
   module:
     - text
@@ -42,4 +43,5 @@ hidden:
   comment: true
   field_image: true
   field_tags: true
+  field_workbench_access: true
   langcode: true

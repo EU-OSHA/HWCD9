@@ -1,17 +1,17 @@
-uuid: ff68c15f-a07b-4ac6-923e-164ff885783b
+uuid: ed9c81b0-68a1-4f28-8145-3048e7987219
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_workbench_access
-    - node.type.partner
+    - node.type.news
     - taxonomy.vocabulary.section
-id: node.partner.field_workbench_access
+id: node.news.field_workbench_access
 field_name: field_workbench_access
 entity_type: node
-bundle: partner
+bundle: news
 label: Partner
-description: 'Select the proper editorial group for this content.'
+description: ''
 required: true
 translatable: false
 default_value: {  }
