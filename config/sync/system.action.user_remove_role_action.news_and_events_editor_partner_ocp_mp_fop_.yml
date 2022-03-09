@@ -1,0 +1,14 @@
+uuid: 724b5b03-193d-4c8d-96a0-9d9458c33caa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_and_events_editor_partner_ocp_mp_fop_
+  module:
+    - user
+id: user_remove_role_action.news_and_events_editor_partner_ocp_mp_fop_
+label: 'Remove the News and Events Editor – Partner (OCP, MP, FOP) role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: news_and_events_editor_partner_ocp_mp_fop_

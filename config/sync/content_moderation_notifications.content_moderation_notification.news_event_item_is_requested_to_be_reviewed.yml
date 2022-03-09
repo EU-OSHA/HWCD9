@@ -1,0 +1,18 @@
+uuid: 53eea875-25f5-46f6-9b07-5433fa064858
+langcode: en
+status: true
+dependencies: {  }
+id: news_event_item_is_requested_to_be_reviewed
+workflow: news_and_events_created_by_een
+transitions:
+  submit_for_review: submit_for_review
+roles:
+  news_and_events_editor_een_osh_ambassador: news_and_events_editor_een_osh_ambassador
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is requested to be reviewed'
+body:
+  value: ''
+  format: full_html
+label: 'News/event item is requested to be reviewed'

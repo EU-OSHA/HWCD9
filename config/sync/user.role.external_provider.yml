@@ -77,6 +77,7 @@ permissions:
   - 'edit own hwc_gallery content'
   - 'edit own image files'
   - 'edit own news content'
+  - 'edit own partner content'
   - 'edit own tk_article content'
   - 'edit own tk_example content'
   - 'edit own tk_tool content'
