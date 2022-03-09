@@ -1,0 +1,136 @@
+uuid: 4e8c008c-db72-46b0-9e7d-5c5e9cab15c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.events
+    - node.type.news
+  module:
+    - content_moderation
+id: news_and_events_created_by_een
+label: 'News and events created by EEN'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -3
+    final_draft:
+      published: false
+      default_revision: false
+      label: 'Final Draft'
+      weight: -2
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 1
+    to_be_approved:
+      published: false
+      default_revision: false
+      label: 'To Be Approved'
+      weight: 0
+    to_be_reviewed:
+      published: false
+      default_revision: false
+      label: 'To Be Reviewed'
+      weight: -1
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      to: draft
+      weight: 0
+      from:
+        - draft
+    creating_final_draft:
+      label: 'Creating Final Draft'
+      from:
+        - draft
+      to: final_draft
+      weight: 2
+    publish:
+      label: Publish
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+    publish_reviewed:
+      label: Publish
+      from:
+        - to_be_reviewed
+      to: published
+      weight: 9
+    publishing_approved:
+      label: Publishing
+      from:
+        - to_be_approved
+      to: published
+      weight: 13
+    reject:
+      label: Reject
+      from:
+        - to_be_reviewed
+      to: draft
+      weight: 7
+    reject_approved:
+      label: Reject
+      from:
+        - to_be_approved
+      to: draft
+      weight: 10
+    reject_approved_to_final:
+      label: Reject
+      from:
+        - to_be_approved
+      to: final_draft
+      weight: 11
+    reject_approved_to_reviewed:
+      label: Reject
+      from:
+        - to_be_approved
+      to: to_be_reviewed
+      weight: 12
+    rejecting_draft_as_final:
+      label: 'Rejecting Draft as Final'
+      from:
+        - final_draft
+      to: draft
+      weight: 4
+    requesting_approval:
+      label: 'Requesting Approval'
+      from:
+        - to_be_reviewed
+      to: to_be_approved
+      weight: 8
+    reviewing_final_draft:
+      label: 'Reviewing Final Draft'
+      from:
+        - final_draft
+      to: to_be_reviewed
+      weight: 5
+    skip_review_process:
+      label: 'Skip Review process'
+      from:
+        - final_draft
+      to: to_be_approved
+      weight: 6
+    submit_for_review:
+      label: 'Submit for Review'
+      from:
+        - draft
+      to: to_be_reviewed
+      weight: 3
+    unpublish:
+      label: Unpublish
+      from:
+        - published
+      to: draft
+      weight: 14
+  entity_types:
+    node:
+      - events
+      - news
+  default_moderation_state: draft

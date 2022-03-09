@@ -1,0 +1,14 @@
+uuid: 3afcbe72-0c15-431d-9b5e-b903c271635a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_and_events_editor_een_osh_ambassador
+  module:
+    - user
+id: user_remove_role_action.news_and_events_editor_een_osh_ambassador
+label: 'Remove the News and Events Editor – EEN OSH Ambassador role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: news_and_events_editor_een_osh_ambassador
