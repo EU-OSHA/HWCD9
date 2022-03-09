@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Όνομα
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Όνομα
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Όνομα
+      filters:
+        name:
+          expose:
+            label: Όνομα

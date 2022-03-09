@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Navn
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Navn
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Navn
+      filters:
+        name:
+          expose:
+            label: Navn

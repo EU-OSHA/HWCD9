@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nafn
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nafn
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Nafn
+      filters:
+        name:
+          expose:
+            label: Nafn

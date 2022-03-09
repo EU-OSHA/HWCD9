@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Név
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Név
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Név
+      filters:
+        name:
+          expose:
+            label: Név
