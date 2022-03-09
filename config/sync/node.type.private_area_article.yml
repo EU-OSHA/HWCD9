@@ -1,0 +1,18 @@
+uuid: f3a6ddb0-3340-4c4c-87f6-792822b524fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Private area article'
+type: private_area_article
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

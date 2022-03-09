@@ -1,0 +1,21 @@
+uuid: db0f44d4-142d-4bd9-8ab9-9e02fee42db7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.spotlight
+  module:
+    - text
+id: node.spotlight.field_summary
+field_name: field_summary
+entity_type: node
+bundle: spotlight
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

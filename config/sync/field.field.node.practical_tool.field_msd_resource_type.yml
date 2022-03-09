@@ -1,0 +1,29 @@
+uuid: 39e47d98-2f77-4f61-b27c-cd9ecfd54089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_msd_resource_type
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_type_of_visual_resource
+id: node.practical_tool.field_msd_resource_type
+field_name: field_msd_resource_type
+entity_type: node
+bundle: practical_tool
+label: 'Type of visual resource'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_type_of_visual_resource: msd_type_of_visual_resource
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

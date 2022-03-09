@@ -1,0 +1,23 @@
+uuid: 902e45e1-0bfc-4deb-8417-f39d3badfd6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tk_toolkit
+  module:
+    - text
+id: node.tk_toolkit.body
+field_name: body
+entity_type: node
+bundle: tk_toolkit
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

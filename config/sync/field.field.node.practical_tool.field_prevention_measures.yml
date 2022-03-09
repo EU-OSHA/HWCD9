@@ -1,0 +1,29 @@
+uuid: 4049edc8-622c-4eed-b83c-b22a2682a4b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prevention_measures
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_prevention_measures
+id: node.practical_tool.field_prevention_measures
+field_name: field_prevention_measures
+entity_type: node
+bundle: practical_tool
+label: 'Prevention measures'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_prevention_measures: msd_prevention_measures
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

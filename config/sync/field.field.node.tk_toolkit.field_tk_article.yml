@@ -1,0 +1,29 @@
+uuid: 94122e07-9acd-4a3f-ac4f-7b75cb07a04f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tk_article
+    - node.type.tk_article
+    - node.type.tk_toolkit
+id: node.tk_toolkit.field_tk_article
+field_name: field_tk_article
+entity_type: node
+bundle: tk_toolkit
+label: Articles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tk_article: tk_article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

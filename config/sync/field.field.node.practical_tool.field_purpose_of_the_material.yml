@@ -1,0 +1,29 @@
+uuid: e41027f3-a4d3-4e26-80da-c23f8ed5f32e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purpose_of_the_material
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_purpose_of_the_material
+id: node.practical_tool.field_purpose_of_the_material
+field_name: field_purpose_of_the_material
+entity_type: node
+bundle: practical_tool
+label: 'Purpose of the material'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_purpose_of_the_material: msd_purpose_of_the_material
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

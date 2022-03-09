@@ -1,0 +1,23 @@
+uuid: da004393-ea95-47ce-a267-f7c7f3413757
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.gpa
+  module:
+    - text
+id: node.gpa.body
+field_name: body
+entity_type: node
+bundle: gpa
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

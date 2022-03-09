@@ -1,0 +1,29 @@
+uuid: ee313cbe-1d4f-4fc3-8da1-2d883cc0b293
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - node.type.article
+    - taxonomy.vocabulary.activity
+id: node.article.field_activity
+field_name: field_activity
+entity_type: node
+bundle: article
+label: Activity
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activity: activity
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

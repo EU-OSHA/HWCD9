@@ -1,0 +1,21 @@
+uuid: 9c28d1ad-41a6-4c9a-812e-1e6aeef5e084
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_year
+    - node.type.practical_tool
+  module:
+    - datetime
+id: node.practical_tool.field_publication_year
+field_name: field_publication_year
+entity_type: node
+bundle: practical_tool
+label: 'Date of Publication / Year'
+description: 'Please select a year of publication, if it is not possible to identify leave it empty.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

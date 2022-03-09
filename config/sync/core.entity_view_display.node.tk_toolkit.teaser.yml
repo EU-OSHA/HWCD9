@@ -1,0 +1,33 @@
+uuid: 9f9b9a45-6abe-4b66-b780-c74d715c04fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tk_toolkit.body
+    - field.field.node.tk_toolkit.field_tk_article
+    - node.type.tk_toolkit
+  module:
+    - text
+    - user
+id: node.tk_toolkit.teaser
+targetEntityType: node
+bundle: tk_toolkit
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_tk_article: true
+  langcode: true

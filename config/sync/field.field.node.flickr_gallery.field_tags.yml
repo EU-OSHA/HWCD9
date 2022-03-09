@@ -1,0 +1,29 @@
+uuid: 55e3f3d2-fdbc-4c75-bdc4-52820c56ba52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.flickr_gallery
+    - taxonomy.vocabulary.tags
+id: node.flickr_gallery.field_tags
+field_name: field_tags
+entity_type: node
+bundle: flickr_gallery
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

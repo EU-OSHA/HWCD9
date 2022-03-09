@@ -1,0 +1,45 @@
+uuid: f2812f84-ba14-4968-a855-6eb5397354ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recommended_resources
+    - node.type.article
+    - node.type.events
+    - node.type.external_url
+    - node.type.file
+    - node.type.infographic
+    - node.type.internal_url
+    - node.type.news
+    - node.type.press_release
+    - node.type.publication
+    - node.type.slideshare
+id: node.article.field_recommended_resources
+field_name: field_recommended_resources
+entity_type: node
+bundle: article
+label: 'Recommended Resources'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      events: events
+      external_url: external_url
+      file: file
+      infographic: infographic
+      internal_url: internal_url
+      news: news
+      press_release: press_release
+      publication: publication
+      slideshare: slideshare
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: events
+field_type: entity_reference

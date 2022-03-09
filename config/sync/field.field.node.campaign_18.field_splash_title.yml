@@ -1,0 +1,19 @@
+uuid: 198e3b60-c251-43d5-9304-4bbdcc35f439
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_splash_title
+    - node.type.campaign_18
+id: node.campaign_18.field_splash_title
+field_name: field_splash_title
+entity_type: node
+bundle: campaign_18
+label: 'Splash title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

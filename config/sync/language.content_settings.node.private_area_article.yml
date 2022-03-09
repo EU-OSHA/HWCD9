@@ -1,0 +1,11 @@
+uuid: d300a12f-c0fa-442b-86fe-f30c3c39766f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area_article
+id: node.private_area_article
+target_entity_type_id: node
+target_bundle: private_area_article
+default_langcode: site_default
+language_alterable: false

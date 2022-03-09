@@ -1,0 +1,23 @@
+uuid: 0ac3fcd5-931c-402f-ad86-91c108965551
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.private_area
+  module:
+    - text
+id: node.private_area.body
+field_name: body
+entity_type: node
+bundle: private_area
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

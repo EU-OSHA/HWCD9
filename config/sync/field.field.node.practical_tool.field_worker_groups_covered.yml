@@ -1,0 +1,29 @@
+uuid: bf16d9a9-3220-4f64-9629-1996f8c2712f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_worker_groups_covered
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_worker_groups_covered
+id: node.practical_tool.field_worker_groups_covered
+field_name: field_worker_groups_covered
+entity_type: node
+bundle: practical_tool
+label: 'Worker groups covered (vulnerable groups etc.)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_worker_groups_covered: msd_worker_groups_covered
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: b0983c5c-9b1c-44bd-b80d-eeda96c8c10c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press_contact
+id: node.press_contact
+target_entity_type_id: node
+target_bundle: press_contact
+default_langcode: site_default
+language_alterable: false

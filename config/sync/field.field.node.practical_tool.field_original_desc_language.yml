@@ -1,0 +1,21 @@
+uuid: f55b3e83-cf46-4772-bc65-c0f82425abcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_original_desc_language
+    - node.type.practical_tool
+  module:
+    - languagefield
+id: node.practical_tool.field_original_desc_language
+field_name: field_original_desc_language
+entity_type: node
+bundle: practical_tool
+label: 'Language of original language description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: language_field

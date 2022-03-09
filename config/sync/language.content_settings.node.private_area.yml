@@ -1,0 +1,11 @@
+uuid: ec411e21-bf47-4f21-9685-9c0c6fe898c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area
+id: node.private_area
+target_entity_type_id: node
+target_bundle: private_area
+default_langcode: site_default
+language_alterable: false

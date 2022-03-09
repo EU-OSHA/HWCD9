@@ -1,0 +1,29 @@
+uuid: cf1d9672-626a-4e28-baaa-d32d454a7fcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.private_area_article.body
+    - node.type.private_area_article
+  module:
+    - text
+    - user
+id: node.private_area_article.default
+targetEntityType: node
+bundle: private_area_article
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

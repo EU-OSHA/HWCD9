@@ -1,0 +1,20 @@
+uuid: f27a2399-e6d4-49d0-b0c1-f1de45f02dcf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_purpose_of_the_material
+field_name: field_purpose_of_the_material
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

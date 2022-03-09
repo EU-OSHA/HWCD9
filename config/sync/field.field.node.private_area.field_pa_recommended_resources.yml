@@ -1,0 +1,31 @@
+uuid: ac2334f6-5e76-485b-8aae-62a475084feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pa_recommended_resources
+    - node.type.news
+    - node.type.pa_highlights
+    - node.type.private_area
+id: node.private_area.field_pa_recommended_resources
+field_name: field_pa_recommended_resources
+entity_type: node
+bundle: private_area
+label: 'Recommended Resources'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+      pa_highlights: pa_highlights
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: news
+field_type: entity_reference

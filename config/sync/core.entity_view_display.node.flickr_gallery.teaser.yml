@@ -1,0 +1,39 @@
+uuid: df45d0ed-a97e-45f6-821e-bc7fa28f43a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.flickr_gallery.body
+    - field.field.node.flickr_gallery.field_cover_photo
+    - field.field.node.flickr_gallery.field_flickr
+    - field.field.node.flickr_gallery.field_publication_date
+    - field.field.node.flickr_gallery.field_tags
+    - node.type.flickr_gallery
+  module:
+    - text
+    - user
+id: node.flickr_gallery.teaser
+targetEntityType: node
+bundle: flickr_gallery
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cover_photo: true
+  field_flickr: true
+  field_publication_date: true
+  field_tags: true
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 196aa5d3-56fd-4b20-8a0e-4a22d43b1340
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.napo_film
+  module:
+    - text
+id: node.napo_film.body
+field_name: body
+entity_type: node
+bundle: napo_film
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

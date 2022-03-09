@@ -1,0 +1,29 @@
+uuid: 28738fa9-7127-4f83-9928-ab401579e474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources
+    - node.type.private_area
+    - taxonomy.vocabulary.related_resources
+id: node.private_area.field_resources
+field_name: field_resources
+entity_type: node
+bundle: private_area
+label: 'Related resources'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      related_resources: related_resources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

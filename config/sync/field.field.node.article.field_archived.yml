@@ -1,0 +1,23 @@
+uuid: 201e2454-1769-4f81-91a2-d79a87efc9b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archived
+    - node.type.article
+id: node.article.field_archived
+field_name: field_archived
+entity_type: node
+bundle: article
+label: Archived
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
