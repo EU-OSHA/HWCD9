@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Ime
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Ime
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Ime
+      filters:
+        name:
+          expose:
+            label: Ime

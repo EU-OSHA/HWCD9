@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Naziv
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Naziv
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Naziv
+      filters:
+        name:
+          expose:
+            label: Naziv
