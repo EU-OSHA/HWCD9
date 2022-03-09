@@ -10,7 +10,7 @@ field_name: field_city
 entity_type: node
 bundle: events
 label: City
-description: ''
+description: 'Use capital letters only for the first letter (ex. Bilbao).'
 required: true
 translatable: false
 default_value: {  }

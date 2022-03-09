@@ -1,12 +1,12 @@
-uuid: 3296a2c3-74f2-4716-8ec2-d6a4e8101892
+uuid: 9c035609-7368-4e62-bce5-90e58fe637ad
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - hwc_import_export
-id: ncw_import_file_publications
-label: 'NCW Import Files Publications'
+id: ncw_import_node_add_resources
+label: 'NCW Import All Resources'
 description: 'Migration of content from HWC and Oira'
 source_type: JSON
 module: null

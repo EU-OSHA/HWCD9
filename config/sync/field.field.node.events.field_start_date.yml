@@ -1,4 +1,4 @@
-uuid: 77b9663c-3ba1-40ee-94f9-21af9fe012ef
+uuid: 4a57dcf4-8ea9-4a4a-b170-1d0526af9465
 langcode: en
 status: true
 dependencies:
@@ -6,16 +6,21 @@ dependencies:
     - field.storage.node.field_start_date
     - node.type.events
   module:
-    - datetime
+    - datetime_range
 id: node.events.field_start_date
 field_name: field_start_date
 entity_type: node
 bundle: events
-label: 'Starting date'
-description: ''
-required: true
+label: 'Start Date'
+description: 'Select the date from the calendar.'
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: now
+    default_end_date: now
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: daterange

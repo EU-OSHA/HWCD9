@@ -26,6 +26,7 @@ dependencies:
     - field.field.node.news.field_summary
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
+    - field.field.node.news.field_workbench_access
     - field.field.node.news.field_xmlsitemap
     - node.type.news
   module:
@@ -71,5 +72,6 @@ hidden:
   field_summary: true
   field_tags: true
   field_wf_notification: true
+  field_workbench_access: true
   field_xmlsitemap: true
   langcode: true

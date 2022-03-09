@@ -47,10 +47,12 @@ dependencies:
     - field.field.node.events.field_unit_ref
     - field.field.node.events.field_website_of_event
     - field.field.node.events.field_wf_notification
+    - field.field.node.events.field_workbench_access
     - field.field.node.events.field_xmlsitemap
     - node.type.events
   module:
     - datetime
+    - datetime_range
     - entity_reference_revisions
     - file
     - link
@@ -364,13 +366,14 @@ content:
     type: entity_reference_label
     region: content
   field_start_date:
-    weight: 103
+    weight: 146
     label: above
     settings:
+      separator: '-'
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-    type: datetime_default
+    type: daterange_default
     region: content
   field_tags:
     weight: 118
@@ -415,6 +418,14 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
+    region: content
+  field_workbench_access:
+    weight: 147
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_xmlsitemap:
     weight: 141

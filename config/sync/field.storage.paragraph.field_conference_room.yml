@@ -1,0 +1,21 @@
+uuid: 85837b52-071f-434e-836e-a3893cdc9d22
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_conference_room
+field_name: field_conference_room
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

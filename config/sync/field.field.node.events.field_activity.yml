@@ -11,7 +11,7 @@ field_name: field_activity
 entity_type: node
 bundle: events
 label: Activity
-description: ''
+description: 'Select the appropriate EU-OSHA activity.'
 required: true
 translatable: false
 default_value: {  }

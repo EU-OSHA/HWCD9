@@ -3,22 +3,54 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.p_schedule.field_conference_room
+    - field.field.paragraph.p_schedule.field_presentation
     - field.field.paragraph.p_schedule.field_schedule_items
+    - field.field.paragraph.p_schedule.field_speech_date
+    - field.field.paragraph.p_schedule.field_speech_title
     - paragraphs.paragraphs_type.p_schedule
+  module:
+    - datetime_range
+    - file
 id: paragraph.p_schedule.default
 targetEntityType: paragraph
 bundle: p_schedule
 mode: default
 content:
-  field_schedule_items:
-    weight: 0
+  field_conference_room:
+    weight: 4
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
+    region: content
+  field_presentation:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_schedule_items:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_speech_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_speech_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

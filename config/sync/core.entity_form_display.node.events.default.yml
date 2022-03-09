@@ -47,10 +47,12 @@ dependencies:
     - field.field.node.events.field_unit_ref
     - field.field.node.events.field_website_of_event
     - field.field.node.events.field_wf_notification
+    - field.field.node.events.field_workbench_access
     - field.field.node.events.field_xmlsitemap
     - node.type.events
   module:
     - datetime
+    - datetime_range
     - field_group
     - file
     - link
@@ -287,7 +289,7 @@ content:
     type: number
     region: content
   field_organizer:
-    weight: 9
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -296,7 +298,7 @@ content:
     region: content
   field_paragraph:
     type: entity_reference_paragraphs
-    weight: 53
+    weight: 48
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -375,10 +377,10 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_start_date:
-    weight: 10
+    weight: 9
     settings: {  }
     third_party_settings: {  }
-    type: datetime_default
+    type: daterange_default
     region: content
   field_tags:
     weight: 25
@@ -416,6 +418,16 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_workbench_access:
+    weight: 53
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_xmlsitemap:
     weight: 49

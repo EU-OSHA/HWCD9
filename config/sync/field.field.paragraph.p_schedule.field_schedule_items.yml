@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_schedule_items
-    - node.type.article
+    - node.type.event_speaker
     - paragraphs.paragraphs_type.p_schedule
 id: paragraph.p_schedule.field_schedule_items
 field_name: field_schedule_items
 entity_type: paragraph
 bundle: p_schedule
-label: 'Schedule items'
+label: Speaker
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      article: article
+      event_speaker: event_speaker
     sort:
-      field: _none
+      field: title
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: article
 field_type: entity_reference

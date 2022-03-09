@@ -12,7 +12,7 @@ field_name: field_publications_exhibition_su
 entity_type: node
 bundle: events
 label: 'Publications/exhibition support'
-description: 'Please download the publications request form and send it to the publications team at least 4 weeks before the event is taking place.'
+description: "Delivery of material /stand should be agreed at AC/PC level and the relevant AdminA should tick a ‘Yes’ or ‘No’ and open a JIRA ticket under <a href=\"https://jira.osha.europa.eu/servicedesk/customer/portal/25\">the Distribution Service Desk</a>.\r\n\r\nPlease respect deadline of at least 4 weeks’ notice in advance to ensure that delivery can be arranged"
 required: true
 translatable: false
 default_value: {  }

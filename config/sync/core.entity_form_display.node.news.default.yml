@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.news.field_summary
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
+    - field.field.node.news.field_workbench_access
     - field.field.node.news.field_xmlsitemap
     - node.type.news
   module:
@@ -211,6 +212,16 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_workbench_access:
+    weight: 147
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_xmlsitemap:
     weight: 141
