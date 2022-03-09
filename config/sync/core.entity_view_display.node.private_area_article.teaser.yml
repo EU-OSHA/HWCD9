@@ -1,0 +1,31 @@
+uuid: 982a9c0a-dfaf-4c32-8380-67eb00b2cd6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.private_area_article.body
+    - node.type.private_area_article
+  module:
+    - text
+    - user
+id: node.private_area_article.teaser
+targetEntityType: node
+bundle: private_area_article
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

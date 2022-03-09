@@ -1,26 +1,25 @@
-uuid: 2eea2430-fbf3-499c-87cf-645bf7ab1d19
+uuid: 448e0552-cc7e-4896-8a0d-de981f3111ce
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - media.type.image
+    - field.storage.node.field_recommended_articles
     - node.type.article
-id: node.article.field_image
-field_name: field_image
+id: node.article.field_recommended_articles
+field_name: field_recommended_articles
 entity_type: node
 bundle: article
-label: Image
+label: 'Recommended Articles'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:node'
   handler_settings:
     target_bundles:
-      image: image
+      article: article
     sort:
       field: _none
       direction: ASC

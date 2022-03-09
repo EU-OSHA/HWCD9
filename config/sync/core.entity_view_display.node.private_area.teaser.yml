@@ -1,0 +1,39 @@
+uuid: 18d74fd7-f005-4dca-a593-cd6ff97e7eec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.private_area.body
+    - field.field.node.private_area.field_msd_priority_area
+    - field.field.node.private_area.field_pa_recommended_resources
+    - field.field.node.private_area.field_resources
+    - field.field.node.private_area.field_tools_and_guidance
+    - node.type.private_area
+  module:
+    - text
+    - user
+id: node.private_area.teaser
+targetEntityType: node
+bundle: private_area
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_msd_priority_area: true
+  field_pa_recommended_resources: true
+  field_resources: true
+  field_tools_and_guidance: true
+  langcode: true

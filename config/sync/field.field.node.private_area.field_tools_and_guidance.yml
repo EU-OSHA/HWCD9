@@ -1,0 +1,29 @@
+uuid: 5c95517b-d0da-4363-9ddb-05327095870d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tools_and_guidance
+    - node.type.practical_tool
+    - node.type.private_area
+id: node.private_area.field_tools_and_guidance
+field_name: field_tools_and_guidance
+entity_type: node
+bundle: private_area
+label: 'Tools and Guidance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      practical_tool: practical_tool
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

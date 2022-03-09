@@ -1,15 +1,15 @@
-uuid: 2eea2430-fbf3-499c-87cf-645bf7ab1d19
+uuid: 1a302f81-5c89-491d-8008-9ad3bdd576c6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
     - media.type.image
-    - node.type.article
-id: node.article.field_image
+    - node.type.spotlight
+id: node.spotlight.field_image
 field_name: field_image
 entity_type: node
-bundle: article
+bundle: spotlight
 label: Image
 description: ''
 required: false

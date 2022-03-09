@@ -1,0 +1,18 @@
+uuid: 2f7a2659-edbd-48f4-a4e0-a19522f60741
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'TK Toolkit'
+type: tk_toolkit
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

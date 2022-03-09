@@ -1,16 +1,16 @@
-uuid: 2eea2430-fbf3-499c-87cf-645bf7ab1d19
+uuid: 4b180333-b83b-49cd-84f2-cb9c26612dbe
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.node.field_cover_image
     - media.type.image
     - node.type.article
-id: node.article.field_image
-field_name: field_image
+id: node.article.field_cover_image
+field_name: field_cover_image
 entity_type: node
 bundle: article
-label: Image
+label: 'Cover image'
 description: ''
 required: false
 translatable: true

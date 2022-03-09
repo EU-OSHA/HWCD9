@@ -1,0 +1,11 @@
+uuid: faf01b15-d1bc-4820-bb24-f7130feaec14
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_toolkit
+id: node.tk_toolkit
+target_entity_type_id: node
+target_bundle: tk_toolkit
+default_langcode: site_default
+language_alterable: false

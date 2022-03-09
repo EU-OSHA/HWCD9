@@ -1,0 +1,21 @@
+uuid: f979bd34-75b6-4ab4-ac6f-e83cb09420af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.spotlight
+  module:
+    - datetime
+id: node.spotlight.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: spotlight
+label: 'Publication date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
