@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nazwa
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nazwa
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Nazwa
+      filters:
+        name:
+          expose:
+            label: Nazwa

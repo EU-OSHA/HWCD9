@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nimi
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Nimi
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Nimi
+      filters:
+        name:
+          expose:
+            label: Nimi
