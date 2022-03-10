@@ -196,7 +196,11 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
+<<<<<<< HEAD
     weight: 30
+=======
+    weight: 100
+>>>>>>> 94d23eedf7e1cda9eac5db3061f4eb0f4abae280
     settings: {  }
     region: content
     third_party_settings: {  }
