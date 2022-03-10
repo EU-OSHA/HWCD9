@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.article.field_external_url
     - field.field.node.article.field_first_publication_date
     - field.field.node.article.field_image
+    - field.field.node.article.field_image2
     - field.field.node.article.field_migration_path_alias
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
@@ -27,6 +28,7 @@ dependencies:
     - node.type.article
   module:
     - comment
+    - content_moderation
     - datetime
     - link
     - path
@@ -286,4 +288,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_image2: true

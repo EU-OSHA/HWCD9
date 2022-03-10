@@ -16,7 +16,11 @@ source:
   plugin: d7_node_entity_translation
   node_type: tk_topic
 process:
-  nid: entity_id
+  nid:
+    plugin: migration_lookup
+    migration:
+      - hwc_toolkit_topic
+    source: entity_id
   type: type
   langcode:
     plugin: static_map
@@ -48,7 +52,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: Y-m-d
+          to_format: 'Y-m-d\TH:i:s'
           source: value
   field_image:
     -
@@ -60,19 +64,19 @@ process:
         - hwc_node_toolkit_topic_media_images_cs
         - hwc_node_toolkit_topic_media_images_da
         - hwc_node_toolkit_topic_media_images_de
-        - hwc_node_toolkit_topic_media_images_es
-        - hwc_node_toolkit_topic_media_images_de
         - hwc_node_toolkit_topic_media_images_el
+        - hwc_node_toolkit_topic_media_images_es
         - hwc_node_toolkit_topic_media_images_et
         - hwc_node_toolkit_topic_media_images_fi
+        - hwc_node_toolkit_topic_media_images_fr
         - hwc_node_toolkit_topic_media_images_hr
         - hwc_node_toolkit_topic_media_images_hu
         - hwc_node_toolkit_topic_media_images_is
         - hwc_node_toolkit_topic_media_images_it
-        - hwc_node_toolkit_topic_media_images_lv
         - hwc_node_toolkit_topic_media_images_lt
-        - hwc_node_toolkit_topic_media_images_nl
+        - hwc_node_toolkit_topic_media_images_lv
         - hwc_node_toolkit_topic_media_images_mt
+        - hwc_node_toolkit_topic_media_images_nl
         - hwc_node_toolkit_topic_media_images_no
         - hwc_node_toolkit_topic_media_images_pl
         - hwc_node_toolkit_topic_media_images_pt
@@ -80,7 +84,7 @@ process:
         - hwc_node_toolkit_topic_media_images_sk
         - hwc_node_toolkit_topic_media_images_sl
         - hwc_node_toolkit_topic_media_images_sv
-        - hwc_node_toolkit_topic_media_images_fr
+        - hwc_node_toolkit_topic_media_images_tr
       no_stub: true
   status: status
   created: created

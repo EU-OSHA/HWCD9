@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.article.field_external_url
     - field.field.node.article.field_first_publication_date
     - field.field.node.article.field_image
+    - field.field.node.article.field_image2
     - field.field.node.article.field_migration_path_alias
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
@@ -24,10 +25,8 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_workbench_access
-    - image.style.media_library
     - node.type.article
   module:
-    - media
     - datetime
     - link
     - text
@@ -218,4 +217,5 @@ content:
     third_party_settings: {  }
 hidden:
   comment: true
+  field_image2: true
   langcode: true
