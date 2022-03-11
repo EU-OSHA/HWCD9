@@ -61,81 +61,81 @@ third_party_settings:
         - field_logo
         - field_campaign_website
         - field_guid_organisation
+      label: 'Guid organisation'
+      region: content
       parent_name: ''
       weight: 1
       format_type: details
-      region: content
       format_settings:
-        id: ''
         classes: 'group-guid-organisation field-group-fieldset'
-        description: ''
+        id: ''
         open: true
+        description: ''
         required_fields: false
-      label: 'Guid organisation'
     group_ph_address:
       children:
         - field_ph_address
         - field_ph_cp
+      label: 'Ph Address'
+      region: content
       parent_name: ''
       weight: 2
       format_type: details
-      region: content
       format_settings:
-        id: ''
         classes: 'group-ph-address field-group-fieldset'
-        description: ''
+        id: ''
         open: true
+        description: ''
         required_fields: false
-      label: 'Ph Address'
     group_guid_main_contact:
       children:
         - field_guid_main_contact
         - field_main_contact
         - field_main_contact_email
         - field_position_main_contact
+      label: 'Main Contact'
+      region: content
       parent_name: ''
       weight: 3
       format_type: details
-      region: content
       format_settings:
-        id: ''
         classes: 'group-main-contact field-group-fieldset'
-        description: ''
+        id: ''
         open: true
+        description: ''
         required_fields: false
-      label: 'Main Contact'
     group_ceo:
       children:
         - field_ceo
         - field_ceo_photo
+      label: CEO
+      region: content
       parent_name: ''
       weight: 4
       format_type: details
-      region: content
       format_settings:
-        description: ''
-        open: true
-        id: ''
         classes: 'group-ceo field-group-fieldset'
+        id: ''
+        open: true
+        description: ''
         required_fields: false
-      label: CEO
     group_category:
       children:
         - field_partner_type
         - field_quote
         - field_pledge
         - field_social_dialog_partner
+      label: Category
+      region: content
       parent_name: ''
       weight: 5
       format_type: details
-      region: content
       format_settings:
-        id: ''
         classes: 'group-category field-group-fieldset'
-        description: ''
+        id: ''
         open: true
+        description: ''
         required_fields: false
-      label: Category
 id: node.partner.default
 targetEntityType: node
 bundle: partner
@@ -148,293 +148,293 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_abbreviation_name:
+    type: string_textfield
     weight: 19
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_appform_status:
+    type: string_textfield
     weight: 9
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_bussines_sector:
+    type: options_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_campaign_website:
+    type: link_default
     weight: 10
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_ceo:
+    type: string_textfield
     weight: 32
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_ceo_photo:
     type: media_library_widget
     weight: 33
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_country:
+    type: options_select
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_facebook_profile:
+    type: link_default
     weight: 11
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_general_email:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
     type: email_default
+    weight: 4
     region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
   field_general_phone:
+    type: string_textfield
     weight: 5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_google_plus_profile:
+    type: link_default
     weight: 16
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_guid_main_contact:
+    type: string_textfield
     weight: 28
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_guid_organisation:
+    type: string_textfield
     weight: 11
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_linkedin_profile:
+    type: link_default
     weight: 15
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_logo:
     type: media_library_widget
     weight: 9
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_main_contact:
+    type: string_textfield
     weight: 29
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_main_contact_email:
-    weight: 30
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
     type: email_default
+    weight: 30
     region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
   field_mission_statement:
+    type: string_textarea
     weight: 8
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_organisation_rep:
+    type: string_textfield
     weight: 7
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_orgtype:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_partner_type:
+    type: options_select
     weight: 34
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_ph_address:
+    type: string_textfield
     weight: 26
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_ph_address_extra:
+    type: string_textfield
     weight: 6
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_ph_cp:
+    type: string_textfield
     weight: 27
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_ph_town:
+    type: string_textfield
     weight: 18
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_pinterest_profile:
+    type: link_default
     weight: 17
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_pledge:
+    type: string_textarea
     weight: 36
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_position_identifier:
+    type: string_textfield
     weight: 8
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_position_main_contact:
+    type: string_textfield
     weight: 31
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_quote:
+    type: string_textarea
     weight: 35
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
   field_slideshare_profile:
+    type: link_default
     weight: 14
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_social_dialog_partner:
+    type: boolean_checkbox
     weight: 37
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_twitter_profile:
+    type: link_default
     weight: 12
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_website:
+    type: link_default
     weight: 6
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_website_email:
-    weight: 7
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
     type: email_default
+    weight: 7
     region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
   field_workbench_access:
+    type: options_select
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_youtube_profile:
+    type: link_default
     weight: 13
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   moderation_state:
     type: moderation_state_default
     weight: 100
-    settings: {  }
     region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
@@ -444,10 +444,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 20
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -465,12 +465,12 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 22
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
 hidden:
   langcode: true
