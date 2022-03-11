@@ -1,0 +1,19 @@
+uuid: 1d59bfd3-90ab-4615-919d-eadbfcd08431
+langcode: en
+status: true
+dependencies: {  }
+id: eu_osha_een_reviewer_notification_to_be_approved
+workflow: news_and_events_created_by_een
+transitions:
+  skip_review_process: skip_review_process
+  requesting_approval: requesting_approval
+roles:
+  eu_osha_een_reviewers: eu_osha_een_reviewers
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is set to be approved'
+body:
+  value: ''
+  format: full_html
+label: 'EU-OSHA EEN Reviewer Notification to be Approved'

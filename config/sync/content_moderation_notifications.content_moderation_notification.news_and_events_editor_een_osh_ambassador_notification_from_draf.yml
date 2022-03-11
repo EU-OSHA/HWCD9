@@ -1,8 +1,8 @@
-uuid: 53eea875-25f5-46f6-9b07-5433fa064858
+uuid: f4b9a959-8168-493e-a507-03ba591cd144
 langcode: en
 status: true
 dependencies: {  }
-id: news_event_item_is_requested_to_be_reviewed
+id: news_and_events_editor_een_osh_ambassador_notification_from_draf
 workflow: news_and_events_created_by_een
 transitions:
   submit_for_review: submit_for_review
@@ -11,8 +11,8 @@ roles:
 author: false
 site_mail: false
 emails: ''
-subject: 'New/event item is requested to be reviewed'
+subject: 'The news/event item is requested to be reviewed'
 body:
   value: ''
   format: full_html
-label: 'News/event item is requested to be reviewed'
+label: 'News and Events Editor – EEN OSH Ambassador Notification from Draft to be Approved'

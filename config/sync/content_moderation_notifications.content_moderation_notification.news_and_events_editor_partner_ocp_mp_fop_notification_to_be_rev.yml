@@ -1,15 +1,15 @@
-uuid: 0412ef69-109d-4295-97df-302ebb25bde2
+uuid: 65a045d7-a435-42ad-853b-1027eb25a967
 langcode: en
 status: true
 dependencies: {  }
-id: the_news_events_item_status_is_set_tobeapproved_
+id: news_and_events_editor_partner_ocp_mp_fop_notification_to_be_rev
 workflow: news_and_events_created_by_een
 transitions:
   submit_for_review: submit_for_review
   reviewing_final_draft: reviewing_final_draft
   reject_approved_to_reviewed: reject_approved_to_reviewed
 roles:
-  eu_osha_een_reviewers: eu_osha_een_reviewers
+  news_and_events_editor_partner_ocp_mp_fop_: news_and_events_editor_partner_ocp_mp_fop_
 author: false
 site_mail: false
 emails: ''
@@ -17,4 +17,4 @@ subject: 'New/event item is set to be reviewed'
 body:
   value: ''
   format: full_html
-label: 'The news/events item status is set "ToBeApproved"'
+label: 'News and Events Editor – Partner (OCP, MP, FOP) Notification to be reviewed by the partner'
