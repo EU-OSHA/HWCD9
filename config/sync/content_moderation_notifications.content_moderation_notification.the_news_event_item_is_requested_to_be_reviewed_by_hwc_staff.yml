@@ -1,0 +1,20 @@
+uuid: f1f6dbfa-99d9-432b-8021-0af6504f4e57
+langcode: en
+status: true
+dependencies: {  }
+id: the_news_event_item_is_requested_to_be_reviewed_by_hwc_staff
+workflow: news_and_events_created_by_een
+transitions:
+  submit_for_review: submit_for_review
+  reviewing_final_draft: reviewing_final_draft
+  reject_approved_to_reviewed: reject_approved_to_reviewed
+roles:
+  hwc_staff_reviewers: hwc_staff_reviewers
+author: false
+site_mail: false
+emails: ''
+subject: 'The news/event item is requested to be reviewed'
+body:
+  value: ''
+  format: full_html
+label: 'The news/event item is requested to be reviewed by HWC staff'

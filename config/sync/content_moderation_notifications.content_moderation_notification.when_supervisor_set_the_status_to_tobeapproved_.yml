@@ -1,0 +1,19 @@
+uuid: 269694af-60f0-4edd-85b4-634deafec318
+langcode: en
+status: true
+dependencies: {  }
+id: when_supervisor_set_the_status_to_tobeapproved_
+workflow: news_and_events_created_by_een
+transitions:
+  skip_review_process: skip_review_process
+  requesting_approval: requesting_approval
+roles:
+  hwc_staff_reviewers: hwc_staff_reviewers
+author: false
+site_mail: false
+emails: ''
+subject: 'The news/event item is requested to be reviewed'
+body:
+  value: ''
+  format: full_html
+label: 'When Supervisor set the status to "ToBeApproved"'

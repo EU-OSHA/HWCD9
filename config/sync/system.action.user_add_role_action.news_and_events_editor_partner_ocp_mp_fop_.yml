@@ -1,0 +1,14 @@
+uuid: 26b87a09-4106-40d0-985a-a8ec5cd00953
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_and_events_editor_partner_ocp_mp_fop_
+  module:
+    - user
+id: user_add_role_action.news_and_events_editor_partner_ocp_mp_fop_
+label: 'Add the News and Events Editor – Partner (OCP, MP, FOP) role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: news_and_events_editor_partner_ocp_mp_fop_

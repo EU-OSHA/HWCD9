@@ -1,0 +1,20 @@
+uuid: 65a045d7-a435-42ad-853b-1027eb25a967
+langcode: en
+status: true
+dependencies: {  }
+id: news_and_events_editor_partner_ocp_mp_fop_notification_to_be_rev
+workflow: news_and_events_created_by_een
+transitions:
+  submit_for_review: submit_for_review
+  reviewing_final_draft: reviewing_final_draft
+  reject_approved_to_reviewed: reject_approved_to_reviewed
+roles:
+  news_and_events_editor_partner_ocp_mp_fop_: news_and_events_editor_partner_ocp_mp_fop_
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is set to be reviewed'
+body:
+  value: ''
+  format: full_html
+label: 'News and Events Editor – Partner (OCP, MP, FOP) Notification to be reviewed by the partner'

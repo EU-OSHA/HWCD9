@@ -70,25 +70,25 @@ type_settings:
       to: published
       weight: 13
     reject:
-      label: Reject
+      label: 'Reject (to be approved to draft)'
       from:
         - to_be_reviewed
       to: draft
       weight: 7
     reject_approved:
-      label: Reject
+      label: 'Reject (to be approved to draft)'
       from:
         - to_be_approved
       to: draft
       weight: 10
     reject_approved_to_final:
-      label: Reject
+      label: 'Reject (to be approved to final draft)'
       from:
         - to_be_approved
       to: final_draft
       weight: 11
     reject_approved_to_reviewed:
-      label: Reject
+      label: 'Reject (to be approved to to be reviewed)'
       from:
         - to_be_approved
       to: to_be_reviewed

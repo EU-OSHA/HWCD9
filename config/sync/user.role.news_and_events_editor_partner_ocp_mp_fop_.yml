@@ -1,14 +1,15 @@
-uuid: 1a450a43-f47c-4453-adaa-476c585ecb42
+uuid: f6784491-ab62-43bf-bd85-c1e11f02021e
 langcode: en
 status: true
 dependencies: {  }
-id: news_and_events_editor_een_osh_ambassador
-label: 'News and Events Editor – EEN OSH Ambassador'
-weight: 18
+id: news_and_events_editor_partner_ocp_mp_fop_
+label: 'News and Events Editor – Partner (OCP, MP, FOP)'
+weight: 19
 is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'change own username'
   - 'create events content'
   - 'create news content'
   - 'delete own events content'
@@ -16,6 +17,7 @@ permissions:
   - 'edit own event_speaker content'
   - 'edit own events content'
   - 'edit own news content'
+  - 'edit own partner content'
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition creating_final_draft'
   - 'use text format full_html'

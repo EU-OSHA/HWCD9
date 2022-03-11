@@ -1,0 +1,20 @@
+uuid: d20bdfe3-5185-4dca-bf49-489231c58c00
+langcode: en
+status: true
+dependencies: {  }
+id: the_news_events_item_is_published
+workflow: news_and_events_created_by_een
+transitions:
+  publish: publish
+  publish_reviewed: publish_reviewed
+  publishing_approved: publishing_approved
+roles:
+  news_and_events_editor_een_osh_ambassador: news_and_events_editor_een_osh_ambassador
+author: false
+site_mail: false
+emails: ''
+subject: 'The news/events item is published'
+body:
+  value: ''
+  format: full_html
+label: 'The news/events item is published'
