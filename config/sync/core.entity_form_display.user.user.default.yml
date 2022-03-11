@@ -25,21 +25,21 @@ content:
     weight: 5
     region: content
   field_crm_guid:
+    type: string_textfield
     weight: 31
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_user_partner_guid:
+    type: string_textfield
     weight: 32
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   language:
     weight: 0
     region: content
@@ -54,11 +54,11 @@ content:
     region: content
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
   langcode: true

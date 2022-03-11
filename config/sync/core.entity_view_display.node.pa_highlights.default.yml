@@ -20,49 +20,49 @@ bundle: pa_highlights
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_image:
-    weight: 105
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 105
     region: content
   field_language:
-    weight: 103
+    type: languagefield_default
     label: above
     settings:
       link_to_entity: false
       format:
         name: name
     third_party_settings: {  }
-    type: languagefield_default
+    weight: 103
     region: content
   field_metatags:
-    weight: 102
+    type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 102
     region: content
   field_xmlsitemap:
-    weight: 104
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 104
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true

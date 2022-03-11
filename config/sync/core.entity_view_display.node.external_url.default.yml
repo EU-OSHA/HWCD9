@@ -22,23 +22,23 @@ bundle: external_url
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_character_count:
-    weight: 105
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 105
     region: content
   field_external_url:
-    weight: 104
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -47,44 +47,44 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 104
     region: content
   field_image:
-    weight: 107
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 107
     region: content
   field_metatags:
-    weight: 103
+    type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 103
     region: content
   field_pages_count:
-    weight: 106
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 106
     region: content
   field_xmlsitemap:
-    weight: 102
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 102
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true
