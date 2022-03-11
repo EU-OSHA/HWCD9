@@ -1,0 +1,20 @@
+uuid: f507ddb7-5f93-401b-96d5-c041fdfba178
+langcode: en
+status: true
+dependencies: {  }
+id: news_and_events_editor_partner_ocp_mp_fop_notification_when_cont
+workflow: news_and_events_created_by_een
+transitions:
+  publish: publish
+  publish_reviewed: publish_reviewed
+  publishing_approved: publishing_approved
+roles:
+  news_and_events_editor_partner_ocp_mp_fop_: news_and_events_editor_partner_ocp_mp_fop_
+author: false
+site_mail: false
+emails: ''
+subject: 'The news/events item is published'
+body:
+  value: "<p>&lt;p&gt;Dear Partner,&lt;/p&gt;<br />\r\n&lt;p&gt;The [node:type] item that you submitted for publication on your organisation’s profile has been validated by EU-OSHA and has now been published.&lt;/p&gt;<br />\r\n&lt;p&gt;&lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;Thank you for your participation in the Healthy Workplaces Campaign 2020-2022 Healthy Workplaces Lighten the Load campaign.&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'News and Events Editor – Partner (OCP, MP, FOP) Notification when content published'
