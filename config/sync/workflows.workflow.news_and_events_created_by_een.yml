@@ -14,121 +14,127 @@ type_settings:
   states:
     draft:
       label: Draft
-      weight: -3
       published: false
       default_revision: false
+      weight: -3
     final_draft:
+      published: false
+      default_revision: false
       label: 'Final Draft'
       weight: -2
-      published: false
-      default_revision: false
     published:
       label: Published
-      weight: 1
       published: true
       default_revision: true
+      weight: 1
     to_be_approved:
+      published: false
+      default_revision: false
       label: 'To Be Approved'
       weight: 0
+    to_be_reviewed:
       published: false
       default_revision: false
-    to_be_reviewed:
       label: 'To Be Reviewed'
       weight: -1
-      published: false
-      default_revision: false
   transitions:
     create_new_draft:
       label: 'Create New Draft'
-      from:
-        - draft
       to: draft
       weight: 0
+      from:
+        - draft
     creating_final_draft:
       label: 'Creating Final Draft'
       from:
         - draft
       to: final_draft
-      weight: 2
+      weight: -6
+    final_draft_edit_:
+      label: 'Final Draft (edit)'
+      from:
+        - final_draft
+      to: final_draft
+      weight: -5
     publish:
       label: Publish
+      to: published
+      weight: 1
       from:
         - draft
         - published
-      to: published
-      weight: 1
     publish_reviewed:
       label: Publish
       from:
         - to_be_reviewed
       to: published
-      weight: 9
+      weight: 2
     publishing_approved:
       label: Publishing
       from:
         - to_be_approved
       to: published
-      weight: 13
+      weight: 6
     reject:
       label: 'Reject (to be approved to draft)'
       from:
         - to_be_reviewed
       to: draft
-      weight: 7
+      weight: 0
     reject_approved:
       label: 'Reject (to be approved to draft)'
       from:
         - to_be_approved
       to: draft
-      weight: 10
+      weight: 3
     reject_approved_to_final:
       label: 'Reject (to be approved to final draft)'
       from:
         - to_be_approved
       to: final_draft
-      weight: 11
+      weight: 4
     reject_approved_to_reviewed:
       label: 'Reject (to be approved to to be reviewed)'
       from:
         - to_be_approved
       to: to_be_reviewed
-      weight: 12
+      weight: 5
     rejecting_draft_as_final:
       label: 'Rejecting Draft as Final'
       from:
         - final_draft
       to: draft
-      weight: 4
+      weight: -3
     requesting_approval:
       label: 'Requesting Approval'
       from:
         - to_be_reviewed
       to: to_be_approved
-      weight: 8
+      weight: 1
     reviewing_final_draft:
       label: 'Reviewing Final Draft'
       from:
         - final_draft
       to: to_be_reviewed
-      weight: 5
+      weight: -2
     skip_review_process:
       label: 'Skip Review process'
       from:
         - final_draft
       to: to_be_approved
-      weight: 6
+      weight: -1
     submit_for_review:
       label: 'Submit for Review'
       from:
         - draft
       to: to_be_reviewed
-      weight: 3
+      weight: -4
     unpublish:
       label: Unpublish
       from:
         - published
       to: draft
-      weight: 14
+      weight: 7
   entity_types:
     node:
       - events

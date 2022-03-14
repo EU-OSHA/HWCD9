@@ -14,6 +14,6 @@ site_mail: false
 emails: ''
 subject: 'The news/event item is requested to be reviewed'
 body:
-  value: ''
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for approval. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
   format: full_html
 label: 'When Supervisor set the status to "ToBeApproved"'

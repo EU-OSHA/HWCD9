@@ -1,15 +1,15 @@
-uuid: 65a045d7-a435-42ad-853b-1027eb25a967
+uuid: d2fd3b20-662c-42d8-823f-104a5aaa6549
 langcode: en
 status: true
 dependencies: {  }
-id: news_and_events_editor_partner_ocp_mp_fop_notification_to_be_rev
+id: hwc_staff_reviewers_notification_when_content_is_set_to_be_revie
 workflow: news_and_events_created_by_een
 transitions:
   submit_for_review: submit_for_review
   reviewing_final_draft: reviewing_final_draft
   reject_approved_to_reviewed: reject_approved_to_reviewed
 roles:
-  news_and_events_editor_partner_ocp_mp_fop_: news_and_events_editor_partner_ocp_mp_fop_
+  hwc_staff_reviewers: hwc_staff_reviewers
 author: false
 site_mail: false
 emails: ''
@@ -17,4 +17,4 @@ subject: 'New/event item is set to be reviewed'
 body:
   value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for review. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
   format: full_html
-label: 'News and Events Editor – Partner (OCP, MP, FOP) Notification to be reviewed by the partner'
+label: 'HWC Staff – Reviewers Notification to be Reviewed'
