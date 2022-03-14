@@ -13,7 +13,6 @@ permissions:
   - 'create news content'
   - 'delete own events content'
   - 'delete own news content'
-  - 'edit own event_speaker content'
   - 'edit own events content'
   - 'edit own news content'
   - 'use news_and_events_created_by_een transition create_new_draft'
