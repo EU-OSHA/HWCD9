@@ -13,6 +13,6 @@ name: News
 type: news
 description: 'OSH news'
 help: ''
-new_revision: false
-preview_mode: 2
+new_revision: true
+preview_mode: 1
 display_submitted: false
