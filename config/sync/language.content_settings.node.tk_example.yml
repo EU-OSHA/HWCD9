@@ -1,0 +1,16 @@
+uuid: 8fd40a1c-6eb7-4777-a5e3-8ff80a8dfcd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_example
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.tk_example
+target_entity_type_id: node
+target_bundle: tk_example
+default_langcode: site_default
+language_alterable: true

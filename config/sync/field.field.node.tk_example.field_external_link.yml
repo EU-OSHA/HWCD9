@@ -1,0 +1,23 @@
+uuid: 15364b98-bc95-4fd3-8280-f229d111341a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_link
+    - node.type.tk_example
+  module:
+    - link
+id: node.tk_example.field_external_link
+field_name: field_external_link
+entity_type: node
+bundle: tk_example
+label: 'Show links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
