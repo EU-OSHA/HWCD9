@@ -44,20 +44,12 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_external_link:
-    plugin: sub_process
-    source: field_external_link
-    process:
-      uri: url
-      title: title
-      options: attributes
-  field_image:
+  field_download_pdf:
     -
-      plugin: file_id_lookup
-      source: field_image
-      migration:
-        - hwc_node_toolkit_example_media_images_1
-      no_stub: true
+      plugin: sub_process
+      source: field_download_pdf
+      process:
+        target_id: tid
   type:
     -
       plugin: default_value
@@ -67,3 +59,4 @@ destination:
 migration_dependencies:
   required:
     - d7_user
+    - hwc_node_toolkit_example_media_images_1
