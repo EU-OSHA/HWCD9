@@ -1,0 +1,21 @@
+uuid: 0e3cb2b0-dfe1-449c-9729-085428852d11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participate_date
+    - node.type.gpa
+  module:
+    - datetime
+id: node.gpa.field_participate_date
+field_name: field_participate_date
+entity_type: node
+bundle: gpa
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

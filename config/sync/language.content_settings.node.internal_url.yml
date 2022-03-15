@@ -1,0 +1,11 @@
+uuid: bc86591c-8c1e-4067-9031-faf93e627f65
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.internal_url
+id: node.internal_url
+target_entity_type_id: node
+target_bundle: internal_url
+default_langcode: site_default
+language_alterable: false

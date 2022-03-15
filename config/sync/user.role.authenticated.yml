@@ -14,6 +14,7 @@ permissions:
   - 'access direct download file'
   - 'access news feeds'
   - 'access site map'
+  - 'create news content'
   - 'diff view changes'
   - 'display EU Cookie Compliance popup'
   - 'download any document files'

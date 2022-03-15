@@ -1,0 +1,32 @@
+uuid: f37ba402-1133-4879-a0c2-0a5425c73d89
+langcode: en
+status: true
+dependencies: {  }
+id: website_managers_notification_modified
+workflow: news_and_events_created_by_een
+transitions:
+  create_new_draft: create_new_draft
+  publish: publish
+  creating_final_draft: creating_final_draft
+  submit_for_review: submit_for_review
+  rejecting_draft_as_final: rejecting_draft_as_final
+  reviewing_final_draft: reviewing_final_draft
+  skip_review_process: skip_review_process
+  reject: reject
+  requesting_approval: requesting_approval
+  publish_reviewed: publish_reviewed
+  reject_approved: reject_approved
+  reject_approved_to_final: reject_approved_to_final
+  reject_approved_to_reviewed: reject_approved_to_reviewed
+  publishing_approved: publishing_approved
+  unpublish: unpublish
+roles:
+  website_managers: website_managers
+author: false
+site_mail: false
+emails: ''
+subject: 'The news/events item is modified'
+body:
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has created/modified a [node:type] item. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'Website managers Notification Modified'

@@ -1,0 +1,25 @@
+uuid: f6784491-ab62-43bf-bd85-c1e11f02021e
+langcode: en
+status: true
+dependencies: {  }
+id: news_and_events_editor_partner_ocp_mp_fop_
+label: 'News and Events Editor – Partner (OCP, MP, FOP)'
+weight: 19
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'change own username'
+  - 'create events content'
+  - 'create news content'
+  - 'delete own events content'
+  - 'delete own news content'
+  - 'edit own events content'
+  - 'edit own news content'
+  - 'edit own partner content'
+  - 'use news_and_events_created_by_een transition create_new_draft'
+  - 'use news_and_events_created_by_een transition final_draft_edit_'
+  - 'use text format full_html'
+  - 'use workbench access'
+  - 'view own unpublished content'
+  - 'view the administration theme'

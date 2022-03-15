@@ -1,0 +1,20 @@
+uuid: d2fd3b20-662c-42d8-823f-104a5aaa6549
+langcode: en
+status: true
+dependencies: {  }
+id: hwc_staff_reviewers_notification_when_content_is_set_to_be_revie
+workflow: news_and_events_created_by_een
+transitions:
+  submit_for_review: submit_for_review
+  reviewing_final_draft: reviewing_final_draft
+  reject_approved_to_reviewed: reject_approved_to_reviewed
+roles:
+  hwc_staff_reviewers: hwc_staff_reviewers
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is set to be reviewed'
+body:
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for review. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'HWC Staff – Reviewers Notification to be Reviewed'

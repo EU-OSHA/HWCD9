@@ -1,0 +1,19 @@
+uuid: 8cc87860-266a-45f1-ae5c-b4f3ef9a77fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_zip_code
+    - node.type.press_contact
+id: node.press_contact.field_zip_code
+field_name: field_zip_code
+entity_type: node
+bundle: press_contact
+label: 'Zip Code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

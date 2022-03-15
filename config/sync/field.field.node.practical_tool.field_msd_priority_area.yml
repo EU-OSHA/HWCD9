@@ -1,0 +1,29 @@
+uuid: d87ea59b-c5d5-4e5f-93e6-6854419f5393
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_msd_priority_area
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_priority_area
+id: node.practical_tool.field_msd_priority_area
+field_name: field_msd_priority_area
+entity_type: node
+bundle: practical_tool
+label: 'Priority area'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_priority_area: msd_priority_area
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

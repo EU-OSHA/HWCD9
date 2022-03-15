@@ -1,0 +1,23 @@
+uuid: df87feb9-05df-43b6-b0cf-3075a8f552b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.home_page_sections
+  module:
+    - text
+id: node.home_page_sections.body
+field_name: body
+entity_type: node
+bundle: home_page_sections
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

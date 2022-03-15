@@ -1,0 +1,14 @@
+uuid: bdeb13c8-8a6b-4b2e-b8da-76d789790966
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.news_and_events_editor_een_osh_ambassador
+  module:
+    - user
+id: user_add_role_action.news_and_events_editor_een_osh_ambassador
+label: 'Add the News and Events Editor – EEN OSH Ambassador role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: news_and_events_editor_een_osh_ambassador

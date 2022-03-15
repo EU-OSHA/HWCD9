@@ -1,0 +1,29 @@
+uuid: bafa96c1-e42e-4994-87a0-a61cc08689c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources
+    - node.type.campaign_18
+    - taxonomy.vocabulary.related_resources
+id: node.campaign_18.field_resources
+field_name: field_resources
+entity_type: node
+bundle: campaign_18
+label: 'Related resources'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      related_resources: related_resources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

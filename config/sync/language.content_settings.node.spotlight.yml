@@ -1,0 +1,11 @@
+uuid: 0d5034f3-b28d-4f25-abdd-8123455ed872
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.spotlight
+id: node.spotlight
+target_entity_type_id: node
+target_bundle: spotlight
+default_langcode: site_default
+language_alterable: false

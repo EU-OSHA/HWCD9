@@ -1,0 +1,29 @@
+uuid: e5701985-732a-43eb-ae1a-9629d51fd3d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hazards
+    - node.type.practical_tool
+    - taxonomy.vocabulary.msd_hazards
+id: node.practical_tool.field_hazards
+field_name: field_hazards
+entity_type: node
+bundle: practical_tool
+label: Hazards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      msd_hazards: msd_hazards
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

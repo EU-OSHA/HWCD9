@@ -19,7 +19,7 @@ source:
   entity_type: node
   bundle: tk_topic
   langcode: 'no'
-  d7_file_url: 'https://test.healthy-workplaces.eu/sites/default/files/'
+  d7_file_url: 'https://healthy-workplaces.eu/sites/default/files/'
   field_names:
     - field_image
 process:

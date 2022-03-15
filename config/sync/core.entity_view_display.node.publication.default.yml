@@ -45,168 +45,168 @@ third_party_settings:
   field_group:
     group_summary_resources:
       children: {  }
+      label: 'Summary & Resources'
       parent_name: ''
+      region: hidden
       weight: 20
       format_type: fieldset
-      region: hidden
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         description: ''
-      label: 'Summary & Resources'
 id: node.publication.default
 targetEntityType: node
 bundle: publication
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_activity:
-    weight: 127
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 127
     region: content
   field_aditional_resources:
-    weight: 129
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 129
     region: content
   field_archived:
-    weight: 112
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 112
     region: content
   field_author:
-    weight: 108
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 108
     region: content
   field_banner_publications_office:
-    weight: 126
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 126
     region: content
   field_booklet:
-    weight: 130
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 130
     region: content
   field_character_count:
-    weight: 113
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 113
     region: content
   field_cover_image:
     type: entity_reference_entity_view
-    weight: 131
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 131
     region: content
   field_expiration_date:
-    weight: 105
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 105
     region: content
   field_file:
-    weight: 132
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 132
     region: content
   field_first_publication_date:
-    weight: 118
+    type: timestamp
     label: above
     settings:
       date_format: medium
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    type: timestamp
+    weight: 118
     region: content
   field_metatags:
-    weight: 114
+    type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 114
     region: content
   field_migration_path_alias:
-    weight: 119
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 119
     region: content
   field_modified_date:
-    weight: 128
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 128
     region: content
   field_msd_priority_area:
-    weight: 107
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 107
     region: content
   field_nace_codes:
-    weight: 125
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 125
     region: content
   field_page_count:
-    weight: 115
+    type: number_decimal
     label: above
     settings:
       thousand_separator: ''
@@ -214,111 +214,111 @@ content:
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_decimal
+    weight: 115
     region: content
   field_pages_count:
-    weight: 121
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 121
     region: content
   field_pages_count_updated:
-    weight: 122
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 122
     region: content
   field_publication_bookshop_id:
-    weight: 120
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 120
     region: content
   field_publication_date:
-    weight: 104
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 104
     region: content
   field_publication_related_res:
     type: entity_reference_entity_view
-    weight: 133
     label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 133
     region: content
   field_publication_type:
-    weight: 102
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 102
     region: content
   field_related_publications:
-    weight: 110
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 110
     region: content
   field_show_on:
-    weight: 123
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 123
     region: content
   field_tags:
-    weight: 106
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 106
     region: content
   field_thesaurus:
-    weight: 124
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 124
     region: content
   field_workbench_access:
-    weight: 134
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 134
     region: content
   field_xmlsitemap:
-    weight: 117
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 117
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true

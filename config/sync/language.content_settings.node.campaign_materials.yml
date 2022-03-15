@@ -1,0 +1,11 @@
+uuid: 59cc0957-ebb3-47b5-88ae-d17071168894
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_materials
+id: node.campaign_materials
+target_entity_type_id: node
+target_bundle: campaign_materials
+default_langcode: site_default
+language_alterable: false

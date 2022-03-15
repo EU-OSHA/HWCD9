@@ -1,0 +1,23 @@
+uuid: 7fd80f89-cc37-40da-a752-23a6033f6743
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nominated_by_fop
+    - node.type.practical_tool
+id: node.practical_tool.field_nominated_by_fop
+field_name: field_nominated_by_fop
+entity_type: node
+bundle: practical_tool
+label: 'Nominated by FOP'
+description: 'Please tick if yes'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

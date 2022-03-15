@@ -1,0 +1,19 @@
+uuid: 7d276dd3-4e23-4495-9a70-6677a6cbb512
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_participate_description
+field_name: field_participate_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 1a450a43-f47c-4453-adaa-476c585ecb42
+langcode: en
+status: true
+dependencies: {  }
+id: news_and_events_editor_een_osh_ambassador
+label: 'News and Events Editor – EEN OSH Ambassador'
+weight: 18
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'create events content'
+  - 'create news content'
+  - 'delete own events content'
+  - 'delete own news content'
+  - 'edit own events content'
+  - 'edit own news content'
+  - 'use news_and_events_created_by_een transition create_new_draft'
+  - 'use news_and_events_created_by_een transition final_draft_edit_'
+  - 'use text format full_html'
+  - 'use workbench access'
+  - 'view own unpublished content'
+  - 'view the administration theme'

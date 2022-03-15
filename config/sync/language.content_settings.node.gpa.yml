@@ -1,0 +1,11 @@
+uuid: 387187d6-f879-4d28-8ecb-4634528c0b21
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gpa
+id: node.gpa
+target_entity_type_id: node
+target_bundle: gpa
+default_langcode: site_default
+language_alterable: false

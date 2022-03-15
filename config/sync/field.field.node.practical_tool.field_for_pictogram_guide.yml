@@ -1,0 +1,21 @@
+uuid: 6dfdcdf2-56f2-42fc-8a58-0ebdd01bd2c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_for_pictogram_guide
+    - node.type.practical_tool
+  module:
+    - options
+id: node.practical_tool.field_for_pictogram_guide
+field_name: field_for_pictogram_guide
+entity_type: node
+bundle: practical_tool
+label: 'Recommended for EU-OSHA pictogram guide'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

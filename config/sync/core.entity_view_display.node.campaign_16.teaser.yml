@@ -1,0 +1,41 @@
+uuid: 66788d74-b5c5-4e7e-8d3f-defaa5fd9ab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.campaign_16.body
+    - field.field.node.campaign_16.field_article_type
+    - field.field.node.campaign_16.field_campaign_resources
+    - field.field.node.campaign_16.field_icon
+    - field.field.node.campaign_16.field_resources
+    - field.field.node.campaign_16.field_splash_title
+    - node.type.campaign_16
+  module:
+    - text
+    - user
+id: node.campaign_16.teaser
+targetEntityType: node
+bundle: campaign_16
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_article_type: true
+  field_campaign_resources: true
+  field_icon: true
+  field_resources: true
+  field_splash_title: true
+  langcode: true

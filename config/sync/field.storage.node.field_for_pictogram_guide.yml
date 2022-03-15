@@ -1,0 +1,30 @@
+uuid: 67796665-b767-446d-bc8a-7d0189114f06
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_for_pictogram_guide
+field_name: field_for_pictogram_guide
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'No'
+      label: 'No'
+    -
+      value: 'Yes'
+      label: 'Yes'
+    -
+      value: Possibly
+      label: Possibly
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

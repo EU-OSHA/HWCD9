@@ -1,0 +1,65 @@
+uuid: d918ec18-665a-4b88-8d6c-0a747983907d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.private_area.body
+    - field.field.node.private_area.field_msd_priority_area
+    - field.field.node.private_area.field_pa_recommended_resources
+    - field.field.node.private_area.field_resources
+    - field.field.node.private_area.field_tools_and_guidance
+    - node.type.private_area
+  module:
+    - text
+    - user
+id: node.private_area.default
+targetEntityType: node
+bundle: private_area
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_msd_priority_area:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_pa_recommended_resources:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_resources:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_tools_and_guidance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

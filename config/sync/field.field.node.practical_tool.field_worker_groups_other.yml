@@ -1,0 +1,19 @@
+uuid: ae9d159e-bf2a-402c-a8fd-767840f6b4cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_worker_groups_other
+    - node.type.practical_tool
+id: node.practical_tool.field_worker_groups_other
+field_name: field_worker_groups_other
+entity_type: node
+bundle: practical_tool
+label: 'Worker groups covered other'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

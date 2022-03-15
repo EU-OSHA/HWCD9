@@ -1,0 +1,11 @@
+uuid: aa7a2105-cc67-46ac-b9c5-7ee804a41e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_16
+id: node.campaign_16
+target_entity_type_id: node
+target_bundle: campaign_16
+default_langcode: site_default
+language_alterable: false

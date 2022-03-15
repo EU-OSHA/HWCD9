@@ -1,0 +1,19 @@
+uuid: 59ded195-a6a9-4b28-b1c2-c93823fc23ea
+langcode: en
+status: true
+dependencies: {  }
+id: hwc_staff_reviewers_to_be_approved
+workflow: news_and_events_created_by_een
+transitions:
+  skip_review_process: skip_review_process
+  requesting_approval: requesting_approval
+roles:
+  hwc_staff_reviewers: hwc_staff_reviewers
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is set to be approved'
+body:
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for approval. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'HWC Staff – Reviewers to be Approved'

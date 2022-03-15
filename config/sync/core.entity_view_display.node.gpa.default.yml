@@ -1,0 +1,81 @@
+uuid: 7c3bf4e2-1c6f-4881-a5a5-50998471d6d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gpa.body
+    - field.field.node.gpa.field_contact_details
+    - field.field.node.gpa.field_image
+    - field.field.node.gpa.field_introductory_text
+    - field.field.node.gpa.field_participate_date
+    - field.field.node.gpa.field_participate_description
+    - field.field.node.gpa.field_participate_upcoming_descr
+    - node.type.gpa
+  module:
+    - datetime
+    - text
+    - user
+id: node.gpa.default
+targetEntityType: node
+bundle: gpa
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_contact_details:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_introductory_text:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_participate_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_participate_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_participate_upcoming_descr:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -18,10 +18,6 @@ source:
   constants:
     slash: /
 process:
-  nid:
-    -
-      plugin: get
-      source: nid
   type:
     -
       plugin: default_value
@@ -63,7 +59,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: Y-m-d
+          to_format: 'Y-m-d\TH:i:s'
           source: value
   field_image:
     -
