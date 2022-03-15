@@ -68,7 +68,7 @@ third_party_settings:
       label: Contact
       region: content
       parent_name: ''
-      weight: 41
+      weight: 42
       format_type: fieldset
       format_settings:
         classes: ''
@@ -353,6 +353,13 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 41
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     weight: 38
@@ -392,4 +399,3 @@ hidden:
   field_wf_notification: true
   field_xmlsitemap: true
   langcode: true
-  status: true
