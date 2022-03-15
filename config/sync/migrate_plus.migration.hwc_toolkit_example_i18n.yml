@@ -1,27 +1,37 @@
-uuid: 31efa5d8-2438-4b21-802c-efffa9e78336
+uuid: 45a4d612-3b72-4f1c-ab18-95ccca2eb790
 langcode: en
 status: true
 dependencies:
   enforced:
     module:
       - hwc_custom_migrations
-id: hwc_toolkit_example
+id: hwc_toolkit_example_i18n
 class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: hwc_toolkit_example
-label: 'Node: Toolkit Example'
+label: 'Node: Toolkit Example i18n'
 source:
-  plugin: hcw_d7_node
+  plugin: d7_node_entity_translation
   node_type: tk_example
-  constants:
-    slash: /
 process:
+  nid:
+    plugin: migration_lookup
+    migration: hwc_toolkit_example
+    source: entity_id
+  type:
+    -
+      plugin: default_value
+      default_value: tk_example
   title:
     -
       plugin: get
       source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
   body:
     -
       plugin: get
@@ -30,14 +40,6 @@ process:
     -
       plugin: default_value
       default_value: full_html
-  field_country:
-    -
-      plugin: hmc_taxonomy_term
-      source: field_country
-  field_organisation:
-    -
-      plugin: get
-      source: field_organisation
   field_publication_date:
     -
       plugin: sub_process
@@ -48,16 +50,6 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_download_pdf:
-    -
-      plugin: sub_process
-      source: field_download_pdf
-      process:
-        target_id: tid
-  type:
-    -
-      plugin: default_value
-      default_value: tk_example
   field_image:
     -
       plugin: file_id_lookup
@@ -65,9 +57,24 @@ process:
       migration:
         - hwc_node_toolkit_example_media_images_1
       no_stub: true
+  langcode:
+    plugin: static_map
+    bypass: true
+    source: language
+    map:
+      pt: pt-pt
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  content_translation_source: source
+  content_translation_outdated: translate
 destination:
   plugin: 'entity:node'
-migration_dependencies:
-  required:
-    - d7_user
-    - hwc_node_toolkit_example_media_images_1
+  translations: true
+  destination_module: content_translation
+migration_dependencies: null
