@@ -66,7 +66,6 @@ third_party_settings:
     group_div:
       children:
         - links
-        - content_moderation_control
         - field_location
         - field_type_event
         - field_related_documents
@@ -110,7 +109,7 @@ third_party_settings:
       label: Hidden
       parent_name: ''
       region: content
-      weight: 6
+      weight: 7
       format_type: html_element
       format_settings:
         classes: hidden
@@ -132,12 +131,12 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
   field_activity:
     type: entity_reference_label
@@ -199,7 +198,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_color:
     type: list_default
@@ -237,7 +236,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_event_in_amp:
     type: list_default
@@ -346,7 +345,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
@@ -440,7 +439,7 @@ content:
       format_type: only_day
       separator: '-'
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_tags:
     type: entity_reference_label
@@ -474,7 +473,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_wf_notification:
     type: boolean
