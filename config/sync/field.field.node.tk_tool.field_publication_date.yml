@@ -1,24 +1,21 @@
-uuid: 017a5ea9-2cef-4c90-a6a9-0d7e0290b988
+uuid: ee28c3bb-dc62-4348-9464-9d09cb3f8144
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_publication_date
-    - node.type.news
+    - node.type.tk_tool
   module:
     - datetime
-id: node.news.field_publication_date
+id: node.tk_tool.field_publication_date
 field_name: field_publication_date
 entity_type: node
-bundle: news
+bundle: tk_tool
 label: 'Publication date'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    default_date_type: now
-    default_date: now
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: datetime

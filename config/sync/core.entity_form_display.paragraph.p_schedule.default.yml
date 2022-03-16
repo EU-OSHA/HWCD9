@@ -34,13 +34,13 @@ content:
     third_party_settings: {  }
   field_schedule_items:
     type: options_select
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_speech_date:
     type: daterange_default
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

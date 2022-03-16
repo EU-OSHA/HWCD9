@@ -1,0 +1,8 @@
+uuid: 0794c5ae-5687-4907-82f5-cf447b74daba
+langcode: zxx
+status: true
+dependencies: {  }
+id: only_day
+label: 'Only day'
+locked: false
+pattern: d/m/Y

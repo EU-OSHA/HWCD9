@@ -1,17 +1,17 @@
-uuid: 93e2f6ae-e69a-4c12-bc9c-e57e50240954
+uuid: d9603d34-3e50-4038-a5bc-00b44b6768e7
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime_range
     - node
-id: node.field_start_date
-field_name: field_start_date
+    - taxonomy
+id: node.field_tk_tool_type
+field_name: field_tk_tool_type
 entity_type: node
-type: daterange
+type: entity_reference
 settings:
-  datetime_type: date
-module: datetime_range
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

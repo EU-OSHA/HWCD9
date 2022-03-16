@@ -50,8 +50,9 @@ dependencies:
     - field.field.node.events.field_workbench_access
     - field.field.node.events.field_xmlsitemap
     - node.type.events
+    - workflows.workflow.news_and_events_created_by_een
   module:
-    - datetime
+    - content_moderation
     - datetime_range
     - field_group
     - file
@@ -63,16 +64,11 @@ dependencies:
 third_party_settings:
   field_group:
     group_contact:
-      children:
-        - field_migration_source
-        - field_xmlsitemap
-        - field_first_publication_date
-        - field_migration_path_alias
-        - field_show_on
+      children: {  }
       label: Contact
       region: content
       parent_name: ''
-      weight: 47
+      weight: 42
       format_type: fieldset
       format_settings:
         classes: ''
@@ -86,7 +82,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 7
     region: content
     settings:
       rows: 9
@@ -96,13 +92,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 36
     region: content
     settings: {  }
     third_party_settings: {  }
   field_activity:
     type: entity_reference_autocomplete
-    weight: 18
+    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -112,7 +108,7 @@ content:
     third_party_settings: {  }
   field_adonis:
     type: string_textfield
-    weight: 28
+    weight: 22
     region: content
     settings:
       size: 60
@@ -120,15 +116,7 @@ content:
     third_party_settings: {  }
   field_agency_contact_reply:
     type: string_textfield
-    weight: 35
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_agency_initial_contact:
-    type: string_textfield
-    weight: 41
+    weight: 29
     region: content
     settings:
       size: 60
@@ -136,7 +124,7 @@ content:
     third_party_settings: {  }
   field_agency_rep_confirmed:
     type: string_textfield
-    weight: 32
+    weight: 26
     region: content
     settings:
       size: 60
@@ -144,161 +132,104 @@ content:
     third_party_settings: {  }
   field_agency_role:
     type: options_select
-    weight: 30
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
   field_agenda:
     type: options_select
-    weight: 31
+    weight: 25
     region: content
     settings: {  }
     third_party_settings: {  }
   field_city:
     type: string_textfield
-    weight: 13
+    weight: 5
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Event city.'
     third_party_settings: {  }
   field_color:
     type: options_select
-    weight: 36
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   field_contact_email:
     type: string_textfield
-    weight: 22
+    weight: 16
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Contact e-mail.'
     third_party_settings: {  }
   field_contact_name:
     type: string_textfield
-    weight: 20
+    weight: 14
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Contact person name.'
     third_party_settings: {  }
   field_contact_phone:
     type: string_textfield
-    weight: 21
+    weight: 15
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Contact person number.'
     third_party_settings: {  }
   field_country_code:
     type: options_select
-    weight: 14
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_event_in_amp:
-    type: options_select
-    weight: 43
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_first_publication_date:
-    type: datetime_timestamp
-    weight: 50
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   field_for_the_web:
-    type: options_select
-    weight: 26
+    type: options_buttons
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   field_key_performance:
     type: options_select
-    weight: 27
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
   field_location:
     type: string_textfield
-    weight: 12
+    weight: 4
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Location of the event, e.g. name of venue, hall, hotel.'
     third_party_settings: {  }
   field_media_promotion:
     type: options_select
-    weight: 34
+    weight: 28
     region: content
     settings: {  }
     third_party_settings: {  }
   field_metatags:
     type: metatag_firehose
-    weight: 19
+    weight: 40
     region: content
     settings:
       sidebar: true
     third_party_settings: {  }
-  field_migration_path_alias:
-    type: string_textfield
-    weight: 51
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_migration_source:
-    type: options_select
-    weight: 48
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_modified_by:
-    type: entity_reference_autocomplete
-    weight: 45
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_modified_on:
-    type: datetime_default
-    weight: 37
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_notification_comment:
-    type: string_textarea
-    weight: 38
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_number_of_attendees:
-    type: number
-    weight: 44
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
   field_organizer:
     type: string_textfield
-    weight: 10
+    weight: 1
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'The name of the organisation.'
     third_party_settings: {  }
   field_paragraph:
     type: entity_reference_paragraphs
-    weight: 48
+    weight: 9
     region: content
     settings:
       title: Paragraph
@@ -310,171 +241,128 @@ content:
     third_party_settings: {  }
   field_partner_id:
     type: string_textfield
-    weight: 17
+    weight: 11
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   field_photo_gallery:
-    type: entity_reference_autocomplete
-    weight: 24
+    type: options_select
+    weight: 18
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_publications_exhibition_su:
     type: options_select
-    weight: 33
+    weight: 27
     region: content
     settings: {  }
     third_party_settings: {  }
   field_related_documents:
     type: file_generic
-    weight: 15
+    weight: 8
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-  field_satisfaction_rate:
-    type: number
-    weight: 42
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
   field_show_eu_flag:
     type: boolean_checkbox
-    weight: 40
+    weight: 32
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_show_in_ncw:
     type: boolean_checkbox
-    weight: 39
+    weight: 31
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_show_on:
     type: options_select
-    weight: 52
+    weight: 33
     region: content
     settings: {  }
     third_party_settings: {  }
   field_speaker:
-    type: entity_reference_autocomplete
-    weight: 16
+    type: options_select
+    weight: 10
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_start_date:
     type: daterange_default
-    weight: 9
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete
-    weight: 25
+    weight: 19
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
-      placeholder: ''
+      placeholder: 'Choose some options.'
     third_party_settings: {  }
   field_type_event:
     type: options_select
-    weight: 11
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_unit_ref:
     type: options_select
-    weight: 29
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   field_website_of_event:
     type: link_default
-    weight: 23
+    weight: 17
     region: content
     settings:
-      placeholder_url: ''
+      placeholder_url: 'Website of event.'
       placeholder_title: ''
     third_party_settings: {  }
-  field_wf_notification:
-    type: boolean_checkbox
-    weight: 46
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   field_workbench_access:
-    type: entity_reference_autocomplete
-    weight: 53
+    type: options_select
+    weight: 13
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_xmlsitemap:
-    type: entity_reference_autocomplete
-    weight: 49
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 1
-    region: content
-    settings:
-      include_locked: true
+    settings: {  }
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 34
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 39
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 4
+    weight: 37
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 41
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 5
+    weight: 38
     region: content
     settings:
       display_label: true
@@ -485,11 +373,11 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'Event title. Max 150 characters.'
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 35
     region: content
     settings:
       match_operator: CONTAINS
@@ -497,4 +385,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_agency_initial_contact: true
+  field_event_in_amp: true
+  field_first_publication_date: true
+  field_migration_path_alias: true
+  field_migration_source: true
+  field_modified_by: true
+  field_modified_on: true
+  field_notification_comment: true
+  field_number_of_attendees: true
+  field_satisfaction_rate: true
+  field_wf_notification: true
+  field_xmlsitemap: true
+  langcode: true

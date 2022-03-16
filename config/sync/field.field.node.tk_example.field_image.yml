@@ -1,18 +1,17 @@
-uuid: d4127dfd-9739-4332-91f3-5f298113c497
+uuid: 22cc6fc9-670f-4b37-8e1e-f380f11f1831
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
     - media.type.image
-    - media.type.image_caption
-    - node.type.news
-id: node.news.field_image
+    - node.type.tk_example
+id: node.tk_example.field_image
 field_name: field_image
 entity_type: node
-bundle: news
+bundle: tk_example
 label: Image
-description: 'The image should be 220x220px'
+description: ''
 required: false
 translatable: true
 default_value: {  }
@@ -22,10 +21,9 @@ settings:
   handler_settings:
     target_bundles:
       image: image
-      image_caption: image_caption
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: image
+    auto_create_bundle: ''
 field_type: entity_reference

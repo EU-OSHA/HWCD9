@@ -1,0 +1,43 @@
+uuid: 4db3e200-7c80-45b2-be83-d736478f028f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tk_example.body
+    - field.field.node.tk_example.field_country
+    - field.field.node.tk_example.field_download_pdf
+    - field.field.node.tk_example.field_external_link
+    - field.field.node.tk_example.field_image
+    - field.field.node.tk_example.field_organisation
+    - field.field.node.tk_example.field_publication_date
+    - node.type.tk_example
+  module:
+    - text
+    - user
+id: node.tk_example.teaser
+targetEntityType: node
+bundle: tk_example
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_country: true
+  field_download_pdf: true
+  field_external_link: true
+  field_image: true
+  field_organisation: true
+  field_publication_date: true
+  langcode: true

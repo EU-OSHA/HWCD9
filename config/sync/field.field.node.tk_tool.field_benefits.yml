@@ -1,0 +1,19 @@
+uuid: feeef8a9-9c25-4f6e-a18f-425ad7974e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_benefits
+    - node.type.tk_tool
+id: node.tk_tool.field_benefits
+field_name: field_benefits
+entity_type: node
+bundle: tk_tool
+label: Benefits
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

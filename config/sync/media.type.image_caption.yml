@@ -1,0 +1,13 @@
+uuid: 41eabb21-7cd7-43ea-9b04-b77e8a8c3183
+langcode: en
+status: true
+dependencies: {  }
+id: image_caption
+label: 'Image + Caption'
+description: 'Image + Caption'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

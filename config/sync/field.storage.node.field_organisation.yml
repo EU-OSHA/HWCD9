@@ -1,17 +1,18 @@
-uuid: 93e2f6ae-e69a-4c12-bc9c-e57e50240954
+uuid: 39ece0f4-dbff-4809-aba4-26e85f45cf58
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime_range
     - node
-id: node.field_start_date
-field_name: field_start_date
+id: node.field_organisation
+field_name: field_organisation
 entity_type: node
-type: daterange
+type: string
 settings:
-  datetime_type: date
-module: datetime_range
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true
