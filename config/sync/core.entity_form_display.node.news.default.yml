@@ -28,7 +28,9 @@ dependencies:
     - field.field.node.news.field_workbench_access
     - field.field.node.news.field_xmlsitemap
     - node.type.news
+    - workflows.workflow.news_and_events_created_by_een
   module:
+    - content_moderation
     - datetime
     - media_library
     - metatag
@@ -41,7 +43,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 5
     region: content
     settings:
       rows: 9
@@ -51,13 +53,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   field_activity:
     type: entity_reference_autocomplete
-    weight: 129
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS
@@ -67,7 +69,7 @@ content:
     third_party_settings: {  }
   field_aditional_resources:
     type: entity_reference_autocomplete
-    weight: 144
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -77,62 +79,35 @@ content:
     third_party_settings: {  }
   field_archived:
     type: boolean_checkbox
-    weight: 133
+    weight: 10
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  field_character_count:
-    type: number
-    weight: 132
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_first_publication_date:
-    type: datetime_timestamp
-    weight: 142
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_image:
     type: media_library_widget
-    weight: 145
+    weight: 3
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_image_mail:
     type: media_library_widget
-    weight: 146
+    weight: 4
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_metatags:
     type: metatag_firehose
-    weight: 128
+    weight: 21
     region: content
     settings:
       sidebar: true
     third_party_settings: {  }
-  field_migration_path_alias:
-    type: string_textfield
-    weight: 143
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_migration_source:
-    type: options_select
-    weight: 140
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_modified_by:
     type: entity_reference_autocomplete
-    weight: 138
+    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -142,55 +117,32 @@ content:
     third_party_settings: {  }
   field_modified_on:
     type: datetime_default
-    weight: 134
+    weight: 11
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_notification_comment:
-    type: string_textarea
-    weight: 135
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_page_count:
-    type: number
-    weight: 131
-    region: content
-    settings:
-      placeholder: ''
     third_party_settings: {  }
   field_publication_date:
     type: datetime_default
-    weight: 126
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_pz_image_caption:
-    type: string_textfield
-    weight: 124
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_show_in_ncw:
     type: boolean_checkbox
-    weight: 136
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_show_on:
     type: options_select
-    weight: 137
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   field_summary:
     type: text_textarea
-    weight: 122
+    weight: 2
     region: content
     settings:
       rows: 5
@@ -198,97 +150,62 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete
-    weight: 130
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_wf_notification:
-    type: boolean_checkbox
-    weight: 139
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_workbench_access:
-    type: entity_reference_autocomplete
-    weight: 147
+    type: options_select
+    weight: 0
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_xmlsitemap:
-    type: entity_reference_autocomplete
-    weight: 141
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
+    settings: {  }
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 120
+    weight: 19
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 20
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 1
     region: content
     settings:
       size: 60
-      placeholder: ''
+      placeholder: 'News title'
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 18
     region: content
     settings:
       match_operator: CONTAINS
@@ -296,4 +213,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_character_count: true
+  field_first_publication_date: true
+  field_migration_path_alias: true
+  field_migration_source: true
+  field_notification_comment: true
+  field_page_count: true
+  field_pz_image_caption: true
+  field_wf_notification: true
+  field_xmlsitemap: true
+  langcode: true
+  status: true
