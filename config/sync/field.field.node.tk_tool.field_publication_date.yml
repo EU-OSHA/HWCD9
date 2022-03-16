@@ -1,0 +1,21 @@
+uuid: ee28c3bb-dc62-4348-9464-9d09cb3f8144
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication_date
+    - node.type.tk_tool
+  module:
+    - datetime
+id: node.tk_tool.field_publication_date
+field_name: field_publication_date
+entity_type: node
+bundle: tk_tool
+label: 'Publication date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

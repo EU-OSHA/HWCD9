@@ -1,0 +1,29 @@
+uuid: aaa46895-354f-4555-9df2-f8b0ff508f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.tk_example
+    - taxonomy.vocabulary.country
+id: node.tk_example.field_country
+field_name: field_country
+entity_type: node
+bundle: tk_example
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      country: country
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

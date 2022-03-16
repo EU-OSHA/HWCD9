@@ -1,4 +1,4 @@
-uuid: 2f7a2659-edbd-48f4-a4e0-a19522f60741
+uuid: 0f32cdfd-083f-4431-ba83-fa32d614afb2
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Campaign TK Toolkit'
-type: tk_toolkit
+name: 'Toolkit Example'
+type: tk_example
 description: ''
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false
