@@ -30,6 +30,7 @@ process:
     -
       plugin: default_value
       default_value: full_html
+  field_tk_article: field_tk_article
   type:
     -
       plugin: default_value

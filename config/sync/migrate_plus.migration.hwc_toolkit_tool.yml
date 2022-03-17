@@ -42,12 +42,7 @@ process:
     -
       plugin: get
       source: field_introduction
-  field_tk_tool_type:
-    -
-      plugin: sub_process
-      source: field_tk_tool_type
-      process:
-        target_id: tid
+  field_tk_tool_type: field_tk_tool_type
   field_tk_examples:
     -
       plugin: sub_process
@@ -68,6 +63,13 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
+  field_image:
+    -
+      plugin: file_id_lookup
+      source: field_image
+      migration:
+        - hwc_node_toolkit_tool_media_images_1
+      no_stub: true
 destination:
   plugin: 'entity:node'
 migration_dependencies:

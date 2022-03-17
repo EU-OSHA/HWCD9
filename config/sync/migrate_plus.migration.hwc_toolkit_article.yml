@@ -18,6 +18,10 @@ source:
   constants:
     slash: /
 process:
+  nid:
+    -
+      plugin: get
+      source: nid
   type:
     -
       plugin: default_value
@@ -44,15 +48,7 @@ process:
       source: changed
   path/alias: alias
   field_tk_article_type: field_tk_article_type
-  field_tk_article:
-    plugin: sub_process
-    source: field_tk_article
-    process:
-      target_id:
-        plugin: migration_lookup
-        migration:
-          - hwc_toolkit_article
-        source: target_id
+  field_tk_article: field_tk_article
   field_tk_topics:
     plugin: sub_process
     source: field_tk_topics
@@ -84,7 +80,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: 'Y-m-d\TH:i:s'
+          to_format: Y-m-d
           source: value
   field_image:
     -
@@ -98,5 +94,4 @@ destination:
 migration_dependencies:
   required:
     - d7_user
-    - hwc_toolkit_topic
     - hwc_node_toolkit_topic_media_images_1

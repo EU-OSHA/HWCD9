@@ -48,12 +48,6 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
-  field_download_pdf:
-    -
-      plugin: sub_process
-      source: field_download_pdf
-      process:
-        target_id: tid
   type:
     -
       plugin: default_value
@@ -65,6 +59,21 @@ process:
       migration:
         - hwc_node_toolkit_example_media_images_1
       no_stub: true
+  field_download_pdf:
+    -
+      plugin: file_id_lookup
+      source: field_download_pdf
+      migration:
+        - hwc_node_toolkit_example_media_download_pdf_1
+      no_stub: true
+  field_external_link:
+    -
+      plugin: field_link
+      source: field_external_link
+      process:
+        uri: url
+        title: title
+        options: attributes
 destination:
   plugin: 'entity:node'
 migration_dependencies:
