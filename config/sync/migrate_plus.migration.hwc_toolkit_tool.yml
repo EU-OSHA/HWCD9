@@ -42,13 +42,30 @@ process:
     -
       plugin: get
       source: field_introduction
-  field_tk_tool_type: field_tk_tool_type
-  field_tk_examples:
+  field_tk_tool_type:
     -
       plugin: sub_process
-      source: field_tk_examples
+      source: field_tk_tool_type
       process:
-        target_id: nid
+        target_id: tid
+  field_tk_examples:
+    plugin: sub_process
+    source: field_tk_examples
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration:
+          - hwc_toolkit_examples
+        source: target_id
+  field_tk_topics:
+    plugin: sub_process
+    source: field_tk_topics
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration:
+          - hwc_toolkit_topics
+        source: target_id
   field_benefits:
     -
       plugin: get
