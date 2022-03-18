@@ -42,7 +42,7 @@ process:
     plugin: media_file_copy
     move: true
     reuse: true
-    path: 'public://images/tk_toolkit/'
+    path: 'public://images/tk_tool/'
     source: file_path
   langcode: langcode
   uid:
