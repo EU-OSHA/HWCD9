@@ -30,6 +30,15 @@ process:
     -
       plugin: default_value
       default_value: full_html
+  field_tk_article:
+    plugin: sub_process
+    source: field_tk_article
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration:
+          - hwc_toolkit_article
+        source: target_id
   type:
     -
       plugin: default_value

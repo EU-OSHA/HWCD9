@@ -57,6 +57,21 @@ process:
       migration:
         - hwc_node_toolkit_example_media_images_1
       no_stub: true
+  field_country:
+    -
+      plugin: hmc_taxonomy_term
+      source: field_country
+  field_organisation:
+    -
+      plugin: get
+      source: field_organisation
+  field_download_pdf:
+    -
+      plugin: file_id_lookup
+      source: field_download_pdf
+      migration:
+        - hwc_node_toolkit_example_media_download_pdf_1
+      no_stub: true
   langcode:
     plugin: static_map
     bypass: true

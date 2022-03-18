@@ -25,11 +25,28 @@ process:
   type:
     -
       plugin: default_value
-      default_value: tk_toolkit
+      default_value: tk_tool
   title:
     -
       plugin: get
       source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  path/alias: alias
   body:
     -
       plugin: get
@@ -49,11 +66,14 @@ process:
       process:
         target_id: tid
   field_tk_examples:
-    -
-      plugin: sub_process
-      source: field_tk_examples
-      process:
-        target_id: nid
+    plugin: sub_process
+    source: field_tk_examples
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration:
+          - hwc_toolkit_example
+        source: target_id
   field_benefits:
     -
       plugin: get
@@ -68,8 +88,16 @@ process:
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
+  field_image:
+    -
+      plugin: file_id_lookup
+      source: field_image
+      migration:
+        - hwc_node_toolkit_tool_media_images_1
+      no_stub: true
 destination:
   plugin: 'entity:node'
 migration_dependencies:
   required:
     - d7_user
+    - hwc_node_toolkit_tool_media_images_1

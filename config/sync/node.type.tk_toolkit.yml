@@ -9,7 +9,7 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Campaign TK Toolkit'
+name: 'TK Toolkit'
 type: tk_toolkit
 description: ''
 help: ''

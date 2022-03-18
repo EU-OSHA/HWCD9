@@ -1,10 +1,15 @@
 uuid: 099100e8-f325-43f1-b107-4ae30164dacf
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    module:
+      - hwc_custom_migrations
 id: hwc_toolkit_example_media
-label: hwc_toolkit_example_media
-description: ''
-source_type: null
+label: 'Migrate Toolkit Example Media'
+description: 'Migration nodes from D7 to Drupal 8'
+source_type: 'Drupal 7'
 module: null
-shared_configuration: null
+shared_configuration:
+  source:
+    key: migrate

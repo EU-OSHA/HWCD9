@@ -18,8 +18,7 @@ source:
 process:
   nid:
     plugin: migration_lookup
-    migration:
-      - hwc_toolkit_article
+    migration: hwc_toolkit_article
     source: entity_id
   type:
     -
@@ -65,7 +64,7 @@ process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
-          to_format: 'Y-m-d\TH:i:s'
+          to_format: Y-m-d
           source: value
   field_image:
     -

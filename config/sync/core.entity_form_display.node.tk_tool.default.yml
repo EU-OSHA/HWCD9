@@ -14,6 +14,7 @@ dependencies:
   module:
     - content_moderation
     - datetime
+    - media_library
     - path
     - text
 id: node.tk_tool.default
@@ -48,12 +49,9 @@ content:
   field_image:
     weight: 124
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_introduction:
     weight: 123
@@ -139,9 +137,9 @@ content:
     third_party_settings: {  }
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5
