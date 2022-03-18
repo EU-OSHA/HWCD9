@@ -32,15 +32,6 @@ process:
     -
       plugin: get
       source: node_uid
-  field_tk_examples:
-    plugin: sub_process
-    source: field_tk_examples
-    process:
-      target_id:
-        plugin: migration_lookup
-        migration:
-          - hwc_toolkit_tool
-        source: target_id
   field_tk_tool_type:
     -
       plugin: sub_process

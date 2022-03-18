@@ -30,6 +30,23 @@ process:
     -
       plugin: get
       source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  path/alias: alias
   body:
     -
       plugin: get
