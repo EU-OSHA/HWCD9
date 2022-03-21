@@ -5,6 +5,13 @@ display:
         name:
           expose:
             label: Pavadinimas
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Redaguoti
+        delete_media:
+          text: Pašalinti
   widget:
     display_options:
       filters:

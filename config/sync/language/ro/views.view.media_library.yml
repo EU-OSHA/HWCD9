@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: 'Statusul publicării'
         name:
           expose:
             label: Nume
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Modifică
+        delete_media:
+          text: Şterge
   widget:
     display_options:
       filters:

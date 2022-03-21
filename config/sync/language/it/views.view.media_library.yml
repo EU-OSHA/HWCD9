@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: 'Stato di pubblicazione'
         name:
           expose:
             label: Nome
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Modifica
+        delete_media:
+          text: Elimina
   widget:
     display_options:
       filters:

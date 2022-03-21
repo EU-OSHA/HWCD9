@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: Birtingarstaða
         name:
           expose:
             label: Nafn
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Breyta
+        delete_media:
+          text: Eyða
   widget:
     display_options:
       filters:

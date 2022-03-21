@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: 'Stav zveřejnění'
         name:
           expose:
             label: Jméno
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Upravit
+        delete_media:
+          text: Smazat
   widget:
     display_options:
       filters:

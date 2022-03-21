@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: 'Julkaisun tila'
         name:
           expose:
             label: Nimi
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Muokkaa
+        delete_media:
+          text: Poista
   widget:
     display_options:
       filters:

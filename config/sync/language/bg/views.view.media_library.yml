@@ -5,6 +5,13 @@ display:
         name:
           expose:
             label: Име
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Редактирай
+        delete_media:
+          text: Изтриване
   widget:
     display_options:
       filters:
