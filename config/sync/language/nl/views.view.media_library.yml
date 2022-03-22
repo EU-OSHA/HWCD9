@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: Publicatiestatus
         name:
           expose:
             label: Naam
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Bewerken
+        delete_media:
+          text: Verwijderen
   widget:
     display_options:
       filters:

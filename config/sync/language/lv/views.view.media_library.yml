@@ -5,6 +5,13 @@ display:
         name:
           expose:
             label: Nosaukums
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Rediģēt
+        delete_media:
+          text: Dzēst
   widget:
     display_options:
       filters:

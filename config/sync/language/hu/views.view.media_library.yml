@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: 'Közzététel állapota'
         name:
           expose:
             label: Név
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Szerkesztés
+        delete_media:
+          text: Törlés
   widget:
     display_options:
       filters:

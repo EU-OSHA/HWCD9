@@ -24,6 +24,7 @@ module:
   contextual: 0
   csv_serialization: 0
   ctools: 0
+  date_popup: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
@@ -31,6 +32,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
+  entityqueue: 0
   field: 0
   field_group: 0
   field_ui: 0

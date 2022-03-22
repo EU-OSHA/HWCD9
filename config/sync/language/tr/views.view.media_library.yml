@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: 'Yayımlanma durumu'
         name:
           expose:
             label: İsim
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Düzenle
+        delete_media:
+          text: Sil
   widget:
     display_options:
       filters:

@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: Publiceringsstatus
         name:
           expose:
             label: Navn
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Redigér
+        delete_media:
+          text: Slet
   widget:
     display_options:
       filters:

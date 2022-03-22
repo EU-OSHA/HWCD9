@@ -4,29 +4,29 @@ display:
       filters:
         status:
           expose:
-            label: 'Κατάσταση δημοσίευσης'
+            label: Veröffentlichungsstatus
         name:
           expose:
-            label: Όνομα
+            label: Name
   page:
     display_options:
       fields:
         edit_media:
-          text: Επεξεργασία
+          text: Bearbeiten
         delete_media:
-          text: Διαγραφή
+          text: Löschen
   widget:
     display_options:
       filters:
         name:
           expose:
-            label: Όνομα
+            label: Name
   widget_table:
     display_options:
       fields:
         name:
-          label: Όνομα
+          label: Name
       filters:
         name:
           expose:
-            label: Όνομα
+            label: Name

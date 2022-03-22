@@ -5,6 +5,13 @@ display:
         name:
           expose:
             label: Ime
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Uredi
+        delete_media:
+          text: Izbriši
   widget:
     display_options:
       filters:

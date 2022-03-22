@@ -5,6 +5,13 @@ display:
         name:
           expose:
             label: Naziv
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Uredi
+        delete_media:
+          text: Ukloni
   widget:
     display_options:
       filters:

@@ -2,9 +2,19 @@ display:
   default:
     display_options:
       filters:
+        status:
+          expose:
+            label: 'Avaldamise olek'
         name:
           expose:
             label: Nimi
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Muuda
+        delete_media:
+          text: Kustuta
   widget:
     display_options:
       filters:
