@@ -1,0 +1,21 @@
+uuid: 8aea3ba7-3f6f-4cf5-94b3-4ba0f821fb86
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - hwc_theme
+id: searchform
+theme: hwc_theme
+region: header_form
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

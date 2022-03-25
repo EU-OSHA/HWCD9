@@ -5,9 +5,6 @@ display:
         status:
           expose:
             label: Veröffentlichungsstatus
-        name:
-          expose:
-            label: Name
   page:
     display_options:
       fields:
@@ -15,18 +12,3 @@ display:
           text: Bearbeiten
         delete_media:
           text: Löschen
-  widget:
-    display_options:
-      filters:
-        name:
-          expose:
-            label: Name
-  widget_table:
-    display_options:
-      fields:
-        name:
-          label: Name
-      filters:
-        name:
-          expose:
-            label: Name

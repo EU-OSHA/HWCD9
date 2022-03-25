@@ -1,0 +1,8 @@
+uuid: 0b1a9467-56db-41bb-803f-baace666d7fe
+langcode: en
+status: true
+dependencies: {  }
+id: block_image
+label: 'Block image'
+revision: 1
+description: 'Logo osha header block'
