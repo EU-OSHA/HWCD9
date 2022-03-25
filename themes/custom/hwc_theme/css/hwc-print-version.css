@@ -1,10 +1,88 @@
 /* D9 - Variables NCW */
-/*Font Family*/
+/* Font Family */
 @font-face {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 /* Font colours */
 /* background colours */
+/* Font colours */
+/* background colours */
+.bg-color-blue {
+  background: #003399;
+}
+
+.bg-color-blue-light {
+  background: #cfddee;
+}
+
+.bg-color-blue-block {
+  background: #ecf1fb;
+}
+
+.bg-color-blue-wiki {
+  background: #325bad;
+}
+
+.bg-color-blue-accordion {
+  background: #e8eef7;
+}
+
+.bg-color-blue-button {
+  background: #b2c7e5;
+}
+
+.bg-color-pink {
+  background: #c72272;
+}
+
+.bg-color-grey {
+  background: #57575a;
+}
+
+.bg-color-white {
+  background: #FFF;
+}
+
+.bg-color-tag-1 {
+  background: #4e6aa0;
+}
+
+.bg-color-tag-2 {
+  background: #e8eef7;
+}
+
+.text-color-blue {
+  color: #003399;
+}
+
+.text-color-pink {
+  color: #c72272;
+}
+
+.text-color-black {
+  color: #000;
+}
+
+.text-color-black-label {
+  color: #333;
+}
+
+.text-color-grey-light {
+  color: #7c7d81;
+}
+
+.text-color-grey {
+  color: #57575a;
+}
+
+.text-color-white {
+  color: #FFF;
+}
+
+.text-color-facets {
+  color: #57565b;
+}
+
 /* END - D9 - Variables NCW */
 
 /*# sourceMappingURL=hwc-print-version.css.map */
