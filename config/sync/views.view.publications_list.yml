@@ -1,0 +1,899 @@
+uuid: 93788ee9-bff8-4f98-9a9c-4be84a4f8789
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_cover_image
+    - field.storage.node.field_pages_count
+    - field.storage.node.field_publication_date
+    - field.storage.node.field_publication_type
+    - image.style.medium
+    - search_api.index.publications_index
+  module:
+    - datetime
+    - media
+    - search_api
+    - text
+id: publications_list
+label: 'Publications list'
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_publications_index
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Publications list'
+      fields:
+        field_cover_image:
+          id: field_cover_image
+          table: search_api_datasource_publications_index_entity_node
+          field: field_cover_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: media_thumbnail
+          settings:
+            image_link: content
+            image_style: medium
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              audio:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              image:
+                display_method: label
+                view_mode: default
+              image_and_link:
+                display_method: label
+                view_mode: default
+              image_caption:
+                display_method: label
+                view_mode: default
+              remote_video:
+                display_method: label
+                view_mode: default
+              video:
+                display_method: label
+                view_mode: default
+        field_publication_date:
+          id: field_publication_date
+          table: search_api_datasource_publications_index_entity_node
+          field: field_publication_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: only_day
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        field_publication_type:
+          id: field_publication_type
+          table: search_api_index_publications_index
+          field: field_publication_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: Type
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              activity:
+                display_method: label
+                view_mode: default
+              article_types:
+                display_method: label
+                view_mode: default
+              biological_hazard:
+                display_method: label
+                view_mode: default
+              business_sector:
+                display_method: label
+                view_mode: default
+              campaign_material_types:
+                display_method: label
+              chemical_and_biological_hazards_:
+                display_method: label
+                view_mode: default
+              chemical_hazards_related_to_heal:
+                display_method: label
+                view_mode: default
+              contact_type:
+                display_method: label
+              contact_type_of_sender:
+                display_method: label
+              country:
+                display_method: label
+                view_mode: default
+              country_status:
+                display_method: label
+              document:
+                display_method: label
+              document_partner_type:
+                display_method: label
+                view_mode: default
+              exposure_route:
+                display_method: label
+                view_mode: default
+              flickr_tags:
+                display_method: label
+              hashtag_terms:
+                display_method: label
+              hazmap_categories:
+                display_method: label
+                view_mode: default
+              level_of_prevention:
+                display_method: label
+                view_mode: default
+              msd_glossary:
+                display_method: label
+              msd_hazards:
+                display_method: label
+              msd_health_effects:
+                display_method: label
+              msd_prevention_measures:
+                display_method: label
+              msd_priority_area:
+                display_method: label
+              msd_purpose_of_the_material:
+                display_method: label
+              msd_target_audience:
+                display_method: label
+              msd_type_of_visual_resource:
+                display_method: label
+              msd_worker_groups_covered:
+                display_method: label
+              nace_codes:
+                display_method: label
+                view_mode: default
+              newsletter_sections:
+                display_method: label
+                view_mode: default
+              nodequeue_help_text:
+                display_method: label
+                view_mode: default
+              organisation_type:
+                display_method: label
+                view_mode: default
+              partner_types:
+                display_method: label
+              practical_tool_types:
+                display_method: label
+              proposal_for_target_groups:
+                display_method: label
+                view_mode: default
+              publication_types:
+                display_method: label
+                view_mode: default
+              related_resources:
+                display_method: label
+                view_mode: default
+              section:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              thesaurus:
+                display_method: label
+              tools_and_examples:
+                display_method: label
+              user_mention_terms:
+                display_method: label
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
+                display_method: label
+        title:
+          id: title
+          table: search_api_index_publications_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        field_pages_count:
+          id: field_pages_count
+          table: search_api_datasource_publications_index_entity_node
+          field: field_pages_count
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: '{{ field_pages_count }} pages'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_numeric
+          fallback_options:
+            set_precision: false
+            precision: 0
+            decimal: .
+            separator: ','
+            format_plural: false
+            format_plural_string: !!binary MQNAY291bnQ=
+            prefix: ''
+            suffix: ''
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            format_plural_values:
+              - '1'
+              - '@count'
+        body:
+          id: body
+          table: search_api_index_publications_index
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 250
+            word_boundary: false
+            ellipsis: true
+            more_link: false
+            more_link_text: 'See more'
+            more_link_path: ''
+            strip_tags: false
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        url:
+          id: url
+          table: search_api_index_publications_index
+          field: url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: 'See more'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: true
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: false
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        field_publication_date:
+          id: field_publication_date
+          table: search_api_index_publications_index
+          field: field_publication_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Publication date'
+            field_identifier: field_publication_date
+          exposed: true
+        title:
+          id: title
+          table: search_api_index_publications_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: Alphabetically
+            field_identifier: title
+          exposed: true
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_publications_index
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: Relevance
+            field_identifier: search_api_relevance
+          exposed: true
+      arguments: {  }
+      filters:
+        search_api_language:
+          id: search_api_language
+          table: search_api_index_publications_index
+          field: search_api_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_language
+          operator: in
+          value:
+            en: en
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_publications_index
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_fulltext
+          operator: and
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: Search
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: text
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              editor: '0'
+              approver: '0'
+              superadministrators: '0'
+              campaign_partner: '0'
+              external_provider: '0'
+              audio_visual: '0'
+              website_managers: '0'
+              hwc_staff_reviewers: '0'
+              eu_osha_een_reviewers: '0'
+              read_only: '0'
+              gpe_platform_editors: '0'
+              news_and_events_editor_een_osh_ambassador: '0'
+              news_and_events_editor_partner_ocp_mp_fop_: '0'
+            expose_fields: false
+            placeholder: ''
+            searched_fields_id: search_api_fulltext_searched_fields
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: null
+          fields:
+            - body
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_cover_image'
+        - 'config:field.storage.node.field_pages_count'
+        - 'config:field.storage.node.field_publication_date'
+        - 'config:field.storage.node.field_publication_type'
+        - 'config:search_api.index.publications_index'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: publications-list
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_cover_image'
+        - 'config:field.storage.node.field_pages_count'
+        - 'config:field.storage.node.field_publication_date'
+        - 'config:field.storage.node.field_publication_type'
+        - 'config:search_api.index.publications_index'
