@@ -1,11 +1,32 @@
 display:
   default:
+    display_title: Default
     display_options:
+      title: Media
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       filters:
+        status:
+          group_info:
+            label: Published
+            group_items:
+              1:
+                title: Published
         name:
           expose:
             label: Pavadinimas
+        langcode:
+          expose:
+            label: Language
   page:
+    display_title: Page
     display_options:
       fields:
         edit_media:
@@ -13,7 +34,12 @@ display:
         delete_media:
           text: Pašalinti
   widget:
+    display_title: Widget
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: All
       filters:
         name:
           expose:
@@ -23,6 +49,14 @@ display:
       fields:
         name:
           label: Pavadinimas
+        uid:
+          label: Author
+        changed:
+          label: Updated
+      arguments:
+        bundle:
+          exception:
+            title: All
       filters:
         name:
           expose:
