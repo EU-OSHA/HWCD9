@@ -42,6 +42,7 @@ module:
   hwc_crm_partners_migration: 0
   hwc_custom_migrations: 0
   hwc_import_export: 0
+  hwc_partner: 0
   image: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
@@ -57,6 +58,7 @@ module:
   languagefield: 0
   link: 0
   locale: 0
+  masquerade: 0
   media: 0
   media_library: 0
   menu_link_content: 0
