@@ -51,6 +51,9 @@ content:
     weight: 1
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   field_type_of_the_banner: true
   langcode: true
   links: true
+  search_api_excerpt: true
