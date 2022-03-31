@@ -1,0 +1,42 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Seite
+      suffix_label: 'von @total'
+      page_current: '@number'
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      pageset_empty: 'Keine Seiten anzuzeigen.'
+      page_current_title: 'Aktuelle Seite'
+      first_title: 'Zur ersten Seite'
+      previous_title: 'Zur vorherigen Seite'
+      next_title: 'Zur nächsten Seite'
+      last_title: 'Zur letzten Seite'
+      page_current_reader: 'Aktuelle Seite'
+      first_reader: 'Erste Seite'
+      previous_reader: 'Vorherige Seite'
+      next_reader: 'Nächste Seite'
+      last_reader: 'Letzte Seite'
+      widget_title: 'Seite eingeben, dann Enter drücken.'
+    items:
+      prefix_label: Element
+      suffix_label: 'von @total_items'
+      page_current: '@item'
+      first: «
+      previous: ‹
+      next: ›
+      last: »
+      pageset_empty: 'Keine Einträge vorhanden.'
+      page_current_title: 'Aktuelle Einträge'
+      first_title: 'Gehe zum ersten Eintrag'
+      previous_title: 'Gehe zu den vorherigen Einträgen'
+      next_title: 'Gehe zu den nächsten Einträgen'
+      last_title: 'Gehe zum letzten Eintrag'
+      page_current_reader: 'Aktuelle Einträge'
+      first_reader: 'Erstes Element'
+      previous_reader: 'Vorherige Einträge'
+      next_reader: 'Nächste Einträge'
+      last_reader: 'Letzter Eintrag'
+      widget_title: 'Eintrag eingeben, dann Enter drücken.'
