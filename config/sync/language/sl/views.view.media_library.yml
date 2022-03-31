@@ -1,20 +1,11 @@
 display:
   default:
-    display_title: Default
+    display_title: Privzeto
     display_options:
-      fields:
-        media_bulk_form:
-          action_title: Action
       exposed_form:
         options:
-          reset_button_label: Reset
+          reset_button_label: Ponastavi
       filters:
-        status:
-          group_info:
-            label: Published
-            group_items:
-              1:
-                title: Published
         name:
           expose:
             label: Ime
@@ -22,22 +13,15 @@ display:
           expose:
             label: Language
   page:
-    display_title: Page
+    display_title: Stran
     display_options:
       fields:
-        media_bulk_form:
-          action_title: Action
         edit_media:
           text: Uredi
         delete_media:
           text: Izbriši
   widget:
-    display_title: Widget
     display_options:
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:
@@ -47,14 +31,6 @@ display:
       fields:
         name:
           label: Ime
-        uid:
-          label: Author
-        changed:
-          label: Updated
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:

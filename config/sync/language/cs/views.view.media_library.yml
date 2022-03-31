@@ -1,35 +1,24 @@
 display:
   default:
-    display_title: Default
+    display_title: Výchozí
     display_options:
-      title: Media
-      fields:
-        media_bulk_form:
-          action_title: Action
+      title: Média
       pager:
         options:
-          tags:
-            next: ››
-            previous: ‹‹
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
       exposed_form:
         options:
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
       filters:
         status:
           expose:
             label: 'Stav zveřejnění'
-          group_info:
-            label: Published
-            group_items:
-              1:
-                title: Published
         name:
           expose:
             label: Jméno
@@ -37,11 +26,9 @@ display:
           expose:
             label: Language
   page:
-    display_title: Page
+    display_title: Stránka
     display_options:
       fields:
-        media_bulk_form:
-          action_title: Action
         name:
           separator: ', '
         edit_media:
@@ -49,12 +36,7 @@ display:
         delete_media:
           text: Smazat
   widget:
-    display_title: Widget
     display_options:
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:
@@ -64,14 +46,6 @@ display:
       fields:
         name:
           label: Jméno
-        uid:
-          label: Author
-        changed:
-          label: Updated
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:

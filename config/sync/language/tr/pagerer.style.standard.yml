@@ -1,0 +1,36 @@
+default_config:
+  tags:
+    page_breaker: …
+    pages:
+      prefix_label: Sayfa
+      first: '« İlk'
+      previous: '‹ Önceki'
+      next: 'Sonraki ›'
+      last: 'Son »'
+      page_current_title: 'Şu an kullanılan sayfa'
+      page_title: '@number. sayfaya git'
+      first_title: 'İlk sayfaya git'
+      previous_title: 'Önceki sayfaya git'
+      next_title: 'Sonraki sayfaya git'
+      last_title: 'Son sayfaya git'
+      page_current_reader: 'Şu an kullanılan sayfa'
+      page_reader: Sayfa
+      first_reader: 'İlk sayfa'
+      previous_reader: 'Önceki sayfa'
+      next_reader: 'Sonraki sayfa'
+      last_reader: 'Son sayfa'
+    items:
+      prefix_label: Öğe
+      first: '« İlk'
+      previous: '‹ Önceki'
+      next: 'Sonraki ›'
+      last: 'Son »'
+      page_reader: Öğe
+      first_reader: 'İlk madde'
+    item_ranges:
+      prefix_label: Öğeler
+      first: '« İlk'
+      previous: '‹ Önceki'
+      next: 'Sonraki ›'
+      last: 'Son »'
+      page_reader: Öğeler

@@ -1,0 +1,33 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Stránka
+      first: '« Prvý'
+      previous: '‹ Predchádzajúci'
+      next: Ďalej
+      last: Koniec
+      page_current_title: 'Aktuálna stránka'
+      page_title: 'Prejsť na stranu @number'
+      first_title: 'Prejsť na prvú stranu'
+      previous_title: 'Prejsť na predchádzajúcu stranu'
+      next_title: 'Prejsť na ďalšiu stranu'
+      last_title: 'Prejsť na poslednú stranu'
+      page_current_reader: 'Aktuálna stránka'
+      page_reader: Stránka
+      next_reader: 'Ďalšia strana'
+      last_reader: 'Posledná strana'
+    items:
+      prefix_label: Položka
+      first: '« Prvý'
+      previous: '‹ Predchádzajúci'
+      next: Ďalej
+      last: Koniec
+      page_reader: Položka
+      first_reader: 'Prvá položka'
+    item_ranges:
+      prefix_label: Položky
+      first: '« Prvý'
+      previous: '‹ Predchádzajúci'
+      next: Ďalej
+      last: Koniec
+      page_reader: Položky

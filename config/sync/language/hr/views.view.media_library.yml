@@ -1,29 +1,15 @@
 display:
   default:
-    display_title: Default
+    display_title: Zadano
     display_options:
-      title: Media
-      fields:
-        media_bulk_form:
-          action_title: Action
-      pager:
-        options:
-          tags:
-            next: ››
-            previous: ‹‹
+      title: Mediji
       exposed_form:
         options:
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
       filters:
-        status:
-          group_info:
-            label: Published
-            group_items:
-              1:
-                title: Published
         name:
           expose:
             label: Naziv
@@ -31,11 +17,9 @@ display:
           expose:
             label: Language
   page:
-    display_title: Page
+    display_title: Stranica
     display_options:
       fields:
-        media_bulk_form:
-          action_title: Action
         name:
           separator: ', '
         edit_media:
@@ -43,12 +27,7 @@ display:
         delete_media:
           text: Ukloni
   widget:
-    display_title: Widget
     display_options:
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:
@@ -58,14 +37,6 @@ display:
       fields:
         name:
           label: Naziv
-        uid:
-          label: Author
-        changed:
-          label: Updated
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:

@@ -1,52 +1,39 @@
 display:
   default:
-    display_title: Default
+    display_title: Vaikimisi
     display_options:
-      title: Media
-      fields:
-        media_bulk_form:
-          action_title: Action
+      title: Meedia
       pager:
         options:
-          tags:
-            next: ››
-            previous: ‹‹
           expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
       exposed_form:
         options:
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          reset_button_label: Tühista
+          exposed_sorts_label: 'Sorteerimise alus'
+          sort_asc_label: Kasvav
+          sort_desc_label: Kahanev
       filters:
         status:
           expose:
             label: 'Avaldamise olek'
-          group_info:
-            label: Published
-            group_items:
-              1:
-                title: Published
         name:
           expose:
             label: Nimi
         bundle:
           expose:
-            label: 'Media type'
+            label: 'Meedia tüüp'
           group_info:
-            label: 'Media type'
+            label: 'Meedia tüüp'
         langcode:
           expose:
             label: Language
   page:
-    display_title: Page
+    display_title: Lehekülg
     display_options:
       fields:
-        media_bulk_form:
-          action_title: Action
         name:
           separator: ', '
         edit_media:
@@ -54,12 +41,7 @@ display:
         delete_media:
           text: Kustuta
   widget:
-    display_title: Widget
     display_options:
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:
@@ -69,14 +51,6 @@ display:
       fields:
         name:
           label: Nimi
-        uid:
-          label: Author
-        changed:
-          label: Updated
-      arguments:
-        bundle:
-          exception:
-            title: All
       filters:
         name:
           expose:
