@@ -62,6 +62,8 @@ content:
     weight: 2
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   comment: true
   field_activity: true
   field_aditional_resources: true

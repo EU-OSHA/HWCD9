@@ -221,6 +221,7 @@ content:
     weight: 2
     region: content
 hidden:
+  breadcrumbs: true
   comment: true
   field_image2: true
   langcode: true
