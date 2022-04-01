@@ -30,5 +30,7 @@ content:
     weight: 101
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   langcode: true
   search_api_excerpt: true
