@@ -1,10 +1,45 @@
 display:
   default:
+    display_title: Förvald
     display_options:
+      title: Media
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+      exposed_form:
+        options:
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
       filters:
+        status:
+          expose:
+            label: 'Status för publicering'
         name:
           expose:
             label: Namn
+        bundle:
+          expose:
+            label: Mediatyp
+          group_info:
+            label: Mediatyp
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Sida
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Redigera
+        delete_media:
+          text: Radera
   widget:
     display_options:
       filters:

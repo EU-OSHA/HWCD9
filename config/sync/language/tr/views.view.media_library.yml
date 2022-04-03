@@ -1,10 +1,45 @@
 display:
   default:
+    display_title: Varsayılan
     display_options:
+      title: Medya
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Sayfa başına öğe sayısı'
+            items_per_page_options_all_label: '- Tümü -'
+            offset_label: 'Başlangıç değeri'
+      exposed_form:
+        options:
+          reset_button_label: Sıfırla
+          exposed_sorts_label: 'Sıralama anahtarı'
+          sort_asc_label: Artan
+          sort_desc_label: Azalan
       filters:
+        status:
+          expose:
+            label: 'Yayımlanma durumu'
         name:
           expose:
             label: İsim
+        bundle:
+          expose:
+            label: 'Medya tipi'
+          group_info:
+            label: 'Medya tipi'
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Sayfa
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Düzenle
+        delete_media:
+          text: Sil
   widget:
     display_options:
       filters:

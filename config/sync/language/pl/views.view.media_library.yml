@@ -1,10 +1,45 @@
 display:
   default:
+    display_title: Domyślny
     display_options:
+      title: Media
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementów na stronę'
+            items_per_page_options_all_label: '- Wszystko -'
+            offset_label: Przesunięcie
+      exposed_form:
+        options:
+          reset_button_label: Resetuj
+          exposed_sorts_label: 'Sortuj po'
+          sort_asc_label: Rosnąco
+          sort_desc_label: Malejąco
       filters:
+        status:
+          expose:
+            label: 'Status publikacji'
         name:
           expose:
             label: Nazwa
+        bundle:
+          expose:
+            label: 'Typ mediów'
+          group_info:
+            label: 'Typ mediów'
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Strona
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Edytuj
+        delete_media:
+          text: Usuń
   widget:
     display_options:
       filters:

@@ -1,10 +1,40 @@
 display:
   default:
+    display_title: Výchozí
     display_options:
+      title: Média
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
       filters:
+        status:
+          expose:
+            label: 'Stav zveřejnění'
         name:
           expose:
             label: Jméno
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Stránka
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Upravit
+        delete_media:
+          text: Smazat
   widget:
     display_options:
       filters:

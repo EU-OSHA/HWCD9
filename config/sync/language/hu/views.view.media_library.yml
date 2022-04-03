@@ -1,10 +1,45 @@
 display:
   default:
+    display_title: Alapértelmezés
     display_options:
+      title: Média
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      exposed_form:
+        options:
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növ
+          sort_desc_label: Csökk
       filters:
+        status:
+          expose:
+            label: 'Közzététel állapota'
         name:
           expose:
             label: Név
+        bundle:
+          expose:
+            label: Médiatípus
+          group_info:
+            label: Médiatípus
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Oldal
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Szerkesztés
+        delete_media:
+          text: Törlés
   widget:
     display_options:
       filters:

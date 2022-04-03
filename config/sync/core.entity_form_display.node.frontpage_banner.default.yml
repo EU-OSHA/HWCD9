@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.frontpage_banner.field_type_of_the_banner
     - node.type.frontpage_banner
   module:
+    - content_moderation
+    - media_library
     - path
     - text
 id: node.frontpage_banner.default
@@ -19,7 +21,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -34,18 +36,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_banner_video:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 5
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_content_reference:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -54,18 +52,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_image:
-    type: entity_reference_autocomplete
-    weight: 2
+    type: media_library_widget
+    weight: 3
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
   field_type_of_the_banner:
     type: options_select
-    weight: 4
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -78,7 +73,7 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 100
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }

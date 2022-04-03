@@ -2,9 +2,12 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   action: 0
+  addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  anchor_link: 0
   automated_cron: 0
+  better_exposed_filters: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -12,6 +15,12 @@ module:
   calendar: 0
   calendar_datetime: 0
   ckeditor: 0
+  ckeditor_accordion: 0
+  ckeditor_font: 0
+  ckeditor_resize: 0
+  ckwordcount: 0
+  clientside_validation: 0
+  clientside_validation_jquery: 0
   color: 0
   comment: 0
   config: 0
@@ -24,13 +33,21 @@ module:
   contextual: 0
   csv_serialization: 0
   ctools: 0
+  custom_breadcrumbs: 0
+  date_popup: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
   devel: 0
+  diff: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
+  entity_browser: 0
   entity_reference_revisions: 0
+  entityqueue: 0
+  facets: 0
+  fakeobjects: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -42,6 +59,7 @@ module:
   hwc_crm_partners_migration: 0
   hwc_custom_migrations: 0
   hwc_import_export: 0
+  hwc_partner: 0
   image: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
@@ -52,15 +70,19 @@ module:
   jquery_ui_slider: 0
   jquery_ui_tooltip: 0
   jquery_ui_touch_punch: 0
+  lang_dropdown: 0
   language: 0
   language_neutral_aliases: 0
   languagefield: 0
   link: 0
   locale: 0
+  masquerade: 0
   media: 0
   media_library: 0
+  menu_breadcrumb: 0
   menu_link_content: 0
   menu_ui: 0
+  meta_position: 0
   metatag: 0
   migrate: 0
   migrate_drupal: 0
@@ -69,19 +91,26 @@ module:
   migrate_tools: 0
   node: 0
   node_export: 0
+  notification: 0
   oira_import_export: 0
   options: 0
   page_cache: 0
+  pagerer: 0
   path: 0
   path_alias: 0
   quickedit: 0
   rdf: 0
   rest: 0
-  search: 0
+  search_api: 0
+  search_api_autocomplete: 0
+  search_api_solr: 0
+  search_api_solr_admin: 0
   serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
+  taxonomy_access_fix: 0
+  taxonomy_manager: 0
   text: 0
   token: 0
   toolbar: 0

@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.frontpage_banner.field_type_of_the_banner
     - node.type.frontpage_banner
   module:
-    - options
+    - media
     - text
     - user
 id: node.frontpage_banner.default
@@ -23,43 +23,37 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   field_banner_video:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 105
+    weight: 3
     region: content
   field_content_reference:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_image:
-    type: entity_reference_label
-    label: above
+    type: media_thumbnail
+    label: hidden
     settings:
-      link: true
+      image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    weight: 102
-    region: content
-  field_type_of_the_banner:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 104
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
+  field_type_of_the_banner: true
   langcode: true
+  links: true
+  search_api_excerpt: true

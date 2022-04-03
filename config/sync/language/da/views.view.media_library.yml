@@ -1,10 +1,45 @@
 display:
   default:
+    display_title: Standard
     display_options:
+      title: Media
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      exposed_form:
+        options:
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       filters:
+        status:
+          expose:
+            label: Publiceringsstatus
         name:
           expose:
             label: Navn
+        bundle:
+          expose:
+            label: 'Medie type'
+          group_info:
+            label: 'Medie type'
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Side
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Redigér
+        delete_media:
+          text: Slet
   widget:
     display_options:
       filters:

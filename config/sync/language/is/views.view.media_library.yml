@@ -1,10 +1,42 @@
 display:
   default:
+    display_title: Sjálfgefið
     display_options:
+      title: Margmiðlunarefni
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
       filters:
+        status:
+          expose:
+            label: Birtingarstaða
         name:
           expose:
             label: Nafn
+        bundle:
+          expose:
+            label: 'Tegund margmiðlunarefnis'
+          group_info:
+            label: 'Tegund margmiðlunarefnis'
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Síða
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Breyta
+        delete_media:
+          text: Eyða
   widget:
     display_options:
       filters:

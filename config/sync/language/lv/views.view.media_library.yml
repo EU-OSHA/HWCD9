@@ -1,10 +1,32 @@
 display:
   default:
+    display_title: 'Noklusētā vērtība'
     display_options:
+      title: Multivide
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+      exposed_form:
+        options:
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
       filters:
         name:
           expose:
             label: Nosaukums
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Lapa
+    display_options:
+      fields:
+        edit_media:
+          text: Rediģēt
+        delete_media:
+          text: Dzēst
   widget:
     display_options:
       filters:

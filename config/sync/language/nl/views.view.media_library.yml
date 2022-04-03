@@ -1,10 +1,45 @@
 display:
   default:
+    display_title: Standaard
     display_options:
+      title: Media
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per pagina'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Startpunt
+      exposed_form:
+        options:
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorteren op'
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
       filters:
+        status:
+          expose:
+            label: Publicatiestatus
         name:
           expose:
             label: Naam
+        bundle:
+          expose:
+            label: Mediatype
+          group_info:
+            label: Mediatype
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Pagina
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Bewerken
+        delete_media:
+          text: Verwijderen
   widget:
     display_options:
       filters:

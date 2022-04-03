@@ -1,10 +1,26 @@
 display:
   default:
+    display_title: 'По подразбиране'
     display_options:
+      title: Медия
+      exposed_form:
+        options:
+          reset_button_label: Рестартирай
       filters:
         name:
           expose:
             label: Име
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Страница
+    display_options:
+      fields:
+        edit_media:
+          text: Редактирай
+        delete_media:
+          text: Изтриване
   widget:
     display_options:
       filters:

@@ -1,10 +1,25 @@
 display:
   default:
+    display_title: Privzeto
     display_options:
+      exposed_form:
+        options:
+          reset_button_label: Ponastavi
       filters:
         name:
           expose:
             label: Ime
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Stran
+    display_options:
+      fields:
+        edit_media:
+          text: Uredi
+        delete_media:
+          text: Izbriši
   widget:
     display_options:
       filters:

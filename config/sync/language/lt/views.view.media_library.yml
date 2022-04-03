@@ -1,10 +1,32 @@
 display:
   default:
+    display_title: Numatytasis
     display_options:
+      title: Media
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
       filters:
         name:
           expose:
             label: Pavadinimas
+        langcode:
+          expose:
+            label: Language
+  page:
+    display_title: Puslapis
+    display_options:
+      fields:
+        edit_media:
+          text: Redaguoti
+        delete_media:
+          text: Pašalinti
   widget:
     display_options:
       filters:
