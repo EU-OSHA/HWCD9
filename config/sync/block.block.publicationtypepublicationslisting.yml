@@ -1,0 +1,28 @@
+uuid: 5f19857f-7988-4c89-b882-34b43d074157
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.publication_type_publications_listing
+  module:
+    - facets
+    - system
+  theme:
+    - hwc_theme
+id: publicationtypepublicationslisting
+theme: hwc_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:publication_type_publications_listing'
+settings:
+  id: 'facet_block:publication_type_publications_listing'
+  label: 'Publications type '
+  label_display: visible
+  provider: facets
+  block_id: publicationtypepublicationslisting
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tools-and-publications/publications

@@ -1,0 +1,37 @@
+uuid: db52ea72-0b34-4370-a1a0-ca1cd45e284f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.publications_slideshow
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__publications_slideshow_publications_slideshow
+theme: hwc_theme
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:publications_slideshow-publications_slideshow'
+settings:
+  id: 'views_block:publications_slideshow-publications_slideshow'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tools-and-publications/publications
