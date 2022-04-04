@@ -1,0 +1,25 @@
+uuid: 9c7444a7-25cc-4f23-893a-67b4ef4c6311
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_partner
+    - system
+  theme:
+    - hwc_theme
+id: privateworkbenchblockpage
+theme: hwc_theme
+region: content
+weight: -1
+provider: null
+plugin: private_workbench_page
+settings:
+  id: private_workbench_page
+  label: 'Private Workbench Block Page'
+  provider: hwc_partner
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/7190
+    negate: false
