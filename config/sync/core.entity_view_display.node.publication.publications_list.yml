@@ -1,0 +1,133 @@
+uuid: f0edf418-f567-47ae-8537-12de5d478c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.publications_list
+    - field.field.node.publication.body
+    - field.field.node.publication.field_activity
+    - field.field.node.publication.field_aditional_resources
+    - field.field.node.publication.field_archived
+    - field.field.node.publication.field_author
+    - field.field.node.publication.field_banner_publications_office
+    - field.field.node.publication.field_booklet
+    - field.field.node.publication.field_character_count
+    - field.field.node.publication.field_cover_image
+    - field.field.node.publication.field_expiration_date
+    - field.field.node.publication.field_file
+    - field.field.node.publication.field_first_publication_date
+    - field.field.node.publication.field_metatags
+    - field.field.node.publication.field_migration_path_alias
+    - field.field.node.publication.field_modified_date
+    - field.field.node.publication.field_msd_priority_area
+    - field.field.node.publication.field_nace_codes
+    - field.field.node.publication.field_page_count
+    - field.field.node.publication.field_pages_count
+    - field.field.node.publication.field_pages_count_updated
+    - field.field.node.publication.field_publication_bookshop_id
+    - field.field.node.publication.field_publication_date
+    - field.field.node.publication.field_publication_related_res
+    - field.field.node.publication.field_publication_type
+    - field.field.node.publication.field_related_publications
+    - field.field.node.publication.field_show_on
+    - field.field.node.publication.field_tags
+    - field.field.node.publication.field_thesaurus
+    - field.field.node.publication.field_workbench_access
+    - field.field.node.publication.field_xmlsitemap
+    - node.type.publication
+  module:
+    - datetime
+    - field_group
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_summary_resources:
+      children: {  }
+      label: 'Summary & Resources'
+      parent_name: ''
+      region: hidden
+      weight: 35
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+id: node.publication.publications_list
+targetEntityType: node
+bundle: publication
+mode: publications_list
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cover_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pages_count:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_publication_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  addtoany: true
+  breadcrumbs: true
+  field_activity: true
+  field_aditional_resources: true
+  field_archived: true
+  field_author: true
+  field_banner_publications_office: true
+  field_booklet: true
+  field_character_count: true
+  field_expiration_date: true
+  field_file: true
+  field_first_publication_date: true
+  field_metatags: true
+  field_migration_path_alias: true
+  field_modified_date: true
+  field_msd_priority_area: true
+  field_nace_codes: true
+  field_page_count: true
+  field_pages_count_updated: true
+  field_publication_bookshop_id: true
+  field_publication_related_res: true
+  field_related_publications: true
+  field_show_on: true
+  field_tags: true
+  field_thesaurus: true
+  field_workbench_access: true
+  field_xmlsitemap: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

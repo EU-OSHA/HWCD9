@@ -140,6 +140,51 @@ ul {
   padding-right: 0;
 }
 
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+.breadcrumb-item::before {
+  display: inline-block;
+  color: #FFF;
+  padding: 0 8px;
+  content: "> ";
+}
+.breadcrumb-item:nth-child(1)::before {
+  content: " ";
+}
+.breadcrumb-item a {
+  color: #FFF;
+  text-decoration: underline !important;
+}
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5remg;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  color: #FFF;
+  padding: 1px 2px;
+  content: "> ";
+}
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  color: #FFF;
+}
+
 h1, h2, h3, h4 {
   clear: both;
 }
@@ -661,51 +706,6 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   padding-bottom: 20px;
 }
 
-.breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  list-style: none;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-.breadcrumb-item {
-  display: flex;
-}
-.breadcrumb-item::before {
-  display: inline-block;
-  color: #FFF;
-  padding: 0 8px;
-  content: "> ";
-}
-.breadcrumb-item:nth-child(1)::before {
-  content: " ";
-}
-.breadcrumb-item a {
-  color: #FFF;
-  text-decoration: underline !important;
-}
-.breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.5remg;
-}
-.breadcrumb-item + .breadcrumb-item::before {
-  display: inline-block;
-  color: #FFF;
-  padding: 8px;
-  content: "> ";
-}
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: underline;
-}
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: none;
-}
-.breadcrumb-item.active {
-  color: #FFF;
-}
-
 #navbar-main {
   background: #003399;
 }
@@ -760,6 +760,114 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
 }
 .view-osh-news .news-items-list .group-right .title-list a {
   color: #003399;
+}
+
+.green-background {
+  background: #daea96;
+}
+
+.gray-background {
+  background: #efefef;
+}
+
+.node-content {
+  padding: 1rem;
+}
+
+.latest-publications {
+  padding: 4rem 1rem 1rem;
+}
+
+.available-publication {
+  padding: 4rem 1rem 1rem;
+}
+
+.sidebar-first .block-facets {
+  padding: 0.8rem;
+  border: 1px solid #B0B2B3;
+  border-radius: 5px;
+  margin-top: 0;
+  width: 100%;
+  background: #FFF;
+}
+.sidebar-first .block-facets h2 {
+  font-size: 1.125rem;
+  color: #003399 !important;
+  padding-right: 1.25px;
+}
+.sidebar-first .block-facets ul {
+  list-style: none;
+  padding: 0.5rem 0 0;
+}
+.sidebar-first .block-facets ul li label {
+  padding-left: 0.5rem;
+}
+
+.view-publications-list {
+  display: flex;
+  flex-direction: column;
+}
+.view-publications-list .view-filters {
+  order: 1;
+}
+.view-publications-list .view-header {
+  order: 2;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  color: #003399;
+}
+.view-publications-list .view-content {
+  order: 3;
+  display: flex;
+  flex-direction: column;
+}
+.view-publications-list .view-content .publications-row .publications-items-list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+  padding: 1em;
+  background: #FFF;
+  border-radius: 10px;
+  position: relative;
+  border-bottom: 0;
+}
+.view-publications-list .view-content .publications-row .publications-items-list:after {
+  content: " ";
+  background: url(../images/green-line.png) repeat-x;
+  width: 90%;
+  clear: both;
+  display: block;
+  padding-top: 1em;
+  position: absolute;
+  bottom: -36px;
+  left: 5%;
+}
+.view-publications-list .view-content .publications-row .publications-items-list .group-left .field--type-image {
+  border: 2px solid #bcd75b;
+  float: left;
+  padding-right: 0;
+  margin-right: 20px;
+  margin-top: 13px;
+  border-radius: 7px;
+  height: 114px;
+  width: 114px;
+}
+.view-publications-list .view-content .publications-row .publications-items-list .group-right .date {
+  color: #57575a;
+  font-size: 0.8rem !important;
+}
+.view-publications-list .view-content .publications-row .publications-items-list .group-right .title-list {
+  display: block;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+.view-publications-list .view-content .publications-row .publications-items-list .group-right .title-list a {
+  color: #003399;
+}
+.view-publications-list nav[aria-label=pagination-heading] {
+  order: 4;
 }
 
 /*# sourceMappingURL=hwc-global.css.map */

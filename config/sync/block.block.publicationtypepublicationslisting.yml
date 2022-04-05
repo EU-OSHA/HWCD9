@@ -11,8 +11,8 @@ dependencies:
     - hwc_theme
 id: publicationtypepublicationslisting
 theme: hwc_theme
-region: top_header
-weight: 0
+region: content
+weight: -3
 provider: null
 plugin: 'facet_block:publication_type_publications_listing'
 settings:

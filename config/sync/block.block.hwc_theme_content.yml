@@ -1,6 +1,6 @@
 uuid: 64c39220-c95b-438f-b343-86135ea84fb3
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: hwc_theme_content
 theme: hwc_theme
 region: content
-weight: -4
+weight: -6
 provider: null
 plugin: system_main_block
 settings:

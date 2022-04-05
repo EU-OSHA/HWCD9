@@ -9,7 +9,7 @@ _core:
 id: hwc_theme_local_tasks
 theme: hwc_theme
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:

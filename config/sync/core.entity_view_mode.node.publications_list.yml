@@ -1,0 +1,10 @@
+uuid: aaf87043-1a7e-4ace-881d-a58a6225b130
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.publications_list
+label: 'Publications List'
+targetEntityType: node
+cache: true
