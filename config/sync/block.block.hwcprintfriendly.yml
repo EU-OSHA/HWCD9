@@ -1,0 +1,25 @@
+uuid: f8d6224e-a512-4341-8da7-52a09055223f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e0aeed45-165f-47b6-be13-802f76082f57'
+  module:
+    - block_content
+  theme:
+    - hwc_theme
+id: hwcprintfriendly
+theme: hwc_theme
+region: header_form
+weight: -11
+provider: null
+plugin: 'block_content:e0aeed45-165f-47b6-be13-802f76082f57'
+settings:
+  id: 'block_content:e0aeed45-165f-47b6-be13-802f76082f57'
+  label: 'HWC Print friendly'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

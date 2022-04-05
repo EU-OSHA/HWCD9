@@ -891,13 +891,16 @@ display:
           error_message: true
       style:
         type: default
-      row:
-        type: fields
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          grouping: {  }
+          row_class: publications-row
+          default_row_class: false
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              publication: publications_list
       query:
         type: views_query
         options:
