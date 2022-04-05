@@ -1,0 +1,30 @@
+
+  {% set results = content['#view'].result %}
+
+  {% for index, item in results %}
+  <article class="home-news-item">
+    {% set item = item._entity %}
+    {% set image = item.field_image|view  %}
+    <div class="image-news-item">
+      <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }} ">
+        {{ image  }}
+      </a>
+      <blockquote class="image-field-caption">
+        FALTA EL CAMPO CAPTION
+      </blockquote>
+    </div>
+    <div class="body-news-item">
+      <span class="publication-date">{{ item.field_publication_date.value| date('d/m/Y') }}</span>
+      <div class="summary-news">
+        <h2>
+          <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }} ">
+          {{ item.title.value }}
+          </a>
+        </h2>
+        <p>{{ item.field_summary.value|render|striptags|slice(0, 150)|raw ~ '...' }}</p>
+        <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }}" class="more-link">{{ 'See more'|t }}</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+

@@ -1,82 +1,40 @@
-{% extends "@bootstrap_barrio/layout/page.html.twig" %}
-
-{% block head %}
-  <header id="navbar" class="{{ navbar_classes }} campaigns-header">
-      <div class="top-header-container">
-        <div class="top-header-content row">
-          <div class="header-logo col-xs-12 col-sm-9 toolbar-yes">
-            {{ page.top_header_logos }}
-            <div class="header-text">Healthy Workplaces Lighten the Load 2020-22</div>
-          </div>
-          <div class="push-right col-xs-12 col-sm-3 xs-menu">
-            <div class="content-first-row">
-              <div id="block-hwc-hwc-print-friendly" class="block block-hwc">
-                <a href="javascript:if(window.print)window.print();" class="printfriendly" title="Print page"></a>
-              </div>
-              <div class="font-size-print">
-                <span id="_smallify" class="a_small"><a title="{{ 'Smaller text' | trans }}">a</a></span>
-                <span id="_reset" class="a_medium"><a title="{{ 'Optimised defaults' | trans }}">a</a></span>
-                <span id="_biggify" class="a_big"><a title="{{ 'Bigger text' | trans }}">a</a></span>
-                <a href="#" onclick="if(window.print)window.print();" class="print-friendly" title="{{ 'Print page' | trans }}"></a>
-              </div>
-              <div class="header-social-menu">
-                {{ page.header }}
-              </div>
-            </div>
-            <div class="header-links">
-              {{ page.header_links}}
-            </div>
-            <div class="header-language-search">
-              {{ page.header_form }}
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav{{ navbar_attributes }}>
-        {% if page.primary_menu %}
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="CollapsingNavbar">
-            {{ page.primary_menu }}
-          </div>
-        {% endif %}
-        {% if sidebar_collapse %}
-          <button class="navbar-toggler navbar-toggler-left collapsed" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-        {% endif %}
-      </nav>
-  </header>
-{% endblock %}
+{% extends "page.html.twig" %}
 
 
 
 {% block content %}
-  <div class="home-news-events blocks-front-page container">
-    <div class="row">
-      <div class="home-news col-lg-7 col-md-12">
-        <h3 class="line"><span><a href="/media-centre/news">{{ 'News' | trans }}</a></span></h3>
-        <h4>TODO view home news</h4>
+
+  {% if is_front %}
+    <section class="homepage-banner">
+      {{ page.content.views_block__homepage_banners_hp_banners_block }}
+    </section>
+    <section class="home-news-events  blocks-front-page container">
+      <div class="row">
+        <div class="home-news col-lg-7 col-md-12">
+          <h1 class="line news-section-title"><a href="/media-centre/news">{{ 'News' | trans }}</a></h1>
+          {{ page.content.views_block__osh_news_front }}
+        </div>
+        <div class="home-events col-lg-5 col-md-12">
+          <h1 class="line events-section-title"><a href="/en/media-centre/events">{{ 'Events' | trans }}</a></h1>
+        </div>
       </div>
-      <div class="home-events col-lg-5 col-md-12">
-        <h3 class="line"><span><a href="/en/media-centre/events">{{ 'Events' | trans }}</a></span></h3>
-        <h4>TODO view home events</h4>
-      </div>
-    </div>
-  </div>
-  <div class="content-fluid blocks-front-page green-background">
+    </section>
+  {% endif %}
+
+
+  <section class="content-fluid blocks-front-page green-background">
     <div class="container no-padding">
       <h2 class="line"><span><a href="/about-topic/priority-areas">{{ 'Priority areas' | trans }}</a></span></h2>
       <h4>TODO priority areas menu</h4>
     </div>
-  </div>
-  <div class="oficial-campaign-partner blocks-front-page container">
+  </section>
+
+  <section class="oficial-campaign-partner blocks-front-page container">
     <h2 class="line"><span><a href="/campaign-partners/official-campaign-partners">{{ 'Official Campaign partners' | trans }}</a></span></h2>
     <h4>TODO silder partner</h4>
-  </div>
-  <div class="home-newsletter-social-media blocks-front-page">
+  </section>
+
+  <section class="home-newsletter-social-media blocks-front-page">
     <div class="container no-padding">
       <div class="row">
         <div class="home-newsletter col-lg-7 col-md-12">
@@ -89,7 +47,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 {% endblock %}
 
 {% block footer %}
