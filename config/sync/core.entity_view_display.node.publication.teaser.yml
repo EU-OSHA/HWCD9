@@ -34,29 +34,56 @@ dependencies:
     - field.field.node.publication.field_thesaurus
     - field.field.node.publication.field_workbench_access
     - field.field.node.publication.field_xmlsitemap
+    - image.style.media_library
     - node.type.publication
   module:
-    - text
+    - datetime
+    - media
     - user
 id: node.publication.teaser
 targetEntityType: node
 bundle: publication
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_cover_image:
+    type: media_thumbnail
     label: hidden
     settings:
-      trim_length: 600
+      image_link: content
+      image_style: media_library
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
-  links:
-    settings: {  }
+  field_pages_count:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 100
+    weight: 2
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: Europe/Madrid
+      format_type: only_day
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_publication_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden:
+  addtoany: true
+  body: true
+  breadcrumbs: true
   field_activity: true
   field_aditional_resources: true
   field_archived: true
@@ -64,7 +91,6 @@ hidden:
   field_banner_publications_office: true
   field_booklet: true
   field_character_count: true
-  field_cover_image: true
   field_expiration_date: true
   field_file: true
   field_first_publication_date: true
@@ -74,12 +100,9 @@ hidden:
   field_msd_priority_area: true
   field_nace_codes: true
   field_page_count: true
-  field_pages_count: true
   field_pages_count_updated: true
   field_publication_bookshop_id: true
-  field_publication_date: true
   field_publication_related_res: true
-  field_publication_type: true
   field_related_publications: true
   field_show_on: true
   field_tags: true
@@ -87,3 +110,5 @@ hidden:
   field_workbench_access: true
   field_xmlsitemap: true
   langcode: true
+  links: true
+  search_api_excerpt: true

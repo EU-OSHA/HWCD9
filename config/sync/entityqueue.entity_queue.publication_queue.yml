@@ -1,0 +1,23 @@
+uuid: 2c3d85ef-3eef-48d8-81a3-3c73fbc8eda4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: publication_queue
+label: 'Publication Slideshow'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: views
+  handler_settings:
+    view:
+      view_name: publications_slideshow
+      display_name: entity_reference_1
+      arguments: {  }
+queue_settings:
+  min_size: 0
+  max_size: 3
+  act_as_queue: false
+  reverse: false
