@@ -1,6 +1,6 @@
 uuid: 5f19857f-7988-4c89-b882-34b43d074157
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.publication_type_publications_listing

@@ -1,0 +1,178 @@
+uuid: 95c95a1c-62c8-48a0-a04b-5d04221f425b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_city
+    - field.storage.node.field_country_code
+    - field.storage.node.body
+    - field.storage.node.field_show_eu_flag
+    - field.storage.node.field_start_date
+    - field.storage.node.field_type_event
+    - search_api.server.default_solr_server
+  module:
+    - search_api_solr
+    - node
+    - search_api
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+id: events_list
+name: 'Events List'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  end_value:
+    label: 'Start Date » End date value'
+    datasource_id: 'entity:node'
+    property_path: 'field_start_date:end_value'
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_start_date
+  field_city:
+    label: City
+    datasource_id: 'entity:node'
+    property_path: field_city
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_city
+  field_country_code:
+    label: Country
+    datasource_id: 'entity:node'
+    property_path: field_country_code
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_country_code
+  field_show_eu_flag:
+    label: 'Show EU flag'
+    datasource_id: 'entity:node'
+    property_path: field_show_eu_flag
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_show_eu_flag
+  field_start_date:
+    label: 'Start Date'
+    datasource_id: 'entity:node'
+    property_path: field_start_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_start_date
+  field_start_date_range:
+    label: 'Start Date » Range'
+    datasource_id: 'entity:node'
+    property_path: field_start_date
+    type: solr_date_range
+    dependencies:
+      config:
+        - field.storage.node.field_start_date
+  field_type_event:
+    label: 'Type of event'
+    datasource_id: 'entity:node'
+    property_path: field_type_event
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_type_event
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: false
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - events
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: false
+server: default_solr_server
