@@ -69,7 +69,9 @@ content:
     weight: 3
     region: content
 hidden:
+  addtoany: true
   body: true
+  breadcrumbs: true
   content_moderation_control: true
   field_activity: true
   field_aditional_resources: true
