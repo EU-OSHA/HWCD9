@@ -10,9 +10,6 @@ display:
         name:
           expose:
             label: Име
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Страница
     display_options:

@@ -1,7 +1,54 @@
 uuid: c0c7d2aa-25cd-4232-8892-f2f0e983c33e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.campaign_16
+    - node.type.campaign_18
+    - node.type.campaign_materials
+    - node.type.document
+    - node.type.event_speaker
+    - node.type.events
+    - node.type.external_url
+    - node.type.file
+    - node.type.flickr_gallery
+    - node.type.gpa
+    - node.type.internal_url
+    - node.type.news
+    - node.type.pa_highlights
+    - node.type.practical_tool
+    - node.type.slideshare
+    - node.type.tk_article
+    - node.type.tk_example
+    - node.type.tk_tool
+    - node.type.tk_topic
+    - node.type.youtube
+  module:
+    - block
+    - comment
+    - contact
+    - content_translation
+    - contextual
+    - devel
+    - filter
+    - image
+    - language
+    - locale
+    - masquerade
+    - metatag
+    - node
+    - path
+    - pathauto
+    - search_api
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+    - views_ui
+    - workbench_access
+    - xmlsitemap
 _core:
   default_config_hash: Om6FEO7vZZMkPIbVvfxtdkWerQ2PvQM4sWUd6Q3ZnfI
 id: administrator

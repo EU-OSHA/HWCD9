@@ -1,7 +1,14 @@
 uuid: 631a7186-47f9-42c3-b673-c117fde8b860
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.document
+    - node.type.events
+    - node.type.news
+  module:
+    - exclude_node_title
+    - node
 id: campaign_partner
 label: 'campaign partner'
 weight: 11
@@ -32,6 +39,7 @@ permissions:
   - 'edit own news content'
   - 'moderate content from draft to final_draft'
   - 'moderate content from draft to needs_review'
+  - 'use exclude node title'
   - 'use manualcrop'
   - 'use media wysiwyg'
   - 'use text format audio_visual'

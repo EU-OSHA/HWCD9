@@ -1,12 +1,15 @@
 uuid: c328c566-1876-4305-b1c5-2ba264bae980
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - exclude_node_title
 id: approver
 label: Approver
 weight: 9
 is_admin: null
 permissions:
+  - 'use exclude node title'
   - 'use manualcrop'
   - 'use text format audio_visual'
   - 'use text format filtered_html'

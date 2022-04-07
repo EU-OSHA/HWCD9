@@ -11,7 +11,6 @@ display:
             offset_label: Startpunt
       exposed_form:
         options:
-          reset_button_label: Reset
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -27,15 +26,10 @@ display:
             label: Mediatype
           group_info:
             label: Mediatype
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Pagina
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Bewerken
         delete_media:

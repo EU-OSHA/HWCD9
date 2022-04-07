@@ -1,7 +1,15 @@
 uuid: 9a8f8f3c-ca4d-44c2-9169-5c7acaf6a380
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - exclude_node_title
+    - filter
+    - locale
+    - system
+    - toolbar
 id: layout_validator
 label: 'Layout Validator'
 weight: 5
@@ -26,6 +34,7 @@ permissions:
   - 'translate admin strings'
   - 'translate interface'
   - 'translate user-defined strings'
+  - 'use exclude node title'
   - 'use manualcrop'
   - 'use text format audio_visual'
   - 'use text format filtered_html'

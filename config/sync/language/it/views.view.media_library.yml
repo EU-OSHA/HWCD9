@@ -13,7 +13,6 @@ display:
         options:
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
-          sort_asc_label: Asc
           sort_desc_label: Disc
       filters:
         status:
@@ -22,15 +21,10 @@ display:
         name:
           expose:
             label: Nome
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Pagina
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Modifica
         delete_media:

@@ -1,7 +1,14 @@
 uuid: 6b80c309-2050-4691-bf37-3c5a07848b80
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - exclude_node_title
+    - filter
+    - system
+    - toolbar
 id: translation_liaison
 label: 'Translation Liaison'
 weight: 4
@@ -9,6 +16,7 @@ is_admin: null
 permissions:
   - 'access toolbar'
   - 'preview layout validation'
+  - 'use exclude node title'
   - 'use manualcrop'
   - 'use text format audio_visual'
   - 'use text format filtered_html'

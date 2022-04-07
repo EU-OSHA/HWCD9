@@ -2,8 +2,6 @@ default_config:
   tags:
     pages:
       prefix_label: Lehekülg
-      previous: ‹
-      next: ›
       page_current_title: 'Eesolev leht'
       first_title: 'Mine esimesele lehele'
       previous_title: 'Mine eelmisele lehele'
@@ -16,6 +14,4 @@ default_config:
       last_reader: 'Viimane leht'
     items:
       prefix_label: Kirje
-      previous: ‹
-      next: ›
       first_reader: 'Esimene element'

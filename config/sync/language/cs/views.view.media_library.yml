@@ -11,7 +11,6 @@ display:
             offset_label: Posun
       exposed_form:
         options:
-          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
@@ -22,15 +21,10 @@ display:
         name:
           expose:
             label: Jméno
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Stránka
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Upravit
         delete_media:

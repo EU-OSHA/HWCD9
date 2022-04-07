@@ -2,8 +2,6 @@ default_config:
   tags:
     pages:
       prefix_label: Side
-      previous: ‹
-      next: ›
       page_current_title: 'Nuværende side'
       page_title: 'Gå til side @number'
       first_title: 'Gå til første side'
@@ -18,12 +16,8 @@ default_config:
       last_reader: 'Sidste side'
     items:
       prefix_label: Element
-      previous: ‹
-      next: ›
       page_reader: Element
       first_reader: 'Første punkt'
     item_ranges:
       prefix_label: Overskrifter
-      previous: ‹
-      next: ›
       page_reader: Overskrifter
