@@ -1,2 +1,60 @@
 $font-family-sans: "Open Sans", sans-serif;
 $font-family-sans-condensed: "Open Sans Condensed", sans-serif;
+
+
+//** margenes generales de la aplicacion
+$margin:			40px;
+$margin1:			25px; //40-15
+$margin2:			15px;
+$margin-summary:	125px;
+$margin-summary1:	110px; //125-15
+$margin-summary2:	85px; //125-40
+$margin-tablet:		30px;
+$margin-tablet1:	10px; //30-20
+$margin-tablet2:	15px; //30-15
+$margin-movil:		15px;
+
+
+//** Pagination
+
+$color0:	transparent;
+$color1:	#fff;
+$color2:	#003399; //azul
+$color2-ligth: #8d98c5;//azul claro
+$color3:	#749b00; //verde
+$color4:	#c1e000; //verde claro
+$color5:	#575757; //gris
+$color6:	#608000; //verde oscuro
+$color7: 	#99a7c1; //gris
+$color8: 	#e2e2e3; //gris bg
+$color9: 	#c00f21; //rojo
+$color10:   #4d8100; //verde mas oscuro
+
+$pagination-bg: $color2;
+$pagination-border: $color2;
+$pagination-hover-color: $color2;
+$pagination-hover-bg: $color2;
+$pagination-hover-border: $color2;
+
+$pagination-active-bg: $color2;
+$pagination-active-border: $color2;
+
+$pagination-disabled-color: $color2;
+$pagination-disabled-bg: $color2;
+$pagination-disabled-border: $color2;
+
+$pagination-color:				$color2;
+$pagination-active-color:		$color5;
+
+
+//** FOOTER
+$footer-bg-image: url("../images/footer/ruedas.png");
+$footer-bg-image: url("../images/footer/bg-complete.png");
+$footer-bg-image-list: rgba(96,128,0, 1), rgba(38, 105, 23, 0) 100%;
+$direction: to right;
+// $footer-bg-color: svg-gradient($direction, rgba(96,128,0, 1), rgba(96,128,0, 0.5) 100%);
+// $footer-bg-color: $color6; //rgb(96,128,0);
+$footer-bg-color: transparent;
+$footer-color:	$text-color-white;
+//** FIN FOOTER
+//** FIN MG
