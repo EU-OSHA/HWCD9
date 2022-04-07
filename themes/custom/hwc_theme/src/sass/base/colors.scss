@@ -12,17 +12,30 @@
 
 /* Font colours */
 
-$text-color-blue: #003399;
+$text-color-blue: #003399; //azul
+$text-color-blue-light:#8d98c5; //azul claro
 $text-color-white: #FFFFFF;
 
 
-/* background colours */
 
-$bg-color-blue: #003399;
-$bg-color-green-light: #daea96;
-$bg-color-white: #fff;
-$bg-color-grey-footer: #57575a;
 
+
+//** GENERAL
+@color0:	transparent;
+@color1:	#fff;
+@color2:	#003399; //azul
+@color2-ligth: #8d98c5;//azul claro
+@color3:	#749b00; //verde
+@color4:	#c1e000; //verde claro
+@color5:	#575757; //gris
+@color6:	#608000; //verde oscuro
+@color7: 	#565351; //gris
+@color8: 	#e2e2e3; //gris bg
+@color9: 	#c00f21; //rojo
+@color10:   #4d8100; //verde mas oscuro
+@colorNormalText: 	#333333; //gris oscuro
+@colorFacebook:		#4c69ba;
+@colorGradient:		#3b55a0;
 
 
 /* Font colours */
@@ -37,8 +50,8 @@ $text-color-grey-light: #7c7d81;
 $text-color-white: #FFF;
 $text-color-facets: #57565b;
 
-
 /* background colours */
+
 $bg-color-blue: #003399;
 $bg-color-blue-light: #cfddee;
 $bg-color-blue-light-2: #e8ecf5;
@@ -46,16 +59,23 @@ $bg-color-blue-block: #ecf1fb;
 $bg-color-blue-wiki: #325bad;
 $bg-color-blue-accordion: #e8eef7;
 $bg-color-blue-button: #b2c7e5;
+
+$bg-color-green-light: #daea96;
+
 $bg-color-pink: #c72272;
+
 $bg-color-grey: #57575a;
 $bg-color-grey-legislation: #e9edf6;
 $bg-color-grey-light: #fbfbfb;
+
 $bg-color-white: #FFF;
 $bg-color-tag-1: #4e6aa0;
 $bg-color-tag-2: #e8eef7;
 $bg-color-view-tags: #9ABBDB;
 $bg-color-workbench: #FFFBD9;
 $bg-color-workbench-border: #FFEBC5;
+
+$bg-color-grey-footer: #57575a;
 
 .bg-color-blue{
   background: $bg-color-blue;

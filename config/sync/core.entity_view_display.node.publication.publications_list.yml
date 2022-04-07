@@ -67,7 +67,7 @@ content:
     region: content
   field_cover_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -76,7 +76,7 @@ content:
     region: content
   field_pages_count:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -85,16 +85,16 @@ content:
     region: content
   field_publication_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: only_day
     third_party_settings: {  }
     weight: 1
     region: content
   field_publication_type:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
