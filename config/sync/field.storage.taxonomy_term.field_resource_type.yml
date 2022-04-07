@@ -12,6 +12,9 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: HWC23-25
+      label: HWC23-25
+    -
       value: HWC20-22
       label: HWC20-22
     -
