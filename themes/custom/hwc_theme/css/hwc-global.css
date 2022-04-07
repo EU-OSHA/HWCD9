@@ -1211,4 +1211,78 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   order: 4;
 }
 
+/* Latest Publications */
+.wrapper-responsive-box {
+  margin-top: 1.5em;
+}
+
+.latest-publications .view-content {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.latest-publications .box-latest-publications {
+  background: #FFF;
+  width: 32.2%;
+  min-height: 250px;
+  display: flex;
+  position: relative;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+.latest-publications .box-latest-publications .left-column {
+  padding: 0.8rem 0rem 0.8rem 0.8rem;
+  width: 50%;
+}
+.latest-publications .box-latest-publications .left-column img {
+  /*
+  width: 146px;
+  height: auto;
+  */
+}
+.latest-publications .box-latest-publications .right-column {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+.latest-publications .box-latest-publications .right-column .metadata {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.latest-publications .box-latest-publications .right-column .metadata .publication-date {
+  color: #58595f;
+}
+.latest-publications .box-latest-publications .right-column .metadata .pages {
+  color: #58595f;
+}
+.latest-publications .box-latest-publications .right-column h2 a {
+  display: block;
+  clear: both;
+  color: #003399;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  text-decoration: none;
+  font-style: normal;
+  word-break: break-all;
+}
+.latest-publications .box-latest-publications .right-column h2 a:hover {
+  text-decoration: underline;
+}
+.latest-publications .box-latest-publications .right-column p:last-child {
+  margin: auto 0 0.5rem;
+}
+.latest-publications .box-latest-publications .right-column p:last-child a.see-more-arrow {
+  display: block;
+  clear: both;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+.latest-publications .box-latest-publications.views-row-last {
+  margin-right: 0;
+}
+
 /*# sourceMappingURL=hwc-global.css.map */
