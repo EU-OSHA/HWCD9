@@ -114,7 +114,8 @@ display:
         type: fields
         options:
           default_field_elements: true
-          inline: {  }
+          inline:
+            field_download_pdf: field_download_pdf
           separator: ''
           hide_empty: false
       fields:
@@ -498,7 +499,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"practice-exchange-downloads field-files\">\r\n      <span class=\"publication-ext-type\">{{ field_download_pdf }}</span>\r\n      <span class=\"publication-download-label\">Download in</span>\r\n      <a href=\"node/{{ field_download_pdf__target_id }}\"><span class=\"glyphicon glyphicon-circle-arrow-down\">{{ langcode|slice(0,2) }}</span></a>\r\n\r\n</div>"
+            text: "<div class=\"practice-exchange-downloads field-files\">\r\n      <span class=\"publication-ext-type\">{{ field_download_pdf }}</span>\r\n      <span class=\"publication-download-label\">Download in</span>\r\n      <a href=\"{{ field_download_pdf__target_id }}\" target=\"_blank\"><span class=\"glyphicon glyphicon-circle-arrow-down\">{{ langcode|slice(0,2) }}</span></a>\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
