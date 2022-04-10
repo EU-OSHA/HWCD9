@@ -2,10 +2,6 @@ uuid: 4e1456a4-3a8c-457b-8ec1-4d59ef440953
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:block_image:a9adb0a8-1c88-49bd-8dcb-26fe2956ae39'
-  module:
-    - block_content
   theme:
     - hwc_theme
 id: logoosha

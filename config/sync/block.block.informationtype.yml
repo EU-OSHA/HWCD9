@@ -12,17 +12,17 @@ dependencies:
 id: informationtype
 theme: hwc_theme
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: 'facet_block:information_type'
 settings:
   id: 'facet_block:information_type'
   label: 'Information Type'
-  provider: facets
   label_display: '0'
+  provider: facets
   block_id: informationtype
 visibility:
   request_path:
     id: request_path
-    pages: /good-practice-exchange-platform
     negate: false
+    pages: /good-practice-exchange-platform

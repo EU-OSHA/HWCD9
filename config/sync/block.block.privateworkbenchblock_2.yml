@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - hwc_partner
+    - system
   theme:
     - hwc_theme
 id: privateworkbenchblock_2
@@ -15,6 +16,10 @@ plugin: private_workbench
 settings:
   id: private_workbench
   label: 'Private Workbench Block'
+  label_display: '0'
   provider: hwc_partner
-  label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
