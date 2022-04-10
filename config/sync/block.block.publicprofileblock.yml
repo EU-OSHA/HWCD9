@@ -1,0 +1,25 @@
+uuid: 625ddb0d-94b5-42eb-ba0c-52ed6de9ae4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_partner
+    - system
+  theme:
+    - hwc_theme
+id: publicprofileblock
+theme: hwc_theme
+region: content
+weight: -3
+provider: null
+plugin: public_profile
+settings:
+  id: public_profile
+  label: 'Public profile Block'
+  provider: hwc_partner
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/campaign-partners/*'
+    negate: false
