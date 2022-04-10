@@ -1,0 +1,216 @@
+
+
+
+.node-content{
+  padding:1rem;
+}
+.latest-publications{
+  padding: 4rem 1rem 1rem;
+}
+.available-publication{
+  padding: 4rem 1rem 1rem;
+}
+
+.sidebar-first .block-facets {
+  padding: 0.8rem 0.8rem 0.4rem;
+  border: 1px solid #B0B2B3;
+  border-radius: 5px;
+  margin-top: 0;
+  width: 100%;
+  background: #FFF;
+  h2{
+    font-size: 1.125rem;
+    color: #003399 !important;
+    padding-right: 1.25px;
+    &:hover{
+      cursor: pointer;
+    }
+    &:after{
+      color: #c1e000;
+      padding-top: 2px;
+      content: "\e252";
+      font-family: "Glyphicons Halflings";
+      margin-left: 0px;
+      float: right;
+      margin-right: 0px;
+    }
+  }
+  ul{
+    list-style: none;
+    padding: 0.5rem 0 0;
+    li{
+      label{
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}
+
+
+.view-publications-list {
+  display: flex;
+  flex-direction: column;
+  .view-filters{
+    order: 1;
+  }
+  .view-header{
+    order: 2;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+    color: #003399;
+  }
+  .view-content {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    .publications-row {
+      .publications-items-list {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3em;
+        padding: 1em;
+        background: #FFF;
+        border-radius: 10px;
+        position: relative;
+        border-bottom: 0;
+        &:after {
+          content: ' ';
+          background: url(../images/green-line.png) repeat-x;
+          width: 90%;
+          clear: both;
+          display: block;
+          padding-top: 1em;
+          position: absolute;
+          bottom: -36px;
+          left: 5%;
+        }
+        .group-left {
+          .field--type-image {
+            padding-right: 0;
+            border-radius: 7px;
+            min-height: 220px;
+            width: 100%;
+            margin-right: 1.8rem;
+          }
+        }
+        .group-right {
+          .metadata{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            > span{
+              color: #57575a;
+            }
+            .date {
+
+            }
+            .type {
+              color: $text-color-blue;
+              label{
+                font-weight: bold;
+              }
+            }
+            .num-pages{
+              font-weight: bold;
+              color: $text-color-blue;
+            }
+          }
+          .title-list {
+            display: block;
+            margin-top: 0.5rem;
+            padding-bottom: 0.3rem;
+            line-height: 1.6rem;
+
+            a {
+              color: $text-color-blue;
+              font-style: normal;
+              font-size: 0.7em;
+            }
+          }
+        }
+      }
+    }
+  }
+  nav[aria-label=pagination-heading]{
+    order: 4;
+  }
+}
+
+/* Latest Publications */
+
+.wrapper-responsive-box{
+  margin-top: 1.5em;
+}
+.latest-publications{
+  .view-content{
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .box-latest-publications{
+    background: #FFF;
+    width: 32.2%;
+    min-height: 250px;
+    display: flex;
+    position: relative;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    .left-column{
+      padding: 0.8rem 0rem 0.8rem 0.8rem;
+      width: 50%;
+      img{
+        /*
+        width: 146px;
+        height: auto;
+        */
+      }
+    }
+    .right-column{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      padding: 0.8rem;
+      .metadata{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 0.8rem;
+        .publication-date{
+          color:#58595f;
+        }
+        .pages{
+          color:#58595f;
+        }
+      }
+      h2 a{
+        display: block;
+        clear: both;
+        color:#003399;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 18px;
+        text-decoration: none;
+        font-style: normal;
+        word-break: break-all;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      p:last-child{
+        margin: auto 0 0.5rem;
+        a.see-more-arrow{
+          display: block;
+          clear: both;
+          bottom: 0;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .box-latest-publications.views-row-last{
+    margin-right: 0;
+  }
+
+}

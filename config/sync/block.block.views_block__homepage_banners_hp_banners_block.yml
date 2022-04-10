@@ -1,0 +1,29 @@
+uuid: 6e525c1f-2a8b-4b34-9ceb-79ce45c9a949
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_banners
+  module:
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__homepage_banners_hp_banners_block
+theme: hwc_theme
+region: content
+weight: -11
+provider: null
+plugin: 'views_block:homepage_banners-hp_banners_block'
+settings:
+  id: 'views_block:homepage_banners-hp_banners_block'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

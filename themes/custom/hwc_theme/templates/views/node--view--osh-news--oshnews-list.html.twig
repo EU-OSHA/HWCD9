@@ -1,0 +1,19 @@
+
+<section class="news-items-list">
+  <div class="group-left">
+    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_image }}</a>
+  </div>
+  <div class="group-right col-md-10 col-sm-10">
+    <span class="date" datetime="{{ content.field_publication_date.0['#text'] }}" >{{ content.field_publication_date.0['#text'] }}</span>
+    <h2 class="title-list">
+      <a href="{{ path('entity.node.canonical', {'node': node.id}) }}"> {{ label.0 }} </a>
+    </h2>
+    <p>
+      {{ content.field_summary.0|render|striptags|slice(0, 220)|raw ~ '...' }}
+    </p>
+    <p>
+      <a href="{{ path('entity.node.canonical', {'node': node.id }) }}" class="more-link">{{ 'See more'|t }}</a>
+    </p>
+
+  </div>
+</section>

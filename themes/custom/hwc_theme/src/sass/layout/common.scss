@@ -3,3 +3,102 @@
   background: $bg-color-green-light;
   padding: 2rem 0;
 }
+.green-background {
+  background: $bg-color-green-light;
+}
+.gray-background {
+  background: #efefef;
+}
+#edit-search-api-fulltext {
+  height: 34px;
+  border: 1px solid #B0B2B3 !important;
+  border-radius: 5px !important;
+  background: url(../images/green-search.png) no-repeat 96% 55% #ffffff;
+  width: 100% !important;
+  float: left;
+  margin-top: 25px;
+  padding-left: 10px;
+  color: #003399;
+}
+#main-wrapper{
+  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 6px 12px;
+    border-radius: 5px !important;
+    border: 1px solid #B0B2B3;
+    background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
+    width: 100%!important;
+    color: #003399;
+    cursor: pointer;
+  }
+  .views-exposed-form {
+    .form-row{
+      display: flex;
+      align-items: flex-end;
+    }
+    label {
+      color: #003399 !important;
+      font-family: "Open Sans" !important;
+      font-size: 1rem !important;
+      font-weight: normal !important;
+      padding-bottom: 0.1em;
+    }
+  }
+}
+
+
+/* pagination */
+.pagination, .pager{
+  border:none;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  li > a, li > span{
+    background: $color0;
+    color: $color7;
+    border: none;
+    font-weight: bold;
+    font-style: normal;
+  }
+  li.active > a, li.active > span {
+    background: $color0 !important;
+    color: $color2 !important;
+  }
+  li.pager-current{
+    padding-left: 14px;
+    padding-right: 14px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  li:nth-last-child(1),
+  li:nth-last-child(2){
+    a, span{
+      color: $color2 !important;
+    }
+  }
+  .pager-ellipsis span{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .active > a, .active > span, .active > a:hover, .active > span:hover, .active > a:focus, .active > span:focus{
+    background-color: white;
+    border: none;
+    color: $pagination-active-color;
+  }
+}
+
+/*
+.new-select-style, #edit_field_country_code_chosen, #edit-years, #edit_years_chosen {
+  height: 100%;
+  border-radius: 5px !important;
+  background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
+  padding-left: 10px;
+  width: 100%!important;
+  color: #003399;
+  cursor: pointer;
+
+}
+*/

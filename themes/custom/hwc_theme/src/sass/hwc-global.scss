@@ -3,6 +3,7 @@
 @import 'base/reset';
 @import 'base/utils';
 @import 'base/variables';
+@import 'base/fonts';
 
 @import 'components/accordion';
 @import 'components/breadcrumb';
@@ -24,6 +25,8 @@
 @import 'layout/menu';
 @import 'layout/section';
 
+@import 'pages/news-list';
+@import 'pages/publications-list';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/desktop/desktop-responsive';

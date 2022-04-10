@@ -1,0 +1,20 @@
+uuid: 27094c90-e274-40dc-b5f5-368bfe24f956
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - hwc_theme
+id: addtoanybuttons
+theme: hwc_theme
+region: header_links
+weight: -11
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  label_display: '0'
+  provider: addtoany
+visibility: {  }

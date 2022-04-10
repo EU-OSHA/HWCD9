@@ -1,4 +1,4 @@
-uuid: 93788ee9-bff8-4f98-9a9c-4be84a4f8789
+uuid: 69e86e55-90b4-4e56-8314-50672247e1de
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,13 @@ dependencies:
     - field.storage.node.field_pages_count
     - field.storage.node.field_publication_date
     - field.storage.node.field_publication_type
-    - image.style.medium
-    - search_api.index.publications_index
+    - image.style.media_library
+    - search_api.index.publications_list
+    - taxonomy.vocabulary.publication_types
+  content:
+    - 'taxonomy_term:publication_types:4ee726ea-9d52-4bb9-ab58-2e9281f88cd9'
+    - 'taxonomy_term:publication_types:a917159e-3fb4-44f3-b9bf-93a2fa263d97'
+    - 'taxonomy_term:publication_types:b0149488-ee31-4407-bf0e-5e390554ae53'
   module:
     - datetime
     - media
@@ -20,7 +25,7 @@ label: 'Publications list'
 module: views
 description: ''
 tag: ''
-base_table: search_api_index_publications_index
+base_table: search_api_index_publications_list
 base_field: search_api_id
 display:
   default:
@@ -33,7 +38,7 @@ display:
       fields:
         field_cover_image:
           id: field_cover_image
-          table: search_api_datasource_publications_index_entity_node
+          table: search_api_datasource_publications_list_entity_node
           field: field_cover_image
           relationship: none
           group_type: group
@@ -85,7 +90,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: content
-            image_style: medium
+            image_style: media_library
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -127,7 +132,7 @@ display:
                 view_mode: default
         field_publication_date:
           id: field_publication_date
-          table: search_api_datasource_publications_index_entity_node
+          table: search_api_datasource_publications_list_entity_node
           field: field_publication_date
           relationship: none
           group_type: group
@@ -178,7 +183,7 @@ display:
           click_sort_column: value
           type: datetime_default
           settings:
-            timezone_override: ''
+            timezone_override: Europe/Madrid
             format_type: only_day
           group_column: value
           group_columns: {  }
@@ -199,11 +204,12 @@ display:
             multi_separator: ', '
         field_publication_type:
           id: field_publication_type
-          table: search_api_index_publications_index
+          table: search_api_datasource_publications_list_entity_node
           field: field_publication_type
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
           plugin_id: search_api_field
           label: Type
           exclude: false
@@ -375,86 +381,13 @@ display:
                 display_method: label
               wg_role_2:
                 display_method: label
-        title:
-          id: title
-          table: search_api_index_publications_index
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api_field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
         field_pages_count:
           id: field_pages_count
-          table: search_api_datasource_publications_index_entity_node
+          table: search_api_index_publications_list
           field: field_pages_count
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
           plugin_id: search_api_field
           label: ''
           exclude: false
@@ -530,10 +463,10 @@ display:
             format_plural_values:
               - '1'
               - '@count'
-        body:
-          id: body
-          table: search_api_index_publications_index
-          field: body
+        title:
+          id: title
+          table: search_api_index_publications_list
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
@@ -557,11 +490,83 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 250
-            word_boundary: false
+            max_length: 0
+            word_boundary: true
             ellipsis: true
             more_link: false
-            more_link_text: 'See more'
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        body:
+          id: body
+          table: search_api_index_publications_list
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: true
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 300
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
             more_link_path: ''
             strip_tags: false
             trim: true
@@ -579,7 +584,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
+          click_sort_column: format
           type: text_default
           settings: {  }
           group_column: value
@@ -601,7 +606,7 @@ display:
             multi_separator: ', '
         url:
           id: url
-          table: search_api_index_publications_index
+          table: search_api_index_publications_list
           field: url
           relationship: none
           group_type: group
@@ -653,15 +658,17 @@ display:
           multi_type: separator
           multi_separator: ', '
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -670,11 +677,12 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
-          reset_button: false
+          submit_button: Search
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: false
@@ -686,11 +694,22 @@ display:
       cache:
         type: tag
         options: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'No results'
+          tokenize: false
       sorts:
         field_publication_date:
           id: field_publication_date
-          table: search_api_index_publications_index
+          table: search_api_index_publications_list
           field: field_publication_date
           relationship: none
           group_type: group
@@ -698,40 +717,27 @@ display:
           plugin_id: search_api
           order: DESC
           expose:
-            label: 'Publication date'
+            label: 'Latest first'
             field_identifier: field_publication_date
           exposed: true
         title:
           id: title
-          table: search_api_index_publications_index
+          table: search_api_index_publications_list
           field: title
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: search_api
-          order: ASC
+          order: DESC
           expose:
             label: Alphabetically
             field_identifier: title
-          exposed: true
-        search_api_relevance:
-          id: search_api_relevance
-          table: search_api_index_publications_index
-          field: search_api_relevance
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api
-          order: ASC
-          expose:
-            label: Relevance
-            field_identifier: search_api_relevance
           exposed: true
       arguments: {  }
       filters:
         search_api_language:
           id: search_api_language
-          table: search_api_index_publications_index
+          table: search_api_index_publications_list
           field: search_api_language
           relationship: none
           group_type: group
@@ -739,7 +745,7 @@ display:
           plugin_id: search_api_language
           operator: in
           value:
-            en: en
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: false
           expose:
@@ -771,25 +777,25 @@ display:
             group_items: {  }
         search_api_fulltext:
           id: search_api_fulltext
-          table: search_api_index_publications_index
+          table: search_api_index_publications_list
           field: search_api_fulltext
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: search_api_fulltext
-          operator: and
+          operator: or
           value: ''
           group: 1
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: Search
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: text
+            identifier: search_api_fulltext
             required: false
             remember: false
             multiple: false
@@ -816,7 +822,7 @@ display:
               news_and_events_editor_een_osh_ambassador: '0'
               news_and_events_editor_partner_ocp_mp_fop_: '0'
             expose_fields: false
-            placeholder: ''
+            placeholder: 'Search in resources'
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:
@@ -834,19 +840,67 @@ display:
           min_length: null
           fields:
             - body
+            - title
+        field_publication_type:
+          id: field_publication_type
+          table: search_api_index_publications_list
+          field: field_publication_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: not
+          value:
+            511: 511
+            507: 507
+            496: 496
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: publication_types
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
       style:
         type: default
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          row_class: publications-row
+          default_row_class: false
       row:
-        type: fields
+        type: search_api
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          view_modes:
+            'entity:node':
+              publication: publications_list
       query:
         type: views_query
         options:
@@ -854,7 +908,18 @@ display:
           skip_access: false
           preserve_facet_query_args: false
       relationships: {  }
-      header: {  }
+      use_ajax: false
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: 'Publications available (@total)'
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -865,6 +930,7 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
+        - user
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
@@ -872,15 +938,18 @@ display:
         - 'config:field.storage.node.field_pages_count'
         - 'config:field.storage.node.field_publication_date'
         - 'config:field.storage.node.field_publication_type'
-        - 'config:search_api.index.publications_index'
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
+        - 'config:search_api.index.publications_list'
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
     position: 1
     display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
       display_extenders: {  }
-      path: publications-list
     cache_metadata:
       max-age: -1
       contexts:
@@ -889,6 +958,7 @@ display:
         - url
         - url.query_args
         - 'url.query_args:sort_by'
+        - user
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
@@ -896,4 +966,4 @@ display:
         - 'config:field.storage.node.field_pages_count'
         - 'config:field.storage.node.field_publication_date'
         - 'config:field.storage.node.field_publication_type'
-        - 'config:search_api.index.publications_index'
+        - 'config:search_api.index.publications_list'

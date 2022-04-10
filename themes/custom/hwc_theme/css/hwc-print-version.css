@@ -4,7 +4,21 @@
   font-family: "Open Sans", sans-serif;
 }
 /* Font colours */
-/* background colours */
+@color0 :	transparent;
+@color1 :	#fff;
+@color2 :	#003399;
+@color2-ligth : #8d98c5;
+@color3 :	#749b00;
+@color4 :	#c1e000;
+@color5 :	#575757;
+@color6 :	#608000;
+@color7 : 	#565351;
+@color8 : 	#e2e2e3;
+@color9 : 	#c00f21;
+@color10 :   #4d8100;
+@colorNormalText : 	#333333;
+@colorFacebook :		#4c69ba;
+@colorGradient :		#3b55a0;
 /* Font colours */
 /* background colours */
 .bg-color-blue {

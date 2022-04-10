@@ -1,6 +1,6 @@
 uuid: 30e798f6-0093-46ed-9d4f-85b5d2d20cc9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.social-menu
@@ -11,7 +11,7 @@ dependencies:
 id: socialmenu
 theme: hwc_theme
 region: header
-weight: 0
+weight: -11
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:

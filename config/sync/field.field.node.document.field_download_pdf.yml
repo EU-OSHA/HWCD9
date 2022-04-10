@@ -1,0 +1,29 @@
+uuid: d28a388c-6224-44fc-8e81-c5a82c24c28d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_pdf
+    - media.type.document
+    - node.type.document
+id: node.document.field_download_pdf
+field_name: field_download_pdf
+entity_type: node
+bundle: document
+label: 'Download files'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

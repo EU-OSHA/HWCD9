@@ -1,0 +1,25 @@
+uuid: 7d616181-737b-43d1-864c-b360a3bdd569
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:54f672d8-8c4d-4841-b853-74126512985f'
+  module:
+    - block_content
+  theme:
+    - hwc_theme
+id: textresize
+theme: hwc_theme
+region: header_form
+weight: -11
+provider: null
+plugin: 'block_content:54f672d8-8c4d-4841-b853-74126512985f'
+settings:
+  id: 'block_content:54f672d8-8c4d-4841-b853-74126512985f'
+  label: 'Text resize'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
