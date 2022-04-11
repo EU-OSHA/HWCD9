@@ -1,24 +1,24 @@
-uuid: f57381a1-a44a-4e2a-8d78-c0e79ded7560
+uuid: 0ae5637a-9dcd-4e1c-93ad-166fd6bde9cb
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.osh_news
+    - views.view.frontpage_events
   module:
     - system
     - views
   theme:
     - hwc_theme
-id: views_block__osh_news_front
+id: views_block__frontpage_events_block
 theme: hwc_theme
 region: content
-weight: -11
+weight: -10
 provider: null
-plugin: 'views_block:osh_news-front'
+plugin: 'views_block:frontpage_events-block'
 settings:
-  id: 'views_block:osh_news-front'
+  id: 'views_block:frontpage_events-block'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   views_label: ''
   items_per_page: none

@@ -112,6 +112,7 @@ body.user-logged-in.toolbar-tray-open{
     .print-resize-block{
       display: flex;
       flex-direction: row;
+      align-items: center;
       /* Print features */
       .printfriendly{
         display: block;
@@ -151,10 +152,6 @@ body.user-logged-in.toolbar-tray-open{
     }
     .search-block{
 
-    }
-    #block-on-the-web-0{
-      display: flex;
-      justify-content: space-evenly;
     }
   }
 }
@@ -198,11 +195,79 @@ body.user-logged-in.toolbar-tray-open{
 }
 
 /* Share links */
-#block-socialmenu{
-  .nav-item{
-    .nav-link{
-      padding: 0;
-      margin: 5px 0 0 5px;
+#block-socialmenuheader{
+  width: 100%;
+}
+.social-network{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  li{
+    a{
+      margin: 0;
+      padding: 5px 0 0 5px;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      label{
+        display: none;
+      }
+    }
+    &.twitter{
+      a{
+        background-image: url(../images/header/header-ico-twitter.png);
+      }
+    }
+    &.facebook{
+      a{
+        background-image: url(../images/header/header-ico-facebook.png);
+      }
+    }
+    &.youtube{
+      a{
+        background-image: url(../images/header/header-ico-youtube.png);
+      }
+    }
+    &.linkedin{
+      a{
+        background-image: url(../images/header/header-ico-linkedin.png);
+      }
+    }
+    &.flickr{
+      a{
+        background-image: url(../images/header/header-ico-flickr.png);
+      }
+    }
+    &.slideshare{
+      a{
+        background-image: url(../images/header/header-ico-slideshare.png);
+      }
+    }
+  }
+}
+
+/* masquerade button */
+.private-workbench-masquerade {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  a{
+    padding: 10px 16px;
+    background: #003399;
+    color: #FFF;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.89em;
+    display: inline-block;
+    font-style: normal;
+    &:before {
+      content: ">";
+      padding-right: 5px;
     }
   }
 }
@@ -329,7 +394,7 @@ body.user-logged-in.toolbar-tray-open{
 .section-title{
   background: url(../images/banner-background-article.png) no-repeat #acc700;
   padding-top: 0;
-  margin-bottom: 2em;
+  margin-bottom: 0;
   width: 100%;
   h1 {
     color: #FFF;

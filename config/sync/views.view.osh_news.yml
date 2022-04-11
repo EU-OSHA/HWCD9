@@ -1166,10 +1166,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: media_thumbnail
+          type: entity_reference_entity_view
           settings:
-            image_link: content
-            image_style: thumbnail
+            view_mode: without_caption
           group_column: target_id
           group_columns: {  }
           group_rows: true

@@ -1,5 +1,4 @@
 {% extends "page.html.twig" %}
-
 {% block content %}
 
   <section class="node-content">
@@ -13,12 +12,15 @@
       {{ page.content.views_block__publications_slideshow_publications_slideshow }}
     </div>
   </section>
-<section class="available-publication gray-background">
+
+  <section class="available-publication gray-background">
     <div class="container">
       <div class="row">
+        {% if page.sidebar_left %}
         <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
-          {{ page.content.publicationtypepublicationslisting }}
+          {{ page.sidebar_left.publicationtypepublicationslisting }}
         </aside>
+        {% endif %}
         <section class="section col-12 col-lg-9 ">
           {{ page.content.views_block__publications_list_block_1 }}
         </section>
