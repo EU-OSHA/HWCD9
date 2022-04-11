@@ -1,12 +1,15 @@
 uuid: 4523b6e7-40a2-413d-b2e4-f3d5a631f81c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - exclude_node_title
 id: editor
 label: Editor
 weight: 8
 is_admin: null
 permissions:
+  - 'use exclude node title'
   - 'use manualcrop'
   - 'use text format audio_visual'
   - 'use text format filtered_html'

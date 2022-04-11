@@ -1,19 +1,8 @@
 default_config:
   tags:
-    page_breaker: …
-    page_separator: '|'
     pages:
       prefix_label: Seite
       suffix_label: 'von @total'
-      page_current: '@number'
-      page_previous: '@number'
-      page_previous_relative: '-@offset'
-      page_next: '@number'
-      page_next_relative: +@offset
-      first: «
-      previous: ‹
-      next: ›
-      last: »
       pageset_empty: 'Keine Seiten anzuzeigen.'
       page_current_title: 'Aktuelle Seite'
       page_title: 'Gehe zu Seite @number'
@@ -30,15 +19,6 @@ default_config:
     items:
       prefix_label: Element
       suffix_label: 'von @total_items'
-      page_current: '@item'
-      page_previous: '@item'
-      page_previous_relative: '-@item_offset'
-      page_next: '@item'
-      page_next_relative: +@item_offset
-      first: «
-      previous: ‹
-      next: ›
-      last: »
       pageset_empty: 'Keine Einträge vorhanden.'
       page_current_title: 'Aktuelle Einträge'
       page_title: 'Gehe zum Eintrag @item'
@@ -55,15 +35,6 @@ default_config:
     item_ranges:
       prefix_label: Elemente
       suffix_label: 'von @total_items'
-      page_current: '@item_low-@item_high'
-      page_previous: '@item_low-@item_high'
-      page_previous_relative: '-@item_offset'
-      page_next: '@item_low-@item_high'
-      page_next_relative: +@item_offset
-      first: «
-      previous: ‹
-      next: ›
-      last: »
       pageset_empty: 'Keine Einträge vorhanden.'
       page_current_title: 'Aktuelle Einträge'
       page_title: 'Gehe zu Einträgen @item_low-@item_high'

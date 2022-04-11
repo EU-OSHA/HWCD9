@@ -1,7 +1,23 @@
 uuid: 8c0c4e0f-a46b-4066-af22-8c71252dbbe8
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.document
+    - node.type.event_speaker
+    - node.type.events
+    - node.type.news
+    - workflows.workflow.news_and_events_created_by_een
+  module:
+    - content_moderation
+    - content_moderation_notifications
+    - exclude_node_title
+    - filter
+    - masquerade
+    - node
+    - system
+    - workbench_access
 id: eu_osha_een_reviewers
 label: 'EU-OSHA EEN Reviewers'
 weight: 15
@@ -60,6 +76,7 @@ permissions:
   - 'moderate content from to_be_approved to published'
   - 'revert revisions'
   - 'select content section'
+  - 'use exclude node title'
   - 'use manualcrop'
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition creating_final_draft'

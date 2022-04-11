@@ -1,6 +1,5 @@
 default_config:
   tags:
-    page_breaker: …
     pages:
       prefix_label: Pagina
       first: '« Eerste'
@@ -20,17 +19,13 @@ default_config:
       next_reader: 'Volgende pagina'
       last_reader: 'Laatste pagina'
     items:
-      prefix_label: Item
       first: '« Eerste'
       previous: '‹ Vorige'
       next: 'Volgende ›'
       last: 'Laatste »'
-      page_reader: Item
       first_reader: 'Eerste item'
     item_ranges:
-      prefix_label: Items
       first: '« Eerste'
       previous: '‹ Vorige'
       next: 'Volgende ›'
       last: 'Laatste »'
-      page_reader: Items
