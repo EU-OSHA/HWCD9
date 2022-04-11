@@ -1,7 +1,20 @@
 uuid: f6784491-ab62-43bf-bd85-c1e11f02021e
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.events
+    - node.type.news
+    - node.type.partner
+    - workflows.workflow.news_and_events_created_by_een
+  module:
+    - content_moderation
+    - exclude_node_title
+    - filter
+    - node
+    - system
+    - workbench_access
 id: news_and_events_editor_partner_ocp_mp_fop_
 label: 'News and Events Editor – Partner (OCP, MP, FOP)'
 weight: 19
@@ -17,6 +30,7 @@ permissions:
   - 'edit own events content'
   - 'edit own news content'
   - 'edit own partner content'
+  - 'use exclude node title'
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition final_draft_edit_'
   - 'use text format full_html'

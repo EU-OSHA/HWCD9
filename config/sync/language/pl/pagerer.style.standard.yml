@@ -1,6 +1,5 @@
 default_config:
   tags:
-    page_breaker: …
     pages:
       prefix_label: Strona
       first: '« Pierwsza'

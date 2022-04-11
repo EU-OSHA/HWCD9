@@ -1,6 +1,5 @@
 default_config:
   tags:
-    page_breaker: …
     pages:
       prefix_label: Página
       first: '« Primeira'
@@ -20,12 +19,10 @@ default_config:
       next_reader: 'Próxima página'
       last_reader: 'Última página'
     items:
-      prefix_label: Item
       first: '« Primeira'
       previous: '‹ Anterior'
       next: 'Seguinte ›'
       last: 'Última »'
-      page_reader: Item
       first_reader: 'Primeiro item'
     item_ranges:
       prefix_label: Itens

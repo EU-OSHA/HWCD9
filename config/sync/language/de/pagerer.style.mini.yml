@@ -3,11 +3,6 @@ default_config:
     pages:
       prefix_label: Seite
       suffix_label: 'von @total'
-      page_current: '@number'
-      first: «
-      previous: ‹
-      next: ›
-      last: »
       pageset_empty: 'Keine Seiten anzuzeigen.'
       page_current_title: 'Aktuelle Seite'
       first_title: 'Zur ersten Seite'
@@ -23,11 +18,6 @@ default_config:
     items:
       prefix_label: Element
       suffix_label: 'von @total_items'
-      page_current: '@item'
-      first: «
-      previous: ‹
-      next: ›
-      last: »
       pageset_empty: 'Keine Einträge vorhanden.'
       page_current_title: 'Aktuelle Einträge'
       first_title: 'Gehe zum ersten Eintrag'
