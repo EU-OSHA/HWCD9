@@ -1,0 +1,10 @@
+uuid: 951d0375-06b3-47f0-83a8-a66b1cd0fd91
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.partner
+label: 'Partner Teaser'
+targetEntityType: taxonomy_term
+cache: true

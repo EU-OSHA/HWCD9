@@ -1,8 +1,9 @@
-uuid: f4eccf74-3c34-42bb-a504-7ec610fdff49
+uuid: ffa4887b-eeb0-4d51-af82-f250f38e8889
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.partner.field_abbreviation_name
     - field.field.node.partner.field_appform_status
     - field.field.node.partner.field_bussines_sector
@@ -44,10 +45,10 @@ dependencies:
   module:
     - link
     - user
-id: node.partner.default
+id: node.partner.full
 targetEntityType: node
 bundle: partner
-mode: default
+mode: full
 content:
   field_abbreviation_name:
     type: string
@@ -103,16 +104,17 @@ content:
     weight: 120
     region: content
   field_country:
-    type: entity_reference_label
-    label: above
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: partner
+      link: false
     third_party_settings: {  }
     weight: 129
     region: content
   field_facebook_profile:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -139,7 +141,7 @@ content:
     region: content
   field_google_plus_profile:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -167,7 +169,7 @@ content:
     region: content
   field_linkedin_profile:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -179,7 +181,7 @@ content:
     region: content
   field_logo:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -188,7 +190,7 @@ content:
     region: content
   field_main_contact:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -266,7 +268,7 @@ content:
     region: content
   field_pinterest_profile:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -308,7 +310,7 @@ content:
     region: content
   field_slideshare_profile:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -330,7 +332,7 @@ content:
     region: content
   field_twitter_profile:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -342,7 +344,7 @@ content:
     region: content
   field_website:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -369,7 +371,7 @@ content:
     region: content
   field_youtube_profile:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
