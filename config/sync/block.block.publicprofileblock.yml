@@ -1,0 +1,36 @@
+uuid: 31a48a59-2426-421d-a4df-9d458b1f8772
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_partner
+    - node
+    - user
+  theme:
+    - hwc_theme
+id: publicprofileblock
+theme: hwc_theme
+region: content
+weight: -9
+provider: null
+plugin: public_profile
+settings:
+  id: public_profile
+  label: 'Public profile Block'
+  label_display: '0'
+  provider: hwc_partner
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      partner: partner
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      campaign_partner: campaign_partner

@@ -1,8 +1,6 @@
 default_config:
   tags:
     pages:
-      previous: ‹
-      next: ›
       first_title: 'Ga naar eerste pagina'
       previous_title: 'Ga naar vorige pagina'
       next_title: 'Ga naar volgende pagina'
@@ -12,9 +10,4 @@ default_config:
       next_reader: 'Volgende pagina'
       last_reader: 'Laatste pagina'
     items:
-      previous: ‹
-      next: ›
       first_reader: 'Eerste item'
-    item_ranges:
-      previous: ‹
-      next: ›

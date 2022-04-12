@@ -1,7 +1,15 @@
 uuid: 8dce4183-a79b-4758-b8a8-70573a65e645
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - exclude_node_title
+    - filter
+    - system
+    - toolbar
+    - workbench_access
 id: translation_manager
 label: 'Translation Manager'
 weight: 3
@@ -28,6 +36,7 @@ permissions:
   - 'set job item to translated state'
   - 'submit translation jobs'
   - 'translate node entities'
+  - 'use exclude node title'
   - 'use manualcrop'
   - 'use text format audio_visual'
   - 'use text format filtered_html'

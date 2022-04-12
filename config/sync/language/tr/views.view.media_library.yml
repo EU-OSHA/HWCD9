@@ -27,15 +27,10 @@ display:
             label: 'Medya tipi'
           group_info:
             label: 'Medya tipi'
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Sayfa
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Düzenle
         delete_media:

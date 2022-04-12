@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.document.body
     - field.field.node.document.field_cover_image
     - field.field.node.document.field_document_type
+    - field.field.node.document.field_download_pdf
     - field.field.node.document.field_publication_date
     - field.field.node.document.field_share_partner_type
     - field.field.node.document.field_summary
@@ -42,6 +43,14 @@ content:
     third_party_settings: {  }
     weight: 102
     region: content
+  field_download_pdf:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
   field_publication_date:
     type: datetime_default
     label: above
@@ -72,4 +81,7 @@ content:
     weight: 100
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   langcode: true
+  search_api_excerpt: true

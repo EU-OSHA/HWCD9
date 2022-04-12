@@ -1,0 +1,28 @@
+uuid: c88e70f1-c66d-4bde-8eed-0c6d42b9017f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.information_type
+  module:
+    - facets
+    - system
+  theme:
+    - hwc_theme
+id: informationtype
+theme: hwc_theme
+region: content
+weight: -7
+provider: null
+plugin: 'facet_block:information_type'
+settings:
+  id: 'facet_block:information_type'
+  label: 'Information Type'
+  label_display: '0'
+  provider: facets
+  block_id: informationtype
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /good-practice-exchange-platform

@@ -8,15 +8,16 @@
   }
   .events-list{
     .form-item-field-start-date,
-    .form-item-end-value,
-    h2{
+    .form-item-end-value{
       display: none;
     }
   }
 }
+
+
 .events-list-page{
   .sidebar-first {
-    h2{
+    #block-exposedformevents-searchpage-1 > h2{
       display: block;
       width: 100%;
       color: #003399;
@@ -69,9 +70,69 @@
     }
   }
   .events-list{
+    #block-exposedformevents-searchpage-1--2{
+      .form-row{
+        flex-wrap: nowrap;
+        label {
+          color: $text-color-blue;
+          font-size: 1.2rem;
+          font-weight: normal;
+          padding-bottom: 0.1rem;
+        }
+        .chosen-container{
+          width: 100%;
+          height: calc(1.5em + .75rem + 2px);
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #495057;
+          background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
+          border: 1px solid #ced4da;
+          border-radius: .25rem;
+          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+          .chosen-drop{
+            left: 0;
+          }
+          ul{
+            border: 0;
+            box-shadow: none;
+            background-image: none;
+            background-color:transparent;
+            padding: 0;
+            margin: 0;
+          }
+        }
+      }
+      > h2 {
+        display: none;
+      }
 
+    }
+    .event-items-list{
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #749b00;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      min-height: 230px;
+      h2{
+        a{
+          color: $text-color-blue;
+          font-size: 1.6rem;
+          line-height: 1.5rem;
+        }
+      }
+      .date-start-end{
+        font-weight: 600;
+      }
+      .country-city{
+        font-weight: 600;
+      }
+    }
   }
 }
+
 
 
 /*

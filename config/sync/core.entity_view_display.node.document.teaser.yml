@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.document.body
     - field.field.node.document.field_cover_image
     - field.field.node.document.field_document_type
+    - field.field.node.document.field_download_pdf
     - field.field.node.document.field_publication_date
     - field.field.node.document.field_share_partner_type
     - field.field.node.document.field_summary
@@ -33,9 +34,13 @@ content:
     weight: 100
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   field_cover_image: true
   field_document_type: true
+  field_download_pdf: true
   field_publication_date: true
   field_share_partner_type: true
   field_summary: true
   langcode: true
+  search_api_excerpt: true

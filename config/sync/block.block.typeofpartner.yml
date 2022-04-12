@@ -1,0 +1,28 @@
+uuid: b3d8a2f3-e26b-471f-832d-36a3b8876320
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type_of_partner
+  module:
+    - facets
+    - system
+  theme:
+    - hwc_theme
+id: typeofpartner
+theme: hwc_theme
+region: content
+weight: -4
+provider: null
+plugin: 'facet_block:type_of_partner'
+settings:
+  id: 'facet_block:type_of_partner'
+  label: 'Type of partner'
+  label_display: '0'
+  provider: facets
+  block_id: typeofpartner
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /good-practice-exchange-platform
