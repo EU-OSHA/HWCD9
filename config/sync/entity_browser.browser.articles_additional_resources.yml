@@ -1,0 +1,31 @@
+uuid: 7dd3a24a-1e44-495e-be21-41c464a27335
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser_additional_resources
+  module:
+    - views
+name: articles_additional_resources
+label: 'Articles Additional Resources'
+display: modal
+display_configuration:
+  width: '650'
+  height: '650'
+  link_text: 'Add items'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  2fd64ded-86b9-4b23-88e5-78d26d1d13c4:
+    id: view
+    uuid: 2fd64ded-86b9-4b23-88e5-78d26d1d13c4
+    label: 'Articles Additional Resources'
+    weight: 1
+    settings:
+      submit_text: Submit
+      auto_select: false
+      view: entity_browser_additional_resources
+      view_display: entity_browser_1
