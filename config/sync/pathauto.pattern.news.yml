@@ -1,0 +1,33 @@
+uuid: 0bd854bd-626d-460a-bf26-e2f8ce4d6cb8
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: news
+label: News
+type: 'canonical_entities:node'
+pattern: '/media-centre/news/[node:title]'
+selection_criteria:
+  8bb42c76-2553-46b1-aa1c-d06579f49fff:
+    id: node_type
+    negate: false
+    uuid: 8bb42c76-2553-46b1-aa1c-d06579f49fff
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+  6964b071-ff2b-4260-b0a2-d3b4ff448fe1:
+    id: language
+    negate: false
+    uuid: 6964b071-ff2b-4260-b0a2-d3b4ff448fe1
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

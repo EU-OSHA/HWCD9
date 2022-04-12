@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - media.type.image
     - media.type.image_caption
     - node.type.news
 id: node.news.field_image
@@ -21,7 +20,6 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
       image_caption: image_caption
     sort:
       field: _none
