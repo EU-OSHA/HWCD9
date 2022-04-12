@@ -1,17 +1,21 @@
-uuid: 7d616181-737b-43d1-864c-b360a3bdd569
+uuid: 065d5a57-5d9d-41b2-9550-162ce52065c6
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:c482b8a3-3a3f-4e9d-87e0-5e9610569b4a'
+  module:
+    - block_content
   theme:
     - hwc_theme
 id: textresize
 theme: hwc_theme
 region: header_form
-weight: -11
+weight: -12
 provider: null
-plugin: 'block_content:54f672d8-8c4d-4841-b853-74126512985f'
+plugin: 'block_content:c482b8a3-3a3f-4e9d-87e0-5e9610569b4a'
 settings:
-  id: 'block_content:54f672d8-8c4d-4841-b853-74126512985f'
+  id: 'block_content:c482b8a3-3a3f-4e9d-87e0-5e9610569b4a'
   label: 'Text resize'
   label_display: '0'
   provider: block_content

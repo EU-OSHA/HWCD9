@@ -1,17 +1,21 @@
-uuid: 4b89eac8-1157-4148-877b-44c77cf46071
+uuid: 0cb51951-f805-42bb-bbc7-0613887def36
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:e0aeed45-165f-47b6-be13-802f76082f57'
+  module:
+    - block_content
   theme:
     - hwc_theme
 id: hwcprintfriendly
 theme: hwc_theme
 region: header_form
-weight: -12
+weight: -13
 provider: null
-plugin: 'block_content:af228b43-6461-440b-981b-484f71fcbba0'
+plugin: 'block_content:e0aeed45-165f-47b6-be13-802f76082f57'
 settings:
-  id: 'block_content:af228b43-6461-440b-981b-484f71fcbba0'
+  id: 'block_content:e0aeed45-165f-47b6-be13-802f76082f57'
   label: 'HWC Print friendly'
   label_display: '0'
   provider: block_content

@@ -1,17 +1,14 @@
 
   {% set results = content['#view'].result %}
-
   {% for index, item in results %}
-  <article class="home-news-item">
     {% set item = item._entity %}
     {% set image = item.field_image|view  %}
+    {% set caption = image.0['#media'].field_caption_copyrigth_.0.value %}
+  <article class="home-news-item">
     <div class="image-news-item">
       <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }} ">
-        {{ image  }}
+        {{ image.0['#media'].field_media_image|view  }}
       </a>
-      <blockquote class="image-field-caption">
-        FALTA EL CAMPO CAPTION
-      </blockquote>
     </div>
     <div class="body-news-item">
       <span class="publication-date">{{ item.field_publication_date.value| date('d/m/Y') }}</span>
