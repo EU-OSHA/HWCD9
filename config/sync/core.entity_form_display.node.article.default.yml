@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.related_resources
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_activity
@@ -30,10 +31,37 @@ dependencies:
     - comment
     - content_moderation
     - datetime
+    - entity_browser
+    - field_group
     - link
     - media_library
     - path
     - text
+third_party_settings:
+  field_group:
+    group_hidden:
+      children:
+        - field_tags
+        - field_first_publication_date
+        - field_migration_path_alias
+        - field_page_count
+        - field_character_count
+      label: Hidden
+      region: content
+      parent_name: ''
+      weight: 23
+      format_type: html_element
+      format_settings:
+        classes: hidden
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: false
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
@@ -53,27 +81,35 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 23
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 20
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   field_activity:
     type: options_select
-    weight: 13
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   field_aditional_resources:
-    type: options_select
+    type: entity_browser_entity_reference
     weight: 10
     region: content
-    settings: {  }
+    settings:
+      entity_browser: articles_additional_resources
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
   field_archived:
     type: boolean_checkbox
@@ -90,7 +126,7 @@ content:
     third_party_settings: {  }
   field_character_count:
     type: number
-    weight: 26
+    weight: 19
     region: content
     settings:
       placeholder: ''
@@ -110,7 +146,7 @@ content:
     third_party_settings: {  }
   field_external_url:
     type: link_default
-    weight: 14
+    weight: 12
     region: content
     settings:
       placeholder_url: ''
@@ -118,7 +154,7 @@ content:
     third_party_settings: {  }
   field_first_publication_date:
     type: datetime_timestamp
-    weight: 28
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -131,7 +167,7 @@ content:
     third_party_settings: {  }
   field_migration_path_alias:
     type: string_textfield
-    weight: 29
+    weight: 17
     region: content
     settings:
       size: 60
@@ -139,7 +175,7 @@ content:
     third_party_settings: {  }
   field_page_count:
     type: number
-    weight: 27
+    weight: 18
     region: content
     settings:
       placeholder: ''
@@ -150,23 +186,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_recommended_articles:
-    type: options_select
-    weight: 12
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_recommended_resources:
-    type: options_select
-    weight: 11
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_resources:
-    type: options_buttons
-    weight: 15
+    type: entity_browser_entity_reference
+    weight: 13
     region: content
-    settings: {  }
+    settings:
+      entity_browser: related_resources
+      field_widget_display: label
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
   field_summary:
     type: text_textarea
@@ -178,7 +210,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: options_select
-    weight: 17
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -188,42 +220,35 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 16
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 30
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 24
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 21
+    weight: 17
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 25
+    weight: 21
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 22
+    weight: 18
     region: content
     settings:
       display_label: true
@@ -237,13 +262,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 19
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 18
+    weight: 14
     region: content
     settings:
       match_operator: CONTAINS
@@ -253,3 +278,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_image2: true
+  field_recommended_articles: true
+  field_recommended_resources: true
+  langcode: true
