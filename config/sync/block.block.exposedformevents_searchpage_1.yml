@@ -12,7 +12,7 @@ dependencies:
 id: exposedformevents_searchpage_1
 theme: hwc_theme
 region: sidebar_left
-weight: 0
+weight: -14
 provider: null
 plugin: 'views_exposed_filter_block:events_search-page_1'
 settings:
