@@ -27,8 +27,29 @@ dependencies:
     - field.field.node.article.field_workbench_access
     - node.type.article
   module:
+    - field_group
     - text
     - user
+third_party_settings:
+  field_group:
+    group_hidden:
+      children:
+        - addtoany
+      label: Hidden
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: hidden
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: hidden
+        effect: none
+        speed: fast
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
