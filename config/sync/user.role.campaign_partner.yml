@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - node.type.document
     - node.type.events
     - node.type.news
+    - workflows.workflow.news_and_events_created_by_een
   module:
+    - content_moderation
     - exclude_node_title
+    - filter
     - node
 id: campaign_partner
 label: 'campaign partner'
@@ -45,6 +49,7 @@ permissions:
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition final_draft_edit_'
   - 'use text format audio_visual'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'view all unpublished content'
   - 'view osh my content tab'

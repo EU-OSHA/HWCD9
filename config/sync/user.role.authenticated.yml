@@ -8,6 +8,7 @@ dependencies:
     - comment
     - exclude_node_title
     - node
+    - search
     - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag

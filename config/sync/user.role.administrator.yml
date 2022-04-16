@@ -41,6 +41,7 @@ dependencies:
     - node
     - path
     - pathauto
+    - search
     - search_api
     - shortcut
     - system
