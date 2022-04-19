@@ -1,0 +1,40 @@
+uuid: 39bd1cec-071b-486a-a781-3b85677d044e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles_related_resources
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__articles_related_resources_block_1
+theme: hwc_theme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:articles_related_resources-block_1'
+settings:
+  id: 'views_block:articles_related_resources-block_1'
+  label: 'Related Resources'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Related Resources'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      campaign_16: campaign_16
+      campaign_18: campaign_18
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/tools-and-publications/oshwiki\r\n/get-involved/about-campaign\r\n/get-involved/european-week\r\n/start-your-campaign\r\n/campaign-partners/good-practice-exchange\r\n/media-centre/press-room\r\n/campaign-partners/senior-labour-inspectors-committee-slic\r\n/previous-campaigns/dangerous-substances-2018-19\r\n/previous-campaigns/all-ages-2016-17/campaign-summary"

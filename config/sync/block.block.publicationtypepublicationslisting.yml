@@ -12,7 +12,7 @@ dependencies:
 id: publicationtypepublicationslisting
 theme: hwc_theme
 region: sidebar_left
-weight: -12
+weight: -15
 provider: null
 plugin: 'facet_block:publication_type_publications_listing'
 settings:
