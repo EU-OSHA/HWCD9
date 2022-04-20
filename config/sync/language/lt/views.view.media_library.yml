@@ -2,7 +2,6 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      title: Media
       pager:
         options:
           expose:

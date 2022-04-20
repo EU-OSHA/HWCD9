@@ -729,7 +729,7 @@ display:
       exposed_form:
         type: bef
         options:
-          submit_button: Search
+          submit_button: Apply
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -740,12 +740,12 @@ display:
           text_input_required_format: full_html
           bef:
             general:
-              autosubmit: false
-              autosubmit_exclude_textfield: false
+              autosubmit: true
+              autosubmit_exclude_textfield: true
               autosubmit_textfield_delay: 500
               autosubmit_hide: false
               input_required: false
-              allow_secondary: false
+              allow_secondary: true
               secondary_label: 'Advanced options'
               secondary_open: false
             filter:
@@ -779,7 +779,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: tag
+        type: none
         options: {  }
       empty: {  }
       sorts:
@@ -892,7 +892,7 @@ display:
             value: ''
             type: date
           group: 1
-          exposed: true
+          exposed: false
           expose:
             operator_id: field_start_date_op
             label: From
@@ -1151,9 +1151,9 @@ display:
       query:
         type: views_query
         options:
-          bypass_access: false
-          skip_access: false
-          preserve_facet_query_args: false
+          skip_access: 0
+          bypass_access: 0
+          preserve_facet_query_args: 1
       relationships: {  }
       header: {  }
       footer: {  }
@@ -1179,6 +1179,352 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      filters:
+        status:
+          id: status
+          table: search_api_index_events_list
+          field: status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        type:
+          id: type
+          table: search_api_index_events_list
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_options
+          operator: or
+          value:
+            events: events
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+        field_start_date:
+          id: field_start_date
+          table: search_api_index_events_list
+          field: field_start_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_date
+          operator: '>='
+          value:
+            min: ''
+            max: ''
+            value: today
+            type: date
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_start_date_op
+            label: From
+            description: ''
+            use_operator: false
+            operator: field_start_date_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_start_date
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              editor: '0'
+              approver: '0'
+              superadministrators: '0'
+              campaign_partner: '0'
+              external_provider: '0'
+              audio_visual: '0'
+              website_managers: '0'
+              hwc_staff_reviewers: '0'
+              eu_osha_een_reviewers: '0'
+              read_only: '0'
+              gpe_platform_editors: '0'
+              news_and_events_editor_een_osh_ambassador: '0'
+              news_and_events_editor_partner_ocp_mp_fop_: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        end_value:
+          id: end_value
+          table: search_api_index_events_list
+          field: end_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_date
+          operator: '<'
+          value:
+            min: ''
+            max: ''
+            value: '+1 year'
+            type: offset
+          group: 1
+          exposed: true
+          expose:
+            operator_id: end_value_op
+            label: To
+            description: ''
+            use_operator: false
+            operator: end_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: end_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              editor: '0'
+              approver: '0'
+              superadministrators: '0'
+              campaign_partner: '0'
+              external_provider: '0'
+              audio_visual: '0'
+              website_managers: '0'
+              hwc_staff_reviewers: '0'
+              eu_osha_een_reviewers: '0'
+              read_only: '0'
+              gpe_platform_editors: '0'
+              news_and_events_editor_een_osh_ambassador: '0'
+              news_and_events_editor_partner_ocp_mp_fop_: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_events_list
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_fulltext
+          operator: and
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_views_fulltext
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              editor: '0'
+              approver: '0'
+              superadministrators: '0'
+              campaign_partner: '0'
+              external_provider: '0'
+              audio_visual: '0'
+              website_managers: '0'
+              hwc_staff_reviewers: '0'
+              eu_osha_een_reviewers: '0'
+              read_only: '0'
+              gpe_platform_editors: '0'
+              news_and_events_editor_een_osh_ambassador: '0'
+              news_and_events_editor_partner_ocp_mp_fop_: '0'
+            expose_fields: false
+            placeholder: 'Search in events'
+            searched_fields_id: search_api_fulltext_searched_fields
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: null
+          fields:
+            - body
+            - title
+        field_country_code:
+          id: field_country_code
+          table: search_api_index_events_list
+          field: field_country_code
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_options
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_country_code_op
+            label: Country
+            description: ''
+            use_operator: false
+            operator: field_country_code_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_country_code
+            required: false
+            remember: false
+            multiple: true
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              editor: '0'
+              approver: '0'
+              superadministrators: '0'
+              campaign_partner: '0'
+              external_provider: '0'
+              audio_visual: '0'
+              website_managers: '0'
+              hwc_staff_reviewers: '0'
+              eu_osha_een_reviewers: '0'
+              read_only: '0'
+              gpe_platform_editors: '0'
+              news_and_events_editor_een_osh_ambassador: '0'
+              news_and_events_editor_partner_ocp_mp_fop_: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: Country
+            description: null
+            identifier: field_country_code
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
+          reduce_duplicates: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
       exposed_block: true
       display_extenders: {  }
       path: media-centre/events
