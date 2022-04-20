@@ -37,4 +37,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/tools-and-publications/oshwiki\r\n/get-involved/about-campaign\r\n/get-involved/european-week\r\n/start-your-campaign\r\n/campaign-partners/good-practice-exchange\r\n/media-centre/press-room\r\n/campaign-partners/senior-labour-inspectors-committee-slic\r\n/previous-campaigns/dangerous-substances-2018-19\r\n/previous-campaigns/all-ages-2016-17/campaign-summary"
+    pages: "/tools-and-publications/oshwiki\r\n/get-involved/about-campaign\r\n/get-involved/european-week\r\n/get-involved/start-your-campaign\r\n/campaign-partners/good-practice-exchange\r\n/media-centre/press-room\r\n/campaign-partners/senior-labour-inspectors-committee-slic"

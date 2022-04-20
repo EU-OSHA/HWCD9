@@ -2,7 +2,6 @@ display:
   default:
     display_title: Standard
     display_options:
-      title: Media
       pager:
         options:
           expose:

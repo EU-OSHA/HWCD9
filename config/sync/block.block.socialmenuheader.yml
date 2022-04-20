@@ -1,9 +1,9 @@
-uuid: 66b6e0e3-ce64-488b-b568-a3de4eb2a9b6
+uuid: 9b90f266-7c87-4fd8-b0dc-eaf818ab1098
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:90508196-0636-4c90-bc20-94ee42b76ca6'
+    - 'block_content:basic:61290de5-8821-4dbf-a325-919327117a5f'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: socialmenuheader
 theme: hwc_theme
 region: header_form
-weight: -11
+weight: -12
 provider: null
-plugin: 'block_content:90508196-0636-4c90-bc20-94ee42b76ca6'
+plugin: 'block_content:61290de5-8821-4dbf-a325-919327117a5f'
 settings:
-  id: 'block_content:90508196-0636-4c90-bc20-94ee42b76ca6'
+  id: 'block_content:61290de5-8821-4dbf-a325-919327117a5f'
   label: 'Social menu header'
   label_display: '0'
   provider: block_content

@@ -1,9 +1,9 @@
-uuid: c65b98dd-e544-493e-b75e-fda2761d22b9
+uuid: d8a822d8-bcef-4b54-943a-960997570c06
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:block_image:acc0b17e-b8d9-4254-9df1-359fd8863e97'
+    - 'block_content:block_image:a9adb0a8-1c88-49bd-8dcb-26fe2956ae39'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: logoosha
 theme: hwc_theme
 region: top_header_logos
-weight: 0
+weight: -14
 provider: null
-plugin: 'block_content:acc0b17e-b8d9-4254-9df1-359fd8863e97'
+plugin: 'block_content:a9adb0a8-1c88-49bd-8dcb-26fe2956ae39'
 settings:
-  id: 'block_content:acc0b17e-b8d9-4254-9df1-359fd8863e97'
+  id: 'block_content:a9adb0a8-1c88-49bd-8dcb-26fe2956ae39'
   label: 'Logo OSHA'
   label_display: '0'
   provider: block_content

@@ -1,9 +1,9 @@
-uuid: 0cb51951-f805-42bb-bbc7-0613887def36
+uuid: c459cc7c-7563-407a-a00d-fe5d180a7faa
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:e0aeed45-165f-47b6-be13-802f76082f57'
+    - 'block_content:basic:af228b43-6461-440b-981b-484f71fcbba0'
   module:
     - block_content
   theme:
@@ -11,11 +11,11 @@ dependencies:
 id: hwcprintfriendly
 theme: hwc_theme
 region: header_form
-weight: -13
+weight: -14
 provider: null
-plugin: 'block_content:e0aeed45-165f-47b6-be13-802f76082f57'
+plugin: 'block_content:af228b43-6461-440b-981b-484f71fcbba0'
 settings:
-  id: 'block_content:e0aeed45-165f-47b6-be13-802f76082f57'
+  id: 'block_content:af228b43-6461-440b-981b-484f71fcbba0'
   label: 'HWC Print friendly'
   label_display: '0'
   provider: block_content
