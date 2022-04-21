@@ -24,15 +24,36 @@
 
 
 {% set rowslist = row._entity.field_download_pdf %}
+  {% set docicon = "" %}
 
 {% for row in rowslist %}
-   {{ drupal_dump(row) }}
+{#   {{ drupal_dump(row) }}#}
   {% set docsid_only = row.target_id %}
   {% set docsinExt = row.entity.name.value|split('.')  %}
- {#  {% set docsid = output|split('/media/')  %} #}
   {% set doclang = row.entity.langcode.value %}
+{#  {% set dociconurl = row.entity.thumbnail.entity.uri.value %}#}
+{#  {% set docicon = file_url(dociconurl) %}#}
+{#  {{ drupal_dump(row.entity) }}#}
+{#  {{ drupal_dump(row.entity) }}#}
+
+  {% if docsinExt.1 == "pdf" %}
+    {% set docicon = "fa-solid fa-file-pdf" %}
+  {% elseif docsinExt.1 == "mp4" %}
+    {% set docicon = "fa-solid fa-file-video" %}
+  {% elseif docsinExt.1 == "docx" %}
+    {% set docicon = "fa-solid fa-file-word" %}
+  {% elseif docsinExt.1 == "zip" %}
+    {% set docicon = "fa fa-file-zip-o" %}
+  {% elseif docsinExt.1 == "pptx" %}
+    {% set docicon = "fa-solid fa-file-powerpoint" %}
+  {% elseif docsinExt.1 == "xlsx" %}
+    {% set docicon = "fa-solid fa-file-excel" %}
+  {% else %}
+    {% set docicon = "fa-solid fa-file" %}
+  {% endif %}
+
   <div class="practice-exchange-downloads field-files">
-    <span class="publication-ext-type">{{ docsinExt.0 }}</span>
+    <span class="publication-ext-type"><i class="{{ docicon }}" style="font-family: 'Font Awesome 5 Free'; font-style: normal; "></i>  {{ docsinExt.0 }}</span>
     <span class="publication-download-label">Download in</span>
         <a href="/media/{{ docsid_only }}" target="_blank"><span class="glyphicon glyphicon-circle-arrow-down"></span>{{ doclang }}</a>
   </div>
