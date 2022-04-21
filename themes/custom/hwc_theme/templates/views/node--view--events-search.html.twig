@@ -58,7 +58,7 @@
     {% if content.body.0 %}
       <p>{{ content.body.0|render|striptags|slice(0, 150)|raw ~ '...' }}</p>
     {% endif %}
-    <p>
+    <p class="button">
       <a href="{{ url }}" class="more-link">{{ 'See more'|t }}</a>
     </p>
 
