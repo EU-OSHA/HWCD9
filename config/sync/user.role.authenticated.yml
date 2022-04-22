@@ -2,12 +2,9 @@ uuid: fbe170f2-9432-4672-8642-482d18adf04a
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.news
   module:
     - comment
     - exclude_node_title
-    - node
     - search
     - system
 _core:
@@ -22,7 +19,6 @@ permissions:
   - 'access direct download file'
   - 'access news feeds'
   - 'access site map'
-  - 'create news content'
   - 'diff view changes'
   - 'display EU Cookie Compliance popup'
   - 'download any document files'
