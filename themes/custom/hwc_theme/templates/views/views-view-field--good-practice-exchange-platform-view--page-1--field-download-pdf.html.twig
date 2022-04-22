@@ -31,10 +31,6 @@
   {% set docsid_only = row.target_id %}
   {% set docsinExt = row.entity.name.value|split('.')  %}
   {% set doclang = row.entity.langcode.value %}
-{#  {% set dociconurl = row.entity.thumbnail.entity.uri.value %}#}
-{#  {% set docicon = file_url(dociconurl) %}#}
-{#  {{ drupal_dump(row.entity) }}#}
-{#  {{ drupal_dump(row.entity) }}#}
 
   {% if docsinExt.1 == "pdf" %}
     {% set docicon = "fa-solid fa-file-pdf" %}
