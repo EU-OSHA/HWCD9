@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - filter.format.full_html
     - media.type.document
     - node.type.article
@@ -190,6 +191,7 @@ permissions:
   - 'delete any content in published'
   - 'delete any content in to_be_approved'
   - 'delete any document content'
+  - 'delete any document media'
   - 'delete any event_speaker content'
   - 'delete any events content'
   - 'delete any external_url content'
@@ -223,6 +225,9 @@ permissions:
   - 'delete any webform content'
   - 'delete any youtube content'
   - 'delete content translations'
+  - 'delete document revisions'
+  - 'delete events revisions'
+  - 'delete news revisions'
   - 'delete newsletter_content_collection entity collections'
   - 'delete own article content'
   - 'delete own campaign_16 content'
@@ -513,6 +518,7 @@ permissions:
   - 'use news_and_events_created_by_een transition unpublish'
   - 'use search and replace'
   - 'use text format audio_visual'
+  - 'use text format basic_html'
   - 'use text format filtered_html'
   - 'use text format full_html'
   - 'use workbench access'
