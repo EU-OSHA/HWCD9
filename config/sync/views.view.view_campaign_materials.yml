@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.publications_list
     - field.storage.node.body
     - field.storage.node.field_cover_image
     - field.storage.node.field_publication_date
@@ -519,6 +520,10 @@ display:
           error_message: true
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
       row:
         type: fields
       query:
@@ -908,7 +913,20 @@ display:
           text: 'See more'
           output_url_as_text: false
           absolute: false
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: publications_list
       defaults:
+        style: false
+        row: false
         fields: false
         header: false
       header:
@@ -943,6 +961,20 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: publications_list
+      defaults:
+        style: false
+        row: false
       display_description: ''
       display_extenders: {  }
       path: view-campaign-materials

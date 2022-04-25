@@ -1,0 +1,15 @@
+uuid: d0731718-3f43-4d2d-b184-4dcb700086bd
+langcode: en
+status: true
+dependencies: {  }
+name: medium_crop_220
+label: 'Medium Crop 220'
+effects:
+  c0475d9a-49e1-4e99-9f92-7037ad51740c:
+    uuid: c0475d9a-49e1-4e99-9f92-7037ad51740c
+    id: image_scale
+    weight: 1
+    data:
+      width: 220
+      height: null
+      upscale: true
