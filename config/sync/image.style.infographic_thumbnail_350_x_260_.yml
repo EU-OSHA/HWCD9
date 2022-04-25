@@ -1,0 +1,15 @@
+uuid: fe96567e-d984-4338-83da-1da33f6da6c4
+langcode: en
+status: true
+dependencies: {  }
+name: infographic_thumbnail_350_x_260_
+label: 'Infographic thumbnail (350 x 260)'
+effects:
+  5e5235d5-b867-405a-9798-c1564fbabba8:
+    uuid: 5e5235d5-b867-405a-9798-c1564fbabba8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 260
+      anchor: center-center

@@ -1062,6 +1062,7 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   width: 100%;
 }
 .section-title h1 {
+  width: 100%;
   color: #FFF;
   font-size: 2.8rem;
   font-weight: 700;
@@ -1069,7 +1070,6 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   border: 0;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  width: 80%;
   margin: 0 auto;
   height: 125px;
   display: flex;
@@ -1301,7 +1301,7 @@ header #navbar-main ul.navbar-nav li a {
 .latest-publications {
   padding: 1.5rem 1rem 1rem;
 }
-.latest-publications > h2 {
+.latest-publications #block-views-block-publications-slideshow-publications-slideshow > h2 {
   color: #003399;
   font-size: 1.875rem;
 }
@@ -1372,6 +1372,47 @@ header #navbar-main ul.navbar-nav li a {
 }
 .latest-publications .box-latest-publications.views-row-last {
   margin-right: 0;
+}
+
+.infographic-item {
+  display: flex;
+  border-bottom: 1px dotted #749b00;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+}
+.infographic-item h2 {
+  display: block;
+  margin-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  line-height: 1.6rem;
+}
+.infographic-item h2 a {
+  color: #003399;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+.infographic-item .group-right .field-pdf-item {
+  display: flex;
+}
+.infographic-item .group-right .field-pdf-item span, .infographic-item .group-right .field-pdf-item img {
+  margin-right: 3px;
+}
+.infographic-item .group-right .field-pdf-item a {
+  color: #003399;
+  font-style: normal;
+  font-weight: bold;
+}
+.infographic-item .group-right .field-img-item {
+  display: flex;
+}
+.infographic-item .group-right .field-img-item span, .infographic-item .group-right .field-img-item img {
+  margin-right: 3px;
+}
+.infographic-item .group-right .field-img-item a {
+  color: #003399;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .events-list-page .sidebar-first .form-item-field-country-code,
