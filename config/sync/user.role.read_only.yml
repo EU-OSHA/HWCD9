@@ -5,14 +5,12 @@ dependencies:
   module:
     - exclude_node_title
     - system
-    - toolbar
 id: read_only
 label: 'Read only'
 weight: 16
 is_admin: null
 permissions:
   - 'access administration pages'
-  - 'access toolbar'
   - 'use exclude node title'
   - 'view all unpublished content'
   - 'view revisions'

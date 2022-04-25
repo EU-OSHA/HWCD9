@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
     - filter.format.full_html
     - media.type.document
     - node.type.document
@@ -17,7 +18,6 @@ dependencies:
     - media
     - node
     - system
-    - toolbar
     - workbench_access
 id: news_and_events_editor_partner_ocp_mp_fop_
 label: 'News and Events Editor – Partner (OCP, MP, FOP)'
@@ -26,11 +26,14 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access toolbar'
   - 'change own username'
+  - 'create document content'
   - 'create document media'
   - 'create events content'
   - 'create news content'
+  - 'delete document revisions'
+  - 'delete events revisions'
+  - 'delete news revisions'
   - 'delete own document content'
   - 'delete own document media'
   - 'delete own events content'
@@ -44,6 +47,7 @@ permissions:
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition creating_final_draft'
   - 'use news_and_events_created_by_een transition final_draft_edit_'
+  - 'use text format basic_html'
   - 'use text format full_html'
   - 'use workbench access'
   - 'view own unpublished content'

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.full_html
     - media.type.document
     - node.type.document
     - node.type.events
@@ -30,8 +31,9 @@ permissions:
   - 'create files'
   - 'create news content'
   - 'delete any content in draft'
-  - 'delete any document content'
-  - 'delete any events content'
+  - 'delete document revisions'
+  - 'delete events revisions'
+  - 'delete news revisions'
   - 'delete own document content'
   - 'delete own document media'
   - 'delete own events content'
@@ -42,6 +44,7 @@ permissions:
   - 'edit any events content'
   - 'edit any news content'
   - 'edit own document content'
+  - 'edit own document media'
   - 'edit own events content'
   - 'edit own news content'
   - 'moderate content from draft to final_draft'
@@ -53,6 +56,7 @@ permissions:
   - 'use text format audio_visual'
   - 'use text format basic_html'
   - 'use text format filtered_html'
+  - 'use text format full_html'
   - 'view all unpublished content'
   - 'view osh my content tab'
   - 'view own unpublished content'

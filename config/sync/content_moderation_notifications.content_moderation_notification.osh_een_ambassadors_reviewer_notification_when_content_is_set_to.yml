@@ -1,0 +1,19 @@
+uuid: b0b82231-455a-4d8b-8c04-19fa0c4e266b
+langcode: en
+status: true
+dependencies: {  }
+id: osh_een_ambassadors_reviewer_notification_when_content_is_set_to
+workflow: news_and_events_created_by_een
+transitions:
+  skip_review_process: skip_review_process
+  requesting_approval: requesting_approval
+roles:
+  eu_osha_een_reviewers: eu_osha_een_reviewers
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is set to be approved'
+body:
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for approval. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'OSH EEN Ambassadors Reviewer Notification when content is set to "ToBeApproved"'
