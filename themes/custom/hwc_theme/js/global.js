@@ -10,7 +10,7 @@
   Drupal.behaviors.allages_theme = {
     attach: function (context, settings) {
 
-      $('.header-tools #search-block-form .form-actions button').text('');
+      /* $('.header-tools #search-block-form .form-actions button').text(''); */
 
     }
   };

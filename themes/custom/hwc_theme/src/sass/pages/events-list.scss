@@ -7,6 +7,9 @@
     }
   }
   .events-list{
+    .view-content.row{
+      margin: 1rem;
+    }
     .form-item-field-start-date,
     .form-item-end-value{
       display: none;
@@ -65,6 +68,22 @@
               font-size: 0.8rem;
             }
           }
+        }
+      }
+    }
+    #block-newsletter{
+      background: url(../images/background-newsletter-event.png) no-repeat;
+      border-radius: 1rem;
+      color: #FFF;
+      padding: 1.2rem;
+      width: 100%;
+      h2{
+        background: url(../images/ico-newsletter.png) no-repeat 1px 5px;
+        color: #FFF;
+        font-weight: 400;
+        padding-left: 1.3em;
+        a {
+          color: white;
         }
       }
     }
