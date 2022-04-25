@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
+    - media.type.document
     - node.type.document
     - node.type.event_speaker
     - node.type.events
@@ -20,8 +21,11 @@ dependencies:
     - exclude_node_title
     - filter
     - masquerade
+    - media
     - node
     - system
+    - toolbar
+    - workbench_access
 id: external_provider
 label: 'External Provider'
 weight: 12
@@ -35,6 +39,7 @@ permissions:
   - 'access hwc review tab'
   - 'access media browser'
   - 'access private area'
+  - 'access toolbar'
   - 'access user profiles'
   - 'access workbench'
   - 'access workbench access by role'
@@ -42,6 +47,7 @@ permissions:
   - 'administer page manager'
   - 'assign cpm to node'
   - 'create document content'
+  - 'create document media'
   - 'create event_speaker content'
   - 'create events content'
   - 'create files'
@@ -52,14 +58,12 @@ permissions:
   - 'delete any content in draft'
   - 'delete any document content'
   - 'delete any document files'
-  - 'delete any event_speaker content'
-  - 'delete any events content'
   - 'delete any image files'
-  - 'delete any news content'
   - 'delete any tk_example content'
   - 'delete any video files'
   - 'delete own document content'
   - 'delete own document files'
+  - 'delete own document media'
   - 'delete own event_speaker content'
   - 'delete own events content'
   - 'delete own hwc_gallery content'
@@ -92,6 +96,7 @@ permissions:
   - 'edit any video files'
   - 'edit own document content'
   - 'edit own document files'
+  - 'edit own document media'
   - 'edit own event_speaker content'
   - 'edit own events content'
   - 'edit own hwc_gallery content'
@@ -106,6 +111,8 @@ permissions:
   - 'manipulate all queues'
   - 'manipulate queues'
   - 'masquerade as any user'
+  - 'masquerade as news_and_events_editor_een_osh_ambassador'
+  - 'masquerade as news_and_events_editor_partner_ocp_mp_fop_'
   - 'masquerade as user'
   - 'moderate content from draft to final_draft'
   - 'moderate content from final_draft to draft'
@@ -123,6 +130,7 @@ permissions:
   - 'use text format audio_visual'
   - 'use text format filtered_html'
   - 'use text format full_html'
+  - 'use workbench access'
   - 'use workbench_moderation my drafts tab'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
