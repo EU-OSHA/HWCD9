@@ -21,7 +21,7 @@
       display: block;
       width: 100%;
       color: #003399;
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       padding-bottom: 0.7rem;
     }
     #block-exposedformevents-searchpage-1{
@@ -38,8 +38,8 @@
         flex-wrap: nowrap;
         fieldset{
           label{
-            font-size: 1rem !important;
-            font-weight: normal !important;
+            font-size: 1rem;
+            font-weight: normal;
           }
           input{
             -webkit-appearance: none;
@@ -116,18 +116,26 @@
       padding-top: 20px;
       padding-bottom: 30px;
       min-height: 230px;
-      h2{
-        a{
-          color: $text-color-blue;
-          font-size: 1.6rem;
-          line-height: 1.5rem;
+      .group-right{
+        display: flex;
+        flex-direction: column;
+        h2{
+          line-height: 1.6rem;
+          a{
+            color: $text-color-blue;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+          }
         }
-      }
-      .date-start-end{
-        font-weight: 600;
-      }
-      .country-city{
-        font-weight: 600;
+        .date-start-end{
+          font-weight: 600;
+        }
+        .country-city{
+          font-weight: 600;
+        }
+        .button{
+          margin: auto 0 1rem;
+        }
       }
     }
   }

@@ -11,6 +11,7 @@
             </div>
             <div class="header-tools col-xs-12 col-sm-3 xs-menu">
               <div class="print-resize-block">
+
                 {{ page.header_form.hwcprintfriendly }}
                 {{ page.header_form.textresize }}
                 {{ page.header_form.socialmenuheader }}
@@ -62,7 +63,17 @@
         {% if page.breadcrumb %}
           <section class="section-title">
             {{ page.breadcrumb.hwc_theme_breadcrumbs }}
-            <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+            {% if  node.getType() == "events" %}
+              <h1 class="page-header">{{ 'Events'|t }}</h1>
+            {% elseif node.getType() == "publication" %}
+              <h1 class="page-header">{{ 'Publications'|t }}</h1>
+            {% elseif node.getType() == "news" %}
+              <h1 class="page-header">{{ 'News'|t }}</h1>
+            {% elseif node.getType() == "tk_article" %}
+              <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
+            {% else %}
+              <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+            {% endif %}
           </section>
         {% endif %}
       {% endif %}
@@ -70,17 +81,27 @@
 
     <section id="main-wrapper" class="layout-main-wrapper clearfix">
       <div class="main-container">
+
+        {% if  node.getType() == "events" %}
+          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
+        {% elseif node.getType() == "publication" %}
+          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
+        {% elseif node.getType() == "news" %}
+          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
+        {% elseif node.getType() == "tk_article" %}
+          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
+        {% endif %}
         {% block content %}
             <div class="container">
               <div class="row">
                 <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
-                  {{ page.sidebar_first }}
+                  {{ page.sidebar_left }}
                 </aside>
                 <section class="section">
                   {{ page.content }}
                 </section>
                 <aside class="section col-12 col-lg-3 sidebar-second" role="complementary">
-                  {{ page.sidebar_second }}
+                  {{ page.sidebar_right }}
                 </aside>
               </div>
             </div>

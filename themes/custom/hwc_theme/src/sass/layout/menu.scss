@@ -1,6 +1,31 @@
-#navbar-main{
+header #navbar-main{
   background: $bg-color-blue;
+  padding: 0;
   a{
     color: $text-color-white;
   }
+  #block-hwc-theme-main-menu{
+    width: 100%;
+  }
+  ul.navbar-nav{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    justify-content: space-between;
+    li{
+      flex: 1 1 auto;
+      display: flex;
+      color: #FFF;
+      margin: 10px 0;
+      border-right: 1px solid #FFF;
+      a{
+        color: #ffffff;
+        text-align: center;
+        display: block;
+        padding: 5px 0;
+        width: 100%;
+      }
+    }
+  }
 }
+
