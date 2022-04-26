@@ -1,0 +1,20 @@
+uuid: 2f3a1d7e-5667-4954-b492-994c5ea50d58
+langcode: en
+status: true
+dependencies: {  }
+id: the_news_event_item_is_requested_to_be_reviewed_by_supervisors
+workflow: news_and_events_created_by_een
+transitions:
+  submit_for_review: submit_for_review
+  reviewing_final_draft: reviewing_final_draft
+  reject_approved_to_reviewed: reject_approved_to_reviewed
+roles:
+  external_provider: external_provider
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is set to be reviewed'
+body:
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for review. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'The news/event item is requested to be reviewed by Supervisors'

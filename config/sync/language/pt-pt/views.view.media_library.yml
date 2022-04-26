@@ -2,7 +2,6 @@ display:
   default:
     display_title: Predefinido
     display_options:
-      title: Media
       pager:
         options:
           expose:
@@ -13,8 +12,6 @@ display:
         options:
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       filters:
         status:
           expose:
@@ -27,15 +24,10 @@ display:
             label: 'Tipo de media'
           group_info:
             label: 'Tipo de media'
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Página
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Editar
         delete_media:

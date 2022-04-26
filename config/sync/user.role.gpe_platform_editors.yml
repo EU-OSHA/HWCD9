@@ -1,7 +1,13 @@
 uuid: 2d8bb348-827b-4173-8d37-76d6b4a5a3b3
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.document
+  module:
+    - exclude_node_title
+    - node
+    - system
 id: gpe_platform_editors
 label: 'GPE Platform Editors'
 weight: 17
@@ -15,5 +21,6 @@ permissions:
   - 'edit any document content'
   - 'edit own document content'
   - 'select content section'
+  - 'use exclude node title'
   - 'use text format filtered_html'
   - 'view the administration theme'

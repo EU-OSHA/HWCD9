@@ -1,0 +1,87 @@
+/* start toolkit styles */
+
+.toolkit-page,
+.node--type-tk-article{
+  .well{
+    background-color: inherit;
+    border: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: inherit;
+  }
+  #block-hwc-toolkit-toolkit-left-menu{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+}
+
+.start-here{
+  margin-top: 10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  > .col {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+    display: -webkit-flex;
+    display: flex;
+    > .col-inner {
+      background-color: #f3f3f3;
+      text-align: center;
+      padding: 30px 15px 50px;
+      position: relative;
+      margin-bottom: 1em;
+      h2 {
+        font-weight: 600;
+        color: #003399;
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        &:before {
+          content: "";
+          display: block;
+          width: 74px;
+          height: 74px;
+          background-color: #003399;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          border-radius: 50%;
+          color: white;
+          line-height: 5;
+        }
+      }
+      .see-more {
+        background-color: #749b00;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover{
+          background-color: #595959;
+        }
+      }
+    }
+    &.campaigning{
+      h2:before{
+        background-image: url(../images/toolkit-campaigning.png);
+      }
+    }
+    &.plane-campaign{
+      h2:before{
+        background-image: url(../images/toolkit-plan.png)
+      }
+    }
+    &.resources-networks{
+      h2:before{
+        background-image: url(../images/toolkit-resources.png);
+      }
+    }
+  }
+}

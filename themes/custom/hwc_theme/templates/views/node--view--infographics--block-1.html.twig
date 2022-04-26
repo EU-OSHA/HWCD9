@@ -1,0 +1,24 @@
+{#{{ dd( content.field_file['#items'].entity.field_media_document.0.entity.uri.value ) }}#}
+<div class="group-left col-sm-4">
+  {{ content.field_thumbnail }}
+</div>
+
+<div class="group-right col-sm-8">
+  <h2>
+    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ label }}</a>
+
+  </h2>
+  <div class="field-pdf-item">
+    <span class="label_multilang_file">Download</span>
+    <img class="file-icon" alt="PDF file" title="application/pdf" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/application-pdf.png">
+    <span class="label_multilang_file">in:</span>
+    <a href="{{ file_url( content.field_file['#items'].entity.field_media_document.0.entity.uri.value ) }}" target="_blank">EN</a>
+  </div>
+  <div class="field-img-item">
+    <span class="label_multilang_file">Open</span>
+    <img class="file-icon" alt="Image file" title="image/jpeg" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/image-x-generic.png">
+    <span class="label_multilang_file">in:</span>
+    <a href="{{ file_url( content.field_image['#items'].entity.field_media_image.0.entity.uri.value ) }}" target="_blank">EN</a>
+  </div>
+
+</div>

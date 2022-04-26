@@ -4,18 +4,16 @@
 .node-content{
   padding:1rem;
 }
-.latest-publications{
-  padding: 4rem 1rem 1rem;
-}
+
 .available-publication{
-  padding: 4rem 1rem 1rem;
+  padding: 2rem 1rem 1rem;
 }
 
 .sidebar-first .block-facets {
   padding: 0.8rem 0.8rem 0.4rem;
   border: 1px solid #B0B2B3;
   border-radius: 5px;
-  margin-top: 0;
+  margin-top: 2rem;
   width: 100%;
   background: #FFF;
   h2{
@@ -52,13 +50,24 @@
   flex-direction: column;
   .view-filters{
     order: 1;
+    #edit-reset{
+      background: transparent;
+      outline: 0;
+      border: 0;
+      color: #003399;
+    }
   }
   .view-header{
     order: 2;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1.875rem;
-    color: #003399;
+    h2{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.875rem;
+      color: $text-color-blue;
+      span{
+        font-size:1.25rem;
+      }
+    }
   }
   .view-content {
     order: 3;
@@ -86,15 +95,25 @@
           left: 5%;
         }
         .group-left {
+          padding: 0;
+          min-width: 155px;
+          margin-right: 1.5rem;
           .field--type-image {
             padding-right: 0;
             border-radius: 7px;
-            min-height: 220px;
+            //min-height: 220px;
             width: 100%;
             margin-right: 1.8rem;
+            img{
+              width: 100%;
+              margin: 0;
+            }
           }
         }
         .group-right {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 auto;
           .metadata{
             display: flex;
             flex-direction: row;
@@ -114,6 +133,7 @@
             .num-pages{
               font-weight: bold;
               color: $text-color-blue;
+              padding-right: 4rem;
             }
           }
           .title-list {
@@ -125,7 +145,7 @@
             a {
               color: $text-color-blue;
               font-style: normal;
-              font-size: 0.7em;
+              font-size: 1.4rem;
             }
           }
         }
@@ -143,6 +163,13 @@
   margin-top: 1.5em;
 }
 .latest-publications{
+  padding: 1.5rem 0rem 1rem;
+  #block-views-block-publications-slideshow-publications-slideshow{
+    > h2{
+      color: $text-color-blue;
+      font-size: 1.875rem;
+    }
+  }
   .view-content{
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -184,7 +211,7 @@
       }
       h2 a{
         display: block;
-        clear: both;
+        padding: 3px 0;
         color:#003399;
         font-size: 15px;
         font-weight: bold;
@@ -197,7 +224,7 @@
         }
       }
       p:last-child{
-        margin: auto 0 0.5rem;
+        margin: auto 0 1.1rem;
         a.see-more-arrow{
           display: block;
           clear: both;
@@ -213,4 +240,99 @@
     margin-right: 0;
   }
 
+}
+
+
+/* publication detail */
+.publication-detail{
+  display: flex;
+  flex-direction: row;
+  .publications-left-column{
+    width: 25%;
+  }
+  .publications-detail-right-column{
+    .metadata{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      > span{
+        color: #57575a;
+      }
+      .date {
+
+      }
+      .type {
+        color: $text-color-blue;
+        label{
+          font-weight: bold;
+        }
+      }
+      .num-pages{
+        font-weight: bold;
+        color: $text-color-blue;
+        padding-right: 4rem;
+      }
+    }
+    .field-pdf-item{
+      display: flex;
+      span, img{
+        margin-right: 3px;
+      }
+      a{
+        font-weight: bold;
+        color: $text-color-blue;
+      }
+    }
+  }
+
+}
+
+
+
+
+.infographic-item{
+  display: flex;
+  border-bottom: 1px dotted #749b00;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  h2{
+    display: block;
+    margin-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    line-height: 1.6rem;
+
+    a {
+      color: $text-color-blue;
+      font-style: normal;
+      font-size: 1.4rem;
+    }
+  }
+  .group-left{
+
+  }
+  .group-right{
+    .field-pdf-item{
+      display: flex;
+      span, img{
+        margin-right: 3px;
+      }
+      a{
+        color: $text-color-blue;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+    .field-img-item{
+      display: flex;
+      span, img{
+        margin-right: 3px;
+      }
+      a{
+        color: $text-color-blue;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+  }
 }

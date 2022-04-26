@@ -2,8 +2,6 @@ default_config:
   tags:
     pages:
       prefix_label: Sayfa
-      previous: ‹
-      next: ›
       page_current_title: 'Şu an kullanılan sayfa'
       first_title: 'İlk sayfaya git'
       previous_title: 'Önceki sayfaya git'
@@ -16,6 +14,4 @@ default_config:
       last_reader: 'Son sayfa'
     items:
       prefix_label: Öğe
-      previous: ‹
-      next: ›
       first_reader: 'İlk madde'

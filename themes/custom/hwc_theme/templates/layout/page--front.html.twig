@@ -1,7 +1,6 @@
 {% extends "page.html.twig" %}
 
 
-
 {% block content %}
 
   {% if is_front %}
@@ -16,11 +15,11 @@
         </div>
         <div class="home-events col-lg-5 col-md-12">
           <h1 class="line events-section-title"><a href="/en/media-centre/events">{{ 'Events' | trans }}</a></h1>
+          {{ page.content.views_block__frontpage_events_block }}
         </div>
       </div>
     </section>
   {% endif %}
-
 
   <section class="content-fluid blocks-front-page green-background">
     <div class="container no-padding">
@@ -50,17 +49,4 @@
   </section>
 {% endblock %}
 
-{% block footer %}
-  <div class="{{ container }}" >
-    {% if page.footer_first %}
-      <div class="site-footer__first">
-        {{ page.footer_first }}
-      </div>
-    {% endif %}
-    {% if page.footer_end %}
-      <div class="site-footer__bottom">
-        {{ page.footer_end }}
-      </div>
-    {% endif %}
-  </div>
-{% endblock %}
+

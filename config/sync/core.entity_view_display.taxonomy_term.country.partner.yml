@@ -1,0 +1,31 @@
+uuid: 315c54e2-f1e3-4424-be2f-1e01e7630b61
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.partner
+    - field.field.taxonomy_term.country.field_country_status
+    - field.field.taxonomy_term.country.field_flag
+    - field.field.taxonomy_term.country.field_iso2
+    - taxonomy.vocabulary.country
+id: taxonomy_term.country.partner
+targetEntityType: taxonomy_term
+bundle: country
+mode: partner
+content:
+  field_flag:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  breadcrumbs: true
+  description: true
+  field_country_status: true
+  field_iso2: true
+  langcode: true
+  search_api_excerpt: true

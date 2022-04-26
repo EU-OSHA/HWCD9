@@ -2,8 +2,6 @@ default_config:
   tags:
     pages:
       prefix_label: Pagina
-      previous: ‹
-      next: ›
       page_current_title: 'Pagina curentă'
       first_title: 'Mergi la prima pagină'
       previous_title: 'Mergi la pagina anterioară'
@@ -16,6 +14,4 @@ default_config:
       last_reader: 'Ultima pagină'
     items:
       prefix_label: Produs
-      previous: ‹
-      next: ›
       first_reader: 'Primul articol'

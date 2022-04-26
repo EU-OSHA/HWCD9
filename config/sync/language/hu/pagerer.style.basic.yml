@@ -1,8 +1,6 @@
 default_config:
   tags:
     pages:
-      previous: ‹
-      next: ›
       first_title: 'Ugrás az első oldalra'
       previous_title: 'Ugrás az előző oldalra'
       next_title: 'Ugrás a következő oldalra'
@@ -12,9 +10,4 @@ default_config:
       next_reader: 'Következő oldal'
       last_reader: 'Utolsó oldal'
     items:
-      previous: ‹
-      next: ›
       first_reader: 'Első listaelem'
-    item_ranges:
-      previous: ‹
-      next: ›

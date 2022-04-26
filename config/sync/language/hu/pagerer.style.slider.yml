@@ -2,8 +2,6 @@ default_config:
   tags:
     pages:
       prefix_label: Oldal
-      previous: ‹
-      next: ›
       page_current_title: 'Jelenlegi oldal'
       first_title: 'Ugrás az első oldalra'
       previous_title: 'Ugrás az előző oldalra'
@@ -16,10 +14,6 @@ default_config:
       last_reader: 'Utolsó oldal'
     items:
       prefix_label: Tétel
-      previous: ‹
-      next: ›
       first_reader: 'Első listaelem'
     item_ranges:
       prefix_label: Tételek
-      previous: ‹
-      next: ›

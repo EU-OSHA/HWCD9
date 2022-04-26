@@ -1,6 +1,6 @@
 uuid: 5f19857f-7988-4c89-b882-34b43d074157
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - facets.facet.publication_type_publications_listing
@@ -11,8 +11,8 @@ dependencies:
     - hwc_theme
 id: publicationtypepublicationslisting
 theme: hwc_theme
-region: content
-weight: -3
+region: sidebar_left
+weight: -15
 provider: null
 plugin: 'facet_block:publication_type_publications_listing'
 settings:

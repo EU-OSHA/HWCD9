@@ -1,7 +1,23 @@
 uuid: 1a450a43-f47c-4453-adaa-476c585ecb42
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - media.type.document
+    - node.type.document
+    - node.type.events
+    - node.type.news
+    - workflows.workflow.news_and_events_created_by_een
+  module:
+    - content_moderation
+    - exclude_node_title
+    - filter
+    - media
+    - node
+    - system
+    - workbench_access
 id: news_and_events_editor_een_osh_ambassador
 label: 'News and Events Editor – EEN OSH Ambassador'
 weight: 18
@@ -9,14 +25,25 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'create document content'
+  - 'create document media'
   - 'create events content'
   - 'create news content'
+  - 'delete document revisions'
+  - 'delete events revisions'
+  - 'delete news revisions'
+  - 'delete own document content'
+  - 'delete own document media'
   - 'delete own events content'
   - 'delete own news content'
+  - 'edit own document content'
+  - 'edit own document media'
   - 'edit own events content'
   - 'edit own news content'
+  - 'use exclude node title'
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition final_draft_edit_'
+  - 'use text format basic_html'
   - 'use text format full_html'
   - 'use workbench access'
   - 'view own unpublished content'

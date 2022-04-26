@@ -1,9 +1,9 @@
 
 <article class="publications-items-list">
-  <div class="group-left  col-md-3 col-3">
+  <div class="group-left">
     <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_cover_image }}</a>
   </div>
-  <div class="group-right col-md-9 col-9">
+  <div class="group-right">
     <div class="metadata">
       <span class="date" datetime="{{  content.field_publication_date.0['#text'] }}" >{{ content.field_publication_date.0['#text'] }}</span>
       <span class="type" ><label>{{ 'type'|t }}:</label> {{ content.field_publication_type.0['#title'] }}</span>

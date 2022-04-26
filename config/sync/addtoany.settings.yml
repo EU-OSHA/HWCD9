@@ -1,7 +1,7 @@
 _core:
   default_config_hash: QUZHrnAKd4ixgLLVtD3JrrBMlwbmJ6VU-qKcOMDKatw
 buttons_size: 32
-additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n<a class=\"a2a_button_linkedin\"></a>\r\n<a class=\"a2a_button_youtube\"></a>\r\n"
+additional_html: "<div id=\"share-this-on\">\r\n  <span class=\"text-share\">Share this on:</span>\r\n  <a class=\"a2a_button_facebook\"></a>\r\n  <a class=\"a2a_button_twitter\"></a>\r\n  <a class=\"a2a_button_linkedin_share\"></a>\r\n  <a class=\"print-icon\" href=\"javascript:print()\"></a>\r\n</div>"
 additional_css: ''
 additional_js: ''
 universal_button: none
@@ -10,7 +10,7 @@ universal_button_placement: before
 entities:
   media: 1
   node: 1
-  comment: 1
+  comment: 0
   block_content: 0
   contact_message: 0
   content_moderation_state: 0
@@ -24,3 +24,4 @@ entities:
   user: 0
   section_association: 0
   paragraph: 0
+  crop: 0

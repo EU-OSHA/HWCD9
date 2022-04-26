@@ -2,7 +2,6 @@ display:
   default:
     display_title: Numatytasis
     display_options:
-      title: Media
       pager:
         options:
           expose:
@@ -16,9 +15,6 @@ display:
         name:
           expose:
             label: Pavadinimas
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Puslapis
     display_options:

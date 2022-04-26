@@ -1,0 +1,89 @@
+uuid: 7a8b4d70-705a-4b93-8028-ffe49968e96f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.infographics_list
+    - field.field.node.infographic.body
+    - field.field.node.infographic.field_activity
+    - field.field.node.infographic.field_file
+    - field.field.node.infographic.field_first_publication_date
+    - field.field.node.infographic.field_image
+    - field.field.node.infographic.field_infographic_url
+    - field.field.node.infographic.field_metatags
+    - field.field.node.infographic.field_publication_date
+    - field.field.node.infographic.field_tags
+    - field.field.node.infographic.field_thumbnail
+    - field.field.node.infographic.field_twin_infographics
+    - field.field.node.infographic.field_xmlsitemap
+    - image.style.infographic_thumbnail_350_x_260_
+    - node.type.infographic
+  module:
+    - link
+    - media
+    - user
+id: node.infographic.infographics_list
+targetEntityType: node
+bundle: infographic
+mode: infographics_list
+content:
+  field_file:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_infographic_url:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_thumbnail:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: infographic_thumbnail_350_x_260_
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_twin_infographics:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  breadcrumbs: true
+  field_activity: true
+  field_first_publication_date: true
+  field_metatags: true
+  field_publication_date: true
+  field_tags: true
+  field_xmlsitemap: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

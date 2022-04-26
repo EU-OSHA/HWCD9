@@ -1,7 +1,9 @@
 uuid: 783d5fcb-0d11-4809-a6b7-2f007a85a231
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - exclude_node_title
 id: audio_visual
 label: 'Audio Visual'
 weight: 13
@@ -10,4 +12,5 @@ permissions:
   - 'create audio_visual content'
   - 'delete own audio_visual content'
   - 'edit own audio_visual content'
+  - 'use exclude node title'
   - 'use text format audio_visual'

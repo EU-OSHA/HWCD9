@@ -1,7 +1,12 @@
 uuid: fbe170f2-9432-4672-8642-482d18adf04a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - exclude_node_title
+    - search
+    - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -14,7 +19,6 @@ permissions:
   - 'access direct download file'
   - 'access news feeds'
   - 'access site map'
-  - 'create news content'
   - 'diff view changes'
   - 'display EU Cookie Compliance popup'
   - 'download any document files'

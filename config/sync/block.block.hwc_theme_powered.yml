@@ -11,7 +11,7 @@ _core:
 id: hwc_theme_powered
 theme: hwc_theme
 region: top_header
-weight: 10
+weight: -11
 provider: null
 plugin: system_powered_by_block
 settings:

@@ -3,8 +3,6 @@ default_config:
     page_breaker: ...
     pages:
       prefix_label: Pagina
-      previous: ‹
-      next: ›
       page_current_title: 'Pagina curentă'
       page_title: 'Mergi la pagina @number'
       first_title: 'Mergi la prima pagină'
@@ -19,12 +17,8 @@ default_config:
       last_reader: 'Ultima pagină'
     items:
       prefix_label: Produs
-      previous: ‹
-      next: ›
       page_reader: Produs
       first_reader: 'Primul articol'
     item_ranges:
       prefix_label: Articole
-      previous: ‹
-      next: ›
       page_reader: Articole

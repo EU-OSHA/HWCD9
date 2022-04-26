@@ -2,7 +2,6 @@ display:
   default:
     display_title: Domyślny
     display_options:
-      title: Media
       pager:
         options:
           expose:
@@ -27,15 +26,10 @@ display:
             label: 'Typ mediów'
           group_info:
             label: 'Typ mediów'
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Strona
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Edytuj
         delete_media:

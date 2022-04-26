@@ -27,15 +27,10 @@ display:
             label: 'Meedia tüüp'
           group_info:
             label: 'Meedia tüüp'
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Lehekülg
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Muuda
         delete_media:

@@ -1,0 +1,20 @@
+uuid: c1e81761-b49a-47d1-bef3-bb527fb78bb7
+langcode: en
+status: true
+dependencies: {  }
+id: osh_een_ambassadors_reviewer_added_to_the_list_to_review_content
+workflow: news_and_events_created_by_een
+transitions:
+  submit_for_review: submit_for_review
+  reviewing_final_draft: reviewing_final_draft
+  reject_approved_to_reviewed: reject_approved_to_reviewed
+roles:
+  eu_osha_een_reviewers: eu_osha_een_reviewers
+author: false
+site_mail: false
+emails: ''
+subject: 'The news/event item is requested to be reviewed'
+body:
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for review. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'OSH EEN Ambassadors Reviewer added to the list to review content'

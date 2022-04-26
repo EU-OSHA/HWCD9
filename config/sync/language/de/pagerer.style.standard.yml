@@ -1,13 +1,8 @@
 default_config:
   tags:
-    page_breaker: …
-    page_separator: '|'
     pages:
       prefix_label: Seite
       suffix_label: 'von @total'
-      page_current: '@number'
-      page_previous: '@number'
-      page_next: '@number'
       first: '« Anfang'
       previous: '‹ Vorherige Seite'
       next: 'Nächste Seite ›'
@@ -28,9 +23,6 @@ default_config:
     items:
       prefix_label: Element
       suffix_label: 'von @total_items'
-      page_current: '@item'
-      page_previous: '@item'
-      page_next: '@item'
       first: '« Anfang'
       previous: '‹ Vorherige Seite'
       next: 'Nächste Seite ›'
@@ -51,9 +43,6 @@ default_config:
     item_ranges:
       prefix_label: Elemente
       suffix_label: 'von @total_items'
-      page_current: '@item_low-@item_high'
-      page_previous: '@item_low-@item_high'
-      page_next: '@item_low-@item_high'
       first: '« Anfang'
       previous: '‹ Vorherige Seite'
       next: 'Nächste Seite ›'

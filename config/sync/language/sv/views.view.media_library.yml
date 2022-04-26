@@ -2,7 +2,6 @@ display:
   default:
     display_title: Förvald
     display_options:
-      title: Media
       pager:
         options:
           expose:
@@ -27,15 +26,10 @@ display:
             label: Mediatyp
           group_info:
             label: Mediatyp
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Sida
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Redigera
         delete_media:

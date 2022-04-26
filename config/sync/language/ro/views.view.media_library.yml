@@ -2,7 +2,6 @@ display:
   default:
     display_title: Implicit
     display_options:
-      title: Media
       pager:
         options:
           expose:
@@ -14,7 +13,6 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
-          sort_desc_label: Desc
       filters:
         status:
           expose:
@@ -22,15 +20,10 @@ display:
         name:
           expose:
             label: Nume
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Pagina
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Modifică
         delete_media:

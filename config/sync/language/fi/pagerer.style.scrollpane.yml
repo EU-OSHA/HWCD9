@@ -2,8 +2,6 @@ default_config:
   tags:
     pages:
       prefix_label: Sivu
-      previous: ‹
-      next: ›
       page_current_title: 'Tämänhetkinen sivu'
       page_title: 'Siirry sivulle @number'
       first_title: 'Siirry ensimmäiselle sivulle'
@@ -18,12 +16,8 @@ default_config:
       last_reader: 'Viimeinen sivu'
     items:
       prefix_label: Nimike
-      previous: ‹
-      next: ›
       page_reader: Nimike
       first_reader: 'Ensimmäinen kohta'
     item_ranges:
       prefix_label: Aiheet
-      previous: ‹
-      next: ›
       page_reader: Aiheet

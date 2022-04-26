@@ -1,8 +1,6 @@
 default_config:
   tags:
     pages:
-      previous: ‹
-      next: ›
       first_title: 'Siirry ensimmäiselle sivulle'
       previous_title: 'Siirry edelliselle sivulle'
       next_title: 'Siirry seuraavalle sivulle'
@@ -12,9 +10,4 @@ default_config:
       next_reader: 'Seuraava sivu'
       last_reader: 'Viimeinen sivu'
     items:
-      previous: ‹
-      next: ›
       first_reader: 'Ensimmäinen kohta'
-    item_ranges:
-      previous: ‹
-      next: ›

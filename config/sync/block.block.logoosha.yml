@@ -1,4 +1,4 @@
-uuid: 4e1456a4-3a8c-457b-8ec1-4d59ef440953
+uuid: d8a822d8-bcef-4b54-943a-960997570c06
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: logoosha
 theme: hwc_theme
 region: top_header_logos
-weight: 0
+weight: -14
 provider: null
 plugin: 'block_content:a9adb0a8-1c88-49bd-8dcb-26fe2956ae39'
 settings:

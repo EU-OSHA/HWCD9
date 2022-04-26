@@ -19,39 +19,16 @@ display:
         status:
           expose:
             label: Veröffentlichungsstatus
-        name:
-          expose:
-            label: Name
         bundle:
           expose:
             label: Medientyp
           group_info:
             label: Medientyp
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Seite
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Bearbeiten
         delete_media:
           text: Löschen
-  widget:
-    display_options:
-      filters:
-        name:
-          expose:
-            label: Name
-  widget_table:
-    display_options:
-      fields:
-        name:
-          label: Name
-      filters:
-        name:
-          expose:
-            label: Name

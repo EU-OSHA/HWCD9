@@ -2,7 +2,6 @@ display:
   default:
     display_title: Standard
     display_options:
-      title: Media
       pager:
         options:
           expose:
@@ -27,15 +26,10 @@ display:
             label: 'Medie type'
           group_info:
             label: 'Medie type'
-        langcode:
-          expose:
-            label: Language
   page:
     display_title: Side
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Redigér
         delete_media:

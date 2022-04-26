@@ -1,8 +1,6 @@
 default_config:
   tags:
     pages:
-      previous: ‹
-      next: ›
       first_title: 'İlk sayfaya git'
       previous_title: 'Önceki sayfaya git'
       next_title: 'Sonraki sayfaya git'
@@ -12,9 +10,4 @@ default_config:
       next_reader: 'Sonraki sayfa'
       last_reader: 'Son sayfa'
     items:
-      previous: ‹
-      next: ›
       first_reader: 'İlk madde'
-    item_ranges:
-      previous: ‹
-      next: ›

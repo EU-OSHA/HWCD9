@@ -1,4 +1,4 @@
-uuid: b3061177-7d59-4068-8c8d-3289f5beed83
+uuid: cdef85a0-d0da-48a0-bb58-71d3b48926f6
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: privateworkbenchblock
 theme: hwc_theme
 region: header_form
-weight: -10
+weight: -11
 provider: null
 plugin: private_workbench
 settings:

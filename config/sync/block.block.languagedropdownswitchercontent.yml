@@ -9,7 +9,7 @@ dependencies:
 id: languagedropdownswitchercontent
 theme: hwc_theme
 region: header_form
-weight: -9
+weight: -10
 provider: null
 plugin: 'language_dropdown_block:language_content'
 settings:

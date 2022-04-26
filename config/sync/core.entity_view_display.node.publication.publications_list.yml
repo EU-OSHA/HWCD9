@@ -63,7 +63,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_cover_image:
     type: entity_reference_entity_view
@@ -74,6 +74,16 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_first_publication_date:
+    type: timestamp
+    label: hidden
+    settings:
+      date_format: html_date
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_pages_count:
     type: number_integer
     label: hidden
@@ -81,7 +91,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_publication_date:
     type: datetime_default
@@ -98,7 +108,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   addtoany: true
@@ -112,7 +122,6 @@ hidden:
   field_character_count: true
   field_expiration_date: true
   field_file: true
-  field_first_publication_date: true
   field_metatags: true
   field_migration_path_alias: true
   field_modified_date: true

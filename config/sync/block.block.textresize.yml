@@ -1,4 +1,4 @@
-uuid: 7d616181-737b-43d1-864c-b360a3bdd569
+uuid: 2352f26f-40b8-4300-a302-c4c3b8d67fb8
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: textresize
 theme: hwc_theme
 region: header_form
-weight: -11
+weight: -13
 provider: null
 plugin: 'block_content:54f672d8-8c4d-4841-b853-74126512985f'
 settings:

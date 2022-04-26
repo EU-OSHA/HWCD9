@@ -1,4 +1,4 @@
-uuid: 27fa33e5-7226-4314-9a0b-d95e1420f9ec
+uuid: 12ea5724-a8b3-4baa-83b1-10626222eec2
 langcode: en
 status: true
 dependencies:
@@ -187,10 +187,6 @@ process:
       plugin: extract
       index:
         - '0'
-    -
-      plugin: format_date
-      from_format: Y-m-d
-      to_format: 'Y-m-d\TH:i:s'
   field_start_date/end_value:
     -
       plugin: explode
@@ -200,10 +196,6 @@ process:
       plugin: extract
       index:
         - '1'
-    -
-      plugin: format_date
-      from_format: Y-m-d
-      to_format: 'Y-m-d\TH:i:s'
   field_location: location
   field_city: city/value
   field_country_code: country/value
