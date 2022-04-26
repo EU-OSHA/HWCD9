@@ -81,7 +81,6 @@
 
     <section id="main-wrapper" class="layout-main-wrapper clearfix">
       <div class="main-container">
-
         {% if  node.getType() == "events" %}
           <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
         {% elseif node.getType() == "publication" %}
@@ -91,21 +90,34 @@
         {% elseif node.getType() == "tk_article" %}
           <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
         {% endif %}
+
         {% block content %}
             <div class="container">
-              <div class="row">
-                <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
-                  {{ page.sidebar_left }}
-                </aside>
+              {% if page.sidebar_left|length > 0 or page.sidebar_right|length > 0  %}
+                <div class="row">
+              {% else %}
+                  <div>
+              {% endif %}
+
+                {% if page.sidebar_left|length > 0 %}
+                  <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
+                    {{ page.sidebar_left }}
+                  </aside>
+                {% endif %}
+
                 <section class="section">
                   {{ page.content }}
                 </section>
-                <aside class="section col-12 col-lg-3 sidebar-second" role="complementary">
-                  {{ page.sidebar_right }}
-                </aside>
+
+                {% if page.sidebar_right|length > 0 %}
+                  <aside class="section col-12 col-lg-3 sidebar-second" role="complementary">
+                    {{ page.sidebar_right }}
+                  </aside>
+                {% endif %}
               </div>
             </div>
         {% endblock %}
+
       </div>
     </section>
 

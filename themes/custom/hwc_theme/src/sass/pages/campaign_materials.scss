@@ -9,13 +9,16 @@
       color: $text-color-blue;
     }
   }
+  .view-content.row{
+    margin: 0;
+  }
 }
 
 .cm-items-list {
   display: flex;
   flex-direction: row;
-  margin-bottom: 3em;
-  padding: 1em;
+  margin-bottom: 3rem;
+  padding: 1rem;
   background: #FFF;
   border-radius: 10px;
   position: relative;
@@ -50,6 +53,7 @@
   .group-right {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
     .metadata{
       display: flex;
       flex-direction: row;
@@ -69,6 +73,7 @@
       .num-pages{
         font-weight: bold;
         color: $text-color-blue;
+        padding-right: 4rem;
       }
     }
     .title-list {
@@ -85,6 +90,7 @@
     }
     .link-more{
       margin-top: auto;
+      margin-bottom: 0.3rem;
     }
   }
 }

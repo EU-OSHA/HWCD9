@@ -131,7 +131,7 @@ content:
     region: content
   field_cover_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false

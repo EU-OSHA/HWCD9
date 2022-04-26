@@ -1,4 +1,4 @@
-uuid: 9e070d63-a4b1-43f9-b7ae-d0b2d706368c
+uuid: acc13c2a-2538-45c5-8d6b-9443da8430af
 langcode: en
 status: true
 dependencies:
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /tools-and-publications/case-studies
+    pages: "/node/24\r\n/tools-and-publications/case-studies"

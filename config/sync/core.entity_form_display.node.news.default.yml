@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.articles_additional_resources
     - field.field.node.news.body
     - field.field.node.news.field_activity
     - field.field.node.news.field_aditional_resources
@@ -33,7 +32,6 @@ dependencies:
   module:
     - content_moderation
     - datetime
-    - entity_browser
     - media_library
     - metatag
     - path
@@ -61,7 +59,7 @@ content:
     third_party_settings: {  }
   field_activity:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS
@@ -70,22 +68,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_aditional_resources:
-    type: entity_browser_entity_reference
-    weight: 12
+    type: entity_reference_autocomplete
+    weight: 7
     region: content
     settings:
-      entity_browser: articles_additional_resources
-      field_widget_display: label
-      field_widget_edit: true
-      field_widget_remove: true
-      field_widget_replace: false
-      open: true
-      field_widget_display_settings: {  }
-      selection_mode: selection_append
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_archived:
     type: boolean_checkbox
-    weight: 9
+    weight: 10
     region: content
     settings:
       display_label: true
@@ -113,7 +107,7 @@ content:
     third_party_settings: {  }
   field_modified_by:
     type: entity_reference_autocomplete
-    weight: 14
+    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -123,7 +117,7 @@ content:
     third_party_settings: {  }
   field_modified_on:
     type: datetime_default
-    weight: 13
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -135,14 +129,14 @@ content:
     third_party_settings: {  }
   field_show_in_ncw:
     type: boolean_checkbox
-    weight: 10
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_show_on:
     type: options_select
-    weight: 11
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -156,7 +150,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
