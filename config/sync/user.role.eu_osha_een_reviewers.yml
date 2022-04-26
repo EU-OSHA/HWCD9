@@ -20,7 +20,6 @@ dependencies:
     - media
     - node
     - system
-    - toolbar
     - workbench_access
 id: eu_osha_een_reviewers
 label: 'EU-OSHA EEN Reviewers'
@@ -29,9 +28,9 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content'
+  - 'access content overview'
   - 'access hwc review tab'
   - 'access media browser'
-  - 'access toolbar'
   - 'access workbench'
   - 'access workbench access by role'
   - 'administer content moderation notifications'
@@ -48,6 +47,9 @@ permissions:
   - 'delete any document content'
   - 'delete any document media'
   - 'delete any events content'
+  - 'delete document revisions'
+  - 'delete events revisions'
+  - 'delete news revisions'
   - 'delete own document content'
   - 'delete own document media'
   - 'delete own events content'

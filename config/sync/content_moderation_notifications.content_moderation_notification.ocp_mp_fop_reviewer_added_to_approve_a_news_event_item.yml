@@ -1,0 +1,19 @@
+uuid: 18a3bc8a-b027-464c-9ed3-d2c8be357e41
+langcode: en
+status: true
+dependencies: {  }
+id: ocp_mp_fop_reviewer_added_to_approve_a_news_event_item
+workflow: news_and_events_created_by_een
+transitions:
+  skip_review_process: skip_review_process
+  requesting_approval: requesting_approval
+roles:
+  news_and_events_editor_partner_ocp_mp_fop_: news_and_events_editor_partner_ocp_mp_fop_
+author: false
+site_mail: false
+emails: ''
+subject: 'New/event item is set to be approved'
+body:
+  value: "<p>&lt;p&gt;[node:author:name] ([node:author:mail]) has submitted a [node:type] item for approval. Please see the submitted update here: &lt;a href=\"[node:url]\"&gt;[node:title]&lt;/a&gt;&lt;/p&gt;<br />\r\n&lt;p&gt;__SIGNATURE__&lt;/p&gt;</p>\r\n"
+  format: full_html
+label: 'OCP, MP, FOP Reviewer added to approve a news/event item'
