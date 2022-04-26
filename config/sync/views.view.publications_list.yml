@@ -949,7 +949,19 @@ display:
         type: none
       defaults:
         cache: false
+        header: false
       display_description: ''
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '<h2>Publications available <span>(@total)</span></h2>'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -1151,7 +1163,7 @@ display:
           admin_label: ''
           plugin_id: result
           empty: false
-          content: 'Case studies available (@total)'
+          content: '<h2>Case studies available <span>(@total)</span></h2>'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
