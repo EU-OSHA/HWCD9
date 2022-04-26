@@ -281,6 +281,10 @@ ul {
   font-weight: bold;
 }
 
+.row {
+  margin: 0;
+}
+
 h1, h2, h3, h4 {
   clear: both;
 }
@@ -1260,6 +1264,11 @@ header #navbar-main ul.navbar-nav li a {
   width: 100%;
   margin: 0;
 }
+.view-publications-list .view-content .publications-row .publications-items-list .group-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
 .view-publications-list .view-content .publications-row .publications-items-list .group-right .metadata {
   display: flex;
   flex-direction: row;
@@ -1277,6 +1286,7 @@ header #navbar-main ul.navbar-nav li a {
 .view-publications-list .view-content .publications-row .publications-items-list .group-right .metadata .num-pages {
   font-weight: bold;
   color: #003399;
+  padding-right: 4rem;
 }
 .view-publications-list .view-content .publications-row .publications-items-list .group-right .title-list {
   display: block;
@@ -1361,7 +1371,7 @@ header #navbar-main ul.navbar-nav li a {
   text-decoration: underline;
 }
 .latest-publications .box-latest-publications .right-column p:last-child {
-  margin: auto 0 0.5rem;
+  margin: auto 0 1.1rem;
 }
 .latest-publications .box-latest-publications .right-column p:last-child a.see-more-arrow {
   display: block;
@@ -1372,6 +1382,44 @@ header #navbar-main ul.navbar-nav li a {
 }
 .latest-publications .box-latest-publications.views-row-last {
   margin-right: 0;
+}
+
+/* publication detail */
+.publication-detail {
+  display: flex;
+  flex-direction: row;
+}
+.publication-detail .publications-left-column {
+  width: 25%;
+}
+.publication-detail .publications-detail-right-column .metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.publication-detail .publications-detail-right-column .metadata > span {
+  color: #57575a;
+}
+.publication-detail .publications-detail-right-column .metadata .type {
+  color: #003399;
+}
+.publication-detail .publications-detail-right-column .metadata .type label {
+  font-weight: bold;
+}
+.publication-detail .publications-detail-right-column .metadata .num-pages {
+  font-weight: bold;
+  color: #003399;
+  padding-right: 4rem;
+}
+.publication-detail .publications-detail-right-column .field-pdf-item {
+  display: flex;
+}
+.publication-detail .publications-detail-right-column .field-pdf-item span, .publication-detail .publications-detail-right-column .field-pdf-item img {
+  margin-right: 3px;
+}
+.publication-detail .publications-detail-right-column .field-pdf-item a {
+  font-weight: bold;
+  color: #003399;
 }
 
 .infographic-item {
@@ -1845,6 +1893,7 @@ header #navbar-main ul.navbar-nav li a {
 .start-here > .col.resources-networks h2:before {
   background-image: url(../images/toolkit-resources.png);
 }
+
 #block-views-block-view-campaign-materials-block-1 {
   background: #efefef;
 }
@@ -1854,12 +1903,15 @@ header #navbar-main ul.navbar-nav li a {
   font-size: 1.875rem;
   color: #003399;
 }
+#block-views-block-view-campaign-materials-block-1 .view-content.row {
+  margin: 0;
+}
 
 .cm-items-list {
   display: flex;
   flex-direction: row;
-  margin-bottom: 3em;
-  padding: 1em;
+  margin-bottom: 3rem;
+  padding: 1rem;
   background: #FFF;
   border-radius: 10px;
   position: relative;
@@ -1894,6 +1946,7 @@ header #navbar-main ul.navbar-nav li a {
 .cm-items-list .group-right {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 .cm-items-list .group-right .metadata {
   display: flex;
@@ -1912,6 +1965,7 @@ header #navbar-main ul.navbar-nav li a {
 .cm-items-list .group-right .metadata .num-pages {
   font-weight: bold;
   color: #003399;
+  padding-right: 4rem;
 }
 .cm-items-list .group-right .title-list {
   display: block;
@@ -1926,5 +1980,7 @@ header #navbar-main ul.navbar-nav li a {
 }
 .cm-items-list .group-right .link-more {
   margin-top: auto;
+  margin-bottom: 0.3rem;
 }
 
+/*# sourceMappingURL=hwc-global.css.map */
