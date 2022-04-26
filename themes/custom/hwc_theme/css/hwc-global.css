@@ -298,6 +298,14 @@ body {
   padding: 2rem 0 0;
 }
 
+.sidebar-first {
+  padding-left: 0;
+}
+
+.section-center {
+  padding-right: 0;
+}
+
 .path-media-centre .main-container,
 .page-media-centre-news .main-container,
 .page-search .main-container,
@@ -1218,10 +1226,15 @@ header #navbar-main ul.navbar-nav li a {
 }
 .view-publications-list .view-header {
   order: 2;
-  margin-top: 2rem;
+}
+.view-publications-list .view-header h2 {
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.875rem;
   color: #003399;
+}
+.view-publications-list .view-header h2 span {
+  font-size: 1.25rem;
 }
 .view-publications-list .view-content {
   order: 3;
@@ -1309,7 +1322,7 @@ header #navbar-main ul.navbar-nav li a {
 }
 
 .latest-publications {
-  padding: 1.5rem 1rem 1rem;
+  padding: 1.5rem 0rem 1rem;
 }
 .latest-publications #block-views-block-publications-slideshow-publications-slideshow > h2 {
   color: #003399;
@@ -1898,10 +1911,13 @@ header #navbar-main ul.navbar-nav li a {
   background: #efefef;
 }
 #block-views-block-view-campaign-materials-block-1 .view-header h2 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.875rem;
   color: #003399;
+}
+#block-views-block-view-campaign-materials-block-1 .view-header h2 span {
+  font-size: 1.25rem;
 }
 #block-views-block-view-campaign-materials-block-1 .view-content.row {
   margin: 0;

@@ -3,10 +3,13 @@
   background: #efefef;
   .view-header{
     h2{
-      margin-top: 2rem;
+      margin-top: 1rem;
       margin-bottom: 1rem;
       font-size: 1.875rem;
       color: $text-color-blue;
+        span{
+          font-size:1.25rem;
+        }
     }
   }
   .view-content.row{
