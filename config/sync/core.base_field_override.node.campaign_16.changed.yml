@@ -1,0 +1,18 @@
+uuid: ff711388-91db-46f7-a6d1-51fc389a71f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_16
+id: node.campaign_16.changed
+field_name: changed
+entity_type: node
+bundle: campaign_16
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

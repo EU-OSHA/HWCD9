@@ -34,10 +34,15 @@ content:
     weight: 100
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   field_contact_details: true
+  field_faq: true
+  field_gpa_links: true
   field_image: true
   field_introductory_text: true
   field_participate_date: true
   field_participate_description: true
   field_participate_upcoming_descr: true
   langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: db014777-5257-4651-b96f-2b60fa6ab8da
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.partner
+id: node.partner.status
+field_name: status
+entity_type: node
+bundle: partner
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

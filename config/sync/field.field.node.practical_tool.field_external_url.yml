@@ -14,7 +14,7 @@ bundle: practical_tool
 label: URL
 description: 'Please fill in the URL to access the material if available. You should enter the full url, including http:// or https://'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

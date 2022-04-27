@@ -1,0 +1,20 @@
+uuid: d9ed88a1-a913-4b4e-a8fa-0bbec95539f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_18
+  module:
+    - path
+id: node.campaign_18.path
+field_name: path
+entity_type: node
+bundle: campaign_18
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -18,6 +18,7 @@ dependencies:
     - media
     - node
     - system
+    - toolbar
     - workbench_access
 id: news_and_events_editor_partner_ocp_mp_fop_
 label: 'News and Events Editor – Partner (OCP, MP, FOP)'
@@ -25,7 +26,9 @@ weight: 19
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access content'
   - 'access content overview'
+  - 'access toolbar'
   - 'change own username'
   - 'create document content'
   - 'create document media'
@@ -50,5 +53,8 @@ permissions:
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'use workbench access'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view latest version'
   - 'view own unpublished content'
   - 'view the administration theme'

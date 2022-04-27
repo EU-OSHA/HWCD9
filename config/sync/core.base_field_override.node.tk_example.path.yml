@@ -1,0 +1,20 @@
+uuid: b70fcce1-76b0-4095-b813-e9bd921217bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_example
+  module:
+    - path
+id: node.tk_example.path
+field_name: path
+entity_type: node
+bundle: tk_example
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

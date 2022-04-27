@@ -1,0 +1,22 @@
+uuid: ddf528b0-da3e-40f2-a85a-ac81c2beb147
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_article
+id: node.tk_article.status
+field_name: status
+entity_type: node
+bundle: tk_article
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

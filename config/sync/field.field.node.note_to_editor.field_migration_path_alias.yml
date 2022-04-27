@@ -12,7 +12,7 @@ bundle: note_to_editor
 label: 'Migration Path Alias'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

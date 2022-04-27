@@ -1,0 +1,20 @@
+uuid: 11586d4c-1ef0-411e-af5a-60b6ac47a135
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_article
+  module:
+    - path
+id: node.tk_article.path
+field_name: path
+entity_type: node
+bundle: tk_article
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

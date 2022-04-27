@@ -12,7 +12,7 @@ bundle: article
 label: 'First publication date'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 1646812750

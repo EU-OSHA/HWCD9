@@ -5,6 +5,7 @@ dependencies:
   module:
     - comment
     - exclude_node_title
+    - media
     - search
     - system
 _core:
@@ -30,4 +31,5 @@ permissions:
   - 'use exclude node title'
   - 'use manualcrop'
   - 'view files'
+  - 'view media'
   - 'view newsletter_content_collection entity collections'
