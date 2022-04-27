@@ -1,0 +1,22 @@
+uuid: 7bfde504-33d7-4763-9c7e-21bde5dbfba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_toolkit
+id: node.tk_toolkit.promote
+field_name: promote
+entity_type: node
+bundle: tk_toolkit
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

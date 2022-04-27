@@ -1,0 +1,22 @@
+uuid: 5ae3f910-99e6-40a8-8b44-700cc012b356
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press_contact
+id: node.press_contact.status
+field_name: status
+entity_type: node
+bundle: press_contact
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

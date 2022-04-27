@@ -1,0 +1,22 @@
+uuid: 694d37e2-b4f4-45b9-b613-8364b8dc33fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area
+id: node.private_area.status
+field_name: status
+entity_type: node
+bundle: private_area
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: 9e3dd4c5-c76d-4af2-adc4-451f7f987ee5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+id: node.napo_film.promote
+field_name: promote
+entity_type: node
+bundle: napo_film
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

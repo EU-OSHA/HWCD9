@@ -1,0 +1,18 @@
+uuid: e98a4de6-6886-4af5-8c6c-5a055d39b89d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.practical_tool
+id: node.practical_tool.title
+field_name: title
+entity_type: node
+bundle: practical_tool
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

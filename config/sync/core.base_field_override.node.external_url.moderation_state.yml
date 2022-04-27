@@ -1,0 +1,18 @@
+uuid: bdd8e271-6bbd-44ba-8755-4eae14853335
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_url
+id: node.external_url.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: external_url
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

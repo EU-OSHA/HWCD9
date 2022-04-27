@@ -1,0 +1,22 @@
+uuid: 336862c0-a70e-47d8-b7e3-3a4ab1a7046b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press_contact
+id: node.press_contact.sticky
+field_name: sticky
+entity_type: node
+bundle: press_contact
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

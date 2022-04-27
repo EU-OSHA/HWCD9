@@ -1,0 +1,18 @@
+uuid: 10534367-325a-48dc-bf3b-6c7b9c2c781a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_materials
+id: node.campaign_materials.title
+field_name: title
+entity_type: node
+bundle: campaign_materials
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

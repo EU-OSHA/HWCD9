@@ -1,0 +1,20 @@
+uuid: 8677433e-4c05-458a-9e4f-24d4a22dbd94
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+id: node.napo_film.menu_link
+field_name: menu_link
+entity_type: node
+bundle: napo_film
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 6c9f6432-6e4b-48d2-951b-48373831cb39
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.publication_queue
+id: entity_subqueue.publication_queue.title
+field_name: title
+entity_type: entity_subqueue
+bundle: publication_queue
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

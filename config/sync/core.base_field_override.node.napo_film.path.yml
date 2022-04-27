@@ -1,0 +1,20 @@
+uuid: 72d19349-5653-4569-bb0f-7a6c4170e910
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+  module:
+    - path
+id: node.napo_film.path
+field_name: path
+entity_type: node
+bundle: napo_film
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

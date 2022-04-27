@@ -1,0 +1,18 @@
+uuid: 2aa01272-fc5d-480c-abfa-51904f5e024b
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.homepage_banners
+id: entity_subqueue.homepage_banners.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: homepage_banners
+label: Changed
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

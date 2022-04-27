@@ -1,0 +1,18 @@
+uuid: 01f1a345-2acb-4d1f-9de7-b2f964528068
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press_contact
+id: node.press_contact.changed
+field_name: changed
+entity_type: node
+bundle: press_contact
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

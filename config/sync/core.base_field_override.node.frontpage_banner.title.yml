@@ -1,0 +1,18 @@
+uuid: 35552d60-9feb-4289-8efc-29b8f2000a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.frontpage_banner
+id: node.frontpage_banner.title
+field_name: title
+entity_type: node
+bundle: frontpage_banner
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: e240077d-67ce-46c5-9c8e-1baf95d69619
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.flickr_gallery
+  module:
+    - path
+id: node.flickr_gallery.path
+field_name: path
+entity_type: node
+bundle: flickr_gallery
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

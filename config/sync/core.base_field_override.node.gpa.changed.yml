@@ -1,0 +1,18 @@
+uuid: f5d8122a-9274-43b9-ae95-71cc88fab511
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gpa
+id: node.gpa.changed
+field_name: changed
+entity_type: node
+bundle: gpa
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

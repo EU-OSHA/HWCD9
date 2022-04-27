@@ -1,0 +1,22 @@
+uuid: 95145a6d-ab7c-42ed-ae9c-8563a1979ec5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_toolkit
+id: node.tk_toolkit.sticky
+field_name: sticky
+entity_type: node
+bundle: tk_toolkit
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

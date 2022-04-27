@@ -1,0 +1,18 @@
+uuid: e41e87df-854a-4d03-8845-0caceca0358f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_page_sections
+id: node.home_page_sections.title
+field_name: title
+entity_type: node
+bundle: home_page_sections
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

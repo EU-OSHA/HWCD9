@@ -1,0 +1,22 @@
+uuid: 84bc0194-31f3-4fe4-95bb-4231843a4659
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gpa
+id: node.gpa.promote
+field_name: promote
+entity_type: node
+bundle: gpa
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
