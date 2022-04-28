@@ -41,6 +41,10 @@ display:
           text: Radera
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Alla
       filters:
         name:
           expose:
@@ -54,6 +58,10 @@ display:
           label: Författare
         changed:
           label: Uppdaterad
+      arguments:
+        bundle:
+          exception:
+            title: Alla
       filters:
         name:
           expose:

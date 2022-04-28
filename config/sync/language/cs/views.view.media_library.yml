@@ -37,6 +37,10 @@ display:
           text: Smazat
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Vše
       filters:
         name:
           expose:
@@ -50,6 +54,10 @@ display:
           label: Autor
         changed:
           label: Aktualizováno
+      arguments:
+        bundle:
+          exception:
+            title: Vše
       filters:
         name:
           expose:

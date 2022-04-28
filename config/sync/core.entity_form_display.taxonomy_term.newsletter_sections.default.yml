@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.newsletter_sections.feeds_item
     - field.field.taxonomy_term.newsletter_sections.field_background_color
     - field.field.taxonomy_term.newsletter_sections.field_background_image
     - field.field.taxonomy_term.newsletter_sections.field_icon
@@ -81,4 +82,10 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-hidden: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

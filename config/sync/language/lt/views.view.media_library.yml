@@ -28,6 +28,10 @@ display:
           text: Pašalinti
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:
@@ -41,6 +45,10 @@ display:
           label: Autorius
         changed:
           label: Atnaujinta
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:

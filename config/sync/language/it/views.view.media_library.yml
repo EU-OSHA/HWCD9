@@ -36,6 +36,10 @@ display:
           text: Elimina
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Tutti
       filters:
         name:
           expose:
@@ -49,6 +53,10 @@ display:
           label: Autore
         changed:
           label: Aggiornato
+      arguments:
+        bundle:
+          exception:
+            title: Tutti
       filters:
         name:
           expose:

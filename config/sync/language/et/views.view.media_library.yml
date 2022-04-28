@@ -42,6 +42,10 @@ display:
           text: Kustuta
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Kõik
       filters:
         name:
           expose:
@@ -55,6 +59,10 @@ display:
           label: Autor
         changed:
           label: Uuendatud
+      arguments:
+        bundle:
+          exception:
+            title: Kõik
       filters:
         name:
           expose:

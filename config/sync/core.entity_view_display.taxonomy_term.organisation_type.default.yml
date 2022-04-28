@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.organisation_type.feeds_item
     - field.field.taxonomy_term.organisation_type.field_crm_code
     - taxonomy.vocabulary.organisation_type
   module:
@@ -28,4 +29,7 @@ content:
     weight: 1
     region: content
 hidden:
+  breadcrumbs: true
+  feeds_item: true
   langcode: true
+  search_api_excerpt: true

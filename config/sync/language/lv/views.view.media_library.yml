@@ -29,6 +29,10 @@ display:
           text: Dzēst
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:
@@ -42,6 +46,10 @@ display:
           label: Autors
         changed:
           label: Atjaunināts
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:

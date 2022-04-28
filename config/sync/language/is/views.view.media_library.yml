@@ -39,6 +39,10 @@ display:
           text: Eyða
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Allt
       filters:
         name:
           expose:
@@ -52,6 +56,10 @@ display:
           label: Höfundur
         changed:
           label: Uppfært
+      arguments:
+        bundle:
+          exception:
+            title: Allt
       filters:
         name:
           expose:

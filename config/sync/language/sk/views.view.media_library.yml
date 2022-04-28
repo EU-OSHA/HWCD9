@@ -34,6 +34,10 @@ display:
           text: Odstrániť
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Všetko
       filters:
         name:
           expose:
@@ -47,6 +51,10 @@ display:
           label: Autor
         changed:
           label: Aktualizované
+      arguments:
+        bundle:
+          exception:
+            title: Všetko
       filters:
         name:
           expose:

@@ -42,6 +42,10 @@ display:
           text: Törlés
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Mind
       filters:
         name:
           expose:
@@ -55,6 +59,10 @@ display:
           label: Szerző
         changed:
           label: Frissítve
+      arguments:
+        bundle:
+          exception:
+            title: Mind
       filters:
         name:
           expose:

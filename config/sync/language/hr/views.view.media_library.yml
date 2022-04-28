@@ -28,6 +28,10 @@ display:
           text: Ukloni
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Svi
       filters:
         name:
           expose:
@@ -41,6 +45,10 @@ display:
           label: Autor
         changed:
           label: Osvježeno
+      arguments:
+        bundle:
+          exception:
+            title: Svi
       filters:
         name:
           expose:

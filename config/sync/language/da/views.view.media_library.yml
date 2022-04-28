@@ -41,6 +41,10 @@ display:
           text: Slet
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Alle
       filters:
         name:
           expose:
@@ -54,6 +58,10 @@ display:
           label: Forfatter
         changed:
           label: Opdateret
+      arguments:
+        bundle:
+          exception:
+            title: Alle
       filters:
         name:
           expose:

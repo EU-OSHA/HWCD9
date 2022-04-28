@@ -10,7 +10,7 @@ transitions:
   publishing_approved: publishing_approved
 roles:
   news_and_events_editor_partner_ocp_mp_fop_: news_and_events_editor_partner_ocp_mp_fop_
-author: false
+author: true
 site_mail: false
 emails: ''
 subject: 'The news/events item is published'

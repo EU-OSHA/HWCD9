@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.nace_codes.feeds_item
     - field.field.taxonomy_term.nace_codes.field_nace_changes
     - field.field.taxonomy_term.nace_codes.field_nace_code
     - field.field.taxonomy_term.nace_codes.field_nace_excludes
@@ -60,4 +61,7 @@ content:
     weight: 5
     region: content
 hidden:
+  breadcrumbs: true
+  feeds_item: true
   langcode: true
+  search_api_excerpt: true

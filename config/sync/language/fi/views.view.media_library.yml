@@ -41,6 +41,10 @@ display:
           text: Poista
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Kaikki
       filters:
         name:
           expose:
@@ -54,6 +58,10 @@ display:
           label: Tekijä
         changed:
           label: Päivitetty
+      arguments:
+        bundle:
+          exception:
+            title: Kaikki
       filters:
         name:
           expose:

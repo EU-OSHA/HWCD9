@@ -23,6 +23,10 @@ display:
           text: Изтриване
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Всички
       filters:
         name:
           expose:
@@ -36,6 +40,10 @@ display:
           label: Автор
         changed:
           label: Обновено
+      arguments:
+        bundle:
+          exception:
+            title: Всички
       filters:
         name:
           expose:

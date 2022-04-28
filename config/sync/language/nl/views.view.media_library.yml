@@ -41,6 +41,10 @@ display:
           text: Verwijderen
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Alle
       filters:
         name:
           expose:
@@ -54,6 +58,10 @@ display:
           label: Auteur
         changed:
           label: Bijgewerkt
+      arguments:
+        bundle:
+          exception:
+            title: Alle
       filters:
         name:
           expose:

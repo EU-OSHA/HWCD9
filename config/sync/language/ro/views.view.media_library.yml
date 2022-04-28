@@ -36,6 +36,10 @@ display:
           text: Şterge
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Toate
       filters:
         name:
           expose:
@@ -49,6 +53,10 @@ display:
           label: Autor
         changed:
           label: Actualizat
+      arguments:
+        bundle:
+          exception:
+            title: Toate
       filters:
         name:
           expose:

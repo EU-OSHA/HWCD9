@@ -41,6 +41,10 @@ display:
           text: Usuń
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Wszystko
       filters:
         name:
           expose:
@@ -54,6 +58,10 @@ display:
           label: Autor
         changed:
           label: Uaktualniono
+      arguments:
+        bundle:
+          exception:
+            title: Wszystko
       filters:
         name:
           expose:

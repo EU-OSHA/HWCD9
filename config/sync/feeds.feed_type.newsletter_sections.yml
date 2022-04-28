@@ -1,0 +1,36 @@
+uuid: 06be5de8-a2a1-4d2a-bb3d-e05e28bfc726
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.newsletter_sections
+  module:
+    - taxonomy
+label: 'Newsletter sections'
+id: newsletter_sections
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: newsletter_sections
+  langcode: en
+  update_existing: 1
+  update_non_existent: 'entity:unpublish_action:taxonomy_term'
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources: {  }
+mappings: {  }

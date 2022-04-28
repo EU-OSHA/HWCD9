@@ -42,6 +42,10 @@ display:
           text: Sil
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Tümü
       filters:
         name:
           expose:
@@ -55,6 +59,10 @@ display:
           label: Yazar
         changed:
           label: Güncellendi
+      arguments:
+        bundle:
+          exception:
+            title: Tümü
       filters:
         name:
           expose:
