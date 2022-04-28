@@ -106,130 +106,207 @@ custom_sources:
     value: nombre_mt
     label: nombre_mt
     machine_name: nombre_mt
+  nombre_no:
+    value: nombre_no
+    label: nombre_no
+    machine_name: nombre_no
+  nombre_pl:
+    value: nombre_pl
+    label: nombre_pl
+    machine_name: nombre_pl
+  nombre_pt:
+    value: nombre_pt
+    label: nombre_pt
+    machine_name: nombre_pt
+  nombre_ro:
+    value: nombre_ro
+    label: nombre_ro
+    machine_name: nombre_ro
+  nombre_sk:
+    value: nombre_sk
+    label: nombre_sk
+    machine_name: nombre_sk
+  nombre_sl:
+    value: nombre_sl
+    label: nombre_sl
+    machine_name: nombre_sl
+  nombre_sv:
+    value: nombre_sv
+    label: nombre_sv
+    machine_name: nombre_sv
 mappings:
   -
     target: name
     map:
       value: nombre_en
     settings:
-      language: null
+      language: en
     unique: {  }
   -
     target: name
     map:
       value: nombre_bg
     settings:
-      language: null
+      language: bg
     unique: {  }
   -
     target: name
     map:
       value: nombre_cs
     settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_de
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_el
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_es
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_et
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_fi
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_hr
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_fr
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_hu
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_is
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_it
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_lv
-    settings:
-      language: null
-    unique: {  }
-  -
-    target: name
-    map:
-      value: nombre_lt
-    settings:
-      language: null
+      language: cs
     unique: {  }
   -
     target: name
     map:
       value: nombre_da
     settings:
-      language: null
+      language: da
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_de
+    settings:
+      language: de
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_el
+    settings:
+      language: el
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_es
+    settings:
+      language: es
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_et
+    settings:
+      language: et
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_fi
+    settings:
+      language: fi
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_hr
+    settings:
+      language: hr
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_fr
+    settings:
+      language: fr
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_hu
+    settings:
+      language: hu
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_is
+    settings:
+      language: is
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_it
+    settings:
+      language: it
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_lv
+    settings:
+      language: lv
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_lt
+    settings:
+      language: lt
     unique: {  }
   -
     target: name
     map:
       value: nombre_nl
     settings:
-      language: null
+      language: nl
     unique: {  }
   -
     target: name
     map:
       value: nombre_mt
     settings:
-      language: null
+      language: mt
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_no
+    settings:
+      language: 'no'
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_pl
+    settings:
+      language: pl
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_pt
+    settings:
+      language: pt-pt
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_ro
+    settings:
+      language: ro
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_sk
+    settings:
+      language: sk
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_sl
+    settings:
+      language: sl
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_sv
+    settings:
+      language: sv
     unique: {  }
