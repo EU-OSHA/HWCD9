@@ -7,10 +7,13 @@ display:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
       exposed_form:
         options:
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         status:
           expose:
@@ -23,10 +26,15 @@ display:
             label: 'Median tyyppi'
           group_info:
             label: 'Median tyyppi'
+        langcode:
+          expose:
+            label: Kieli
   page:
     display_title: Sivu
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Muokkaa
         delete_media:
@@ -42,6 +50,10 @@ display:
       fields:
         name:
           label: Nimi
+        uid:
+          label: Tekijä
+        changed:
+          label: Päivitetty
       filters:
         name:
           expose:

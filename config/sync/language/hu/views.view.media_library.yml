@@ -27,10 +27,15 @@ display:
             label: Médiatípus
           group_info:
             label: Médiatípus
+        langcode:
+          expose:
+            label: Nyelv
   page:
     display_title: Oldal
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Szerkesztés
         delete_media:
@@ -46,6 +51,10 @@ display:
       fields:
         name:
           label: Név
+        uid:
+          label: Szerző
+        changed:
+          label: Frissítve
       filters:
         name:
           expose:

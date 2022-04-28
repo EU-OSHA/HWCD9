@@ -26,10 +26,15 @@ display:
             label: 'Medie type'
           group_info:
             label: 'Medie type'
+        langcode:
+          expose:
+            label: Sprog
   page:
     display_title: Side
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Redigér
         delete_media:
@@ -45,6 +50,10 @@ display:
       fields:
         name:
           label: Navn
+        uid:
+          label: Forfatter
+        changed:
+          label: Opdateret
       filters:
         name:
           expose:

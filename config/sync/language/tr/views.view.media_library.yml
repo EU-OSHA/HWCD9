@@ -27,10 +27,15 @@ display:
             label: 'Medya tipi'
           group_info:
             label: 'Medya tipi'
+        langcode:
+          expose:
+            label: Dil
   page:
     display_title: Sayfa
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Düzenle
         delete_media:
@@ -46,6 +51,10 @@ display:
       fields:
         name:
           label: İsim
+        uid:
+          label: Yazar
+        changed:
+          label: Güncellendi
       filters:
         name:
           expose:

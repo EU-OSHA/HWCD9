@@ -13,10 +13,15 @@ display:
         name:
           expose:
             label: Naziv
+        langcode:
+          expose:
+            label: Jezik
   page:
     display_title: Stranica
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Uredi
         delete_media:
@@ -32,6 +37,10 @@ display:
       fields:
         name:
           label: Naziv
+        uid:
+          label: Autor
+        changed:
+          label: Osvježeno
       filters:
         name:
           expose:

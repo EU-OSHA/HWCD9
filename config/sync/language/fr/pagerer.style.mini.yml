@@ -1,6 +1,7 @@
 default_config:
   tags:
     pages:
+      prefix_label: Page
       page_current_title: 'Page courante'
       first_title: 'Aller à la première page'
       previous_title: 'Aller à la page précédente'

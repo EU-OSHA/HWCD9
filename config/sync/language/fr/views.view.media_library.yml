@@ -13,6 +13,8 @@ display:
         options:
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         status:
           expose:
@@ -25,9 +27,15 @@ display:
             label: 'Type de média'
           group_info:
             label: 'Type de média'
+        langcode:
+          expose:
+            label: Langue
   page:
+    display_title: Page
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Modifier
         delete_media:
@@ -43,6 +51,10 @@ display:
       fields:
         name:
           label: Nom
+        uid:
+          label: Auteur
+        changed:
+          label: 'Mis à jour'
       filters:
         name:
           expose:

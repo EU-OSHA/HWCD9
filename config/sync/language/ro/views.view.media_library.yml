@@ -13,6 +13,7 @@ display:
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
+          sort_desc_label: Desc
       filters:
         status:
           expose:
@@ -20,10 +21,15 @@ display:
         name:
           expose:
             label: Nume
+        langcode:
+          expose:
+            label: Limba
   page:
     display_title: Pagina
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Modifică
         delete_media:
@@ -39,6 +45,10 @@ display:
       fields:
         name:
           label: Nume
+        uid:
+          label: Autor
+        changed:
+          label: Actualizat
       filters:
         name:
           expose:

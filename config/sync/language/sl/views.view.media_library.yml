@@ -9,6 +9,9 @@ display:
         name:
           expose:
             label: Ime
+        langcode:
+          expose:
+            label: Jezik
   page:
     display_title: Stran
     display_options:
@@ -28,6 +31,10 @@ display:
       fields:
         name:
           label: Ime
+        uid:
+          label: Avtor
+        changed:
+          label: Posodobljeno
       filters:
         name:
           expose:

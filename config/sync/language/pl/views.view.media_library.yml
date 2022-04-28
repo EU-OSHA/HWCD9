@@ -26,10 +26,15 @@ display:
             label: 'Typ mediów'
           group_info:
             label: 'Typ mediów'
+        langcode:
+          expose:
+            label: Język
   page:
     display_title: Strona
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Edytuj
         delete_media:
@@ -45,6 +50,10 @@ display:
       fields:
         name:
           label: Nazwa
+        uid:
+          label: Autor
+        changed:
+          label: Uaktualniono
       filters:
         name:
           expose:

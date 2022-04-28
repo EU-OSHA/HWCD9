@@ -11,6 +11,7 @@ display:
             offset_label: 'Zobraziť od'
       exposed_form:
         options:
+          reset_button_label: Reset
           exposed_sorts_label: 'Zoradiť podľa'
           sort_asc_label: Vzostupne
           sort_desc_label: Zostupne
@@ -18,10 +19,15 @@ display:
         name:
           expose:
             label: Názov
+        langcode:
+          expose:
+            label: Jazyk
   page:
     display_title: Stránka
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Upraviť
         delete_media:
@@ -37,6 +43,10 @@ display:
       fields:
         name:
           label: Názov
+        uid:
+          label: Autor
+        changed:
+          label: Aktualizované
       filters:
         name:
           expose:

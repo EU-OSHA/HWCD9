@@ -10,6 +10,9 @@ display:
         name:
           expose:
             label: Име
+        langcode:
+          expose:
+            label: Език
   page:
     display_title: Страница
     display_options:
@@ -29,6 +32,10 @@ display:
       fields:
         name:
           label: Име
+        uid:
+          label: Автор
+        changed:
+          label: Обновено
       filters:
         name:
           expose:
