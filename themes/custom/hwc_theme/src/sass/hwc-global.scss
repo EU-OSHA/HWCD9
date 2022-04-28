@@ -15,6 +15,7 @@
 @import 'components/links';
 @import 'components/modal';
 @import 'components/table';
+@import 'components/share-this';
 
 @import 'layout/banner-header';
 @import 'layout/body';
@@ -27,9 +28,10 @@
 
 @import 'pages/news-list';
 @import 'pages/publications-list';
+@import 'pages/infographics';
 @import 'pages/events-list';
-@import 'pages/campaign_toolkit';
-@import 'pages/campaign_materials';
+@import 'pages/campaign-toolkit';
+@import 'pages/campaign-materials';
 
 
 @import 'responsive/common/common-responsive';

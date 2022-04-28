@@ -1,1 +1,17 @@
+.main-container{
+  padding: 2rem 0 0;
+}
+.sidebar-first{
+  padding-left: 0;
+}
+.section-center{
+  padding-right: 0;
+}
 
+h2.node__title{
+  color: $text-color-blue;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 1em;
+  clear: both;
+}

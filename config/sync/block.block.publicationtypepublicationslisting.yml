@@ -12,7 +12,7 @@ dependencies:
 id: publicationtypepublicationslisting
 theme: hwc_theme
 region: sidebar_left
-weight: -15
+weight: -18
 provider: null
 plugin: 'facet_block:publication_type_publications_listing'
 settings:
@@ -25,4 +25,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /tools-and-publications/publications
+    pages: "/tools-and-publications/publications\r\n/node/24\r\n/tools-and-publications/case-studies"

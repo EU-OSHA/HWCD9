@@ -69,31 +69,20 @@
   node.isSticky() ? 'node--sticky',
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  'clearfix publication-detail',
+  'clearfix',
 ]
 %}
-
-{% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
-  <div class="back-to-publications pull-right">
-    <a href="/en/tools-and-publications/campaign-materials"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
-      <span>Back to campaign materials list</span>
-    </a>
-  </div>
-{% else %}
-  <div class="back-to-publications pull-right">
-    <a href="/en/tools-and-publications/publications"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
-      <span>Back to publications list</span>
-    </a>
-  </div>
-{% endif %}
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
-    {% if label and not page %}
-      <h2{{ title_attributes.addClass('node__title col-9') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
+    {% if label and node.getType() != 'article' %}
+      <h2{{ title_attributes.addClass('node__title') }}>{{ label.0 }}</h2>
     {% endif %}
+{#    {% if label and not page %}#}
+{#      <h2{{ title_attributes.addClass('node__title') }}>#}
+{#        <a href="{{ url }}" rel="bookmark">{{ label }}</a>#}
+{#      </h2>#}
+{#    {% endif %}#}
     {{ title_suffix }}
     {% if display_submitted %}
       <div class="node__meta">
@@ -107,52 +96,7 @@
       </div>
     {% endif %}
   </header>
-
-
-
-
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-    <div class="row">
-      <div class="col-md-9">
-        <h2 class="node__title">{{ label.0 }}</h2>
-      </div>
-      <div class="col-md-12">
-        <div class="publications-row">
-          <div class="publications-left-column hidden-xs">
-            {{ content.field_cover_image }}
-          </div>
-          <div class="publications-detail-right-column">
-            <div class="metadata">
-              <span class="date" datetime="{{  content.field_first_publication_date.0['#markup'] }}" >
-                {{ content.field_first_publication_date['#object'].field_first_publication_date.0.value|date("m/d/Y") }}
-              </span>
-              <span class="type" ><label>{{ 'Type'|t }}:</label> {{ content.field_publication_type.0['#title'] }}</span>
-              <span class="num-pages">
-                {% if content.field_pages_count.0 %}
-                  {{ content.field_pages_count.0 }} {{ 'pages'|t }}
-                {% else %}
-                  0 {{ 'pages'|t }}
-                {% endif %}
-              </span>
-            </div>
-
-            <div class="body">
-              {{ content.body.0 }}
-            </div>
-
-            <div class="field-pdf-item">
-              <span class="label_multilang_file">Download</span>
-              <img class="file-icon" alt="PDF file" title="application/pdf" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/x-office-presentation.png">
-              <span class="label_multilang_file">in:</span>
-              <a href="{{ file_url( content.field_file['#items'].entity.field_media_document.0.entity.uri.value ) }}" target="_blank">
-                <span class="glyphicon glyphicon-circle-arrow-down"></span> EN</a>
-            </div>
-
-          </div>
-        </div>
-        {{ content.field_logo }}
-
-      </div>
-    </div>
+    {{ content }}
   </div>
 </article>

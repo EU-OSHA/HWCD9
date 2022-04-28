@@ -63,17 +63,27 @@
         {% if page.breadcrumb %}
           <section class="section-title">
             {{ page.breadcrumb.hwc_theme_breadcrumbs }}
+
+{#            {{ dd( node.field_publication_type.0.entity.label ) }}#}
             {% if  node.getType() == "events" %}
               <h1 class="page-header">{{ 'Events'|t }}</h1>
             {% elseif node.getType() == "publication" %}
-              <h1 class="page-header">{{ 'Publications'|t }}</h1>
+              {% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
+                <h1 class="page-header">{{ 'Campaign material'|t }}</h1>
+              {% else %}
+                <h1 class="page-header">{{ 'Publications'|t }}</h1>
+              {% endif %}
             {% elseif node.getType() == "news" %}
               <h1 class="page-header">{{ 'News'|t }}</h1>
             {% elseif node.getType() == "tk_article" %}
               <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
+            {% elseif node.getType() == "infographic" %}
+              <h1 class="page-header">{{ 'infographics'|t }}</h1>
             {% else %}
               <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
             {% endif %}
+
+
           </section>
         {% endif %}
       {% endif %}
@@ -81,15 +91,6 @@
 
     <section id="main-wrapper" class="layout-main-wrapper clearfix">
       <div class="main-container">
-        {% if  node.getType() == "events" %}
-          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
-        {% elseif node.getType() == "publication" %}
-          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
-        {% elseif node.getType() == "news" %}
-          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
-        {% elseif node.getType() == "tk_article" %}
-          <h2 class="page-header container">{{ page.breadcrumb.hwc_theme_page_title }}</h2>
-        {% endif %}
 
         {% block content %}
             <div class="container">
