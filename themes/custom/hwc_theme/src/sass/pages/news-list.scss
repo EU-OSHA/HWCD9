@@ -1,7 +1,7 @@
 .node--type-news{
   .node__date{
     padding-top: 0.3rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     font-weight: 600;
     color: #57575a;
   }
@@ -9,7 +9,7 @@
     color: $text-color-blue;
     font-style: normal;
     font-weight: 400;
-    padding-top: 0em;
+    padding-top: 0;
     clear: both;
   }
   .node__summary{
@@ -32,11 +32,11 @@
   .node__content{
     display: flex;
     flex-direction: row;
-    .col-left{
+    .content-left-column{
       margin-right: 1rem;
       min-width: 222px;
     }
-    .col-right{
+    .content-right-column{
 
     }
   }
