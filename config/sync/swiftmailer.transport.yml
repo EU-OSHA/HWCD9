@@ -9,6 +9,6 @@ sendmail_mode: bs
 smtp_credential_provider: swiftmailer
 smtp_credentials:
   swiftmailer:
-    username: mtarifa@bilbomatica.es
-    password: 'Bilbao2021!*!?*+'
+    username: smtpfake223@gmail.com
+    password: 'Bilbao2021*'
 spool_directory: ''
