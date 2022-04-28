@@ -1,0 +1,8 @@
+uuid: 58b3d5bb-2804-46ca-ba2d-3eb9c46b201c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Digitalisation priority area'
+vid: digitalisation_priority_area
+description: ''
+weight: 0

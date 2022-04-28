@@ -1,0 +1,18 @@
+uuid: f7923847-b4a8-460f-9a5a-fa7d358bc461
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.digitalisation_priority_area
+id: taxonomy_term.digitalisation_priority_area.name
+field_name: name
+entity_type: taxonomy_term
+bundle: digitalisation_priority_area
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 818914ee-cf1f-4642-a7ab-3e5f2a3b0fcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.digitalisation_priority_area
+  module:
+    - path
+id: taxonomy_term.digitalisation_priority_area.path
+field_name: path
+entity_type: taxonomy_term
+bundle: digitalisation_priority_area
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
