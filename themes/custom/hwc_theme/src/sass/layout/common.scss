@@ -90,15 +90,20 @@
   }
 }
 
-/*
-.new-select-style, #edit_field_country_code_chosen, #edit-years, #edit_years_chosen {
-  height: 100%;
-  border-radius: 5px !important;
-  background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
-  padding-left: 10px;
-  width: 100%!important;
-  color: #003399;
-  cursor: pointer;
-
+/* back to page */
+.back-to-publications{
+  width: 25rem;
+  position: relative;
+  top: -1.5rem;
+  a{
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    color: $text-color-blue;
+    align-items: center;
+    img{
+      height: 12px;
+      margin-right: 5px;
+    }
+  }
 }
-*/

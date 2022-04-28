@@ -69,29 +69,20 @@
   node.isSticky() ? 'node--sticky',
   not node.isPublished() ? 'node--unpublished',
   view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  'clearfix publication-detail',
+  'clearfix',
 ]
 %}
-
-{% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
-  <div class="back-to-publications pull-right">
-    <a href="/en/tools-and-publications/campaign-materials"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
-      <span>Back to campaign materials list</span>
-    </a>
-  </div>
-{% else %}
-  <div class="back-to-publications pull-right">
-    <a href="/en/tools-and-publications/publications"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
-      <span>Back to publications list</span>
-    </a>
-  </div>
-{% endif %}
+<div class="back-to-publications pull-right">
+  <a href="/en/infographics"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+    <span>Back to Infographics</span>
+  </a>
+</div>
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
-    {% if label and not page %}
-      <h2{{ title_attributes.addClass('node__title col-9') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    {% if label %}
+      <h2{{ title_attributes.addClass('node__title') }}>
+        {{ label.0 }}
       </h2>
     {% endif %}
     {{ title_suffix }}
@@ -108,51 +99,27 @@
     {% endif %}
   </header>
 
-
-
-
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     <div class="row">
-      <div class="col-md-9">
-        <h2 class="node__title">{{ label.0 }}</h2>
+      <div class="group-left col-sm-4">
+        {{ content.field_thumbnail }}
       </div>
-      <div class="col-md-12">
-        <div class="publications-row">
-          <div class="publications-left-column hidden-xs">
-            {{ content.field_cover_image }}
-          </div>
-          <div class="publications-detail-right-column">
-            <div class="metadata">
-              <span class="date" datetime="{{  content.field_first_publication_date.0['#markup'] }}" >
-                {{ content.field_first_publication_date['#object'].field_first_publication_date.0.value|date("m/d/Y") }}
-              </span>
-              <span class="type" ><label>{{ 'Type'|t }}:</label> {{ content.field_publication_type.0['#title'] }}</span>
-              <span class="num-pages">
-                {% if content.field_pages_count.0 %}
-                  {{ content.field_pages_count.0 }} {{ 'pages'|t }}
-                {% else %}
-                  0 {{ 'pages'|t }}
-                {% endif %}
-              </span>
-            </div>
-
-            <div class="body">
-              {{ content.body.0 }}
-            </div>
-
-            <div class="field-pdf-item">
-              <span class="label_multilang_file">Download</span>
-              <img class="file-icon" alt="PDF file" title="application/pdf" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/x-office-presentation.png">
-              <span class="label_multilang_file">in:</span>
-              <a href="{{ file_url( content.field_file['#items'].entity.field_media_document.0.entity.uri.value ) }}" target="_blank">
-                <span class="glyphicon glyphicon-circle-arrow-down"></span> EN</a>
-            </div>
-
-          </div>
+      <div class="group-right col-sm-8">
+        <div class="field-pdf-item">
+          <span class="label_multilang_file">Download</span>
+          <img class="file-icon" alt="PDF file" title="application/pdf" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/application-pdf.png">
+          <span class="label_multilang_file">in:</span>
+          <a href="{{ file_url( content.field_file['#items'].entity.field_media_document.0.entity.uri.value ) }}" target="_blank">EN</a>
         </div>
-        {{ content.field_logo }}
+        <div class="field-img-item">
+          <span class="label_multilang_file">Open</span>
+          <img class="file-icon" alt="Image file" title="image/jpeg" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/image-x-generic.png">
+          <span class="label_multilang_file">in:</span>
+          <a href="{{ file_url( content.field_image['#items'].entity.field_media_image.0.entity.uri.value ) }}" target="_blank">EN</a>
+        </div>
 
       </div>
-    </div>
+      </div>
   </div>
+
 </article>

@@ -289,21 +289,24 @@ h1, h2, h3, h4 {
   clear: both;
 }
 
+#share-this-on {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+#share-this-on .text-share {
+  font-size: 0.95em;
+  font-weight: normal;
+}
+#share-this-on > a {
+  color: #003399;
+  margin-left: 10px;
+}
+
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-}
-
-.main-container {
-  padding: 2rem 0 0;
-}
-
-.sidebar-first {
-  padding-left: 0;
-}
-
-.section-center {
-  padding-right: 0;
 }
 
 .path-media-centre .main-container,
@@ -312,6 +315,12 @@ body {
 .page-media-centre-press-room .main-container,
 .page-media-centre-press-room .main-container {
   background: #efefef;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  height: auto;
+  padding-bottom: 1rem;
 }
 
 .content-fluid.green-background {
@@ -406,18 +415,24 @@ body {
   color: #575757;
 }
 
-/*
-.new-select-style, #edit_field_country_code_chosen, #edit-years, #edit_years_chosen {
-  height: 100%;
-  border-radius: 5px !important;
-  background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
-  padding-left: 10px;
-  width: 100%!important;
-  color: #003399;
-  cursor: pointer;
-
+/* back to page */
+.back-to-publications {
+  width: 25rem;
+  position: relative;
+  top: -1.5rem;
 }
-*/
+.back-to-publications a {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  color: #003399;
+  align-items: center;
+}
+.back-to-publications a img {
+  height: 12px;
+  margin-right: 5px;
+}
+
 .site-footer {
   background: #57575a;
 }
@@ -1094,9 +1109,6 @@ header #navbar-main {
   background: #003399;
   padding: 0;
 }
-header #navbar-main a {
-  color: #FFF;
-}
 header #navbar-main #block-hwc-theme-main-menu {
   width: 100%;
 }
@@ -1106,19 +1118,91 @@ header #navbar-main ul.navbar-nav {
   text-transform: uppercase;
   justify-content: space-between;
 }
-header #navbar-main ul.navbar-nav li {
+header #navbar-main ul.navbar-nav > li {
   flex: 1 1 auto;
   display: flex;
   color: #FFF;
   margin: 10px 0;
   border-right: 1px solid #FFF;
 }
-header #navbar-main ul.navbar-nav li a {
+header #navbar-main ul.navbar-nav > li:first-child a {
+  overflow: hidden;
+  height: 27px;
+}
+header #navbar-main ul.navbar-nav > li:first-child a:before {
+  content: "";
+  background: url(../images/header/campaigns-home.png) no-repeat;
+  display: block;
+  width: 100%;
+  height: 19px;
+  margin-bottom: 39px;
+  background-position: center;
+}
+header #navbar-main ul.navbar-nav > li > a {
   color: #ffffff;
   text-align: center;
   display: block;
   padding: 5px 0;
   width: 100%;
+}
+
+.dropdown-menu {
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  border: none;
+  background-color: #003399;
+  text-transform: initial;
+  padding: 6px 8px 6px 8px;
+  border-radius: 0px;
+  font-size: 1em;
+}
+.dropdown-menu > .dropdown-item {
+  width: 100%;
+  padding: 6px 0;
+  clear: both;
+  padding-left: 15px;
+  position: relative;
+}
+.dropdown-menu > .dropdown-item:hover {
+  background: transparent;
+}
+.dropdown-menu > .dropdown-item > a {
+  color: white;
+  text-align: left;
+  display: block;
+  font-style: normal;
+  padding: 0;
+  white-space: normal;
+  text-transform: none;
+}
+.dropdown-menu > .dropdown-item > a:before {
+  content: "> ";
+}
+.dropdown-menu > .dropdown-item > a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  background: #003399;
+}
+
+.main-container {
+  padding: 2rem 0 0;
+}
+
+.sidebar-first {
+  padding-left: 0;
+}
+
+.section-center {
+  padding-right: 0;
+}
+
+h2.node__title {
+  color: #003399;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 1em;
+  clear: both;
 }
 
 .view-osh-news .view-content {
@@ -1402,35 +1486,42 @@ header #navbar-main ul.navbar-nav li a {
   display: flex;
   flex-direction: row;
 }
-.publication-detail .publications-left-column {
+.publication-detail .publications-row {
+  border-bottom: 0;
+  margin-top: 2em;
+  padding: 0 2em 0 0;
+  display: flex;
+  flex-direction: row;
+}
+.publication-detail .publications-row .publications-left-column {
   width: 25%;
 }
-.publication-detail .publications-detail-right-column .metadata {
+.publication-detail .publications-row .publications-detail-right-column .metadata {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.publication-detail .publications-detail-right-column .metadata > span {
+.publication-detail .publications-row .publications-detail-right-column .metadata > span {
   color: #57575a;
 }
-.publication-detail .publications-detail-right-column .metadata .type {
+.publication-detail .publications-row .publications-detail-right-column .metadata .type {
   color: #003399;
 }
-.publication-detail .publications-detail-right-column .metadata .type label {
+.publication-detail .publications-row .publications-detail-right-column .metadata .type label {
   font-weight: bold;
 }
-.publication-detail .publications-detail-right-column .metadata .num-pages {
+.publication-detail .publications-row .publications-detail-right-column .metadata .num-pages {
   font-weight: bold;
   color: #003399;
   padding-right: 4rem;
 }
-.publication-detail .publications-detail-right-column .field-pdf-item {
+.publication-detail .publications-row .publications-detail-right-column .field-pdf-item {
   display: flex;
 }
-.publication-detail .publications-detail-right-column .field-pdf-item span, .publication-detail .publications-detail-right-column .field-pdf-item img {
+.publication-detail .publications-row .publications-detail-right-column .field-pdf-item span, .publication-detail .publications-row .publications-detail-right-column .field-pdf-item img {
   margin-right: 3px;
 }
-.publication-detail .publications-detail-right-column .field-pdf-item a {
+.publication-detail .publications-row .publications-detail-right-column .field-pdf-item a {
   font-weight: bold;
   color: #003399;
 }
@@ -1455,6 +1546,7 @@ header #navbar-main ul.navbar-nav li a {
 }
 .infographic-item .group-right .field-pdf-item {
   display: flex;
+  margin: 0.5rem 0;
 }
 .infographic-item .group-right .field-pdf-item span, .infographic-item .group-right .field-pdf-item img {
   margin-right: 3px;
@@ -1466,11 +1558,40 @@ header #navbar-main ul.navbar-nav li a {
 }
 .infographic-item .group-right .field-img-item {
   display: flex;
+  margin: 0.5rem 0;
 }
 .infographic-item .group-right .field-img-item span, .infographic-item .group-right .field-img-item img {
   margin-right: 3px;
 }
 .infographic-item .group-right .field-img-item a {
+  color: #003399;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.node--type-infographic .node__content {
+  margin: 2rem 0 0;
+}
+.node--type-infographic .field-pdf-item {
+  display: flex;
+  margin: 0.5rem 0;
+}
+.node--type-infographic .field-pdf-item span, .node--type-infographic .field-pdf-item img {
+  margin-right: 3px;
+}
+.node--type-infographic .field-pdf-item a {
+  color: #003399;
+  font-style: normal;
+  font-weight: bold;
+}
+.node--type-infographic .field-img-item {
+  display: flex;
+  margin: 0.5rem 0;
+}
+.node--type-infographic .field-img-item span, .node--type-infographic .field-img-item img {
+  margin-right: 3px;
+}
+.node--type-infographic .field-img-item a {
   color: #003399;
   font-style: normal;
   font-weight: bold;

@@ -1,0 +1,78 @@
+
+.infographic-item{
+  display: flex;
+  border-bottom: 1px dotted #749b00;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  h2{
+    display: block;
+    margin-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    line-height: 1.6rem;
+
+    a {
+      color: $text-color-blue;
+      font-style: normal;
+      font-size: 1.4rem;
+    }
+  }
+  .group-left{
+
+  }
+  .group-right{
+    .field-pdf-item{
+      display: flex;
+      margin: 0.5rem 0;
+      span, img{
+        margin-right: 3px;
+      }
+      a{
+        color: $text-color-blue;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+    .field-img-item{
+      display: flex;
+      margin: 0.5rem 0;
+      span, img{
+        margin-right: 3px;
+      }
+      a{
+        color: $text-color-blue;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.node--type-infographic{
+  .node__content{
+    margin: 2rem 0 0;
+  }
+  .field-pdf-item{
+    display: flex;
+    margin: 0.5rem 0;
+    span, img{
+      margin-right: 3px;
+    }
+    a{
+      color: $text-color-blue;
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+  .field-img-item{
+    display: flex;
+    margin: 0.5rem 0;
+    span, img{
+      margin-right: 3px;
+    }
+    a{
+      color: $text-color-blue;
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+}
