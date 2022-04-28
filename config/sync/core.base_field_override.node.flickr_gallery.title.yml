@@ -1,0 +1,18 @@
+uuid: d2b43bd3-05bc-44a0-b352-a192e45e61eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.flickr_gallery
+id: node.flickr_gallery.title
+field_name: title
+entity_type: node
+bundle: flickr_gallery
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

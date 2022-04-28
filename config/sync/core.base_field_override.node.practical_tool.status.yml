@@ -1,0 +1,22 @@
+uuid: 9a264c3a-dd04-41de-a000-aa12c77d6e06
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.practical_tool
+id: node.practical_tool.status
+field_name: status
+entity_type: node
+bundle: practical_tool
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

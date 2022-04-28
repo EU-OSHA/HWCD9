@@ -1,0 +1,18 @@
+uuid: 592501d2-55a9-4371-ab9f-ca16d1be6327
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.frontpage_banner
+id: node.frontpage_banner.changed
+field_name: changed
+entity_type: node
+bundle: frontpage_banner
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

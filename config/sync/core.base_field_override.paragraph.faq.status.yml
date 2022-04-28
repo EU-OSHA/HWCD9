@@ -1,0 +1,22 @@
+uuid: 561db57f-528b-4c4e-af29-872c1c5d0cb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.faq
+id: paragraph.faq.status
+field_name: status
+entity_type: paragraph
+bundle: faq
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

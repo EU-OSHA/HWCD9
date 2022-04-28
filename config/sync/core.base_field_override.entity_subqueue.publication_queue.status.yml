@@ -1,0 +1,22 @@
+uuid: 3c7ea324-a4f2-4071-9cd6-a345c3f19da4
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.publication_queue
+id: entity_subqueue.publication_queue.status
+field_name: status
+entity_type: entity_subqueue
+bundle: publication_queue
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

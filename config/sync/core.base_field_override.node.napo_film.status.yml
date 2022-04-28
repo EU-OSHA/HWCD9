@@ -1,0 +1,22 @@
+uuid: d0540050-bcbd-44c6-9a8a-3fc34f1add76
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+id: node.napo_film.status
+field_name: status
+entity_type: node
+bundle: napo_film
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

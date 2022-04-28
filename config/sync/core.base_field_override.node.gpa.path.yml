@@ -1,0 +1,20 @@
+uuid: 698c7b12-7195-4357-b254-f7a7f0a5fc3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gpa
+  module:
+    - path
+id: node.gpa.path
+field_name: path
+entity_type: node
+bundle: gpa
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

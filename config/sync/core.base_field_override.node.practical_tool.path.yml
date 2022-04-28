@@ -1,0 +1,20 @@
+uuid: 64982de9-657d-4d9f-9829-777ccd2fb2f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.practical_tool
+  module:
+    - path
+id: node.practical_tool.path
+field_name: path
+entity_type: node
+bundle: practical_tool
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

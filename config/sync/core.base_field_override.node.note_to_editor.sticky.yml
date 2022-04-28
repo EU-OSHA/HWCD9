@@ -1,0 +1,22 @@
+uuid: c9d6a191-f0f8-47f4-ae95-f81ce4d8769e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.note_to_editor
+id: node.note_to_editor.sticky
+field_name: sticky
+entity_type: node
+bundle: note_to_editor
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

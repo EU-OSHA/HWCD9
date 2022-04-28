@@ -1,0 +1,22 @@
+uuid: 88019027-d4f1-4cb6-830e-e7470013343a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gpa
+id: node.gpa.sticky
+field_name: sticky
+entity_type: node
+bundle: gpa
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

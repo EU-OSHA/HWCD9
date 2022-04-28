@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.practical_tool
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: node.practical_tool
 target_entity_type_id: node
 target_bundle: practical_tool

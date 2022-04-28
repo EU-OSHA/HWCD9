@@ -1,0 +1,18 @@
+uuid: 00578730-72ce-4f38-befe-f012089ebd9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area
+id: node.private_area.changed
+field_name: changed
+entity_type: node
+bundle: private_area
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

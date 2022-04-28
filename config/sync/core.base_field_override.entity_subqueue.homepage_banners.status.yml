@@ -1,0 +1,22 @@
+uuid: e4fac02c-7ad1-4dfb-962a-15ba340562a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.homepage_banners
+id: entity_subqueue.homepage_banners.status
+field_name: status
+entity_type: entity_subqueue
+bundle: homepage_banners
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

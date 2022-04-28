@@ -1,0 +1,18 @@
+uuid: 8369f67c-529e-4f68-99cf-1811196583fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gpa
+id: node.gpa.title
+field_name: title
+entity_type: node
+bundle: gpa
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

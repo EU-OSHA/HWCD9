@@ -1,0 +1,22 @@
+uuid: f54ee07d-19d2-4f1d-bb10-8bd31de3aa57
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.spotlight
+id: node.spotlight.status
+field_name: status
+entity_type: node
+bundle: spotlight
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

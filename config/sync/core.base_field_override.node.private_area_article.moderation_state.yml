@@ -1,0 +1,18 @@
+uuid: 8b69640e-728a-49f7-8987-2733f610b2d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area_article
+id: node.private_area_article.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: private_area_article
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

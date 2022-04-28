@@ -1,0 +1,22 @@
+uuid: 63e8f8e7-8da2-4b2b-943b-b42b5b24ec80
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.flickr_gallery
+id: node.flickr_gallery.promote
+field_name: promote
+entity_type: node
+bundle: flickr_gallery
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

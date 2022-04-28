@@ -1,0 +1,17 @@
+uuid: a54af284-bcb6-419f-a6f8-1a7b603a8323
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_partner
+title: 'Default cron handler'
+id: hwc_partner_cron
+weight: 0
+module: hwc_partner
+callback: hwc_partner_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

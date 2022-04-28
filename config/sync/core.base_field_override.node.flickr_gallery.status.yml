@@ -1,0 +1,22 @@
+uuid: de008124-ec8f-4d81-9fa9-76b71c34c993
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.flickr_gallery
+id: node.flickr_gallery.status
+field_name: status
+entity_type: node
+bundle: flickr_gallery
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

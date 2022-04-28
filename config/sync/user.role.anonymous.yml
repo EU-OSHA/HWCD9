@@ -6,6 +6,7 @@ dependencies:
     - comment
     - contact
     - exclude_node_title
+    - media
     - search
     - system
 _core:
@@ -30,4 +31,5 @@ permissions:
   - 'use Search Autocomplete'
   - 'use exclude node title'
   - 'view files'
+  - 'view media'
   - 'view newsletter_content_collection entity collections'

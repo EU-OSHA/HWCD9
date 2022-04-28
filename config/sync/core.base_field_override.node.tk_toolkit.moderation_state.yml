@@ -1,0 +1,18 @@
+uuid: c84e30dd-beb5-4513-8317-42c859ece101
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_toolkit
+id: node.tk_toolkit.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: tk_toolkit
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

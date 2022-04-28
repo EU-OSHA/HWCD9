@@ -1,0 +1,18 @@
+uuid: a52b1b34-65a3-4fc6-b6f5-de1dcb36095d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image_caption
+id: media.image_caption.created
+field_name: created
+entity_type: media
+bundle: image_caption
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

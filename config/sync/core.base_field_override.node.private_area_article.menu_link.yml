@@ -1,0 +1,20 @@
+uuid: 68ed1de3-39b5-44a9-b2ae-20e7481037ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area_article
+id: node.private_area_article.menu_link
+field_name: menu_link
+entity_type: node
+bundle: private_area_article
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

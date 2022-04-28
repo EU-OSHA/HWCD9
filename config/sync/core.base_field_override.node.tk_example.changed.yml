@@ -1,0 +1,18 @@
+uuid: cda747ec-1a7d-43d7-9fa5-bfb27cc95675
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_example
+id: node.tk_example.changed
+field_name: changed
+entity_type: node
+bundle: tk_example
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

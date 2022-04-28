@@ -1,0 +1,20 @@
+uuid: ac2bdb3c-3e03-4f38-a52a-75e92aeb5cf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area_article
+  module:
+    - path
+id: node.private_area_article.path
+field_name: path
+entity_type: node
+bundle: private_area_article
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

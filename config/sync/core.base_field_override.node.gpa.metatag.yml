@@ -1,0 +1,18 @@
+uuid: 372d54ba-a60f-4172-8d5a-553e4f72a2d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.gpa
+id: node.gpa.metatag
+field_name: metatag
+entity_type: node
+bundle: gpa
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

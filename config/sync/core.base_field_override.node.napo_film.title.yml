@@ -1,0 +1,18 @@
+uuid: b86d73fb-6402-47a4-936f-6444eea914d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+id: node.napo_film.title
+field_name: title
+entity_type: node
+bundle: napo_film
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
