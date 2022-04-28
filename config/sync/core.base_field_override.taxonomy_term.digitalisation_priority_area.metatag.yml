@@ -1,0 +1,18 @@
+uuid: a781e01f-cd38-48ba-b11e-1160452b977c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.digitalisation_priority_area
+id: taxonomy_term.digitalisation_priority_area.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: digitalisation_priority_area
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

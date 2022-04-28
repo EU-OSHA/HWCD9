@@ -1,0 +1,22 @@
+uuid: 1ac93d54-ebec-408c-a4a4-5aeb440641cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.digitalisation_priority_area
+id: taxonomy_term.digitalisation_priority_area.status
+field_name: status
+entity_type: taxonomy_term
+bundle: digitalisation_priority_area
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
