@@ -26,16 +26,25 @@ display:
             label: Mediatyp
           group_info:
             label: Mediatyp
+        langcode:
+          expose:
+            label: Språk
   page:
     display_title: Sida
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Redigera
         delete_media:
           text: Radera
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Alla
       filters:
         name:
           expose:
@@ -45,6 +54,14 @@ display:
       fields:
         name:
           label: Namn
+        uid:
+          label: Författare
+        changed:
+          label: Uppdaterad
+      arguments:
+        bundle:
+          exception:
+            title: Alla
       filters:
         name:
           expose:

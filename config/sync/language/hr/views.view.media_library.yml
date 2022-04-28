@@ -13,16 +13,25 @@ display:
         name:
           expose:
             label: Naziv
+        langcode:
+          expose:
+            label: Jezik
   page:
     display_title: Stranica
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Uredi
         delete_media:
           text: Ukloni
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Svi
       filters:
         name:
           expose:
@@ -32,6 +41,14 @@ display:
       fields:
         name:
           label: Naziv
+        uid:
+          label: Autor
+        changed:
+          label: Osvježeno
+      arguments:
+        bundle:
+          exception:
+            title: Svi
       filters:
         name:
           expose:

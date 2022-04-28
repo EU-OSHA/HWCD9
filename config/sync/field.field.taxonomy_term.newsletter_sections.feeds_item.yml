@@ -1,0 +1,23 @@
+uuid: 6de66d9e-c300-4e9a-a034-a48f7172bde2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.feeds_item
+    - taxonomy.vocabulary.newsletter_sections
+  module:
+    - feeds
+id: taxonomy_term.newsletter_sections.feeds_item
+field_name: feeds_item
+entity_type: taxonomy_term
+bundle: newsletter_sections
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

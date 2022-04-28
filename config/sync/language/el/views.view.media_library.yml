@@ -22,16 +22,25 @@ display:
         name:
           expose:
             label: Όνομα
+        langcode:
+          expose:
+            label: Γλώσσα
   page:
     display_title: Σελίδα
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Επεξεργασία
         delete_media:
           text: Διαγραφή
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Όλες
       filters:
         name:
           expose:
@@ -41,6 +50,14 @@ display:
       fields:
         name:
           label: Όνομα
+        uid:
+          label: Συντάκτης
+        changed:
+          label: Ενημερώθηκε
+      arguments:
+        bundle:
+          exception:
+            title: Όλες
       filters:
         name:
           expose:

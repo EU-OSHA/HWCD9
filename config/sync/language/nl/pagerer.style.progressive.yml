@@ -16,3 +16,6 @@ default_config:
       last_reader: 'Laatste pagina'
     items:
       first_reader: 'Eerste item'
+    item_ranges:
+      prefix_label: Items
+      page_reader: Items

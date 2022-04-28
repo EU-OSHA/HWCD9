@@ -10,6 +10,9 @@ display:
         name:
           expose:
             label: Име
+        langcode:
+          expose:
+            label: Език
   page:
     display_title: Страница
     display_options:
@@ -20,6 +23,10 @@ display:
           text: Изтриване
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Всички
       filters:
         name:
           expose:
@@ -29,6 +36,14 @@ display:
       fields:
         name:
           label: Име
+        uid:
+          label: Автор
+        changed:
+          label: Обновено
+      arguments:
+        bundle:
+          exception:
+            title: Всички
       filters:
         name:
           expose:

@@ -9,6 +9,9 @@ display:
         name:
           expose:
             label: Ime
+        langcode:
+          expose:
+            label: Jezik
   page:
     display_title: Stran
     display_options:
@@ -19,6 +22,10 @@ display:
           text: Izbriši
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Vsi
       filters:
         name:
           expose:
@@ -28,6 +35,14 @@ display:
       fields:
         name:
           label: Ime
+        uid:
+          label: Avtor
+        changed:
+          label: Posodobljeno
+      arguments:
+        bundle:
+          exception:
+            title: Vsi
       filters:
         name:
           expose:

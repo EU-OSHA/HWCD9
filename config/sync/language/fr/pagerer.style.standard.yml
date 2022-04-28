@@ -1,6 +1,7 @@
 default_config:
   tags:
     pages:
+      prefix_label: Page
       first: '« Premier'
       previous: '‹ Précédent'
       next: 'Suivant ›'
@@ -12,6 +13,7 @@ default_config:
       next_title: 'Aller à la page suivante'
       last_title: 'Aller à la dernière page'
       page_current_reader: 'Page courante'
+      page_reader: Page
       first_reader: 'Première page'
       previous_reader: 'Page précédente'
       next_reader: 'Page suivante'

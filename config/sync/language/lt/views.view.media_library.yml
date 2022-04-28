@@ -15,6 +15,9 @@ display:
         name:
           expose:
             label: Pavadinimas
+        langcode:
+          expose:
+            label: Kalba
   page:
     display_title: Puslapis
     display_options:
@@ -25,6 +28,10 @@ display:
           text: Pašalinti
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:
@@ -34,6 +41,14 @@ display:
       fields:
         name:
           label: Pavadinimas
+        uid:
+          label: Autorius
+        changed:
+          label: Atnaujinta
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:

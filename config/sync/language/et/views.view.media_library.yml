@@ -27,16 +27,25 @@ display:
             label: 'Meedia tüüp'
           group_info:
             label: 'Meedia tüüp'
+        langcode:
+          expose:
+            label: Keel
   page:
     display_title: Lehekülg
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Muuda
         delete_media:
           text: Kustuta
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Kõik
       filters:
         name:
           expose:
@@ -46,6 +55,14 @@ display:
       fields:
         name:
           label: Nimi
+        uid:
+          label: Autor
+        changed:
+          label: Uuendatud
+      arguments:
+        bundle:
+          exception:
+            title: Kõik
       filters:
         name:
           expose:

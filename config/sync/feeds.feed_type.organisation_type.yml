@@ -1,0 +1,235 @@
+uuid: daa7d0ae-88f9-45f7-8673-77716f00dc57
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.organisation_type.name
+    - taxonomy.vocabulary.organisation_type
+  module:
+    - taxonomy
+label: 'Organisation type'
+id: organisation_type
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: organisation_type
+  langcode: en
+  update_existing: 1
+  update_non_existent: 'entity:unpublish_action:taxonomy_term'
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  nombre_en:
+    value: nombre_en
+    label: nombre_en
+    machine_name: nombre_en
+  nombre_bg:
+    value: nombre_bg
+    label: nombre_bg
+    machine_name: nombre_bg
+  nombre_cs:
+    value: nombre_cs
+    label: nombre_cs
+    machine_name: nombre_cs
+  nombre_de:
+    value: nombre_de
+    label: nombre_de
+    machine_name: nombre_de
+  nombre_el:
+    value: nombre_el
+    label: nombre_el
+    machine_name: nombre_el
+  nombre_es:
+    value: nombre_es
+    label: nombre_es
+    machine_name: nombre_es
+  nombre_et:
+    value: nombre_et
+    label: nombre_et
+    machine_name: nombre_et
+  nombre_fi:
+    value: nombre_fi
+    label: nombre_fi
+    machine_name: nombre_fi
+  nombre_hr:
+    value: nombre_hr
+    label: nombre_hr
+    machine_name: nombre_hr
+  nombre_fr:
+    value: nombre_fr
+    label: nombre_fr
+    machine_name: nombre_fr
+  nombre_hu:
+    value: nombre_hu
+    label: nombre_hu
+    machine_name: nombre_hu
+  nombre_is:
+    value: nombre_is
+    label: nombre_is
+    machine_name: nombre_is
+  nombre_it:
+    value: nombre_it
+    label: nombre_it
+    machine_name: nombre_it
+  nombre_lv:
+    value: nombre_lv
+    label: nombre_lv
+    machine_name: nombre_lv
+  nombre_lt:
+    value: nombre_lt
+    label: nombre_lt
+    machine_name: nombre_lt
+  nombre_da:
+    value: nombre_da
+    label: nombre_da
+    machine_name: nombre_da
+  nombre_nl:
+    value: nombre_nl
+    label: nombre_nl
+    machine_name: nombre_nl
+  nombre_mt:
+    value: nombre_mt
+    label: nombre_mt
+    machine_name: nombre_mt
+mappings:
+  -
+    target: name
+    map:
+      value: nombre_en
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_bg
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_cs
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_de
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_el
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_es
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_et
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_fi
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_hr
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_fr
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_hu
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_is
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_it
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_lv
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_lt
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_da
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_nl
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: nombre_mt
+    settings:
+      language: null
+    unique: {  }
