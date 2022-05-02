@@ -108,9 +108,6 @@
     {% endif %}
   </header>
 
-
-
-
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     <div class="row">
       <div class="col-md-9">
@@ -139,20 +136,29 @@
             <div class="body">
               {{ content.body.0 }}
             </div>
+{#{{ dd( node.field_file.0.entity ) }}#}
+
 
             <div class="field-pdf-item">
               <span class="label_multilang_file">Download</span>
               <img class="file-icon" alt="PDF file" title="application/pdf" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/x-office-presentation.png">
               <span class="label_multilang_file">in:</span>
-              <a href="{{ file_url( content.field_file['#items'].entity.field_media_document.0.entity.uri.value ) }}" target="_blank">
-                <span class="glyphicon glyphicon-circle-arrow-down"></span> EN</a>
+
+              {% for languages in node.getTranslationLanguages() %}
+                {% set lang = languages.id  %}
+                {% set url = node.getTranslation(lang).field_file.0.entity.field_media_document.0.entity.uri.value %}
+                {% if url %}
+                <a href="{{ file_url( url ) }}" target="_blank">
+                  {{ lang|upper }}</a>
+                {% endif %}
+              {% endfor %}
+
             </div>
 
           </div>
         </div>
-        {{ content.field_logo }}
-
       </div>
     </div>
   </div>
 </article>
+
