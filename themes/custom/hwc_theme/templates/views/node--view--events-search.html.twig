@@ -4,8 +4,6 @@
 {% set CountryName = content.field_country_code.0['#markup']  %}
 {% set euFlag = content.field_show_eu_flag.0  %}
 {% set city = content.field_city.0  %}
-{#{% set StartDate = content.field_start_date.0.start_date['#markup']  %}#}
-{#{% set EndDate = content.field_start_date.0.end_date['#markup']  %}#}
 {% set StartDate = content.field_start_date.0.start_date != null ?
   content.field_start_date.0.start_date['#markup'] :
   content.field_start_date.0['#markup']
@@ -22,16 +20,16 @@
     <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_image }}</a>
 {% if CountryCode == "EU" or CountryCode == "EUROPA" %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/European-Union-180x180.png"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/European-Union-180x180.png" alt="{{ CountryName }}"></a>
       </div>
 {% else %}
     {% if  euFlag == "Yes" %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png" alt="{{ CountryName }}"></a>
       </div>
     {% else %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png" alt="{{ CountryName }}"></a>
       </div>
     {% endif %}
 {% endif %}
