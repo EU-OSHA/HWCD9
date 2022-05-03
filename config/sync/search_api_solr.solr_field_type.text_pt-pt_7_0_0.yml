@@ -447,8 +447,7 @@ text_files:
     teria
     teríamos
     teriam
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"

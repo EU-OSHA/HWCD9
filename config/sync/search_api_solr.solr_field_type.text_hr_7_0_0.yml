@@ -360,8 +360,7 @@ text_files:
     želeo
     želi
     znati
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"

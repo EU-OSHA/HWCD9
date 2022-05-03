@@ -1,0 +1,15 @@
+{#
+{{  drupal_dump(elements) }}
+{{  drupal_dump(elements.content) }}
+{{  drupal_dump(elements.content.0['#items']) }}
+{{  drupal_dump(elements.content.0['#items'].0['#title']['#value']) }}
+#}
+
+
+{%  for item in elements.content.0['#items'] %}
+
+<div class="facet-item">
+  <a class="hwc-char-link a1" href="#hwc-char-0-{{ item['#title']['#value'] }}">{{ item['#title']['#value'] }}</a>
+</div>
+
+{% endfor %}
