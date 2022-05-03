@@ -76,15 +76,25 @@
 {% set CountryName = content.field_country_code.0['#markup']  %}
 {% set euFlag = content.field_show_eu_flag.0  %}
 {% set city = content.field_city.0 %}
-{% set StartDate = content.field_start_date.0.start_date['#text']   %}
-{% set EndDate = content.field_start_date.0.end_date['#text']  %}
+{% set StartDate = content.field_start_date.0.start_date != null ?
+    content.field_start_date.0.start_date['#text'] :
+    content.field_start_date.0['#attributes']['datetime'] | date('d/m/Y')
+%}
+{% set EndDate = content.field_start_date.0.end_date != null ?
+  content.field_start_date.0.end_date['#text'] :
+  content.field_start_date.0['#attributes']['datetime'] | date('d/m/Y')
+%}
+
+
 {% set url = path('entity.node.canonical', {'node': node.id})  %}
 
 <div class="back-to-publications pull-right">
-  <a href="/en/media-centre/events"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+  <a href="../media-centre/events"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
     <span>Back to events list</span>
+    {{ path }}
   </a>
 </div>
+
 
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
@@ -114,14 +124,21 @@
 
       {% if StartDate or EndDate %}
         <div class="field__date">
+
           <div class="date-start-end">
             {% if StartDate  %}
-              <span class="date" >{{ StartDate }}</span> to
+              <span class="date" >{{ StartDate }}</span>
             {% endif %}
-            {% if EndDate %}
-              <span class="date" >{{ EndDate }}</span>
-            {% endif %}
+
+            {% if StartDate != EndDate %}
+              to
+            <span class="date" > {{ EndDate }}</span>
+            {% endif  %}
+
+            {{ content.field_add_to_calendar }}
+
           </div>
+
         </div>
       {% endif %}
 

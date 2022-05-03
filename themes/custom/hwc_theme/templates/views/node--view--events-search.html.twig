@@ -4,11 +4,20 @@
 {% set CountryName = content.field_country_code.0['#markup']  %}
 {% set euFlag = content.field_show_eu_flag.0  %}
 {% set city = content.field_city.0  %}
-{% set StartDate = content.field_start_date.0.start_date['#markup']  %}
-{% set EndDate = content.field_start_date.0.end_date['#markup']  %}
+{#{% set StartDate = content.field_start_date.0.start_date['#markup']  %}#}
+{#{% set EndDate = content.field_start_date.0.end_date['#markup']  %}#}
+{% set StartDate = content.field_start_date.0.start_date != null ?
+  content.field_start_date.0.start_date['#markup'] :
+  content.field_start_date.0['#markup']
+%}
+{% set EndDate = content.field_start_date.0.end_date != null ?
+  content.field_start_date.0.end_date['#markup'] :
+  content.field_start_date.0['#markup']
+%}
 {% set url = path('entity.node.canonical', {'node': node.id})  %}
 
 <section class="event-items-list">
+<div class="row w-100">
   <div class="group-left">
     <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_image }}</a>
 {% if CountryCode == "EU" or CountryCode == "EUROPA" %}
@@ -30,12 +39,14 @@
 
   </div>
   <div class="group-right col-md-10 col-sm-10">
+
     {% if StartDate or EndDate %}
       <div class="date-start-end">
         {% if StartDate  %}
-          <span class="date" datetime="{{ StartDate }}" >{{ StartDate }}</span> to
+          <span class="date" datetime="{{ StartDate }}" >{{ StartDate }}</span>
         {% endif %}
-        {% if EndDate %}
+        {% if EndDate != StartDate %}
+          to
           <span class="date" datetime="{{ EndDate }}" >{{ EndDate }}</span>
         {% endif %}
       </div>
@@ -62,5 +73,8 @@
       <a href="{{ url }}" class="more-link">{{ 'See more'|t }}</a>
     </p>
 
+    {{ content.field_add_to_calendar }}
+
   </div>
+</div>
 </section>

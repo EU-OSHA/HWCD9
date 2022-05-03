@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.events.body
     - field.field.node.events.field_activity
+    - field.field.node.events.field_add_to_calendar
     - field.field.node.events.field_adonis
     - field.field.node.events.field_agency_contact_reply
     - field.field.node.events.field_agency_initial_contact
@@ -78,7 +79,10 @@ content:
     weight: 100
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   field_activity: true
+  field_add_to_calendar: true
   field_adonis: true
   field_agency_contact_reply: true
   field_agency_initial_contact: true
@@ -124,3 +128,4 @@ hidden:
   field_workbench_access: true
   field_xmlsitemap: true
   langcode: true
+  search_api_excerpt: true
