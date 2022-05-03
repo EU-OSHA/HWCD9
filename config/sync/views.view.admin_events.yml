@@ -34,6 +34,7 @@ dependencies:
     - serialization
     - taxonomy
     - user
+    - views_data_export
     - xls_serialization
 id: admin_events
 label: Events
@@ -60,10 +61,10 @@ display:
           admin_label: ''
           plugin_id: field
           label: Color
-          exclude: true
+          exclude: false
           alter:
             alter_text: true
-            text: '{{ field_color__value }}'
+            text: '{{ field_color__value | lower |trim}}'
             make_link: false
             path: ''
             absolute: false
@@ -2766,7 +2767,7 @@ display:
         type: table
         options:
           grouping: {  }
-          row_class: ''
+          row_class: red
           default_row_class: true
           columns:
             field_color: field_color
@@ -2999,7 +3000,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<div class=\"colours\">\r\n  <div class=\"red\"></div><p>TBD - TBC<br></p>\r\n  <div class=\"black\"></div><p>Confirmed<br></p>\r\n  <div class=\"grey\"></div><p>Only web or not attendance</p>\r\n</div>"
+            value: "<table class=\"colours\">\r\n  <tr class=\"red\">TBD - TBC<br></tr>\r\n  <tr class=\"black\"></div><p>Confirmed<br></tr>\r\n  <tr class=\"grey\"></div><p>Only web or not attendance</tr>\r\n</table>"
             format: full_html
           tokenize: false
       footer:
@@ -3048,18 +3049,91 @@ display:
         - 'config:field.storage.node.field_start_date'
         - 'config:field.storage.node.field_type_event'
         - 'config:field.storage.node.field_website_of_event'
+  data_export_1:
+    id: data_export_1
+    display_title: 'Data export'
+    display_plugin: data_export
+    position: 2
+    display_options:
+      enabled: true
+      style:
+        type: data_export
+        options:
+          formats:
+            xlsx: xlsx
+          csv_settings:
+            delimiter: ','
+            enclosure: '"'
+            escape_char: \
+            strip_tags: true
+            trim: true
+            encoding: utf8
+            utf8_bom: '0'
+            use_serializer_encode_only: false
+          xls_settings:
+            xls_format: Excel2007
+            metadata:
+              creator: ''
+              last_modified_by: ''
+              title: ''
+              description: ''
+              subject: ''
+              keywords: ''
+              category: ''
+              manager: ''
+              company: ''
+      rendering_language: '***LANGUAGE_language_content***'
+      display_extenders: {  }
+      path: export/event/list/%
+      displays:
+        page_1: page_1
+        default: '0'
+      filename: events.xls
+      automatic_download: true
+      store_in_public_file_directory: null
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - request_format
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_activity'
+        - 'config:field.storage.node.field_adonis'
+        - 'config:field.storage.node.field_agency_contact_reply'
+        - 'config:field.storage.node.field_agency_rep_confirmed'
+        - 'config:field.storage.node.field_agency_role'
+        - 'config:field.storage.node.field_agenda'
+        - 'config:field.storage.node.field_city'
+        - 'config:field.storage.node.field_color'
+        - 'config:field.storage.node.field_country_code'
+        - 'config:field.storage.node.field_for_the_web'
+        - 'config:field.storage.node.field_key_performance'
+        - 'config:field.storage.node.field_media_promotion'
+        - 'config:field.storage.node.field_number_of_attendees'
+        - 'config:field.storage.node.field_organizer'
+        - 'config:field.storage.node.field_publications_exhibition_su'
+        - 'config:field.storage.node.field_start_date'
+        - 'config:field.storage.node.field_type_event'
+        - 'config:field.storage.node.field_website_of_event'
   excel_export_1:
     id: excel_export_1
     display_title: 'Excel export'
     display_plugin: excel_export
-    position: 2
+    position: 3
     display_options:
       display_extenders: {  }
       pager:
         type: none
         options:
           offset: '0'
-      path: admin/content/events-export
+      path: export/event/list/%
       filename: events.xlsx
       style:
         type: excel_export
@@ -4468,6 +4542,7 @@ display:
           field_api_classes: false
       defaults:
         fields: false
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -4503,8 +4578,47 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      enabled: true
       defaults:
+        header: false
         footer: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<div>\r\n<p><a href=\"[site:url]/node/add/events\" class=\"button button-action button--primary button--small\" data-drupal-link-system-path=\"node/add/events\">Add event</a></p>\r\n</div>\r\n"
+            format: full_html
+          tokenize: false
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: 'Total: @total'
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: "<div class=\"colours\">\r\n<div class=\"red\"></div><p>TBD - TBC</p>\r\n<div class=\"black\"></div><p>Confirmed</p>\r\n<div class=\"grey\"></div><p>Only web or not attendance</p>\r\n</div>"
+            format: full_html
+          tokenize: false
       footer:
         result:
           id: result
@@ -4516,19 +4630,7 @@ display:
           plugin_id: result
           empty: false
           content: 'Displaying @start - @end of @total'
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: false
-          content:
-            value: "<div class=\"\">\r\n<a href=\"/admin/content/events-export\"><img src=\"/modules/custom/ncw_backend/images/xlsx.png\"></a>\r\n</div>"
-            format: full_html
-          tokenize: false
+      rendering_language: '***LANGUAGE_language_content***'
       display_extenders: {  }
       path: admin/content/events
       menu:
@@ -4543,7 +4645,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args

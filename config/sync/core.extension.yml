@@ -3,6 +3,7 @@ _core:
 module:
   action: 0
   addtoany: 0
+  addtocalendar: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   anchor_link: 0
@@ -63,6 +64,7 @@ module:
   help: 0
   history: 0
   hreflang: 0
+  hwc_backend: 0
   hwc_crm_partners_migration: 0
   hwc_custom_migrations: 0
   hwc_import_export: 0
@@ -136,6 +138,7 @@ module:
   views_data_export: 0
   views_templates: 0
   views_ui: 0
+  views_year_filter: 0
   workbench_access: 0
   workflows: 0
   xls_serialization: 0

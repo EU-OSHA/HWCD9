@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.events.body
     - field.field.node.events.field_activity
+    - field.field.node.events.field_add_to_calendar
     - field.field.node.events.field_adonis
     - field.field.node.events.field_agency_contact_reply
     - field.field.node.events.field_agency_initial_contact
@@ -52,6 +53,7 @@ dependencies:
     - node.type.events
     - workflows.workflow.news_and_events_created_by_een
   module:
+    - addtocalendar
     - content_moderation
     - datetime_range
     - field_group
@@ -68,7 +70,7 @@ third_party_settings:
       label: Contact
       region: content
       parent_name: ''
-      weight: 42
+      weight: 43
       format_type: fieldset
       format_settings:
         classes: ''
@@ -105,6 +107,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_add_to_calendar:
+    type: add_to_calendar_widget_type
+    weight: 42
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_adonis:
     type: string_textfield
