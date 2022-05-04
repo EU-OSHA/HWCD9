@@ -1,4 +1,4 @@
-uuid: cae5a3e4-2b29-4cad-aaf1-512ee9552b93
+uuid: b12ca5c2-adf9-47da-8c2b-dcf8edae197c
 langcode: en
 status: true
 dependencies:
@@ -9,12 +9,12 @@ dependencies:
     - search_api.index.partner_countries
     - taxonomy.vocabulary.partner_types
   content:
-    - 'taxonomy_term:partner_types:112555ff-92a7-4c13-968b-4454259486bf'
+    - 'taxonomy_term:partner_types:20b04b99-e441-48ff-acbe-e2d2fa8278d4'
   module:
     - search_api
     - taxonomy
-id: partner_countries_solr
-label: 'Partner countries solr'
+id: partner_countries_een_osh_ambassador_
+label: 'Partner countries(EEN OSH Ambassador)'
 module: views
 description: ''
 tag: ''
@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Partner countries solr'
+      title: 'Partner countries(EEN OSH Ambassador)'
       fields:
         field_iso2:
           id: field_iso2
@@ -277,8 +277,8 @@ display:
                 display_method: label
               wg_role_2:
                 display_method: label
-        field_logo:
-          id: field_logo
+        field_logo_1:
+          id: field_logo_1
           table: search_api_datasource_partner_countries_entity_node
           field: field_logo
           relationship: none
@@ -370,8 +370,8 @@ display:
               video:
                 display_method: label
                 view_mode: default
-        title:
-          id: title
+        title_1:
+          id: title_1
           table: search_api_datasource_partner_countries_entity_node
           field: title
           relationship: none
@@ -423,7 +423,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -460,7 +460,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: tag
+        type: none
         options: {  }
       empty: {  }
       sorts:
@@ -489,7 +489,7 @@ display:
           plugin_id: search_api_term
           operator: or
           value:
-            - 464
+            - 462
           group: 1
           exposed: false
           expose:
@@ -519,7 +519,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: true
+          reduce_duplicates: false
           vid: partner_types
           type: textfield
           hierarchy: false
@@ -541,11 +541,6 @@ display:
           default_row_class: true
       row:
         type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
       query:
         type: views_query
         options:
@@ -588,11 +583,10 @@ display:
     display_options:
       cache:
         type: none
-        options: {  }
       defaults:
         cache: false
       display_extenders: {  }
-      path: campaign-partners/campaign-media-partners
+      path: campaign-partners/enterprise-europe-network
     cache_metadata:
       max-age: -1
       contexts:
