@@ -2,6 +2,9 @@ display:
   default:
     display_title: Standard
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: Handling
       pager:
         options:
           expose:
@@ -33,6 +36,8 @@ display:
     display_title: Side
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Handling
         name:
           separator: ', '
         edit_media:

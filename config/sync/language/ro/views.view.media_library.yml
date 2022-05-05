@@ -2,6 +2,9 @@ display:
   default:
     display_title: Implicit
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: Acțiune
       pager:
         options:
           expose:
@@ -28,6 +31,8 @@ display:
     display_title: Pagina
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Acțiune
         name:
           separator: ', '
         edit_media:

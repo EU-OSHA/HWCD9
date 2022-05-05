@@ -3,6 +3,9 @@ display:
     display_title: Predvolené
     display_options:
       title: Médiá
+      fields:
+        media_bulk_form:
+          action_title: Akcia
       pager:
         options:
           expose:
@@ -26,6 +29,8 @@ display:
     display_title: Stránka
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Akcia
         name:
           separator: ', '
         edit_media:

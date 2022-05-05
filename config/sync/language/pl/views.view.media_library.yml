@@ -2,6 +2,9 @@ display:
   default:
     display_title: Domyślny
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: Akcja
       pager:
         options:
           expose:
@@ -33,6 +36,8 @@ display:
     display_title: Strona
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Akcja
         name:
           separator: ', '
         edit_media:

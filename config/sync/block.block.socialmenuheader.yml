@@ -11,7 +11,7 @@ dependencies:
 id: socialmenuheader
 theme: hwc_theme
 region: header_form
-weight: -12
+weight: -15
 provider: null
 plugin: 'block_content:61290de5-8821-4dbf-a325-919327117a5f'
 settings:
