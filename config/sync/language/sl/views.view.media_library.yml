@@ -2,6 +2,9 @@ display:
   default:
     display_title: Privzeto
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: Akcija
       exposed_form:
         options:
           reset_button_label: Ponastavi
@@ -16,6 +19,8 @@ display:
     display_title: Stran
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Akcija
         edit_media:
           text: Uredi
         delete_media:

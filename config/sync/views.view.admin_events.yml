@@ -61,7 +61,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: Color
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: '{{ field_color__value | lower |trim}}'

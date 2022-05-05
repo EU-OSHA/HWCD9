@@ -3,6 +3,9 @@ display:
     display_title: Alapértelmezés
     display_options:
       title: Média
+      fields:
+        media_bulk_form:
+          action_title: Művelet
       pager:
         options:
           expose:
@@ -34,6 +37,8 @@ display:
     display_title: Oldal
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Művelet
         name:
           separator: ', '
         edit_media:

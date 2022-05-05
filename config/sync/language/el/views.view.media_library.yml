@@ -3,6 +3,9 @@ display:
     display_title: Προεπιλεγμένο
     display_options:
       title: Μέσα
+      fields:
+        media_bulk_form:
+          action_title: Ενέργεια
       pager:
         options:
           expose:
@@ -29,6 +32,8 @@ display:
     display_title: Σελίδα
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Ενέργεια
         name:
           separator: ', '
         edit_media:
