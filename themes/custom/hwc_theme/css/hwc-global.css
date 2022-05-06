@@ -316,12 +316,6 @@ body {
   background: #efefef;
 }
 
-.site-footer {
-  margin-top: 3rem;
-  height: auto;
-  padding-bottom: 1rem;
-}
-
 .content-fluid.green-background {
   clear: both;
   background: #daea96;
@@ -364,6 +358,9 @@ body {
 #main-wrapper .views-exposed-form .form-row {
   display: flex;
   align-items: flex-end;
+}
+#main-wrapper .views-exposed-form .form-row > fieldset {
+  flex: 1 1 auto;
 }
 #main-wrapper .views-exposed-form label {
   color: #003399 !important;
@@ -531,6 +528,8 @@ body {
 
 .site-footer {
   background: #57575a;
+  height: auto;
+  padding-bottom: 1rem;
 }
 
 .footer {
@@ -1131,7 +1130,7 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
 .section-title {
   background: url(../images/banner-background-article.png) no-repeat #acc700;
   padding-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   width: 100%;
 }
 .section-title h1 {
@@ -1251,7 +1250,7 @@ h2.node__title {
   color: #003399;
   font-style: normal;
   font-weight: 400;
-  padding-top: 1em;
+  padding-top: 1rem;
   clear: both;
 }
 
@@ -1343,7 +1342,7 @@ h2.node__title {
 }
 
 .node-content {
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
 
 .available-publication {
@@ -1408,6 +1407,11 @@ h2.node__title {
 .view-publications-list .view-header h2 span {
   font-size: 1.25rem;
 }
+.view-publications-list .view-empty {
+  order: 3;
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+}
 .view-publications-list .view-content {
   order: 3;
   display: flex;
@@ -1446,8 +1450,7 @@ h2.node__title {
   margin-right: 1.8rem;
 }
 .view-publications-list .view-content .publications-row .publications-items-list .group-left .field--type-image img {
-  width: 100%;
-  margin: 0;
+  margin: 0 0 1rem;
 }
 .view-publications-list .view-content .publications-row .publications-items-list .group-right {
   display: flex;
@@ -1573,6 +1576,7 @@ h2.node__title {
 .publication-detail {
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
 }
 .publication-detail .publications-row {
   border-bottom: 0;
@@ -1582,7 +1586,11 @@ h2.node__title {
   flex-direction: row;
 }
 .publication-detail .publications-row .publications-left-column {
-  width: 25%;
+  float: none;
+}
+.publication-detail .publications-row .publications-left-column .field--type-image img {
+  max-width: fit-content;
+  margin: 0 1rem 1rem 0;
 }
 .publication-detail .publications-row .publications-detail-right-column .metadata {
   display: flex;
@@ -1625,6 +1633,7 @@ h2.node__title {
 .related-resources {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 .related-resources h2.title-section {
   padding: 1.4rem 0 0;
@@ -1938,6 +1947,9 @@ h2.node__title {
 }
 .events-list-page .sidebar-first #block-newsletter h2 a {
   color: white;
+}
+.events-list-page .events-list #block-exposedformevents-searchpage-1--2 {
+  width: 60%;
 }
 .events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-row {
   flex-wrap: nowrap;

@@ -3,10 +3,12 @@
 
   <section class="node-content">
     <div class="container">
+      {{ page.content.addtoanybuttons }}
       {{ page.content.hwc_theme_content }}
     </div>
   </section>
 
+  {% if node.field_aditional_resources|length %}
   <section class="related-resources green-background">
     <div class="container">
       <h2 class="title-section">{{ 'Related resources'|t }}</h2>
@@ -45,21 +47,5 @@
 
     </div>
   </section>
-
-  <section class="available-publication gray-background">
-    <div class="container">
-
-      <div class="row">
-        {% if page.sidebar_left %}
-          <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
-
-          </aside>
-        {% endif %}
-        <section class="section section-center col-12 col-lg-9 ">
-          <h1>Publications gray</h1>
-        </section>
-      </div>
-    </div>
-  </section>
-
+  {% endif %}
 {% endblock %}

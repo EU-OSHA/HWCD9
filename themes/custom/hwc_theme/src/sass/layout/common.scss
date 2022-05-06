@@ -38,6 +38,9 @@
     .form-row{
       display: flex;
       align-items: flex-end;
+      > fieldset{
+        flex: 1 1 auto;
+      }
     }
     label {
       color: #003399 !important;
