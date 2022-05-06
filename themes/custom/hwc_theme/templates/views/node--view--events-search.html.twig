@@ -15,9 +15,9 @@
 {% set url = path('entity.node.canonical', {'node': node.id})  %}
 
 <section class="event-items-list">
-<div class="row w-100">
+
   <div class="group-left">
-    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_image }}</a>
+{#    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_image }}</a>#}
 {% if CountryCode == "EU" or CountryCode == "EUROPA" %}
       <div class="event_country code_{{ CountryCode }}">
         <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/European-Union-180x180.png" alt="{{ CountryName }}"></a>
@@ -67,12 +67,13 @@
     {% if content.body.0 %}
       <p>{{ content.body.0|render|striptags|slice(0, 150)|raw ~ '...' }}</p>
     {% endif %}
-    <p class="button">
-      <a href="{{ url }}" class="more-link">{{ 'See more'|t }}</a>
-    </p>
-
-    {{ content.field_add_to_calendar }}
+    <div class="events-buttons">
+      <p class="button">
+        <a href="{{ url }}" class="more-link">{{ 'See more'|t }}</a>
+      </p>
+      <div class="add-calendar">{{ content.field_add_to_calendar }}</div>
+    </div>
 
   </div>
-</div>
+
 </section>

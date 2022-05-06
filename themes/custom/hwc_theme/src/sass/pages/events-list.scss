@@ -32,6 +32,9 @@
         padding-top: 6.5rem;
         padding-bottom: 2rem;
         background: url(../images/content/calendar-event-detail.png) no-repeat center 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .date-start-end{
           text-align: center;
           color: $text-color-blue;
@@ -40,6 +43,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-bottom: 0.8rem;
         }
       }
       .field__country{
@@ -83,15 +87,21 @@
   .events-list{
     .view-content.row{
       margin: 1rem;
+      display: flex;
+      flex-direction: column;
     }
     .form-item-field-start-date,
-    .form-item-end-value{
+    .form-item-end-value,
+    .js-form-item-field-start-date-1{
       display: none;
     }
   }
 }
 
 .events-list-page{
+  .container{
+    max-width: 100%;
+  }
   .sidebar-first {
     #block-exposedformevents-searchpage-1 > h2{
       display: block;
@@ -106,6 +116,8 @@
       padding: 0.8rem;
       margin-top: 34px;
       margin-bottom: 3em;
+      margin-left: auto;
+      width: 288px;
       .form-row{
         display: flex;
         align-items: flex-end;
@@ -149,7 +161,8 @@
       border-radius: 1rem;
       color: #FFF;
       padding: 1.2rem;
-      width: 100%;
+      margin-left: auto;
+      width: 288px;
       h2{
         background: url(../images/ico-newsletter.png) no-repeat 1px 5px;
         color: #FFF;
@@ -172,7 +185,7 @@
           padding-bottom: 0.1rem;
         }
         .chosen-container{
-          width: 100%;
+          width: 100% !important;
           height: calc(1.5em + .75rem + 2px);
           padding: .375rem .75rem;
           font-size: 1rem;
@@ -199,15 +212,22 @@
       > h2 {
         display: none;
       }
-
+      .form-actions{
+        display: flex;
+        .btn-primary{
+          margin-right: 5px;
+        }
+      }
     }
     .event-items-list{
       display: flex;
       flex-direction: row;
       border-bottom: 1px solid #749b00;
-      padding-top: 20px;
-      padding-bottom: 30px;
-      min-height: 230px;
+      padding:1.5rem 1rem ;
+      min-height: 220px;
+      .group-left{
+        min-width: 180px;
+      }
       .group-right{
         display: flex;
         flex-direction: column;
@@ -225,8 +245,16 @@
         .country-city{
           font-weight: 600;
         }
-        .button{
-          margin: auto 0 1rem;
+        .events-buttons{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: auto;
+          margin-bottom: 5px;
+          width: 50%;
+          .button{
+            margin: auto 0 0;
+          }
         }
       }
     }

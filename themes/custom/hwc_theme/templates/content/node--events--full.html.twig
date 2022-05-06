@@ -105,16 +105,25 @@
         {% if label and node.getType() != 'article' %}
           <h2{{ title_attributes.addClass('node__title') }}>{{ label.0 }}</h2>
         {% endif %}
+
+        {% if content.field_summary %}
         <div class="node__summary">
           {{ content.field_summary }}
         </div>
+        {% endif %}
+
         {{ title_suffix }}
       </header>
+
       {{ content.body }}
+
+      {% if content.field_website_of_event.0 %}
       <section class="futher-info">
         <h3>{{ 'Further information'|t }}</h3>
         <p><label>{{ content.field_website_of_event['#title'] }} :</label> {{ content.field_website_of_event.0 }}</p>
       </section>
+      {% endif %}
+
     </div>
 
     <div class="content-right-column no-padding-right">
@@ -124,23 +133,20 @@
 
       {% if StartDate or EndDate %}
         <div class="field__date">
-
           <div class="date-start-end">
             {% if StartDate  %}
               <span class="date" >{{ StartDate }}</span>
             {% endif %}
-
             {% if StartDate != EndDate %}
               to
             <span class="date" > {{ EndDate }}</span>
             {% endif  %}
-
-            {{ content.field_add_to_calendar }}
-
           </div>
-
+          <div class="add-calendar">{{ content.field_add_to_calendar }}</div>
         </div>
       {% endif %}
+
+{#      {{ content.field_add_to_calendar }}#}
 
       {% if CountryName %}
         <div class="field__country">
