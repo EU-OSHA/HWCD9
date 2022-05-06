@@ -2,7 +2,7 @@
 
 
 .node-content{
-  padding:1rem;
+  padding: 1rem 1rem 0;
 }
 
 .available-publication{
@@ -69,6 +69,11 @@
       }
     }
   }
+  .view-empty{
+    order: 3;
+    text-align: center;
+    padding: 1rem 0 3rem 0;
+  }
   .view-content {
     order: 3;
     display: flex;
@@ -105,8 +110,7 @@
             width: 100%;
             margin-right: 1.8rem;
             img{
-              width: 100%;
-              margin: 0;
+              margin: 0 0 1rem;
             }
           }
         }
@@ -247,6 +251,7 @@
 .publication-detail{
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
   .publications-row{
     border-bottom: 0;
     margin-top: 2em;
@@ -254,7 +259,13 @@
     display: flex;
     flex-direction: row;
     .publications-left-column{
-      width: 25%;
+      float: none;
+      .field--type-image {
+        img {
+          max-width: fit-content;
+          margin: 0 1rem 1rem 0;
+        }
+      }
     }
     .publications-detail-right-column{
       .metadata{
@@ -304,6 +315,7 @@
 .related-resources{
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
   h2.title-section {
     padding:1.4rem 0 0;
     font-weight: 600;
