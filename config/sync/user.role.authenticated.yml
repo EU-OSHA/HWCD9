@@ -6,7 +6,6 @@ dependencies:
     - comment
     - exclude_node_title
     - media
-    - search
     - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
@@ -25,7 +24,6 @@ permissions:
   - 'download any document files'
   - 'edit mimemail user settings'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use Search Autocomplete'
   - 'use exclude node title'

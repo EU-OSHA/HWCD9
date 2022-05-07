@@ -1,0 +1,8 @@
+uuid: ee8c3cbc-274f-4eda-a3ca-7723cd30146b
+langcode: en
+status: true
+dependencies: {  }
+id: campaign-toolkit
+label: 'Campaign Toolkit'
+description: ''
+locked: false

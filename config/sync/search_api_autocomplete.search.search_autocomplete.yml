@@ -1,0 +1,31 @@
+uuid: f6284c1c-304a-4012-af77-1d49c942b27e
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_multilingual_node_index
+    - views.view.search_autocomplete
+  module:
+    - views
+    - search_api_autocomplete
+id: search_autocomplete
+label: 'Search Autocomplete'
+index_id: default_multilingual_node_index
+suggester_settings:
+  server:
+    fields: {  }
+suggester_weights:
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:search_autocomplete':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

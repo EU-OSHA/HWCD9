@@ -24,6 +24,7 @@ dependencies:
     - node.type.tk_example
     - node.type.tk_tool
     - node.type.tk_topic
+    - node.type.webform
     - node.type.youtube
   module:
     - block
@@ -32,6 +33,7 @@ dependencies:
     - content_translation
     - contextual
     - devel
+    - feeds
     - filter
     - image
     - language
@@ -41,7 +43,7 @@ dependencies:
     - node
     - path
     - pathauto
-    - search
+    - reroute_email
     - search_api
     - shortcut
     - system
@@ -166,7 +168,6 @@ permissions:
   - 'administer redirects'
   - 'administer reroute email'
   - 'administer responsive menus'
-  - 'administer search'
   - 'administer search and replace settings'
   - 'administer search_api'
   - 'administer shortcuts'
@@ -568,7 +569,6 @@ permissions:
   - 'preview layout validation'
   - 'provide translation services'
   - 'revert revisions'
-  - 'search content'
   - 'select account cancellation method'
   - 'select content section'
   - 'send arbitrary files'
@@ -591,7 +591,6 @@ permissions:
   - 'undo search and replace'
   - 'use Search Autocomplete'
   - 'use Shorten URLs page'
-  - 'use advanced search'
   - 'use hwc gallery bulk upload'
   - 'use manualcrop'
   - 'use media wysiwyg'

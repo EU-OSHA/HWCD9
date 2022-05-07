@@ -1,0 +1,21 @@
+langcode: en
+id: search_site_header_form
+uuid: be1d3a6c-4a6b-49d1-84e3-a91dcbb43449
+label: 'Search Site Header Form'
+selector: '#edit-search-api-fulltext'
+status: true
+minChar: 3
+autoSubmit: true
+autoRedirect: true
+maxSuggestions: 3
+noResultLabel: 'No results found for [search-phrase]. Click to perform full search.'
+noResultValue: '[search-phrase]'
+noResultLink: ''
+moreResultsLabel: 'View all results for [search-phrase].'
+moreResultsValue: '[search-phrase]'
+moreResultsLink: ''
+source: 'search_autocomplete::callback_autocomplete'
+theme: basic-blue.css
+editable: true
+deletable: true
+dependencies: {  }

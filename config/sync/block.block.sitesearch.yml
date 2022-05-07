@@ -1,0 +1,25 @@
+uuid: e0d52747-1180-43b9-9469-b47875a34a7c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7a1c2238-97dc-4fa1-846a-cf51692cdce8'
+  module:
+    - block_content
+  theme:
+    - hwc_theme
+id: sitesearch
+theme: hwc_theme
+region: header_form
+weight: 0
+provider: null
+plugin: 'block_content:7a1c2238-97dc-4fa1-846a-cf51692cdce8'
+settings:
+  id: 'block_content:7a1c2238-97dc-4fa1-846a-cf51692cdce8'
+  label: 'Site Search'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

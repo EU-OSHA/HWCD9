@@ -3,12 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_article_type
     - field.storage.node.body
     - field.storage.node.field_country
     - field.storage.node.field_country_code
     - field.storage.node.field_workbench_access
     - field.storage.node.field_prevention_measures
     - field.storage.node.field_msd_priority_area
+    - field.storage.node.field_publication_date
+    - field.storage.node.field_publication_type
     - field.storage.node.field_purpose_of_the_material
     - field.storage.node.field_summary
     - field.storage.node.field_type_of_item
@@ -90,6 +93,14 @@ field_settings:
     dependencies:
       module:
         - node
+  field_article_type:
+    label: 'Article type'
+    datasource_id: 'entity:node'
+    property_path: field_article_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_type
   field_country:
     label: 'Country (field_country)'
     datasource_id: 'entity:node'
@@ -106,6 +117,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_country_code
+  field_msd_priority_area:
+    label: 'Priority area'
+    datasource_id: 'entity:node'
+    property_path: field_msd_priority_area
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_msd_priority_area
   field_prevention_measures:
     label: 'Prevention measures'
     datasource_id: 'entity:node'
@@ -114,6 +133,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_prevention_measures
+  field_publication_date:
+    label: 'Publication date'
+    datasource_id: 'entity:node'
+    property_path: field_publication_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_publication_date
   field_purpose_of_the_material:
     label: 'Purpose of the material'
     datasource_id: 'entity:node'
@@ -162,6 +189,16 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_msd_priority_area
+      module:
+        - taxonomy
+  name_1:
+    label: 'Publication Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_publication_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_publication_type
       module:
         - taxonomy
   nid:
@@ -221,18 +258,68 @@ datasource_settings:
       selected: {  }
   'entity:node':
     bundles:
-      default: true
+      default: false
       selected:
-        - page
+        - article
+        - campaign_materials
+        - document
+        - event_speaker
+        - events
+        - infographic
+        - news
+        - partner
+        - practical_tool
+        - press_release
+        - publication
+        - tk_article
+        - tk_example
+        - tk_tool
+        - tk_toolkit
+        - tk_topic
     languages:
       default: true
       selected: {  }
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  entity_status: {  }
+  hierarchy:
+    weights:
+      preprocess_index: -45
+    fields:
+      field_country: taxonomy_term-parent
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong class="highlight">'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields:
+      - title
+    highlight: server
+    highlight_partial: false
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+    all_fields: false
+    fields:
+      - body
+      - field_summary
+    title: false
+    alt: false
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
   language_with_fallback: {  }
   rendered_item: {  }
-  solr_date_range: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
 tracker_settings:
   default:
     indexing_order: fifo
