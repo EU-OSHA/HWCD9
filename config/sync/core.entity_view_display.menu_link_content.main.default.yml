@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.menu_link_content.main.field_copyrigth
     - field.field.menu_link_content.main.field_image_menu
+    - field.field.menu_link_content.main.field_menu_description
     - system.menu.main
 id: menu_link_content.main.default
 targetEntityType: menu_link_content
@@ -14,26 +15,12 @@ content:
   children:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
-    region: content
-  field_copyrigth:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_image_menu:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
 hidden:
   breadcrumbs: true
+  field_copyrigth: true
+  field_image_menu: true
+  field_menu_description: true
   langcode: true
   search_api_excerpt: true
