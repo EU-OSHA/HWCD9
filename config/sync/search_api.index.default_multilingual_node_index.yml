@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_country
     - field.storage.node.field_country_code
+    - field.storage.node.field_tk_examples
     - field.storage.node.field_workbench_access
     - field.storage.node.field_prevention_measures
     - field.storage.node.field_msd_priority_area
@@ -14,6 +15,10 @@ dependencies:
     - field.storage.node.field_publication_type
     - field.storage.node.field_purpose_of_the_material
     - field.storage.node.field_summary
+    - field.storage.node.field_tools_examples
+    - field.storage.node.field_tk_topics
+    - field.storage.node.field_tk_article_type
+    - field.storage.node.field_tk_tool_type
     - field.storage.node.field_type_of_item
     - search_api.server.default_solr_server
   module:
@@ -157,6 +162,46 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_summary
+  field_tk_article_type:
+    label: 'Type (tk article type)'
+    datasource_id: 'entity:node'
+    property_path: field_tk_article_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tk_article_type
+  field_tk_examples:
+    label: Examples
+    datasource_id: 'entity:node'
+    property_path: field_tk_examples
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tk_examples
+  field_tk_tool_type:
+    label: 'Type (tk tool type)'
+    datasource_id: 'entity:node'
+    property_path: field_tk_tool_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tk_tool_type
+  field_tk_topics:
+    label: 'Topics (tk)'
+    datasource_id: 'entity:node'
+    property_path: field_tk_topics
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tk_topics
+  field_tools_examples:
+    label: 'Tools & Examples'
+    datasource_id: 'entity:node'
+    property_path: field_tools_examples
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tools_examples
   field_type_of_item:
     label: 'Type of item'
     datasource_id: 'entity:node'
