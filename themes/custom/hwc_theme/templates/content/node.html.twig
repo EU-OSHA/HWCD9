@@ -99,4 +99,7 @@
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
   </div>
+  {% if node.id != 24 and node.id != 27 and node.id != 38 %}
+    {{ drupal_entity('block', 'addtoanybuttons') }}
+  {% endif %}
 </article>
