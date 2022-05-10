@@ -20,9 +20,10 @@ settings:
   label: 'Publications type '
   label_display: visible
   provider: facets
+  context_mapping: {  }
   block_id: publicationtypepublicationslisting
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/tools-and-publications/publications\r\n/node/24\r\n/tools-and-publications/case-studies"
+    pages: "/node/38\r\n/tools-and-publications/publications\r\n/node/24\r\n/tools-and-publications/case-studies"
