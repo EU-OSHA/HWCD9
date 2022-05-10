@@ -125,10 +125,11 @@
 
     <footer class="site-footer">
       {% block footer %}
+
         <div class="{{ container }}" >
-          {% if page.footer_first %}
+          {% if page.footer.mainnavigation %}
             <div class="site-footer__first">
-              {{ page.footer_first }}
+              {{ page.footer.mainnavigation }}
             </div>
           {% endif %}
           {% if page.footer_end %}
