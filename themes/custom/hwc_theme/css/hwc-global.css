@@ -1172,26 +1172,61 @@ ul.menu-level-0 {
 }
 ul.menu-level-0 > li.menu-item {
   position: relative;
-  float: left;
   width: 100%;
   text-align: center;
-  padding: 1rem 1rem 1rem 1rem;
   border-left: 1px solid #FFF;
 }
-ul.menu-level-0 > li.menu-item:hover ul.menu-level-1 {
-  position: absolute;
-  display: block;
-  background: #003399;
-  left: 0;
-  margin-left: -17px;
-  margin-top: 1em;
-  border-top: 5px solid #cfddee;
-  border-bottom: 5px solid #003399;
-  z-index: 999;
+ul.menu-level-0 > li.menu-item.menu-item--active-trail > a {
+  color: #c1e000;
+  font-weight: bold;
 }
 ul.menu-level-0 > li.menu-item > a {
   text-transform: uppercase;
   color: white;
+  display: block;
+  padding: 1rem 1rem 1rem 1rem;
+}
+ul.menu-level-0 > li.menu-item ul.menu-level-1 {
+  display: none;
+  background: #003399;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  margin-left: 0;
+  margin-top: 0;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  border: none;
+  text-transform: initial;
+  padding: 6px 8px 6px 8px;
+  border-radius: 0px;
+}
+ul.menu-level-0 > li.menu-item ul.menu-level-1 li {
+  display: flex;
+  align-items: baseline;
+}
+ul.menu-level-0 > li.menu-item ul.menu-level-1 li a, ul.menu-level-0 > li.menu-item ul.menu-level-1 li span {
+  font-size: 0.875rem;
+  padding: 6px 0;
+  color: white;
+  text-align: left;
+}
+ul.menu-level-0 > li.menu-item ul.menu-level-1 li a:hover, ul.menu-level-0 > li.menu-item ul.menu-level-1 li span:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+ul.menu-level-0 > li.menu-item ul.menu-level-1 li a.menu-item--active-trail, ul.menu-level-0 > li.menu-item ul.menu-level-1 li span.menu-item--active-trail {
+  font-weight: bold;
+}
+ul.menu-level-0 > li.menu-item ul.menu-level-1 li:before {
+  content: "> ";
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
+}
+ul.menu-level-0 > li.menu-item:hover ul.menu-level-1 {
+  position: absolute;
+  display: block;
+  z-index: 999;
 }
 ul.menu-level-0 > li.menu-item:nth-child(1) {
   display: flex;
@@ -1215,47 +1250,10 @@ ul.menu-level-0 > li.menu-item:nth-child(1) .field--type-entity-reference img {
   margin: 0;
 }
 ul.menu-level-0 > li.menu-item:last-child ul {
-  margin-left: -80px;
+  margin-left: 0;
 }
 ul.menu-level-0 > li.menu-item:last-child ul li ul {
   margin-left: 0;
-}
-ul.menu-level-0 li ul.menu-level-1 {
-  display: none;
-  background: #003399;
-  list-style: none;
-  width: 22rem;
-  padding: 10px 10px 10px 20px;
-}
-ul.menu-level-0 li ul.menu-level-1 a {
-  display: block;
-  font-size: 1.05rem;
-  padding-top: 5px;
-  color: white;
-}
-ul.menu-level-0 li ul.menu-level-1 li {
-  width: 100%;
-  text-align: left;
-}
-ul.menu-level-0 li ul.menu-level-1 li ul.menu-level-2 {
-  list-style: none;
-  padding-left: 10px;
-}
-ul.menu-level-0 li ul.menu-level-1 li ul.menu-level-2 li {
-  width: 100%;
-  text-align: left;
-}
-ul.menu-level-0 li ul.menu-level-1 li ul.menu-level-2 li a {
-  display: block;
-  color: #57575a;
-  font-family: "Open Sans";
-  font-weight: bold;
-  font-size: 0.8rem;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-ul.menu-level-0 li ul.menu-level-1 li.menu-item--expanded:nth-child(2) {
-  margin-top: 1rem;
 }
 
 .main-container {
