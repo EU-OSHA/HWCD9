@@ -1,0 +1,18 @@
+uuid: 57390b45-c773-4e75-b125-6c8b7926c18f
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_tools_and_examples
+id: entity_subqueue.most_popular_tools_and_examples.title
+field_name: title
+entity_type: entity_subqueue
+bundle: most_popular_tools_and_examples
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

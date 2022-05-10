@@ -11,6 +11,11 @@ module: hwc_partner
 callback: hwc_partner_cron
 scheduler:
   id: simple
+  configuration:
+    name: crontab
+    crontab:
+      rules:
+        - ' */ncw_cron_minutes * * * '
 launcher:
   id: serial
 logger:
