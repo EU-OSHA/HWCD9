@@ -1,0 +1,588 @@
+uuid: f4f3f98f-1901-4f31-9971-f65d9c4e2a6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.nace_codes.description
+    - core.base_field_override.taxonomy_term.nace_codes.name
+    - field.field.taxonomy_term.nace_codes.field_nace_changes
+    - field.field.taxonomy_term.nace_codes.field_nace_code
+    - field.field.taxonomy_term.nace_codes.field_nace_excludes
+    - field.field.taxonomy_term.nace_codes.field_nace_includes
+    - field.field.taxonomy_term.nace_codes.field_nace_includes_also
+    - taxonomy.vocabulary.nace_codes
+  module:
+    - taxonomy
+label: 'nace tax'
+id: nace_codes
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: nace_codes
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  term_parents:
+    value: 'Term Parents'
+    label: 'Term Parents'
+    machine_name: term_parents
+  name:
+    value: Name
+    label: Name
+    machine_name: name
+  excludes:
+    value: Excludes
+    label: Excludes
+    machine_name: excludes
+  code:
+    value: Code
+    label: Code
+    machine_name: code
+  includes_also:
+    value: Includes_also
+    label: Includes_also
+    machine_name: includes_also
+  includes:
+    value: Includes
+    label: Includes
+    machine_name: includes
+  changes:
+    value: Changes
+    label: Changes
+    machine_name: changes
+  weight:
+    value: Weight
+    label: Weight
+    machine_name: weight
+  name_field_bg:
+    value: name_field_bg
+    label: name_field_bg
+    machine_name: name_field_bg
+  name_field_cs:
+    value: name_field_cs
+    label: name_field_cs
+    machine_name: name_field_cs
+  name_field_da:
+    value: name_field_da
+    label: name_field_da
+    machine_name: name_field_da
+  name_field_de:
+    value: name_field_de
+    label: name_field_de
+    machine_name: name_field_de
+  name_field_el:
+    value: name_field_el
+    label: name_field_el
+    machine_name: name_field_el
+  name_field_es:
+    value: name_field_es
+    label: name_field_es
+    machine_name: name_field_es
+  name_field_et:
+    value: name_field_et
+    label: name_field_et
+    machine_name: name_field_et
+  name_field_fi:
+    value: name_field_fi
+    label: name_field_fi
+    machine_name: name_field_fi
+  name_field_hr:
+    value: name_field_hr
+    label: name_field_hr
+    machine_name: name_field_hr
+  name_field_fr:
+    value: name_field_fr
+    label: name_field_fr
+    machine_name: name_field_fr
+  name_field_hu:
+    value: name_field_hu
+    label: name_field_hu
+    machine_name: name_field_hu
+  name_field_is:
+    value: name_field_is
+    label: name_field_is
+    machine_name: name_field_is
+  name_field_it:
+    value: name_field_it
+    label: name_field_it
+    machine_name: name_field_it
+  name_field_lv:
+    value: name_field_lv
+    label: name_field_lv
+    machine_name: name_field_lv
+  name_field_lt:
+    value: name_field_lt
+    label: name_field_lt
+    machine_name: name_field_lt
+  name_field_nl:
+    value: name_field_nl
+    label: name_field_nl
+    machine_name: name_field_nl
+  name_field_mt:
+    value: name_field_mt
+    label: name_field_mt
+    machine_name: name_field_mt
+  name_field_no:
+    value: name_field_no
+    label: name_field_no
+    machine_name: name_field_no
+  name_field_pl:
+    value: name_field_pl
+    label: name_field_pl
+    machine_name: name_field_pl
+  name_field_pt:
+    value: name_field_pt
+    label: name_field_pt
+    machine_name: name_field_pt
+  name_field_ro:
+    value: name_field_ro
+    label: name_field_ro
+    machine_name: name_field_ro
+  name_field_sk:
+    value: name_field_sk
+    label: name_field_sk
+    machine_name: name_field_sk
+  name_field_sl:
+    value: name_field_sl
+    label: name_field_sl
+    machine_name: name_field_sl
+  name_field_sv:
+    value: name_field_sv
+    label: name_field_sv
+    machine_name: name_field_sv
+  name_field_tr:
+    value: name_field_tr
+    label: name_field_tr
+    machine_name: name_field_tr
+  name_field_en:
+    value: name_field_en
+    label: name_field_en
+    machine_name: name_field_en
+mappings:
+  -
+    target: parent
+    map:
+      target_id: term_parents
+    settings:
+      reference_by: name
+      autocreate: false
+      feeds_item: false
+  -
+    target: name
+    map:
+      value: name
+    settings:
+      language: en
+    unique: {  }
+  -
+    target: field_nace_excludes
+    map:
+      value: excludes
+    settings:
+      language: ''
+  -
+    target: field_nace_code
+    map:
+      value: code
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_nace_includes_also
+    map:
+      value: includes_also
+    settings:
+      language: null
+  -
+    target: field_nace_includes
+    map:
+      value: includes
+    settings:
+      language: null
+  -
+    target: field_nace_changes
+    map:
+      value: changes
+    settings:
+      language: null
+  -
+    target: weight
+    map:
+      value: weight
+    settings: {  }
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_bg
+    settings:
+      language: bg
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_cs
+    settings:
+      language: cs
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_da
+    settings:
+      language: da
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_de
+    settings:
+      language: de
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_el
+    settings:
+      language: el
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_es
+    settings:
+      language: es
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_et
+    settings:
+      language: et
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_fi
+    settings:
+      language: fi
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_hr
+    settings:
+      language: hr
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_fr
+    settings:
+      language: fr
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_hu
+    settings:
+      language: hu
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_is
+    settings:
+      language: is
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_it
+    settings:
+      language: it
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_lv
+    settings:
+      language: lv
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_lt
+    settings:
+      language: lt
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_nl
+    settings:
+      language: nl
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_mt
+    settings:
+      language: mt
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_no
+    settings:
+      language: 'no'
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_pl
+    settings:
+      language: pl
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_pt
+    settings:
+      language: pt-pt
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_ro
+    settings:
+      language: ro
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_sk
+    settings:
+      language: sk
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_sl
+    settings:
+      language: sl
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_sv
+    settings:
+      language: sv
+    unique: {  }
+  -
+    target: name
+    map:
+      value: name_field_tr
+    settings:
+      language: tr
+    unique: {  }
+  -
+    target: description
+    map:
+      value: name_field_bg
+    settings:
+      language: bg
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_cs
+    settings:
+      language: cs
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_da
+    settings:
+      language: da
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_de
+    settings:
+      language: de
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_el
+    settings:
+      language: el
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_en
+    settings:
+      language: en
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_es
+    settings:
+      language: es
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_et
+    settings:
+      language: et
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_fi
+    settings:
+      language: fi
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_fr
+    settings:
+      language: fr
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_hr
+    settings:
+      language: hr
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_hu
+    settings:
+      language: hu
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_is
+    settings:
+      language: is
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_it
+    settings:
+      language: it
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_lt
+    settings:
+      language: lt
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_lv
+    settings:
+      language: lv
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_mt
+    settings:
+      language: mt
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_nl
+    settings:
+      language: nl
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_no
+    settings:
+      language: 'no'
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_pl
+    settings:
+      language: pl
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_pt
+    settings:
+      language: pt-pt
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_ro
+    settings:
+      language: ro
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_sk
+    settings:
+      language: sk
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_sl
+    settings:
+      language: sl
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_sv
+    settings:
+      language: sv
+      format: plain_text
+  -
+    target: description
+    map:
+      value: name_field_tr
+    settings:
+      language: tr
+      format: plain_text

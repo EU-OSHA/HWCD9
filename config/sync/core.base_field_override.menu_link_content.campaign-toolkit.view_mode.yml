@@ -1,0 +1,18 @@
+uuid: 01ba2601-023e-4d66-a8cd-7ed300ea6906
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.campaign-toolkit
+id: menu_link_content.campaign-toolkit.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: campaign-toolkit
+label: 'View mode'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
