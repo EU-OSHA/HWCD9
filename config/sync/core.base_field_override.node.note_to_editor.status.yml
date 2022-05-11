@@ -1,0 +1,22 @@
+uuid: 0ecbb357-90a3-40b5-9f1b-561cd551a446
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.note_to_editor
+id: node.note_to_editor.status
+field_name: status
+entity_type: node
+bundle: note_to_editor
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

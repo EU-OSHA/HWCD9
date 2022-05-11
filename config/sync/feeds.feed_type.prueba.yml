@@ -1,0 +1,56 @@
+uuid: 450d7159-540d-4d44-b6e9-8dab50dfa4ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.nace_codes.name
+    - taxonomy.vocabulary.nace_codes
+  module:
+    - taxonomy
+label: Prueba
+id: prueba
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: nace_codes
+  langcode: en
+  update_existing: 1
+  update_non_existent: 'entity:unpublish_action:taxonomy_term'
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  name_field:
+    value: name_field
+    label: name_field
+    machine_name: name_field
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+  accounting_bookkeeping_and_auditing_activities_tax_consultancy:
+    value: 'Accounting, bookkeeping and auditing activities; tax consultancy'
+    label: 'Accounting, bookkeeping and auditing activities; tax consultancy'
+    machine_name: accounting_bookkeeping_and_auditing_activities_tax_consultancy
+mappings:
+  -
+    target: name
+    map:
+      value: accounting_bookkeeping_and_auditing_activities_tax_consultancy
+    settings:
+      language: en
+    unique: {  }

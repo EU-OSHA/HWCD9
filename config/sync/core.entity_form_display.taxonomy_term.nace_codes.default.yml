@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.nace_codes.feeds_item
     - field.field.taxonomy_term.nace_codes.field_nace_changes
     - field.field.taxonomy_term.nace_codes.field_nace_code
     - field.field.taxonomy_term.nace_codes.field_nace_excludes
@@ -93,4 +94,10 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-hidden: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  feeds_item: true

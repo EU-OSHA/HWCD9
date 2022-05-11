@@ -1,0 +1,18 @@
+uuid: f0d650f3-7b4e-4c27-94c5-7b98d949c6f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_tools_and_examples
+id: entity_subqueue.most_popular_tools_and_examples.metatag
+field_name: metatag
+entity_type: entity_subqueue
+bundle: most_popular_tools_and_examples
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

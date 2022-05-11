@@ -1,0 +1,18 @@
+uuid: d57bf6bb-16f2-4315-94ab-524df6b53da1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+id: node.napo_film.changed
+field_name: changed
+entity_type: node
+bundle: napo_film
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,18 @@
+uuid: 3c540d6e-0156-41dd-9a22-77eca2bb1541
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.publication_queue
+id: entity_subqueue.publication_queue.metatag
+field_name: metatag
+entity_type: entity_subqueue
+bundle: publication_queue
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,20 @@
+uuid: 3b9e438f-4375-482d-b4d9-924ef18f694f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.home_page_sections
+  module:
+    - path
+id: node.home_page_sections.path
+field_name: path
+entity_type: node
+bundle: home_page_sections
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

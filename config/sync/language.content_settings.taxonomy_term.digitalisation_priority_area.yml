@@ -1,0 +1,18 @@
+uuid: 14135e53-a3c2-4661-8e6b-3ba97ac76e8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.digitalisation_priority_area
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.digitalisation_priority_area
+target_entity_type_id: taxonomy_term
+target_bundle: digitalisation_priority_area
+default_langcode: site_default
+language_alterable: true

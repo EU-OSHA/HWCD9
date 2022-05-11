@@ -1,0 +1,59 @@
+uuid: 4a1ed60b-4733-4e2f-9c8b-62b15232a72d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.activity.name
+    - taxonomy.vocabulary.activity
+  module:
+    - taxonomy
+label: 'Pueba Taxonomy Tags'
+id: pueba_taxonomy_tags
+description: ''
+help: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: '|'
+  no_headers: false
+  line_limit: 100
+processor: 'entity:taxonomy_term'
+processor_configuration:
+  values:
+    vid: activity
+  langcode: en
+  update_existing: 0
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  title_en:
+    value: title_en
+    label: title_en
+    machine_name: title_en
+  title_es:
+    value: title_es
+    label: title_es
+    machine_name: title_es
+mappings:
+  -
+    target: name
+    map:
+      value: title_en
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: name
+    map:
+      value: title_es
+    settings:
+      language: null
+    unique: {  }

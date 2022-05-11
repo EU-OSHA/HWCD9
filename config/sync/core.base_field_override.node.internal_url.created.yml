@@ -1,0 +1,18 @@
+uuid: 3f1bb734-cd0e-49b0-a951-985c248d420c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.internal_url
+id: node.internal_url.created
+field_name: created
+entity_type: node
+bundle: internal_url
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

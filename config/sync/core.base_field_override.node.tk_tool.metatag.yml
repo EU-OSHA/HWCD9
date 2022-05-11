@@ -1,0 +1,18 @@
+uuid: 73fcfdd8-b6c1-42c0-82b7-2bdbbed53b40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_tool
+id: node.tk_tool.metatag
+field_name: metatag
+entity_type: node
+bundle: tk_tool
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

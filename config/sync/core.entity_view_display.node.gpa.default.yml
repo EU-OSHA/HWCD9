@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.gpa.body
     - field.field.node.gpa.field_contact_details
+    - field.field.node.gpa.field_faq
+    - field.field.node.gpa.field_gpa_links
     - field.field.node.gpa.field_image
     - field.field.node.gpa.field_introductory_text
     - field.field.node.gpa.field_participate_date
@@ -13,8 +15,28 @@ dependencies:
     - node.type.gpa
   module:
     - datetime
+    - entity_reference_revisions
+    - field_group
+    - paragraphs
     - text
     - user
+third_party_settings:
+  field_group:
+    group_participate:
+      children:
+        - field_participate_description
+        - field_participate_date
+        - field_participate_upcoming_descr
+        - field_gpa_links
+      label: 'How to participate'
+      parent_name: ''
+      region: content
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
 id: node.gpa.default
 targetEntityType: node
 bundle: gpa
@@ -25,14 +47,30 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_contact_details:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 107
+    weight: 6
+    region: content
+  field_faq:
+    type: paragraph_summary
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_gpa_links:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_image:
     type: entity_reference_label
@@ -40,14 +78,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 2
     region: content
   field_introductory_text:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 0
     region: content
   field_participate_date:
     type: datetime_default
@@ -56,26 +94,33 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 105
+    weight: 7
     region: content
   field_participate_description:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 6
     region: content
   field_participate_upcoming_descr:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 8
     region: content
-  links:
-    settings: {  }
+  langcode:
+    type: language
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
     third_party_settings: {  }
-    weight: 100
+    weight: 5
     region: content
 hidden:
-  langcode: true
+  addtoany: true
+  breadcrumbs: true
+  links: true
+  search_api_excerpt: true

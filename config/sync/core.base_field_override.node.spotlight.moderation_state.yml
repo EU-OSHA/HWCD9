@@ -1,0 +1,18 @@
+uuid: b2c05858-bcff-4291-a5bd-af94205531c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.spotlight
+id: node.spotlight.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: spotlight
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

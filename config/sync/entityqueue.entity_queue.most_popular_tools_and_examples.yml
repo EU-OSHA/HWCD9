@@ -1,0 +1,26 @@
+uuid: 7249a344-2e0e-48f2-a47a-c97072ba7768
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: most_popular_tools_and_examples
+label: 'Most Popular Tools and Examples'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tk_example: tk_example
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 5
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,20 @@
+uuid: 38b43cf9-c460-413a-8f53-06d84e9e7f32
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_toolkit
+  module:
+    - path
+id: node.tk_toolkit.path
+field_name: path
+entity_type: node
+bundle: tk_toolkit
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

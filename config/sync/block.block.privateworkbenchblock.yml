@@ -9,7 +9,7 @@ dependencies:
 id: privateworkbenchblock
 theme: hwc_theme
 region: header_form
-weight: -11
+weight: -13
 provider: null
 plugin: private_workbench
 settings:

@@ -1,0 +1,18 @@
+uuid: 2455801f-f44e-4911-8040-0c006755f1be
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.most_popular_tools_and_examples
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.most_popular_tools_and_examples
+target_entity_type_id: entity_subqueue
+target_bundle: most_popular_tools_and_examples
+default_langcode: site_default
+language_alterable: false

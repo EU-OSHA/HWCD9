@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.events.body
     - field.field.node.events.field_activity
+    - field.field.node.events.field_add_to_calendar
     - field.field.node.events.field_adonis
     - field.field.node.events.field_agency_contact_reply
     - field.field.node.events.field_agency_initial_contact
@@ -51,6 +52,7 @@ dependencies:
     - field.field.node.events.field_xmlsitemap
     - node.type.events
   module:
+    - addtocalendar
     - datetime
     - datetime_range
     - entity_reference_revisions
@@ -109,7 +111,7 @@ third_party_settings:
       label: Hidden
       parent_name: ''
       region: content
-      weight: 7
+      weight: 8
       format_type: html_element
       format_settings:
         classes: hidden
@@ -144,7 +146,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 9
+    weight: 51
+    region: content
+  field_add_to_calendar:
+    type: add_to_calendar
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
     region: content
   field_adonis:
     type: string
@@ -152,7 +161,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 17
+    weight: 59
     region: content
   field_agency_contact_reply:
     type: string
@@ -160,7 +169,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 25
+    weight: 67
     region: content
   field_agency_initial_contact:
     type: string
@@ -168,7 +177,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 31
+    weight: 73
     region: content
   field_agency_rep_confirmed:
     type: string
@@ -176,21 +185,21 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 22
+    weight: 64
     region: content
   field_agency_role:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 20
+    weight: 62
     region: content
   field_agenda:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 63
     region: content
   field_city:
     type: string
@@ -205,7 +214,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 26
+    weight: 68
     region: content
   field_contact_email:
     type: string
@@ -213,7 +222,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 13
+    weight: 55
     region: content
   field_contact_name:
     type: string
@@ -221,7 +230,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 11
+    weight: 53
     region: content
   field_contact_phone:
     type: string
@@ -229,7 +238,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 12
+    weight: 54
     region: content
   field_country_code:
     type: list_default
@@ -243,7 +252,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 33
+    weight: 75
     region: content
   field_first_publication_date:
     type: timestamp
@@ -253,21 +262,21 @@ content:
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    weight: 39
+    weight: 81
     region: content
   field_for_the_web:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 16
+    weight: 58
     region: content
   field_key_performance:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 18
+    weight: 60
     region: content
   field_location:
     type: string
@@ -275,21 +284,21 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 4
+    weight: 46
     region: content
   field_media_promotion:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 24
+    weight: 66
     region: content
   field_metatags:
     type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 52
     region: content
   field_migration_path_alias:
     type: string
@@ -297,14 +306,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 40
+    weight: 82
     region: content
   field_migration_source:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 37
+    weight: 79
     region: content
   field_modified_by:
     type: entity_reference_label
@@ -312,7 +321,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 35
+    weight: 77
     region: content
   field_modified_on:
     type: datetime_default
@@ -321,14 +330,14 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 27
+    weight: 69
     region: content
   field_notification_comment:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 28
+    weight: 70
     region: content
   field_number_of_attendees:
     type: number_integer
@@ -337,7 +346,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 34
+    weight: 76
     region: content
   field_organizer:
     type: string
@@ -354,7 +363,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 42
+    weight: 84
     region: content
   field_partner_id:
     type: string
@@ -362,7 +371,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 8
+    weight: 50
     region: content
   field_photo_gallery:
     type: entity_reference_label
@@ -370,14 +379,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 14
+    weight: 56
     region: content
   field_publications_exhibition_su:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 23
+    weight: 65
     region: content
   field_related_documents:
     type: file_default
@@ -385,7 +394,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 6
+    weight: 48
     region: content
   field_satisfaction_rate:
     type: number_integer
@@ -394,7 +403,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 32
+    weight: 74
     region: content
   field_show_eu_flag:
     type: boolean
@@ -404,7 +413,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 30
+    weight: 72
     region: content
   field_show_in_ncw:
     type: boolean
@@ -414,14 +423,14 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 29
+    weight: 71
     region: content
   field_show_on:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 41
+    weight: 83
     region: content
   field_speaker:
     type: entity_reference_label
@@ -429,7 +438,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 49
     region: content
   field_start_date:
     type: daterange_default
@@ -447,21 +456,21 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 15
+    weight: 57
     region: content
   field_type_event:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 47
     region: content
   field_unit_ref:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 19
+    weight: 61
     region: content
   field_website_of_event:
     type: link
@@ -483,7 +492,7 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 36
+    weight: 78
     region: content
   field_workbench_access:
     type: entity_reference_label
@@ -491,7 +500,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 43
+    weight: 85
     region: content
   field_xmlsitemap:
     type: entity_reference_label
@@ -499,12 +508,12 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 38
+    weight: 80
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 45
     region: content
 hidden:
   addtoany: true

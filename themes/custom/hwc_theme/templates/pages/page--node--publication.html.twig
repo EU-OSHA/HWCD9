@@ -1,0 +1,51 @@
+{% extends "page.html.twig" %}
+{% block content %}
+
+  <section class="node-content">
+    <div class="container">
+      {{ page.content.addtoanybuttons }}
+      {{ page.content.hwc_theme_content }}
+    </div>
+  </section>
+
+  {% if node.field_aditional_resources|length %}
+  <section class="related-resources green-background">
+    <div class="container">
+      <h2 class="title-section">{{ 'Related resources'|t }}</h2>
+      <h3 class="subtitle-section"><span>{{ 'Related publications'|t }}</span></h3>
+      {% for resources in node.field_aditional_resources %}
+        {% set date =  resources.entity.field_publication_date.value %}
+        {% set type =  resources.entity.field_publication_type.entity.name.value %}
+        {% set url = resources.entity.field_cover_image.entity.field_media_image.0.entity.uri.value %}
+        {% set page = resources.entity.field_pages_count.0.value %}
+        {% set w = resources.entity.field_cover_image.entity.field_media_image.0.width %}
+        {% set h = resources.entity.field_cover_image.entity.field_media_image.0.height %}
+        <article class="related-resources-item">
+          <div class="group-left">
+            <img src="{{ file_url( url ) }}" width="{{ w }}" height="{{ h }}">
+{#            {{ resources.entity.field_cover_image.entity.field_media_image }}#}
+          </div>
+          <div class="group-right">
+            <div class="metadata">
+              {% if date %}
+              <span class="date" datetime="{{ date }}">{{ date|date("m/d/Y") }}</span>
+              {% endif %}
+              {% if type %}
+              <span class="type"><label>type:</label> {{ type }}</span>
+              {% endif %}
+              <span class="num-pages">{% if page %}  {{ page  }} {% if page == 1  %}page  {% else %} pages {% endif %} {% endif %} </span>
+            </div>
+            <h2 class="title-list">
+              <a href="{{ path('entity.node.canonical', {'node': resources.entity.nid.value }) }}"> {{ resources.entity.label }} </a>
+            </h2>
+            <p>
+              <a href="{{ path('entity.node.canonical', {'node': resources.entity.nid.value }) }}" class="see-more-arrow">See more</a>
+            </p>
+          </div>
+        </article>
+      {% endfor %}
+
+    </div>
+  </section>
+  {% endif %}
+{% endblock %}

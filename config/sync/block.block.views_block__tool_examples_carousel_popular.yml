@@ -1,0 +1,29 @@
+uuid: b42e0d17-35bb-4320-8a5c-ffb2a8d5f6ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.tool_examples_carousel
+  module:
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__tool_examples_carousel_popular
+theme: hwc_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:tool_examples_carousel-popular'
+settings:
+  id: 'views_block:tool_examples_carousel-popular'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tools-and-publications/campaign-toolkit

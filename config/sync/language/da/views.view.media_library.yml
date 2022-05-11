@@ -2,6 +2,9 @@ display:
   default:
     display_title: Standard
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: Handling
       pager:
         options:
           expose:
@@ -26,16 +29,27 @@ display:
             label: 'Medie type'
           group_info:
             label: 'Medie type'
+        langcode:
+          expose:
+            label: Sprog
   page:
     display_title: Side
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Handling
+        name:
+          separator: ', '
         edit_media:
           text: Redigér
         delete_media:
           text: Slet
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Alle
       filters:
         name:
           expose:
@@ -45,6 +59,14 @@ display:
       fields:
         name:
           label: Navn
+        uid:
+          label: Forfatter
+        changed:
+          label: Opdateret
+      arguments:
+        bundle:
+          exception:
+            title: Alle
       filters:
         name:
           expose:

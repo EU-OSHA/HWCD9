@@ -1,0 +1,18 @@
+uuid: 30195205-a373-424c-b065-10694cab42e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_example
+id: node.tk_example.created
+field_name: created
+entity_type: node
+bundle: tk_example
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

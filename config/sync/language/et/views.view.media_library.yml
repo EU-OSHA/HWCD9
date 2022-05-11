@@ -3,6 +3,9 @@ display:
     display_title: Vaikimisi
     display_options:
       title: Meedia
+      fields:
+        media_bulk_form:
+          action_title: Tegevus
       pager:
         options:
           expose:
@@ -27,16 +30,27 @@ display:
             label: 'Meedia tüüp'
           group_info:
             label: 'Meedia tüüp'
+        langcode:
+          expose:
+            label: Keel
   page:
     display_title: Lehekülg
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Tegevus
+        name:
+          separator: ', '
         edit_media:
           text: Muuda
         delete_media:
           text: Kustuta
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Kõik
       filters:
         name:
           expose:
@@ -46,6 +60,14 @@ display:
       fields:
         name:
           label: Nimi
+        uid:
+          label: Autor
+        changed:
+          label: Uuendatud
+      arguments:
+        bundle:
+          exception:
+            title: Kõik
       filters:
         name:
           expose:

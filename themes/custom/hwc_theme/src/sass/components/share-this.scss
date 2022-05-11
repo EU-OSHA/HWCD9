@@ -1,0 +1,42 @@
+#share-this-on{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+  .text-share{
+    font-size: 0.95em;
+    font-weight: normal;
+  }
+  > a{
+    color: $text-color-blue;
+    margin-left: 10px;
+
+    //&.a2a_button_facebook{
+    //  background: url("../images/content/facebook.png") no-repeat;
+    //  margin-left: 10px;
+    //  width: 25px;
+    //  height: 25px;
+    //  display: inline-table;
+    //  overflow: hidden;
+    //  background-size: cover;
+    //}
+    //&.a2a_button_twitter{
+    //  background: url("../images/content/twitter.png") no-repeat;
+    //  margin-left: 10px;
+    //  width: 25px;
+    //  height: 25px;
+    //  display: inline-table;
+    //  overflow: hidden;
+    //  background-size: cover;
+    //}
+    //&.a2a_button_linkedin_share{
+    //  background: url("../images/content/linkedin.png") no-repeat;
+    //  margin-left: 10px;
+    //  width: 25px;
+    //  height: 25px;
+    //  display: inline-table;
+    //  overflow: hidden;
+    //  background-size: cover;
+    //}
+  }
+}

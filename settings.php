@@ -339,7 +339,7 @@ $settings['update_free_access'] = FALSE;
  */
 # $settings['http_client_config']['proxy']['http'] = 'http://proxy_user:proxy_pass@example.com:8080';
 # $settings['http_client_config']['proxy']['https'] = 'http://proxy_user:proxy_pass@example.com:8080';
-# $settings['http_client_config']['proxy']['no'] = ['127.0.0.1', 'localhost'];
+# $settings['http_client_config']['proxy']['no'] = ['127.0.0.2', 'localhost'];
 
 /**
  * Reverse Proxy Configuration:
@@ -715,8 +715,8 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * example.org, with all subdomains included.
  */
 $settings['trusted_host_patterns'] = [
-  '^89\.0\.4\.171$',
-  '^allages\.bilbomatica\.es$',
+  '^89\.0\.4\.172$',
+  '^hwc-test\.bilbomatica\.es$',
 ];
 
 /**
@@ -782,8 +782,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 $databases['default']['default'] = [
   'database' => 'hwc',
-  'username' => 'root',
-  'password' => 'saretex1',
+  'username' => 'osha',
+  'password' => 'OshaDb!',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',

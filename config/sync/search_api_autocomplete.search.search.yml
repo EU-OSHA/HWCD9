@@ -1,0 +1,33 @@
+uuid: 492a2eea-44ea-44d8-bb5f-0a215ba652bf
+langcode: en
+status: false
+dependencies:
+  config:
+    - search_api.index.default_multilingual_node_index
+    - views.view.search
+  module:
+    - views
+    - search_api_autocomplete
+id: search
+label: Search
+index_id: default_multilingual_node_index
+suggester_settings:
+  server:
+    fields:
+      - body
+      - title
+suggester_weights:
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

@@ -1,0 +1,18 @@
+uuid: 69abd7a0-0b0f-4083-8324-4a931585c0ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_toolkit
+id: node.tk_toolkit.title
+field_name: title
+entity_type: node
+bundle: tk_toolkit
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

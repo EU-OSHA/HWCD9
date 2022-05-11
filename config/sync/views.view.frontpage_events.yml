@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.events_list
     - field.storage.node.field_city
     - field.storage.node.field_country_code
     - field.storage.node.field_show_eu_flag
@@ -561,7 +562,20 @@ display:
         operator: AND
         groups:
           1: AND
+      style:
+        type: default
+        options:
+          row_class: event-items-list-home
+          default_row_class: false
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: events_list
       defaults:
+        style: false
+        row: false
         filters: false
         filter_groups: false
       display_extenders: {  }

@@ -3,6 +3,9 @@ display:
     display_title: 'Noklusētā vērtība'
     display_options:
       title: Multivide
+      fields:
+        media_bulk_form:
+          action_title: Darbība
       pager:
         options:
           expose:
@@ -16,16 +19,25 @@ display:
         name:
           expose:
             label: Nosaukums
+        langcode:
+          expose:
+            label: Valoda
   page:
     display_title: Lapa
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Darbība
         edit_media:
           text: Rediģēt
         delete_media:
           text: Dzēst
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:
@@ -35,6 +47,14 @@ display:
       fields:
         name:
           label: Nosaukums
+        uid:
+          label: Autors
+        changed:
+          label: Atjaunināts
+      arguments:
+        bundle:
+          exception:
+            title: Visi
       filters:
         name:
           expose:

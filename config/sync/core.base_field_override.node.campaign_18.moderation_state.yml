@@ -1,0 +1,18 @@
+uuid: 22508245-b93e-4bf6-8b4a-4a4a7ab2702e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_18
+id: node.campaign_18.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: campaign_18
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 8addb282-6df4-43b2-9e5b-e77de1b33cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_18
+id: node.campaign_18.menu_link
+field_name: menu_link
+entity_type: node
+bundle: campaign_18
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

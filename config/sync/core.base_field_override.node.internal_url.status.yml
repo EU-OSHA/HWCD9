@@ -1,0 +1,22 @@
+uuid: a29e454b-7fa3-43e3-a085-29d9d76a2eb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.internal_url
+id: node.internal_url.status
+field_name: status
+entity_type: node
+bundle: internal_url
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

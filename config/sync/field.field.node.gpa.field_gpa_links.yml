@@ -1,0 +1,37 @@
+uuid: ce2db11c-5528-44e0-9bbb-9ca71e0e86b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gpa_links
+    - node.type.gpa
+    - paragraphs.paragraphs_type.links
+  module:
+    - entity_reference_revisions
+id: node.gpa.field_gpa_links
+field_name: field_gpa_links
+entity_type: node
+bundle: gpa
+label: Links
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      links: links
+    negate: 0
+    target_bundles_drag_drop:
+      faq:
+        weight: 4
+        enabled: false
+      links:
+        weight: 5
+        enabled: true
+      p_schedule:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

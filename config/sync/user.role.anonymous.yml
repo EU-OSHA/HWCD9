@@ -6,7 +6,7 @@ dependencies:
     - comment
     - contact
     - exclude_node_title
-    - search
+    - media
     - system
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
@@ -25,9 +25,9 @@ permissions:
   - 'display EU Cookie Compliance popup'
   - 'download any document files'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use Search Autocomplete'
   - 'use exclude node title'
   - 'view files'
+  - 'view media'
   - 'view newsletter_content_collection entity collections'

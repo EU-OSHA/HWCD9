@@ -1,1 +1,37 @@
+.main-container{
+  padding: 0;
+}
+.path-media-centre .main-container {
+  padding: 2rem 0 ;
+}
+.sidebar-first{
+  padding-left: 0;
+}
+.section-center{
+  padding-right: 0;
+}
+
+h2.node__title{
+  color: $text-color-blue;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: 1rem;
+  clear: both;
+}
+.node{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  ul{
+    list-style: disc;
+    padding-left: 3rem;
+    li{
+      a{
+        background-color: transparent;
+        color: $text-color-blue;
+        font-weight: bold;
+        font-style: normal;
+      }
+    }
+  }
+}
 

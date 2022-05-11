@@ -2,6 +2,9 @@ display:
   default:
     display_title: Domyślny
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: Akcja
       pager:
         options:
           expose:
@@ -26,16 +29,27 @@ display:
             label: 'Typ mediów'
           group_info:
             label: 'Typ mediów'
+        langcode:
+          expose:
+            label: Język
   page:
     display_title: Strona
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Akcja
+        name:
+          separator: ', '
         edit_media:
           text: Edytuj
         delete_media:
           text: Usuń
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Wszystko
       filters:
         name:
           expose:
@@ -45,6 +59,14 @@ display:
       fields:
         name:
           label: Nazwa
+        uid:
+          label: Autor
+        changed:
+          label: Uaktualniono
+      arguments:
+        bundle:
+          exception:
+            title: Wszystko
       filters:
         name:
           expose:

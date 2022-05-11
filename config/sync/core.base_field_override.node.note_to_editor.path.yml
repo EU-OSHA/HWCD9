@@ -1,0 +1,20 @@
+uuid: efed9e88-c110-441c-b5b8-b4b684b8c041
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.note_to_editor
+  module:
+    - path
+id: node.note_to_editor.path
+field_name: path
+entity_type: node
+bundle: note_to_editor
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

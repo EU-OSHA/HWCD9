@@ -1,0 +1,20 @@
+uuid: adf708f9-2cf0-455a-9de3-710699134227
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.napo_film
+id: node.napo_film.uid
+field_name: uid
+entity_type: node
+bundle: napo_film
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

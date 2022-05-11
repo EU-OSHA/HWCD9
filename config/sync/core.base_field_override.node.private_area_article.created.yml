@@ -1,0 +1,18 @@
+uuid: da7aba44-59e1-48a2-97d3-8c233d1f7779
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area_article
+id: node.private_area_article.created
+field_name: created
+entity_type: node
+bundle: private_area_article
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

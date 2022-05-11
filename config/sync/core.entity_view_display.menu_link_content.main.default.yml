@@ -1,0 +1,26 @@
+uuid: 97075c13-cf65-4b05-a8ae-ebb53bbaf515
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.main.field_copyrigth
+    - field.field.menu_link_content.main.field_image_menu
+    - field.field.menu_link_content.main.field_menu_description
+    - system.menu.main
+id: menu_link_content.main.default
+targetEntityType: menu_link_content
+bundle: main
+mode: default
+content:
+  children:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  breadcrumbs: true
+  field_copyrigth: true
+  field_image_menu: true
+  field_menu_description: true
+  langcode: true
+  search_api_excerpt: true

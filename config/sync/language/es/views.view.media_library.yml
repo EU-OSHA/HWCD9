@@ -3,6 +3,9 @@ display:
     display_title: 'Por defecto'
     display_options:
       title: Multimedia
+      fields:
+        media_bulk_form:
+          action_title: Acción
       pager:
         options:
           expose:
@@ -13,6 +16,8 @@ display:
         options:
           reset_button_label: Restablecer
           exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       filters:
         status:
           expose:
@@ -25,16 +30,27 @@ display:
             label: 'Tipos multimedia'
           group_info:
             label: 'Tipos multimedia'
+        langcode:
+          expose:
+            label: Idioma
   page:
     display_title: Página
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Acción
+        name:
+          separator: ', '
         edit_media:
           text: Editar
         delete_media:
           text: Eliminar
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Todo(s)
       filters:
         name:
           expose:
@@ -44,6 +60,14 @@ display:
       fields:
         name:
           label: Nombre
+        uid:
+          label: Autor
+        changed:
+          label: Actualizado
+      arguments:
+        bundle:
+          exception:
+            title: Todo(s)
       filters:
         name:
           expose:

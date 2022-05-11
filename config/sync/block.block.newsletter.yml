@@ -2,17 +2,14 @@ uuid: 54368797-1028-45ab-9243-e40cdbd96be7
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:fc9074b0-f3ea-4c70-9e21-a78d72333047'
   module:
-    - block_content
     - system
   theme:
     - hwc_theme
 id: newsletter
 theme: hwc_theme
 region: sidebar_left
-weight: -15
+weight: -21
 provider: null
 plugin: 'block_content:fc9074b0-f3ea-4c70-9e21-a78d72333047'
 settings:

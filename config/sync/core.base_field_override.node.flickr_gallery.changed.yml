@@ -1,0 +1,18 @@
+uuid: 51a2bae1-1899-41a0-bbd8-98b6649e9ba0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.flickr_gallery
+id: node.flickr_gallery.changed
+field_name: changed
+entity_type: node
+bundle: flickr_gallery
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

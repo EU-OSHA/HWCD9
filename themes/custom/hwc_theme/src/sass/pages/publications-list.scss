@@ -2,7 +2,7 @@
 
 
 .node-content{
-  padding:1rem;
+  padding: 1rem 1rem 0;
 }
 
 .available-publication{
@@ -69,6 +69,11 @@
       }
     }
   }
+  .view-empty{
+    order: 3;
+    text-align: center;
+    padding: 1rem 0 3rem 0;
+  }
   .view-content {
     order: 3;
     display: flex;
@@ -105,8 +110,7 @@
             width: 100%;
             margin-right: 1.8rem;
             img{
-              width: 100%;
-              margin: 0;
+              margin: 0 0 1rem;
             }
           }
         }
@@ -171,7 +175,7 @@
     }
   }
   .view-content{
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
   }
   .box-latest-publications{
@@ -181,6 +185,7 @@
     display: flex;
     position: relative;
     margin-bottom: 1em;
+    margin-right: 2%;
     border-radius: 10px;
     .left-column{
       padding: 0.8rem 0rem 0.8rem 0.8rem;
@@ -247,92 +252,154 @@
 .publication-detail{
   display: flex;
   flex-direction: row;
-  .publications-left-column{
-    width: 25%;
-  }
-  .publications-detail-right-column{
-    .metadata{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      > span{
-        color: #57575a;
-      }
-      .date {
-
-      }
-      .type {
-        color: $text-color-blue;
-        label{
-          font-weight: bold;
+  margin-bottom: 2rem;
+  .publications-row{
+    border-bottom: 0;
+    margin-top: 2em;
+    padding: 0 2em 0 0;
+    display: flex;
+    flex-direction: row;
+    .publications-left-column{
+      float: none;
+      .field--type-image {
+        img {
+          max-width: fit-content;
+          margin: 0 1rem 1rem 0;
         }
       }
-      .num-pages{
-        font-weight: bold;
-        color: $text-color-blue;
-        padding-right: 4rem;
-      }
     }
-    .field-pdf-item{
-      display: flex;
-      span, img{
-        margin-right: 3px;
+    .publications-detail-right-column{
+      .metadata{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        > span{
+          color: #57575a;
+        }
+        .date {
+
+        }
+        .type {
+          color: $text-color-blue;
+          label{
+            font-weight: bold;
+          }
+        }
+        .num-pages{
+          font-weight: bold;
+          color: $text-color-blue;
+          padding-right: 4rem;
+        }
       }
-      a{
-        font-weight: bold;
-        color: $text-color-blue;
+      .field-pdf-item{
+        display: flex;
+        flex-wrap: wrap;
+        span, img{
+          margin-right: 3px;
+          height: 20px;
+        }
+        a{
+          font-weight: bold;
+          color: $text-color-blue;
+          &:before{
+            content: " ";
+            background: url(../images/content/download.png) no-repeat center;
+            padding: 2px 15px;
+          }
+        }
       }
     }
   }
-
 }
 
-
-
-
-.infographic-item{
+/* related resources */
+.related-resources{
   display: flex;
-  border-bottom: 1px dotted #749b00;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  width: 100%;
-  h2{
-    display: block;
-    margin-top: 0.5rem;
-    padding-bottom: 0.3rem;
-    line-height: 1.6rem;
-
-    a {
-      color: $text-color-blue;
-      font-style: normal;
-      font-size: 1.4rem;
+  flex-direction: column;
+  margin-top: 2rem;
+  h2.title-section {
+    padding:1.4rem 0 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: $text-color-blue;
+    margin-bottom: 0;
+    line-height: 2rem;
+  }
+  h3.subtitle-section{
+    background: url(../images/grey-h3-line.png) 0 60% repeat-x;
+    color: #5a5a5b;
+    margin: 1.5rem 0 0.5rem 0;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    span{
+      background: #daea96;
+      padding-right: 1rem;
     }
   }
-  .group-left{
-
-  }
-  .group-right{
-    .field-pdf-item{
-      display: flex;
-      span, img{
-        margin-right: 3px;
-      }
-      a{
-        color: $text-color-blue;
-        font-style: normal;
-        font-weight: bold;
+  .related-resources-item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    background: white;
+    position: relative;
+    border-bottom: 0;
+    .group-left {
+      padding: 0;
+      min-width: 155px;
+      margin-right: 1.5rem;
+      .field--type-image {
+        padding-right: 0;
+        border-radius: 7px;
+        width: 100%;
+        margin-right: 1.8rem;
+        img{
+          width: 100%;
+          margin: 0;
+        }
       }
     }
-    .field-img-item{
+    .group-right {
       display: flex;
-      span, img{
-        margin-right: 3px;
+      flex-direction: column;
+      flex: 1 1 auto;
+      padding: 1rem;
+      .metadata{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        > span{
+          color: $text-color-blue;
+        }
+        .date {
+
+        }
+        .type {
+          color: $text-color-blue;
+          label{
+            font-weight: bold;
+          }
+        }
+        .num-pages{
+          font-weight: bold;
+          color: $text-color-blue;
+          padding-right: 4rem;
+        }
       }
-      a{
-        color: $text-color-blue;
-        font-style: normal;
-        font-weight: bold;
+      .title-list {
+        display: block;
+        margin-top: 0.5rem;
+        padding-bottom: 0.3rem;
+        line-height: 1.6rem;
+        width: 90%;
+        a {
+          color: $text-color-blue;
+          font-style: normal;
+          font-size: 1.25rem;
+        }
       }
     }
   }
 }
+

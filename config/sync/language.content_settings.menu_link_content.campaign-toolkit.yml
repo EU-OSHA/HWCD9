@@ -1,0 +1,18 @@
+uuid: 82a9ba50-b694-43fa-a72d-8313ad596a8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.campaign-toolkit
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.campaign-toolkit
+target_entity_type_id: menu_link_content
+target_bundle: campaign-toolkit
+default_langcode: site_default
+language_alterable: false

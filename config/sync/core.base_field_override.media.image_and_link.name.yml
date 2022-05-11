@@ -1,0 +1,20 @@
+uuid: 5cabe45f-b298-450e-8969-7f88fffbe3c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image_and_link
+id: media.image_and_link.name
+field_name: name
+entity_type: media
+bundle: image_and_link
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

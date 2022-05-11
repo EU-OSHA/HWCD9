@@ -36,7 +36,7 @@ content:
     region: content
   field_activity:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -44,7 +44,7 @@ content:
     region: content
   field_file:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -52,7 +52,7 @@ content:
     region: content
   field_first_publication_date:
     type: timestamp
-    label: above
+    label: hidden
     settings:
       date_format: medium
       custom_date_format: ''
@@ -62,7 +62,7 @@ content:
     region: content
   field_image:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -70,7 +70,7 @@ content:
     region: content
   field_infographic_url:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -82,14 +82,14 @@ content:
     region: content
   field_metatags:
     type: metatag_empty_formatter
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 105
     region: content
   field_publication_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
       format_type: medium
@@ -98,7 +98,7 @@ content:
     region: content
   field_tags:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -106,7 +106,7 @@ content:
     region: content
   field_thumbnail:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -115,7 +115,7 @@ content:
     region: content
   field_twin_infographics:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -123,7 +123,7 @@ content:
     region: content
   field_xmlsitemap:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }

@@ -4,25 +4,32 @@
 {% set CountryName = content.field_country_code.0['#markup']  %}
 {% set euFlag = content.field_show_eu_flag.0  %}
 {% set city = content.field_city.0  %}
-{% set StartDate = content.field_start_date.0.start_date['#markup']  %}
-{% set EndDate = content.field_start_date.0.end_date['#markup']  %}
+{% set StartDate = content.field_start_date.0.start_date != null ?
+  content.field_start_date.0.start_date['#markup'] :
+  content.field_start_date.0['#markup']
+%}
+{% set EndDate = content.field_start_date.0.end_date != null ?
+  content.field_start_date.0.end_date['#markup'] :
+  content.field_start_date.0['#markup']
+%}
 {% set url = path('entity.node.canonical', {'node': node.id})  %}
 
 <section class="event-items-list">
+
   <div class="group-left">
-    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_image }}</a>
+{#    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_image }}</a>#}
 {% if CountryCode == "EU" or CountryCode == "EUROPA" %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/European-Union-180x180.png"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/European-Union-180x180.png" alt="{{ CountryName }}"></a>
       </div>
 {% else %}
     {% if  euFlag == "Yes" %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png" alt="{{ CountryName }}"></a>
       </div>
     {% else %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png" alt="{{ CountryName }}"></a>
       </div>
     {% endif %}
 {% endif %}
@@ -30,12 +37,14 @@
 
   </div>
   <div class="group-right col-md-10 col-sm-10">
+
     {% if StartDate or EndDate %}
       <div class="date-start-end">
         {% if StartDate  %}
-          <span class="date" datetime="{{ StartDate }}" >{{ StartDate }}</span> to
+          <span class="date" datetime="{{ StartDate }}" >{{ StartDate }}</span>
         {% endif %}
-        {% if EndDate %}
+        {% if EndDate != StartDate %}
+          to
           <span class="date" datetime="{{ EndDate }}" >{{ EndDate }}</span>
         {% endif %}
       </div>
@@ -58,9 +67,13 @@
     {% if content.body.0 %}
       <p>{{ content.body.0|render|striptags|slice(0, 150)|raw ~ '...' }}</p>
     {% endif %}
-    <p class="button">
-      <a href="{{ url }}" class="more-link">{{ 'See more'|t }}</a>
-    </p>
+    <div class="events-buttons">
+      <p class="button">
+        <a href="{{ url }}" class="more-link">{{ 'See more'|t }}</a>
+      </p>
+      <div class="add-calendar">{{ content.field_add_to_calendar }}</div>
+    </div>
 
   </div>
+
 </section>

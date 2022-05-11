@@ -1,0 +1,18 @@
+uuid: 7a9191ab-beb3-48b3-8064-283bee75d3d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+id: menu_link_content.main.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: main
+label: Changed
+description: 'The time that the menu link was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

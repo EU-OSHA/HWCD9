@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.organisation_type.feeds_item
     - field.field.taxonomy_term.organisation_type.field_crm_code
     - taxonomy.vocabulary.organisation_type
   module:
@@ -44,5 +45,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  feeds_item: true
   langcode: true
   status: true

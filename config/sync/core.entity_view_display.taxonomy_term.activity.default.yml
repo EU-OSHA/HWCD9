@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.activity.feeds_item
     - field.field.taxonomy_term.activity.field_activity_code
     - field.field.taxonomy_term.activity.field_activity_level
     - taxonomy.vocabulary.activity
@@ -37,4 +38,7 @@ content:
     weight: 2
     region: content
 hidden:
+  breadcrumbs: true
+  feeds_item: true
   langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,18 @@
+uuid: f9cbfb0d-4340-4aff-a10c-61ddb7d96651
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.frontpage_banner
+id: node.frontpage_banner.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: frontpage_banner
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.newsletter_sections.feeds_item
     - field.field.taxonomy_term.newsletter_sections.field_background_color
     - field.field.taxonomy_term.newsletter_sections.field_background_image
     - field.field.taxonomy_term.newsletter_sections.field_icon
@@ -57,4 +58,7 @@ content:
     weight: 1
     region: content
 hidden:
+  breadcrumbs: true
+  feeds_item: true
   langcode: true
+  search_api_excerpt: true

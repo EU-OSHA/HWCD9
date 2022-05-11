@@ -3,6 +3,9 @@ display:
     display_title: Zadano
     display_options:
       title: Mediji
+      fields:
+        media_bulk_form:
+          action_title: Akcija
       exposed_form:
         options:
           reset_button_label: Poništi
@@ -13,16 +16,27 @@ display:
         name:
           expose:
             label: Naziv
+        langcode:
+          expose:
+            label: Jezik
   page:
     display_title: Stranica
     display_options:
       fields:
+        media_bulk_form:
+          action_title: Akcija
+        name:
+          separator: ', '
         edit_media:
           text: Uredi
         delete_media:
           text: Ukloni
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: Svi
       filters:
         name:
           expose:
@@ -32,6 +46,14 @@ display:
       fields:
         name:
           label: Naziv
+        uid:
+          label: Autor
+        changed:
+          label: Osvježeno
+      arguments:
+        bundle:
+          exception:
+            title: Svi
       filters:
         name:
           expose:

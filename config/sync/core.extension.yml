@@ -1,11 +1,15 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
+  webform_clientside_validation: -1
   action: 0
   addtoany: 0
+  addtocalendar: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
   anchor_link: 0
+  authorization: 0
+  authorization_drupal_roles: 0
   automated_cron: 0
   better_exposed_filters: 0
   big_pipe: 0
@@ -53,6 +57,8 @@ module:
   facets: 0
   facets_rest: 0
   fakeobjects: 0
+  feeds: 0
+  feeds_tamper: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -61,6 +67,7 @@ module:
   help: 0
   history: 0
   hreflang: 0
+  hwc_backend: 0
   hwc_crm_partners_migration: 0
   hwc_custom_migrations: 0
   hwc_import_export: 0
@@ -80,12 +87,22 @@ module:
   language: 0
   language_neutral_aliases: 0
   languagefield: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
   link: 0
   locale: 0
+  mailsystem: 0
   masquerade: 0
+  matomo: 0
   media: 0
   media_library: 0
+  menu_block: 0
   menu_breadcrumb: 0
+  menu_item_extras: 0
+  menu_link_attributes: 0
   menu_link_content: 0
   menu_ui: 0
   meta_position: 0
@@ -107,16 +124,21 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  reroute_email: 0
   rest: 0
-  search: 0
+  scanner: 0
+  search_and_replace: 0
   search_api: 0
   search_api_autocomplete: 0
   search_api_db: 0
   search_api_solr: 0
   search_api_solr_admin: 0
+  search_autocomplete: 0
   serialization: 0
   shortcut: 0
+  swiftmailer: 0
   system: 0
+  tamper: 0
   taxonomy: 0
   taxonomy_access_fix: 0
   taxonomy_manager: 0
@@ -128,8 +150,14 @@ module:
   ultimate_cron: 0
   user: 0
   views_data_export: 0
+  views_show_more: 0
+  views_taxonomy_term_name_depth: 0
   views_templates: 0
   views_ui: 0
+  views_year_filter: 0
+  webform: 0
+  webform_node: 0
+  webform_ui: 0
   workbench_access: 0
   workflows: 0
   xls_serialization: 0

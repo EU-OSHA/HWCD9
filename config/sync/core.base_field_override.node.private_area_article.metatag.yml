@@ -1,0 +1,18 @@
+uuid: 1a8c779c-0b60-4ba7-b14b-e3cb832a6291
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_area_article
+id: node.private_area_article.metatag
+field_name: metatag
+entity_type: node
+bundle: private_area_article
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

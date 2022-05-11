@@ -1,0 +1,20 @@
+uuid: 672a78dc-f4d4-4358-8228-270c80c0d9ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_tool
+id: node.tk_tool.uid
+field_name: uid
+entity_type: node
+bundle: tk_tool
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

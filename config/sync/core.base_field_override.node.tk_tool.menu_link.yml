@@ -1,0 +1,20 @@
+uuid: fa289873-d104-4dc0-a277-afaa718b9be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tk_tool
+id: node.tk_tool.menu_link
+field_name: menu_link
+entity_type: node
+bundle: tk_tool
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

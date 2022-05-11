@@ -1,0 +1,374 @@
+uuid: c567de75-f4d6-480e-8429-706ae6c38a49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_type
+    - field.storage.node.body
+    - field.storage.node.field_country
+    - field.storage.node.field_country_code
+    - field.storage.node.field_tk_examples
+    - field.storage.node.field_workbench_access
+    - field.storage.node.field_prevention_measures
+    - field.storage.node.field_msd_priority_area
+    - field.storage.node.field_publication_date
+    - field.storage.node.field_publication_type
+    - field.storage.node.field_purpose_of_the_material
+    - field.storage.node.field_summary
+    - field.storage.node.field_tools_examples
+    - field.storage.node.field_tk_topics
+    - field.storage.node.field_tk_article_type
+    - field.storage.node.field_tk_tool_type
+    - field.storage.node.field_type_of_item
+    - search_api.server.default_solr_server
+  module:
+    - search_api_solr
+    - node
+    - taxonomy
+    - search_api
+    - file
+    - media
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+id: default_multilingual_node_index
+name: 'Default multilingual node index'
+description: 'An automatically created search index for indexing multilingual node data. Might be configured to specific needs.'
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  changed:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_article_type:
+    label: 'Article type'
+    datasource_id: 'entity:node'
+    property_path: field_article_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_article_type
+  field_country:
+    label: 'Country (field_country)'
+    datasource_id: 'entity:node'
+    property_path: field_country
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_country
+  field_country_code:
+    label: 'Country (field_country_code)'
+    datasource_id: 'entity:node'
+    property_path: field_country_code
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_country_code
+  field_msd_priority_area:
+    label: 'Priority area'
+    datasource_id: 'entity:node'
+    property_path: field_msd_priority_area
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_msd_priority_area
+  field_prevention_measures:
+    label: 'Prevention measures'
+    datasource_id: 'entity:node'
+    property_path: field_prevention_measures
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_prevention_measures
+  field_publication_date:
+    label: 'Publication date'
+    datasource_id: 'entity:node'
+    property_path: field_publication_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_publication_date
+  field_purpose_of_the_material:
+    label: 'Purpose of the material'
+    datasource_id: 'entity:node'
+    property_path: field_purpose_of_the_material
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_purpose_of_the_material
+  field_summary:
+    label: Summary
+    datasource_id: 'entity:node'
+    property_path: field_summary
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_summary
+  field_tk_article_type:
+    label: 'Type (tk article type)'
+    datasource_id: 'entity:node'
+    property_path: field_tk_article_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tk_article_type
+  field_tk_examples:
+    label: Examples
+    datasource_id: 'entity:node'
+    property_path: field_tk_examples
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tk_examples
+  field_tk_tool_type:
+    label: 'Type (tk tool type)'
+    datasource_id: 'entity:node'
+    property_path: field_tk_tool_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tk_tool_type
+  field_tk_topics:
+    label: 'Topics (tk)'
+    datasource_id: 'entity:node'
+    property_path: field_tk_topics
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tk_topics
+  field_tools_examples:
+    label: 'Tools & Examples'
+    datasource_id: 'entity:node'
+    property_path: field_tools_examples
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tools_examples
+  field_type_of_item:
+    label: 'Type of item'
+    datasource_id: 'entity:node'
+    property_path: field_type_of_item
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_type_of_item
+  field_workbench_access:
+    label: Partner
+    datasource_id: 'entity:node'
+    property_path: field_workbench_access
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_workbench_access
+  langcode:
+    label: 'Language (langcode)'
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - node
+  name:
+    label: 'Priority area » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_msd_priority_area:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_msd_priority_area
+      module:
+        - taxonomy
+  name_1:
+    label: 'Publication Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_publication_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_publication_type
+      module:
+        - taxonomy
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: 'Authored by'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - node
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: false
+datasource_settings:
+  'entity:file': {  }
+  'entity:media':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - article
+        - campaign_materials
+        - document
+        - event_speaker
+        - events
+        - infographic
+        - news
+        - partner
+        - practical_tool
+        - press_release
+        - publication
+        - tk_article
+        - tk_example
+        - tk_tool
+        - tk_toolkit
+        - tk_topic
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  hierarchy:
+    weights:
+      preprocess_index: -45
+    fields:
+      field_country: taxonomy_term-parent
+  highlight:
+    weights:
+      postprocess_query: 0
+    prefix: '<strong class="highlight">'
+    suffix: '</strong>'
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields:
+      - title
+    highlight: server
+    highlight_partial: false
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+    all_fields: false
+    fields:
+      - body
+      - field_summary
+    title: false
+    alt: false
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+server: default_solr_server

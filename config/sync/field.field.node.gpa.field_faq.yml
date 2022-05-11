@@ -1,0 +1,34 @@
+uuid: 4a0d05c9-ec7f-4bd7-aabf-9706cd96f58e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq
+    - node.type.gpa
+    - paragraphs.paragraphs_type.faq
+  module:
+    - entity_reference_revisions
+id: node.gpa.field_faq
+field_name: field_faq
+entity_type: node
+bundle: gpa
+label: FAQ
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      faq: faq
+    negate: 0
+    target_bundles_drag_drop:
+      faq:
+        weight: 3
+        enabled: true
+      p_schedule:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

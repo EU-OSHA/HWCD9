@@ -5,7 +5,8 @@ dependencies:
   module:
     - comment
     - exclude_node_title
-    - search
+    - matomo
+    - media
     - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
@@ -23,11 +24,12 @@ permissions:
   - 'display EU Cookie Compliance popup'
   - 'download any document files'
   - 'edit mimemail user settings'
+  - 'opt-in or out of matomo tracking'
   - 'post comments'
-  - 'search content'
   - 'skip comment approval'
   - 'use Search Autocomplete'
   - 'use exclude node title'
   - 'use manualcrop'
   - 'view files'
+  - 'view media'
   - 'view newsletter_content_collection entity collections'
