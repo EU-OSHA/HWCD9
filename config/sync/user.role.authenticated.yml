@@ -5,6 +5,7 @@ dependencies:
   module:
     - comment
     - exclude_node_title
+    - matomo
     - media
     - system
 _core:
@@ -23,6 +24,7 @@ permissions:
   - 'display EU Cookie Compliance popup'
   - 'download any document files'
   - 'edit mimemail user settings'
+  - 'opt-in or out of matomo tracking'
   - 'post comments'
   - 'skip comment approval'
   - 'use Search Autocomplete'
