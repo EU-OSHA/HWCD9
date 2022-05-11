@@ -175,7 +175,7 @@
     }
   }
   .view-content{
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
   }
   .box-latest-publications{
@@ -185,6 +185,7 @@
     display: flex;
     position: relative;
     margin-bottom: 1em;
+    margin-right: 2%;
     border-radius: 10px;
     .left-column{
       padding: 0.8rem 0rem 0.8rem 0.8rem;

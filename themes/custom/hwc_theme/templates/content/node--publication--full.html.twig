@@ -75,13 +75,13 @@
 
 {% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
   <div class="back-to-publications pull-right">
-    <a href="/en/tools-and-publications/campaign-materials"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+    <a href="{{ drupal_url('tools-and-publications/campaign-materials')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
       <span>Back to campaign materials list</span>
     </a>
   </div>
 {% else %}
   <div class="back-to-publications pull-right">
-    <a href="/en/tools-and-publications/publications"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+    <a href="{{ drupal_url('tools-and-publications/publications')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
       <span>Back to publications list</span>
     </a>
   </div>
@@ -156,11 +156,13 @@
 
                 {% for languages in node.getTranslationLanguages() %}
                   {% set lang = languages.id  %}
-                  {% set url = node.getTranslation(lang).field_file.0.entity.field_media_document.0.entity.uri.value %}
-                  {% if url %}
-                  <a href="{{ file_url( url ) }}" target="_blank">
-                    {{ lang|upper }}</a>
-                  {% endif %}
+                  {% for key, fileUrl in node.getTranslation(lang).field_file %}
+                    {% set url = fileUrl.entity.field_media_document.0.entity.uri.value %}
+                    {% if url %}
+                    <a href="{{ file_url( url ) }}" target="_blank">
+                      {{ lang|upper }}</a>
+                    {% endif %}
+                  {% endfor %}
                 {% endfor %}
 
               </div>

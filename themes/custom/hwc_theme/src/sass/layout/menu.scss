@@ -33,7 +33,7 @@
           display: block;
           padding: 1rem 1rem 1rem 1rem;
           &:hover{
-            text-decoration: no;
+            text-decoration: none;
           }
         }
         ul.menu-level-1 {
@@ -136,6 +136,9 @@
       margin-right: 20px;
       &:nth-child(1){
         display: none;
+      }
+      &:last-child{
+        border-right: none;
       }
       > a{
         color: white;

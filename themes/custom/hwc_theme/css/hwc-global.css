@@ -238,6 +238,29 @@ ul {
   text-decoration: none;
 }
 
+.see-all-link {
+  position: relative;
+  color: white !important;
+  width: auto;
+  background: url(../images/ico-plus-20.png) no-repeat 98.5% 3px #003399;
+  text-transform: uppercase;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 3px 3.5em 3px 0.7em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 1em;
+}
+.see-all-link:hover {
+  color: #FFF;
+  background: url(../images/ico-next-20-white-hover.png) no-repeat 98.5% 3px #acc700;
+  text-decoration: none;
+}
+
 .download-button {
   border: 1px solid #57575a;
   border-radius: 5px;
@@ -777,6 +800,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 2em;
 }
 .event-items-list-home .group-left {
   font-size: 0.8rem !important;
@@ -1186,7 +1210,7 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   padding: 1rem 1rem 1rem 1rem;
 }
 #navbar #block-hwc-theme-main-menu ul.menu-level-0 > li.menu-item > a:hover {
-  text-decoration: no;
+  text-decoration: none;
 }
 #navbar #block-hwc-theme-main-menu ul.menu-level-0 > li.menu-item ul.menu-level-1 {
   display: none;
@@ -1277,6 +1301,9 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
 }
 .site-footer__first ul.menu-level-0 > li.menu-item:nth-child(1) {
   display: none;
+}
+.site-footer__first ul.menu-level-0 > li.menu-item:last-child {
+  border-right: none;
 }
 .site-footer__first ul.menu-level-0 > li.menu-item > a {
   color: white;
@@ -1597,7 +1624,7 @@ h2.node__title {
   font-size: 1.875rem;
 }
 .latest-publications .view-content {
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: nowrap;
 }
 .latest-publications .box-latest-publications {
@@ -1607,6 +1634,7 @@ h2.node__title {
   display: flex;
   position: relative;
   margin-bottom: 1em;
+  margin-right: 2%;
   border-radius: 10px;
 }
 .latest-publications .box-latest-publications .left-column {
