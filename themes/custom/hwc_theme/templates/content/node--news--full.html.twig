@@ -73,11 +73,12 @@
 ]
 %}
 <div class="back-to-publications pull-right">
-  <a href="/en/media-centre/news"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+  <a href="{{ drupal_url('media-centre/news')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
     <span>Back to news</span>
   </a>
 </div>
 
+{{ content.content_moderation_control}}
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}

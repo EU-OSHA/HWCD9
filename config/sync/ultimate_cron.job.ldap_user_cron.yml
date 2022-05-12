@@ -1,6 +1,6 @@
 uuid: c809de9e-50b8-4bc3-912a-44bfaaaa0047
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - ldap_user

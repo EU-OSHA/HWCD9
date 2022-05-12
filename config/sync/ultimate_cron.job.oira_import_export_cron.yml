@@ -1,6 +1,6 @@
 uuid: fff60c93-c87b-45d0-be95-7f7132343973
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - oira_import_export

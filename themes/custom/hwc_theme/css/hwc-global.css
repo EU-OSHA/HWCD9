@@ -812,6 +812,83 @@ body {
   font-size: 1rem;
 }
 
+section.home-news-events {
+  margin: 4rem auto;
+}
+
+.oficial-campaign-partner {
+  margin: 2rem auto 4rem auto;
+}
+.oficial-campaign-partner .homepage-partners .attachment.attachment-before {
+  text-align: center;
+  width: 80%;
+  margin: 0.5rem auto;
+}
+.oficial-campaign-partner h2.line {
+  color: #00309d;
+  margin-top: 0;
+  font-weight: 400;
+  background: url(../images/grey-h3-line.png) repeat-x 50% 75%;
+  margin-bottom: 0;
+}
+.oficial-campaign-partner h2.line span {
+  background: #FFF;
+  padding-right: 0.7em;
+}
+
+.multicarousel--block {
+  overflow: hidden;
+  padding: 2rem 3.5rem 3.5rem;
+  width: 100%;
+  margin: 1rem auto;
+  position: relative;
+  display: flex;
+}
+.multicarousel--block .multicarousel--block--inner {
+  transition: 1s ease all;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+.multicarousel--block .multicarousel--block--inner .item {
+  border-right: 1px solid #CCC;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.multicarousel--block .multicarousel--block--inner .item > a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.multicarousel--block button {
+  background-color: #FFF;
+  height: 100%;
+  cursor: pointer;
+  border: 0;
+}
+.multicarousel--block button:hover, .multicarousel--block button:focus, .multicarousel--block button:active {
+  background-color: #FFF !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.multicarousel--block button:hover img, .multicarousel--block button:focus img, .multicarousel--block button:active img {
+  opacity: 0.8;
+}
+.multicarousel--block .leftLst {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.multicarousel--block .rightLst {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
 /*** Stiky header ***/
 body {
   padding-top: 186px !important;

@@ -77,6 +77,11 @@
     <span>Back to Infographics</span>
   </a>
 </div>
+
+{% if content.content_moderation_control %}
+  {{ content.content_moderation_control}}
+{% endif %}
+
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
