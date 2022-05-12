@@ -1,6 +1,6 @@
 uuid: 6a80bb03-0caa-4394-b387-4c8243552691
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - xmlsitemap

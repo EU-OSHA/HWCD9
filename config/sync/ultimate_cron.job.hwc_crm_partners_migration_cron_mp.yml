@@ -10,10 +10,11 @@ weight: 0
 module: hwc_crm_partners_migration
 callback: hwc_crm_partners_migration_callback_mp
 scheduler:
-  id: simple
+  id: crontab
   configuration:
     rules:
-      - '0+@ 0 * * *'
+      - '40 3 * * *'
+    catch_up: 0
 launcher:
   id: serial
   configuration:

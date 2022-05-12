@@ -88,7 +88,10 @@
 {% endif %}
 
 {{ drupal_block('local_tasks_block') }}
-{{ content.content_moderation_control}}
+{% if content.content_moderation_control %}
+  {{ content.content_moderation_control}}
+{% endif %}
+
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
