@@ -11,6 +11,6 @@ ncw_add_infographic: /export/list-additional-infographic/digitalisation
 ncw_infographic: /export/list/infographic
 ncw_press_release: "/export/press_release/list\t"
 ncw_add_youtube: /export/list-additional-youtube/digitalisation
-ncw_endpoint: 'http://osha-test.bilbomatica.es'
+ncw_endpoint: 'https://stin.osha.europa.eu'
 ncw_cron_disable: 1
 ncw_cron_minutes: '15'
