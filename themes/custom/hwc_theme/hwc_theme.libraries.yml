@@ -25,6 +25,7 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/carousel-home.js: {}
     js/sticky_header.js: {}
   css:
     component:
