@@ -365,8 +365,7 @@ text_files:
     ert
     era
     vilkas
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"

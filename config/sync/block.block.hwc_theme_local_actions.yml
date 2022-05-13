@@ -9,7 +9,7 @@ _core:
 id: hwc_theme_local_actions
 theme: hwc_theme
 region: content
-weight: -9
+weight: -23
 provider: null
 plugin: local_actions_block
 settings:

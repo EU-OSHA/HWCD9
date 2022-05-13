@@ -354,8 +354,7 @@ text_files:
     itibariyle
     kadar
     karşın
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"

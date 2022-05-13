@@ -505,8 +505,7 @@ text_files:
     niin
     nyt
     itse
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"

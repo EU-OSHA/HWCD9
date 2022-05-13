@@ -1,0 +1,601 @@
+uuid: b12ca5c2-adf9-47da-8c2b-dcf8edae197c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - field.storage.node.field_logo
+    - field.storage.taxonomy_term.field_iso2
+    - search_api.index.partner_countries
+    - taxonomy.vocabulary.partner_types
+  content:
+    - 'taxonomy_term:partner_types:20b04b99-e441-48ff-acbe-e2d2fa8278d4'
+  module:
+    - search_api
+    - taxonomy
+id: partner_countries_een_osh_ambassador_
+label: 'Partner countries(EEN OSH Ambassador)'
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_partner_countries
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'Partner countries(EEN OSH Ambassador)'
+      fields:
+        field_iso2:
+          id: field_iso2
+          table: search_api_index_partner_countries
+          field: field_iso2
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '<div id="hwc-char-0-{{ field_iso2__value }}" class="char-anchor">{{ field_iso2__value }}</div>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+        field_country:
+          id: field_country
+          table: search_api_index_partner_countries
+          field: field_country
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: partner
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              activity:
+                display_method: label
+                view_mode: default
+              article_types:
+                display_method: label
+                view_mode: default
+              biological_hazard:
+                display_method: label
+                view_mode: default
+              business_sector:
+                display_method: label
+                view_mode: default
+              campaign_material_types:
+                display_method: label
+              chemical_and_biological_hazards_:
+                display_method: label
+                view_mode: default
+              chemical_hazards_related_to_heal:
+                display_method: label
+                view_mode: default
+              contact_type:
+                display_method: label
+              contact_type_of_sender:
+                display_method: label
+              country:
+                display_method: label
+                view_mode: default
+              country_status:
+                display_method: label
+              document:
+                display_method: label
+              document_partner_type:
+                display_method: label
+                view_mode: default
+              exposure_route:
+                display_method: label
+                view_mode: default
+              flickr_tags:
+                display_method: label
+              hashtag_terms:
+                display_method: label
+              hazmap_categories:
+                display_method: label
+                view_mode: default
+              level_of_prevention:
+                display_method: label
+                view_mode: default
+              msd_glossary:
+                display_method: label
+              msd_hazards:
+                display_method: label
+              msd_health_effects:
+                display_method: label
+              msd_prevention_measures:
+                display_method: label
+              msd_priority_area:
+                display_method: label
+              msd_purpose_of_the_material:
+                display_method: label
+              msd_target_audience:
+                display_method: label
+              msd_type_of_visual_resource:
+                display_method: label
+              msd_worker_groups_covered:
+                display_method: label
+              nace_codes:
+                display_method: label
+                view_mode: default
+              newsletter_sections:
+                display_method: label
+                view_mode: default
+              nodequeue_help_text:
+                display_method: label
+                view_mode: default
+              organisation_type:
+                display_method: label
+                view_mode: default
+              partner_types:
+                display_method: label
+              practical_tool_types:
+                display_method: label
+              proposal_for_target_groups:
+                display_method: label
+                view_mode: default
+              publication_types:
+                display_method: label
+                view_mode: default
+              related_resources:
+                display_method: label
+                view_mode: default
+              section:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              thesaurus:
+                display_method: label
+              tools_and_examples:
+                display_method: label
+              user_mention_terms:
+                display_method: label
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
+                display_method: label
+        field_logo_1:
+          id: field_logo_1
+          table: search_api_datasource_partner_countries_entity_node
+          field: field_logo
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: default
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              audio:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              image:
+                display_method: label
+                view_mode: default
+              image_and_link:
+                display_method: label
+                view_mode: default
+              image_caption:
+                display_method: label
+                view_mode: default
+              remote_video:
+                display_method: label
+                view_mode: default
+              video:
+                display_method: label
+                view_mode: default
+        title_1:
+          id: title_1
+          table: search_api_datasource_partner_countries_entity_node
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 69
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: search_api_index_partner_countries
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+      arguments: {  }
+      filters:
+        field_partner_type:
+          id: field_partner_type
+          table: search_api_index_partner_countries
+          field: field_partner_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value:
+            - 462
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: partner_types
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+      style:
+        type: default
+        options:
+          grouping:
+            -
+              field: field_iso2
+              rendered: true
+              rendered_strip: false
+            -
+              field: field_country
+              rendered: true
+              rendered_strip: false
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      relationships:
+        field_country:
+          id: field_country
+          table: search_api_datasource_partner_countries_entity_node
+          field: field_country
+          relationship: none
+          group_type: group
+          admin_label: 'Country: Taxonomy term'
+          entity_type: node
+          plugin_id: search_api
+          required: false
+          skip_access: false
+      use_ajax: true
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.taxonomy_term.field_iso2'
+        - 'config:search_api.index.partner_countries'
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
+    position: 1
+    display_options:
+      cache:
+        type: search_api_tag
+        options: {  }
+      defaults:
+        cache: false
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.field_country'
+        - 'config:field.storage.node.field_logo'
+        - 'config:field.storage.taxonomy_term.field_iso2'
+        - 'config:search_api.index.partner_countries'

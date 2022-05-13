@@ -1,0 +1,25 @@
+uuid: 28b4055b-11be-4ca5-bf8f-1ea83980a370
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_partner
+    - system
+  theme:
+    - hwc_theme
+id: relatedresourceswikiblock
+theme: hwc_theme
+region: content
+weight: 0
+provider: null
+plugin: related_resources_wiki_block
+settings:
+  id: related_resources_wiki_block
+  label: 'Related Resources Wiki Block'
+  label_display: visible
+  provider: hwc_partner
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /campaign-partners/good-practice-exchange

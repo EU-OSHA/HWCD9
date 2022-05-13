@@ -9,7 +9,7 @@ dependencies:
 id: addtoanybuttons
 theme: hwc_theme
 region: content
-weight: -11
+weight: -26
 provider: null
 plugin: addtoany_block
 settings:

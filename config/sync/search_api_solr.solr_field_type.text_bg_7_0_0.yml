@@ -401,8 +401,7 @@ text_files:
     ще
     щом
     я
-  protwords: |
-
+  protwords: ''
   accents: ''
   synonyms: |
     drupal, durpal
