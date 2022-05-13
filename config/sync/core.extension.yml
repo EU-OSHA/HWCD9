@@ -127,8 +127,10 @@ module:
   reroute_email: 0
   rest: 0
   scanner: 0
+  search: 0
   search_and_replace: 0
   search_api: 0
+  search_api_glossary: 0
   search_api_autocomplete: 0
   search_api_db: 0
   search_api_solr: 0
