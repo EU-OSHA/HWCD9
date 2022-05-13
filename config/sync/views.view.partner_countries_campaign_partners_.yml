@@ -29,7 +29,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Partner countries(Campaign partners)'
+      title: 'Partner countries(Official Campaign partners)'
       fields:
         field_country:
           id: field_country
@@ -875,8 +875,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: search_api_tag
-        options: {  }
+        type: none
       defaults:
         cache: false
       display_extenders: {  }

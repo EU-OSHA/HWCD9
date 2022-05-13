@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Partner countries solr'
+      title: 'Partner countries (Campaign media partners)'
       fields:
         field_iso2:
           id: field_iso2
@@ -598,12 +598,11 @@ display:
     position: 1
     display_options:
       cache:
-        type: search_api_tag
-        options: {  }
+        type: none
       defaults:
         cache: false
       display_extenders: {  }
-      path: campaign-partners/campaign-media-partner
+      path: campaign-partners/campaign-media-partners
     cache_metadata:
       max-age: -1
       contexts:

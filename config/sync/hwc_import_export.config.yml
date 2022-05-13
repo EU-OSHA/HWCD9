@@ -15,3 +15,34 @@ ncw_press_release: /export/list/press_release/campaign_2020-2022
 ncw_add_slideshare: /export/list-additional-slideshares/campaign_2020-2022
 ncw_add_youtube: /export/list-additional-youtube/campaign_2020-2022
 ncw_file: /export/list-additional-files/campaign_2020-2022
+ncw_cron_disable: 1
+ncw_cron_minutes: '20'
+campaign_partnership_title: 'Check out the campaign partnership offer'
+campaign_partnership_offer_body: 'Find out more about becoming a campaign partner and make sure you meet the requirements. '
+campaign_partnership_link: /sites/hwc/files/uploads/Partnership_offer_HWC20.pdf
+campaign_partnership_offer_link: 'Download the offer'
+campaign_partnership_register_link: /partner/register
+campaign_partnership_app_form_title: 'Fill out the online application form'
+campaign_partnership_app_form_body: 'Want to apply? The application form is available online from 15 September to 20 December 2020. '
+campaign_partnership_result_title: 'Get the results'
+campaign_partnership_result_body: 'The internal selection process will take place in January 2021, and successful organisations will be informed soon after that.'
+media_partnership_offer_title: 'Download the media partnership offer'
+media_partnership_offer_body: 'Get to know more about requirements and benefits and <a href="mailto:news@osha.europa.eu">contact us</a>'
+media_partnership_offer_link: /sites/hwc/files/uploads/Partnership_offer_HWC20.pdf
+media_partnership_offer_link_title: 'Download the offer'
+media_partnership_register_link_title: 'Contact us'
+media_partnership_register_link: 'mailto:news@osha.europa.eu'
+media_partnership_app_form_title: 'Fill in the online application form'
+media_partnership_app_form_body: 'The form will be sent to eligible candidates upon request.'
+ncw_partner_ocp_download_information: '2022-05-20'
+ncw_partner_ocp_registration: '2022-06-20'
+ncw_partner_mp_download_information: '2022-06-20'
+ncw_partner_mp_registration: '2023-06-20'
+campaign_partnership_register_link_title: 'Apply here'
+media_partnership_result_title: 'See the results'
+media_partnership_result_body: 'Profiles of validated media partners are published on the website as of October 2020.'
+ncw_partner_mp_check_out: 'May 2022'
+ncw_partner_mp_fill_out_start: '2022-09-10'
+ncw_partner_mp_fill_out_end: '2022-12-20'
+ncw_partner_mp_get_the_results: 'January 2023'
+ncw_partner_mp_fill_out: 'September 2020 - December 2020'

@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: country_taxonomy_term_iso2
-name: 'Country » Taxonomy term » ISO2'
+name: 'Country » Taxonomy term » ISO2 (Media partners)'
 weight: 0
 min_count: 1
 url_alias: country_taxonomy_term_iso2
