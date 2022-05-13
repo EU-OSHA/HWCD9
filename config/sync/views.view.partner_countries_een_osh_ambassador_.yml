@@ -560,18 +560,7 @@ display:
           required: false
           skip_access: false
       use_ajax: true
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: false
-          content: "The Enterprise Europe Network (EEN) is a European Commission-led network and a key instrument in the EU's strategy to boost growth and jobs. Bringing together close to 600 business support organisations from 50 countries, the EEN helps small companies seize the unparalleled business opportunities in the EU single market.\r\n\r\nSince 2009, the EEN has been cooperating with EU-OSHA to raise awareness of OSH among SMEs and micro enterprises. To carry out this task, the EEN nominates OSH Ambassadors at country level.\r\n\r\nThe Healthy Workplaces Campaign constitutes an important area of cooperation between the Agency and the EEN, and the OSH Ambassadors are actively involved in promoting this cooperation.\r\n\r\n<b>Find the OSH ambassador in your country</b>"
-          tokenize: false
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -586,10 +575,10 @@ display:
         - 'config:field.storage.node.field_logo'
         - 'config:field.storage.taxonomy_term.field_iso2'
         - 'config:search_api.index.partner_countries'
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
     position: 1
     display_options:
       cache:
@@ -598,7 +587,6 @@ display:
       defaults:
         cache: false
       display_extenders: {  }
-      path: campaign-partners/enterprise-europe-network
     cache_metadata:
       max-age: -1
       contexts:

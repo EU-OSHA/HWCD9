@@ -1,0 +1,25 @@
+uuid: 705c1729-7c8c-4dbb-a67f-301c8ca55fc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_partner
+    - system
+  theme:
+    - hwc_theme
+id: eventsnewsblock
+theme: hwc_theme
+region: content
+weight: 1
+provider: null
+plugin: events_news_views_block
+settings:
+  id: events_news_views_block
+  label: 'Events News Block'
+  label_display: '0'
+  provider: hwc_partner
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /campaign-partners/good-practice-exchange

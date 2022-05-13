@@ -1,0 +1,25 @@
+uuid: 903365ed-958e-4550-adf5-80648e180a43
+langcode: en
+status: true
+dependencies:
+  module:
+    - hwc_partner
+    - system
+  theme:
+    - hwc_theme
+id: relatedresourcespublicationsblock
+theme: hwc_theme
+region: content
+weight: -1
+provider: null
+plugin: related_resources_publications_block
+settings:
+  id: related_resources_publications_block
+  label: 'Related Resources Publications Block'
+  label_display: '0'
+  provider: hwc_partner
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /campaign-partners/senior-labour-inspectors-committee-slic

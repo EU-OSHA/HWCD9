@@ -519,7 +519,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: true
+          reduce_duplicates: false
           vid: partner_types
           type: textfield
           hierarchy: false
@@ -565,18 +565,7 @@ display:
           required: false
           skip_access: false
       use_ajax: true
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: false
-          content: "Our media partners comprise an exclusive pool of journalists and editors from EU Member States and other countries of the European Free Trade Association (EFTA) interested in promoting occupational safety and health (OSH), and in particular the Healthy Workplaces Campaigns.\r\n\r\nPartnership is reserved for media outlets or publications that are willing and able to get substantially involved.\r\n\r\nBecome a media partner\r\n\r\n<b>Find the media partner in your country</b>"
-          tokenize: false
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -591,18 +580,18 @@ display:
         - 'config:field.storage.node.field_logo'
         - 'config:field.storage.taxonomy_term.field_iso2'
         - 'config:search_api.index.partner_countries'
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
       display_extenders: {  }
-      path: campaign-partners/campaign-media-partners
     cache_metadata:
       max-age: -1
       contexts:

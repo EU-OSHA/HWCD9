@@ -1,4 +1,4 @@
-uuid: 3d91282f-7542-4f5d-b063-c97e35f9edd2
+uuid: aa463315-8c06-4389-be85-17d852a58fdc
 langcode: en
 status: true
 dependencies:
@@ -12,13 +12,16 @@ name: 'Country » Taxonomy term » ISO2 (EEN)'
 weight: 0
 min_count: 1
 url_alias: country_taxonomy_term_iso2_een
-facet_source_id: 'search_api:views_page__partner_countries_een_osh_ambassador___page_1'
+facet_source_id: 'search_api:views_block__partner_countries_een_osh_ambassador___block_1'
 field_identifier: field_iso2
 query_operator: or
 hard_limit: 0
 exclude: false
 use_hierarchy: false
 keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
 widget:
@@ -34,7 +37,7 @@ widget:
       show_more_label: 'Show more'
 empty_behavior:
   behavior: none
-only_visible_when_facet_source_is_visible: true
+only_visible_when_facet_source_is_visible: false
 show_only_one_result: false
 show_title: false
 processor_configs:
@@ -56,17 +59,16 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
+  hierarchy_processor:
+    processor_id: hierarchy_processor
+    weights:
+      build: 100
+    settings: {  }
   list_item:
     processor_id: list_item
     weights:
       build: 5
     settings: {  }
-  raw_value_widget_order:
-    processor_id: raw_value_widget_order
-    weights:
-      sort: 50
-    settings:
-      sort: ASC
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

@@ -1,22 +1,22 @@
-uuid: 0ae5637a-9dcd-4e1c-93ad-166fd6bde9cb
+uuid: da3b3b6f-f41f-4de9-aef5-0521df52904d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.frontpage_events
+    - views.view.partner_countries_solr
   module:
     - system
     - views
   theme:
     - hwc_theme
-id: views_block__frontpage_events_block
+id: views_block__partner_countries_solr_block_1
 theme: hwc_theme
 region: content
-weight: -24
+weight: -9
 provider: null
-plugin: 'views_block:frontpage_events-block'
+plugin: 'views_block:partner_countries_solr-block_1'
 settings:
-  id: 'views_block:frontpage_events-block'
+  id: 'views_block:partner_countries_solr-block_1'
   label: ''
   label_display: '0'
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: /campaign-partners/campaign-media-partners

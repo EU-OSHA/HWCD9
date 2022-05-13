@@ -841,18 +841,7 @@ display:
           required: false
           skip_access: false
       use_ajax: true
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: false
-          content: "<p>Our aim is to create safer and healthier workplaces for everyone’s benefit, but we can’t achieve this by ourselves. Our Healthy Workplaces Campaigns rely on a diverse range of official campaign partners.</p>\r\n\r\n<p>Our partners come from a variety of sectors across Europe and include companies and associations in both the public and private sectors. Their input is essential to make sure that the message reaches all kinds of workplaces throughout the EU.</p>\r\n\r\n<a href=\"https://test.healthy-workplaces.eu/en/become-campaign-partner\" target=\"_self\">Become an official campaign partner</a>"
-          tokenize: false
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -868,10 +857,10 @@ display:
         - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_orgtype'
         - 'config:search_api.index.partner_countries'
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
+  block_1:
+    id: block_1
+    display_title: Block
+    display_plugin: block
     position: 1
     display_options:
       cache:
@@ -879,7 +868,6 @@ display:
       defaults:
         cache: false
       display_extenders: {  }
-      path: campaign-partners/official-campaign-partners
     cache_metadata:
       max-age: -1
       contexts:

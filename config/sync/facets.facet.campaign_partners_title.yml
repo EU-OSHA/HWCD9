@@ -1,4 +1,4 @@
-uuid: e1ee9254-7f20-4e37-929d-ee39c375ba0f
+uuid: 105f9b27-bbde-4133-bec2-63395522f801
 langcode: en
 status: true
 dependencies:
@@ -7,18 +7,21 @@ dependencies:
     - views.view.partner_countries_campaign_partners_
   module:
     - search_api
-id: title
-name: 'Title (Official Campaign partners)'
+id: campaign_partners_title
+name: Title
 weight: 0
 min_count: 1
-url_alias: title
-facet_source_id: 'search_api:views_page__partner_countries_campaign_partners___page_1'
+url_alias: campaign_partners_title
+facet_source_id: 'search_api:views_block__partner_countries_campaign_partners___block_1'
 field_identifier: title
 query_operator: or
 hard_limit: 0
 exclude: false
 use_hierarchy: false
 keep_hierarchy_parents_active: false
+hierarchy:
+  type: taxonomy
+  config: {  }
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
 widget:
@@ -34,7 +37,7 @@ widget:
       show_more_label: 'Show more'
 empty_behavior:
   behavior: none
-only_visible_when_facet_source_is_visible: true
+only_visible_when_facet_source_is_visible: false
 show_only_one_result: false
 show_title: false
 processor_configs:
@@ -56,10 +59,15 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
-  hide_non_narrowing_result_processor:
-    processor_id: hide_non_narrowing_result_processor
+  hierarchy_processor:
+    processor_id: hierarchy_processor
     weights:
-      build: 40
+      build: 100
+    settings: {  }
+  list_item:
+    processor_id: list_item
+    weights:
+      build: 5
     settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
