@@ -408,8 +408,7 @@ text_files:
     varat
     varēja
     varēs
-  protwords: |
-
+  protwords: ''
   accents: |
     # À => A
     "\u00C0" => "A"
