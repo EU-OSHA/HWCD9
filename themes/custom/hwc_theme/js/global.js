@@ -21,8 +21,9 @@
 (function ($, Drupal) {
   'use strict';
   $( window ).on( "load", function() {
+    $('.sidebar-first .block-facets .content').css('display','none')
     $('.sidebar-first .block-facets h2').click(function() {
-      var $checkboxes =  $('.sidebar-first .block-facets .content');
+      var $checkboxes = $(this).parent().find( ".content" );
       if ($checkboxes.is(':visible')) {
         $checkboxes.slideUp();
         $(this).removeClass('area-shown');

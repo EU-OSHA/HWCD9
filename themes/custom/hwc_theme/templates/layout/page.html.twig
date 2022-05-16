@@ -107,7 +107,13 @@
                   </aside>
                 {% endif %}
 
-                <section class="section section-center">
+                {% if page.sidebar_left|length > 0 %}
+                <section class="section section-center col-12 col-lg-9 ">
+                {% elseif page.sidebar_right|length > 0 %}
+                  <section class="section section-center col-12 col-lg-6">
+                {% else %}
+                    <section class="section section-center col-12">
+                {% endif %}
                   {{ page.content }}
                 </section>
 
@@ -133,9 +139,9 @@
               {{ page.footer.mainnavigation }}
             </div>
           {% endif %}
-          {% if page.footer_end %}
+          {% if page.footer.footer  %}
             <div class="site-footer__bottom">
-              {{ page.footer_end }}
+              {{ page.footer.footer }}
             </div>
           {% endif %}
         </div>
