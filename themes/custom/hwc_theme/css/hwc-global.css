@@ -332,6 +332,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.main-container {
+  margin: 2rem 0;
+}
+
 .page-media-centre-news .main-container,
 .page-search .main-container,
 .page-media-centre-press-room .main-container,
@@ -553,6 +557,31 @@ body {
   background: #57575a;
   height: auto;
   padding-bottom: 1rem;
+}
+.site-footer .site-footer__bottom ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.site-footer .site-footer__bottom ul li {
+  padding-right: 1em;
+}
+.site-footer .site-footer__bottom ul li a {
+  color: #FFF;
+  padding-left: 0;
+}
+.site-footer .site-footer__bottom ul li a:hover {
+  text-decoration: underline;
+}
+.site-footer .site-footer__bottom ul li :hover, .site-footer .site-footer__bottom ul li :focus {
+  background: none;
+}
+.site-footer .site-footer__bottom ul li ::after {
+  content: "";
+  padding-left: 1em;
+}
+.site-footer .site-footer__bottom ul li.last::after {
+  content: "";
 }
 
 .footer {
@@ -1565,11 +1594,14 @@ h2.node__title {
 .sidebar-first .block-facets h2:after {
   color: #c1e000;
   padding-top: 2px;
-  content: "";
+  content: "";
   font-family: "Glyphicons Halflings";
   margin-left: 0px;
   float: right;
   margin-right: 0px;
+}
+.sidebar-first .block-facets h2.area-shown:after {
+  content: "";
 }
 .sidebar-first .block-facets ul {
   list-style: none;

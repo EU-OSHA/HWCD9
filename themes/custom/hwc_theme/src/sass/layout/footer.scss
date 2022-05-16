@@ -2,6 +2,34 @@
   background: $bg-color-grey-footer;
   height: auto;
   padding-bottom: 1rem;
+  .site-footer__bottom{
+    ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      li{
+        padding-right: 1em;
+        a{
+          color: $footer-color;
+          padding-left: 0;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        :hover, :focus{
+          background: none;
+        }
+        ::after{
+          content: "";
+          padding-left: 1em;
+        }
+        &.last::after{
+          content: "";
+        }
+      }
+
+    }
+  }
 }
 
 // Insert your styling here.
