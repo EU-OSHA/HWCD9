@@ -67,13 +67,12 @@ body.user-logged-in.toolbar-tray-open{
   align-content: space-between;
   margin-left: 0;
   margin-right: 0;
+  padding: 10px 20px 10px 7%;
 
   .header-logo{
     display: flex;
     flex-direction: row;
     .region-top-header-logos{
-      //float: left;
-      margin-left: 1rem;
       .field--name-field-image{
         display: flex;
         margin: 0;
@@ -81,11 +80,13 @@ body.user-logged-in.toolbar-tray-open{
         justify-content: space-around;
         > .field__item {
           border-right: 1px solid $text-color-blue;
-          padding-right: 20px;
+          padding: 0  1.75rem 0 0;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
           &:nth-child(2){
             border-right:0;
+            padding-left: 0.825rem;
+            padding-right: 0.825rem;
           }
           img {
             margin: 0;
@@ -396,7 +397,7 @@ body.user-logged-in.toolbar-tray-open{
 .section-title{
   background: url(../images/banner-background-article.png) no-repeat #acc700;
   padding-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   width: 100%;
   h1 {
     width: 100%;
