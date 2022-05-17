@@ -11,5 +11,14 @@
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     flex-direction: column;
+    .recommended-tool {
+      margin-left: 0;
+      margin-top: 1em;
+      padding-left: 1em;
+      /* display: flex; */
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 }

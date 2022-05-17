@@ -25,11 +25,11 @@
 {% else %}
     {% if  euFlag == "Yes" %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png" alt="{{ CountryName }}"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName|replace({' ': "-"}) }}-180x180.png" alt="{{ CountryName }}"></a>
       </div>
     {% else %}
       <div class="event_country code_{{ CountryCode }}">
-        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName }}-180x180.png" alt="{{ CountryName }}"></a>
+        <a href="{{ url }}"><img src="/sites/hwc/themes/custom/hwc_theme/images/events/big/{{ CountryName|replace({' ': "-"}) }}-180x180.png" alt="{{ CountryName }}"></a>
       </div>
     {% endif %}
 {% endif %}
@@ -71,7 +71,9 @@
       <p class="button">
         <a href="{{ url }}" class="more-link">{{ 'See more'|t }}</a>
       </p>
+      {% if content.field_add_to_calendar['#object'].field_add_to_calendar.0.value == 1%}
       <div class="add-calendar">{{ content.field_add_to_calendar }}</div>
+      {% endif %}
     </div>
 
   </div>

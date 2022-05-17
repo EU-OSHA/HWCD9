@@ -1,0 +1,10 @@
+uuid: bdb8a27e-5a75-4056-b6d2-28c3e478f8c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.events_list_frontpage
+label: 'events list frontpage'
+targetEntityType: node
+cache: true
