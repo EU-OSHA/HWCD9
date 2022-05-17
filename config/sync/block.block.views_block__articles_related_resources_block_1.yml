@@ -12,8 +12,8 @@ dependencies:
     - hwc_theme
 id: views_block__articles_related_resources_block_1
 theme: hwc_theme
-region: content
-weight: -14
+region: sidebar_right
+weight: -30
 provider: null
 plugin: 'views_block:articles_related_resources-block_1'
 settings:
