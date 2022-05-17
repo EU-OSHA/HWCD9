@@ -10,6 +10,13 @@ folder: sites/hwc/config/local
 module: {  }
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - migrate_plus.migration.import_crm_amb_partners
+  - migrate_plus.migration.import_crm_fop_partners
+  - migrate_plus.migration.import_crm_mp_partners
+  - migrate_plus.migration.import_crm_ocp_partners
+  - search_api.server.default_solr_server
+  - swiftmailer.transport
+  - system.performance
 graylist_dependents: true
 graylist_skip_equal: true

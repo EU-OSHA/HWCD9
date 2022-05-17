@@ -7,9 +7,11 @@ label: Production
 description: ''
 weight: 0
 folder: sites/hwc/config/production
-module: {  }
+module:
+  matomo: 0
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - search_api.server.default_solr_server
 graylist_dependents: true
 graylist_skip_equal: true
