@@ -266,6 +266,7 @@
     flex-direction: row;
     .publications-left-column{
       float: none;
+      margin-right: 2rem;
       .field--type-image {
         img {
           max-width: fit-content;
@@ -274,6 +275,7 @@
       }
     }
     .publications-detail-right-column{
+      width: 100%;
       .metadata{
         display: flex;
         flex-direction: row;
