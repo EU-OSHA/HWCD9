@@ -1,0 +1,15 @@
+uuid: cc9256d6-d382-43f2-a3cd-f218554bbfd3
+langcode: en
+status: false
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+folder: sites/hwc/config/develop
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,15 @@
+uuid: dea87525-fb92-4590-9fac-83dae8b25457
+langcode: en
+status: false
+dependencies: {  }
+id: staging
+label: Staging
+description: ''
+weight: 0
+folder: sites/hwc/config/staging
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,15 @@
+uuid: 06855155-335a-445f-84ae-bec0d98c4aad
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: ''
+weight: 0
+folder: sites/hwc/config/local
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
