@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/tools-and-publications/publications\r\n/node/24\r\n/tools-and-publications/case-studies"
+    pages: "/node/38\r\ntools-and-publications/publications\r\n/node/24\r\n/tools-and-publications/case-studies\r\n"

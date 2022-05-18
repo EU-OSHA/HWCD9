@@ -10,12 +10,12 @@ ldapEntryProvisionTriggers:
   ldap_on_login: '0'
   ldap_on_delete: '0'
   drupal_on_manual_creation: '0'
-userUpdateCronQuery: none
-userUpdateCronInterval: daily
 orphanedDrupalAcctBehavior: ldap_user_orphan_email
 orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
 userConflictResolve: resolve
 manualAccountConflict: conflict_reject
 acctCreation: ldap_behaviour
+userUpdateCronQuery: none
+userUpdateCronInterval: daily
 ldapUserSyncMappings: {  }

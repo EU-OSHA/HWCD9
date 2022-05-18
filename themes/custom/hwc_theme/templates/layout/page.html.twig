@@ -94,24 +94,39 @@
       <div class="main-container">
 
         {% block content %}
+        {% set has_sidebar_left= page.sidebar_left|render|striptags|trim is not empty or
+          page.sidebar_left.priorityareamultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.publicationtypemultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.contenttypemultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.countrymultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.publicationspriorityarea|render|striptags|trim is not empty
+        %}
+        {% set has_sidebar_right= page.sidebar_right|render|striptags|trim is not empty %}
+
             <div class="container">
-              {% if page.sidebar_left|length > 0 or page.sidebar_right|length > 0  %}
+              {% if has_sidebar_left or has_sidebar_right  %}
                 <div class="row">
               {% else %}
                   <div>
               {% endif %}
 
-                {% if page.sidebar_left|length > 0 %}
+                {% if has_sidebar_left %}
                   <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
                     {{ page.sidebar_left }}
                   </aside>
                 {% endif %}
 
-                <section class="section section-center">
+                {% if has_sidebar_left or has_sidebar_right %}
+                <section class="section section-center col-12 col-lg-9 ">
+                {% elseif page.has_sidebar_left and has_sidebar_right%}
+                  <section class="section section-center col-12 col-lg-6">
+                {% else %}
+                    <section class="section section-center col-12">
+                {% endif %}
                   {{ page.content }}
                 </section>
 
-                {% if page.sidebar_right|length > 0 %}
+                {% if has_sidebar_right %}
                   <aside class="section col-12 col-lg-3 sidebar-second" role="complementary">
                     {{ page.sidebar_right }}
                   </aside>
@@ -133,9 +148,9 @@
               {{ page.footer.mainnavigation }}
             </div>
           {% endif %}
-          {% if page.footer_end %}
+          {% if page.footer.footer  %}
             <div class="site-footer__bottom">
-              {{ page.footer_end }}
+              {{ page.footer.footer }}
             </div>
           {% endif %}
         </div>

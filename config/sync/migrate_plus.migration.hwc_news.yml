@@ -131,6 +131,10 @@ process:
           to_format: 'Y-m-d\TH:i:s'
           source: value
   status: status
+  moderation_state:
+    -
+      plugin: hwc_status
+      source: status
   created: created
   changed: changed
   sticky: sticky

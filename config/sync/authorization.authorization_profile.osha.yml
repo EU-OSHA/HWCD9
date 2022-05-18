@@ -1,0 +1,78 @@
+uuid: 40381cc6-e005-4827-b054-f1c929cc4a1e
+langcode: en
+status: true
+dependencies: {  }
+id: osha
+label: Osha
+provider: ldap_provider
+provider_config:
+  status:
+    server: osha
+    only_ldap_authenticated: true
+  filter_and_mappings:
+    use_first_attr_as_groupid: false
+provider_mappings:
+  -
+    query: 'cn=ADMIN,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=FOP,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=GPE_EDT,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=NEWS_EVEN_EDT,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=NEWS_EVEN_SUP,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=OCP,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=OMP,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=OSHAMB,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=OSHAMB_RVM,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=READ,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+  -
+    query: 'cn=RVMN,ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
+    is_regex: false
+consumer: authorization_drupal_roles
+consumer_config: {  }
+consumer_mappings:
+  -
+    role: administrator
+  -
+    role: campaign_partner
+  -
+    role: gpe_platform_editors
+  -
+    role: news_and_events_editor_een_osh_ambassador
+  -
+    role: news_and_events_editor_een_osh_ambassador
+  -
+    role: campaign_partner
+  -
+    role: campaign_partner
+  -
+    role: campaign_partner
+  -
+    role: eu_osha_een_reviewers
+  -
+    role: read_only
+  -
+    role: hwc_staff_reviewers
+synchronization_modes:
+  user_logon: user_logon
+synchronization_actions:
+  create_consumers: create_consumers
+  revoke_provider_provisioned: revoke_provider_provisioned
+description: null

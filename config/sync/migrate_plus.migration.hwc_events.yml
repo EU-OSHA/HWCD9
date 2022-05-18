@@ -164,6 +164,10 @@ process:
   langcode: constants/lang
   title: title
   status: status
+  moderation_state:
+    -
+      plugin: hwc_status
+      source: status
   uid:
     -
       plugin: hwc_author

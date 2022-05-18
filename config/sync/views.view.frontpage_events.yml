@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.events_list
+    - core.entity_view_mode.node.events_list_frontpage
     - field.storage.node.field_city
     - field.storage.node.field_country_code
     - field.storage.node.field_show_eu_flag
@@ -572,7 +572,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: events_list
+          view_mode: events_list_frontpage
       defaults:
         style: false
         row: false
