@@ -80,6 +80,10 @@ process:
       plugin: default_value
       default_value: full_html
   status: status
+  moderation_state:
+    -
+      plugin: hwc_status
+      source: status
   created: created
   changed: changed
   sticky: sticky
