@@ -441,7 +441,7 @@ display:
           admin_label: 'field_resources: Taxonomy term'
           plugin_id: standard
           required: true
-      css_class: related-resources
+      css_class: related-resources-oshwiki
       header: {  }
       footer: {  }
       display_extenders: {  }
