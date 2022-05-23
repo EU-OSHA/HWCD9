@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - exclude_node_title
+    - workbench_access
 id: editor
 label: Editor
 weight: 8
@@ -13,3 +14,4 @@ permissions:
   - 'use manualcrop'
   - 'use text format audio_visual'
   - 'use text format filtered_html'
+  - 'use workbench access'

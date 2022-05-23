@@ -1,20 +1,19 @@
-uuid: a316809f-f3a2-40ef-a7d2-a75f0f0bacf9
+uuid: 4860d0b0-f726-4a16-a0ca-cffd7c6de9f8
 langcode: en
-status: false
+status: true
 dependencies:
   module:
-    - hwc_import_export
+    - hwc_partner_cron_migration
 title: 'Default cron handler'
-id: hwc_import_export_cron
+id: hwc_partner_cron_migration_cron
 weight: 0
-module: hwc_import_export
-callback: hwc_import_export_cron
+module: hwc_partner_cron_migration
+callback: hwc_partner_cron_migration_cron
 scheduler:
-  id: crontab
+  id: simple
   configuration:
     rules:
-      - '30 4 * * *'
-    catch_up: 0
+      - '0+@ 0 * * 0'
 launcher:
   id: serial
   configuration:

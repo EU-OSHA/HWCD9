@@ -35,6 +35,7 @@ dependencies:
     - node.type.tk_example
     - node.type.tk_tool
     - node.type.tk_topic
+    - node.type.webform
     - node.type.youtube
     - workflows.workflow.news_and_events_created_by_een
   module:
