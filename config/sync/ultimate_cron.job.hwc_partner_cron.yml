@@ -15,7 +15,7 @@ scheduler:
     name: crontab
     crontab:
       rules:
-        - ' */ncw_cron_minutes * * * '
+        - 20
 launcher:
   id: serial
 logger:
