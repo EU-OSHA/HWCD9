@@ -50,7 +50,7 @@ content:
     weight: 1
     region: content
   field_contact_details:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -81,7 +81,7 @@ content:
     weight: 2
     region: content
   field_introductory_text:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }

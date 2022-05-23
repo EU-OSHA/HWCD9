@@ -8,6 +8,7 @@ dependencies:
     - exclude_node_title
     - node
     - system
+    - workbench_access
 id: gpe_platform_editors
 label: 'GPE Platform Editors'
 weight: 17
@@ -23,4 +24,5 @@ permissions:
   - 'select content section'
   - 'use exclude node title'
   - 'use text format filtered_html'
+  - 'use workbench access'
   - 'view the administration theme'
