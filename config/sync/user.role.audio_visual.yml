@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - exclude_node_title
+    - workbench_access
 id: audio_visual
 label: 'Audio Visual'
 weight: 13
@@ -14,3 +15,4 @@ permissions:
   - 'edit own audio_visual content'
   - 'use exclude node title'
   - 'use text format audio_visual'
+  - 'use workbench access'

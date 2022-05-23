@@ -4,9 +4,11 @@ status: true
 dependencies:
   module:
     - exclude_node_title
+    - workbench_access
 id: superadministrators
 label: Superadministrators
 weight: 10
 is_admin: null
 permissions:
   - 'use exclude node title'
+  - 'use workbench access'

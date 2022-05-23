@@ -1,10 +1,12 @@
-uuid: 95110177-1670-48af-a4e2-383f53ea22b4
+uuid: 028ad1f3-9017-4e60-a31c-6b6beaf96fc5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_contact_details
     - node.type.gpa
+  module:
+    - text
 id: node.gpa.field_contact_details
 field_name: field_contact_details
 entity_type: node
@@ -16,4 +18,4 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long
