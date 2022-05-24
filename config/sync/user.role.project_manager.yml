@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - exclude_node_title
+    - workbench_access
 id: project_manager
 label: 'Project Manager'
 weight: 7
@@ -14,5 +15,6 @@ permissions:
   - 'use manualcrop'
   - 'use text format audio_visual'
   - 'use text format filtered_html'
+  - 'use workbench access'
   - 'view translation job'
   - 'view translation job item'

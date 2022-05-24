@@ -11,7 +11,7 @@ dependencies:
 id: textresize
 theme: hwc_theme
 region: header_form
-weight: -29
+weight: -16
 provider: null
 plugin: 'block_content:54f672d8-8c4d-4841-b853-74126512985f'
 settings:

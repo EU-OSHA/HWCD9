@@ -72,6 +72,7 @@ module:
   hwc_custom_migrations: 0
   hwc_import_export: 0
   hwc_partner: 0
+  hwc_partner_cron_migration: 0
   image: 0
   image_widget_crop: 0
   jquery_ui: 0
