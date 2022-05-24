@@ -38,3 +38,10 @@
 
 })(jQuery, Drupal);
 
+(function ($, Drupal) {
+  $( window ).on( "load", function() {
+    var height = $('#header').height();
+    $('body').css('padding-top', height+ ( $('#toolbar-bar').height()*2 ) );
+  });
+
+})(jQuery, Drupal);

@@ -1,0 +1,80 @@
+.private-zone-full-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 4rem 0;
+  .private-partner-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    .private-zone-act-partner-inside{
+      margin-top: 1.6rem;
+      text-align: center;
+    }
+  }
+  .private-box{
+    text-align: right;
+    background: transparent;
+    color: #00309d;
+    border: 2px solid #bcd75b;
+    padding: 0 1em;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 130px;
+    position: relative;
+    width:300px;
+    display: flex;
+    > a{
+      min-height: 100%;
+      width: 100%;
+      font-weight: bold;
+      color: #003399;
+      font-size: 1em;
+      padding: 0 0 0 87px !important;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &:hover{
+      color: #FFF;
+      background: #00309d;
+      text-decoration: none;
+      border: 2px solid #00309d;
+      > a{
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+  }
+  .private-zone-act-partner{
+    >a{
+      background: url(../images/pz-news.png) 0 50% no-repeat;
+    }
+    &:hover{
+      > a {
+        background: url(../images/mpp-create-news-hover.png) 0 50% no-repeat;
+      }
+    }
+  }
+  .private-zone-exchange-platform{
+    > a {
+      background: url(../images/pz-good-practice.png) 0 50% no-repeat;
+    }
+    &:hover{
+      > a {
+        background: url(../images/mpp-good-practice-hover.png) 0 50% no-repeat;
+      }
+    }
+  }
+  .private-zone-partner-resource{
+    > a{
+      background: url(../images/pz-partner-resource.png) 0 50% no-repeat;
+    }
+    &:hover{
+      > a {
+        background: url(../images/mpp-partner-resources-hover.png) 0 50% no-repeat;
+      }
+    }
+  }
+}

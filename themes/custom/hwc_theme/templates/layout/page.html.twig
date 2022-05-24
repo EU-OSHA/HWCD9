@@ -23,18 +23,6 @@
               <div class="header-language-search">
                 {{ page.header_form.languagedropdownswitchercontent }}
               </div>
-
-
-              <div class="content-first-row">
-
-                {#              <div class="header-social-menu">#}
-                {#                {{ page.header }}#}
-                {#              </div>#}
-                {#            </div>#}
-                {#            <div class="header-links">#}
-                {#              {{ page.header_links}}#}
-                {#            </div>#}
-              </div>
             </div>
           </div>
           <nav{{ navbar_attributes }}>
@@ -111,23 +99,31 @@
               {% endif %}
 
                 {% if has_sidebar_left %}
-                  <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
+                  <aside class="section col-12 col-lg-3 sidebar-left" role="complementary">
                     {{ page.sidebar_left }}
                   </aside>
                 {% endif %}
 
-                {% if has_sidebar_left or has_sidebar_right %}
-                <section class="section section-center col-12 col-lg-9 ">
-                {% elseif page.has_sidebar_left and has_sidebar_right%}
-                  <section class="section section-center col-12 col-lg-6">
+
+                {% if has_sidebar_left %}
+                    {% if has_sidebar_right %}
+                      <section class="section section-center col-12 col-lg-6 ">
+                    {% else %}
+                      <section class="section section-center col-12 col-lg-9">
+                    {% endif %}
                 {% else %}
-                    <section class="section section-center col-12">
+                      {% if has_sidebar_right %}
+                        <section class="section section-center col-12 col-lg-9">
+                      {% else %}
+                          <section class="section section-center col-12">
+                      {% endif %}
                 {% endif %}
+
                   {{ page.content }}
                 </section>
 
                 {% if has_sidebar_right %}
-                  <aside class="section col-12 col-lg-3 sidebar-second" role="complementary">
+                  <aside class="section col-12 col-lg-3 sidebar-right" role="complementary">
                     {{ page.sidebar_right }}
                   </aside>
                 {% endif %}
@@ -135,7 +131,7 @@
             </div>
         {% endblock %}
 
-      </div>
+        </div>
       </div>
     </section>
 
