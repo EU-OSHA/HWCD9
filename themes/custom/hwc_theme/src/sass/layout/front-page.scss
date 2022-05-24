@@ -6,6 +6,55 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 2rem;
+  height: 280px;
+  background:#acc700 url('/sites/hwc/themes/custom/hwc_theme/images/background-banner.png') top right no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  /* banner home */
+  .carousel{
+    height: 280px;
+    .carousel-inner{
+      height: 100%;
+    }
+    .carousel-item{
+      height: 100%;
+      .caption{
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        height: 100%;
+        .content-body{
+          font-weight: bold;
+          .banner-tag{
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
+          .banner-text{
+            font-size: 2.2rem;
+          }
+        }
+        .content-img{
+          img{
+            margin: auto;
+          }
+        }
+      }
+    }
+    .carousel-indicators li {
+      width: 12px;
+      border-radius: 30px;
+      height: 12px;
+      margin-right: 5px;
+      margin-left: 3px;
+      text-indent: initial;
+      border-top: 0;
+      border-bottom: 0;
+      background: $text-color-blue;
+    }
+  }
+
   article{
     text-align: center;
     padding: 1.2rem;
@@ -74,6 +123,25 @@
   }
 }
 
+.line{
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background: url(../images/grey-h3-line.png) repeat-x 50% 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  a{
+    color: #00309d;
+    background-color:white;
+    padding-right: 3.125rem;
+  }
+}
+.line.green{
+  a{
+    background-color:#daea96;
+  }
+}
 
 .news-section-title{
   margin-top: 0;
@@ -140,6 +208,7 @@
     height: auto;
     padding-bottom: 1rem;
     padding-top: 0.3rem;
+    width: 100%;
     .publication-date{
       color: #57575a;
       font-size: 0.8rem !important;
@@ -279,6 +348,8 @@ section.home-news-events {
     height: 100%;
   }
 }
+
+
 
 
 

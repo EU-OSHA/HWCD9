@@ -1,4 +1,4 @@
-uuid: 5ec052cb-d16a-45de-9bd4-22cf170fa83e
+uuid: 0f996c0e-e48b-4b9d-8180-144d00ba68df
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,12 @@ dependencies:
     - system.menu.main
   module:
     - menu_block
+    - system
   theme:
     - hwc_theme
-id: mainnavigation
+id: mainnavigation_2
 theme: hwc_theme
-region: footer
+region: sidebar_left
 weight: 0
 provider: null
 plugin: 'menu_block:main'
@@ -23,9 +24,13 @@ settings:
   follow_parent: child
   label_link: false
   label_type: block
-  level: 1
+  level: 2
   depth: 2
   expand_all_items: false
   parent: 'main:'
   suggestion: main
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/about-topic/w*\r\n/about-topic/h*\r\n/about-topic/t*\r\n/about-topic/g*\r\n/about-topic/priority-areas\r\n/about-topic/business-case"
