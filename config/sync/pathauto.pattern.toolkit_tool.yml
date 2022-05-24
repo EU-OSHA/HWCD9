@@ -1,33 +1,33 @@
-uuid: 0bd854bd-626d-460a-bf26-e2f8ce4d6cb8
+uuid: 4d375ad6-891e-47ea-976e-f15b1815bd8a
 langcode: en
 status: true
 dependencies:
   module:
     - language
     - node
-id: news
-label: News
+id: toolkit_tool
+label: 'Toolkit Tool'
 type: 'canonical_entities:node'
-pattern: '/media-centre/news/[node:title]'
+pattern: '/tools-and-publications/campaign-toolkit/campaign-examples-and-tools/[node:field_tk_tool_type]/[node:title]'
 selection_criteria:
-  8bb42c76-2553-46b1-aa1c-d06579f49fff:
+  583d9721-86c1-4be7-953f-bb43887cb20d:
     id: node_type
     negate: false
-    uuid: 8bb42c76-2553-46b1-aa1c-d06579f49fff
+    uuid: 583d9721-86c1-4be7-953f-bb43887cb20d
     context_mapping:
       node: node
     bundles:
-      news: news
-  6964b071-ff2b-4260-b0a2-d3b4ff448fe1:
+      tk_tool: tk_tool
+  583370cd-2c78-4d2f-a984-790305ab050a:
     id: language
     negate: false
-    uuid: 6964b071-ff2b-4260-b0a2-d3b4ff448fe1
+    uuid: 583370cd-2c78-4d2f-a984-790305ab050a
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
 selection_logic: and
-weight: -3
+weight: 1
 relationships:
   'node:langcode:language':
     label: Language

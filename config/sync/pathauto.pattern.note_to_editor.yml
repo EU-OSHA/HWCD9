@@ -1,33 +1,33 @@
-uuid: 0bd854bd-626d-460a-bf26-e2f8ce4d6cb8
+uuid: 5afc647a-6778-4b8d-976d-7b1c0d1e37c9
 langcode: en
 status: true
 dependencies:
   module:
     - language
     - node
-id: news
-label: News
+id: note_to_editor
+label: 'Note to editor'
 type: 'canonical_entities:node'
-pattern: '/media-centre/news/[node:title]'
+pattern: '/inside-eu-osha/press-room/note-to-editor/[node:title]'
 selection_criteria:
-  8bb42c76-2553-46b1-aa1c-d06579f49fff:
+  357712aa-34b2-4101-95b6-cb15b65d8f53:
     id: node_type
     negate: false
-    uuid: 8bb42c76-2553-46b1-aa1c-d06579f49fff
+    uuid: 357712aa-34b2-4101-95b6-cb15b65d8f53
     context_mapping:
       node: node
     bundles:
-      news: news
-  6964b071-ff2b-4260-b0a2-d3b4ff448fe1:
+      note_to_editor: note_to_editor
+  67ffa3b7-6b81-450f-92de-4760b98441a2:
     id: language
     negate: false
-    uuid: 6964b071-ff2b-4260-b0a2-d3b4ff448fe1
+    uuid: 67ffa3b7-6b81-450f-92de-4760b98441a2
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
 selection_logic: and
-weight: -3
+weight: -6
 relationships:
   'node:langcode:language':
     label: Language

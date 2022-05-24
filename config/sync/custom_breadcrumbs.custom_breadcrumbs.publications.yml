@@ -1,0 +1,15 @@
+uuid: 6d9a3159-ec7d-4e87-9585-f93ab553ab1c
+langcode: en
+status: true
+dependencies: {  }
+id: publications
+label: Publications
+description: ''
+entityType: node
+entityBundle: publication
+language: en
+breadcrumbPaths: "/tools-and-publications\r\n/tools-and-publications/publications"
+breadcrumbTitles: "Tools and Publications\r\nPublications"
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

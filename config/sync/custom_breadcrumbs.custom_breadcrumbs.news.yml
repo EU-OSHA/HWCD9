@@ -7,7 +7,7 @@ label: News
 description: ''
 entityType: node
 entityBundle: news
-language: und
+language: en
 breadcrumbPaths: "/media-centre\r\n/media-centre/news"
 breadcrumbTitles: "Media Centre\r\nNews"
 type: '1'

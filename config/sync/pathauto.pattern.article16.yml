@@ -1,33 +1,33 @@
-uuid: 0bd854bd-626d-460a-bf26-e2f8ce4d6cb8
+uuid: 95afd966-2319-48b6-8a67-b5b853d2a83b
 langcode: en
 status: true
 dependencies:
   module:
     - language
     - node
-id: news
-label: News
+id: article16
+label: Article16
 type: 'canonical_entities:node'
-pattern: '/media-centre/news/[node:title]'
+pattern: '/previous-campaigns/all-ages-2016-17/[node:title]'
 selection_criteria:
-  8bb42c76-2553-46b1-aa1c-d06579f49fff:
+  e675ce7d-71fc-42d1-88ef-2ec1b5ddcc8a:
     id: node_type
     negate: false
-    uuid: 8bb42c76-2553-46b1-aa1c-d06579f49fff
+    uuid: e675ce7d-71fc-42d1-88ef-2ec1b5ddcc8a
     context_mapping:
       node: node
     bundles:
-      news: news
-  6964b071-ff2b-4260-b0a2-d3b4ff448fe1:
+      campaign_16: campaign_16
+  e711d947-d8f5-47a8-9225-daf3d03c9153:
     id: language
     negate: false
-    uuid: 6964b071-ff2b-4260-b0a2-d3b4ff448fe1
+    uuid: e711d947-d8f5-47a8-9225-daf3d03c9153
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
 selection_logic: and
-weight: -3
+weight: -10
 relationships:
   'node:langcode:language':
     label: Language
