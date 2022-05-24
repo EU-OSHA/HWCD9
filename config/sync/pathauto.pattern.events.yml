@@ -1,33 +1,33 @@
-uuid: 0bd854bd-626d-460a-bf26-e2f8ce4d6cb8
+uuid: 7a66e117-b957-4029-9cca-cfdfe7df7637
 langcode: en
 status: true
 dependencies:
   module:
     - language
     - node
-id: news
-label: News
+id: events
+label: Events
 type: 'canonical_entities:node'
-pattern: '/media-centre/news/[node:title]'
+pattern: '/media-centre/events/[node:title]'
 selection_criteria:
-  8bb42c76-2553-46b1-aa1c-d06579f49fff:
+  292110ff-b1cb-4613-b4eb-19b767a99506:
     id: node_type
     negate: false
-    uuid: 8bb42c76-2553-46b1-aa1c-d06579f49fff
+    uuid: 292110ff-b1cb-4613-b4eb-19b767a99506
     context_mapping:
       node: node
     bundles:
-      news: news
-  6964b071-ff2b-4260-b0a2-d3b4ff448fe1:
+      events: events
+  63a7df10-2b76-44da-85a4-eb6fc962aa00:
     id: language
     negate: false
-    uuid: 6964b071-ff2b-4260-b0a2-d3b4ff448fe1
+    uuid: 63a7df10-2b76-44da-85a4-eb6fc962aa00
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
 selection_logic: and
-weight: -3
+weight: -4
 relationships:
   'node:langcode:language':
     label: Language

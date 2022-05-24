@@ -1,33 +1,33 @@
-uuid: 0bd854bd-626d-460a-bf26-e2f8ce4d6cb8
+uuid: a46bed44-9f40-4615-aa2a-73b72c325d36
 langcode: en
 status: true
 dependencies:
   module:
     - language
     - node
-id: news
-label: News
+id: article18
+label: Article18
 type: 'canonical_entities:node'
-pattern: '/media-centre/news/[node:title]'
+pattern: '/previous-campaigns/dangerous-substances-2018-19/[node:title]'
 selection_criteria:
-  8bb42c76-2553-46b1-aa1c-d06579f49fff:
+  de3ebfc3-f19d-4d65-83bd-d761441355fa:
     id: node_type
     negate: false
-    uuid: 8bb42c76-2553-46b1-aa1c-d06579f49fff
+    uuid: de3ebfc3-f19d-4d65-83bd-d761441355fa
     context_mapping:
       node: node
     bundles:
-      news: news
-  6964b071-ff2b-4260-b0a2-d3b4ff448fe1:
+      campaign_18: campaign_18
+  5d45b250-1332-4a46-8c1f-0bfdd561b730:
     id: language
     negate: false
-    uuid: 6964b071-ff2b-4260-b0a2-d3b4ff448fe1
+    uuid: 5d45b250-1332-4a46-8c1f-0bfdd561b730
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
 selection_logic: and
-weight: -3
+weight: -9
 relationships:
   'node:langcode:language':
     label: Language

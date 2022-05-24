@@ -661,6 +661,52 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 2rem;
+  height: 280px;
+  background: #acc700 url("/sites/hwc/themes/custom/hwc_theme/images/background-banner.png") top right no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  /* banner home */
+}
+.homepage-banner-view .carousel {
+  height: 280px;
+}
+.homepage-banner-view .carousel .carousel-inner {
+  height: 100%;
+}
+.homepage-banner-view .carousel .carousel-item {
+  height: 100%;
+}
+.homepage-banner-view .carousel .carousel-item .caption {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  height: 100%;
+}
+.homepage-banner-view .carousel .carousel-item .caption .content-body {
+  font-weight: bold;
+}
+.homepage-banner-view .carousel .carousel-item .caption .content-body .banner-tag {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.homepage-banner-view .carousel .carousel-item .caption .content-body .banner-text {
+  font-size: 2.2rem;
+}
+.homepage-banner-view .carousel .carousel-item .caption .content-img img {
+  margin: auto;
+}
+.homepage-banner-view .carousel .carousel-indicators li {
+  width: 12px;
+  border-radius: 30px;
+  height: 12px;
+  margin-right: 5px;
+  margin-left: 3px;
+  text-indent: initial;
+  border-top: 0;
+  border-bottom: 0;
+  background: #003399;
 }
 .homepage-banner-view article {
   text-align: center;
@@ -732,6 +778,25 @@ body {
   border: 3px solid #00309d;
 }
 
+.line {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background: url(../images/grey-h3-line.png) repeat-x 50% 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.line a {
+  color: #00309d;
+  background-color: white;
+  padding-right: 3.125rem;
+}
+
+.line.green a {
+  background-color: #daea96;
+}
+
 .news-section-title {
   margin-top: 0;
   font-weight: 400;
@@ -797,6 +862,7 @@ body {
   height: auto;
   padding-bottom: 1rem;
   padding-top: 0.3rem;
+  width: 100%;
 }
 .home-news-item .body-news-item .publication-date {
   color: #57575a;
@@ -929,10 +995,6 @@ section.home-news-events {
 }
 
 /*** Stiky header ***/
-body {
-  padding-top: 186px !important;
-}
-
 #header {
   position: fixed;
   width: 100%;
@@ -951,9 +1013,6 @@ body.scrollup.scrolled #header {
   background: white;
 }
 
-body.user-logged-in {
-  padding-top: 230px !important;
-}
 body.user-logged-in #header {
   padding-top: 40px;
 }
@@ -961,13 +1020,17 @@ body.user-logged-in.scrolled #header {
   padding-top: 0px;
 }
 
-body.user-logged-in.toolbar-tray-open {
-  padding-top: 260px !important;
-}
 body.user-logged-in.toolbar-tray-open #header {
   padding-top: 75px;
 }
 body.user-logged-in.toolbar-tray-open.scrolled #header {
+  padding-top: 0px;
+}
+
+body.user-logged-in.path-frontpage #header {
+  padding-top: 80px;
+}
+body.user-logged-in.path-frontpage.scrolled #header {
   padding-top: 0px;
 }
 
@@ -1156,7 +1219,7 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
 /* masquerade button */
 .private-workbench-masquerade {
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -1179,6 +1242,7 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
 .header-language-search {
   display: flex;
   justify-content: flex-end;
+  margin: 0.7rem 0 0;
 }
 .header-language-search #lang_dropdown_form_lang-dropdown-form fieldset {
   margin-bottom: 0 !important;
@@ -1191,6 +1255,27 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   padding: 0.1rem 0.2em;
   font-size: 0.8rem;
   color: #003399;
+}
+.header-language-search #lang_dropdown_form_lang-dropdown-form .chosen-container .chosen-results::-webkit-scrollbar {
+  width: 8px;
+}
+.header-language-search #lang_dropdown_form_lang-dropdown-form .chosen-container .chosen-results::-webkit-scrollbar-track {
+  background-color: #e1e6cb;
+  border-radius: 100px;
+}
+.header-language-search #lang_dropdown_form_lang-dropdown-form .chosen-container .chosen-results::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 1px solid #a4b170;
+  border-left: 0;
+  border-right: 0;
+  background-color: #a4b170;
+}
+.header-language-search #lang_dropdown_form_lang-dropdown-form .chosen-container .chosen-results li.highlighted {
+  color: white;
+  background-color: #a4b170;
+  background-image: linear-gradient(#abc600 20%, #5c8600 90%);
+  border-radius: 5px;
+  margin: 0 3px 0 0;
 }
 .header-language-search #lang_dropdown_form_lang-dropdown-form .chosen-container-active.chosen-with-drop .chosen-single,
 .header-language-search #lang_dropdown_form_lang-dropdown-form .chosen-container-single .chosen-single {
@@ -1244,7 +1329,6 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   text-decoration: underline;
 }
 
-/*Search autocomplete*/
 /* Hide menu link to view only the Share links images in header and footer */
 #block-socialmenu > ul, #block-socialmenu-2 > ul {
   list-style: none;
@@ -1255,7 +1339,9 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
 
 /** Section title **/
 .section-title {
-  background: url(../images/banner-background-article.png) no-repeat #acc700;
+  background: url(../images/background-banner.png) no-repeat #acc700;
+  background-size: contain;
+  background-position: 100% 0;
   padding-top: 0;
   margin-bottom: 0rem;
   width: 100%;
@@ -1434,6 +1520,37 @@ body.user-logged-in.toolbar-tray-open.scrolled #header {
   margin-right: 5px;
   color: white;
   font-weight: bold;
+}
+
+.sidebar-left .menu-level-0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-left .menu-level-0 li {
+  padding: 8px 0.8em 8px 0;
+  margin-bottom: 0;
+  width: 100%;
+  border-radius: 0;
+}
+.sidebar-left .menu-level-0 li a {
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+.sidebar-left .menu-level-0 li.menu-item--expanded {
+  border-bottom: 0;
+}
+.sidebar-left .menu-level-0 li.menu-item--active-trail > a {
+  color: #003399;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+.sidebar-left .menu-level-0 li .menu-level-1 {
+  list-style: none;
+}
+.sidebar-left .menu-level-0 li .menu-level-1 li {
+  border-bottom: 1px solid #bcd75b;
 }
 
 .main-container {
@@ -2694,6 +2811,87 @@ h2.node__title {
 .cm-items-list .group-right .link-more {
   margin-top: auto;
   margin-bottom: 0.3rem;
+}
+
+.napo-films-card {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.napo-films-card .card {
+  width: 32%;
+}
+.napo-films-card .card img {
+  height: 220px;
+}
+
+.private-zone-full-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 4rem 0;
+}
+.private-zone-full-wrapper .private-partner-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+}
+.private-zone-full-wrapper .private-partner-wrapper .private-zone-act-partner-inside {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+.private-zone-full-wrapper .private-box {
+  text-align: right;
+  background: transparent;
+  color: #00309d;
+  border: 2px solid #bcd75b;
+  padding: 0 1em;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  position: relative;
+  width: 300px;
+  display: flex;
+}
+.private-zone-full-wrapper .private-box > a {
+  min-height: 100%;
+  width: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 0 0 87px !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.private-zone-full-wrapper .private-box:hover {
+  color: #FFF;
+  background: #00309d;
+  text-decoration: none;
+  border: 2px solid #00309d;
+}
+.private-zone-full-wrapper .private-box:hover > a {
+  color: #FFF;
+  text-decoration: none;
+}
+.private-zone-full-wrapper .private-zone-act-partner > a {
+  background: url(../images/pz-news.png) 0 50% no-repeat;
+}
+.private-zone-full-wrapper .private-zone-act-partner:hover > a {
+  background: url(../images/mpp-create-news-hover.png) 0 50% no-repeat;
+}
+.private-zone-full-wrapper .private-zone-exchange-platform > a {
+  background: url(../images/pz-good-practice.png) 0 50% no-repeat;
+}
+.private-zone-full-wrapper .private-zone-exchange-platform:hover > a {
+  background: url(../images/mpp-good-practice-hover.png) 0 50% no-repeat;
+}
+.private-zone-full-wrapper .private-zone-partner-resource > a {
+  background: url(../images/pz-partner-resource.png) 0 50% no-repeat;
+}
+.private-zone-full-wrapper .private-zone-partner-resource:hover > a {
+  background: url(../images/mpp-partner-resources-hover.png) 0 50% no-repeat;
 }
 
 /*# sourceMappingURL=hwc-global.css.map */

@@ -5,7 +5,6 @@
 
   {% if is_front %}
     <section class="homepage-banner">
-{#      {{ dd(page.content) }}#}
         {{ page.content.views_block__homepage_banners_hp_banners_block }}
     </section>
     <section class="home-news-events  blocks-front-page container">
@@ -24,14 +23,14 @@
     </section>
   {% endif %}
 
-<!--
+
   <section class="content-fluid blocks-front-page green-background">
     <div class="container no-padding">
-      <h2 class="line"><span><a href="/about-topic/priority-areas">{{ 'Priority areas' | trans }}</a></span></h2>
-      <h4>TODO priority areas menu</h4>
+      <h1 class="line green"><span><a href="/about-topic/priority-areas">{{ 'Priority areas' | trans }}</a></span></h1>
+      <p>The ‘Healthy Workplaces Lighten the Load’ campaign is organised into several priority areas, which are promoted using special communication and promotion packs throughout the campaign. Each area covers a specific topic related to MSDs. A range of materials, including reports, infosheets, infographics and case studies, are released every three to four months to maintain the campaign’s momentum.</p>
     </div>
   </section>
--->
+
 <!--  <section class="oficial-campaign-partner blocks-front-page container">
 {#    <h2 class="line"><span><a href="{{ drupal_url('campaign-partners/official-campaign-partners')}}">{{ 'Official Campaign partners' | trans }}</a></span></h2>#}
 {#    {{ page.content.views_block__partners_block_1 }}#}

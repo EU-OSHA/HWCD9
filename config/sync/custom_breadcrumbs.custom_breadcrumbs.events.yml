@@ -1,0 +1,15 @@
+uuid: 111c2b52-91a7-4b78-97d7-bbdf3e5b475b
+langcode: en
+status: true
+dependencies: {  }
+id: events
+label: Events
+description: ''
+entityType: node
+entityBundle: events
+language: en
+breadcrumbPaths: "/media-centre\r\n/media-centre/events"
+breadcrumbTitles: "Media Centre\r\nEvents"
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''
