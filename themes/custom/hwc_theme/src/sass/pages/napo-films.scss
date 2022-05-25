@@ -9,3 +9,88 @@
     }
   }
 }
+
+.share-networks{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  .napo-actions{
+    li{
+      margin-left: 0.8rem;
+      &:nth-child(1){
+        margin-left: 0;
+      }
+      &:before{
+        font-size: 1.2rem;
+        color: #adadad;
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .share-link{
+      &:before{
+        font-size: 1.2rem;
+        color: #adadad;
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+  .list-networks{
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(149, 157, 165, 0.6) 0px 0px 12px;
+    border-radius: 90px;
+    width: 42px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -1.4rem;
+    right: 23px;
+    padding: 1.2rem 0.3rem;
+    li {
+      padding: 0.3rem 0;
+      &.close-share{
+        padding-bottom: 0.8rem;
+        &:before{
+          font-size: 1.4rem;
+          color: #585858;
+          cursor: pointer;
+        }
+      }
+
+      a {
+        span {
+          display: none;
+        }
+
+        &:before {
+          font-size: 1.2rem;
+          color: #adadad;
+          font-family: 'Font Awesome 5 Brands';
+          display: block;
+        }
+      }
+      &.fb{
+        a:before{
+          content: '\f09a';
+          //background: blue;
+        }
+      }
+      &.tw{
+        a:before{
+          content:'\f099';
+        }
+      }
+      &.ln{
+        a:before{
+          content:'\f0e1';
+        }
+      }
+    }
+  }
+}
+

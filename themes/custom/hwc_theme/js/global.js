@@ -40,8 +40,29 @@
 
 (function ($, Drupal) {
   $( window ).on( "load", function() {
+
     var height = $('#header').height();
     $('body').css('padding-top', height+ ( $('#toolbar-bar').height()*2 ) );
+
+
+    $('.share-link').on( "click", function() {
+      var wrapper = $(this).parent().parent();
+      var element = wrapper.find('.list-networks');
+      element.toggleClass('d-none');
+    });
+    $('.close-share').on( "click", function() {
+      $(this).parent().toggleClass('d-none');
+    });
+
   });
+
+  $(document).mouseup(function(e) {
+    var container = $(".list-networks");
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      container.addClass('d-none');
+    }
+  });
+
 
 })(jQuery, Drupal);
