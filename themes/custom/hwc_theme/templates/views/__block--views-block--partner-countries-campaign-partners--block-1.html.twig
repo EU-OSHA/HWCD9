@@ -1,0 +1,115 @@
+{#
+/**
+ * @file
+ * Default theme implementation for main view template.
+ *
+ * Available variables:
+ * - attributes: Remaining HTML attributes for the element.
+ * - css_name: A CSS-safe version of the view name.
+ * - css_class: The user-specified classes names, if any.
+ * - header: The optional header.
+ * - footer: The optional footer.
+ * - rows: The results of the view query, if any.
+ * - empty: The content to display if there are no rows.
+ * - pager: The optional pager next/prev links to display.
+ * - exposed: Exposed widget form/info to display.
+ * - feed_icons: Optional feed icons to display.
+ * - more: An optional link to the next page of results.
+ * - title: Title of the view, only used when displaying in the admin preview.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the view title.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the view title.
+ * - attachment_before: An optional attachment view to be displayed before the
+ *   view content.
+ * - attachment_after: An optional attachment view to be displayed after the
+ *   view content.
+ * - dom_id: Unique id for every view being printed to give unique class for
+ *   Javascript.
+ *
+ * @see template_preprocess_views_view()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  'homepage-partners-countries-view',
+  dom_id ? 'js-view-dom-id-' ~ dom_id,
+]
+%}
+  {% set results = content['#view'].result %}
+
+{% set arrayType = [] %}
+<p>
+{% for key, item in content['#view'].result %}
+  {% set item = item._object.entity.field_orgtype.0.entity.name.0.value %}
+  {% set arrayType = arrayType|merge([{ orgtype:item }]) %}
+  {% if arrayType[key].orgtype %}
+  <span>{{ arrayType[key].orgtype }}  |  </span>
+   {% endif %}
+{% endfor %}
+</p>
+{#{{ dd(arrayType) }}#}
+
+  {% for index, item in results %}
+
+    {% set item = item._object.entity %}
+    {% set title = item.title|view  %}
+    {% set image = item.field_logo|view  %}
+    {% set orgtype = item.field_orgtype.0.entity.name.0.value %}
+    {% set country = item.field_country %}
+{#    {% set caption = image.0['#media'].field_caption_copyrigth_.0.value %}#}
+
+    <h2>{{ title }}</h2>
+    <p><a href="javascript:">{{ orgtype }}</a> </p>
+    {{ dd( orgtype ) }}
+    <p>{{ image }}</p>
+{#    <p>{{ orgtype }}</p>#}
+{#    <p>{{ country }}</p>#}
+  {% endfor %}
+
+{{ content['#view'].exposed_data }}
+
+
+
+
+
+<section {{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {{ title }}
+  {{ title_suffix }}
+
+  {% if header %}
+    <header>
+      {{ header }}
+    </header>
+  {% endif %}
+
+  {{ exposed }}
+
+  {{ attachment_before }}
+
+  {% if rows -%}
+    {{ rows }}
+  {% elseif empty -%}
+    {{ empty }}
+  {% endif %}
+  {{ pager }}
+
+  {{ attachment_after }}
+  {{ more }}
+
+  {% if footer %}
+    <footer>
+      {{ footer }}
+    </footer>
+  {% endif %}
+
+  {{ feed_icons }}
+
+</section>
+
+
+
+

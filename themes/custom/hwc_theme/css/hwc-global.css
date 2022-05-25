@@ -2825,6 +2825,75 @@ h2.node__title {
   height: 220px;
 }
 
+.share-networks {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.share-networks .napo-actions li {
+  margin-left: 0.8rem;
+}
+.share-networks .napo-actions li:nth-child(1) {
+  margin-left: 0;
+}
+.share-networks .napo-actions li:before {
+  font-size: 1.2rem;
+  color: #adadad;
+  display: block;
+  cursor: pointer;
+}
+.share-networks .napo-actions .share-link:before {
+  font-size: 1.2rem;
+  color: #adadad;
+  display: block;
+  cursor: pointer;
+}
+.share-networks .list-networks {
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: rgba(149, 157, 165, 0.6) 0px 0px 12px;
+  border-radius: 90px;
+  width: 42px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -1.4rem;
+  right: 23px;
+  padding: 1.2rem 0.3rem;
+}
+.share-networks .list-networks li {
+  padding: 0.3rem 0;
+}
+.share-networks .list-networks li.close-share {
+  padding-bottom: 0.8rem;
+}
+.share-networks .list-networks li.close-share:before {
+  font-size: 1.4rem;
+  color: #585858;
+  cursor: pointer;
+}
+.share-networks .list-networks li a span {
+  display: none;
+}
+.share-networks .list-networks li a:before {
+  font-size: 1.2rem;
+  color: #adadad;
+  font-family: "Font Awesome 5 Brands";
+  display: block;
+}
+.share-networks .list-networks li.fb a:before {
+  content: "";
+}
+.share-networks .list-networks li.tw a:before {
+  content: "";
+}
+.share-networks .list-networks li.ln a:before {
+  content: "";
+}
+
 .private-zone-full-wrapper {
   display: flex;
   justify-content: space-evenly;
