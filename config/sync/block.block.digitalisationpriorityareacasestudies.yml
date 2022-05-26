@@ -1,0 +1,29 @@
+uuid: bc3380a1-da88-4ee4-903f-1e8458d1155a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.digitalisation_priority_area_case_studies
+  module:
+    - facets
+    - system
+  theme:
+    - hwc_theme
+id: digitalisationpriorityareacasestudies
+theme: hwc_theme
+region: sidebar_left
+weight: -21
+provider: null
+plugin: 'facet_block:digitalisation_priority_area_case_studies'
+settings:
+  id: 'facet_block:digitalisation_priority_area_case_studies'
+  label: 'Priority areas'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: digitalisationpriorityareacasestudies
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/24

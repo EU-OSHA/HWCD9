@@ -58,6 +58,10 @@ source:
       label: 'Priority Area'
       selector: item/field_msd_priority_area
     -
+      name: field_digitalisation_priority_ar
+      label: 'Digitalisation Priority Area'
+      selector: item/field_digitalisation_priority_ar
+    -
       name: author
       label: Author
       selector: item/field_author/en/0
@@ -154,6 +158,10 @@ process:
     -
       plugin: hwc_taxonomy_term
       source: priority_area
+  field_digitalisation_priority_ar:
+    -
+      plugin: hwc_taxonomy_term
+      source: field_digitalisation_priority_ar
   field_author/value: author/value
   field_page_count/value: page_count/value
   field_publication_bookshop_id/value: bookshop_id/value

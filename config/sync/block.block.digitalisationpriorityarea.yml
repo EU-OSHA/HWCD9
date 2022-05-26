@@ -1,4 +1,4 @@
-uuid: dd276f32-6470-46b2-bac4-3d2ac260eafb
+uuid: 21f4615d-5e76-49cb-9890-3994a1d0d539
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ dependencies:
     - system
   theme:
     - hwc_theme
-id: publicationspriorityarea
+id: digitalisationpriorityarea
 theme: hwc_theme
 region: sidebar_left
-weight: -19
+weight: -22
 provider: null
 plugin: 'facet_block:publications_priority_area'
 settings:
@@ -21,9 +21,9 @@ settings:
   label_display: visible
   provider: facets
   context_mapping: {  }
-  block_id: publicationspriorityarea
+  block_id: digitalisationpriorityarea
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/node/38\r\ntools-and-publications/publications\r\n/node/24\r\n/tools-and-publications/case-studies\r\n"
+    pages: "/node/38\r\n/tools-and-publications/publications"
