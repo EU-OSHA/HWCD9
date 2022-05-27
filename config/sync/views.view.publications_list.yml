@@ -16,6 +16,7 @@ dependencies:
     - 'taxonomy_term:publication_types:a917159e-3fb4-44f3-b9bf-93a2fa263d97'
     - 'taxonomy_term:publication_types:b0149488-ee31-4407-bf0e-5e390554ae53'
   module:
+    - better_exposed_filters
     - datetime
     - media
     - search_api
@@ -679,7 +680,7 @@ display:
             offset_label: Offset
           quantity: 9
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Search
           reset_button: true
@@ -688,6 +689,37 @@ display:
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: full_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: true
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
+            filter:
+              search_api_fulltext:
+                plugin_id: default
+                advanced:
+                  placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
       access:
         type: none
         options: {  }
@@ -728,7 +760,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: search_api
-          order: DESC
+          order: ASC
           expose:
             label: Alphabetically
             field_identifier: title
@@ -1210,12 +1242,11 @@ display:
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: search_api_fulltext
+            identifier: text
             required: false
             remember: false
             multiple: false
             remember_roles:
-              authenticated: authenticated
               anonymous: '0'
               administrator: '0'
               translation_manager: '0'

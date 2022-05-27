@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:publications_priority_area'
 settings:
   id: 'facet_block:publications_priority_area'
-  label: 'Priority areas'
+  label: 'Priority Areas'
   label_display: visible
   provider: facets
   context_mapping: {  }

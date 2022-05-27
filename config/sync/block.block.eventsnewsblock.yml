@@ -10,7 +10,7 @@ dependencies:
 id: eventsnewsblock
 theme: hwc_theme
 region: content
-weight: 1
+weight: -2
 provider: null
 plugin: events_news_views_block
 settings:
