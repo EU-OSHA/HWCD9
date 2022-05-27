@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.publication.field_booklet
     - field.field.node.publication.field_character_count
     - field.field.node.publication.field_cover_image
+    - field.field.node.publication.field_digitalisation_priority_ar
     - field.field.node.publication.field_expiration_date
     - field.field.node.publication.field_file
     - field.field.node.publication.field_first_publication_date
@@ -139,6 +140,14 @@ content:
       image_style: medium_crop_220
     third_party_settings: {  }
     weight: 131
+    region: content
+  field_digitalisation_priority_ar:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 135
     region: content
   field_expiration_date:
     type: datetime_default

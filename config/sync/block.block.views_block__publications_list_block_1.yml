@@ -12,7 +12,7 @@ dependencies:
 id: views_block__publications_list_block_1
 theme: hwc_theme
 region: content
-weight: -17
+weight: -21
 provider: null
 plugin: 'views_block:publications_list-block_1'
 settings:

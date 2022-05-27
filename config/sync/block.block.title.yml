@@ -12,7 +12,7 @@ dependencies:
 id: title
 theme: hwc_theme
 region: content
-weight: -6
+weight: -10
 provider: null
 plugin: 'facet_block:campaign_partners_title'
 settings:

@@ -10,7 +10,7 @@ dependencies:
 id: relatedresourceseventsblock
 theme: hwc_theme
 region: content
-weight: -3
+weight: -6
 provider: null
 plugin: related_resources_events_block
 settings:

@@ -1,4 +1,4 @@
-uuid: b2f97dc9-389a-46a2-bab2-67e840c2d3e3
+uuid: 3243f8ac-24bd-405f-aff2-bcf7f37ec783
 langcode: en
 status: true
 dependencies:
@@ -7,12 +7,12 @@ dependencies:
     - views.view.publications_list
   module:
     - search_api
-id: publications_priority_area
-name: 'Digitalisation priority area'
+id: digitalisation_priority_area_case_studies
+name: 'Digitalisation priority area case studies'
 weight: 0
 min_count: 1
 url_alias: publications_priority_area
-facet_source_id: 'search_api:views_block__publications_list__block_1'
+facet_source_id: 'search_api:views_block__publications_list__block_2'
 field_identifier: field_digitalisation_priority_ar
 query_operator: or
 hard_limit: 0
@@ -27,7 +27,7 @@ enable_parent_when_child_gets_disabled: true
 widget:
   type: checkbox
   config:
-    show_numbers: false
+    show_numbers: true
     soft_limit: 0
     show_reset_link: false
     reset_text: 'Show all'

@@ -1,4 +1,4 @@
-uuid: db52ea72-0b34-4370-a1a0-ca1cd45e284f
+uuid: 3f44da29-e54a-4620-ba39-f5877d6b686f
 langcode: en
 status: true
 dependencies:
@@ -10,14 +10,14 @@ dependencies:
     - views
   theme:
     - hwc_theme
-id: views_block__publications_slideshow_publications_slideshow
+id: views_block__publications_slideshow_case_studies_slideshow
 theme: hwc_theme
 region: content
-weight: -22
+weight: -8
 provider: null
-plugin: 'views_block:publications_slideshow-publications_slideshow'
+plugin: 'views_block:publications_slideshow-case_studies_slideshow'
 settings:
-  id: 'views_block:publications_slideshow-publications_slideshow'
+  id: 'views_block:publications_slideshow-case_studies_slideshow'
   label: ''
   label_display: visible
   provider: views
@@ -34,4 +34,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /tools-and-publications/publications
+    pages: /tools-and-publications/case-studies

@@ -10,7 +10,7 @@ dependencies:
 id: relatedresourceswikiblock
 theme: hwc_theme
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: related_resources_wiki_block
 settings:

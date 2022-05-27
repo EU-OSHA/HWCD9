@@ -12,7 +12,7 @@ dependencies:
 id: views_block__partner_countries_solr_block_1
 theme: hwc_theme
 region: content
-weight: -9
+weight: -13
 provider: null
 plugin: 'views_block:partner_countries_solr-block_1'
 settings:

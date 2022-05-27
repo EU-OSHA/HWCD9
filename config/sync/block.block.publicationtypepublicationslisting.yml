@@ -1,4 +1,4 @@
-uuid: 5f19857f-7988-4c89-b882-34b43d074157
+uuid: 70ff51a5-2f11-42bf-a357-8ccfae2d9ab8
 langcode: en
 status: true
 dependencies:
@@ -12,12 +12,12 @@ dependencies:
 id: publicationtypepublicationslisting
 theme: hwc_theme
 region: sidebar_left
-weight: -20
+weight: -31
 provider: null
 plugin: 'facet_block:publication_type_publications_listing'
 settings:
   id: 'facet_block:publication_type_publications_listing'
-  label: 'Publications type '
+  label: 'Publications type'
   label_display: visible
   provider: facets
   context_mapping: {  }
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/node/38\r\n/tools-and-publications/publications\r\n/node/24\r\n/tools-and-publications/case-studies"
+    pages: "/node/38\r\n/tools-and-publications/publications"
