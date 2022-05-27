@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:publication_type_publications_listing'
 settings:
   id: 'facet_block:publication_type_publications_listing'
-  label: 'Publication Type'
+  label: 'Publications type'
   label_display: visible
   provider: facets
   context_mapping: {  }

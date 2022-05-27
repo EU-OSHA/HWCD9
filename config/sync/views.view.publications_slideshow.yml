@@ -814,7 +814,7 @@ display:
           plugin_id: language
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
           group: 1
           exposed: false
           expose:
@@ -1250,8 +1250,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: true
-            text: 'Type: {{ field_publication_type }}'
+            alter_text: false
+            text: '{{ field_publication_type }}'
             make_link: false
             path: ''
             absolute: false
