@@ -1,0 +1,29 @@
+uuid: c234f506-ff20-446c-a07e-de03127c4449
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.partner_countries_campaign_partners_
+  module:
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__partner_countries_campaign_partners__block_1
+theme: hwc_theme
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:partner_countries_campaign_partners_-block_1'
+settings:
+  id: 'views_block:partner_countries_campaign_partners_-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /campaign-partners/official-campaign-partners

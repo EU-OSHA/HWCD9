@@ -8,8 +8,8 @@ dependencies:
     - hwc_theme
 id: addtoanybuttons
 theme: hwc_theme
-region: content
-weight: -29
+region: above_content
+weight: -30
 provider: null
 plugin: addtoany_block
 settings:

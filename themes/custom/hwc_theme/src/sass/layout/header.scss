@@ -435,11 +435,12 @@ body.user-logged-in.path-frontpage{
 /** Section title **/
 .section-title{
   background: url(../images/background-banner.png) no-repeat #acc700;
-  background-size: contain;
+  background-size: auto;
   background-position: 100% 0;
   padding-top: 0;
   margin-bottom: 0rem;
   width: 100%;
+  min-height: 165px;
   h1 {
     width: 100%;
     color: #FFF;
@@ -450,11 +451,11 @@ body.user-logged-in.path-frontpage{
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     margin: 0 auto;
-    height: 125px;
+    height: 165px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 }
 

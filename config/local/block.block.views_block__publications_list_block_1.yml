@@ -1,22 +1,22 @@
-uuid: fbc87312-c516-4b36-a3b0-952589a4a10a
+uuid: 1354a920-b4c1-4d8d-b61b-7dacc1493260
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.partners
+    - views.view.publications_list
   module:
     - system
     - views
   theme:
     - hwc_theme
-id: views_block__partners_block_1
+id: views_block__publications_list_block_1
 theme: hwc_theme
 region: content
-weight: -31
+weight: -19
 provider: null
-plugin: 'views_block:partners-block_1'
+plugin: 'views_block:publications_list-block_1'
 settings:
-  id: 'views_block:partners-block_1'
+  id: 'views_block:publications_list-block_1'
   label: ''
   label_display: '0'
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: /tools-and-publications/publications
