@@ -1,22 +1,22 @@
-uuid: fbc87312-c516-4b36-a3b0-952589a4a10a
+uuid: acc13c2a-2538-45c5-8d6b-9443da8430af
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.partners
+    - views.view.publications_list
   module:
     - system
     - views
   theme:
     - hwc_theme
-id: views_block__partners_block_1
+id: views_block__publications_list_block_2
 theme: hwc_theme
 region: content
-weight: -31
+weight: -7
 provider: null
-plugin: 'views_block:partners-block_1'
+plugin: 'views_block:publications_list-block_2'
 settings:
-  id: 'views_block:partners-block_1'
+  id: 'views_block:publications_list-block_2'
   label: ''
   label_display: '0'
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: "/node/24\r\n/tools-and-publications/case-studies"

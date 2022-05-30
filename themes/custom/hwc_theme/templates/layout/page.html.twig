@@ -50,9 +50,15 @@
       {% if not is_front %}
         {% if page.breadcrumb %}
           <section class="section-title">
-            {{ page.breadcrumb.hwc_theme_breadcrumbs }}
 
-{#            {{ dd( node.field_publication_type.0.entity.label ) }}#}
+{#{{ dd( node.getType() ) }}#}
+{#            <div class="alert alert-primary">#}
+{#              {{ drupal_token('node:title', {node: node}) }}<br />#}
+{#              {{ drupal_token('node:menu-link:parents', {node: node}) }}<hr />#}
+{#              {{ drupal_token('node:source:title', {node: node}) }}<br />#}
+{#              {{ drupal_token('node:url:args:value:0', {node: node})|raw|upper }}#}
+{#            </div>#}
+
             {% if  node.getType() == "events" %}
               <h1 class="page-header">{{ 'Events'|t }}</h1>
             {% elseif node.getType() == "publication" %}
@@ -67,8 +73,20 @@
               <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
             {% elseif node.getType() == "infographic" %}
               <h1 class="page-header">{{ 'infographics'|t }}</h1>
+{#              <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>#}
             {% else %}
-              <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+              {% if drupal_token('node:url:args:value:0', {node: node})|raw|upper == 'TOOLS-AND-PUBLICATIONS' %}
+                <h1 class="page-header">{{ drupal_token('node:title',{node: node})|raw }}</h1>
+              {% elseif drupal_token('node:url:args:value:0', {node: node})|raw|upper == 'MEDIA-CENTRE' %}
+                <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+              {% elseif drupal_token('node:url:args:value:0', {node: node})|raw|upper == 'GET-INVOLVED' %}
+                <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+              {% elseif drupal_token('node:url:args:value:0', {node: node})|raw == '[node:url:args:value:0]' %}
+                  <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+              {% else %}
+                <h1 class="page-header">{{ drupal_token('node:menu-link:parents', {node: node})|raw }}</h1>
+
+              {% endif %}
             {% endif %}
 
 
@@ -76,9 +94,14 @@
         {% endif %}
       {% endif %}
     {% endblock %}
-
-    <section id="main-wrapper" class="layout-main-wrapper clearfix">
+    {% if page['#title'] == "News" %}
+      {% set backcolor = 'gray-background' %}
+    {% endif %}
+    <section id="main-wrapper" class="layout-main-wrapper clearfix {{ backcolor }}">
       <div class="main-container">
+        <div class="container">
+          {{ page.breadcrumb.hwc_theme_breadcrumbs }}
+        </div>
 
         {% block content %}
         {% set has_sidebar_left= page.sidebar_left|render|striptags|trim is not empty or
@@ -146,7 +169,20 @@
           {% endif %}
           {% if page.footer.footer  %}
             <div class="site-footer__bottom">
-              {{ page.footer.footer }}
+              <div class="menu-help">
+                {{ page.footer.footer }}
+              </div>
+
+              <div class="row">
+                <div class="col-8 footer-intro">
+                    <p>Safety and health at work is everyone's concern. It's good for you. It's good for business.</p>
+                    <p>European Agency for Safety and Health at Work | an agency of the European Union</p>
+                </div>
+                <div class="col-4 footer-network">
+                  <p> {{ 'Follow us:'|t }}</p>
+                  {{ page.header_form.socialmenuheader }}
+                </div>
+              </div>
             </div>
           {% endif %}
         </div>

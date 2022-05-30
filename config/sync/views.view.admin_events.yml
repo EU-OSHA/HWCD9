@@ -2768,7 +2768,7 @@ display:
         options:
           grouping: {  }
           row_class: '{{ field_color}}'
-          default_row_class: true
+          default_row_class: false
           columns:
             field_color: field_color
             field_for_the_web: field_for_the_web

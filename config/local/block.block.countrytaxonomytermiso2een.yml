@@ -1,0 +1,29 @@
+uuid: 751d3d55-e7d8-4f77-8a0c-d6c44563041f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country_taxonomy_term_iso2_een
+  module:
+    - facets
+    - system
+  theme:
+    - hwc_theme
+id: countrytaxonomytermiso2een
+theme: hwc_theme
+region: content
+weight: -12
+provider: null
+plugin: 'facet_block:country_taxonomy_term_iso2_een'
+settings:
+  id: 'facet_block:country_taxonomy_term_iso2_een'
+  label: 'Country » Taxonomy term » ISO2 (EEN)'
+  label_display: '0'
+  provider: facets
+  context_mapping: {  }
+  block_id: countrytaxonomytermiso2een
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /campaign-partners/enterprise-europe-network
