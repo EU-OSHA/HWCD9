@@ -1,0 +1,30 @@
+uuid: 3a00a0eb-064a-4f45-81c9-4656abd252fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.certificate_form
+  module:
+    - system
+    - webform
+  theme:
+    - hwc_theme
+id: webform
+theme: hwc_theme
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: certificate_form
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /get-involved/get-your-certificate
