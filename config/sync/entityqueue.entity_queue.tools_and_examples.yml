@@ -1,0 +1,25 @@
+uuid: e4b4d7c9-27d4-4b2d-ae84-2514f99b22ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: tools_and_examples
+label: 'Tools and Examples'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: tk_toolkit
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

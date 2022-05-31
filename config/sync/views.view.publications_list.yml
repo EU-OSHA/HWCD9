@@ -685,7 +685,7 @@ display:
           submit_button: Search
           reset_button: true
           reset_button_label: 'Clear filters'
-          exposed_sorts_label: Order
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -716,6 +716,14 @@ display:
                 plugin_id: default
                 advanced:
                   placeholder_text: ''
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              search_api_language_1:
+                plugin_id: default
+                advanced:
+                  sort_options: false
                   rewrite:
                     filter_rewrite_values: ''
                   collapsible: false
@@ -980,46 +988,6 @@ display:
       cache:
         type: none
       filters:
-        search_api_language:
-          id: search_api_language
-          table: search_api_index_publications_list
-          field: search_api_language
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api_language
-          operator: in
-          value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         search_api_fulltext:
           id: search_api_fulltext
           table: search_api_index_publications_list
@@ -1133,6 +1101,46 @@ display:
           hierarchy: true
           limit: true
           error_message: true
+        search_api_language:
+          id: search_api_language
+          table: search_api_index_publications_list
+          field: search_api_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -1182,46 +1190,6 @@ display:
       cache:
         type: none
       filters:
-        search_api_language:
-          id: search_api_language
-          table: search_api_index_publications_list
-          field: search_api_language
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: search_api_language
-          operator: in
-          value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
         search_api_fulltext:
           id: search_api_fulltext
           table: search_api_index_publications_list
@@ -1287,6 +1255,66 @@ display:
           fields:
             - body
             - title
+        search_api_language:
+          id: search_api_language
+          table: search_api_index_publications_list
+          field: search_api_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: search_api_language_op
+            label: 'Item language'
+            description: ''
+            use_operator: false
+            operator: search_api_language_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_language
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              editor: '0'
+              approver: '0'
+              superadministrators: '0'
+              campaign_partner: '0'
+              external_provider: '0'
+              audio_visual: '0'
+              website_managers: '0'
+              hwc_staff_reviewers: '0'
+              eu_osha_een_reviewers: '0'
+              read_only: '0'
+              gpe_platform_editors: '0'
+              news_and_events_editor_een_osh_ambassador: '0'
+              news_and_events_editor_partner_ocp_mp_fop_: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         field_publication_type:
           id: field_publication_type
           table: search_api_index_publications_list

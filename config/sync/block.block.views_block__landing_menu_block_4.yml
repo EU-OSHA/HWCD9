@@ -1,22 +1,23 @@
-uuid: d54304af-528b-45c2-a74c-c51460d06293
+uuid: dddb7e6d-b1ba-435f-b1c2-5628cb4660bf
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.tool_examples_carousel
+    - views.view.landing_menu
   module:
     - node
+    - system
     - views
   theme:
     - hwc_theme
-id: views_block__tool_examples_carousel_block
+id: views_block__landing_menu_block_4
 theme: hwc_theme
 region: content
-weight: 3
+weight: 0
 provider: null
-plugin: 'views_block:tool_examples_carousel-block'
+plugin: 'views_block:landing_menu-block_4'
 settings:
-  id: 'views_block:tool_examples_carousel-block'
+  id: 'views_block:landing_menu-block_4'
   label: ''
   label_display: '0'
   provider: views
@@ -30,6 +31,8 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      tk_article: tk_article
-      tk_tool: tk_tool
-      tk_topic: tk_topic
+      article: article
+  request_path:
+    id: request_path
+    negate: false
+    pages: /media-centre

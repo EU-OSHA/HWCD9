@@ -3,11 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entityqueue.entity_queue.good_practice_examples
     - node.type.publication
     - taxonomy.vocabulary.publication_types
   content:
     - 'taxonomy_term:publication_types:a917159e-3fb4-44f3-b9bf-93a2fa263d97'
   module:
+    - entityqueue
     - node
     - options
     - taxonomy
@@ -126,6 +128,34 @@ display:
             field_identifier: ''
           exposed: false
           granularity: second
+        entityqueue_relationship_in_queue:
+          id: entityqueue_relationship_in_queue
+          table: node_field_data
+          field: entityqueue_relationship_in_queue
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_in_queue
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        entityqueue_relationship:
+          id: entityqueue_relationship
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_queue_position
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments: {  }
       filters:
         status:
@@ -258,7 +288,18 @@ display:
           disable_automatic_base_fields: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        entityqueue_relationship_1:
+          id: entityqueue_relationship_1
+          table: node_field_data
+          field: entityqueue_relationship
+          relationship: none
+          group_type: group
+          admin_label: 'Content queue'
+          entity_type: node
+          plugin_id: entity_queue
+          required: true
+          limit_queue: good_practice_examples
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -270,14 +311,19 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
-  block_1:
-    id: block_1
+      tags:
+        - 'config:entityqueue.entity_queue.good_practice_examples'
+        - entity_field_info
+        - views_data
+  block:
+    id: block
     display_title: Block
     display_plugin: block
     position: 1
     display_options:
       display_extenders: {  }
+      allow:
+        items_per_page: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -286,4 +332,7 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:entityqueue.entity_queue.good_practice_examples'
+        - entity_field_info
+        - views_data
