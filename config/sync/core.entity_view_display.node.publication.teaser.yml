@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.publication.field_booklet
     - field.field.node.publication.field_character_count
     - field.field.node.publication.field_cover_image
+    - field.field.node.publication.field_digitalisation_priority_ar
     - field.field.node.publication.field_expiration_date
     - field.field.node.publication.field_file
     - field.field.node.publication.field_first_publication_date
@@ -91,6 +92,7 @@ hidden:
   field_banner_publications_office: true
   field_booklet: true
   field_character_count: true
+  field_digitalisation_priority_ar: true
   field_expiration_date: true
   field_file: true
   field_first_publication_date: true

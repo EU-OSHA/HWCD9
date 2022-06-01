@@ -127,7 +127,7 @@
           <div class="publications-detail-right-column">
             <div class="metadata">
               <span class="date" datetime="{{  content.field_first_publication_date.0['#markup'] }}" >
-                {{ content.field_first_publication_date['#object'].field_first_publication_date.0.value|date("m/d/Y") }}
+                {{ content.field_first_publication_date['#object'].field_publication_date.0.value|date("d/m/Y") }}
               </span>
               <span class="type" ><label>{{ 'Type'|t }}:</label> {{ content.field_publication_type.0['#title'] }}</span>
               <span class="num-pages">

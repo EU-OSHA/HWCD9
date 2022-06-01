@@ -2767,8 +2767,8 @@ display:
         type: table
         options:
           grouping: {  }
-          row_class: red
-          default_row_class: true
+          row_class: '{{ field_color}}'
+          default_row_class: false
           columns:
             field_color: field_color
             field_for_the_web: field_for_the_web
@@ -4616,7 +4616,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<div class=\"colours\">\r\n<div class=\"red\"></div><p>TBD - TBC</p>\r\n<div class=\"black\"></div><p>Confirmed</p>\r\n<div class=\"grey\"></div><p>Only web or not attendance</p>\r\n</div>"
+            value: "<ul class=\"colours\">\r\n<li class=\"red\">TBD - TBC</li>\r\n<li class=\"black\">Confirmed</li>\r\n<li class=\"grey\">Only web or not attendance</li>\r\n</ul>"
             format: full_html
           tokenize: false
       footer:

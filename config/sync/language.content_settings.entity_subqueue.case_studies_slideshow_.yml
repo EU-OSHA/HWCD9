@@ -1,0 +1,18 @@
+uuid: 28aa9734-f81d-4169-9634-c51f47c546c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.case_studies_slideshow_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.case_studies_slideshow_
+target_entity_type_id: entity_subqueue
+target_bundle: case_studies_slideshow_
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: 338b2fd6-17b3-4ec2-a6f1-c0fd37ace8f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: case_studies_slideshow_
+label: 'Case studies Slideshow '
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: views
+  handler_settings:
+    view:
+      view_name: publications_slideshow
+      display_name: entity_reference_2
+      arguments: {  }
+queue_settings:
+  min_size: 0
+  max_size: 3
+  act_as_queue: false
+  reverse: false

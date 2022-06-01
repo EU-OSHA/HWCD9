@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_digitalisation_priority_ar
     - field.storage.node.field_pages_count
     - field.storage.node.field_msd_priority_area
     - field.storage.node.field_publication_date
@@ -67,11 +68,19 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  field_digitalisation_priority_ar:
+    label: 'Digitalisation priority area'
+    datasource_id: 'entity:node'
+    property_path: field_digitalisation_priority_ar
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_digitalisation_priority_ar
   field_msd_priority_area:
     label: 'Priority area'
     datasource_id: 'entity:node'
     property_path: field_msd_priority_area
-    type: integer
+    type: date
     dependencies:
       config:
         - field.storage.node.field_msd_priority_area
@@ -87,7 +96,7 @@ field_settings:
     label: 'Publication date'
     datasource_id: 'entity:node'
     property_path: field_publication_date
-    type: date
+    type: integer
     dependencies:
       config:
         - field.storage.node.field_publication_date
@@ -99,6 +108,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_type
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'

@@ -1,0 +1,22 @@
+uuid: 54e7bdd5-925f-4266-8453-7de411ab10ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.good_practice_examples
+id: entity_subqueue.good_practice_examples.status
+field_name: status
+entity_type: entity_subqueue
+bundle: good_practice_examples
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: Desactivado
+field_type: boolean

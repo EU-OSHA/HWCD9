@@ -97,6 +97,75 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        link__uri_1:
+          id: link__uri_1
+          table: menu_link_content_data
+          field: link__uri
+          relationship: none
+          group_type: group
+          admin_label: 'Link for image'
+          entity_type: menu_link_content
+          entity_field: link
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: null
+            url_only: true
+            url_plain: true
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_image_menu:
           id: field_image_menu
           table: menu_link_content__field_image_menu
@@ -106,7 +175,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -161,6 +230,55 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{% if (field_image_menu) %}\r\n{{ field_image_menu }} \r\n{% else %}\r\n\r\n<a href=\"{{link__uri_1}}\"> <img src=\"/sites/hwc/themes/custom/hwc_theme/images/Placeholder_view_vector.svg.png\"></a>\r\n{% endif %}"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
         title:
           id: title
           table: menu_link_content_data
@@ -575,6 +693,316 @@ display:
           default_argument_type: fixed
           default_argument_options:
             argument: 'menu_link_content:b017a4e5-45cf-4ea6-bfd2-e36ad012d632'
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: none
+          transform_dash: false
+          break_phrase: false
+      defaults:
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:field.storage.menu_link_content.field_copyrigth'
+        - 'config:field.storage.menu_link_content.field_image_menu'
+        - 'config:field.storage.menu_link_content.field_menu_description'
+  block_3:
+    id: block_3
+    display_title: 'Campaign partners'
+    display_plugin: block
+    position: 2
+    display_options:
+      arguments:
+        parent:
+          id: parent
+          table: menu_link_content_data
+          field: parent
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: menu_link_content
+          entity_field: parent
+          plugin_id: string
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: 'menu_link_content:e975818e-b33f-40fd-bddb-df37b07b1bbb'
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: none
+          transform_dash: false
+          break_phrase: false
+      defaults:
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:field.storage.menu_link_content.field_copyrigth'
+        - 'config:field.storage.menu_link_content.field_image_menu'
+        - 'config:field.storage.menu_link_content.field_menu_description'
+  block_4:
+    id: block_4
+    display_title: 'Media Centre'
+    display_plugin: block
+    position: 2
+    display_options:
+      arguments:
+        parent:
+          id: parent
+          table: menu_link_content_data
+          field: parent
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: menu_link_content
+          entity_field: parent
+          plugin_id: string
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: 'menu_link_content:8e8f5d34-17f8-454d-a2a7-f249439e82bf'
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: none
+          transform_dash: false
+          break_phrase: false
+      defaults:
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:field.storage.menu_link_content.field_copyrigth'
+        - 'config:field.storage.menu_link_content.field_image_menu'
+        - 'config:field.storage.menu_link_content.field_menu_description'
+  block_5:
+    id: block_5
+    display_title: 'Previous Campaigns'
+    display_plugin: block
+    position: 2
+    display_options:
+      arguments:
+        parent:
+          id: parent
+          table: menu_link_content_data
+          field: parent
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: menu_link_content
+          entity_field: parent
+          plugin_id: string
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: 'menu_link_content:e9fec8ee-4e13-427e-83e0-443441ffd0be'
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: none
+          transform_dash: false
+          break_phrase: false
+      defaults:
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:field.storage.menu_link_content.field_copyrigth'
+        - 'config:field.storage.menu_link_content.field_image_menu'
+        - 'config:field.storage.menu_link_content.field_menu_description'
+  block_6:
+    id: block_6
+    display_title: 'About the topic'
+    display_plugin: block
+    position: 2
+    display_options:
+      arguments:
+        parent:
+          id: parent
+          table: menu_link_content_data
+          field: parent
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: menu_link_content
+          entity_field: parent
+          plugin_id: string
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: 'menu_link_content:239c1ba1-4369-4070-a336-22be55289b0f'
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          glossary: false
+          limit: 0
+          case: none
+          path_case: none
+          transform_dash: false
+          break_phrase: false
+      defaults:
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+      tags:
+        - 'config:field.storage.menu_link_content.field_copyrigth'
+        - 'config:field.storage.menu_link_content.field_image_menu'
+        - 'config:field.storage.menu_link_content.field_menu_description'
+  block_7:
+    id: block_7
+    display_title: 'Priority areas'
+    display_plugin: block
+    position: 2
+    display_options:
+      arguments:
+        parent:
+          id: parent
+          table: menu_link_content_data
+          field: parent
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: menu_link_content
+          entity_field: parent
+          plugin_id: string
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: 'menu_link_content:598eac8d-2b43-4a7b-9ae2-d5b9e54113dd'
           default_argument_skip_url: false
           summary_options:
             base_path: ''

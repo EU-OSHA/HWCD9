@@ -41,8 +41,8 @@
 (function ($, Drupal) {
   $( window ).on( "load", function() {
 
-    var height = $('#header').height();
-    $('body').css('padding-top', height+ ( $('#toolbar-bar').height()*2 ) );
+    var height = Math.round( $('#header').height()+ ( $('#toolbar-bar').height()*2 ) )+'px';
+    $('body').css('padding-top', height  );
 
 
     $('.share-link').on( "click", function() {

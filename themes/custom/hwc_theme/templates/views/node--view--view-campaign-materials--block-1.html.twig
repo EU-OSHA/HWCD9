@@ -4,37 +4,7 @@
   </div>
   <div class="group-right">
     <div class="metadata">
-      <span class="date" datetime="{{  content.field_first_publication_date.0['#markup'] }}" >{{ content.field_first_publication_date.0['#markup'] }}</span>
-      <span class="type" ><label>{{ 'Type'|t }}:</label> {{ content.field_publication_type.0['#title'] }}</span>
-      <span class="num-pages">
-        {% if content.field_pages_count.0 %}
-        {{ content.field_pages_count.0 }} {{ 'pages'|t }}
-        {% else %}
-          0 {{ 'pages'|t }}
-        {% endif %}
-      </span>
-    </div>
-    <h2 class="title-list">
-      <a href="{{ path('entity.node.canonical', {'node': node.id}) }}"> {{ label.0 }} </a>
-    </h2>
-    <p>
-      {{ content.body.0|render|striptags|slice(0, 220)|raw ~ '...' }}
-    </p>
-    <p class="link-more">
-      <a href="{{ path('entity.node.canonical', {'node': node.id }) }}" class="more-link">{{ 'See more'|t }}</a>
-    </p>
-
-  </div>
-</article>
-
-
-<article class="cm-items-list">
-  <div class="group-left">
-    <a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ content.field_cover_image }}</a>
-  </div>
-  <div class="group-right">
-    <div class="metadata">
-      <span class="date" datetime="{{  content.field_first_publication_date.0['#markup'] }}" >{{ content.field_first_publication_date.0['#markup'] }}</span>
+      <span class="date" datetime="{{  content.field_publication_date.0['#markup'] }}"> {{ content.field_publication_date }}</span>
       <span class="type" ><label>{{ 'Type'|t }}:</label> {{ content.field_publication_type.0['#title'] }}</span>
       <span class="num-pages">
         {% if content.field_pages_count.0 %}

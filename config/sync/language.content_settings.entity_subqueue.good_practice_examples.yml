@@ -1,0 +1,18 @@
+uuid: d4741ddf-3bdf-412e-8035-edc092657231
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.good_practice_examples
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.good_practice_examples
+target_entity_type_id: entity_subqueue
+target_bundle: good_practice_examples
+default_langcode: site_default
+language_alterable: false

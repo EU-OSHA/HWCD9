@@ -1,0 +1,18 @@
+uuid: 249cc8f3-463c-400c-81e9-7b15969cf37e
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.good_practice_examples
+id: entity_subqueue.good_practice_examples.changed
+field_name: changed
+entity_type: entity_subqueue
+bundle: good_practice_examples
+label: Modificado
+description: 'The time that the subqueue was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -10,7 +10,7 @@ id: node.publication.field_msd_priority_area
 field_name: field_msd_priority_area
 entity_type: node
 bundle: publication
-label: 'Priority area'
+label: 'MSD Priority area'
 description: ''
 required: false
 translatable: false

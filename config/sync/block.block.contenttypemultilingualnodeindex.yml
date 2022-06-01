@@ -12,7 +12,7 @@ dependencies:
 id: contenttypemultilingualnodeindex
 theme: hwc_theme
 region: sidebar_left
-weight: -16
+weight: -27
 provider: null
 plugin: 'facet_block:content_type_multilingual_node_index'
 settings:

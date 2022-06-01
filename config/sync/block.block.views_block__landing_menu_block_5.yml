@@ -1,0 +1,38 @@
+uuid: 4bfda78b-dc64-4dc7-952b-d63c83fc6b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.landing_menu
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__landing_menu_block_5
+theme: hwc_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:landing_menu-block_5'
+settings:
+  id: 'views_block:landing_menu-block_5'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+  request_path:
+    id: request_path
+    negate: false
+    pages: /previous-campaigns

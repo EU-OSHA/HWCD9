@@ -12,7 +12,7 @@ dependencies:
 id: views_block__frontpage_events_block
 theme: hwc_theme
 region: content
-weight: -24
+weight: -31
 provider: null
 plugin: 'views_block:frontpage_events-block'
 settings:

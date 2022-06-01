@@ -12,8 +12,8 @@ field_name: body
 entity_type: node
 bundle: events
 label: Description
-description: ''
-required: true
+description: 'Write the general description of your event. This will appear in the body of your event''s page.'
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

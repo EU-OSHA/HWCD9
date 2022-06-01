@@ -1,0 +1,38 @@
+uuid: 6b4b7901-9ddf-4d5d-ad76-9fdd58f5ba32
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.landing_menu
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__landing_menu_block_3
+theme: hwc_theme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:landing_menu-block_3'
+settings:
+  id: 'views_block:landing_menu-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+  request_path:
+    id: request_path
+    negate: false
+    pages: /campaign-partners

@@ -51,6 +51,7 @@ module:
   editor: 0
   editor_advanced_link: 0
   entity_browser: 0
+  entity_print: 0
   entity_reference_revisions: 0
   entityqueue: 0
   exclude_node_title: 0
@@ -73,6 +74,7 @@ module:
   hwc_import_export: 0
   hwc_partner: 0
   hwc_partner_cron_migration: 0
+  hwc_search: 0
   image: 0
   image_widget_crop: 0
   jquery_ui: 0
@@ -158,6 +160,9 @@ module:
   views_ui: 0
   views_year_filter: 0
   webform: 0
+  webform_attachment: 0
+  webform_entity_print: 0
+  webform_entity_print_attachment: 0
   webform_node: 0
   webform_ui: 0
   workbench_access: 0

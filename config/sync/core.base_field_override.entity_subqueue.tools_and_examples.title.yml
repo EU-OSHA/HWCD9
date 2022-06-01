@@ -1,0 +1,18 @@
+uuid: 17f83a27-20d1-4d40-8f44-ff6a03b98dc5
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.tools_and_examples
+id: entity_subqueue.tools_and_examples.title
+field_name: title
+entity_type: entity_subqueue
+bundle: tools_and_examples
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
