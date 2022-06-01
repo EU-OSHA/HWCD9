@@ -1,0 +1,18 @@
+uuid: aa570b56-926e-4c4a-8495-b49483162472
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.case_studies_slideshow_
+id: entity_subqueue.case_studies_slideshow_.title
+field_name: title
+entity_type: entity_subqueue
+bundle: case_studies_slideshow_
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

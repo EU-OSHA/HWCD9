@@ -11,7 +11,7 @@ dependencies:
 id: publicprofileblock
 theme: hwc_theme
 region: content
-weight: -24
+weight: -29
 provider: null
 plugin: public_profile
 settings:

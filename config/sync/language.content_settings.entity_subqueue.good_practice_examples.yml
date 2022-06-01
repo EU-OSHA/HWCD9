@@ -1,9 +1,9 @@
-uuid: 59cc0957-ebb3-47b5-88ae-d17071168894
-langcode: en
+uuid: d4741ddf-3bdf-412e-8035-edc092657231
+langcode: es
 status: true
 dependencies:
   config:
-    - node.type.campaign_materials
+    - entityqueue.entity_queue.good_practice_examples
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: node.campaign_materials
-target_entity_type_id: node
-target_bundle: campaign_materials
+id: entity_subqueue.good_practice_examples
+target_entity_type_id: entity_subqueue
+target_bundle: good_practice_examples
 default_langcode: site_default
 language_alterable: false

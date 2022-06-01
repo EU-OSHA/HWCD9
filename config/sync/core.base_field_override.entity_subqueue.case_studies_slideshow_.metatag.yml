@@ -1,13 +1,13 @@
-uuid: fddd91b1-17dc-4650-bcc5-edd3ed6eebae
-langcode: en
+uuid: b9926eaa-155a-46d9-b6df-393b0d3b010d
+langcode: es
 status: true
 dependencies:
   config:
-    - node.type.campaign_materials
-id: node.campaign_materials.metatag
+    - entityqueue.entity_queue.case_studies_slideshow_
+id: entity_subqueue.case_studies_slideshow_.metatag
 field_name: metatag
-entity_type: node
-bundle: campaign_materials
+entity_type: entity_subqueue
+bundle: case_studies_slideshow_
 label: 'Metatags (Hidden field for JSON support)'
 description: 'The meta tags for the entity.'
 required: false
