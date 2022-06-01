@@ -11,7 +11,7 @@ ncw_add_publication: /export/list-additional-publications/digitalisation
 ncw_add_news: /export/list-additional-news/digitalisation
 ncw_add_infographic: /export/list-additional-infographic/digitalisation
 ncw_add_highlights: /export/list-additional-press-releases/digitalisation
-ncw_press_release: "/export/press_release/list\t"
+ncw_press_release: /export/list/press_release
 ncw_add_slideshare: /export/list-additional-slideshares/digitalisation
 ncw_add_youtube: /export/list-additional-youtube/digitalisation
 ncw_file: /export/list-additional-files/digitalisation
