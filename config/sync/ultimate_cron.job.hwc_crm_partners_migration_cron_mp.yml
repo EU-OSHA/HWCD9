@@ -1,12 +1,12 @@
 uuid: 6a0e3fdd-16be-4165-8dfd-35f50a162758
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - hwc_crm_partners_migration
 title: 'Import MP Partners'
 id: hwc_crm_partners_migration_cron_mp
-weight: 0
+weight: -9
 module: hwc_crm_partners_migration
 callback: hwc_crm_partners_migration_callback_mp
 scheduler:

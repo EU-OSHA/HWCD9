@@ -6,7 +6,7 @@ dependencies:
     - xmlsitemap
 title: 'Default cron handler'
 id: xmlsitemap_cron
-weight: 0
+weight: 8
 module: xmlsitemap
 callback: xmlsitemap_cron
 scheduler:
