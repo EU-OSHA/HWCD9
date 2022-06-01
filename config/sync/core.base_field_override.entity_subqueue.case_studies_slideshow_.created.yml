@@ -1,0 +1,18 @@
+uuid: 26fd90ed-3dd8-4795-8ec3-6e5d67fb5b27
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.case_studies_slideshow_
+id: entity_subqueue.case_studies_slideshow_.created
+field_name: created
+entity_type: entity_subqueue
+bundle: case_studies_slideshow_
+label: Fecha
+description: 'The time that the subqueue was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

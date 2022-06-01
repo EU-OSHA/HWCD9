@@ -1,0 +1,22 @@
+uuid: 8a2412c1-0625-43a7-ac86-76f4e5abcee1
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.case_studies_slideshow_
+id: entity_subqueue.case_studies_slideshow_.status
+field_name: status
+entity_type: entity_subqueue
+bundle: case_studies_slideshow_
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: Desactivado
+field_type: boolean

@@ -13,7 +13,7 @@ dependencies:
 id: views_block__landing_menu_block_6
 theme: hwc_theme
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: 'views_block:landing_menu-block_6'
 settings:

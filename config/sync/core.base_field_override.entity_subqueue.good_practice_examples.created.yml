@@ -1,0 +1,18 @@
+uuid: 7aa8266c-22bf-4d50-93e8-4697c8524433
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.good_practice_examples
+id: entity_subqueue.good_practice_examples.created
+field_name: created
+entity_type: entity_subqueue
+bundle: good_practice_examples
+label: Fecha
+description: 'The time that the subqueue was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

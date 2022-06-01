@@ -1,0 +1,18 @@
+uuid: e6bac0ca-0547-41a0-bd40-f003ded45fb8
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.good_practice_examples
+id: entity_subqueue.good_practice_examples.title
+field_name: title
+entity_type: entity_subqueue
+bundle: good_practice_examples
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

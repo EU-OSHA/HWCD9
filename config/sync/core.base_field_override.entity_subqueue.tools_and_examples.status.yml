@@ -1,0 +1,22 @@
+uuid: 130f41c2-b803-480c-af76-6c9d57fff7bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.tools_and_examples
+id: entity_subqueue.tools_and_examples.status
+field_name: status
+entity_type: entity_subqueue
+bundle: tools_and_examples
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 7a06b4db-540a-44bf-8c81-e49f9197cba3
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.case_studies_slideshow_
+id: entity_subqueue.case_studies_slideshow_.uid
+field_name: uid
+entity_type: entity_subqueue
+bundle: case_studies_slideshow_
+label: 'User ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\entityqueue\Entity\EntitySubqueue::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
