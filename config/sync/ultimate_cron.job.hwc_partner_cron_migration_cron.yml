@@ -6,7 +6,7 @@ dependencies:
     - hwc_partner_cron_migration
 title: 'Import Publications'
 id: hwc_partner_cron_migration_cron
-weight: -12
+weight: -8
 module: hwc_partner_cron_migration
 callback: hwc_partner_cron_migration_cron
 scheduler:

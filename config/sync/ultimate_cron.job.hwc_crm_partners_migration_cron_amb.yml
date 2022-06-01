@@ -6,7 +6,7 @@ dependencies:
     - hwc_crm_partners_migration
 title: 'Import AMB Partners'
 id: hwc_crm_partners_migration_cron_amb
-weight: -11
+weight: -12
 module: hwc_crm_partners_migration
 callback: hwc_crm_partners_migration_callback_amb
 scheduler:
