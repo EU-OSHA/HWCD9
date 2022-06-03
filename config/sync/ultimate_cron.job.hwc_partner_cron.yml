@@ -15,7 +15,7 @@ scheduler:
     name: crontab
     crontab:
       rules:
-        - 20
+        - ' */20 * * * '
 launcher:
   id: serial
 logger:
