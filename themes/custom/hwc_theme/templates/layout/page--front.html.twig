@@ -24,10 +24,17 @@
   {% endif %}
 
 
-  <section class="content-fluid blocks-front-page green-background">
+  <section class="content-fluid blocks-front-page green-background priority-areas-home">
     <div class="container no-padding">
       <h1 class="line green"><span><a href="/about-topic/priority-areas">{{ 'Priority areas' | trans }}</a></span></h1>
       <p>The ‘Healthy Workplaces Lighten the Load’ campaign is organised into several priority areas, which are promoted using special communication and promotion packs throughout the campaign. Each area covers a specific topic related to MSDs. A range of materials, including reports, infosheets, infographics and case studies, are released every three to four months to maintain the campaign’s momentum.</p>
+    </div>
+  </section>
+
+  <section class="content-fluid blocks-front-page campaign-partners-home img-background">
+    <div class="container no-padding">
+      <h1>{{ 'Do you want to become a campaign partner?'|t }}</h1>
+      <p><a class="see-all-link" href="{{ drupal_url('media-centre/events')}}">{{ 'Get more information'|t }}</a></p>
     </div>
   </section>
 
@@ -36,22 +43,32 @@
     {{ page.content.views_block__partners_block_1 }}
   </section>
 
-  <!--
-  <section class="home-newsletter-social-media blocks-front-page">
+
+  <section class="home-newsletter-social-media blocks-front-page img-background">
     <div class="container no-padding">
       <div class="row">
         <div class="home-newsletter col-lg-7 col-md-12">
-{#          <h2><span><a href="/media-centre/news">{{ 'Newsletter' | trans }}</a></span></h2>#}
-          <h4>TODO Block Newsletter</h4>
+          <h1 class="newsletter-section-title"><span><a href="/media-centre/news">{{ 'Newsletter'|t }}</a></span></h1>
+          <form>
+            <p>To get the latest news from the Healthy Workplaces Campaign 2020–22 direct to your inbox, sign up for our bimonthly newsletter.</p>
+            <input type="text">
+            <button>Subscribe</button>
+          </form>
+          <p><a class="see-all-link" href="{{ drupal_url('media-centre/events')}}">{{ 'See last newsletters'|t }}</a></p>
         </div>
+        <div class="vertical-line"></div>
         <div class="home-social-media col-lg-5 col-md-12">
-{#          <h2><span><a href="/en/media-centre/events">{{ 'Social media' | trans }}</a></span></h2>#}
-          <h4>TODO Black social media</h4>
+          <h1 class="social-media-section-title"><span><a href="/media-centre/social-media-centre">{{ 'Social media'|t }}</a></span></h1>
+          <p>Follow us on social media and get the latest information.</p>
+          <div id="block-socialmenu" class="block-socialmenu" >
+            {{ page.header_form.socialmenuheader }}
+          </div>
+          <p><a class="see-all-link" href="{{ drupal_url('media-centre/events')}}">{{ 'See all from social media'|t }}</a></p>
         </div>
       </div>
     </div>
   </section>
-  -->
+
 {% endblock %}
 
 

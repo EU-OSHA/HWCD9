@@ -164,11 +164,50 @@
     padding-right: 3.125rem;
   }
 }
+.newsletter-section-title{
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:before{
+    content: '';
+    background: url(../images/ico-newsletter.png) 50% no-repeat ;
+    width: 49px;
+    display: block;
+    height: 45px;
+  }
+  a{
+    color: #FFF;
+    background: transparent;
+    padding-right: 3.125rem;
+  }
+}
+.social-media-section-title{
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:before{
+    content: '';
+    background: url(../images/ico-social-media.png) 50% no-repeat ;
+    width: 49px;
+    display: block;
+    height: 45px;
+  }
+  a{
+    color: #FFF;
+    background: transparent;
+    padding-right: 3.125rem;
+  }
+}
 .events-section-title{
   margin-top: 0;
   font-weight: 400;
   font-size: 1.5rem;
-  background: url(../images/grey-h3-line.png) repeat-x 50% 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -180,8 +219,8 @@
     background: #FFF;
   }
   a{
-    color: #00309d;
-    background-color: #FFF;
+    color: $text-color-blue;
+    background: #FFF;
     padding-right: 3.125rem;
   }
 }
@@ -289,6 +328,25 @@ section.home-news-events {
   }
 }
 
+.campaign-partners-home{
+  padding: 3rem 0;
+  > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > h1{
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    > p{
+     .see-all-link{
+       text-transform: uppercase;
+     }
+    }
+  }
+}
+
 .multicarousel--block {
   overflow: hidden;
   padding: 2rem 3.5rem 3.5rem;
@@ -350,7 +408,102 @@ section.home-news-events {
 }
 
 
+.home-newsletter-social-media{
+  min-height: 340px;
+  color: white;
+  padding: 2rem 0;
+  .container > .row{
+    flex-wrap: nowrap;
+  }
+  .home-newsletter{
 
+  }
+  .vertical-line{
+    width: 1px;
+    min-height: 348px;
+    border-right: 2px dashed #FFF;
+  }
+  .home-social-media{
+    /* Share links */
+   .social-network{
+        list-style-type: none;
+        padding: 0;
+        width: auto;
+        margin: 3rem 0;
+        display: flex;
+        justify-content: flex-start;
+        li{
+          a{
+            margin: 0 0 0 10px;
+            padding: 5px;
+            display: block;
+            width: 48px;
+            height: 48px;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            label{
+              display: none;
+            }
+          }
+          &.twitter{
+            a{
+              background: $text-color-blue;
+              -webkit-mask-image: url(../images/svg_icons/brands/twitter.svg);
+              -webkit-mask-repeat:no-repeat;
+              mask-image: url(../images/svg_icons/brands/twitter.svg);
+              mask-repeat:no-repeat;
+            }
+          }
+          &.facebook{
+            a{
+              background: $text-color-blue;
+              -webkit-mask-image: url(../images/svg_icons/brands/facebook-square.svg);
+              -webkit-mask-repeat:no-repeat;
+              mask-image: url(../images/svg_icons/brands/facebook-square.svg);
+              mask-repeat:no-repeat;
+            }
+          }
+          &.youtube{
+            a{
+              background: $text-color-blue;
+              -webkit-mask-image: url(../images/svg_icons/brands/youtube.svg);
+              -webkit-mask-repeat:no-repeat;
+              mask-image: url(../images/svg_icons/brands/youtube.svg);
+              mask-repeat:no-repeat;
+            }
+          }
+          &.linkedin{
+            a{
+              background: $text-color-blue;
+              -webkit-mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
+              -webkit-mask-repeat:no-repeat;
+              mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
+              mask-repeat:no-repeat;
+            }
+          }
+          &.flickr{
+            a{
+              background: $text-color-blue;
+              -webkit-mask-image: url(../images/svg_icons/brands/flickr.svg);
+              -webkit-mask-repeat:no-repeat;
+              mask-image: url(../images/svg_icons/brands/flickr.svg);
+              mask-repeat:no-repeat;
+            }
+          }
+          &.slideshare{
+            display: none;
+            a{
+              background: $text-color-blue;
+              -webkit-mask-image: url(../images/svg_icons/brands/facebook-f.svg);
+              -webkit-mask-repeat:no-repeat;
+              mask-image: url(../images/svg_icons/brands/facebook-f.svg);
+              mask-repeat:no-repeat;
+            }
+          }
+        }
+      }
+  }
+}
 
 
 

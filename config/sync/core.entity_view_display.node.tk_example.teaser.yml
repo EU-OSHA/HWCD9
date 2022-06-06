@@ -63,6 +63,9 @@ content:
 hidden:
   addtoany: true
   breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_download_pdf: true
   field_external_link: true
   field_publication_date: true
