@@ -13,3 +13,15 @@ definitions:
     weight: -50
     expanded: false
     enabled: true
+  masquerade__unmasquerade:
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: -50
+  user__page:
+    enabled: false
+    menu_name: account
+    parent: ''
+    weight: -10
+    expanded: false
