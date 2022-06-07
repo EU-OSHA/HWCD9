@@ -2992,6 +2992,12 @@ h2.node__title {
 #block-views-block-view-campaign-materials-block-1 .view-content.row {
   margin: 0;
 }
+#block-views-block-view-campaign-materials-block-1 .view-content.row > div {
+  width: 100%;
+}
+#block-views-block-view-campaign-materials-block-1 .view-content.row > div:last-child .cm-items-list:after {
+  background: none;
+}
 
 .cm-items-list {
   display: flex;
