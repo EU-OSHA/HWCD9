@@ -13,5 +13,5 @@ theme: {  }
 blacklist: {  }
 graylist:
   - search_api.server.default_solr_server
-graylist_dependents: true
+graylist_dependents: false
 graylist_skip_equal: true
