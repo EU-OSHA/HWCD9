@@ -4,7 +4,6 @@ drupalAcctProvisionServer: osha
 ldapEntryProvisionServer: osha_write
 drupalAcctProvisionTriggers:
   - drupal_on_login
-  - drupal_on_update_create
 ldapEntryProvisionTriggers: {  }
 orphanedDrupalAcctBehavior: user_cancel_block
 orphanedCheckQty: 100

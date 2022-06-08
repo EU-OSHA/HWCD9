@@ -16,12 +16,14 @@ dependencies:
     - filter
     - media
     - node
+    - system
     - workbench_access
 id: campaign_partner
 label: 'campaign partner'
 weight: 11
 is_admin: null
 permissions:
+  - 'access content'
   - 'access media browser'
   - 'access private area'
   - 'access workbench'
@@ -59,6 +61,7 @@ permissions:
   - 'use text format filtered_html'
   - 'use text format full_html'
   - 'use workbench access'
+  - 'view all revisions'
   - 'view all unpublished content'
   - 'view osh my content tab'
   - 'view own unpublished content'
