@@ -28,6 +28,16 @@ elements: |-
       - anonymous
       - administrator
       - campaign_partner
+    help:
+      '#type': webform_markup
+      '#access_create_roles':
+        - anonymous
+        - administrator
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+      '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help?</a>'
     organisation_name:
       '#type': textfield
       '#title': 'Organisation name'
