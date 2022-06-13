@@ -54,6 +54,7 @@
       var element = wrapper.find('.list-networks');
       element.toggleClass('d-none');
     });
+
     $('.close-share').on( "click", function() {
       $(this).parent().toggleClass('d-none');
     });

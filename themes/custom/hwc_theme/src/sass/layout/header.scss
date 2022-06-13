@@ -490,6 +490,18 @@ body.user-logged-in.path-frontpage{
   margin-bottom: 0rem;
   width: 100%;
   min-height: 165px;
+  position: relative;
+  &:before{
+    content: '';
+    width: 100%;
+    min-height: 165px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #acc700;
+    opacity: 0.4;
+    display: none;
+  }
   h1 {
     width: 100%;
     color: #FFF;
