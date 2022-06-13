@@ -361,7 +361,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       empty: {  }
       sorts:
@@ -476,7 +476,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      use_ajax: true
+      use_ajax: false
       header: {  }
       footer:
         result:
@@ -1278,7 +1278,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 160
+            trim_length: 130
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1341,7 +1341,7 @@ display:
           click_sort_column: summary
           type: text_trimmed
           settings:
-            trim_length: 150
+            trim_length: 130
           group_column: value
           group_columns: {  }
           group_rows: true
