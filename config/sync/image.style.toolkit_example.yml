@@ -1,0 +1,23 @@
+uuid: 2e2ac0aa-a5b2-4447-aff4-cb4555a899cd
+langcode: en
+status: true
+dependencies: {  }
+name: toolkit_example
+label: 'toolkit example'
+effects:
+  d4a40f75-8362-4b3b-b467-07fc6c50000d:
+    uuid: d4a40f75-8362-4b3b-b467-07fc6c50000d
+    id: image_scale
+    weight: 1
+    data:
+      width: 280
+      height: null
+      upscale: true
+  fb44112c-19c5-4080-801c-b61af64120fe:
+    uuid: fb44112c-19c5-4080-801c-b61af64120fe
+    id: image_crop
+    weight: 2
+    data:
+      width: 280
+      height: 250
+      anchor: center-center

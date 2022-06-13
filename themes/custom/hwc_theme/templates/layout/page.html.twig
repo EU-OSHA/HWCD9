@@ -55,16 +55,17 @@
             {% set customLevel = ['ABOUT-TOPIC' ] %}
             {% set nodetypes = ['news','events','publication'] %}
             {% set nodeType = drupal_token('node:type', {node: node})  %}
-            {% set urlFolders = drupal_token('node:url:args', {node: node})|split(',')|length  %}
+            {% set urlArray = drupal_token('node:url:args', {node: node})|split(', ') %}
+            {% set urlArraylength = drupal_token('node:url:args', {node: node})|split(',')|length  %}
             {% set firstLevelPages = drupal_token('node:url:args:value:0', {node: node})|raw|upper %}
             {# If isnot numeric is a view page #}
             {% set isNumeric = drupal_token('node:vid', {node: node}) matches '/^\\d+$/' %}
 
 
-            {% if urlFolders == 0 %}
+            {% if urlArraylength == 0 %}
               <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
 
-            {% elseif urlFolders == 1 %}
+            {% elseif urlArraylength == 1 %}
               {% if isNumeric %}
                 <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
               {% else %}
@@ -75,19 +76,23 @@
                 {% endif %}
               {% endif %}
 
-            {% elseif urlFolders == 2 %}
+            {% elseif urlArraylength == 2 %}
               {% if node.field_splash_title %}
                 <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
               {% else %}
                 <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
               {% endif %}
 
-            {% elseif urlFolders == 3 %}
+            {% elseif urlArraylength == 3 %}
               {% if firstLevelPages in firstLevelName %}
                 {% if node.field_splash_title %}
                   <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
                 {% else %}
-                  <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                  {% if 'campaign-toolkit' in urlArray%}
+                    <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
+                  {% else %}
+                    <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                  {% endif %}
                 {% endif %}
               {% else %}
                 {% if nodeType == 'news' %}
@@ -101,7 +106,7 @@
                 {% endif %}
               {% endif %}
 
-            {% elseif urlFolders == 4 %}
+            {% elseif urlArraylength == 4 %}
               {% if firstLevelPages in customLevel %}
                 <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
               {% else %}
