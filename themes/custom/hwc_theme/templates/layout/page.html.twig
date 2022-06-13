@@ -13,7 +13,6 @@
               <div class="print-resize-block">
                 {{ page.header_form.textresize }}
                 {{ page.header_form.hwcprintfriendly }}
-
                 {{ page.header_form.socialmenuheader }}
               </div>
               <div class="search-block">
@@ -21,6 +20,7 @@
                 {{ page.header_form.privateworkbenchblock  }}
               </div>
               <div class="header-language-search">
+                {{ page.header_form.hwc_theme_account_menu }}
                 {{ page.header_form.languagedropdownswitchercontent }}
               </div>
             </div>
@@ -51,44 +51,75 @@
         {% if page.breadcrumb %}
           <section class="section-title">
 
-{#{{ dd( node.getType() ) }}#}
-{#            <div class="alert alert-primary">#}
-{#              {{ drupal_token('node:title', {node: node}) }}<br />#}
-{#              {{ drupal_token('node:menu-link:parents', {node: node}) }}<hr />#}
-{#              {{ drupal_token('node:source:title', {node: node}) }}<br />#}
-{#              {{ drupal_token('node:url:args:value:0', {node: node})|raw|upper }}#}
-{#            </div>#}
+            {% set firstLevelName = ['TOOLS-AND-PUBLICATIONS','GET-INVOLVED','CAMPAIGN-PARTNERS','MEDIA-CENTRE','PREVIOUS-CAMPAIGNS' ] %}
+            {% set customLevel = ['ABOUT-TOPIC' ] %}
+            {% set nodetypes = ['news','events','publication'] %}
+            {% set nodeType = drupal_token('node:type', {node: node})  %}
+            {% set urlFolders = drupal_token('node:url:args', {node: node})|split(',')|length  %}
+            {% set firstLevelPages = drupal_token('node:url:args:value:0', {node: node})|raw|upper %}
+            {# If isnot numeric is a view page #}
+            {% set isNumeric = drupal_token('node:vid', {node: node}) matches '/^\\d+$/' %}
 
-            {% if  node.getType() == "events" %}
-              <h1 class="page-header">{{ 'Events'|t }}</h1>
-            {% elseif node.getType() == "publication" %}
-              {% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
-                <h1 class="page-header">{{ 'Campaign material'|t }}</h1>
+
+            {% if urlFolders == 0 %}
+              <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+
+            {% elseif urlFolders == 1 %}
+              {% if isNumeric %}
+                <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
               {% else %}
-                <h1 class="page-header">{{ 'Publications'|t }}</h1>
-              {% endif %}
-            {% elseif node.getType() == "news" %}
-              <h1 class="page-header">{{ 'News'|t }}</h1>
-            {% elseif node.getType() == "tk_article" %}
-              <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
-            {% elseif node.getType() == "infographic" %}
-              <h1 class="page-header">{{ 'infographics'|t }}</h1>
-{#              <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>#}
-            {% else %}
-              {% if drupal_token('node:url:args:value:0', {node: node})|raw|upper == 'TOOLS-AND-PUBLICATIONS' %}
-                <h1 class="page-header">{{ drupal_token('node:title',{node: node})|raw }}</h1>
-              {% elseif drupal_token('node:url:args:value:0', {node: node})|raw|upper == 'MEDIA-CENTRE' %}
-                <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
-              {% elseif drupal_token('node:url:args:value:0', {node: node})|raw|upper == 'GET-INVOLVED' %}
-                <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
-              {% elseif drupal_token('node:url:args:value:0', {node: node})|raw == '[node:url:args:value:0]' %}
+                {% if node.field_splash_title %}
+                  <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+                {% else %}
                   <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
-              {% else %}
-                <h1 class="page-header">{{ drupal_token('node:menu-link:parents', {node: node})|raw }}</h1>
+                {% endif %}
+              {% endif %}
 
+            {% elseif urlFolders == 2 %}
+              {% if node.field_splash_title %}
+                <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+              {% else %}
+                <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+              {% endif %}
+
+            {% elseif urlFolders == 3 %}
+              {% if firstLevelPages in firstLevelName %}
+                {% if node.field_splash_title %}
+                  <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+                {% else %}
+                  <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                {% endif %}
+              {% else %}
+                {% if nodeType == 'news' %}
+                  <h1 class="page-header">{{ 'News'|t }}</h1>
+                {% elseif nodeType == 'events' %}
+                  <h1 class="page-header">{{ 'Events'|t }}</h1>
+                {% elseif nodeType == 'publication' %}
+                  <h1 class="page-header">{{ 'Publications'|t  }}</h1>
+                {% else %}
+                  <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
+                {% endif %}
+              {% endif %}
+
+            {% elseif urlFolders == 4 %}
+              {% if firstLevelPages in customLevel %}
+                <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
+              {% else %}
+                {% if node.field_splash_title %}
+                  <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+                {% else %}
+                  {% if nodeType == 'news' %}
+                    <h1 class="page-header">{{ 'News'|t }}</h1>
+                  {% elseif nodeType == 'events' %}
+                    <h1 class="page-header">{{ 'Events'|t }}</h1>
+                  {% elseif nodeType == 'publication' %}
+                    <h1 class="page-header">{{ 'Publications'|t  }}</h1>
+                  {% else %}
+                    <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                  {% endif %}
+                {% endif %}
               {% endif %}
             {% endif %}
-
 
           </section>
         {% endif %}

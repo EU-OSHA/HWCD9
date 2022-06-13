@@ -12,8 +12,9 @@
 
       var position = $(window).scrollTop();
       var headerHeight = $('header').height();
+      var scrollMax = 150; //number of pixels before modifying styles
 
-      $(window).scroll(function () {
+      $(window).on("load resize scroll",function(e){
         if ($(this).scrollTop() > headerHeight) {
           $('body').addClass("scrolled");
 
@@ -31,6 +32,13 @@
         else {
           $('body').removeClass("scrolled");
         }
+
+        if( $(this).scrollTop() > headerHeight ){
+          $('#header').addClass("sticky-menu");
+        } else {
+          $('#header').removeClass("sticky-menu");
+        }
+
       });
 
       $('.dropdown-item a.dropdown-toggle').on("click", function(e) {

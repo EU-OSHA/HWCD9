@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: type_of_partner
-name: Organisation
+name: 'Type of partner'
 weight: 0
 min_count: 1
 url_alias: type_of_partner

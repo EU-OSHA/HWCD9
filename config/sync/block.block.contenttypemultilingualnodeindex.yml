@@ -17,7 +17,7 @@ provider: null
 plugin: 'facet_block:content_type_multilingual_node_index'
 settings:
   id: 'facet_block:content_type_multilingual_node_index'
-  label: Show
+  label: Type
   label_display: visible
   provider: facets
   context_mapping: {  }

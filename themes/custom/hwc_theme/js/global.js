@@ -39,11 +39,15 @@
 })(jQuery, Drupal);
 
 (function ($, Drupal) {
-  $( window ).on( "load", function() {
+  $( window ).on( "resize load", function() {
 
-    var height = Math.round( $('#header').height()+ ( $('#toolbar-bar').height()*2 ) )+'px';
-    $('body').css('padding-top', height  );
+    if( $('body').hasClass( "user-logged-in" ) ){
+      var height = $('#header').height() + ( $('#toolbar-bar').height()*2  );
+    } else {
+      var height = $('#header').height();
+    }
 
+    $('body').css('padding-top', height+'px'  );
 
     $('.share-link').on( "click", function() {
       var wrapper = $(this).parent().parent();
