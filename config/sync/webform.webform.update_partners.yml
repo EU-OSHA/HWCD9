@@ -568,6 +568,21 @@ elements: |-
       - anonymous
     '#access_view_roles':
       - anonymous
+    _i_want_to_change_the_main_contact_for_my_organisation_:
+      '#type': checkbox
+      '#title': ' I want to change the main contact for my organisation.'
+      '#description': 'If you want to change the contact person for your organisation, please click the check box below'
+      '#description_display': before
+      '#wrapper_attributes':
+        style: 'background-color:rgb(171,198,0)'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
     name_mc:
       '#type': textfield
       '#title': 'Name of main contact person for the campaign'
@@ -634,6 +649,39 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+  other_users:
+    '#type': webform_section
+    '#title': 'Other users'
+    '#description': 'Please note that in this section you can add a maximum of 5 additional contacts for your organisation. These new users will be able to make changes to your organisational profile, but the main contact person will always be notified of such changes.'
+    '#access_create_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    '#access_update_roles':
+      - anonymous
+    '#access_view_roles':
+      - anonymous
+    other_users_info:
+      '#type': webform_custom_composite
+      '#title': 'Other users'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+      '#element':
+        name_other:
+          '#type': textfield
+          '#title': 'Name of the additional user'
+        email_other:
+          '#type': email
+          '#title': 'Email address of additional user'
+        telephone_other:
+          '#type': tel
+          '#title': 'Telephone of additional user'
 css: ''
 javascript: ''
 settings:
