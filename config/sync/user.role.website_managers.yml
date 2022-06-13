@@ -9,7 +9,6 @@ dependencies:
     - node.type.article
     - node.type.campaign_16
     - node.type.campaign_18
-    - node.type.campaign_materials
     - node.type.document
     - node.type.event_speaker
     - node.type.events
@@ -35,6 +34,7 @@ dependencies:
     - node.type.tk_example
     - node.type.tk_tool
     - node.type.tk_topic
+    - node.type.webform
     - node.type.youtube
     - workflows.workflow.news_and_events_created_by_een
   module:
@@ -140,7 +140,6 @@ permissions:
   - 'create article content'
   - 'create campaign_16 content'
   - 'create campaign_18 content'
-  - 'create campaign_materials content'
   - 'create content translations'
   - 'create document content'
   - 'create document media'
@@ -184,7 +183,6 @@ permissions:
   - 'delete any article content'
   - 'delete any campaign_16 content'
   - 'delete any campaign_18 content'
-  - 'delete any campaign_materials content'
   - 'delete any content in draft'
   - 'delete any content in final_draft'
   - 'delete any content in needs_review'
@@ -232,7 +230,6 @@ permissions:
   - 'delete own article content'
   - 'delete own campaign_16 content'
   - 'delete own campaign_18 content'
-  - 'delete own campaign_materials content'
   - 'delete own document content'
   - 'delete own document media'
   - 'delete own event_speaker content'
@@ -326,7 +323,6 @@ permissions:
   - 'edit any article content'
   - 'edit any campaign_16 content'
   - 'edit any campaign_18 content'
-  - 'edit any campaign_materials content'
   - 'edit any content in draft'
   - 'edit any content in final_draft'
   - 'edit any content in needs_review'
@@ -372,7 +368,6 @@ permissions:
   - 'edit own article content'
   - 'edit own campaign_16 content'
   - 'edit own campaign_18 content'
-  - 'edit own campaign_materials content'
   - 'edit own document content'
   - 'edit own document media'
   - 'edit own event_speaker content'

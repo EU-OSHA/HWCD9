@@ -2,4 +2,11 @@
   padding-left: 0;
   padding-right: 0;
 }
+nav.tabs {
+  margin: 1rem 0;
+  .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    justify-content: center;
+  }
 
+}

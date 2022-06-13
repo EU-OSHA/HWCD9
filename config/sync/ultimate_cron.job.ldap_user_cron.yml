@@ -6,7 +6,7 @@ dependencies:
     - ldap_user
 title: 'Default cron handler'
 id: ldap_user_cron
-weight: 0
+weight: 2
 module: ldap_user
 callback: ldap_user_cron
 scheduler:

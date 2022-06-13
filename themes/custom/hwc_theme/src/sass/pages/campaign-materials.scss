@@ -14,6 +14,16 @@
   }
   .view-content.row{
     margin: 0;
+    > div {
+      width: 100%;
+      &:last-child{
+        .cm-items-list{
+          &:after{
+            background: none;
+          }
+        }
+      }
+    }
   }
 }
 

@@ -10,10 +10,10 @@ dependencies:
     - field.field.node.tk_article.field_tk_article_type
     - field.field.node.tk_article.field_tk_topics
     - field.field.node.tk_article.field_tools_examples
+    - image.style.medium
     - node.type.tk_article
   module:
-    - datetime
-    - options
+    - media
     - text
     - user
 id: node.tk_article.default
@@ -26,60 +26,42 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 0
     region: content
   field_image:
-    type: entity_reference_label
-    label: above
+    type: media_thumbnail
+    label: hidden
     settings:
-      link: true
+      image_link: ''
+      image_style: medium
     third_party_settings: {  }
-    weight: 106
-    region: content
-  field_publication_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 107
+    weight: 3
     region: content
   field_tk_article:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
-    region: content
-  field_tk_article_type:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   field_tk_topics:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 104
-    region: content
-  field_tools_examples:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_publication_date: true
+  field_tk_article_type: true
+  field_tools_examples: true
   langcode: true
+  links: true
+  search_api_excerpt: true

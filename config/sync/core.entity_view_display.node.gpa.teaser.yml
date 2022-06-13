@@ -6,6 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.gpa.body
     - field.field.node.gpa.field_contact_details
+    - field.field.node.gpa.field_faq
+    - field.field.node.gpa.field_gpa_links
     - field.field.node.gpa.field_image
     - field.field.node.gpa.field_introductory_text
     - field.field.node.gpa.field_participate_date

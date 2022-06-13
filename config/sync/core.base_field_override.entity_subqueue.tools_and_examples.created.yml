@@ -1,0 +1,18 @@
+uuid: 51bd53af-64b1-40ef-a0fb-274012ebbbfc
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.tools_and_examples
+id: entity_subqueue.tools_and_examples.created
+field_name: created
+entity_type: entity_subqueue
+bundle: tools_and_examples
+label: Fecha
+description: 'The time that the subqueue was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

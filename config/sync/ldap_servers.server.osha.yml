@@ -15,7 +15,7 @@ binddn: 'cn=ReaderD9,dc=osha,dc=europa,dc=eu'
 bindpw: 2w8bRkshjG4e
 basedn:
   - 'ou=people,dc=osha,dc=europa,dc=eu'
-  - 'ou=Hwc,ou=Sites,dc=osha,dc=europa,dc=eu'
+  - 'ou=HWC,ou=Sites,dc=osha,dc=europa,dc=eu'
 user_attr: uid
 account_name_attr: ''
 mail_attr: mail
@@ -24,7 +24,7 @@ picture_attr: ''
 unique_persistent_attr: dn
 unique_persistent_attr_binary: false
 user_dn_expression: ''
-testing_drupal_username: moreno@osha.europa.eu
+testing_drupal_username: ''
 testing_drupal_user_dn: 'cn=ReaderD9,dc=osha,dc=europa,dc=eu'
 grp_unused: false
 grp_object_cat: posixgroup

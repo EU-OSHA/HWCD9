@@ -1,0 +1,22 @@
+{% extends "page.html.twig" %}
+
+
+{% block content %}
+
+
+  <section class="available-publication gray-background">
+    <div class="container">
+      <div class="row">
+        {% if page.sidebar_left %}
+          <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
+            {{ page.sidebar_left }}
+          </aside>
+        {% endif %}
+        <section class="section section-center col-12 col-lg-9 ">
+          {{ page.content }}
+        </section>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

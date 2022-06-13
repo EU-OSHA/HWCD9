@@ -12,7 +12,7 @@ dependencies:
     - hwc_theme
 id: views_block__articles_related_resources_block_1
 theme: hwc_theme
-region: content
+region: sidebar_right
 weight: -14
 provider: null
 plugin: 'views_block:articles_related_resources-block_1'
@@ -37,4 +37,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/tools-and-publications/oshwiki\r\n/get-involved/about-campaign\r\n/get-involved/european-week\r\n/get-involved/start-your-campaign\r\n/campaign-partners/good-practice-exchange\r\n/media-centre/press-room\r\n/campaign-partners/senior-labour-inspectors-committee-slic"
+    pages: "/tools-and-publications/oshwiki\r\n/get-involved/about-campaign\r\n/get-involved/european-week\r\n/get-involved/start-your-campaign\r\n/campaign-partners/good-practice-exchange\r\n/media-centre/press-room\r\n/campaign-partners/senior-labour-inspectors-committee-slic\r\n\r\n/about-topic/what-issue"

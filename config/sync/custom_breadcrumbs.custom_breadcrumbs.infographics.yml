@@ -1,0 +1,15 @@
+uuid: 98a73260-4e98-4938-ab17-25b4a5d58951
+langcode: en
+status: true
+dependencies: {  }
+id: infographics
+label: Infographics
+description: ''
+entityType: node
+entityBundle: infographic
+language: en
+breadcrumbPaths: "/tools-and-publications/\r\n/tools-and-publications/infographics/"
+breadcrumbTitles: "Tools and Publications\r\nInfographics"
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

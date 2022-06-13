@@ -1,0 +1,33 @@
+uuid: 5c6dd8c4-a5cf-47eb-b2f1-048b37e41ae0
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: campaign_partner
+label: 'Campaign partners'
+type: 'canonical_entities:node'
+pattern: '/campaign-partners/[node:title]'
+selection_criteria:
+  29eec42d-1cb7-4cb0-adbe-c0b8e5f45ff1:
+    id: node_type
+    negate: false
+    uuid: 29eec42d-1cb7-4cb0-adbe-c0b8e5f45ff1
+    context_mapping:
+      node: node
+    bundles:
+      partner: partner
+  8c805776-c13b-4671-bc76-1a9e276bd8f9:
+    id: language
+    negate: false
+    uuid: 8c805776-c13b-4671-bc76-1a9e276bd8f9
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -11,30 +11,17 @@
             </div>
             <div class="header-tools col-xs-12 col-sm-3 xs-menu">
               <div class="print-resize-block">
-
-                {{ page.header_form.hwcprintfriendly }}
                 {{ page.header_form.textresize }}
+                {{ page.header_form.hwcprintfriendly }}
                 {{ page.header_form.socialmenuheader }}
               </div>
               <div class="search-block">
-                {{ page.header_form.searchform }}
+                {{ page.header_form.sitesearch }}
                 {{ page.header_form.privateworkbenchblock  }}
-    {#            {{ dd( page.header_form.privateworkbenchblock ) }}#}
               </div>
               <div class="header-language-search">
+                {{ page.header_form.hwc_theme_account_menu }}
                 {{ page.header_form.languagedropdownswitchercontent }}
-              </div>
-
-
-              <div class="content-first-row">
-
-                {#              <div class="header-social-menu">#}
-                {#                {{ page.header }}#}
-                {#              </div>#}
-                {#            </div>#}
-                {#            <div class="header-links">#}
-                {#              {{ page.header_links}}#}
-                {#            </div>#}
               </div>
             </div>
           </div>
@@ -63,56 +50,134 @@
       {% if not is_front %}
         {% if page.breadcrumb %}
           <section class="section-title">
-            {{ page.breadcrumb.hwc_theme_breadcrumbs }}
 
-{#            {{ dd( node.field_publication_type.0.entity.label ) }}#}
-            {% if  node.getType() == "events" %}
-              <h1 class="page-header">{{ 'Events'|t }}</h1>
-            {% elseif node.getType() == "publication" %}
-              {% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
-                <h1 class="page-header">{{ 'Campaign material'|t }}</h1>
-              {% else %}
-                <h1 class="page-header">{{ 'Publications'|t }}</h1>
-              {% endif %}
-            {% elseif node.getType() == "news" %}
-              <h1 class="page-header">{{ 'News'|t }}</h1>
-            {% elseif node.getType() == "tk_article" %}
-              <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
-            {% elseif node.getType() == "infographic" %}
-              <h1 class="page-header">{{ 'infographics'|t }}</h1>
-            {% else %}
+            {% set firstLevelName = ['TOOLS-AND-PUBLICATIONS','GET-INVOLVED','CAMPAIGN-PARTNERS','MEDIA-CENTRE','PREVIOUS-CAMPAIGNS' ] %}
+            {% set customLevel = ['ABOUT-TOPIC' ] %}
+            {% set nodetypes = ['news','events','publication'] %}
+            {% set nodeType = drupal_token('node:type', {node: node})  %}
+            {% set urlFolders = drupal_token('node:url:args', {node: node})|split(',')|length  %}
+            {% set firstLevelPages = drupal_token('node:url:args:value:0', {node: node})|raw|upper %}
+            {# If isnot numeric is a view page #}
+            {% set isNumeric = drupal_token('node:vid', {node: node}) matches '/^\\d+$/' %}
+
+
+            {% if urlFolders == 0 %}
               <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
-            {% endif %}
 
+            {% elseif urlFolders == 1 %}
+              {% if isNumeric %}
+                <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
+              {% else %}
+                {% if node.field_splash_title %}
+                  <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+                {% else %}
+                  <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                {% endif %}
+              {% endif %}
+
+            {% elseif urlFolders == 2 %}
+              {% if node.field_splash_title %}
+                <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+              {% else %}
+                <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+              {% endif %}
+
+            {% elseif urlFolders == 3 %}
+              {% if firstLevelPages in firstLevelName %}
+                {% if node.field_splash_title %}
+                  <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+                {% else %}
+                  <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                {% endif %}
+              {% else %}
+                {% if nodeType == 'news' %}
+                  <h1 class="page-header">{{ 'News'|t }}</h1>
+                {% elseif nodeType == 'events' %}
+                  <h1 class="page-header">{{ 'Events'|t }}</h1>
+                {% elseif nodeType == 'publication' %}
+                  <h1 class="page-header">{{ 'Publications'|t  }}</h1>
+                {% else %}
+                  <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
+                {% endif %}
+              {% endif %}
+
+            {% elseif urlFolders == 4 %}
+              {% if firstLevelPages in customLevel %}
+                <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
+              {% else %}
+                {% if node.field_splash_title %}
+                  <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
+                {% else %}
+                  {% if nodeType == 'news' %}
+                    <h1 class="page-header">{{ 'News'|t }}</h1>
+                  {% elseif nodeType == 'events' %}
+                    <h1 class="page-header">{{ 'Events'|t }}</h1>
+                  {% elseif nodeType == 'publication' %}
+                    <h1 class="page-header">{{ 'Publications'|t  }}</h1>
+                  {% else %}
+                    <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                  {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endif %}
 
           </section>
         {% endif %}
       {% endif %}
     {% endblock %}
-
-    <section id="main-wrapper" class="layout-main-wrapper clearfix">
+    {% if page['#title'] == "News" %}
+      {% set backcolor = 'gray-background' %}
+    {% endif %}
+    <section id="main-wrapper" class="layout-main-wrapper clearfix {{ backcolor }}">
       <div class="main-container">
+        <div class="container">
+          {{ page.breadcrumb.hwc_theme_breadcrumbs }}
+        </div>
 
         {% block content %}
+        {% set has_sidebar_left= page.sidebar_left|render|striptags|trim is not empty or
+          page.sidebar_left.priorityareamultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.publicationtypemultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.contenttypemultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.countrymultilingualnodeindex|render|striptags|trim is not empty or
+          page.sidebar_left.publicationspriorityarea|render|striptags|trim is not empty
+        %}
+        {% set has_sidebar_right= page.sidebar_right|render|striptags|trim is not empty %}
+
+            {{ page.above_content.hwc_theme_local_tasks }}
             <div class="container">
-              {% if page.sidebar_left|length > 0 or page.sidebar_right|length > 0  %}
+              {% if has_sidebar_left or has_sidebar_right  %}
                 <div class="row">
               {% else %}
                   <div>
               {% endif %}
 
-                {% if page.sidebar_left|length > 0 %}
-                  <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
+                {% if has_sidebar_left %}
+                  <aside class="section col-12 col-lg-3 sidebar-left" role="complementary">
                     {{ page.sidebar_left }}
                   </aside>
                 {% endif %}
 
-                <section class="section section-center">
+
+                {% if has_sidebar_left %}
+                    {% if has_sidebar_right %}
+                      <section class="section section-center col-12 col-lg-6 ">
+                    {% else %}
+                      <section class="section section-center col-12 col-lg-9">
+                    {% endif %}
+                {% else %}
+                      {% if has_sidebar_right %}
+                        <section class="section section-center col-12 col-lg-9">
+                      {% else %}
+                          <section class="section section-center col-12">
+                      {% endif %}
+                {% endif %}
+
                   {{ page.content }}
                 </section>
 
-                {% if page.sidebar_right|length > 0 %}
-                  <aside class="section col-12 col-lg-3 sidebar-second" role="complementary">
+                {% if has_sidebar_right %}
+                  <aside class="section col-12 col-lg-3 sidebar-right" role="complementary">
                     {{ page.sidebar_right }}
                   </aside>
                 {% endif %}
@@ -120,7 +185,7 @@
             </div>
         {% endblock %}
 
-      </div>
+        </div>
       </div>
     </section>
 
@@ -133,9 +198,22 @@
               {{ page.footer.mainnavigation }}
             </div>
           {% endif %}
-          {% if page.footer_end %}
+          {% if page.footer.footer  %}
             <div class="site-footer__bottom">
-              {{ page.footer_end }}
+              <div class="menu-help">
+                {{ page.footer.footer }}
+              </div>
+
+              <div class="row">
+                <div class="col-8 footer-intro">
+                    <p>Safety and health at work is everyone's concern. It's good for you. It's good for business.</p>
+                    <p>European Agency for Safety and Health at Work | an agency of the European Union</p>
+                </div>
+                <div class="col-4 footer-network">
+                  <p> {{ 'Follow us:'|t }}</p>
+                  {{ page.header_form.socialmenuheader }}
+                </div>
+              </div>
             </div>
           {% endif %}
         </div>

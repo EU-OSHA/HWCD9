@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_content_reference
     - node.type.article
-    - node.type.campaign_materials
     - node.type.events
     - node.type.frontpage_banner
     - node.type.news
@@ -27,7 +26,6 @@ settings:
   handler_settings:
     target_bundles:
       article: article
-      campaign_materials: campaign_materials
       events: events
       news: news
       partner: partner

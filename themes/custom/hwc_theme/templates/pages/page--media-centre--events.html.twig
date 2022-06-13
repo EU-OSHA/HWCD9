@@ -1,14 +1,5 @@
 {% extends "page.html.twig" %}
-    {% block banner %}
-      {% if not is_front %}
-        {% if page.breadcrumb %}
-          <section class="section-title">
-            {{ page.breadcrumb.hwc_theme_breadcrumbs }}
-            <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
-          </section>
-        {% endif %}
-      {% endif %}
-    {% endblock %}
+
 
 {% block content %}
 

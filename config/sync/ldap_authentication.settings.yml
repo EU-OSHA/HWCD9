@@ -1,12 +1,15 @@
 _core:
   default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg
-sids: {  }
+langcode: en
+sids:
+  osha: osha
+  osha_write: '0'
 authenticationMode: mixed
 loginUIUsernameTxt: ''
 loginUIPasswordTxt: ''
 ldapUserHelpLinkUrl: ''
 ldapUserHelpLinkText: ''
-emailOption: disable
+emailOption: allow
 emailUpdate: update_notify
 emailTemplateHandling: none
 emailTemplate: '@username@example.com'
@@ -15,9 +18,8 @@ emailTemplateUsageNeverUpdate: false
 emailTemplateUsagePromptUser: false
 emailTemplateUsageRedirectOnLogin: false
 emailTemplateUsagePromptRegex: '.*@example\\.com'
-passwordOption: hide
+passwordOption: allow
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
-excludeIfNoAuthorizations: null
-skipAdministrators: true
-langcode: en
+excludeIfNoAuthorizations: false
+skipAdministrators: false

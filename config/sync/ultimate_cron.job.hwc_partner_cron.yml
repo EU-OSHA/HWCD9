@@ -6,7 +6,7 @@ dependencies:
     - hwc_partner
 title: 'Default cron handler'
 id: hwc_partner_cron
-weight: 0
+weight: 7
 module: hwc_partner
 callback: hwc_partner_cron
 scheduler:

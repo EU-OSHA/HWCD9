@@ -54,16 +54,53 @@
 
   {% if rows -%}
 
-    {% for index, row in rows.0['#rows'] %}
-      <article class="col-md-6 col-12 banner-{{ index }} ">
-{#        {{ dd( row['#row']._entity.field_image.entity.field_media_image.entity.uri.value ) }}#}
-        {% set url = row['#row']._entity.field_image.entity.field_media_image.entity.uri.value %}
-        {{ row['#row']._entity.body.value|raw }}
-        {% if row['#row']._entity.field_image.entity.field_media_image.entity.uri.value  %}
-          <img src="{{ file_url( url )  }}" >
-        {% endif %}
-      </article>
-    {% endfor %}
+  <div id="carouselControls" class="carousel slide d-block w-100 container" data-ride="carousel" data-interval="1000000000">
+    <!--Carousel Wrapper-->
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        {% for index, row in rows.0['#rows'] %}
+        <li data-target="#carousel" data-slide-to="{{ index }}" {% if index == 0 %} class="active" {% endif %}></li>
+        {% endfor %}
+      </ol>
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        {% for index, row in rows.0['#rows'] %}
+          {% set url = row['#row']._entity.field_image.entity.field_media_image.entity.uri.value %}
+          {% set alt = row['#row']._entity.field_image.entity.field_media_image.alt %}
+          {% set title = row['#row']._entity.title.0.value %}
+          {% set nid = 'node/' ~ row['#row']._entity.nid.0.value %}
+        <div class="carousel-item {% if index == 0 %} active {% endif %}">
+          <div class="caption" >
+            <div class="content-body col-6">
+              <h3 class="banner-tag h3-responsive">{{ title }}</h3>
+              <div class="banner-text">{{ row['#row']._entity.body.value|raw }}</div>
+              <p class="banner-link"><a class="see-all-link" href="{{ file_url( nid )  }}">Label</a></p>
+            </div>
+            <div class="content-img col-6">
+              <img class="" src="{{ file_url( url )  }}" alt="{{ alt }}">
+              <div class="mask rgba-black-light"></div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <!--/.Slides-->
+
+      <!--Controls-->
+{#      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">#}
+{#        <span class="carousel-control-prev-icon" aria-hidden="true"></span>#}
+{#        <span class="sr-only">Previous</span>#}
+{#      </a>#}
+{#      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">#}
+{#        <span class="carousel-control-next-icon" aria-hidden="true"></span>#}
+{#        <span class="sr-only">Next</span>#}
+{#      </a>#}
+      <!--/.Controls-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+  </div>
 
   {% elseif empty -%}
     {{ empty }}
@@ -81,3 +118,4 @@
 
   {{ feed_icons }}
 </section>
+

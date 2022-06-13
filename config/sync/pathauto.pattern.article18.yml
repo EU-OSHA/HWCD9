@@ -1,0 +1,33 @@
+uuid: a46bed44-9f40-4615-aa2a-73b72c325d36
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: article18
+label: Article18
+type: 'canonical_entities:node'
+pattern: '/previous-campaigns/dangerous-substances-2018-19/[node:title]'
+selection_criteria:
+  de3ebfc3-f19d-4d65-83bd-d761441355fa:
+    id: node_type
+    negate: false
+    uuid: de3ebfc3-f19d-4d65-83bd-d761441355fa
+    context_mapping:
+      node: node
+    bundles:
+      campaign_18: campaign_18
+  5d45b250-1332-4a46-8c1f-0bfdd561b730:
+    id: language
+    negate: false
+    uuid: 5d45b250-1332-4a46-8c1f-0bfdd561b730
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -9
+relationships:
+  'node:langcode:language':
+    label: Language

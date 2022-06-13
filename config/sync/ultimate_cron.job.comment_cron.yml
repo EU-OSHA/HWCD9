@@ -1,12 +1,12 @@
 uuid: c1d3b24b-e2de-4056-956e-c1ddcd325836
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - comment
 title: 'Store the maximum possible comments per thread'
 id: comment_cron
-weight: 0
+weight: 3
 module: comment
 callback: comment_cron
 scheduler:

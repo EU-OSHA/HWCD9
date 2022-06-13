@@ -1,0 +1,33 @@
+uuid: 09008555-a2ed-4aa0-9ea0-5e50db51016e
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: toolkit_example
+label: 'Toolkit Example'
+type: 'canonical_entities:node'
+pattern: '/tools-and-publications/campaign-toolkit/tools-and-examples/[node:title]'
+selection_criteria:
+  f47f26dd-eebd-441f-b386-5eb66f9a9418:
+    id: node_type
+    negate: false
+    uuid: f47f26dd-eebd-441f-b386-5eb66f9a9418
+    context_mapping:
+      node: node
+    bundles:
+      tk_example: tk_example
+  fba81974-60ad-442c-a682-9a8ec45dc5d4:
+    id: language
+    negate: false
+    uuid: fba81974-60ad-442c-a682-9a8ec45dc5d4
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: 2
+relationships:
+  'node:langcode:language':
+    label: Language

@@ -12,7 +12,7 @@ dependencies:
 id: typeofpartner
 theme: hwc_theme
 region: content
-weight: -15
+weight: -16
 provider: null
 plugin: 'facet_block:type_of_partner'
 settings:

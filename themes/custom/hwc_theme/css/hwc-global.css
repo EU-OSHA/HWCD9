@@ -1944,8 +1944,6 @@ h2.node__title {
             font-style: normal;
             padding-top: 0.5em;
             display: block; }
-          .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-field-summary p {
-            margin-bottom: 0; }
           .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-view-node a {
             display: block;
             float: left;
@@ -1966,8 +1964,7 @@ h2.node__title {
             font-weight: bold;
             transition: 300ms;
             text-decoration: none;
-            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px;
-            margin-top: 10px; }
+            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px; }
             .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-view-node a:hover {
               color: #9cca00;
               border: 1px solid #9cca00; }
@@ -2019,8 +2016,7 @@ h2.node__title {
             font-weight: bold;
             transition: 300ms;
             text-decoration: none;
-            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px;
-            margin-top: 10px; }
+            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px; }
             .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-view-node a:hover {
               color: #9cca00;
               border: 1px solid #9cca00; }

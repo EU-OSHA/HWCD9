@@ -84,7 +84,7 @@
     {{ title_prefix }}
     {% if label and node.getType() != 'article' %}
       <p class="node__date date-display-single" property="dc:date" datatype="xsd:dateTime" content="{{ content.field_first_publication_date.0['#markup'] }}">
-          {{ content.field_first_publication_date['#items'].0.value|date("m/d/Y") }}
+          {{ content.field_publication_date['#items'].0.value|date("d/m/Y") }}
       </p>
       <h2{{ title_attributes.addClass('node__title') }}>{{ label.0 }}</h2>
     {% endif %}

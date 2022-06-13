@@ -1,0 +1,33 @@
+uuid: 4395eb90-1e34-47cf-98aa-3209ec23966f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: infographics
+label: Infographics
+type: 'canonical_entities:node'
+pattern: '/tools-and-publications/infographics/[node:title]'
+selection_criteria:
+  b6a32dee-5821-4d05-9b7c-e372af6e6e6c:
+    id: node_type
+    negate: false
+    uuid: b6a32dee-5821-4d05-9b7c-e372af6e6e6c
+    context_mapping:
+      node: node
+    bundles:
+      infographic: infographic
+  1f141cd9-9545-4821-80d3-1e0005b5375b:
+    id: language
+    negate: false
+    uuid: 1f141cd9-9545-4821-80d3-1e0005b5375b
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -2
+relationships:
+  'node:langcode:language':
+    label: Language

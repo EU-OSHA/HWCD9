@@ -6,7 +6,7 @@ dependencies:
     - hwc_crm_partners_migration
 title: 'Import FOP Partners'
 id: hwc_crm_partners_migration_cron_fop
-weight: 0
+weight: -11
 module: hwc_crm_partners_migration
 callback: hwc_crm_partners_migration_callback_fop
 scheduler:

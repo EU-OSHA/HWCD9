@@ -7,7 +7,6 @@ dependencies:
     - node.type.article
     - node.type.campaign_16
     - node.type.campaign_18
-    - node.type.campaign_materials
     - node.type.document
     - node.type.event_speaker
     - node.type.events
@@ -201,7 +200,6 @@ permissions:
   - 'create article content'
   - 'create campaign_16 content'
   - 'create campaign_18 content'
-  - 'create campaign_materials content'
   - 'create campaigns_partner_list entity collections'
   - 'create document content'
   - 'create event_speaker content'
@@ -241,7 +239,6 @@ permissions:
   - 'delete any audio files'
   - 'delete any campaign_16 content'
   - 'delete any campaign_18 content'
-  - 'delete any campaign_materials content'
   - 'delete any document content'
   - 'delete any document files'
   - 'delete any event_speaker content'
@@ -277,7 +274,6 @@ permissions:
   - 'delete own audio files'
   - 'delete own campaign_16 content'
   - 'delete own campaign_18 content'
-  - 'delete own campaign_materials content'
   - 'delete own document content'
   - 'delete own document files'
   - 'delete own event_speaker content'
@@ -344,7 +340,6 @@ permissions:
   - 'edit any audio files'
   - 'edit any campaign_16 content'
   - 'edit any campaign_18 content'
-  - 'edit any campaign_materials content'
   - 'edit any content in approved'
   - 'edit any content in draft'
   - 'edit any content in final_draft'
@@ -390,7 +385,6 @@ permissions:
   - 'edit own audio files'
   - 'edit own campaign_16 content'
   - 'edit own campaign_18 content'
-  - 'edit own campaign_materials content'
   - 'edit own document content'
   - 'edit own document files'
   - 'edit own event_speaker content'

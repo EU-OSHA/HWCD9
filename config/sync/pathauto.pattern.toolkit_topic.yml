@@ -1,0 +1,33 @@
+uuid: bcc60ede-b5f2-46a5-9ab8-d81745fe9447
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: toolkit_topic
+label: 'Toolkit Topic'
+type: 'canonical_entities:node'
+pattern: 'tools-and-publications/campaign-toolkit/how-run-campaign/[node:title]'
+selection_criteria:
+  cc5386f0-6bb4-442f-a68b-5d38d85fb6fa:
+    id: node_type
+    negate: false
+    uuid: cc5386f0-6bb4-442f-a68b-5d38d85fb6fa
+    context_mapping:
+      node: node
+    bundles:
+      tk_toolkit: tk_toolkit
+  1d98c9b4-d6dd-4cb5-ba50-76b6ade37589:
+    id: language
+    negate: false
+    uuid: 1d98c9b4-d6dd-4cb5-ba50-76b6ade37589
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: 0
+relationships:
+  'node:langcode:language':
+    label: Language

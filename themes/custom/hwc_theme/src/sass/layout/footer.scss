@@ -1,7 +1,115 @@
 .site-footer {
   background: $bg-color-grey-footer;
   height: auto;
-  padding-bottom: 1rem;
+  padding: 35px 0 0px;
+  font-family:'Open Sans';
+
+  .site-footer__bottom{
+    border: 0;
+
+    .menu-help{
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        li{
+          padding-right: 1em;
+          a{
+            color: $footer-color;
+            padding-left: 0;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          :hover, :focus{
+            background: none;
+          }
+          ::after{
+            content: "";
+            padding-left: 1em;
+          }
+          &.last::after{
+            content: "";
+          }
+        }
+      }
+    }
+    .footer-intro{
+      color: white;
+      padding-left: 0;
+      p{
+        margin-bottom: 0;
+      }
+      > p:nth-child(1) {
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+    }
+    /* Share links */
+    .footer-network{
+      display: flex;
+      color: #fff;
+      align-items: center;
+      justify-content: flex-end;
+      > p{
+        margin:0.5rem 0;
+      }
+      .social-network{
+          list-style-type: none;
+          padding: 0;
+          width: auto;
+          margin:0.5rem 0;
+          display: flex;
+          justify-content: space-evenly;
+          li{
+            a{
+              margin: 0;
+              padding: 5px 0 0 5px;
+              display: block;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              width: 33px;
+              height: 28px;
+              margin-left: 10px;
+              label{
+                display: none;
+              }
+            }
+            &.twitter{
+              a{
+                background: url("../images/footer/twitter.png") no-repeat;
+              }
+            }
+            &.facebook{
+              a{
+                background: url("../images/footer/facebook.png") no-repeat;
+              }
+            }
+            &.youtube{
+              a{
+                background: url("../images/footer/youtube.png") no-repeat;
+              }
+            }
+            &.linkedin{
+              a{
+                background: url("../images/footer/linkedin.png") no-repeat;
+              }
+            }
+            &.flickr{
+              a{
+                background: url("../images/footer/flickr.png") no-repeat;
+              }
+            }
+            &.slideshare{
+              display: none;
+              a{
+                background: url("../images/footer/blogger.png") no-repeat;
+              }
+            }
+          }
+        }
+    }
+  }
 }
 
 // Insert your styling here.
@@ -51,52 +159,4 @@
     float: left;
   }
 
-  div.on-the-web{
-    display: inline-block;
-    float: right;
-    margin-right: 0px;
-    text-align: right;
-    a{
-      width: 20px;
-      height: 20px;
-      margin-left: 10px;
-      display: inline-block;
-      img{
-        display: none;
-      }
-    }
-    span:last-child{
-      //margin-right: $margin;
-    }
-    .otw-twitter{
-      a{
-        background: url("../images/footer/twitter.png") no-repeat;
-      }
-    }
-    .otw-facebook{
-      a{
-        background: url("../images/footer/facebook.png") no-repeat;
-      }
-    }
-    .otw-youtube{
-      a{
-        background: url("../images/footer/youtube.png") no-repeat;
-      }
-    }
-    .otw-flickr{
-      a{
-        background: url("../images/footer/flickr.png") no-repeat;
-      }
-    }
-    .otw-linkedin{
-      a{
-        background: url("../images/footer/linkedin.png") no-repeat;
-      }
-    }
-    .otw-blogger{
-      a{
-        background: url("../images/footer/blogger.png") no-repeat;
-      }
-    }
-  }
 }

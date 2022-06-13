@@ -1,0 +1,26 @@
+
+<div class="private-zone-full-wrapper">
+  <div class="private-partner-wrapper">
+    <div class="private-box private-zone-act-partner">
+    {% if masquerade_access == TRUE %}
+      <a href="#">{{  'Act as a partner'|t }}</a>
+    {% endif %}
+    </div>
+    <div class="private-zone-act-partner-inside">
+      <div class="act-partner-switcher hidden" aria-expanded="true">
+        <div class="act-partner-text-wrapper">
+          {{ masquerade }}
+          <div id="edit-hint" class="form-item form-type-item form-group">
+            {{  'Hint: After switching to new partner account, there will be a link in the website header to switch back to your account'|t }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="private-box private-zone-exchange-platform">
+    <a href="{{ practice_exchange }}">{{  'Good practice exchange platform'|t }}</a>
+  </div>
+  <div class="private-box private-zone-partner-resource">
+    <a href="/partner_resources">{{  'Partner resources'|t }}</a>
+  </div>
+</div>

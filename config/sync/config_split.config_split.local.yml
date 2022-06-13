@@ -1,0 +1,22 @@
+uuid: 06855155-335a-445f-84ae-bec0d98c4aad
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: ''
+weight: 0
+folder: sites/hwc/config/local
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - migrate_plus.migration.import_crm_amb_partners
+  - migrate_plus.migration.import_crm_fop_partners
+  - migrate_plus.migration.import_crm_mp_partners
+  - migrate_plus.migration.import_crm_ocp_partners
+  - search_api.server.default_solr_server
+  - swiftmailer.transport
+  - system.performance
+graylist_dependents: false
+graylist_skip_equal: true

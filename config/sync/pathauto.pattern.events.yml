@@ -1,0 +1,33 @@
+uuid: 7a66e117-b957-4029-9cca-cfdfe7df7637
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: events
+label: Events
+type: 'canonical_entities:node'
+pattern: '/media-centre/events/[node:title]'
+selection_criteria:
+  292110ff-b1cb-4613-b4eb-19b767a99506:
+    id: node_type
+    negate: false
+    uuid: 292110ff-b1cb-4613-b4eb-19b767a99506
+    context_mapping:
+      node: node
+    bundles:
+      events: events
+  63a7df10-2b76-44da-85a4-eb6fc962aa00:
+    id: language
+    negate: false
+    uuid: 63a7df10-2b76-44da-85a4-eb6fc962aa00
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -4
+relationships:
+  'node:langcode:language':
+    label: Language

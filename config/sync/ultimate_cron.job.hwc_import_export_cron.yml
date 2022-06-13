@@ -1,12 +1,12 @@
 uuid: a316809f-f3a2-40ef-a7d2-a75f0f0bacf9
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - hwc_import_export
 title: 'Default cron handler'
 id: hwc_import_export_cron
-weight: 0
+weight: 5
 module: hwc_import_export
 callback: hwc_import_export_cron
 scheduler:

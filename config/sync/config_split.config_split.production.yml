@@ -1,0 +1,17 @@
+uuid: ae9a086d-4c42-44a0-92a3-d5ccf3d8c15d
+langcode: en
+status: false
+dependencies: {  }
+id: production
+label: Production
+description: ''
+weight: 0
+folder: sites/hwc/config/production
+module:
+  matomo: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - search_api.server.default_solr_server
+graylist_dependents: false
+graylist_skip_equal: true

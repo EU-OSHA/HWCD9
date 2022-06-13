@@ -8,12 +8,12 @@ dependencies:
   module:
     - search_api
 id: publications_priority_area
-name: 'Publications Priority area'
+name: 'Digitalisation priority area'
 weight: 0
 min_count: 1
 url_alias: publications_priority_area
 facet_source_id: 'search_api:views_block__publications_list__block_1'
-field_identifier: field_msd_priority_area
+field_identifier: field_digitalisation_priority_ar
 query_operator: or
 hard_limit: 0
 exclude: false
@@ -27,7 +27,7 @@ enable_parent_when_child_gets_disabled: true
 widget:
   type: checkbox
   config:
-    show_numbers: true
+    show_numbers: false
     soft_limit: 0
     show_reset_link: false
     reset_text: 'Show all'

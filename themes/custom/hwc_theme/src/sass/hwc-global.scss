@@ -25,6 +25,7 @@
 @import 'layout/header';
 @import 'layout/menu';
 @import 'layout/section';
+@import 'layout/related-resources';
 @import 'layout/fulldata';
 
 @import 'pages/news-list';
@@ -33,6 +34,8 @@
 @import 'pages/events-list';
 @import 'pages/campaign-toolkit';
 @import 'pages/campaign-materials';
+@import 'pages/napo-films';
+@import "pages/private-workbench.scss";
 
 
 @import 'responsive/common/common-responsive';

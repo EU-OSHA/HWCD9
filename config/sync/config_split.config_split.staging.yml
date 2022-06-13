@@ -1,0 +1,17 @@
+uuid: dea87525-fb92-4590-9fac-83dae8b25457
+langcode: en
+status: false
+dependencies: {  }
+id: staging
+label: Staging
+description: ''
+weight: 0
+folder: sites/hwc/config/staging
+module:
+  matomo: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - search_api.server.default_solr_server
+graylist_dependents: false
+graylist_skip_equal: true

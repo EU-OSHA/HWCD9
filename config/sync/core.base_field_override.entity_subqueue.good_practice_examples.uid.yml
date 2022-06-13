@@ -1,0 +1,20 @@
+uuid: 826bedbd-622f-45aa-99b3-3b8a7d0b907e
+langcode: es
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.good_practice_examples
+id: entity_subqueue.good_practice_examples.uid
+field_name: uid
+entity_type: entity_subqueue
+bundle: good_practice_examples
+label: 'User ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\entityqueue\Entity\EntitySubqueue::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

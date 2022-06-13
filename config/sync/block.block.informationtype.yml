@@ -12,7 +12,7 @@ dependencies:
 id: informationtype
 theme: hwc_theme
 region: content
-weight: -20
+weight: -27
 provider: null
 plugin: 'facet_block:information_type'
 settings:

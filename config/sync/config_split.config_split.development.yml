@@ -1,0 +1,22 @@
+uuid: cc9256d6-d382-43f2-a3cd-f218554bbfd3
+langcode: en
+status: false
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+folder: sites/hwc/config/develop
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - migrate_plus.migration.import_crm_amb_partners
+  - migrate_plus.migration.import_crm_fop_partners
+  - migrate_plus.migration.import_crm_mp_partners
+  - migrate_plus.migration.import_crm_ocp_partners
+  - search_api.server.default_solr_server
+  - swiftmailer.transport
+  - system.performance
+graylist_dependents: false
+graylist_skip_equal: true
