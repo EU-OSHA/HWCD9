@@ -1914,6 +1914,1135 @@ h2.node__title {
   -webkit-filter: brightness(0) invert(1);
 }
 
+/* Colors */
+/* End Colors */
+/* /private_workbench */
+.private-zone-full-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem 0 3rem;
+  clear: both;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .private-zone-full-wrapper {
+    display: grid;
+  }
+}
+.private-zone-full-wrapper .private-zone-act-partner {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+@media (max-width: 1530px) {
+  .private-zone-full-wrapper .private-zone-act-partner {
+    width: 330px;
+  }
+}
+@media (max-width: 1199px) {
+  .private-zone-full-wrapper .private-zone-act-partner {
+    width: 270px;
+  }
+}
+@media (max-width: 400px) {
+  .private-zone-full-wrapper .private-zone-act-partner {
+    width: 250px;
+  }
+}
+.private-zone-full-wrapper .private-zone-act-partner a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-news.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.private-zone-full-wrapper .private-zone-act-partner a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 0 solid transparent;
+}
+.private-zone-full-wrapper .private-zone-act-partner:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 0 solid #003399;
+}
+.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher {
+  margin-bottom: 450px;
+}
+.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper {
+  position: absolute;
+  top: 170px;
+  left: 25px;
+  width: 250px;
+  text-align: center;
+}
+.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper p {
+  color: #59595A;
+  margin-bottom: 0;
+}
+.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper .form-actions {
+  margin-bottom: 0 !important;
+}
+.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper fieldset select {
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border: 1px solid #cccccc;
+  width: 240px !important;
+  margin-top: 1em;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  text-align: center;
+  background: unset !important;
+}
+.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper .form-item {
+  color: #59595A;
+}
+.private-zone-full-wrapper .private-zone-exchange-platform {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+.private-zone-full-wrapper .private-zone-exchange-platform a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 105px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-good-practice.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.private-zone-full-wrapper .private-zone-exchange-platform a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 0 solid transparent;
+}
+.private-zone-full-wrapper .private-zone-exchange-platform:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 0 solid #003399;
+}
+@media (max-width: 1530px) {
+  .private-zone-full-wrapper .private-zone-exchange-platform {
+    width: 330px;
+  }
+}
+@media (max-width: 1199px) {
+  .private-zone-full-wrapper .private-zone-exchange-platform {
+    width: 270px;
+  }
+}
+@media (max-width: 400px) {
+  .private-zone-full-wrapper .private-zone-exchange-platform {
+    width: 250px;
+  }
+}
+.private-zone-full-wrapper .private-zone-partner-resource {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+.private-zone-full-wrapper .private-zone-partner-resource a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-partner-resource.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.private-zone-full-wrapper .private-zone-partner-resource a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 0 solid transparent;
+}
+.private-zone-full-wrapper .private-zone-partner-resource:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 0 solid #003399;
+}
+@media (max-width: 1530px) {
+  .private-zone-full-wrapper .private-zone-partner-resource {
+    width: 330px;
+  }
+}
+@media (max-width: 1199px) {
+  .private-zone-full-wrapper .private-zone-partner-resource {
+    width: 270px;
+  }
+}
+@media (max-width: 400px) {
+  .private-zone-full-wrapper .private-zone-partner-resource {
+    width: 250px;
+  }
+}
+
+/* end /private_workbench */
+/* /good-practice-exchange-platform */
+.view-good-practice-exchange-platform-view .view-header .exchange-page-header-wrapper .back-private-zone a {
+  color: #003399;
+  margin-left: 0.5em;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.view-good-practice-exchange-platform-view .view-header .exchange-page-header-wrapper .back-private-zone a:hover {
+  text-decoration: underline;
+}
+.view-good-practice-exchange-platform-view .view-header .exchange-page-header-wrapper .back-private-zone a:focus {
+  text-decoration: underline;
+}
+.view-good-practice-exchange-platform-view .view-header .exchange-page-header-wrapper .back-private-zone a:before {
+  content: "";
+  background: url("/sites/hwc/files/images/custom_blocks/pag-back.png");
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  margin-left: -10px;
+  background-size: cover;
+  margin-top: 6px;
+}
+.view-good-practice-exchange-platform-view .view-header .exchange-page-header-wrapper .new-document-button a {
+  display: block;
+  position: absolute;
+  height: 35px;
+  width: 135px;
+  top: 54px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 32px;
+  font-weight: normal;
+  font-style: normal;
+  background: #003399;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-field-cover-image {
+  float: left;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-field-cover-image img {
+  border: 2px solid #bcd75b;
+  border-radius: 7px;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-field-publication-date {
+  font-weight: 600;
+  float: none;
+  color: #57575a;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-title {
+  color: #003399;
+  font-weight: bold;
+  font-size: 1.35em;
+  padding-bottom: 0.5em;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-title a:hover {
+  text-decoration: underline;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-title a:focus {
+  text-decoration: underline;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-field-summary p {
+  font-size: 14px;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .practice-exchange-downloads i {
+  font-size: 16px;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .practice-exchange-downloads a {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  color: #003399;
+  text-transform: uppercase;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .practice-exchange-downloads a:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url("/sites/hwc/files/images/custom_blocks/download.png");
+  background-size: cover;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .practice-exchange-downloads .publication-download-label {
+  color: #59595A;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-nothing {
+  margin-top: 20px;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-nothing a {
+  color: #003399;
+  border: 1px solid #003399;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-transform: uppercase;
+  padding: 2px 7px 2px 7px;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  float: left;
+  margin-left: 0;
+  transition: 300ms;
+  background-position: 110%;
+  text-decoration: none;
+  background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px;
+  background-color: transparent;
+  padding-right: 2em;
+}
+.view-good-practice-exchange-platform-view .view-content .views-row .views-field-nothing a:hover {
+  color: #bcd75b;
+  border: 1px solid #bcd75b;
+  background-color: transparent;
+}
+.view-good-practice-exchange-platform-view .displaying-results-wrapper {
+  text-align: right;
+}
+.view-good-practice-exchange-platform-view .new-document-button {
+  position: absolute;
+  right: 155px;
+  top: 70px;
+}
+.view-good-practice-exchange-platform-view .views-exposed-form .form-row fieldset label {
+  color: #59595A !important;
+}
+.view-good-practice-exchange-platform-view .views-exposed-form .form-row fieldset select {
+  border: 1px solid #B0B2B3 !important;
+  padding: 6px 12px !important;
+  background: unset !important;
+  width: auto !important;
+}
+
+.block-facet-blockinformation-type .facets-widget-checkbox h3 {
+  cursor: pointer;
+}
+.block-facet-blocktype-of-partner .facets-widget-checkbox h3 {
+  cursor: pointer;
+}
+/*  end /good-practice-exchange-platform */
+/*  /partner_resources */
+.partner-resources-full-wrapper .back-private-zone1 {
+  left: 15px;
+  position: absolute;
+}
+.partner-resources-full-wrapper .back-private-zone1 a {
+  color: #003399;
+  margin-left: 0.5em;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.partner-resources-full-wrapper .back-private-zone1 a:before {
+  content: "";
+  background: url("/sites/hwc/files/images/custom_blocks/pag-back.png");
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  margin-left: -10px;
+  background-size: cover;
+  margin-top: 6px;
+}
+.partner-resources-full-wrapper .panel-flexible .panels-flexible-row-new-1 {
+  padding-top: 20px;
+}
+@media (max-width: 991px) {
+  .partner-resources-full-wrapper .panel-flexible .panels-flexible-row-new-1 {
+    padding-top: 40px;
+  }
+}
+.partner-resources-full-wrapper .panel-flexible .panels-flexible-row-new-1 p {
+  border: none;
+  clear: both;
+  margin-top: 0 !important;
+  padding-bottom: 10px !important;
+  padding-top: 0 !important;
+  text-align: center;
+  color: #59595A;
+}
+.partner-resources-full-wrapper .panel-flexible .panels-flexible-row-new-1 ul {
+  border-bottom: 1px dotted #749b00;
+  margin-top: 10px;
+  padding-bottom: 2em !important;
+  list-style: disc;
+  padding-left: 0;
+}
+.partner-resources-full-wrapper .panel-flexible .field-item ul {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #749b00;
+  padding: 0 40px;
+}
+@media (max-width: 991px) {
+  .partner-resources-full-wrapper .panel-flexible .field-item ul {
+    padding: 0 15px;
+  }
+}
+.partner-resources-full-wrapper .panel-flexible .field-item ul li {
+  color: #59595A;
+}
+.partner-resources-full-wrapper .panel-flexible .field-item ul li:last-child a {
+  margin-bottom: 10px;
+}
+.partner-resources-full-wrapper .panels-flexible-region-inside h2 {
+  font-weight: 100;
+  font-style: normal;
+  font-size: 30px;
+  text-align: left;
+  border-bottom: none;
+  margin-top: 25px;
+  color: #749b00;
+  clear: both;
+  padding-bottom: 15px;
+}
+.partner-resources-full-wrapper .healthy-workplaces-logo-wrapper ul {
+  border-bottom: 1px dotted #749b00;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  list-style: none;
+  clear: both;
+  height: 1%;
+  overflow: hidden;
+}
+.partner-resources-full-wrapper .healthy-workplaces-logo-wrapper ul li {
+  border: 1px solid #CCC;
+  float: left;
+  padding: 1em;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-grid;
+}
+.partner-resources-full-wrapper .healthy-workplaces-logo-wrapper ul li span:nth-child(3) {
+  font-size: 1px !important;
+  color: #FFFFFF;
+}
+.partner-resources-full-wrapper .healthy-workplaces-logo-wrapper ul li:last-child {
+  display: block;
+  border: 0;
+  padding: unset;
+  text-align: unset;
+  float: none;
+  clear: both;
+  margin-bottom: 0;
+}
+.partner-resources-full-wrapper .healthy-workplaces-logo-wrapper ul li:last-child a {
+  margin-bottom: 10px;
+}
+.partner-resources-full-wrapper .panels-flexible-region-new-center {
+  padding: 0;
+}
+.partner-resources-full-wrapper .field-name-body .field-item p {
+  border-bottom: 1px dotted #749b00;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.partner-resources-full-wrapper .field-name-body .field-item strong {
+  color: #59595A;
+}
+.partner-resources-full-wrapper .field-name-body .field-item a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+  color: #003399;
+  display: inline-block !important;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block #contact-us {
+  clear: both;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block #contact-us h2 {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 1em;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block #contact-us h2:before {
+  content: url("/sites/hwc/files/images/custom_blocks/contact.png");
+  display: block;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block #contact-us p {
+  text-align: center;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block .pane-hwc-partner-hwc-partner-user-account-edit .contextual-links-processed {
+  display: none;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block .pane-hwc-partner-hwc-partner-user-account-edit h2 {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 1em;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block .pane-hwc-partner-hwc-partner-user-account-edit h2:before {
+  content: url("/sites/hwc/files/images/custom_blocks/password.png");
+  display: block;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block .pane-hwc-partner-hwc-partner-user-account-edit a {
+  text-align: center;
+  font-weight: bold;
+  color: #003399;
+}
+.partner-resources-full-wrapper .partner-resources-footer-block .pane-hwc-partner-hwc-partner-user-account-edit .pane-content {
+  text-align: center;
+}
+.partner-resources-full-wrapper .back-private-zone2 {
+  padding-bottom: 70px;
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .partner-resources-full-wrapper .back-private-zone2 {
+    display: none;
+  }
+}
+.partner-resources-full-wrapper .back-private-zone2 a {
+  background: url("/sites/hwc/files/images/custom_blocks/pag-back.png") no-repeat 1px 4px;
+  color: #003399;
+  margin-left: 0;
+  font-weight: bold;
+  text-decoration: none !important;
+  padding-left: 1.2em;
+  position: absolute;
+  left: 67px;
+}
+.partner-resources-full-wrapper .back-private-zone2 a:hover {
+  text-decoration: underline !important;
+}
+@media (max-width: 767px) {
+  .partner-resources-full-wrapper .partner-resources-footer-block {
+    margin-bottom: 40px;
+  }
+}
+
+/* end /partner_resources */
+/* /update-profile */
+.public-profile-full-wrapper {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #bcd75b;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 40px;
+}
+.public-profile-full-wrapper .public-profile-title {
+  text-align: center;
+}
+.public-profile-full-wrapper .public-profile-title h1 {
+  color: #003399;
+  font-weight: 400;
+}
+.public-profile-full-wrapper .public-profile-full-inner {
+  justify-content: center;
+  display: flex;
+  margin: 1rem 0 3rem;
+  clear: both;
+  position: relative;
+  margin-bottom: 5px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-event-wrapper {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-event-wrapper a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-events.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-event-wrapper a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 0 solid transparent;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-event-wrapper:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 0 solid #003399;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-news.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 0 solid transparent;
+}
+.public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 0 solid #003399;
+}
+.public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-good-practice.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 2px solid transparent;
+}
+.public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 2px solid #003399;
+}
+.public-profile-full-wrapper .public-profile-full-inner .partner-resources-wrapper {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .partner-resources-wrapper a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-partner-resource.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .partner-resources-wrapper a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 2px solid transparent;
+}
+.public-profile-full-wrapper .public-profile-full-inner .partner-resources-wrapper:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 2px solid #003399;
+}
+.public-profile-full-wrapper .public-profile-full-inner .update-profile-wrapper {
+  text-align: right;
+  background: transparent;
+  border: 2px solid #bcd75b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  min-height: 130px;
+  max-height: 130px;
+  position: relative;
+  width: 260px;
+  margin: 2em 20px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .update-profile-wrapper a {
+  height: 100%;
+  font-weight: bold;
+  color: #003399;
+  font-size: 1em;
+  padding: 0 1em 0 100px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  background: url("/sites/hwc/files/images/custom_blocks/pz-update-profile.png") 0 50% no-repeat;
+  background-position: left 15px top 30px;
+}
+.public-profile-full-wrapper .public-profile-full-inner .update-profile-wrapper a:hover {
+  text-decoration: none;
+  filter: brightness(0) invert(1);
+  border: 2px solid transparent;
+}
+.public-profile-full-wrapper .public-profile-full-inner .update-profile-wrapper:hover {
+  color: #FFFFFF;
+  background: #003399;
+  text-decoration: none;
+  border: 2px solid #003399;
+}
+.public-profile-full-wrapper .news-events-buttons-wrapper {
+  display: inline-flex;
+  margin-left: 20px;
+}
+.public-profile-full-wrapper .news-events-buttons-wrapper .my-events-wrapper {
+  margin-right: 190px;
+}
+.public-profile-full-wrapper .news-events-buttons-wrapper .my-events-wrapper a {
+  font-weight: bold;
+  font-style: normal;
+  background: #EEF4CC;
+  padding: 5px 20px;
+  border-radius: 7px;
+}
+.public-profile-full-wrapper .news-events-buttons-wrapper .my-news-wrapper a {
+  font-weight: bold;
+  font-style: normal;
+  background: #EEF4CC;
+  padding: 5px 20px;
+  border-radius: 7px;
+}
+
+/* end /update-profile */
+/* /campaign-partners/good-practice-exchange */
+.block-events-news-views-block {
+  background: url("/sites/hwc/files/images/custom_blocks/background-fop.png") no-repeat;
+  background-size: cover;
+  padding: 2em;
+  float: left;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.block-events-news-views-block .dual-views-block-newsevents {
+  width: 100%;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper {
+  background: #FFF;
+  float: left;
+  padding: 1em;
+  width: 66%;
+  border-radius: 15px;
+  height: 100%;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries h3 {
+  position: relative;
+  color: #003399;
+  margin-top: 0;
+  font-weight: 400;
+  background: url("/sites/hwc/files/images/custom_blocks/grey-h3-line.png") repeat-x 50% 82% #FFF;
+  margin: 0;
+  padding: 19px 6px 0 11px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  font-size: 2.2em;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries h3 span {
+  padding-left: 82px;
+  background: #FFF;
+  padding-right: 15px;
+  margin-left: -11px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries h3:before {
+  content: " ";
+  background: url("/sites/hwc/files/images/custom_blocks/news-h3-ico.png") no-repeat #FFF;
+  position: absolute;
+  top: 11px;
+  left: 28px;
+  width: 50px;
+  display: block;
+  height: 45px;
+  float: left;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries h3:after {
+  width: 30px;
+  height: 15px;
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 32px;
+  background: #FFFFFF;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 {
+  border-bottom: 1px solid #ACC700;
+  padding-bottom: 2em;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list {
+  width: 100%;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-field-image {
+  float: left;
+  padding-right: 25px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-field-image img {
+  border-radius: 10px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-field-first-publication-date {
+  float: none;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #59595A;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-title {
+  font-size: 1.4em;
+  font-style: normal;
+  padding-top: 0.5em;
+  display: block;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-field-summary p {
+  margin-bottom: 0;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-view-node a {
+  display: block;
+  float: left;
+  font-size: 12px;
+  margin-left: 0;
+  background-color: transparent;
+  color: #003399;
+  border: 1px solid #003399;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-transform: uppercase;
+  padding: 2px 7px 2px 7px;
+  padding-right: 2em;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-weight: bold;
+  transition: 300ms;
+  text-decoration: none;
+  background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px;
+  margin-top: 10px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-view-node a:hover {
+  color: #9cca00;
+  border: 1px solid #9cca00;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list {
+  width: 100%;
+  position: relative;
+  min-height: 240px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-field-first-publication-date {
+  float: none;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #59595A;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-field-image {
+  padding-right: 25px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-field-image img {
+  border-radius: 10px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-title {
+  font-size: 1.4em;
+  font-style: normal;
+  padding-top: 0.5em;
+  display: block;
+  float: left;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-field-summary {
+  float: left;
+  clear: both;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-view-node {
+  float: left;
+  clear: both;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-view-node a {
+  display: block;
+  float: left;
+  font-size: 12px;
+  margin-left: 0;
+  background-color: transparent;
+  color: #003399;
+  border: 1px solid #003399;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-transform: uppercase;
+  padding: 2px 7px 2px 7px;
+  padding-right: 2em;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  font-weight: bold;
+  transition: 300ms;
+  text-decoration: none;
+  background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px;
+  margin-top: 10px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-view-node a:hover {
+  color: #9cca00;
+  border: 1px solid #9cca00;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-footer .news-footer-block-allnews {
+  display: block;
+  clear: both;
+  position: relative;
+  color: #FFFFFF;
+  width: auto;
+  background: #003399;
+  border-radius: 5px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-footer .news-footer-block-allnews a {
+  background: url("/sites/hwc/files/images/custom_blocks/ico-plus-20.png") no-repeat 98.5% 3px #003399;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 3px 3.5em 3px 0.7em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 20px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-footer .news-footer-block-allnews a:hover {
+  color: #FFFFFF;
+  background: url("/sites/hwc/files/images/custom_blocks/ico-next-20-white-hover.png") no-repeat 98.5% 3px #ACC700;
+  text-decoration: none;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper {
+  background: #FFF;
+  float: left;
+  padding: 1em;
+  width: 31%;
+  border-radius: 15px;
+  margin-left: 2em;
+  height: 100%;
+  min-height: 635px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries h3 {
+  position: relative;
+  color: #003399;
+  margin-top: 0;
+  font-weight: 400;
+  background: url("/sites/hwc/files/images/custom_blocks/grey-h3-line.png") repeat-x 50% 82% #FFF;
+  margin: 0;
+  padding: 17px 6px 0 11px;
+  font-size: 2.2em;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries h3 span {
+  padding-left: 30px;
+  background: #FFF;
+  padding-right: 10px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries h3:before {
+  content: " ";
+  background: url("/sites/hwc/files/images/custom_blocks/events-h3-ico.png") no-repeat #FFF;
+  position: absolute;
+  top: 11px;
+  left: -8px;
+  width: 41px;
+  display: block;
+  height: 45px;
+  float: left;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .item-list li {
+  border-bottom: 1px solid #B0B1B2;
+  padding-bottom: 0;
+  padding-top: 1em;
+  padding-left: 0;
+  padding-bottom: 15px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .item-list li:last-child {
+  border-bottom: 0;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .item-list .views-field-field-start-date {
+  float: none;
+  font-weight: 600;
+  color: #59595A;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .item-list .views-field-field-city {
+  float: none;
+  font-weight: 600;
+  color: #59595A;
+  margin-bottom: 15px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .item-list .views-field-field-show-eu-flag {
+  width: 65px;
+  height: 65px;
+  background-size: cover;
+  float: left;
+  background: url("/sites/hwc/files/images/custom_blocks/European-Union-180x180.png") no-repeat center;
+  background-size: cover;
+  margin-right: 15px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .item-list .titlte-news-events {
+  font-size: 1.1em;
+  color: #003399;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .events-block-footer-allevents {
+  display: block;
+  clear: both;
+  position: relative;
+  color: #FFFFFF;
+  width: auto;
+  background: #003399;
+  border-radius: 5px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .events-block-footer-allevents a {
+  background: url("/sites/hwc/files/images/custom_blocks/ico-plus-20.png") no-repeat 98.5% 3px #003399;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 3px 3.5em 3px 0.7em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 20px;
+}
+.block-events-news-views-block .dual-views-block-newsevents .events-block-wrapper .events-block-view-summaries .events-block-footer-allevents a:hover {
+  color: #FFFFFF;
+  background: url("/sites/hwc/files/images/custom_blocks/ico-next-20-white-hover.png") no-repeat 98.5% 3px #ACC700;
+  text-decoration: none;
+}
+
+/* end /campaign-partners/good-practice-exchange */
 .node--type-news .node__date {
   padding-top: 0.3rem;
   margin-bottom: 0;
