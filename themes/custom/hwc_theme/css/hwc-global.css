@@ -1193,6 +1193,9 @@ h2.node__title {
   margin: 1rem 0 3rem;
   clear: both;
   position: relative; }
+  @media (max-width: 400px) {
+    .private-zone-full-wrapper {
+      display: grid; } }
   .private-zone-full-wrapper .private-zone-act-partner {
     text-align: right;
     background: transparent;
@@ -1208,6 +1211,15 @@ h2.node__title {
     position: relative;
     width: 260px;
     margin: 2em 20px; }
+    @media (max-width: 1530px) {
+      .private-zone-full-wrapper .private-zone-act-partner {
+        width: 330px; } }
+    @media (max-width: 1199px) {
+      .private-zone-full-wrapper .private-zone-act-partner {
+        width: 270px; } }
+    @media (max-width: 400px) {
+      .private-zone-full-wrapper .private-zone-act-partner {
+        width: 250px; } }
     .private-zone-full-wrapper .private-zone-act-partner a {
       height: 100%;
       font-weight: bold;
@@ -1224,12 +1236,12 @@ h2.node__title {
       .private-zone-full-wrapper .private-zone-act-partner a:hover {
         text-decoration: none;
         filter: brightness(0) invert(1);
-        border: 2px solid transparent; }
+        border: 0 solid transparent; }
     .private-zone-full-wrapper .private-zone-act-partner:hover {
       color: #FFFFFF;
       background: #003399;
       text-decoration: none;
-      border: 2px solid #003399; }
+      border: 0 solid #003399; }
   .private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher {
     margin-bottom: 450px; }
     .private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper {
@@ -1239,7 +1251,8 @@ h2.node__title {
       width: 250px;
       text-align: center; }
       .private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper p {
-        color: #59595A; }
+        color: #59595A;
+        margin-bottom: 0; }
       .private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper .form-actions {
         margin-bottom: 0 !important; }
       .private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper fieldset select {
@@ -1251,8 +1264,8 @@ h2.node__title {
         border: 1px solid #cccccc;
         width: 240px !important;
         margin-top: 1em;
-        border-top-left-radius: 0px !important;
-        border-bottom-left-radius: 0px !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
         text-align: center;
         background: unset !important; }
       .private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper .form-item {
@@ -1277,23 +1290,32 @@ h2.node__title {
       font-weight: bold;
       color: #003399;
       font-size: 1em;
-      padding: 0 1em 0 100px;
+      padding: 0 1em 0 105px;
       display: flex;
       width: 100%;
       justify-content: flex-end;
       align-items: center;
       font-style: normal;
       background: url("/sites/hwc/files/images/custom_blocks/pz-good-practice.png") 0 50% no-repeat;
-      background-position: left 15px top 30px;
-      border: 2px solid transparent; }
+      background-position: left 15px top 30px; }
       .private-zone-full-wrapper .private-zone-exchange-platform a:hover {
         text-decoration: none;
-        filter: brightness(0) invert(1); }
+        filter: brightness(0) invert(1);
+        border: 0 solid transparent; }
     .private-zone-full-wrapper .private-zone-exchange-platform:hover {
       color: #FFFFFF;
       background: #003399;
       text-decoration: none;
-      border: 2px solid #003399; }
+      border: 0 solid #003399; }
+    @media (max-width: 1530px) {
+      .private-zone-full-wrapper .private-zone-exchange-platform {
+        width: 330px; } }
+    @media (max-width: 1199px) {
+      .private-zone-full-wrapper .private-zone-exchange-platform {
+        width: 270px; } }
+    @media (max-width: 400px) {
+      .private-zone-full-wrapper .private-zone-exchange-platform {
+        width: 250px; } }
   .private-zone-full-wrapper .private-zone-partner-resource {
     text-align: right;
     background: transparent;
@@ -1321,16 +1343,25 @@ h2.node__title {
       align-items: center;
       font-style: normal;
       background: url("/sites/hwc/files/images/custom_blocks/pz-partner-resource.png") 0 50% no-repeat;
-      background-position: left 15px top 30px;
-      border: 2px solid transparent; }
+      background-position: left 15px top 30px; }
       .private-zone-full-wrapper .private-zone-partner-resource a:hover {
         text-decoration: none;
-        filter: brightness(0) invert(1); }
+        filter: brightness(0) invert(1);
+        border: 0 solid transparent; }
     .private-zone-full-wrapper .private-zone-partner-resource:hover {
       color: #FFFFFF;
       background: #003399;
       text-decoration: none;
-      border: 2px solid #003399; }
+      border: 0 solid #003399; }
+    @media (max-width: 1530px) {
+      .private-zone-full-wrapper .private-zone-partner-resource {
+        width: 330px; } }
+    @media (max-width: 1199px) {
+      .private-zone-full-wrapper .private-zone-partner-resource {
+        width: 270px; } }
+    @media (max-width: 400px) {
+      .private-zone-full-wrapper .private-zone-partner-resource {
+        width: 250px; } }
 
 /* end /private_workbench */
 /* /good-practice-exchange-platform */
@@ -1442,6 +1473,25 @@ h2.node__title {
       color: #bcd75b;
       border: 1px solid #bcd75b;
       background-color: transparent; }
+.view-good-practice-exchange-platform-view .displaying-results-wrapper {
+  text-align: right; }
+.view-good-practice-exchange-platform-view .new-document-button {
+  position: absolute;
+  right: 155px;
+  top: 70px; }
+.view-good-practice-exchange-platform-view .views-exposed-form .form-row fieldset label {
+  color: #59595A !important; }
+.view-good-practice-exchange-platform-view .views-exposed-form .form-row fieldset select {
+  border: 1px solid #B0B2B3 !important;
+  padding: 6px 12px !important;
+  background: unset !important;
+  width: auto !important; }
+
+.block-facet-blockinformation-type .facets-widget-checkbox h3 {
+  cursor: pointer; }
+
+.block-facet-blocktype-of-partner .facets-widget-checkbox h3 {
+  cursor: pointer; }
 
 /*  end /good-practice-exchange-platform */
 /*  /partner_resources */
@@ -1465,6 +1515,9 @@ h2.node__title {
       margin-top: 6px; }
 .partner-resources-full-wrapper .panel-flexible .panels-flexible-row-new-1 {
   padding-top: 20px; }
+  @media (max-width: 991px) {
+    .partner-resources-full-wrapper .panel-flexible .panels-flexible-row-new-1 {
+      padding-top: 40px; } }
   .partner-resources-full-wrapper .panel-flexible .panels-flexible-row-new-1 p {
     border: none;
     clear: both;
@@ -1482,9 +1535,15 @@ h2.node__title {
 .partner-resources-full-wrapper .panel-flexible .field-item ul {
   margin-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px dotted #749b00; }
+  border-bottom: 1px dotted #749b00;
+  padding: 0 40px; }
+  @media (max-width: 991px) {
+    .partner-resources-full-wrapper .panel-flexible .field-item ul {
+      padding: 0 15px; } }
   .partner-resources-full-wrapper .panel-flexible .field-item ul li {
     color: #59595A; }
+  .partner-resources-full-wrapper .panel-flexible .field-item ul li:last-child a {
+    margin-bottom: 10px; }
 .partner-resources-full-wrapper .panels-flexible-region-inside h2 {
   font-weight: 100;
   font-style: normal;
@@ -1521,6 +1580,8 @@ h2.node__title {
     float: none;
     clear: both;
     margin-bottom: 0; }
+    .partner-resources-full-wrapper .healthy-workplaces-logo-wrapper ul li:last-child a {
+      margin-bottom: 10px; }
 .partner-resources-full-wrapper .panels-flexible-region-new-center {
   padding: 0; }
 .partner-resources-full-wrapper .field-name-body .field-item p {
@@ -1567,6 +1628,9 @@ h2.node__title {
 .partner-resources-full-wrapper .back-private-zone2 {
   padding-bottom: 70px;
   margin-top: 10px; }
+  @media (max-width: 767px) {
+    .partner-resources-full-wrapper .back-private-zone2 {
+      display: none; } }
   .partner-resources-full-wrapper .back-private-zone2 a {
     background: url("/sites/hwc/files/images/custom_blocks/pag-back.png") no-repeat 1px 4px;
     color: #003399;
@@ -1578,6 +1642,9 @@ h2.node__title {
     left: 67px; }
     .partner-resources-full-wrapper .back-private-zone2 a:hover {
       text-decoration: underline !important; }
+@media (max-width: 767px) {
+  .partner-resources-full-wrapper .partner-resources-footer-block {
+    margin-bottom: 40px; } }
 
 /* end /partner_resources */
 /* /update-profile */
@@ -1630,12 +1697,12 @@ h2.node__title {
         .public-profile-full-wrapper .public-profile-full-inner .create-event-wrapper a:hover {
           text-decoration: none;
           filter: brightness(0) invert(1);
-          border: 2px solid transparent; }
+          border: 0 solid transparent; }
       .public-profile-full-wrapper .public-profile-full-inner .create-event-wrapper:hover {
         color: #FFFFFF;
         background: #003399;
         text-decoration: none;
-        border: 2px solid #003399; }
+        border: 0 solid #003399; }
     .public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper {
       text-align: right;
       background: transparent;
@@ -1667,12 +1734,12 @@ h2.node__title {
         .public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper a:hover {
           text-decoration: none;
           filter: brightness(0) invert(1);
-          border: 2px solid transparent; }
+          border: 0 solid transparent; }
       .public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper:hover {
         color: #FFFFFF;
         background: #003399;
         text-decoration: none;
-        border: 2px solid #003399; }
+        border: 0 solid #003399; }
     .public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper {
       text-align: right;
       background: transparent;
@@ -1877,6 +1944,8 @@ h2.node__title {
             font-style: normal;
             padding-top: 0.5em;
             display: block; }
+          .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-field-summary p {
+            margin-bottom: 0; }
           .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-view-node a {
             display: block;
             float: left;
@@ -1897,7 +1966,8 @@ h2.node__title {
             font-weight: bold;
             transition: 300ms;
             text-decoration: none;
-            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px; }
+            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px;
+            margin-top: 10px; }
             .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_1 .item-list .news-block-left-image .views-field-view-node a:hover {
               color: #9cca00;
               border: 1px solid #9cca00; }
@@ -1949,7 +2019,8 @@ h2.node__title {
             font-weight: bold;
             transition: 300ms;
             text-decoration: none;
-            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px; }
+            background: url("/sites/hwc/files/images/custom_blocks/ico-plus-green.png") no-repeat 91% 4px;
+            margin-top: 10px; }
             .block-events-news-views-block .dual-views-block-newsevents .news-block-wrapper .news-block-view-summaries .view-id-news_last_new.view-display-id-block_2 .item-list .news-block-right-image .views-field-view-node a:hover {
               color: #9cca00;
               border: 1px solid #9cca00; }

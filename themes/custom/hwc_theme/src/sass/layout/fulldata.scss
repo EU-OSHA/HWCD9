@@ -2,7 +2,7 @@
 /* Colors */
 
 $text-color-blue: #003399; //azul
-$text-color-blue-light:#8d98c5; //azul claro
+$text-color-blue-light: #8d98c5; //azul claro
 $text-color-white: #FFFFFF;
 $bg-color-white: #FFF;
 $text-color-grey-2: #59595A;
@@ -10,11 +10,20 @@ $text-color-green: #749b00;
 $border-dotted-green: #749b00;
 $border-dotted-green-2: #ACC700;
 $background-light-green: #EEF4CC;
-$text-color-grey-border-event : #B0B1B2;
+$text-color-grey-border-event: #B0B1B2;
 
 
 $text-color-lightgreen: #bcd75b;
 $text-color-lightgreen-2: #9cca00;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 
 /* End Colors */
 
@@ -27,6 +36,10 @@ $text-color-lightgreen-2: #9cca00;
   margin: 1rem 0 3rem;
   clear: both;
   position: relative;
+  @media (max-width: 400px) {
+    display: grid;
+  }
+
   .private-zone-act-partner {
     text-align: right;
     background: transparent;
@@ -40,11 +53,21 @@ $text-color-lightgreen-2: #9cca00;
     font-weight: 600;
     min-height: 130px;
     max-height: 130px;
-  //  min-width: 100%;
+    //  min-width: 100%;
     position: relative;
     width: 260px;
     margin: 2em 20px;
-     a {
+    @media (max-width: 1530px) {
+      width: 330px;
+    }
+    @media (max-width: 1199px) {
+      width: 270px;
+    }
+    @media (max-width: 400px) {
+      width: 250px;
+    }
+
+    a {
       height: 100%;
       font-weight: bold;
       color: $text-color-blue;
@@ -57,37 +80,44 @@ $text-color-lightgreen-2: #9cca00;
       font-style: normal;
       background: url('/sites/hwc/files/images/custom_blocks/pz-news.png') 0 50% no-repeat;
       background-position: left 15px top 30px;
-      &:hover{
+
+      &:hover {
         text-decoration: none;
         filter: brightness(0) invert(1);
-        border: 2px solid transparent;
+        border: 0 solid transparent;
       }
     }
-    &:hover{
+
+    &:hover {
       color: $text-color-white;
       background: $bg-color-blue;
       text-decoration: none;
-      border: 2px solid $text-color-blue;
+      border: 0 solid $text-color-blue;
     }
   }
 
   .private-zone-act-partner-inside {
     .act-partner-switcher {
       margin-bottom: 450px;
+
       .act-partner-text-wrapper {
         position: absolute;
         top: 170px;
         left: 25px;
         width: 250px;
         text-align: center;
-        p{
+
+        p {
           color: $text-color-grey-2;
+          margin-bottom: 0;
         }
-        .form-actions{
+
+        .form-actions {
           margin-bottom: 0 !important;
         }
-        fieldset{
-          select{
+
+        fieldset {
+          select {
             display: block;
             height: 34px;
             padding: 6px 12px;
@@ -96,13 +126,14 @@ $text-color-lightgreen-2: #9cca00;
             border: 1px solid #cccccc;
             width: 240px !important;
             margin-top: 1em;
-            border-top-left-radius: 0px !important;
-            border-bottom-left-radius: 0px !important;
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
             text-align: center;
             background: unset !important;
           }
         }
-        .form-item{
+
+        .form-item {
           color: $text-color-grey-2;
         }
       }
@@ -122,16 +153,17 @@ $text-color-lightgreen-2: #9cca00;
     font-weight: 600;
     min-height: 130px;
     max-height: 130px;
-   // min-width: 100%;
+    // min-width: 100%;
     position: relative;
     width: 260px;
     margin: 2em 20px;
+
     a {
       height: 100%;
       font-weight: bold;
       color: $text-color-blue;
       font-size: 1em;
-      padding: 0 1em 0 100px;
+      padding: 0 1em 0 105px;
       display: flex;
       width: 100%;
       justify-content: flex-end;
@@ -139,24 +171,36 @@ $text-color-lightgreen-2: #9cca00;
       font-style: normal;
       background: url('/sites/hwc/files/images/custom_blocks/pz-good-practice.png') 0 50% no-repeat;
       background-position: left 15px top 30px;
-      border: 2px solid transparent;
-      &:hover{
+
+      &:hover {
         text-decoration: none;
         filter: brightness(0) invert(1);
+        border: 0 solid transparent;
       }
     }
-    &:hover{
+
+    &:hover {
       color: $text-color-white;
       background: $bg-color-blue;
       text-decoration: none;
-      border: 2px solid $text-color-blue;
+      border: 0 solid $text-color-blue;
+    }
+    @media (max-width: 1530px) {
+      width: 330px;
+    }
+    @media (max-width: 1199px) {
+      width: 270px;
+    }
+    @media (max-width: 400px) {
+      width: 250px;
     }
   }
+
   .private-zone-partner-resource {
     text-align: right;
     background: transparent;
     border: 2px solid $text-color-lightgreen;
-   // padding: 0 1em;
+    // padding: 0 1em;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -165,10 +209,11 @@ $text-color-lightgreen-2: #9cca00;
     font-weight: 600;
     min-height: 130px;
     max-height: 130px;
-   // min-width: 100%;
+    // min-width: 100%;
     position: relative;
     width: 260px;
     margin: 2em 20px;
+
     a {
       height: 100%;
       font-weight: bold;
@@ -182,17 +227,28 @@ $text-color-lightgreen-2: #9cca00;
       font-style: normal;
       background: url('/sites/hwc/files/images/custom_blocks/pz-partner-resource.png') 0 50% no-repeat;
       background-position: left 15px top 30px;
-      border: 2px solid transparent;
-      &:hover{
+
+      &:hover {
         text-decoration: none;
         filter: brightness(0) invert(1);
+        border: 0 solid transparent;
       }
     }
-    &:hover{
+
+    &:hover {
       color: $text-color-white;
       background: $bg-color-blue;
       text-decoration: none;
-      border: 2px solid $text-color-blue;
+      border: 0 solid $text-color-blue;
+    }
+    @media (max-width: 1530px) {
+      width: 330px;
+    }
+    @media (max-width: 1199px) {
+      width: 270px;
+    }
+    @media (max-width: 400px) {
+      width: 250px;
     }
   }
 }
@@ -201,23 +257,26 @@ $text-color-lightgreen-2: #9cca00;
 
 /* /good-practice-exchange-platform */
 
-.view-good-practice-exchange-platform-view{
-  .view-header{
-    .exchange-page-header-wrapper{
-      .back-private-zone{
-        a{
+.view-good-practice-exchange-platform-view {
+  .view-header {
+    .exchange-page-header-wrapper {
+      .back-private-zone {
+        a {
           color: $text-color-blue;
           margin-left: 0.5em;
           font-weight: bold;
           font-size: 14px;
           line-height: 1.42857143;
-          &:hover{
+
+          &:hover {
             text-decoration: underline;
           }
-          &:focus{
+
+          &:focus {
             text-decoration: underline;
           }
-          &:before{
+
+          &:before {
             content: '';
             background: url('/sites/hwc/files/images/custom_blocks/pag-back.png');
             width: 6px;
@@ -229,8 +288,9 @@ $text-color-lightgreen-2: #9cca00;
           }
         }
       }
-      .new-document-button{
-        a{
+
+      .new-document-button {
+        a {
           display: block;
           position: absolute;
           height: 35px;
@@ -248,56 +308,66 @@ $text-color-lightgreen-2: #9cca00;
       }
     }
   }
-  .view-content{
-    .views-row{
-      .views-field-field-cover-image{
+
+  .view-content {
+    .views-row {
+      .views-field-field-cover-image {
         float: left;
         margin-right: 15px;
         margin-top: 10px;
         margin-bottom: 15px;
-        img{
+
+        img {
           border: 2px solid $text-color-lightgreen;
           border-radius: 7px;
         }
       }
-      .views-field-field-publication-date{
+
+      .views-field-field-publication-date {
         font-weight: 600;
         float: none;
         color: $text-color-grey;
-       // font-size: 0.85714em;
+        // font-size: 0.85714em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
       }
-      .views-field-title{
+
+      .views-field-title {
         color: $text-color-blue;
         font-weight: bold;
         font-size: 1.35em;
         padding-bottom: 0.5em;
-        a{
-          &:hover{
+
+        a {
+          &:hover {
             text-decoration: underline;
           }
-          &:focus{
+
+          &:focus {
             text-decoration: underline;
           }
         }
       }
-      .views-field-field-summary{
-        p{
+
+      .views-field-field-summary {
+        p {
           font-size: 14px;
         }
       }
-      .practice-exchange-downloads{
-        i{
+
+      .practice-exchange-downloads {
+        i {
           font-size: 16px;
         }
-        a{
+
+        a {
           display: inline-block;
           font-style: normal;
           font-weight: bold;
           color: $text-color-blue;
           text-transform: uppercase;
-          &:after{
+
+          &:after {
             content: '';
             position: absolute;
             width: 18px;
@@ -308,15 +378,18 @@ $text-color-lightgreen-2: #9cca00;
             margin-left: 3px;
           }
         }
-        .publication-download-label{
+
+        .publication-download-label {
           color: $text-color-grey-2;
           font-weight: bold;
           margin-left: 15px;
         }
       }
-      .views-field-nothing{
+
+      .views-field-nothing {
         margin-top: 20px;
-        a{
+
+        a {
           color: $text-color-blue;
           border: 1px solid $text-color-blue;
           border-top-left-radius: 3px;
@@ -339,7 +412,8 @@ $text-color-lightgreen-2: #9cca00;
           background: url('/sites/hwc/files/images/custom_blocks/ico-plus-green.png') no-repeat 91% 4px;
           background-color: transparent;
           padding-right: 2em;
-          &:hover{
+
+          &:hover {
             color: $text-color-lightgreen;
             border: 1px solid $text-color-lightgreen;
             background-color: transparent;
@@ -348,8 +422,53 @@ $text-color-lightgreen-2: #9cca00;
       }
     }
   }
-  .views-exposed-form{
 
+  .displaying-results-wrapper {
+    text-align: right;
+  }
+
+  .new-document-button{
+    position: absolute;
+    right: 155px;
+    top: 70px;
+  }
+
+  .views-exposed-form{
+    .form-row {
+      fieldset {
+        label {
+          color: $text-color-grey-2 !important;
+        }
+
+        select {
+          border: 1px solid #B0B2B3 !important;
+          padding: 6px 12px !important;
+          background: unset !important;
+          width: auto !important;
+        }
+      }
+    }
+  }
+}
+
+.block-facet-blockinformation-type{
+  .facets-widget-checkbox{
+    h3{
+      cursor: pointer;
+    }
+    ul{
+
+    }
+  }
+}
+.block-facet-blocktype-of-partner{
+  .facets-widget-checkbox{
+    h3{
+      cursor: pointer;
+    }
+    ul{
+
+    }
   }
 }
 
@@ -357,17 +476,19 @@ $text-color-lightgreen-2: #9cca00;
 
 /*  /partner_resources */
 
-.partner-resources-full-wrapper{
-  .back-private-zone1{
+.partner-resources-full-wrapper {
+  .back-private-zone1 {
     left: 15px;
     position: absolute;
-    a{
+
+    a {
       color: $text-color-blue;
       margin-left: 0.5em;
       font-weight: bold;
       font-size: 14px;
       line-height: 1.42857143;
-      &:before{
+
+      &:before {
         content: '';
         background: url('/sites/hwc/files/images/custom_blocks/pag-back.png');
         width: 6px;
@@ -379,10 +500,14 @@ $text-color-lightgreen-2: #9cca00;
       }
     }
   }
-  .panel-flexible{
-    .panels-flexible-row-new-1{
+
+  .panel-flexible {
+    .panels-flexible-row-new-1 {
       padding-top: 20px;
-      p{
+      @media (max-width: 991px) {
+        padding-top: 40px;
+      }
+      p {
         border: none;
         clear: both;
         margin-top: 0 !important;
@@ -391,7 +516,8 @@ $text-color-lightgreen-2: #9cca00;
         text-align: center;
         color: $text-color-grey-2;
       }
-      ul{
+
+      ul {
         border-bottom: 1px dotted $border-dotted-green;
         margin-top: 10px;
         padding-bottom: 2em !important;
@@ -399,19 +525,32 @@ $text-color-lightgreen-2: #9cca00;
         padding-left: 0;
       }
     }
-    .field-item{
-      ul{
+
+    .field-item {
+      ul {
         margin-top: 10px;
         padding-bottom: 10px;
         border-bottom: 1px dotted $border-dotted-green;
-        li{
+        padding: 0 40px;
+        @media (max-width: 991px) {
+          padding: 0 15px;
+        }
+
+        li {
           color: $text-color-grey-2;
+        }
+
+        li:last-child {
+          a {
+            margin-bottom: 10px;
+          }
         }
       }
     }
   }
-  .panels-flexible-region-inside{
-    h2{
+
+  .panels-flexible-region-inside {
+    h2 {
       font-weight: 100;
       font-style: normal;
       font-size: 30px;
@@ -423,8 +562,9 @@ $text-color-lightgreen-2: #9cca00;
       padding-bottom: 15px;
     }
   }
-  .healthy-workplaces-logo-wrapper{
-    ul{
+
+  .healthy-workplaces-logo-wrapper {
+    ul {
       border-bottom: 1px dotted $border-dotted-green;
       padding-bottom: 10px;
       margin-top: 10px;
@@ -432,44 +572,55 @@ $text-color-lightgreen-2: #9cca00;
       clear: both;
       height: 1%;
       overflow: hidden;
-      li{
+
+      li {
         border: 1px solid #CCC;
         float: left;
         padding: 1em;
         margin-right: 10px;
         margin-bottom: 10px;
         display: inline-grid;
-        span:nth-child(3){
+
+        span:nth-child(3) {
           font-size: 1px !important;
-          color:$text-color-white;
+          color: $text-color-white;
         }
       }
-      li:last-child{
+
+      li:last-child {
         display: block;
         border: 0;
         padding: unset;
         text-align: unset;
-        float:none;
-        clear:both;
+        float: none;
+        clear: both;
         margin-bottom: 0;
+
+        a {
+          margin-bottom: 10px;
+        }
       }
     }
   }
-  .panels-flexible-region-new-center{
+
+  .panels-flexible-region-new-center {
     padding: 0;
   }
-  .field-name-body{
-    .field-item{
-      p{
+
+  .field-name-body {
+    .field-item {
+      p {
         border-bottom: 1px dotted $border-dotted-green;
         padding-bottom: 10px;
         margin-top: 10px;
         margin-bottom: 0;
       }
-      strong{
+
+      strong {
         color: $text-color-grey-2;
       }
-      a{
+
+      a {
         font-style: normal;
         font-weight: bold;
         font-size: 1em;
@@ -478,51 +629,65 @@ $text-color-lightgreen-2: #9cca00;
       }
     }
   }
+
   .partner-resources-footer-block {
     #contact-us {
       clear: both;
+
       h2 {
         text-align: center;
         font-weight: bold;
         font-style: normal;
         margin-top: 1em;
+
         &:before {
           content: url('/sites/hwc/files/images/custom_blocks/contact.png');
           display: block;
         }
       }
-      p{
+
+      p {
         text-align: center;
       }
     }
-    .pane-hwc-partner-hwc-partner-user-account-edit{
-      .contextual-links-processed{
+
+    .pane-hwc-partner-hwc-partner-user-account-edit {
+      .contextual-links-processed {
         display: none;
       }
+
       h2 {
         text-align: center;
         font-weight: bold;
         font-style: normal;
         margin-top: 1em;
+
         &:before {
           content: url('/sites/hwc/files/images/custom_blocks/password.png');
           display: block;
         }
       }
-      a{
+
+      a {
         text-align: center;
         font-weight: bold;
         color: $text-color-blue;
       }
+
       .pane-content {
         text-align: center;
       }
     }
   }
-  .back-private-zone2{
+
+  .back-private-zone2 {
     padding-bottom: 70px;
     margin-top: 10px;
-    a{
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    a {
       background: url('/sites/hwc/files/images/custom_blocks/pag-back.png') no-repeat 1px 4px;
       color: $text-color-blue;
       margin-left: 0;
@@ -531,9 +696,15 @@ $text-color-lightgreen-2: #9cca00;
       padding-left: 1.2em;
       position: absolute;
       left: 67px;
-      &:hover{
+
+      &:hover {
         text-decoration: underline !important;
       }
+    }
+  }
+  .partner-resources-footer-block{
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
     }
   }
 }
@@ -549,13 +720,16 @@ $text-color-lightgreen-2: #9cca00;
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 40px;
+
   .public-profile-title {
     text-align: center;
-    h1{
+
+    h1 {
       color: $text-color-blue;
       font-weight: 400;
     }
   }
+
   .public-profile-full-inner {
     justify-content: center;
     display: flex;
@@ -564,6 +738,7 @@ $text-color-lightgreen-2: #9cca00;
     clear: both;
     position: relative;
     margin-bottom: 5px;
+
     .create-event-wrapper {
       text-align: right;
       background: transparent;
@@ -599,7 +774,7 @@ $text-color-lightgreen-2: #9cca00;
         &:hover {
           text-decoration: none;
           filter: brightness(0) invert(1);
-          border: 2px solid transparent;
+          border: 0 solid transparent;
         }
       }
 
@@ -607,7 +782,7 @@ $text-color-lightgreen-2: #9cca00;
         color: $text-color-white;
         background: $bg-color-blue;
         text-decoration: none;
-        border: 2px solid $text-color-blue;
+        border: 0 solid $text-color-blue;
       }
     }
 
@@ -646,7 +821,7 @@ $text-color-lightgreen-2: #9cca00;
         &:hover {
           text-decoration: none;
           filter: brightness(0) invert(1);
-          border: 2px solid transparent;
+          border: 0 solid transparent;
         }
       }
 
@@ -654,7 +829,7 @@ $text-color-lightgreen-2: #9cca00;
         color: $text-color-white;
         background: $bg-color-blue;
         text-decoration: none;
-        border: 2px solid $text-color-blue;
+        border: 0 solid $text-color-blue;
       }
     }
 
@@ -799,11 +974,14 @@ $text-color-lightgreen-2: #9cca00;
       }
     }
   }
+
   .news-events-buttons-wrapper {
     display: inline-flex;
     margin-left: 20px;
+
     .my-events-wrapper {
       margin-right: 190px;
+
       a {
         font-weight: bold;
         font-style: normal;
@@ -812,6 +990,7 @@ $text-color-lightgreen-2: #9cca00;
         border-radius: 7px;
       }
     }
+
     .my-news-wrapper {
       a {
         font-weight: bold;
@@ -834,12 +1013,14 @@ $text-color-lightgreen-2: #9cca00;
   padding: 2em;
   float: left;
   width: 100%;
- // display: flex;
+  // display: flex;
   flex-wrap: wrap;
   margin-top: 1.5em;
   margin-bottom: 1em;
+
   .dual-views-block-newsevents {
     width: 100%;
+
     .news-block-wrapper {
       background: $bg-color-white;
       float: left;
@@ -847,208 +1028,236 @@ $text-color-lightgreen-2: #9cca00;
       width: 66%;
       border-radius: 15px;
       height: 100%;
-        .news-block-view-summaries {
-          h3 {
-            position: relative;
-            color: $text-color-blue;
-            margin-top: 0;
-            font-weight: 400;
-            background: url('/sites/hwc/files/images/custom_blocks/grey-h3-line.png') repeat-x 50% 82% $bg-color-white;
-            margin: 0;
-            padding: 19px 6px 0 11px;
-            border-top-left-radius: 7px;
-            border-top-right-radius: 7px;
-            font-size: 2.2em;
-            span {
-              padding-left: 82px;
-              background: $bg-color-white;
-              padding-right: 15px;
-              margin-left: -11px;
-            }
-            &:before {
-              content: ' ';
-              background: url('/sites/hwc/files/images/custom_blocks/news-h3-ico.png') no-repeat $bg-color-white;
-              position: absolute;
-              top: 11px;
-              left: 28px;
-              width: 50px;
-              display: block;
-              height: 45px;
-              float: left;
-            }
-              &:after {
-                width: 30px;
-                height: 15px;
-                content: ' ';
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 32px;
-                background: $text-color-white;
-              }
+
+      .news-block-view-summaries {
+        h3 {
+          position: relative;
+          color: $text-color-blue;
+          margin-top: 0;
+          font-weight: 400;
+          background: url('/sites/hwc/files/images/custom_blocks/grey-h3-line.png') repeat-x 50% 82% $bg-color-white;
+          margin: 0;
+          padding: 19px 6px 0 11px;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+          font-size: 2.2em;
+
+          span {
+            padding-left: 82px;
+            background: $bg-color-white;
+            padding-right: 15px;
+            margin-left: -11px;
           }
-          .view-id-news_last_new.view-display-id-block_1 {
-            border-bottom: 1px solid $border-dotted-green-2;
-            padding-bottom: 2em;
 
-            .item-list {
-              width: 100%;
-              .news-block-left-image {
-                .views-field-field-image {
-                  float: left;
-                  padding-right: 25px;
-
-                  img {
-                    border-radius: 10px;
-                  }
-                }
-                .views-field-field-first-publication-date {
-                  float: none;
-                  margin-top: 20px;
-                  font-weight: 600;
-                  color: $text-color-grey-2;
-                }
-                .views-field-title {
-                  font-size: 1.4em;
-                  font-style: normal;
-                  padding-top: 0.5em;
-                  display: block;
-                }
-
-                .views-field-view-node {
-                  a {
-                    display: block;
-                    float: left;
-                    font-size: 12px;
-                    margin-left: 0;
-                    background-color: transparent;
-                    color: $text-color-blue;
-                    border: 1px solid $text-color-blue;
-                    border-top-left-radius: 3px;
-                    border-bottom-left-radius: 3px;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    text-transform: uppercase;
-                    padding: 2px 7px 2px 7px;
-                    padding-right: 2em;
-                    padding-top: 2px !important;
-                    padding-bottom: 2px !important;
-                    font-weight: bold;
-                    transition: 300ms;
-                    text-decoration: none;
-                    background: url('/sites/hwc/files/images/custom_blocks/ico-plus-green.png') no-repeat 91% 4px;
-
-                    &:hover {
-                      color: $text-color-lightgreen-2;
-                      border: 1px solid $text-color-lightgreen-2;
-                    }
-                  }
-                }
-              }
-            }
+          &:before {
+            content: ' ';
+            background: url('/sites/hwc/files/images/custom_blocks/news-h3-ico.png') no-repeat $bg-color-white;
+            position: absolute;
+            top: 11px;
+            left: 28px;
+            width: 50px;
+            display: block;
+            height: 45px;
+            float: left;
           }
-          .view-id-news_last_new.view-display-id-block_2 {
-            .item-list {
-              width: 100%;
-              position: relative;
-              min-height: 240px;
-              .news-block-right-image {
-                .views-field-field-first-publication-date {
-                  float: none;
-                  margin-top: 20px;
-                  font-weight: 600;
-                  color: $text-color-grey-2;
-                }
-                .views-field-field-image {
-                 // float: right;
-                  padding-right: 25px;
-                  position: absolute;
-                  right: 0;
-                  top: 30px;
-                  img {
-                    border-radius: 10px;
-                  }
-                }
-                .views-field-title {
-                  font-size: 1.4em;
-                  font-style: normal;
-                  padding-top: 0.5em;
-                  display: block;
-                  float: left;
-                }
-                .views-field-field-summary{
-                  float:left;
-                  clear:both;
-                }
-                .views-field-view-node {
-                  float: left;
-                  clear: both;
-               //   margin-top: 30px;
-                  a {
-                    display: block;
-                    float: left;
-                    font-size: 12px;
-                    margin-left: 0;
-                    background-color: transparent;
-                    color: $text-color-blue;
-                    border: 1px solid $text-color-blue;
-                    border-top-left-radius: 3px;
-                    border-bottom-left-radius: 3px;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    text-transform: uppercase;
-                    padding: 2px 7px 2px 7px;
-                    padding-right: 2em;
-                    padding-top: 2px !important;
-                    padding-bottom: 2px !important;
-                    font-weight: bold;
-                    transition: 300ms;
-                    text-decoration: none;
-                    background: url('/sites/hwc/files/images/custom_blocks/ico-plus-green.png') no-repeat 91% 4px;
-                    &:hover {
-                      color: $text-color-lightgreen-2;
-                      border: 1px solid $text-color-lightgreen-2;
-                    }
-                  }
-                }
-              }
-            }
+
+          &:after {
+            width: 30px;
+            height: 15px;
+            content: ' ';
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 32px;
+            background: $text-color-white;
           }
-          .view-footer{
-            .news-footer-block-allnews{
-              display: block;
-              clear: both;
-              position: relative;
-              color: $text-color_white;
-              width: auto;
-              background: $bg-color-blue;
-              border-radius: 5px;
-              a{
-                background: url('/sites/hwc/files/images/custom_blocks/ico-plus-20.png') no-repeat 98.5% 3px $bg-color-blue;
-                text-transform: uppercase;
-                color: $text-color-white;
-                border-top-left-radius: 7px;
-                border-bottom-left-radius: 7px;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
-                padding: 3px 3.5em 3px 0.7em;
-                -webkit-transition: all 0.3s;
-                -moz-transition: all 0.3s;
-                -o-transition: all 0.3s;
-                transition: all 0.3s;
+        }
+
+        .view-id-news_last_new.view-display-id-block_1 {
+          border-bottom: 1px solid $border-dotted-green-2;
+          padding-bottom: 2em;
+
+          .item-list {
+            width: 100%;
+
+            .news-block-left-image {
+              .views-field-field-image {
                 float: left;
-                margin-top: 1em;
-                margin-bottom: 20px;
-                &:hover{
-                  color: $text-color-white;
-                  background: url('/sites/hwc/files/images/custom_blocks/ico-next-20-white-hover.png') no-repeat 98.5% 3px $border-dotted-green-2;
+                padding-right: 25px;
+
+                img {
+                  border-radius: 10px;
+                }
+              }
+
+              .views-field-field-first-publication-date {
+                float: none;
+                margin-top: 20px;
+                font-weight: 600;
+                color: $text-color-grey-2;
+              }
+
+              .views-field-title {
+                font-size: 1.4em;
+                font-style: normal;
+                padding-top: 0.5em;
+                display: block;
+              }
+
+              .views-field-field-summary{
+                p{
+                  margin-bottom: 0;
+                }
+              }
+
+              .views-field-view-node {
+                a {
+                  display: block;
+                  float: left;
+                  font-size: 12px;
+                  margin-left: 0;
+                  background-color: transparent;
+                  color: $text-color-blue;
+                  border: 1px solid $text-color-blue;
+                  border-top-left-radius: 3px;
+                  border-bottom-left-radius: 3px;
+                  border-top-right-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  text-transform: uppercase;
+                  padding: 2px 7px 2px 7px;
+                  padding-right: 2em;
+                  padding-top: 2px !important;
+                  padding-bottom: 2px !important;
+                  font-weight: bold;
+                  transition: 300ms;
                   text-decoration: none;
+                  background: url('/sites/hwc/files/images/custom_blocks/ico-plus-green.png') no-repeat 91% 4px;
+                  margin-top: 10px;
+
+                  &:hover {
+                    color: $text-color-lightgreen-2;
+                    border: 1px solid $text-color-lightgreen-2;
+                  }
                 }
               }
             }
           }
         }
+
+        .view-id-news_last_new.view-display-id-block_2 {
+          .item-list {
+            width: 100%;
+            position: relative;
+            min-height: 240px;
+
+            .news-block-right-image {
+              .views-field-field-first-publication-date {
+                float: none;
+                margin-top: 20px;
+                font-weight: 600;
+                color: $text-color-grey-2;
+              }
+
+              .views-field-field-image {
+                // float: right;
+                padding-right: 25px;
+                position: absolute;
+                right: 0;
+                top: 30px;
+
+                img {
+                  border-radius: 10px;
+                }
+              }
+
+              .views-field-title {
+                font-size: 1.4em;
+                font-style: normal;
+                padding-top: 0.5em;
+                display: block;
+                float: left;
+              }
+
+              .views-field-field-summary {
+                float: left;
+                clear: both;
+              }
+
+              .views-field-view-node {
+                float: left;
+                clear: both;
+                //   margin-top: 30px;
+                a {
+                  display: block;
+                  float: left;
+                  font-size: 12px;
+                  margin-left: 0;
+                  background-color: transparent;
+                  color: $text-color-blue;
+                  border: 1px solid $text-color-blue;
+                  border-top-left-radius: 3px;
+                  border-bottom-left-radius: 3px;
+                  border-top-right-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  text-transform: uppercase;
+                  padding: 2px 7px 2px 7px;
+                  padding-right: 2em;
+                  padding-top: 2px !important;
+                  padding-bottom: 2px !important;
+                  font-weight: bold;
+                  transition: 300ms;
+                  text-decoration: none;
+                  background: url('/sites/hwc/files/images/custom_blocks/ico-plus-green.png') no-repeat 91% 4px;
+                  margin-top: 10px;
+
+                  &:hover {
+                    color: $text-color-lightgreen-2;
+                    border: 1px solid $text-color-lightgreen-2;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .view-footer {
+          .news-footer-block-allnews {
+            display: block;
+            clear: both;
+            position: relative;
+            color: $text-color_white;
+            width: auto;
+            background: $bg-color-blue;
+            border-radius: 5px;
+
+            a {
+              background: url('/sites/hwc/files/images/custom_blocks/ico-plus-20.png') no-repeat 98.5% 3px $bg-color-blue;
+              text-transform: uppercase;
+              color: $text-color-white;
+              border-top-left-radius: 7px;
+              border-bottom-left-radius: 7px;
+              border-top-right-radius: 15px;
+              border-bottom-right-radius: 15px;
+              padding: 3px 3.5em 3px 0.7em;
+              -webkit-transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              -o-transition: all 0.3s;
+              transition: all 0.3s;
+              float: left;
+              margin-top: 1em;
+              margin-bottom: 20px;
+
+              &:hover {
+                color: $text-color-white;
+                background: url('/sites/hwc/files/images/custom_blocks/ico-next-20-white-hover.png') no-repeat 98.5% 3px $border-dotted-green-2;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
     }
+
     .events-block-wrapper {
       background: $bg-color-white;
       float: left;
@@ -1058,56 +1267,64 @@ $text-color-lightgreen-2: #9cca00;
       margin-left: 2em;
       height: 100%;
       min-height: 635px;
+
       .events-block-view-summaries {
-          h3 {
-            position: relative;
-            color: $text-color-blue;
-            margin-top: 0;
-            font-weight: 400;
-            background: url('/sites/hwc/files/images/custom_blocks/grey-h3-line.png') repeat-x 50% 82% $bg-color-white;
-            margin: 0;
-            padding: 17px 6px 0 11px;
-            font-size: 2.2em;
-            span {
-              padding-left: 30px;
-              background: $bg-color-white;
-              padding-right: 10px;
-            }
-            &:before {
-              content: ' ';
-              background: url('/sites/hwc/files/images/custom_blocks/events-h3-ico.png') no-repeat $bg-color-white;
-              position: absolute;
-              top: 11px;
-              left: -8px;
-              width: 41px;
-              display: block;
-              height: 45px;
-              float: left;
-            }
+        h3 {
+          position: relative;
+          color: $text-color-blue;
+          margin-top: 0;
+          font-weight: 400;
+          background: url('/sites/hwc/files/images/custom_blocks/grey-h3-line.png') repeat-x 50% 82% $bg-color-white;
+          margin: 0;
+          padding: 17px 6px 0 11px;
+          font-size: 2.2em;
+
+          span {
+            padding-left: 30px;
+            background: $bg-color-white;
+            padding-right: 10px;
           }
+
+          &:before {
+            content: ' ';
+            background: url('/sites/hwc/files/images/custom_blocks/events-h3-ico.png') no-repeat $bg-color-white;
+            position: absolute;
+            top: 11px;
+            left: -8px;
+            width: 41px;
+            display: block;
+            height: 45px;
+            float: left;
+          }
+        }
+
         .item-list {
-          li{
+          li {
             border-bottom: 1px solid $text-color-grey-border-event;
             padding-bottom: 0;
             padding-top: 1em;
             padding-left: 0;
             padding-bottom: 15px;
           }
-          li:last-child{
+
+          li:last-child {
             border-bottom: 0;
           }
+
           .views-field-field-start-date {
             float: none;
-         //   margin-top: 20px;
+            //   margin-top: 20px;
             font-weight: 600;
             color: $text-color-grey-2;
           }
+
           .views-field-field-city {
             float: none;
             font-weight: 600;
             color: $text-color-grey-2;
             margin-bottom: 15px;
           }
+
           .views-field-field-show-eu-flag {
             width: 65px;
             height: 65px;
@@ -1117,12 +1334,14 @@ $text-color-lightgreen-2: #9cca00;
             background-size: cover;
             margin-right: 15px;
           }
+
           .titlte-news-events {
             font-size: 1.1em;
             color: $text-color-blue;
           }
         }
-        .events-block-footer-allevents{
+
+        .events-block-footer-allevents {
           display: block;
           clear: both;
           position: relative;
@@ -1130,7 +1349,8 @@ $text-color-lightgreen-2: #9cca00;
           width: auto;
           background: $bg-color-blue;
           border-radius: 5px;
-          a{
+
+          a {
             background: url('/sites/hwc/files/images/custom_blocks/ico-plus-20.png') no-repeat 98.5% 3px $bg-color-blue;
             text-transform: uppercase;
             color: $text-color-white;
@@ -1146,7 +1366,8 @@ $text-color-lightgreen-2: #9cca00;
             float: left;
             margin-top: 1em;
             margin-bottom: 20px;
-            &:hover{
+
+            &:hover {
               color: $text-color-white;
               background: url('/sites/hwc/files/images/custom_blocks/ico-next-20-white-hover.png') no-repeat 98.5% 3px $border-dotted-green-2;
               text-decoration: none;
