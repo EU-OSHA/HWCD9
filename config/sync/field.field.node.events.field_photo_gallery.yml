@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_photo_gallery
-    - node.type.article
     - node.type.events
+    - node.type.flickr_gallery
 id: node.events.field_photo_gallery
 field_name: field_photo_gallery
 entity_type: node
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      article: article
+      flickr_gallery: flickr_gallery
     sort:
       field: _none
       direction: ASC

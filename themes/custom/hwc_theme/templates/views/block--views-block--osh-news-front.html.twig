@@ -18,7 +18,22 @@
           {{ item.title.value }}
           </a>
         </h2>
-        <p>{{ item.field_summary.value|render|striptags|slice(0, 150)|raw ~ '...' }}</p>
+       {# <p>{{ item.field_summary.value|render|striptags|slice(0, 150)|raw ~ '...' }}</p>#}
+        <p>
+          {% set text = item.body.0.value |render|striptags %}
+          {% set summary = item.field_summary.0.value | render|striptags %}
+          {%  if summary %}
+            {{ summary|raw }}
+          {% else %}
+            {{ text|length > 150 ? text|slice(0, 125)|raw ~ '...' : text|raw }}
+          {% endif %}
+        </p>
+
+
+
+
+
+
         <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }}" class="more-link">{{ 'See more'|t }}</a>
       </div>
     </div>
