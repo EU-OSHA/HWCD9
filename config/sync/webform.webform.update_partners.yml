@@ -42,7 +42,6 @@ elements: |-
       '#type': textfield
       '#title': 'Organisation name'
       '#help_title': 'Fields displayed'
-      '#help': 'Fields displayed on campaign site'
       '#help_display': element_after
       '#maxlength': 255
       '#required': true
@@ -62,6 +61,7 @@ elements: |-
       '#type': webform_image_file
       '#title': 'Organisation''s logo'
       '#description': 'Please upload your company logo in .png or .jpg format. The file size must not exceed 1MB. The minimum size for logos is 220x220px.'
+      '#description_display': before
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -86,15 +86,14 @@ elements: |-
       '#title': 'Countries of activity'
       '#multiple': true
       '#description': 'Please select from the list at least three European countries where your Organisation is active.'
-      '#help_title': Fields
-      '#help': 'Fields displayed on campaign site'
-      '#more_title': more
-      '#more': 'Fields displayed on campaign site'
       '#title_display': before
       '#description_display': before
-      '#help_display': title_before
-      '#options': country_names
-      '#sort_options': true
+      '#options':
+        select2-company_osh_osh_appform_osh_country-result-jjzq-AT: AUSTRIA
+        select2-company_osh_osh_appform_osh_country-result-nufh-BE: BELGIUM
+        select2-company_osh_osh_appform_osh_country-result-i5nh-BA: 'BOSNIA AND HERZEGOVINA'
+        select2-company_osh_osh_appform_osh_country-result-ad5x-BG: BULGARIA
+      '#select2': true
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -266,6 +265,7 @@ elements: |-
       '#type': url
       '#title': Homepage
       '#description': 'Organisation&#39;s website.'
+      '#description_display': before
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -316,6 +316,7 @@ elements: |-
       '#type': url
       '#title': 'Dedicated Campaign URL'
       '#description': 'Special web section dealing with issues related to occupational health and safety'
+      '#description_display': before
       '#access_create_roles':
         - anonymous
         - administrator
@@ -328,7 +329,10 @@ elements: |-
       '#type': url
       '#title': 'Social media profiles'
       '#multiple': 10
-      '#description': 'Write the complete URL of the social network'
+      '#description': 'Write the complete URL of your Social Networks'
+      '#title_display': before
+      '#description_display': before
+      '#placeholder': 'Write the complete URL of the social network'
       '#access_create_roles':
         - anonymous
         - administrator
@@ -369,7 +373,7 @@ elements: |-
       '#access_view_roles':
         - anonymous
     ceo_s_surname:
-      '#type': textarea
+      '#type': textfield
       '#title': 'CEO''s surname'
       '#required': true
       '#access_create_roles':
@@ -383,6 +387,7 @@ elements: |-
     ceo_s_photo:
       '#type': webform_image_file
       '#title': 'CEO''s photo'
+      '#description_display': invisible
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -399,6 +404,7 @@ elements: |-
       '#type': textfield
       '#title': 'CEO''s position'
       '#description': 'Please indicate the actual position, such as President, General Director, CEO, Chairman, etc.'
+      '#description_display': before
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -725,6 +731,8 @@ elements: |-
         '#required': true
         '#access_create_roles':
           - anonymous
+          - administrator
+          - campaign_partner
         '#access_update_roles':
           - anonymous
         '#access_view_roles':
@@ -744,6 +752,7 @@ elements: |-
     other_users_info:
       '#type': webform_custom_composite
       '#title': 'Other users'
+      '#multiple': 5
       '#access_create_roles':
         - anonymous
         - administrator
