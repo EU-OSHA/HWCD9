@@ -41,7 +41,11 @@ elements: |-
     organisation_name:
       '#type': textfield
       '#title': 'Organisation name'
+      '#help_title': 'Fields displayed'
+      '#help': 'Fields displayed on campaign site'
+      '#help_display': element_after
       '#maxlength': 255
+      '#required': true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -54,7 +58,6 @@ elements: |-
         - anonymous
         - administrator
         - campaign_partner
-      '#required': true
     organisation_s_logo:
       '#type': webform_image_file
       '#title': 'Organisation''s logo'
@@ -85,8 +88,11 @@ elements: |-
       '#description': 'Please select from the list at least three European countries where your Organisation is active.'
       '#help_title': Fields
       '#help': 'Fields displayed on campaign site'
+      '#more_title': more
+      '#more': 'Fields displayed on campaign site'
       '#title_display': before
       '#description_display': before
+      '#help_display': title_before
       '#options': country_names
       '#sort_options': true
       '#required': true
@@ -649,6 +655,75 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+    new_contact:
+      '#type': webform_flexbox
+      '#states':
+        visible:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#attributes':
+        style: 'background-color:green;'
+      '#format_attributes':
+        style: 'background-color:red;'
+      name_of_main_contact_person_for_the_campaign:
+        '#type': textfield
+        '#title': 'Name of main contact person for the campaign'
+        '#required': true
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+      surname_new:
+        '#type': textfield
+        '#title': Surname
+        '#required': true
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+      position_new:
+        '#type': textfield
+        '#title': Position
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+      telephone_number_new:
+        '#type': webform_telephone
+        '#title': 'Telephone number'
+        '#required': true
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+        '#ext__access': false
+      email_address_new:
+        '#type': email
+        '#title': 'Email address'
+        '#description': 'IMPORTANT: All future communications related to this application will be sent to this address.'
+        '#required': true
+        '#access_create_roles':
+          - anonymous
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
   other_users:
     '#type': webform_section
     '#title': 'Other users'
