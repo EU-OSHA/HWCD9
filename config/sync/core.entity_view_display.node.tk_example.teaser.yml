@@ -11,10 +11,8 @@ dependencies:
     - field.field.node.tk_example.field_image
     - field.field.node.tk_example.field_organisation
     - field.field.node.tk_example.field_publication_date
-    - image.style.media_library
     - node.type.tk_example
   module:
-    - media
     - text
     - user
 id: node.tk_example.teaser
@@ -39,11 +37,11 @@ content:
     weight: 2
     region: content
   field_image:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      image_link: content
-      image_style: media_library
+      view_mode: media_library
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content

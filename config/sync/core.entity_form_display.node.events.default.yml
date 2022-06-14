@@ -53,7 +53,6 @@ dependencies:
     - node.type.events
     - workflows.workflow.news_and_events_created_by_een
   module:
-    - addtocalendar
     - content_moderation
     - datetime_range
     - field_group
@@ -70,7 +69,7 @@ third_party_settings:
       label: Contact
       region: content
       parent_name: ''
-      weight: 43
+      weight: 40
       format_type: fieldset
       format_settings:
         classes: ''
@@ -94,29 +93,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 36
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_activity:
-    type: entity_reference_autocomplete
-    weight: 12
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_add_to_calendar:
-    type: add_to_calendar_widget_type
-    weight: 42
+    weight: 34
     region: content
     settings: {  }
     third_party_settings: {  }
   field_adonis:
     type: string_textfield
-    weight: 22
+    weight: 20
     region: content
     settings:
       size: 60
@@ -124,7 +107,7 @@ content:
     third_party_settings: {  }
   field_agency_contact_reply:
     type: string_textfield
-    weight: 29
+    weight: 27
     region: content
     settings:
       size: 60
@@ -132,7 +115,7 @@ content:
     third_party_settings: {  }
   field_agency_rep_confirmed:
     type: string_textfield
-    weight: 26
+    weight: 24
     region: content
     settings:
       size: 60
@@ -140,13 +123,13 @@ content:
     third_party_settings: {  }
   field_agency_role:
     type: options_select
-    weight: 24
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   field_agenda:
     type: options_select
-    weight: 25
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -160,13 +143,13 @@ content:
     third_party_settings: {  }
   field_color:
     type: options_select
-    weight: 30
+    weight: 28
     region: content
     settings: {  }
     third_party_settings: {  }
   field_contact_email:
     type: string_textfield
-    weight: 16
+    weight: 15
     region: content
     settings:
       size: 60
@@ -174,7 +157,7 @@ content:
     third_party_settings: {  }
   field_contact_name:
     type: string_textfield
-    weight: 14
+    weight: 13
     region: content
     settings:
       size: 60
@@ -182,7 +165,7 @@ content:
     third_party_settings: {  }
   field_contact_phone:
     type: string_textfield
-    weight: 15
+    weight: 14
     region: content
     settings:
       size: 60
@@ -196,13 +179,13 @@ content:
     third_party_settings: {  }
   field_for_the_web:
     type: options_buttons
-    weight: 20
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   field_key_performance:
     type: options_select
-    weight: 21
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -216,13 +199,13 @@ content:
     third_party_settings: {  }
   field_media_promotion:
     type: options_select
-    weight: 28
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }
   field_metatags:
     type: metatag_firehose
-    weight: 40
+    weight: 38
     region: content
     settings:
       sidebar: true
@@ -255,15 +238,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_photo_gallery:
-    type: options_select
-    weight: 18
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_publications_exhibition_su:
     type: options_select
-    weight: 27
+    weight: 25
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -276,21 +253,21 @@ content:
     third_party_settings: {  }
   field_show_eu_flag:
     type: boolean_checkbox
-    weight: 32
+    weight: 30
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_show_in_ncw:
     type: boolean_checkbox
-    weight: 31
+    weight: 29
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_show_on:
     type: options_select
-    weight: 33
+    weight: 31
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -308,7 +285,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete
-    weight: 19
+    weight: 17
     region: content
     settings:
       match_operator: CONTAINS
@@ -324,13 +301,13 @@ content:
     third_party_settings: {  }
   field_unit_ref:
     type: options_select
-    weight: 23
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
   field_website_of_event:
     type: link_default
-    weight: 17
+    weight: 16
     region: content
     settings:
       placeholder_url: 'Website of event.'
@@ -338,39 +315,39 @@ content:
     third_party_settings: {  }
   field_workbench_access:
     type: options_select
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 34
+    weight: 32
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 39
+    weight: 37
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 37
+    weight: 35
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 41
+    weight: 39
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 38
+    weight: 36
     region: content
     settings:
       display_label: true
@@ -385,7 +362,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 35
+    weight: 33
     region: content
     settings:
       match_operator: CONTAINS
@@ -394,6 +371,8 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  field_activity: true
+  field_add_to_calendar: true
   field_agency_initial_contact: true
   field_event_in_amp: true
   field_first_publication_date: true
@@ -403,6 +382,7 @@ hidden:
   field_modified_on: true
   field_notification_comment: true
   field_number_of_attendees: true
+  field_photo_gallery: true
   field_satisfaction_rate: true
   field_wf_notification: true
   field_xmlsitemap: true
