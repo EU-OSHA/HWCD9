@@ -1,0 +1,79 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * This is an copy of the webform.html.twig theme_wrapper which includes the
+ * 'title_prefix' and 'title_suffix' variables needed for
+ * contextual links to appear.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<style>
+  .update-partners-form-wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 25px;
+  }
+</style>
+
+<div class="update-partners-form-wrapper">
+  <div class="navigation-panel">
+    <h3>{{ 'Navigation Panel and Status'|t }}</h3>
+    <ul>
+      <li>
+        <h4>{{ '1. About your organisation'|t }}</h4>
+        <div><span class="s1 s1a"></span> {{ 'About your Organisation'|t }}</div>
+        <div><span class="s1 s1b"></span> {{ 'About your General Contact Information'|t }}</div>
+        <div><span class="s1 s1c"></span> {{ 'About your CEO'|t }}</div>
+        <div><span class="s1 s1d"></span> {{ 'About your Health and Safety Representative'|t }}</div>
+        <div><span class="s1 s1e"></span> {{ 'Your Communication Representative'|t }}</div>
+      </li>
+      <li>
+        <h4>{{ '2. About your involvement'|t }}</h4>
+        <div>{{ 'Your campaign pledge for Publication on Campaign Website'|t }}</div>
+      </li>
+      <li>
+        <h4>{{ '3. About your Main Contact'|t }}</h4>
+        <div>{{ 'About your Main Contact Person'|t }}</div>
+        <div>{{ 'Other users'|t }}</div>
+        <div>{{ ''|t }}</div>
+      </li>
+    </ul>
+
+    <h3>{{ 'Relevant for you'|t }}</h3>
+    <div>
+      <a href="#">&gt; {{ 'See how your data will appear on the Campaign website'|t }}</a>
+    </div>
+
+    <h3>{{ 'Legend'|t }}</h3>
+    <div>
+      <div>{{ 'Required Fields'|t }}*</div>
+      <div>{{ 'Fields displayed on campaign site'|t }}</div>
+      <div>{{ 'Navigation Panel and Status'|t }}</div>
+    </div>
+  </div>
+
+  <div class="content-panel">
+    <form{{ attributes }}>
+      {{ title_prefix }}
+      {{ children }}
+      {{ title_suffix }}
+    </form>
+  </div>
+</div>
+
+{{ attach_library('hwc_forms/hwc_formslib') }}
