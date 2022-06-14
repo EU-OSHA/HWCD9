@@ -226,6 +226,8 @@ elements: |-
       '#required': true
       '#access_create_roles':
         - anonymous
+        - administrator
+        - campaign_partner
       '#access_update_roles':
         - anonymous
       '#access_view_roles':
@@ -237,6 +239,8 @@ elements: |-
       '#required': true
       '#access_create_roles':
         - anonymous
+        - administrator
+        - campaign_partner
       '#access_update_roles':
         - anonymous
       '#access_view_roles':
@@ -265,6 +269,8 @@ elements: |-
       '#required': true
       '#access_create_roles':
         - anonymous
+        - administrator
+        - campaign_partner
       '#access_update_roles':
         - anonymous
       '#access_view_roles':
@@ -662,9 +668,7 @@ elements: |-
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
             checked: true
       '#attributes':
-        style: 'background-color:green;'
-      '#format_attributes':
-        style: 'background-color:red;'
+        style: 'background-color:gray;'
       name_of_main_contact_person_for_the_campaign:
         '#type': textfield
         '#title': 'Name of main contact person for the campaign'
@@ -712,6 +716,7 @@ elements: |-
           - anonymous
         '#access_view_roles':
           - anonymous
+        '#type__access': false
         '#ext__access': false
       email_address_new:
         '#type': email
