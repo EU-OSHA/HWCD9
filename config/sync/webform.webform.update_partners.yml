@@ -13,6 +13,16 @@ title: 'Update partners'
 description: ''
 category: ''
 elements: |-
+  help:
+    '#type': webform_markup
+    '#access_create_roles':
+      - anonymous
+      - administrator
+    '#access_update_roles':
+      - anonymous
+    '#access_view_roles':
+      - anonymous
+    '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help?</a>'
   about_your_organisation:
     '#type': webform_section
     '#title': 'About your organisation'
@@ -28,16 +38,6 @@ elements: |-
       - anonymous
       - administrator
       - campaign_partner
-    help:
-      '#type': webform_markup
-      '#access_create_roles':
-        - anonymous
-        - administrator
-      '#access_update_roles':
-        - anonymous
-      '#access_view_roles':
-        - anonymous
-      '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help?</a>'
     organisation_name:
       '#type': textfield
       '#title': 'Organisation name'
@@ -275,23 +275,6 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    social_media_profiles:
-      '#type': url
-      '#title': 'Social media profiles'
-      '#multiple': 10
-      '#description': 'Write the complete URL of the social network'
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_view_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
     city:
       '#type': textfield
       '#title': City
@@ -341,6 +324,23 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+    social_media_profiles:
+      '#type': url
+      '#title': 'Social media profiles'
+      '#multiple': 10
+      '#description': 'Write the complete URL of the social network'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
   about_your_ceo:
     '#type': webform_section
     '#title': 'About your CEO'
