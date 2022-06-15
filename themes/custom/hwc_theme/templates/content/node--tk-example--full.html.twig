@@ -1,0 +1,51 @@
+
+  {% set label_org = content.field_organisation['#title'] %}
+  {% set org = content.field_organisation.0 %}
+  {% set label_country = content.field_country['#title'] %}
+  {% set country = content.field_country['#items'].entity.name.0.value %}
+  {% set description = content.body.0['#text'] %}
+
+<section class="tk-example-node">
+  <div class="container-full">
+    <div class="row">
+      <section class="section tk-example-content">
+        <div class="group-left">
+          <h2 class="toolkit-h2">{{ label }}</h2>
+          <p class="org">
+            <strong>{{ label_org }}</strong>
+            <span>{{ org }}</span>
+          </p>
+          <p class="country">
+            <strong>{{ label_country }}</strong>
+            <span>{{ country }}</span>
+          </p>
+          <div class="description">
+            {{ description|raw }}
+          </div>
+          {% set links = content.field_external_link['#items'] %}
+          {% set label = content.field_external_link['#title'] %}
+          {% if links|length > 0 %}
+            <div class="show-links">
+              <p class="label">
+                <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  {{ label }}
+                </a>
+               </p>
+              <div class="links-list collapse" id="collapseExample">
+                <ul>
+                  {% for index, link in links %}
+                      <li><a href="{{ link.uri }}">{{ link.title }}</a> </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        <div class="group-right">
+          {{ content.field_image }}
+        </div>
+
+      </section>
+    </div>
+  </div>
+</section>
