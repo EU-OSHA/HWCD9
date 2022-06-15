@@ -1,8 +1,9 @@
-uuid: 9e9df0a6-6895-47e5-bec5-1beedb4030e0
+uuid: 30d5818a-aebc-44c6-8172-d87773e3e207
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.tool_examples_carousel
     - field.field.node.tk_example.body
     - field.field.node.tk_example.field_country
     - field.field.node.tk_example.field_download_pdf
@@ -10,23 +11,24 @@ dependencies:
     - field.field.node.tk_example.field_image
     - field.field.node.tk_example.field_organisation
     - field.field.node.tk_example.field_publication_date
+    - image.style.toolkit_example
     - node.type.tk_example
   module:
-    - datetime
-    - link
+    - media
     - text
     - user
-id: node.tk_example.default
+id: node.tk_example.tool_examples_carousel
 targetEntityType: node
 bundle: tk_example
-mode: default
+mode: tool_examples_carousel
 content:
   body:
-    type: text_default
+    type: text_summary_or_trimmed
     label: hidden
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
-    weight: 101
+    weight: 3
     region: content
   field_country:
     type: entity_reference_label
@@ -34,37 +36,16 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
-    region: content
-  field_download_pdf:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 105
-    region: content
-  field_external_link:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 106
+    weight: 2
     region: content
   field_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: default
-      link: true
+      image_link: content
+      image_style: toolkit_example
     third_party_settings: {  }
-    weight: 104
+    weight: 0
     region: content
   field_organisation:
     type: string
@@ -72,21 +53,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
-    region: content
-  field_publication_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 107
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 4
     region: content
 hidden:
   addtoany: true
@@ -94,5 +66,8 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_download_pdf: true
+  field_external_link: true
+  field_publication_date: true
   langcode: true
   search_api_excerpt: true

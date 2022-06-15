@@ -1,0 +1,10 @@
+uuid: 68746cc1-8d89-412b-a225-f1c65193baac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.tool_examples_carousel
+label: 'tool examples carousel'
+targetEntityType: node
+cache: true

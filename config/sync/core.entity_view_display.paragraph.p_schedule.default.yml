@@ -10,6 +10,7 @@ dependencies:
     - field.field.paragraph.p_schedule.field_speech_title
     - paragraphs.paragraphs_type.p_schedule
   module:
+    - addtocalendar
     - datetime_range
     - file
 id: paragraph.p_schedule.default
@@ -46,9 +47,40 @@ content:
     label: above
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: short
       separator: '-'
-    third_party_settings: {  }
+    third_party_settings:
+      addtocalendar:
+        addtocalendar_settings:
+          style: '0'
+          display_text: 'Add to Calendar'
+          atc_title:
+            field: token
+            tokenized: Title
+          atc_description:
+            field: token
+            tokenized: Description
+          atc_location:
+            field: token
+            tokenized: Location
+          atc_organizer:
+            field: token
+            tokenized: HWC
+          atc_organizer_email:
+            field: token
+            tokenized: hwc@bilbomatica.es
+          atc_date_end:
+            field: token
+            tokenized: ''
+          atc_privacy: public
+          data_secure: auto
+          data_calendars:
+            iCalendar: 0
+            'Google Calendar': 0
+            Outlook: 0
+            'Outlook Online': 0
+            'Yahoo! Calendar': 0
+        addtocalendar_show: 0
     weight: 2
     region: content
   field_speech_title:
@@ -59,4 +91,9 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-hidden: {  }
+hidden:
+  breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  search_api_excerpt: true
