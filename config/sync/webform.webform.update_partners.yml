@@ -89,10 +89,48 @@ elements: |-
       '#title_display': before
       '#description_display': before
       '#options':
-        select2-company_osh_osh_appform_osh_country-result-jjzq-AT: AUSTRIA
-        select2-company_osh_osh_appform_osh_country-result-nufh-BE: BELGIUM
-        select2-company_osh_osh_appform_osh_country-result-i5nh-BA: 'BOSNIA AND HERZEGOVINA'
-        select2-company_osh_osh_appform_osh_country-result-ad5x-BG: BULGARIA
+        AL: ALBANIA
+        AT: AUSTRIA
+        BE: BELGIUM
+        BA: 'BOSNIA AND HERZEGOVINA'
+        BG: BULGARIA
+        HR: CROATIA
+        CY: CYPRUS
+        CZ: 'CZECH REPUBLIC'
+        DK: DENMARK
+        EE: ESTONIA
+        FI: FINLAND
+        FR: FRANCE
+        HU: HUNGARY
+        DE: GERMANY
+        IS: ICELAND
+        GI: GIBRALTAR
+        IE: IRELAND
+        GR: GREECE
+        IT: ITALY
+        KS: KOSOVO
+        LV: LATVIA
+        LI: LIECHTENSTEIN
+        LT: LITHUANIA
+        LU: LUXEMBOURG
+        MT: MALTA
+        MC: MONACO
+        ME: MONTENEGRO
+        NL: NETHERLANDS
+        MK: 'NORTH MACEDONIA'
+        'NO': NORWAY
+        PAN: PAN-EUROPEAN
+        PL: POLAND
+        PT: PORTUGAL
+        RO: ROMANIA
+        RS: SERBIA
+        SK: SLOVAKIA
+        SI: SLOVENIA
+        ES: SPAIN
+        SE: SWEDEN
+        CH: SWITZERLAND
+        TR: TURKEY
+        UK: 'UNITED KINGDOM'
       '#select2': true
       '#required': true
       '#access_create_roles':
@@ -128,9 +166,15 @@ elements: |-
       '#description': 'Please note that your Organisation should be an international or European Organisation with representation and/or network of members in several EU Member States.'
       '#description_display': before
       '#options':
-        'employers organisation': 'Employers'' organisation'
-        HR: 'HR professionals'
-        OSH: 'OSH professionals'
+        1: 'Employers'' organisation'
+        2: 'HR professionals'
+        3: 'OSH professionals'
+        4: 'Private company'
+        5: 'Public institution'
+        6: 'Research organisation'
+        7: 'Trade union'
+        8: 'Civil Society organisation'
+        9: Other
       '#empty_option': 'Select an option'
       '#required': true
       '#access_create_roles':
@@ -151,9 +195,28 @@ elements: |-
       '#description': 'Business sector in which you operate.'
       '#description_display': before
       '#options':
-        'Agriculture fore': 'Agriculture, forestry and fishing'
-        Mining: 'Mining and quarrying'
-        Manufacturing: Manufacturing
+        1: 'Agriculture, forestry and fishing'
+        2: 'Mining and quarrying'
+        3: 'Mining and quarrying'
+        4: 'Electricity, gas, steam and air conditioning supply'
+        5: 'Water supply; sewerage; waste managment and remediation activities'
+        6: Construction
+        7: 'Wholesale and retail trade; repair of motor vehicles and motorcycles'
+        8: 'Transporting and storage'
+        9: 'Accommodation and food service activities'
+        10: 'Information and communication'
+        11: 'Financial and insurance activities'
+        12: 'Real estate activities'
+        13: 'Professional, scientific and technical activities'
+        14: 'Administrative and support service activities'
+        15: 'Public administration and defence; compulsory social security'
+        16: Education
+        17: 'Human health and social work activities'
+        18: 'Arts, entertainment and recreation'
+        19: 'Other services activities'
+        20: 'Activities of households as employers; undifferentiated goods - and services - producing activities of households for own use'
+        21: 'Activities of extraterritorial organisations and bodies'
+        22: Other
       '#empty_option': 'Select an option'
       '#required': true
       '#access_create_roles':
@@ -301,7 +364,7 @@ elements: |-
       '#access_view_roles':
         - anonymous
     general_telephone_number:
-      '#type': tel
+      '#type': webform_telephone
       '#title': 'General telephone number'
       '#required': true
       '#access_create_roles':
@@ -312,6 +375,9 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+      '#type__access': false
+      '#ext__access': false
+      '#phone__international_initial_country': auto
     dedicated_campaign_url:
       '#type': url
       '#title': 'Dedicated Campaign URL'
@@ -605,6 +671,10 @@ elements: |-
       '#type': textfield
       '#title': 'Name of main contact person for the campaign'
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -617,6 +687,10 @@ elements: |-
       '#type': textfield
       '#title': Surname
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -628,6 +702,10 @@ elements: |-
     position:
       '#type': textfield
       '#title': Position
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -640,6 +718,10 @@ elements: |-
       '#type': webform_telephone
       '#title': 'Telephone number'
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -659,6 +741,10 @@ elements: |-
         <br />
         This field cannot be directly changed in the form. If you want to modify it, please, contact EU-OSHA in partners@healthy-workplaces.eu
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
