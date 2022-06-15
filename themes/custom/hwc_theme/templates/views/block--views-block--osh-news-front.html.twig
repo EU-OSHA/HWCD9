@@ -23,7 +23,7 @@
           {% set text = item.body.0.value |render|striptags %}
           {% set summary = item.field_summary.0.value | render|striptags %}
           {%  if summary %}
-            {{ summary|raw }}
+            {{ summary|length > 150 ? summary|slice(0,125)|raw ~ '...' : summary|raw}}
           {% else %}
             {{ text|length > 150 ? text|slice(0, 125)|raw ~ '...' : text|raw }}
           {% endif %}
