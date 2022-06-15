@@ -86,8 +86,6 @@ elements: |-
       '#title': 'Countries of activity'
       '#multiple': true
       '#description': 'Please select from the list at least three European countries where your Organisation is active.'
-      '#title_display': before
-      '#description_display': before
       '#options':
         AL: ALBANIA
         AT: AUSTRIA
@@ -147,7 +145,6 @@ elements: |-
       '#type': textfield
       '#title': 'Other Countries'
       '#description': 'If your Organisation is active in other countries that are not displayed in the list please indicate them in the following field.'
-      '#description_display': before
       '#access_create_roles':
         - anonymous
         - administrator
@@ -164,7 +161,6 @@ elements: |-
       '#type': select
       '#title': 'Organisation type'
       '#description': 'Please note that your Organisation should be an international or European Organisation with representation and/or network of members in several EU Member States.'
-      '#description_display': before
       '#options':
         1: 'Employers'' organisation'
         2: 'HR professionals'
@@ -193,7 +189,6 @@ elements: |-
       '#type': select
       '#title': 'Business Sector'
       '#description': 'Business sector in which you operate.'
-      '#description_display': before
       '#options':
         1: 'Agriculture, forestry and fishing'
         2: 'Mining and quarrying'
@@ -324,20 +319,6 @@ elements: |-
         - anonymous
         - administrator
         - campaign_partner
-    homepage:
-      '#type': url
-      '#title': Homepage
-      '#description': 'Organisation&#39;s website.'
-      '#description_display': before
-      '#required': true
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-      '#access_view_roles':
-        - anonymous
     city:
       '#type': textfield
       '#title': City
@@ -378,11 +359,23 @@ elements: |-
       '#type__access': false
       '#ext__access': false
       '#phone__international_initial_country': auto
+    homepage:
+      '#type': url
+      '#title': Homepage
+      '#description': 'Organisation&#39;s website.'
+      '#required': true
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
     dedicated_campaign_url:
       '#type': url
       '#title': 'Dedicated Campaign URL'
       '#description': 'Special web section dealing with issues related to occupational health and safety'
-      '#description_display': before
       '#access_create_roles':
         - anonymous
         - administrator
