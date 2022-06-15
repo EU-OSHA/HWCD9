@@ -60,7 +60,9 @@ elements: |-
     organisation_s_logo:
       '#type': webform_image_file
       '#title': 'Organisation''s logo'
-      '#description': 'Please upload your company logo in .png or .jpg format. The file size must not exceed 1MB. The minimum size for logos is 220x220px.'
+      '#description': |-
+        Please upload your company logo in .png or .jpg format.<br />
+        The file size must not exceed 1MB. The minimum size for logos is 220x220px.
       '#description_display': before
       '#required': true
       '#access_create_roles':
@@ -463,7 +465,6 @@ elements: |-
       '#type': textfield
       '#title': 'CEO''s position'
       '#description': 'Please indicate the actual position, such as President, General Director, CEO, Chairman, etc.'
-      '#description_display': before
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -477,7 +478,6 @@ elements: |-
       '#type': textarea
       '#title': 'CEO''s quote on the Campaign'
       '#description': 'This quote will be published together with the CEO&rsquo;s photo on the campaign website.'
-      '#description_display': before
       '#required': true
       '#access_create_roles':
         - anonymous
