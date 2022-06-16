@@ -1,0 +1,29 @@
+uuid: 6e15367f-106f-4203-afd4-df5a3ef7ef71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_studies
+    - node.type.priority_area
+    - node.type.publication
+id: node.priority_area.field_case_studies
+field_name: field_case_studies
+entity_type: node
+bundle: priority_area
+label: 'Case studies'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      publication: publication
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

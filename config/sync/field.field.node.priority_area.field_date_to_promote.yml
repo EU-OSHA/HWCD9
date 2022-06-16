@@ -1,0 +1,21 @@
+uuid: 86697cde-b75f-41a3-965a-711ae9f2c41d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_to_promote
+    - node.type.priority_area
+  module:
+    - datetime_range
+id: node.priority_area.field_date_to_promote
+field_name: field_date_to_promote
+entity_type: node
+bundle: priority_area
+label: 'Date to promote'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

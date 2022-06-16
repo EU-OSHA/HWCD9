@@ -1,11 +1,11 @@
-uuid: f2d9f0b3-ec70-4491-b4c0-b524959b1f11
+uuid: 17106548-1231-4a76-97b8-046d6687c99f
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_pa_recommended_resources
-field_name: field_pa_recommended_resources
+id: node.field_policy_briefs
+field_name: field_policy_briefs
 entity_type: node
 type: entity_reference
 settings:
