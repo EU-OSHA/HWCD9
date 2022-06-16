@@ -45,6 +45,9 @@ elements: |-
       '#help_display': element_after
       '#maxlength': 255
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -65,6 +68,9 @@ elements: |-
         The file size must not exceed 1MB. The minimum size for logos is 220x220px.
       '#description_display': before
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -133,6 +139,9 @@ elements: |-
         UK: 'UNITED KINGDOM'
       '#select2': true
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -175,6 +184,9 @@ elements: |-
         9: Other
       '#empty_option': 'Select an option'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -216,6 +228,9 @@ elements: |-
         22: Other
       '#empty_option': 'Select an option'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -252,6 +267,9 @@ elements: |-
       '#title': 'Your Mission Statement'
       '#autocomplete': 'off'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -283,6 +301,9 @@ elements: |-
       '#type': textfield
       '#title': Address
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -296,6 +317,9 @@ elements: |-
       '#title': 'Postal Code'
       '#maxlength': 10
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -309,6 +333,9 @@ elements: |-
       '#title': 'General email Address'
       '#required': true
       '#required_error': 'The field must be a valid email address'
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -325,6 +352,9 @@ elements: |-
       '#type': textfield
       '#title': City
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -338,6 +368,9 @@ elements: |-
       '#title': Country
       '#options': country_names
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -366,6 +399,9 @@ elements: |-
       '#title': Homepage
       '#description': 'Organisation&#39;s website.'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -425,6 +461,9 @@ elements: |-
       '#title': 'CEO''s name'
       '#description': 'Name of your CEO, President, General Director or other.'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -437,6 +476,9 @@ elements: |-
       '#type': textfield
       '#title': 'CEO''s surname'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -450,6 +492,9 @@ elements: |-
       '#title': 'CEO''s photo'
       '#description_display': invisible
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -479,6 +524,9 @@ elements: |-
       '#title': 'CEO''s quote on the Campaign'
       '#description': 'This quote will be published together with the CEO&rsquo;s photo on the campaign website.'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -503,6 +551,9 @@ elements: |-
     name:
       '#type': textfield
       '#title': Name
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -514,6 +565,9 @@ elements: |-
     surname:
       '#type': textfield
       '#title': Surname
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -539,6 +593,9 @@ elements: |-
     email_address:
       '#type': email
       '#title': 'Email address'
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -625,6 +682,9 @@ elements: |-
       '#title_display': none
       '#description_display': before
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -668,6 +728,9 @@ elements: |-
         disabled:
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
             checked: true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -684,6 +747,9 @@ elements: |-
         disabled:
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
             checked: true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -747,17 +813,28 @@ elements: |-
       '#access_view_roles':
         - anonymous
     new_contact:
-      '#type': webform_flexbox
+      '#type': webform_section
+      '#title': 'New contact data'
+      '#title_tag': label
       '#states':
         visible:
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
             checked: true
-      '#attributes':
-        style: 'background-color:gray;'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
       name_of_main_contact_person_for_the_campaign:
         '#type': textfield
         '#title': 'Name of main contact person for the campaign'
         '#required': true
+        '#label_attributes':
+          class:
+            - displayed-campaign
         '#access_create_roles':
           - anonymous
           - administrator
@@ -770,6 +847,9 @@ elements: |-
         '#type': textfield
         '#title': Surname
         '#required': true
+        '#label_attributes':
+          class:
+            - displayed-campaign
         '#access_create_roles':
           - anonymous
           - administrator
@@ -803,6 +883,7 @@ elements: |-
           - anonymous
         '#type__access': false
         '#ext__access': false
+        '#phone__international_initial_country': auto
       email_address_new:
         '#type': email
         '#title': 'Email address'
