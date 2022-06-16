@@ -666,7 +666,6 @@ elements: |-
   your_campaign_pledge_for_publication_on_campaign_website:
     '#type': webform_section
     '#title': 'Your campaign pledge for Publication on Campaign Website'
-    '#description': 'Please, remember that your Campaign Pledge will be visible on the Campaign Website.'
     '#access_create_roles':
       - anonymous
       - administrator
@@ -677,10 +676,9 @@ elements: |-
       - anonymous
     campaign_pledge:
       '#type': textarea
-      '#title': 'Campaign pledge'
-      '#description': '<strong>How does your Organisation plan to contribute to making this campaign a joint success?</strong>'
-      '#title_display': none
-      '#description_display': before
+      '#title': 'How does your Organisation plan to contribute to making this campaign a joint success?'
+      '#description': 'Please, remember that your Campaign Pledge will be visible on the Campaign Website.'
+      '#description_display': after
       '#required': true
       '#label_attributes':
         class:
