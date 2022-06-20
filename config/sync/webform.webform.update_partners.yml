@@ -328,26 +328,6 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    general_email_address:
-      '#type': email
-      '#title': 'General email Address'
-      '#required': true
-      '#required_error': 'The field must be a valid email address'
-      '#label_attributes':
-        class:
-          - displayed-campaign
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_view_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
     city:
       '#type': textfield
       '#title': City
@@ -379,6 +359,26 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+    general_email_address:
+      '#type': email
+      '#title': 'General email Address'
+      '#required': true
+      '#required_error': 'The field must be a valid email address'
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
     general_telephone_number:
       '#type': webform_telephone
       '#title': 'General telephone number'
@@ -812,7 +812,7 @@ elements: |-
         - anonymous
     new_contact:
       '#type': webform_section
-      '#title': 'New contact data'
+      '#title': 'New main contact data'
       '#title_tag': label
       '#states':
         visible:
