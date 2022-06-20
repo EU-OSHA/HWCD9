@@ -312,10 +312,9 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    postal_code:
+    city:
       '#type': textfield
-      '#title': 'Postal Code'
-      '#maxlength': 10
+      '#title': City
       '#required': true
       '#label_attributes':
         class:
@@ -328,9 +327,10 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    city:
+    postal_code:
       '#type': textfield
-      '#title': City
+      '#title': 'Postal Code'
+      '#maxlength': 10
       '#required': true
       '#label_attributes':
         class:
