@@ -1,0 +1,33 @@
+uuid: 56f8f3c7-b5b8-47f7-8414-8e04a01e371f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: priority_area
+label: 'Priority Area'
+type: 'canonical_entities:node'
+pattern: '/about-topic/priority-area/[node:title]'
+selection_criteria:
+  b3b0db09-9330-4118-b9a5-0a963fbea0d2:
+    id: node_type
+    negate: false
+    uuid: b3b0db09-9330-4118-b9a5-0a963fbea0d2
+    context_mapping:
+      node: node
+    bundles:
+      priority_area: priority_area
+  28efd75a-4633-496a-b8c4-fe84851d7c77:
+    id: language
+    negate: false
+    uuid: 28efd75a-4633-496a-b8c4-fe84851d7c77
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language
