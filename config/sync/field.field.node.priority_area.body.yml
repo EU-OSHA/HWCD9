@@ -1,17 +1,17 @@
-uuid: 1a1eae8c-0571-4d02-99e5-534b954ea11d
+uuid: eba0984c-cf55-453e-9c49-e69f226d78b2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.pa_highlights
+    - node.type.priority_area
   module:
     - text
-id: node.pa_highlights.body
+id: node.priority_area.body
 field_name: body
 entity_type: node
-bundle: pa_highlights
-label: Description
+bundle: priority_area
+label: Body
 description: ''
 required: false
 translatable: true

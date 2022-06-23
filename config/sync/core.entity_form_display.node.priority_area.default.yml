@@ -1,0 +1,149 @@
+uuid: 4a0bd896-bc67-42fe-8e34-668306dbc26a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.priority_area.body
+    - field.field.node.priority_area.field_case_studies
+    - field.field.node.priority_area.field_date_to_promote
+    - field.field.node.priority_area.field_digitalisation_priority_ar
+    - field.field.node.priority_area.field_pa_recommended_resources
+    - field.field.node.priority_area.field_policy_briefs
+    - field.field.node.priority_area.field_publications
+    - node.type.priority_area
+  module:
+    - content_moderation
+    - datetime_range
+    - path
+    - text
+id: node.priority_area.default
+targetEntityType: node
+bundle: priority_area
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_case_studies:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_date_to_promote:
+    type: daterange_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_digitalisation_priority_ar:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pa_recommended_resources:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_policy_briefs:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_publications:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

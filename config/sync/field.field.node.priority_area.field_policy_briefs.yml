@@ -1,0 +1,25 @@
+uuid: 2f2a0d35-08bd-4e27-8ac6-020e8ccecb63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_policy_briefs
+    - node.type.priority_area
+id: node.priority_area.field_policy_briefs
+field_name: field_policy_briefs
+entity_type: node
+bundle: priority_area
+label: 'Policy briefs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_references_pa
+      display_name: er_pa_policy_briefs
+      arguments: {  }
+field_type: entity_reference

@@ -33,4 +33,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/about-topic/w*\r\n/about-topic/h*\r\n/about-topic/t*\r\n/about-topic/g*\r\n/about-topic/priority-areas\r\n/about-topic/business-case"
+    pages: "/about-topic/w*\r\n/about-topic/h*\r\n/about-topic/t*\r\n/about-topic/g*\r\n/about-topic/priority-areas\r\n/about-topic/priority-area/*\r\n/about-topic/business-case"
