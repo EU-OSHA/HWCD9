@@ -633,7 +633,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'col-4 py-3'
+          row_class: 'col-3 py-3'
           default_row_class: true
       row:
         type: fields
