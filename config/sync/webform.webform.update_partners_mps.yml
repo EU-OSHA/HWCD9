@@ -96,7 +96,7 @@ elements: |-
       '#description_display': before
       '#options':
         online: Online
-        print: Printª
+        print: Print
         newsletter: Newsletter
         radio: Radio
         tv: Tv

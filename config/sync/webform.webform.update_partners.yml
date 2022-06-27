@@ -361,8 +361,8 @@ elements: |-
     general_email_address:
       '#type': email
       '#title': 'General email Address'
-      '#required': true
-      '#required_error': 'The field must be a valid email address'
+      '#description': 'Please put here the e-mail address that you wish to be displayed on your organisational profile'
+      '#description_display': after
       '#label_attributes':
         class:
           - displayed-campaign
