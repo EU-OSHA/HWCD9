@@ -410,9 +410,14 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    position:
-      '#type': textfield
-      '#title': Position
+    email_address_mc:
+      '#type': email
+      '#title': 'Email address'
+      '#description': |-
+        IMPORTANT: All future communications related to this application will be sent to this address.<br />
+        <br />
+        This field cannot be directly changed in the form. If you want to modify it, please, contact EU-OSHA in partners@healthy-workplaces.eu
+      '#required': true
       '#states':
         disabled:
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
@@ -425,14 +430,9 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    email_address_mc:
-      '#type': email
-      '#title': 'Email address'
-      '#description': |-
-        IMPORTANT: All future communications related to this application will be sent to this address.<br />
-        <br />
-        This field cannot be directly changed in the form. If you want to modify it, please, contact EU-OSHA in partners@healthy-workplaces.eu
-      '#required': true
+    position:
+      '#type': textfield
+      '#title': Position
       '#states':
         disabled:
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
@@ -491,9 +491,11 @@ elements: |-
           - anonymous
         '#access_view_roles':
           - anonymous
-      position_new:
-        '#type': textfield
-        '#title': Position
+      email_address_new:
+        '#type': email
+        '#title': 'Email address'
+        '#description': 'IMPORTANT: All future communications related to this application will be sent to this address.'
+        '#required': true
         '#access_create_roles':
           - anonymous
           - administrator
@@ -502,11 +504,9 @@ elements: |-
           - anonymous
         '#access_view_roles':
           - anonymous
-      email_address_new:
-        '#type': email
-        '#title': 'Email address'
-        '#description': 'IMPORTANT: All future communications related to this application will be sent to this address.'
-        '#required': true
+      position_new:
+        '#type': textfield
+        '#title': Position
         '#access_create_roles':
           - anonymous
           - administrator
