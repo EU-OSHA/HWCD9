@@ -22,7 +22,7 @@ elements: |-
       - anonymous
     '#access_view_roles':
       - anonymous
-    '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help?</a>'
+    '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help ?</a>'
   about_your_organisation:
     '#type': webform_section
     '#title': 'About your Media Outlet'
