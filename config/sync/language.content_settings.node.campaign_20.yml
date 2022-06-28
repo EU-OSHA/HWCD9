@@ -1,0 +1,16 @@
+uuid: cc180555-fbc8-45f2-810a-48b3d3ccf509
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign_20
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.campaign_20
+target_entity_type_id: node
+target_bundle: campaign_20
+default_langcode: site_default
+language_alterable: false
