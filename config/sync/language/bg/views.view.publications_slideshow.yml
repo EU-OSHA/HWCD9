@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_pages_count:
+          alter:
+            text: '{{ field_pages_count }} страници'
+        field_publication_type:
+          alter:
+            text: 'Вид: {{ field_publication_type }}'
+        nothing:
+          alter:
+            text: "<div class=\"container py-4\">\r\n <div class=\"left-column\">{{ field_cover_image }} </div>\r\n <div class=\"right-column\">\r\n  <div>{{ field_publication_date }} {{ field_pages_count }} </div>\r\n  <div>{{ title }}</div>\r\n  <div>{{ field_publication_type }}</div>\r\n  <div> <a href=\"{{ view_node }}\">ВИЖТЕ ОЩЕ</a> </div>\r\n </div>\r\n</div>\r\n"
+  case_studies_slideshow:
+    display_options:
+      fields:
+        field_pages_count:
+          alter:
+            text: '{{ field_pages_count }} страници'
+        nothing:
+          alter:
+            text: "<div class=\"left-column\">\r\n    {{ field_cover_image }} \r\n</div>\r\n<div class=\"right-column\">\r\n    <div class=\"metadata\">\r\n        <span class=\"publication-date\">{{ field_publication_date }}</span>\r\n        <span class=\"pages\">{{ field_pages_count }}</span>\r\n    </div>\r\n    <h2>{{ title }}</h2>\r\n    <p><strong>{{'Type:'|t}} </strong>{{ field_publication_type }}</p>\r\n    <p> <a href=\"{{ view_node }}\" class=\"more-link\">ВИЖТЕ ОЩЕ</a> </p>\r\n</div>"
+  publications_slideshow:
+    display_options:
+      fields:
+        field_pages_count:
+          alter:
+            text: '{{ field_pages_count }} страници'
+        nothing:
+          alter:
+            text: "<div class=\"left-column\">\r\n    {{ field_cover_image }} \r\n</div>\r\n<div class=\"right-column\">\r\n    <div class=\"metadata\">\r\n        <span class=\"publication-date\">{{ field_publication_date }}</span>\r\n        <span class=\"pages\">{{ field_pages_count }}</span>\r\n    </div>\r\n    <h2>{{ title }}</h2>\r\n    <p><strong>{{'Type:'|t}} </strong>{{ field_publication_type }}</p>\r\n    <p> <a href=\"{{ view_node }}\" class=\"more-link\">ВИЖТЕ ОЩЕ</a> </p>\r\n</div>"
