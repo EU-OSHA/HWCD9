@@ -1,0 +1,47 @@
+uuid: 3735020a-7166-4632-ae2a-04fbe057d545
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.campaign_20.body
+    - field.field.node.campaign_20.field_article_type
+    - field.field.node.campaign_20.field_campaign_resources
+    - field.field.node.campaign_20.field_icon
+    - field.field.node.campaign_20.field_resources
+    - field.field.node.campaign_20.field_splash_title
+    - node.type.campaign_20
+  module:
+    - text
+    - user
+id: node.campaign_20.teaser
+targetEntityType: node
+bundle: campaign_20
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_article_type: true
+  field_campaign_resources: true
+  field_icon: true
+  field_resources: true
+  field_splash_title: true
+  langcode: true
+  search_api_excerpt: true

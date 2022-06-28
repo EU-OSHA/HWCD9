@@ -1,0 +1,31 @@
+uuid: f2c3881a-1311-41aa-a937-f0634f15c9b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entity_browser_related_resources
+  module:
+    - views
+name: related_resources_20
+label: 'Related resources 20'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  a464afae-a46b-4f71-8083-600213fe74bd:
+    id: view
+    uuid: a464afae-a46b-4f71-8083-600213fe74bd
+    label: 'Related resources 20-22'
+    weight: 1
+    settings:
+      submit_text: 'Add items'
+      auto_select: false
+      view: entity_browser_related_resources
+      view_display: eb_relres20
