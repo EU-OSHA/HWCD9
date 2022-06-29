@@ -280,21 +280,23 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-        field_copyrigth:
-          id: field_copyrigth
-          table: menu_link_content__field_copyrigth
-          field: field_copyrigth
+        title:
+          id: title
+          table: menu_link_content_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: menu_link_content
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{ link__uri }}'
             absolute: false
             external: false
             replace_spaces: false
@@ -343,23 +345,21 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        title:
-          id: title
-          table: menu_link_content_data
-          field: title
+        field_copyrigth:
+          id: field_copyrigth
+          table: menu_link_content__field_copyrigth
+          field: field_copyrigth
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: menu_link_content
-          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: true
-            path: '{{ link__uri }}'
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false

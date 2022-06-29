@@ -61,7 +61,7 @@ backend: search_api_solr
 backend_config:
   retrieve_data: false
   highlight_data: false
-  site_hash: true
+  site_hash: false
   server_prefix: ''
   domain: generic
   environment: default

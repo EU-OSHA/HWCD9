@@ -4165,11 +4165,8 @@ h2.node__title {
   text-align: left;
   margin-top: 10px;
 }
-.tk-example-node .tk-example-content .group-left .org strong {
-  display: block;
-}
-.tk-example-node .tk-example-content .group-left .country strong {
-  display: block;
+.tk-example-node .tk-example-content .group-left .description .label {
+  margin-bottom: 5px;
 }
 .tk-example-node .tk-example-content .group-left .show-links {
   margin-bottom: 20px;
