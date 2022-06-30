@@ -5,7 +5,8 @@ ldapEntryProvisionServer: osha_write
 drupalAcctProvisionTriggers:
   - drupal_on_login
   - drupal_on_update_create
-ldapEntryProvisionTriggers: {  }
+ldapEntryProvisionTriggers:
+  - ldap_on_login
 orphanedDrupalAcctBehavior: user_cancel_block
 orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
@@ -45,7 +46,6 @@ ldapUserSyncMappings:
       prov_module: ldap_user
       prov_events:
         - create_drupal_user
-        - sync_to_drupal_user
     field-ldap_user_puid_property:
       ldap_attr: dn
       user_attr: '[field.ldap_user_puid_property]'

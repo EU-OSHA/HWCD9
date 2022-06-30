@@ -18,5 +18,5 @@ graylist:
   - search_api.server.default_solr_server
   - swiftmailer.transport
   - system.performance
-graylist_dependents: true
+graylist_dependents: false
 graylist_skip_equal: true

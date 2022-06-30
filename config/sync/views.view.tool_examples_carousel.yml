@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - core.entity_view_mode.node.tool_examples_carousel
     - entityqueue.entity_queue.most_popular_tools_and_examples
     - node.type.tk_example
   module:
@@ -157,10 +156,6 @@ display:
             group_items: {  }
       style:
         type: default
-        options:
-          row_class: item
-          default_row_class: true
-          uses_fields: false
       row:
         type: 'entity:node'
         options:
@@ -280,20 +275,7 @@ display:
             label: ''
             field_identifier: ''
           exposed: false
-      style:
-        type: default
-        options:
-          row_class: item
-          default_row_class: false
-          uses_fields: false
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: tool_examples_carousel
       defaults:
-        style: false
-        row: false
         relationships: false
         sorts: false
       relationships:
@@ -310,7 +292,6 @@ display:
           limit_queue: most_popular_tools_and_examples
       display_description: ''
       display_extenders: {  }
-      block_hide_empty: false
     cache_metadata:
       max-age: -1
       contexts:
