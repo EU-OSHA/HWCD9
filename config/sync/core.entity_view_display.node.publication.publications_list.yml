@@ -114,6 +114,9 @@ content:
 hidden:
   addtoany: true
   breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
   field_activity: true
   field_aditional_resources: true
   field_archived: true
