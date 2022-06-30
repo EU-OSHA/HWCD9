@@ -61,34 +61,22 @@ elements: |-
         - administrator
         - campaign_partner
     organisation_s_logo:
-      '#type': webform_image_file
+      '#type': WebformCroppedImage
       '#title': 'Organisation''s logo'
       '#description': |-
         Please upload your company logo in .png or .jpg format.<br />
         The file size must not exceed 1MB. The minimum size for logos is 220x220px.
+      '#title_display': before
       '#description_display': before
       '#required': true
-      '#label_attributes':
-        class:
-          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
         - campaign_partner
       '#access_update_roles':
         - anonymous
-        - administrator
-        - campaign_partner
       '#access_view_roles':
         - anonymous
-        - administrator
-        - campaign_partner
-      '#file_help': none
-      '#file_preview': 'media_library:image'
-      '#sanitize': true
-      '#button': true
-      '#button__title': 'Upload your logo'
-      '#attachment_image_style': media_library
     countries_of_activity:
       '#type': select
       '#title': 'Countries of activity'
@@ -487,13 +475,10 @@ elements: |-
       '#access_view_roles':
         - anonymous
     ceo_s_photo:
-      '#type': webform_image_file
+      '#type': WebformCroppedImage
       '#title': 'CEO''s photo'
-      '#description_display': invisible
+      '#title_display': before
       '#required': true
-      '#label_attributes':
-        class:
-          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -502,9 +487,6 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-      '#button': true
-      '#button__title': 'Upload your image'
-      '#attachment_image_style': medium_crop_220
     ceo_s_position:
       '#type': textfield
       '#title': 'CEO''s position'

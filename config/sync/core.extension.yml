@@ -165,6 +165,7 @@ module:
   views_year_filter: 0
   webform: 0
   webform_attachment: 0
+  webform_cropped_image: 0
   webform_entity_print: 0
   webform_entity_print_attachment: 0
   webform_node: 0
