@@ -69,5 +69,16 @@
     }
   });
 
+  $(document).ready(function($) {
+    //Move Help button in PHPforms by js
+    if ($("#edit-help")) {
+      $('#edit-help').appendTo('.moved-help-js');
+      $('#edit-help').css('display', 'block');
+    }
+  });
+
 
 })(jQuery, Drupal);
+
+
+
