@@ -1,0 +1,21 @@
+uuid: 59a94fed-f4b1-44ed-b558-0ff0b8cda363
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_title_help_text
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:menu_link_content:598eac8d-2b43-4a7b-9ae2-d5b9e54113dd'
+  node_title_help_text:
+    title_help: ''
+name: 'Priority area'
+type: priority_area
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

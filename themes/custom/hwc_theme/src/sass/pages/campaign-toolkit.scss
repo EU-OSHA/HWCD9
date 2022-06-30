@@ -122,12 +122,17 @@
       }
       .org{
         strong{
-          display: block;
+
         }
       }
       .country{
         strong{
-          display: block;
+
+        }
+      }
+      .description{
+        .label{
+          margin-bottom: 5px;
         }
       }
       .show-links{

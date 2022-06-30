@@ -1,0 +1,30 @@
+uuid: e7118899-60ee-4337-86a7-353f85d1bf7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.landing_menu
+  module:
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__landing_menu_homepage_pa
+theme: hwc_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:landing_menu-homepage_pa'
+settings:
+  id: 'views_block:landing_menu-homepage_pa'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/about-topic/priority-areas"

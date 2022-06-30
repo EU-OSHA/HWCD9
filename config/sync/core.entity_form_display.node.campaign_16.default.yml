@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.related_resources_16
     - field.field.node.campaign_16.body
     - field.field.node.campaign_16.field_article_type
     - field.field.node.campaign_16.field_campaign_resources
@@ -11,6 +12,8 @@ dependencies:
     - field.field.node.campaign_16.field_splash_title
     - node.type.campaign_16
   module:
+    - content_moderation
+    - entity_browser
     - media_library
     - path
     - text
@@ -36,24 +39,24 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_article_type:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 2
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_campaign_resources:
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     weight: 5
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      entity_browser: related_resources_16
+      field_widget_display: label
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
   field_icon:
     type: media_library_widget
@@ -63,14 +66,18 @@ content:
       media_types: {  }
     third_party_settings: {  }
   field_resources:
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     weight: 4
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      entity_browser: related_resources_16
+      field_widget_display: label
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
   field_splash_title:
     type: string_textfield
@@ -127,6 +134,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

@@ -317,6 +317,350 @@ nav.tabs .nav-tabs {
   font-weight: bold;
 }
 
+/* Validate */
+.s {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.s.fail {
+  color: #ca2d2d;
+}
+
+.s.ok {
+  color: green;
+}
+
+/* Menu */
+.update-partners-form-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 25px;
+}
+
+.content-panel {
+  clear: both;
+}
+
+/* End menu top */
+.moved-help-js {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#edit-help {
+  display: none;
+}
+#edit-help a {
+  float: left;
+  font-size: 1.1rem;
+  background: #003399;
+  min-width: 120px;
+  color: #FFF;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#edit-help a:hover {
+  text-decoration: none;
+  background-color: #002266;
+  border-color: #001f5c;
+}
+
+.back a {
+  font-size: 1rem;
+  font-weight: normal;
+  font-weight: bold;
+  background: url(../images/pag-back.png) no-repeat 1px 5px;
+  padding-left: 17px;
+}
+
+/* Menu */
+.update-partners-form-wrapper {
+  padding-top: 1rem;
+}
+.update-partners-form-wrapper .navigation-panel h3 {
+  color: #003399;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
+}
+.update-partners-form-wrapper .navigation-panel h3.first {
+  padding-top: 0;
+}
+.update-partners-form-wrapper .navigation-panel h4 {
+  font-size: 1rem;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+  color: #003399;
+}
+.update-partners-form-wrapper .navigation-panel ul {
+  list-style: none;
+  margin-bottom: 0;
+  border-bottom: 1px dashed #bcd75b;
+  padding-bottom: 1.5rem;
+  padding-left: 2px;
+  padding-right: 0.875rem;
+}
+.update-partners-form-wrapper .navigation-panel ul li {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+}
+.update-partners-form-wrapper .navigation-panel .mandatory {
+  color: #f01f1f;
+  font-weight: bold;
+  padding-left: 8px;
+}
+.update-partners-form-wrapper .navigation-panel .link-relevant:before {
+  content: "> ";
+  float: left;
+  display: inline-block;
+  height: 30px;
+  padding-right: 5px;
+}
+.update-partners-form-wrapper .navigation-panel .img-displayed {
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
+/* Sections */
+.path-webform {
+  /* Fix fieldset heihts to make 2 columns */
+}
+.path-webform section.form-item {
+  width: 100%;
+  float: left;
+  border: 1px solid #bcd75b;
+  border-radius: 5px;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  /* Tables */
+}
+.path-webform section.form-item section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.path-webform section.form-item h2 {
+  font-size: 1.4rem;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #003399;
+}
+.path-webform section.form-item .webform-section-title {
+  width: 97%;
+  font-size: 1.2rem;
+  color: #003399;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #003399;
+}
+.path-webform section.form-item .form-required::after {
+  margin: 0 0 0 0.3em;
+}
+.path-webform section.form-item input {
+  color: #003399 !important;
+  font-size: 0.9rem;
+}
+.path-webform section.form-item .button {
+  cursor: pointer;
+}
+.path-webform section.form-item fieldset {
+  width: 46%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.path-webform section.form-item fieldset fieldset {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0 !important;
+}
+.path-webform section.form-item fieldset fieldset .iti {
+  width: 100%;
+}
+.path-webform section.form-item fieldset.form-item-organisation-s-logo,
+.path-webform section.form-item fieldset.form-item-ceo-s-photo {
+  width: 96%;
+}
+.path-webform section.form-item fieldset.form-item-campaign-pledge,
+.path-webform section.form-item fieldset.form-type-webform-custom-composite,
+.path-webform section.form-item fieldset.form-type-webform-multiple {
+  width: 96%;
+}
+.path-webform section.form-item .webform-multiple-table th {
+  background: #003399;
+  padding: 10px 15px;
+  margin: 0;
+  vertical-align: inherit;
+}
+.path-webform section.form-item .webform-multiple-table td {
+  padding: 10px 5px;
+  margin: 0;
+  vertical-align: inherit;
+}
+.path-webform section.form-item .webform-multiple-table th.webform-multiple-table--handle {
+  display: none;
+}
+.path-webform section.form-item .webform-multiple-table td.webform-multiple-table--handle {
+  display: none;
+}
+.path-webform section.form-item .webform-multiple-table td fieldset {
+  width: 96%;
+  margin-bottom: 0 !important;
+}
+.path-webform section.form-item .webform-multiple-table td input {
+  font-size: 0.9rem;
+  color: #003399;
+}
+.path-webform section.form-item .webform-multiple-table td input[type=image] {
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.path-webform section.form-item .webform-multiple-table td.webform-multiple-table--operations-two,
+.path-webform section.form-item .webform-multiple-table td.webform-multiple-table--operations {
+  width: 75px;
+}
+.path-webform section.form-item label#edit-organisation-s-logo--label {
+  margin-bottom: 0;
+}
+.path-webform section.form-item label, .path-webform section.form-item legend {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.path-webform section.form-item .form-item-name-mc label {
+  width: 225px;
+}
+.path-webform section.form-item .form-item-surname-mc label,
+.path-webform section.form-item .form-item-surname-new label {
+  height: 39px;
+}
+.path-webform section.form-item label.error, .path-webform section.form-item strong.error {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #ca2d2d;
+}
+.path-webform section.form-item label.displayed-campaign {
+  background: url("../images/screen.png") no-repeat 100% 3px;
+  background-size: 17px;
+  padding-right: 23px;
+}
+.path-webform section.form-item .form-check-label {
+  font-size: 0.8rem;
+}
+.path-webform section.form-item .form-check-input {
+  margin-top: 0.35rem;
+}
+.path-webform section.form-item .js-form-item-social-dialogue-partner label {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.path-webform section.form-item label.button {
+  font-weight: normal;
+  font-size: 0.8rem;
+  background: #003399;
+  color: #FFF;
+  margin: 0 0 0.2rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+.path-webform section.form-item label.button:hover {
+  background-color: #002266;
+  border-color: #001f5c;
+}
+.path-webform section.form-item .webform-element-description, .path-webform section.form-item .description {
+  font-size: 0.8rem;
+  color: #333;
+  padding-top: 2px;
+  padding-bottom: 0.5rem;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- {
+  margin-bottom: 1rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- input[type=checkbox], .path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- input[type=radio] {
+  margin-left: 0;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- label {
+  margin-left: 1.3rem;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- .webform-element-description {
+  padding-bottom: 0;
+}
+.path-webform section.form-item .webform-multiple-table table {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.path-webform .form-item-other-countries {
+  height: 130px;
+}
+.path-webform .form-item-business-sector {
+  height: 155px;
+}
+.path-webform .form-item-ceo-s-position {
+  height: 160px;
+}
+.path-webform .form-item-homepage,
+.path-webform .form-item-email-address-mc,
+.path-webform .form-item-email-address-new {
+  clear: both;
+}
+
+.webform-section-wrapper > .description {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+#main-wrapper fieldset select,
+#main-wrapper fieldset .chosen-container-single .chosen-single,
+#main-wrapper fieldset .select2-selection {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 6px 12px;
+  border-radius: 5px !important;
+  border: 1px solid #ced4da;
+  background: url(../images/green-select.png) no-repeat scroll 96% 15px #ffffff !important;
+  width: 100% !important;
+  color: #003399;
+  cursor: pointer;
+  height: 39px;
+  font-size: 0.9rem;
+  box-shadow: unset;
+}
+#main-wrapper fieldset select div b,
+#main-wrapper fieldset .chosen-container-single .chosen-single div b,
+#main-wrapper fieldset .select2-selection div b {
+  display: none;
+}
+#main-wrapper fieldset select li,
+#main-wrapper fieldset .chosen-container-single .chosen-single li,
+#main-wrapper fieldset .select2-selection li {
+  background-color: transparent;
+  margin-top: 1px;
+}
+
+.tabledrag-toggle-weight,
+.form-item-social-media-profiles-add-more-items,
+.form-item-other-users-info-add-more-items {
+  display: none;
+}
+
+.chosen-container-multi {
+  display: none !important;
+}
+
 .row {
   margin: 0;
 }
@@ -4165,11 +4509,8 @@ h2.node__title {
   text-align: left;
   margin-top: 10px;
 }
-.tk-example-node .tk-example-content .group-left .org strong {
-  display: block;
-}
-.tk-example-node .tk-example-content .group-left .country strong {
-  display: block;
+.tk-example-node .tk-example-content .group-left .description .label {
+  margin-bottom: 5px;
 }
 .tk-example-node .tk-example-content .group-left .show-links {
   margin-bottom: 20px;

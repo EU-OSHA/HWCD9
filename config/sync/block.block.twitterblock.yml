@@ -1,0 +1,41 @@
+uuid: c5d4d92e-cda7-4221-a997-ab183772a01f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - twitter_block
+  theme:
+    - hwc_theme
+id: twitterblock
+theme: hwc_theme
+region: sidebar_right
+weight: 0
+provider: null
+plugin: twitter_block
+settings:
+  id: twitter_block
+  label: Twitter
+  label_display: visible
+  provider: twitter_block
+  username: EU_OSHA
+  theme: ''
+  link_color: ''
+  width: ''
+  height: ''
+  chrome:
+    noheader: '0'
+    nofooter: '0'
+    noborders: '0'
+    noscrollbar: '0'
+    transparent: '0'
+  border_color: ''
+  language: ''
+  tweet_limit: '3'
+  related: ''
+  polite: polite
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /media-centre/social-media-centre

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.related_resources_18
     - field.field.node.campaign_18.body
     - field.field.node.campaign_18.field_article_type
     - field.field.node.campaign_18.field_campaign_resources
@@ -11,6 +12,8 @@ dependencies:
     - field.field.node.campaign_18.field_splash_title
     - node.type.campaign_18
   module:
+    - content_moderation
+    - entity_browser
     - path
     - text
 id: node.campaign_18.default
@@ -45,14 +48,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_campaign_resources:
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     weight: 5
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      entity_browser: related_resources_18
+      field_widget_display: label
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
   field_icon:
     type: entity_reference_autocomplete
@@ -65,14 +72,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_resources:
-    type: entity_reference_autocomplete
+    type: entity_browser_entity_reference
     weight: 4
     region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      entity_browser: related_resources_18
+      field_widget_display: label
+      field_widget_edit: false
+      field_widget_remove: true
+      field_widget_replace: false
+      open: true
+      field_widget_display_settings: {  }
+      selection_mode: selection_append
     third_party_settings: {  }
   field_splash_title:
     type: string_textfield

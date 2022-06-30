@@ -1,0 +1,23 @@
+uuid: e9c475c4-11ad-4724-967c-a76c47573eb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.pa_highlights
+  module:
+    - link
+id: node.pa_highlights.field_link
+field_name: field_link
+entity_type: node
+bundle: pa_highlights
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link
