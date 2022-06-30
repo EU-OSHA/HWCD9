@@ -4,7 +4,6 @@
   {% set label_country = content.field_country['#title'] %}
   {% set country = content.field_country['#items'].entity.name.0.value %}
   {% set description = content.body.0['#text'] %}
-
 <section class="tk-example-node">
   <div class="container-full">
     <div class="row">
@@ -12,14 +11,15 @@
         <div class="group-left">
           <h2 class="toolkit-h2">{{ label }}</h2>
           <p class="org">
-            <strong>{{ label_org }}</strong>
+            <strong>{{ label_org }}: </strong>
             <span>{{ org }}</span>
           </p>
           <p class="country">
-            <strong>{{ label_country }}</strong>
+            <strong>{{ label_country }}: </strong>
             <span>{{ country }}</span>
           </p>
           <div class="description">
+            <p class="label"><strong>{{ 'Description'|t }}: </strong></p>
             {{ description|raw }}
           </div>
           {% set links = content.field_external_link['#items'] %}
@@ -42,6 +42,7 @@
           {% endif %}
         </div>
         <div class="group-right">
+          {{ dd( content.field_image.entity ) }}
           {{ content.field_image }}
         </div>
 
