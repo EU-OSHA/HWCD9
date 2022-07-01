@@ -1,0 +1,695 @@
+uuid: 5dee90bb-ef5d-4233-a13b-6511152ebdb1
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: update_partners_fops
+title: 'Update partners FOPs'
+description: ''
+category: ''
+elements: |-
+  help:
+    '#type': webform_markup
+    '#access_create_roles':
+      - anonymous
+      - administrator
+    '#access_update_roles':
+      - anonymous
+    '#access_view_roles':
+      - anonymous
+    '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help ?</a>'
+  about_your_organisation:
+    '#type': webform_section
+    '#title': 'About your organisation'
+    '#access_create_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    '#access_update_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    '#access_view_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    organisation_name:
+      '#type': textfield
+      '#title': 'Organisation name'
+      '#help_title': 'Fields displayed'
+      '#help_display': element_after
+      '#maxlength': 255
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+    organisation_s_logo:
+      '#type': WebformCroppedImage
+      '#title': 'Organisation''s logo'
+      '#description': |-
+        Please upload your company logo in .png or .jpg format.<br />
+        The file size must not exceed 1MB. The minimum size for logos is 220x220px.
+      '#title_display': before
+      '#description_display': before
+      '#required': true
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    organisation_type:
+      '#type': select
+      '#title': 'Organisation type'
+      '#description': 'Please note that your Organisation should be an international or European Organisation with representation and/or network of members in several EU Member States.'
+      '#options':
+        1: 'Employers'' organisation'
+        2: 'HR professionals'
+        3: 'OSH professionals'
+        4: 'Private company'
+        5: 'Public institution'
+        6: 'Research organisation'
+        7: 'Trade union'
+        8: 'Civil Society organisation'
+        9: Other
+      '#empty_option': 'Select an option'
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+    mandate:
+      '#type': textarea
+      '#title': Mandate
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+  about_your_general_contact_information:
+    '#type': webform_section
+    '#title': 'About your General Contact Information'
+    '#access_create_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    '#access_update_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    '#access_view_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    address:
+      '#type': textfield
+      '#title': Address
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    city:
+      '#type': textfield
+      '#title': City
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    postal_code:
+      '#type': textfield
+      '#title': 'Postal Code'
+      '#maxlength': 10
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    country:
+      '#type': select
+      '#title': Country
+      '#options': country_names
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    general_email_address:
+      '#type': email
+      '#title': 'General email Address'
+      '#description_display': after
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+    hwc_website_e_mail_contact:
+      '#type': email
+      '#title': 'HWC website e-mail contact'
+      '#description': 'Please put here the e-mail address that you wish to be displayed on your organisational profile'
+      '#description_display': after
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    general_telephone_number:
+      '#type': webform_telephone
+      '#title': 'General telephone number'
+      '#required': true
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+      '#type__access': false
+      '#ext__access': false
+      '#phone__international_initial_country': auto
+    homepage:
+      '#type': url
+      '#title': Homepage
+      '#description': 'Organisation&#39;s website.'
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    dedicated_campaign_url:
+      '#type': url
+      '#title': 'Dedicated Campaign URL'
+      '#description': 'Special web section dealing with issues related to occupational health and safety'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    social_media_profiles:
+      '#type': url
+      '#title': 'Social media profiles'
+      '#multiple': 10
+      '#description': 'Write the complete URL of your Social Networks'
+      '#title_display': before
+      '#description_display': before
+      '#placeholder': 'Write the complete URL of the social network'
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+  about_your_main_contact_person:
+    '#type': webform_section
+    '#title': 'About your Main Contact Person'
+    '#description': 'For typo mistakes in the contacts related fields insert directly the corrections in the bellow fields.'
+    '#access_create_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    '#access_update_roles':
+      - anonymous
+    '#access_view_roles':
+      - anonymous
+    _i_want_to_change_the_main_contact_for_my_organisation_:
+      '#type': checkbox
+      '#title': ' I want to change the main contact for my organisation.'
+      '#description': 'If you want to change the contact person for your organisation, please click the check box below'
+      '#description_display': before
+      '#wrapper_attributes':
+        style: 'background-color:rgb(171,198,0)'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    name_mc:
+      '#type': textfield
+      '#title': 'Name of main contact person for the campaign'
+      '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    surname_mc:
+      '#type': textfield
+      '#title': Surname
+      '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    telephone_number_mc:
+      '#type': webform_telephone
+      '#title': 'Telephone number'
+      '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+      '#type__access': false
+      '#ext__access': false
+      '#phone__international_initial_country': auto
+    email_address_mc:
+      '#type': email
+      '#title': 'Email address'
+      '#description': |-
+        IMPORTANT: All future communications related to this application will be sent to this address.<br />
+        <br />
+        This field cannot be directly changed in the form. If you want to modify it, please, contact EU-OSHA in partners@healthy-workplaces.eu
+      '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    new_contact:
+      '#type': webform_section
+      '#title': 'New main contact data'
+      '#title_tag': label
+      '#states':
+        visible:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+      name_of_main_contact_person_for_the_campaign:
+        '#type': textfield
+        '#title': 'Name of main contact person for the campaign'
+        '#required': true
+        '#label_attributes':
+          class:
+            - displayed-campaign
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+      surname_new:
+        '#type': textfield
+        '#title': Surname
+        '#required': true
+        '#label_attributes':
+          class:
+            - displayed-campaign
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+      telephone_number_new:
+        '#type': webform_telephone
+        '#title': 'Telephone number'
+        '#required': true
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+        '#type__access': false
+        '#ext__access': false
+        '#phone__international_initial_country': auto
+      email_address_new:
+        '#type': email
+        '#title': 'Email address'
+        '#description': 'IMPORTANT: All future communications related to this application will be sent to this address.'
+        '#required': true
+        '#access_create_roles':
+          - anonymous
+          - administrator
+          - campaign_partner
+        '#access_update_roles':
+          - anonymous
+        '#access_view_roles':
+          - anonymous
+  other_users:
+    '#type': webform_section
+    '#title': 'Other users'
+    '#description': 'Please note that in this section you can add a maximum of 5 additional contacts for your organisation. These new users will be able to make changes to your organisational profile, but the main contact person will always be notified of such changes.'
+    '#access_create_roles':
+      - anonymous
+      - administrator
+      - campaign_partner
+    '#access_update_roles':
+      - anonymous
+    '#access_view_roles':
+      - anonymous
+    other_users_info:
+      '#type': webform_custom_composite
+      '#title': 'Other users'
+      '#multiple': 5
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+      '#element':
+        name_other:
+          '#type': textfield
+          '#title': 'Name of the additional user'
+        email_other:
+          '#type': email
+          '#title': 'Email address of additional user'
+        telephone_other:
+          '#type': tel
+          '#title': 'Telephone of additional user'
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }
