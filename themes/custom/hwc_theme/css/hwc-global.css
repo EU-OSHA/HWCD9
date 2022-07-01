@@ -380,6 +380,9 @@ nav.tabs .nav-tabs {
 .update-partners-form-wrapper {
   padding-top: 1rem;
 }
+.update-partners-form-wrapper .modal {
+  z-index: 99999999;
+}
 .update-partners-form-wrapper .navigation-panel h3 {
   color: #003399;
   font-size: 1.1rem;
@@ -466,6 +469,11 @@ nav.tabs .nav-tabs {
 .path-webform section.form-item input {
   color: #003399 !important;
   font-size: 0.9rem;
+  height: 39px;
+}
+.path-webform section.form-item input.button {
+  color: #FFF !important;
+  font-size: 0.9rem;
 }
 .path-webform section.form-item .button {
   cursor: pointer;
@@ -485,7 +493,7 @@ nav.tabs .nav-tabs {
 .path-webform section.form-item fieldset fieldset .iti {
   width: 100%;
 }
-.path-webform section.form-item fieldset.form-item-organisation-s-logo,
+.path-webform section.form-item fieldset.webformcroppedimage--wrapper,
 .path-webform section.form-item fieldset.form-item-ceo-s-photo {
   width: 96%;
 }
@@ -521,6 +529,7 @@ nav.tabs .nav-tabs {
 }
 .path-webform section.form-item .webform-multiple-table td input[type=image] {
   float: left;
+  height: auto;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -547,7 +556,7 @@ nav.tabs .nav-tabs {
   font-size: 0.8rem;
   color: #ca2d2d;
 }
-.path-webform section.form-item label.displayed-campaign {
+.path-webform section.form-item label.displayed-campaign, .path-webform section.form-item .form-composite legend span {
   background: url("../images/screen.png") no-repeat 100% 3px;
   background-size: 17px;
   padding-right: 23px;
@@ -610,6 +619,8 @@ nav.tabs .nav-tabs {
 .path-webform .form-item-ceo-s-position {
   height: 160px;
 }
+.path-webform .webformcroppedimage--wrapper,
+.path-webform .form-item-countries-of-activity,
 .path-webform .form-item-homepage,
 .path-webform .form-item-email-address-mc,
 .path-webform .form-item-email-address-new {
@@ -623,6 +634,7 @@ nav.tabs .nav-tabs {
 
 #main-wrapper fieldset select,
 #main-wrapper fieldset .chosen-container-single .chosen-single,
+#main-wrapper fieldset .chosen-container-multi ul,
 #main-wrapper fieldset .select2-selection {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -641,14 +653,22 @@ nav.tabs .nav-tabs {
 }
 #main-wrapper fieldset select div b,
 #main-wrapper fieldset .chosen-container-single .chosen-single div b,
+#main-wrapper fieldset .chosen-container-multi ul div b,
 #main-wrapper fieldset .select2-selection div b {
   display: none;
 }
 #main-wrapper fieldset select li,
 #main-wrapper fieldset .chosen-container-single .chosen-single li,
+#main-wrapper fieldset .chosen-container-multi ul li,
 #main-wrapper fieldset .select2-selection li {
   background-color: transparent;
   margin-top: 1px;
+}
+#main-wrapper .chosen-container .chosen-drop {
+  height: 100px;
+}
+#main-wrapper .chosen-container .chosen-drop ul {
+  height: 100px;
 }
 
 .tabledrag-toggle-weight,
@@ -659,6 +679,40 @@ nav.tabs .nav-tabs {
 
 .chosen-container-multi {
   display: none !important;
+}
+
+#edit_countries_of_activity_chosen.chosen-container-multi {
+  display: block !important;
+}
+
+#scroll-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 90%;
+  right: 23%;
+  background-color: #003399;
+  border-radius: 50%;
+  text-decoration: none;
+  transform: translate(0%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1.5s linear;
+}
+#scroll-top:before {
+  content: "";
+  display: block;
+  background: url("../images/anchor-top-v2.png") 6px 8px no-repeat;
+  width: 41px;
+  height: 33px;
+}
+#scroll-top span {
+  display: none;
+}
+
+#scroll-top.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .row {
@@ -4917,6 +4971,107 @@ h2.node__title {
 }
 .private-zone-full-wrapper .private-zone-partner-resource:hover > a {
   background: url(../images/mpp-partner-resources-hover.png) 0 50% no-repeat;
+}
+
+.spotlight-items .view-content {
+  display: flex;
+}
+.spotlight-items .view-content .spotlight-item {
+  display: flex;
+}
+.spotlight-items .view-content .spotlight-item .content {
+  width: 50%;
+}
+.spotlight-items .view-content .spotlight-item .content h3 {
+  font-size: 17px;
+  padding-top: 0;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: 600;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(1) {
+  width: calc(60% + 2rem);
+  height: 100%;
+  background: #a7c600;
+  border-radius: 0 12px 12px 12px;
+  border: 4px solid #a7c600;
+  margin: 0 1rem 0 1rem;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(1) .image {
+  width: calc(50% - 1rem);
+}
+.spotlight-items .view-content .spotlight-item:nth-child(1) .image img {
+  max-width: initial;
+  width: 100%;
+  border-radius: 0px;
+  border: 1px solid #a7c600;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(1) .content {
+  width: calc(50% + 1rem);
+  background: #FFF;
+  padding: 1rem;
+  border-radius: 0 12px 12px 0px;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(2) {
+  width: 30%;
+  flex-direction: column;
+  margin: 0 1rem 0 1rem;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(2) .image {
+  width: 100%;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(2) .image img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #a7c600;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(2) .content {
+  width: 100%;
+  padding: 0 1rem;
+}
+.spotlight-items .view-content .spotlight-item:nth-child(2) .content .description {
+  display: none;
+}
+
+.priority-areas-home p.spotlight-title {
+  background: #a7c600;
+  display: inline-block;
+  padding: 0.6rem 0.5rem;
+  margin: 0 1rem;
+  border-radius: 12px 12px 0 0;
+  width: 38%;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: bold;
+}
+.priority-areas-home p.spotlight-title:before {
+  content: "";
+  width: 2rem;
+  height: 100%;
+  display: inline-block;
+}
+.priority-areas-home .view-content {
+  display: flex;
+}
+.priority-areas-home .view-content .priority-area {
+  width: 30%;
+  margin: 1rem;
+}
+.priority-areas-home .view-content .priority-area .content img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #a7c600;
+}
+.priority-areas-home .view-content .priority-area .content h3 {
+  font-size: 17px;
+  padding-top: 0;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: 600;
+}
+.priority-areas-home .view-content .priority-area .content.grayscale {
+  color: #a5a0a0;
+  filter: grayscale(100%);
 }
 
 /*# sourceMappingURL=hwc-global.css.map */

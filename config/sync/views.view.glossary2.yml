@@ -5,7 +5,9 @@ dependencies:
   config:
     - taxonomy.vocabulary.msd_glossary
   module:
+    - better_exposed_filters
     - taxonomy
+    - text
     - user
 id: glossary2
 label: Glossary2
@@ -21,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Glossary2
+      title: Glossary
       fields:
         name_1:
           id: name_1
@@ -143,7 +145,7 @@ display:
           offset: 0
           items_per_page: 0
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
           reset_button: false
@@ -152,12 +154,26 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: null
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
       access:
         type: perm
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       empty: {  }
       sorts:
@@ -254,7 +270,7 @@ display:
               field: name_1
               rendered: true
               rendered_strip: true
-          row_class: ''
+          row_class: row
           default_row_class: true
       row:
         type: fields
@@ -273,6 +289,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      use_ajax: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -284,12 +301,198 @@ display:
         - url
         - user.permissions
       tags: {  }
-  a_z_list:
-    id: a_z_list
-    display_title: 'A-Z list'
-    display_plugin: block
+  attachment_1:
+    id: attachment_1
+    display_title: Attachment
+    display_plugin: attachment
     position: 2
     display_options:
+      fields:
+        name_1:
+          id: name_1
+          table: taxonomy_term_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 1
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: true
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+      pager:
+        type: none
+        options:
+          offset: 0
       arguments:
         name:
           id: name
@@ -314,11 +517,11 @@ display:
           default_argument_skip_url: false
           summary_options:
             base_path: ''
-            count: true
+            count: false
             override: false
             items_per_page: 25
             inline: true
-            separator: ''
+            separator: ' '
           summary:
             sort_order: asc
             number_of_records: 0
@@ -326,7 +529,7 @@ display:
           specify_validation: true
           validate:
             type: none
-            fail: 'not found'
+            fail: summary
           validate_options: {  }
           glossary: true
           limit: 1
@@ -336,10 +539,45 @@ display:
           break_phrase: false
           add_table: false
           require_value: false
+      style:
+        type: default
+        options:
+          grouping:
+            -
+              field: name_1
+              rendered: true
+              rendered_strip: true
+          row_class: ''
+          default_row_class: true
+      row:
+        type: 'entity:taxonomy_term'
+        options:
+          relationship: none
+          view_mode: default
       defaults:
+        style: false
+        row: false
+        fields: false
         arguments: false
+        header: false
       display_description: ''
+      header:
+        view:
+          id: view
+          table: views
+          field: view
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: view
+          empty: true
+          view_to_insert: 'glossary2:a_z_list'
+          inherit_arguments: false
       display_extenders: {  }
+      displays:
+        default: default
+        glossary: glossary
+      inherit_arguments: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -354,6 +592,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      title: ''
       fields:
         name_1:
           id: name_1
@@ -487,6 +726,70 @@ display:
           separator: ', '
           field_api_classes: false
           convert_spaces: false
+        description__value:
+          id: description__value
+          table: taxonomy_term_field_data
+          field: description__value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: description
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       arguments:
         name:
           id: name
@@ -531,25 +834,45 @@ display:
           break_phrase: false
           add_table: false
           require_value: false
+      style:
+        type: html_list
+        options:
+          grouping:
+            -
+              field: name_1
+              rendered: true
+              rendered_strip: false
+          row_class: row
+          default_row_class: true
+          uses_fields: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: 'entity:taxonomy_term'
+        options:
+          relationship: none
+          view_mode: default
       defaults:
+        title: false
+        style: false
+        row: false
         fields: false
         arguments: false
         header: false
       display_description: ''
-      header:
-        view:
-          id: view
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: view
-          empty: false
-          view_to_insert: 'glossary2:a_z_list'
-          inherit_arguments: false
+      header: {  }
       display_extenders: {  }
-      path: glossary2
+      path: about-topic/glossary-list
+      menu:
+        type: none
+        title: Glossary
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: main
+        parent: 'menu_link_content:239c1ba1-4369-4070-a336-22be55289b0f'
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
