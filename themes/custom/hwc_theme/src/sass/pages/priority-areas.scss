@@ -1,0 +1,115 @@
+.spotlight-items{
+  .view-content{
+    display: flex;
+    .spotlight-item{
+      display: flex;
+      //border: 1px solid #000;
+      .image {
+        img{
+
+        }
+      }
+      .content {
+        width: 50%;
+        h3 {
+          font-size: 17px;
+          padding-top: 0;
+          margin-top: 10px;
+          text-align: left;
+          font-weight: 600;
+        }
+      }
+      &:nth-child(1){
+        width: calc(60% + 2rem);
+        height: 100%;
+        background: #a7c600;
+        border-radius: 0 12px 12px 12px;
+        border: 4px solid #a7c600;
+        margin: 0 1rem 0 1rem;
+        .image{
+          width: calc(50% - 1rem);
+          //margin: 6px 0 6px 6px;
+          img{
+            max-width: initial;
+            width: 100%;
+            border-radius: 0px;
+            border: 1px solid #a7c600;
+          }
+        }
+        .content{
+          width: calc(50% + 1rem);
+          background: #FFF;
+          padding: 1rem;
+          //margin: 6px 6px 6px 0;
+          border-radius: 0 12px 12px 0px;
+        }
+      }
+      &:nth-child(2){
+        width: 30%;
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+        .image{
+          width: 100%;
+          //padding: 1rem 1rem 0 1rem;
+          img{
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #a7c600;
+          }
+        }
+        .content{
+          width: 100%;
+          padding:0 1rem;
+          .description{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+.priority-areas-home{
+  p.spotlight-title {
+    background: #a7c600;
+    display: inline-block;
+    padding: 0.6rem 0.5rem;
+    margin: 0 1rem;
+    border-radius: 12px 12px 0 0;
+    width: 38%;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: bold;
+    &:before{
+      content: '';
+      width: 2rem;
+      height: 100%;
+      display: inline-block;
+    }
+  }
+  .view-content{
+    display: flex;
+    .priority-area{
+      width: 30%;
+      margin: 1rem;
+      .content {
+        img{
+          width: 100%;
+          border-radius: 12px;
+          border: 1px solid #a7c600;
+        }
+        h3 {
+          font-size: 17px;
+          padding-top: 0;
+          margin-top: 10px;
+          text-align: left;
+          font-weight: 600;
+        }
+        &.grayscale {
+          color: #a5a0a0;
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+}
+
