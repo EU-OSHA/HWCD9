@@ -1,0 +1,83 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * This is an copy of the webform.html.twig theme_wrapper which includes the
+ * 'title_prefix' and 'title_suffix' variables needed for
+ * contextual links to appear.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<style>
+  .update-partners-form-wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+  }
+  .s { font-weight: bold; }
+  .s.fail { color: red; }
+  .s.ok { color: green; }
+</style>
+
+<div class="update-partners-form-wrapper">
+  <div class="navigation-panel">
+    <div class="back"><a href="">{{ 'Back to private zone'|t }}</a></div>
+    <div class="moved-help-js">
+      <!-- move here help button by js -->
+    </div>
+    <div class="wrap-menu">
+      <h3 class="first">{{ '1. About your organisation'|t }}</h3>
+      <ul>
+        <li><span class="s s1 s1a"></span> {{ 'About your  organisation'|t }}</li>
+        <li><span class="s s1 s1b"></span> {{ 'About your General Contact Information'|t }}</li>
+      </ul>
+    </div>
+    <div class="wrap-menu">
+      <h3>{{ '2. About your Main Contact'|t }}</h3>
+      <ul>
+        <li><span class="s s3 s3a"></span> {{ 'About your Main Contact Person'|t }}</li>
+        <li><span class="s s3 s3b"></span> {{ 'Other users'|t }}</li>
+      </ul>
+    </div>
+    <div class="wrap-sub-menu">
+      <h3>{{ 'Relevant for you'|t }}</h3>
+      <ul>
+        <li><a target="_blank" class="link-relevant" href="/{{ directory }}/images/OCP_profile_HWC20See how your data will appear on the Campaign website.jpg">{{ 'See how your data will appear on the Campaign website'|t }}</a></li>
+      </ul>
+    </div>
+    <div class="wrap-sub-menu end">
+      <h3>{{ 'Legend'|t }}</h3>
+      <ul>
+        <li>{{ 'Required Fields'|t }}<span class="mandatory"> *</span></li>
+        <li>{{ 'Fields displayed on Campaign site'|t }}<span class="displayed-campaign"><img class="img-displayed" src="/{{ directory }}/images/screen.png" alt="{{ 'Fields displayed on Campaign site'|t }}"></span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-panel">
+    <form{{ attributes }}>
+      {{ title_prefix }}
+      {{ children }}
+      {{ title_suffix }}
+    </form>
+  </div>
+</div>
+<a href="#" id="scroll-top" title="Go to top">
+  <span>{{"Go to top"|t }}</span>
+</a>
+
+{{ attach_library('hwc_forms/hwc_formslib') }}
+{{ attach_library('hwc_forms/update_partner_form_fops') }}
