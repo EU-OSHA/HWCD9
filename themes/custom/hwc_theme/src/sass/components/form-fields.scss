@@ -59,6 +59,9 @@
 /* Menu */
 .update-partners-form-wrapper{
   padding-top: 1rem;
+  .modal{
+    z-index: 99999999;
+  }
   .navigation-panel{
     h3{
       color: $text-color-blue;
@@ -148,7 +151,13 @@
     }
 
     input{
-      color: $text-color-blue!important;
+      color: $text-color-blue !important;
+      font-size: 0.9rem;
+      height: 39px;
+    }
+
+    input.button{
+      color: $text-color-white !important;
       font-size: 0.9rem;
     }
 
@@ -172,7 +181,7 @@
       }
     }
 
-    fieldset.form-item-organisation-s-logo,
+    fieldset.webformcroppedimage--wrapper,
     fieldset.form-item-ceo-s-photo{
       width: 96%;
     }
@@ -214,6 +223,7 @@
         }
         input[type="image"]{
           float: left;
+          height: auto;
           margin-left: 5px;
           margin-right: 5px;
         }
@@ -250,7 +260,7 @@
       color: #ca2d2d;
     }
 
-    label.displayed-campaign{
+    label.displayed-campaign, .form-composite legend span{
       background: url("../images/screen.png") no-repeat 100% 3px;
       background-size: 17px;
       padding-right: 23px;
@@ -323,6 +333,8 @@
   .form-item-ceo-s-position{
     height: 160px;
   }
+  .webformcroppedimage--wrapper,
+  .form-item-countries-of-activity,
   .form-item-homepage,
   .form-item-email-address-mc,
   .form-item-email-address-new{
@@ -341,6 +353,7 @@
   fieldset{
     select,
     .chosen-container-single .chosen-single ,
+    .chosen-container-multi ul,
     .select2-selection{
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -365,6 +378,12 @@
       }
     }
   }
+  .chosen-container .chosen-drop{
+    height: 100px;
+    ul{
+      height: 100px;
+    }
+  }
 }
 
 .tabledrag-toggle-weight,
@@ -375,4 +394,38 @@
 
 .chosen-container-multi{
   display: none !important;
+}
+
+#edit_countries_of_activity_chosen.chosen-container-multi{
+  display: block !important;
+}
+
+#scroll-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 90%;
+  right: 23%;
+  background-color: $bg-color-blue;
+  border-radius: 50%;
+  text-decoration: none;
+  transform:translate(0%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1.5s linear;
+  &:before {
+    content: "";
+    display: block;
+    background: url("../images/anchor-top-v2.png") 6px 8px no-repeat;
+    width: 41px;
+    height: 33px;
+  }
+  span{
+    display:none;
+  }
+}
+
+#scroll-top.active {
+  visibility: visible;
+  opacity: 1;
 }

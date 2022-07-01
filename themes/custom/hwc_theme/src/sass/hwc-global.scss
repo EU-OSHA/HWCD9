@@ -17,6 +17,7 @@
 @import 'components/table';
 @import 'components/share-this';
 
+
 @import 'layout/banner-header';
 @import 'layout/body';
 @import 'layout/common';
@@ -28,6 +29,7 @@
 @import 'layout/related-resources';
 @import 'layout/fulldata';
 
+
 @import 'pages/news-list';
 @import 'pages/publications-list';
 @import 'pages/infographics';
@@ -36,7 +38,7 @@
 @import 'pages/campaign-materials';
 @import 'pages/napo-films';
 @import "pages/private-workbench.scss";
-
+@import 'pages/priority-areas';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/desktop/desktop-responsive';
