@@ -1,3 +1,119 @@
+/* menu campaign toolkit */
+#block-campaigntoolkit{
+  ul{
+    list-style: none;
+  }
+  ul.menu{
+    flex-direction: column;
+    padding: 0;
+    > li{
+      > span,
+      > a{
+        position: relative;
+        border: 2px solid;
+        padding: 10px 35px 10px 15px;
+        display: block;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        &:after {
+          position: absolute;
+          top: 25%;
+          right: 15px;
+          content: "\e250";
+          font-family: "Glyphicons Halflings";
+          float: right;
+          vertical-align: middle;
+        }
+        &.up-arrow{
+          &:after {
+            content: "\e252" !important;
+            font-family: "Glyphicons Halflings";
+            float: right;
+            vertical-align: middle;
+          }
+        }
+      }
+      &:nth-child(1) a {
+        border-color: #10a748;
+        color: #10a748;
+        &.active{
+          background-color: #10a748;
+          color: white;
+        }
+      }
+      &:nth-child(2) span {
+        border-color: #98c93c;
+        color: #98c93c;
+        &.active{
+          background-color: #98c93c;
+          color: white;
+        }
+      }
+      &:nth-child(3) span {
+        border-color: #213097;
+        color: #213097;
+        &.active{
+          background-color: #213097;
+          color: white;
+        }
+      }
+      &:nth-child(4) a {
+        border-color: #10aaaa;
+        color: #10aaaa;
+        &.active{
+          background-color: #10aaaa;
+          color: white;
+        }
+      }
+      ul.submenu-1{
+        padding: 0;
+        > li {
+          > a {
+            text-decoration: none;
+            color: #333333;
+            margin-bottom: 10px;
+            display: block;
+            &:after {
+              content: "\e250";
+              font-family: "Glyphicons Halflings";
+            }
+            &.active{
+              font-weight: bold;
+            }
+          }
+          &.expanded{
+            > a{
+              &:after {
+                content: "\e252";
+                font-family: "Glyphicons Halflings";
+                margin-left: 7px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+      ul.submenu-2{
+        > li {
+          > a {
+            text-decoration: none;
+            color: #333333;
+            margin-bottom: 10px;
+            display: block;
+            &.active{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 /* start toolkit styles */
 .tool-examples-carousel{
   background-color: #f3f3f3;
