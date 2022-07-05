@@ -6,12 +6,14 @@ dependencies:
     - field.field.node.pa_highlights.body
     - field.field.node.pa_highlights.field_image
     - field.field.node.pa_highlights.field_language
+    - field.field.node.pa_highlights.field_link
     - field.field.node.pa_highlights.field_metatags
     - field.field.node.pa_highlights.field_xmlsitemap
+    - image.style.medium
     - node.type.pa_highlights
   module:
-    - languagefield
-    - metatag
+    - link
+    - media
     - text
     - user
 id: node.pa_highlights.default
@@ -24,45 +26,42 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_image:
-    type: entity_reference_label
-    label: above
+    type: media_thumbnail
+    label: hidden
     settings:
-      link: true
+      image_link: ''
+      image_style: medium
     third_party_settings: {  }
-    weight: 105
+    weight: 2
     region: content
-  field_language:
-    type: languagefield_default
-    label: above
+  field_link:
+    type: link
+    label: hidden
     settings:
-      link_to_entity: false
-      format:
-        name: name
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
-    weight: 103
-    region: content
-  field_metatags:
-    type: metatag_empty_formatter
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 102
-    region: content
-  field_xmlsitemap:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_language: true
+  field_metatags: true
+  field_xmlsitemap: true
   langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: 0aed4b7f-8c29-422e-962b-d70d1a08c163
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pa_recommended_resources
+    - node.type.priority_area
+id: node.priority_area.field_pa_recommended_resources
+field_name: field_pa_recommended_resources
+entity_type: node
+bundle: priority_area
+label: 'Recommended Resources'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: entity_references_pa
+      display_name: er_resources
+      arguments: {  }
+field_type: entity_reference

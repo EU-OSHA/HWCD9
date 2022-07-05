@@ -71,6 +71,7 @@ module:
   hwc_backend: 0
   hwc_crm_partners_migration: 0
   hwc_custom_migrations: 0
+  hwc_forms: 0
   hwc_import_export: 0
   hwc_partner: 0
   hwc_partner_cron_migration: 0
@@ -153,6 +154,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  twitter_block: 0
   ultimate_cron: 0
   user: 0
   views_data_export: 0
@@ -163,6 +165,7 @@ module:
   views_year_filter: 0
   webform: 0
   webform_attachment: 0
+  webform_cropped_image: 0
   webform_entity_print: 0
   webform_entity_print_attachment: 0
   webform_node: 0

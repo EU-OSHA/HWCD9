@@ -25,48 +25,57 @@
 <style>
   .update-partners-form-wrapper {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 300px 1fr;
     gap: 25px;
   }
+  .s { font-weight: bold; }
+  .s.fail { color: red; }
+  .s.ok { color: green; }
 </style>
 
 <div class="update-partners-form-wrapper">
   <div class="navigation-panel">
-    <h3>{{ 'Navigation Panel and Status'|t }}</h3>
-    <ul>
-      <li>
-        <h4>{{ '1. About your organisation'|t }}</h4>
-        <div><span class="s1 s1a"></span> {{ 'About your Organisation'|t }}</div>
-        <div><span class="s1 s1b"></span> {{ 'About your General Contact Information'|t }}</div>
-        <div><span class="s1 s1c"></span> {{ 'About your CEO'|t }}</div>
-        <div><span class="s1 s1d"></span> {{ 'About your Health and Safety Representative'|t }}</div>
-        <div><span class="s1 s1e"></span> {{ 'Your Communication Representative'|t }}</div>
-      </li>
-      <li>
-        <h4>{{ '2. About your involvement'|t }}</h4>
-        <div>{{ 'Your campaign pledge for Publication on Campaign Website'|t }}</div>
-      </li>
-      <li>
-        <h4>{{ '3. About your Main Contact'|t }}</h4>
-        <div>{{ 'About your Main Contact Person'|t }}</div>
-        <div>{{ 'Other users'|t }}</div>
-        <div>{{ ''|t }}</div>
-      </li>
-    </ul>
-
-    <h3>{{ 'Relevant for you'|t }}</h3>
-    <div>
-      <a href="#">&gt; {{ 'See how your data will appear on the Campaign website'|t }}</a>
+    <div class="back"><a href="">{{ 'Back to private zone'|t }}</a></div>
+    <div class="moved-help-js">
+      <!-- move here help button by js -->
     </div>
-
-    <h3>{{ 'Legend'|t }}</h3>
-    <div>
-      <div>{{ 'Required Fields'|t }}*</div>
-      <div>{{ 'Fields displayed on campaign site'|t }}</div>
-      <div>{{ 'Navigation Panel and Status'|t }}</div>
+    <div class="wrap-menu">
+      <h3 class="first">{{ '1. About your organisation'|t }}</h3>
+      <ul>
+        <li><span class="s s1 s1a"></span> {{ 'About your Organisation'|t }}</li>
+        <li><span class="s s1 s1b"></span> {{ 'About your General Contact Information'|t }}</li>
+        <li><span class="s s1 s1c"></span> {{ 'About your CEO'|t }}</li>
+        <li><span class="s s1 s1d"></span> {{ 'About your Health and Safety Representative'|t }}</li>
+        <li><span class="s s1 s1e"></span> {{ 'Your Communication Representative'|t }}</li>
+      </ul>
+    </div>
+    <div class="wrap-menu">
+      <h3>{{ '2. About your involvement'|t }}</h3>
+      <ul>
+        <li><span class="s s2 s2a"></span> {{ 'Your campaign pledge for Publication on Campaign Website'|t }}</li>
+      </ul>
+    </div>
+    <div class="wrap-menu end">
+      <h3>{{ '3. About your Main Contact'|t }}</h3>
+      <ul>
+        <li><span class="s s3 s3a"></span> {{ 'About your Main Contact Person'|t }}</li>
+        <li><span class="s s3 s3b"></span> {{ 'Other users'|t }}</li>
+      </ul>
+    </div>
+    <div class="wrap-sub-menu">
+      <h3>{{ 'Relevant for you'|t }}</h3>
+      <ul>
+        <li><a target="_blank" class="link-relevant" href="/{{ directory }}/images/OCP_profile_HWC20See how your data will appear on the Campaign website.jpg">{{ 'See how your data will appear on the Campaign website'|t }}</a></li>
+      </ul>
+    </div>
+    <div class="wrap-sub-menu end">
+      <h3>{{ 'Legend'|t }}</h3>
+      <ul>
+        <li>{{ 'Required Fields'|t }}<span class="mandatory"> *</span></li>
+        <li>{{ 'Fields displayed on Campaign site'|t }}<span class="displayed-campaign"><img class="img-displayed" src="/{{ directory }}/images/screen.png" alt="{{ 'Fields displayed on Campaign site'|t }}"></span></li>
+      </ul>
     </div>
   </div>
-
   <div class="content-panel">
     <form{{ attributes }}>
       {{ title_prefix }}
@@ -75,5 +84,9 @@
     </form>
   </div>
 </div>
+<a href="#" id="scroll-top" title="Go to top">
+  <span>{{"Go to top"|t }}</span>
+</a>
 
 {{ attach_library('hwc_forms/hwc_formslib') }}
+{{ attach_library('hwc_forms/update_partner_form') }}

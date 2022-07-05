@@ -13,6 +13,16 @@ title: 'Update partners'
 description: ''
 category: ''
 elements: |-
+  help:
+    '#type': webform_markup
+    '#access_create_roles':
+      - anonymous
+      - administrator
+    '#access_update_roles':
+      - anonymous
+    '#access_view_roles':
+      - anonymous
+    '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help ?</a>'
   about_your_organisation:
     '#type': webform_section
     '#title': 'About your organisation'
@@ -28,24 +38,16 @@ elements: |-
       - anonymous
       - administrator
       - campaign_partner
-    help:
-      '#type': webform_markup
-      '#access_create_roles':
-        - anonymous
-        - administrator
-      '#access_update_roles':
-        - anonymous
-      '#access_view_roles':
-        - anonymous
-      '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help?</a>'
     organisation_name:
       '#type': textfield
       '#title': 'Organisation name'
       '#help_title': 'Fields displayed'
-      '#help': 'Fields displayed on campaign site'
       '#help_display': element_after
       '#maxlength': 255
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -59,9 +61,13 @@ elements: |-
         - administrator
         - campaign_partner
     organisation_s_logo:
-      '#type': webform_image_file
+      '#type': WebformCroppedImage
       '#title': 'Organisation''s logo'
-      '#description': 'Please upload your company logo in .png or .jpg format. The file size must not exceed 1MB. The minimum size for logos is 220x220px.'
+      '#description': |-
+        Please upload your company logo in .png or .jpg format.<br />
+        The file size must not exceed 1MB. The minimum size for logos is 220x220px.
+      '#title_display': before
+      '#description_display': before
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -69,33 +75,60 @@ elements: |-
         - campaign_partner
       '#access_update_roles':
         - anonymous
-        - administrator
-        - campaign_partner
       '#access_view_roles':
         - anonymous
-        - administrator
-        - campaign_partner
-      '#file_help': none
-      '#file_preview': 'media_library:image'
-      '#sanitize': true
-      '#button': true
-      '#button__title': 'Upload your logo'
-      '#attachment_image_style': media_library
     countries_of_activity:
       '#type': select
       '#title': 'Countries of activity'
       '#multiple': true
       '#description': 'Please select from the list at least three European countries where your Organisation is active.'
-      '#help_title': Fields
-      '#help': 'Fields displayed on campaign site'
-      '#more_title': more
-      '#more': 'Fields displayed on campaign site'
-      '#title_display': before
-      '#description_display': before
-      '#help_display': title_before
-      '#options': country_names
-      '#sort_options': true
+      '#options':
+        AL: ALBANIA
+        AT: AUSTRIA
+        BE: BELGIUM
+        BA: 'BOSNIA AND HERZEGOVINA'
+        BG: BULGARIA
+        HR: CROATIA
+        CY: CYPRUS
+        CZ: 'CZECH REPUBLIC'
+        DK: DENMARK
+        EE: ESTONIA
+        FI: FINLAND
+        FR: FRANCE
+        HU: HUNGARY
+        DE: GERMANY
+        IS: ICELAND
+        GI: GIBRALTAR
+        IE: IRELAND
+        GR: GREECE
+        IT: ITALY
+        KS: KOSOVO
+        LV: LATVIA
+        LI: LIECHTENSTEIN
+        LT: LITHUANIA
+        LU: LUXEMBOURG
+        MT: MALTA
+        MC: MONACO
+        ME: MONTENEGRO
+        NL: NETHERLANDS
+        MK: 'NORTH MACEDONIA'
+        'NO': NORWAY
+        PAN: PAN-EUROPEAN
+        PL: POLAND
+        PT: PORTUGAL
+        RO: ROMANIA
+        RS: SERBIA
+        SK: SLOVAKIA
+        SI: SLOVENIA
+        ES: SPAIN
+        SE: SWEDEN
+        CH: SWITZERLAND
+        TR: TURKEY
+        UK: 'UNITED KINGDOM'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -110,7 +143,6 @@ elements: |-
       '#type': textfield
       '#title': 'Other Countries'
       '#description': 'If your Organisation is active in other countries that are not displayed in the list please indicate them in the following field.'
-      '#description_display': before
       '#access_create_roles':
         - anonymous
         - administrator
@@ -127,13 +159,21 @@ elements: |-
       '#type': select
       '#title': 'Organisation type'
       '#description': 'Please note that your Organisation should be an international or European Organisation with representation and/or network of members in several EU Member States.'
-      '#description_display': before
       '#options':
-        'employers organisation': 'Employers'' organisation'
-        HR: 'HR professionals'
-        OSH: 'OSH professionals'
+        1: 'Employers'' organisation'
+        2: 'HR professionals'
+        3: 'OSH professionals'
+        4: 'Private company'
+        5: 'Public institution'
+        6: 'Research organisation'
+        7: 'Trade union'
+        8: 'Civil Society organisation'
+        9: Other
       '#empty_option': 'Select an option'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -150,13 +190,34 @@ elements: |-
       '#type': select
       '#title': 'Business Sector'
       '#description': 'Business sector in which you operate.'
-      '#description_display': before
       '#options':
-        'Agriculture fore': 'Agriculture, forestry and fishing'
-        Mining: 'Mining and quarrying'
-        Manufacturing: Manufacturing
+        1: 'Agriculture, forestry and fishing'
+        2: 'Mining and quarrying'
+        3: 'Mining and quarrying'
+        4: 'Electricity, gas, steam and air conditioning supply'
+        5: 'Water supply; sewerage; waste managment and remediation activities'
+        6: Construction
+        7: 'Wholesale and retail trade; repair of motor vehicles and motorcycles'
+        8: 'Transporting and storage'
+        9: 'Accommodation and food service activities'
+        10: 'Information and communication'
+        11: 'Financial and insurance activities'
+        12: 'Real estate activities'
+        13: 'Professional, scientific and technical activities'
+        14: 'Administrative and support service activities'
+        15: 'Public administration and defence; compulsory social security'
+        16: Education
+        17: 'Human health and social work activities'
+        18: 'Arts, entertainment and recreation'
+        19: 'Other services activities'
+        20: 'Activities of households as employers; undifferentiated goods - and services - producing activities of households for own use'
+        21: 'Activities of extraterritorial organisations and bodies'
+        22: Other
       '#empty_option': 'Select an option'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -193,6 +254,9 @@ elements: |-
       '#title': 'Your Mission Statement'
       '#autocomplete': 'off'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -224,6 +288,24 @@ elements: |-
       '#type': textfield
       '#title': Address
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+    city:
+      '#type': textfield
+      '#title': City
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -237,65 +319,9 @@ elements: |-
       '#title': 'Postal Code'
       '#maxlength': 10
       '#required': true
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-      '#access_view_roles':
-        - anonymous
-    general_email_address:
-      '#type': email
-      '#title': 'General email Address'
-      '#required': true
-      '#required_error': 'The field must be a valid email address'
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_view_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-    homepage:
-      '#type': url
-      '#title': Homepage
-      '#description': 'Organisation&#39;s website.'
-      '#required': true
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-      '#access_view_roles':
-        - anonymous
-    social_media_profiles:
-      '#type': url
-      '#title': 'Social media profiles'
-      '#multiple': 10
-      '#description': 'Write the complete URL of the social network'
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_view_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-    city:
-      '#type': textfield
-      '#title': City
-      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -309,6 +335,9 @@ elements: |-
       '#title': Country
       '#options': country_names
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -317,10 +346,49 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+    general_email_address:
+      '#type': email
+      '#title': 'General email Address'
+      '#description': 'Please put here the e-mail address that you wish to be displayed on your organisational profile'
+      '#description_display': after
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
     general_telephone_number:
-      '#type': tel
+      '#type': webform_telephone
       '#title': 'General telephone number'
       '#required': true
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
+      '#type__access': false
+      '#ext__access': false
+      '#phone__international_initial_country': auto
+    homepage:
+      '#type': url
+      '#title': Homepage
+      '#description': 'Organisation&#39;s website.'
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -341,6 +409,26 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+    social_media_profiles:
+      '#type': url
+      '#title': 'Social media profiles'
+      '#multiple': 10
+      '#description': 'Write the complete URL of your Social Networks'
+      '#title_display': before
+      '#description_display': before
+      '#placeholder': 'Write the complete URL of the social network'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_view_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
   about_your_ceo:
     '#type': webform_section
     '#title': 'About your CEO'
@@ -360,6 +448,9 @@ elements: |-
       '#title': 'CEO''s name'
       '#description': 'Name of your CEO, President, General Director or other.'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -369,9 +460,12 @@ elements: |-
       '#access_view_roles':
         - anonymous
     ceo_s_surname:
-      '#type': textarea
+      '#type': textfield
       '#title': 'CEO''s surname'
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -381,8 +475,9 @@ elements: |-
       '#access_view_roles':
         - anonymous
     ceo_s_photo:
-      '#type': webform_image_file
+      '#type': WebformCroppedImage
       '#title': 'CEO''s photo'
+      '#title_display': before
       '#required': true
       '#access_create_roles':
         - anonymous
@@ -392,9 +487,6 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-      '#button': true
-      '#button__title': 'Upload your image'
-      '#attachment_image_style': medium_crop_220
     ceo_s_position:
       '#type': textfield
       '#title': 'CEO''s position'
@@ -412,8 +504,10 @@ elements: |-
       '#type': textarea
       '#title': 'CEO''s quote on the Campaign'
       '#description': 'This quote will be published together with the CEO&rsquo;s photo on the campaign website.'
-      '#description_display': before
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -438,6 +532,9 @@ elements: |-
     name:
       '#type': textfield
       '#title': Name
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -449,6 +546,9 @@ elements: |-
     surname:
       '#type': textfield
       '#title': Surname
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -474,6 +574,9 @@ elements: |-
     email_address:
       '#type': email
       '#title': 'Email address'
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -544,7 +647,6 @@ elements: |-
   your_campaign_pledge_for_publication_on_campaign_website:
     '#type': webform_section
     '#title': 'Your campaign pledge for Publication on Campaign Website'
-    '#description': 'Please, remember that your Campaign Pledge will be visible on the Campaign Website.'
     '#access_create_roles':
       - anonymous
       - administrator
@@ -555,11 +657,13 @@ elements: |-
       - anonymous
     campaign_pledge:
       '#type': textarea
-      '#title': 'Campaign pledge'
-      '#description': '<strong>How does your Organisation plan to contribute to making this campaign a joint success?</strong>'
-      '#title_display': none
-      '#description_display': before
+      '#title': 'How does your Organisation plan to contribute to making this campaign a joint success?'
+      '#description': 'Please, remember that your Campaign Pledge will be visible on the Campaign Website.'
+      '#description_display': after
       '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -599,6 +703,13 @@ elements: |-
       '#type': textfield
       '#title': 'Name of main contact person for the campaign'
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -611,6 +722,13 @@ elements: |-
       '#type': textfield
       '#title': Surname
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -622,6 +740,10 @@ elements: |-
     position:
       '#type': textfield
       '#title': Position
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -634,6 +756,10 @@ elements: |-
       '#type': webform_telephone
       '#title': 'Telephone number'
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -653,6 +779,10 @@ elements: |-
         <br />
         This field cannot be directly changed in the form. If you want to modify it, please, contact EU-OSHA in partners@healthy-workplaces.eu
       '#required': true
+      '#states':
+        disabled:
+          ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
+            checked: true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -662,17 +792,28 @@ elements: |-
       '#access_view_roles':
         - anonymous
     new_contact:
-      '#type': webform_flexbox
+      '#type': webform_section
+      '#title': 'New main contact data'
+      '#title_tag': label
       '#states':
         visible:
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
             checked: true
-      '#attributes':
-        style: 'background-color:gray;'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
       name_of_main_contact_person_for_the_campaign:
         '#type': textfield
         '#title': 'Name of main contact person for the campaign'
         '#required': true
+        '#label_attributes':
+          class:
+            - displayed-campaign
         '#access_create_roles':
           - anonymous
           - administrator
@@ -685,6 +826,9 @@ elements: |-
         '#type': textfield
         '#title': Surname
         '#required': true
+        '#label_attributes':
+          class:
+            - displayed-campaign
         '#access_create_roles':
           - anonymous
           - administrator
@@ -718,6 +862,7 @@ elements: |-
           - anonymous
         '#type__access': false
         '#ext__access': false
+        '#phone__international_initial_country': auto
       email_address_new:
         '#type': email
         '#title': 'Email address'
@@ -725,6 +870,8 @@ elements: |-
         '#required': true
         '#access_create_roles':
           - anonymous
+          - administrator
+          - campaign_partner
         '#access_update_roles':
           - anonymous
         '#access_view_roles':
@@ -744,6 +891,7 @@ elements: |-
     other_users_info:
       '#type': webform_custom_composite
       '#title': 'Other users'
+      '#multiple': 5
       '#access_create_roles':
         - anonymous
         - administrator

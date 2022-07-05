@@ -69,5 +69,32 @@
     }
   });
 
+  $(document).ready(function($) {
+    //Move Help button in PHPforms by js
+    if ($("#edit-help")) {
+      $('#edit-help').appendTo('.moved-help-js');
+      $('#edit-help').css('display', 'block');
+    }
+
+    //Delete body scrolldown class to show header
+    $('#scroll-top').click(function() {
+      $('body').removeClass('scrolldown');
+    });
+
+
+  });
+
+  //Add class active to anchor top when scroll down
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 150) {
+      $('#scroll-top').addClass('active');
+    } else {
+      $('#scroll-top').removeClass('active');
+    }
+  });
+
 
 })(jQuery, Drupal);
+
+
+

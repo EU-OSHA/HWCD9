@@ -1,0 +1,16 @@
+uuid: 1358aff4-b90b-4c82-85fc-79a64755738a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.priority_area
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.priority_area
+target_entity_type_id: node
+target_bundle: priority_area
+default_langcode: site_default
+language_alterable: false

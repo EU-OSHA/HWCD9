@@ -1,0 +1,21 @@
+uuid: d52e1d33-a276-4fea-9f92-7049e5ad3c9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_title_help_text
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  node_title_help_text:
+    title_help: ''
+name: 'Article Campaign 20'
+type: campaign_20
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.entity_browser_additional_resources
+    - views.view.entity_browser_related_resources
   module:
     - views
 name: articles_additional_resources
@@ -27,5 +27,5 @@ widgets:
     settings:
       submit_text: Submit
       auto_select: false
-      view: entity_browser_additional_resources
-      view_display: entity_browser_1
+      view: entity_browser_related_resources
+      view_display: eb_relres23
