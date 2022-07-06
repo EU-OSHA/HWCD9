@@ -3447,7 +3447,7 @@ display:
       pager:
         type: none
         options:
-          offset: 0
+          offset: 2
       sorts:
         changed:
           id: changed
