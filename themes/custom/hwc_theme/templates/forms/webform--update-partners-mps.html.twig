@@ -22,17 +22,6 @@
  */
 #}
 
-<style>
-  .update-partners-form-wrapper {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 25px;
-  }
-  .s { font-weight: bold; }
-  .s.fail { color: red; }
-  .s.ok { color: green; }
-</style>
-
 <div class="update-partners-form-wrapper">
   <div class="navigation-panel">
     <div class="back"><a href="">{{ 'Back to private zone'|t }}</a></div>
@@ -42,22 +31,22 @@
     <div class="wrap-menu">
       <h3 class="first">{{ '1. About your Media Outlet'|t }}</h3>
       <ul>
-        <li><span class="s s1 s1a"></span> {{ 'About your Media Outlet'|t }}</li>
-        <li><span class="s s1 s1b"></span> {{ 'About your General Contact Information'|t }}</li>
-        <li><span class="s s1 s1c"></span> {{ 'Editor in Chief'|t }}</li>
+        <li><span class="s s1 s1a"></span> <a href="#edit-about-your-organisation">{{ 'About your Media Outlet'|t }}</a></li>
+        <li><span class="s s1 s1b"></span> <a href="#edit-about-your-general-contact-information">{{ 'About your General Contact Information'|t }}</a></li>
+        <li><span class="s s1 s1c"></span> <a href="#edit-about-your-ceo">{{ 'Editor in Chief'|t }}</a></li>
       </ul>
     </div>
     <div class="wrap-menu">
       <h3>{{ '2. About your involvement'|t }}</h3>
       <ul>
-        <li><span class="s s2 s2a"></span> {{ 'Your campaign Contribution'|t }}</li>
+        <li><span class="s s2 s2a"></span> <a href="#edit-your-campaign-pledge-for-publication-on-campaign-website">{{ 'Your campaign Contribution'|t }}</a></li>
       </ul>
     </div>
     <div class="wrap-menu end">
       <h3>{{ '3. About your Main Contact'|t }}</h3>
       <ul>
-        <li><span class="s s3 s3a"></span> {{ 'About your Main Contact Person'|t }}</li>
-        <li><span class="s s3 s3b"></span> {{ 'Other users'|t }}</li>
+        <li><span class="s s3 s3a"></span> <a href="#edit-about-your-main-contact-person">{{ 'About your Main Contact Person'|t }}</a></li>
+        <li><span class="s s3 s3b"></span> <a href="#edit-other-users">{{ 'Other users'|t }}</a></li>
       </ul>
     </div>
     <div class="wrap-sub-menu">

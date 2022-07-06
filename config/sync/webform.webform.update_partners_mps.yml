@@ -264,7 +264,7 @@ elements: |-
         - campaign_partner
   about_your_ceo:
     '#type': webform_section
-    '#title': 'About your Editor'
+    '#title': 'Editor in Chief'
     '#access_create_roles':
       - anonymous
       - administrator
