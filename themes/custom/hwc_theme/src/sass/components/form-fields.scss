@@ -89,6 +89,12 @@
         display: flex;
         padding-top: 0.5rem;
         padding-left: 0.3rem;
+        a{
+          color: #212529;
+          &:hover{
+            text-decoration: none;
+          }
+        }
       }
     }
     .mandatory{
@@ -351,8 +357,6 @@
   .webform-submission-update-partners-fops-form{
     .form-item-homepage,
     .form-item-email-address-mc{
-      clear: none;
-      clear: none;
       clear: none;
     }
   }

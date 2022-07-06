@@ -411,6 +411,12 @@ nav.tabs .nav-tabs {
   padding-top: 0.5rem;
   padding-left: 0.3rem;
 }
+.update-partners-form-wrapper .navigation-panel ul li a {
+  color: #212529;
+}
+.update-partners-form-wrapper .navigation-panel ul li a:hover {
+  text-decoration: none;
+}
 .update-partners-form-wrapper .navigation-panel .mandatory {
   color: #f01f1f;
   font-weight: bold;
@@ -632,8 +638,6 @@ nav.tabs .nav-tabs {
 
 .path-webform .webform-submission-update-partners-fops-form .form-item-homepage,
 .path-webform .webform-submission-update-partners-fops-form .form-item-email-address-mc {
-  clear: none;
-  clear: none;
   clear: none;
 }
 

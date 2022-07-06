@@ -1,0 +1,29 @@
+uuid: 4a5b61f7-7db7-4c3b-bf95-4d09a97361e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.napo_films
+  module:
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__napo_films_napo_films_cards
+theme: hwc_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:napo_films-napo_films_cards'
+settings:
+  id: 'views_block:napo_films-napo_films_cards'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tools-and-publications/napo-films
