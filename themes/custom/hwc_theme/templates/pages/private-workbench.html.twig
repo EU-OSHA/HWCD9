@@ -3,11 +3,11 @@
   <div class="private-partner-wrapper">
     <div class="private-box private-zone-act-partner">
     {% if masquerade_access == TRUE %}
-      <a href="#">{{  'Act as a partner'|t }}</a>
+      <a href="javascript:">{{  'Act as a partner'|t }}</a>
     {% endif %}
     </div>
-    <div class="private-zone-act-partner-inside">
-      <div class="act-partner-switcher hidden" aria-expanded="true">
+    <div class="private-zone-act-partner-inside hidden">
+      <div class="act-partner-switcher" aria-expanded="true">
         <div class="act-partner-text-wrapper">
           {{ masquerade }}
           <div id="edit-hint" class="form-item form-type-item form-group">
