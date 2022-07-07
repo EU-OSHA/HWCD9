@@ -20,14 +20,14 @@
       {% set nodeloaded = drupal_entity('node', nid ) %}
       {% set imageW = nodeloaded['#node'].field_image.0.entity.field_media_image.0.width %}
       {% set imageH = nodeloaded['#node'].field_image.0.entity.field_media_image.0.height %}
-      {% set urlImg = nodeloaded['#node'].field_image.0.entity.field_media_image.0.entity.uri.0.value|file_url  %}
+      {% set urlImg = nodeloaded['#node'].field_image.0.entity.field_media_image.0.entity.uri.0.value|image_style('toolkit') |file_url %}
       {% set nodeTitle = nodeloaded['#node'].title.0.value  %}
       {% set summary = nodeloaded['#node'].body.entity.body.0.summary  %}
       {% set urlNode = nodeloaded['#node'].nid.0.value  %}
       <article class="tk-article-node">
         <div class="group-left">
           <a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">
-            <img src=" {{ urlImg }}" width="{{ imageW }}" height="{{ imageH }}" >
+            <img src="{{ urlImg }}"  >
           </a>
         </div>
         <div class="group-right">

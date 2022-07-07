@@ -2366,7 +2366,6 @@ h2.node__title {
 
 /* Colors */
 /* End Colors */
-/* end /private_workbench */
 /* /good-practice-exchange-platform */
 .block-facet-blocktype-of-partner {
   position: absolute;
@@ -4784,17 +4783,21 @@ h2.node__title {
   color: white;
 }
 #block-campaigntoolkit ul.menu > li ul.submenu-1 {
-  padding: 0;
+  padding: 0 0 0 15px;
 }
 #block-campaigntoolkit ul.menu > li ul.submenu-1 > li > a {
   text-decoration: none;
   color: #333333;
   margin-bottom: 10px;
+  padding: 0;
   display: block;
 }
 #block-campaigntoolkit ul.menu > li ul.submenu-1 > li > a:after {
   content: "";
   font-family: "Glyphicons Halflings";
+  position: relative;
+  top: 3px;
+  left: 7px;
 }
 #block-campaigntoolkit ul.menu > li ul.submenu-1 > li > a.active {
   font-weight: bold;
@@ -4802,13 +4805,20 @@ h2.node__title {
 #block-campaigntoolkit ul.menu > li ul.submenu-1 > li.expanded > a:after {
   content: "";
   font-family: "Glyphicons Halflings";
-  margin-left: 7px;
   vertical-align: middle;
+  top: 0;
+}
+#block-campaigntoolkit ul.menu > li ul.submenu-2 {
+  padding: 0 0 0 30px;
+}
+#block-campaigntoolkit ul.menu > li ul.submenu-2 > li {
+  padding: 0;
 }
 #block-campaigntoolkit ul.menu > li ul.submenu-2 > li > a {
   text-decoration: none;
   color: #333333;
   margin-bottom: 10px;
+  padding: 0;
   display: block;
 }
 #block-campaigntoolkit ul.menu > li ul.submenu-2 > li > a.active {
@@ -5046,7 +5056,7 @@ h2.node__title {
   padding: 0 1em;
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  flex: 1 1 0;
 }
 .tk-article-node .group-right h2 {
   width: 75%;

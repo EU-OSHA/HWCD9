@@ -71,16 +71,20 @@
         }
       }
       ul.submenu-1{
-        padding: 0;
+        padding: 0 0 0 15px;
         > li {
           > a {
             text-decoration: none;
             color: #333333;
             margin-bottom: 10px;
+            padding: 0;
             display: block;
             &:after {
               content: "\e250";
               font-family: "Glyphicons Halflings";
+              position: relative;
+              top: 3px;
+              left: 7px;
             }
             &.active{
               font-weight: bold;
@@ -91,19 +95,22 @@
               &:after {
                 content: "\e252";
                 font-family: "Glyphicons Halflings";
-                margin-left: 7px;
                 vertical-align: middle;
+                top: 0;
               }
             }
           }
         }
       }
       ul.submenu-2{
+        padding: 0 0 0 30px;
         > li {
+          padding: 0;
           > a {
             text-decoration: none;
             color: #333333;
             margin-bottom: 10px;
+            padding: 0;
             display: block;
             &.active{
               font-weight: bold;
@@ -349,7 +356,7 @@
     padding: 0 1em;
     display:flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 1 1 0;
     h2{
       width: 75%;
       margin-bottom: 30px;
