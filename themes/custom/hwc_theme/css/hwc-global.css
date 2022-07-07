@@ -2366,223 +2366,6 @@ h2.node__title {
 
 /* Colors */
 /* End Colors */
-/* /private_workbench */
-.private-zone-full-wrapper {
-  justify-content: center;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 1rem 0 3rem;
-  clear: both;
-  position: relative;
-}
-@media (max-width: 400px) {
-  .private-zone-full-wrapper {
-    display: grid;
-  }
-}
-.private-zone-full-wrapper .private-zone-act-partner {
-  text-align: right;
-  background: transparent;
-  border: 2px solid #bcd75b;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 15px;
-  font-weight: 600;
-  min-height: 130px;
-  max-height: 130px;
-  position: relative;
-  width: 260px;
-  margin: 2em 20px;
-}
-@media (max-width: 1530px) {
-  .private-zone-full-wrapper .private-zone-act-partner {
-    width: 330px;
-  }
-}
-@media (max-width: 1199px) {
-  .private-zone-full-wrapper .private-zone-act-partner {
-    width: 270px;
-  }
-}
-@media (max-width: 400px) {
-  .private-zone-full-wrapper .private-zone-act-partner {
-    width: 250px;
-  }
-}
-.private-zone-full-wrapper .private-zone-act-partner a {
-  height: 100%;
-  font-weight: bold;
-  color: #003399;
-  font-size: 1em;
-  padding: 0 1em 0 100px;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  font-style: normal;
-  background: url("/sites/hwc/files/images/custom_blocks/pz-news.png") 0 50% no-repeat;
-  background-position: left 15px top 30px;
-}
-.private-zone-full-wrapper .private-zone-act-partner a:hover {
-  text-decoration: none;
-  filter: brightness(0) invert(1);
-  border: 0 solid transparent;
-}
-.private-zone-full-wrapper .private-zone-act-partner:hover {
-  color: #FFFFFF;
-  background: #003399;
-  text-decoration: none;
-  border: 0 solid #003399;
-}
-.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher {
-  margin-bottom: 450px;
-}
-.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper {
-  position: absolute;
-  top: 170px;
-  left: 25px;
-  width: 250px;
-  text-align: center;
-}
-.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper p {
-  color: #59595A;
-  margin-bottom: 0;
-}
-.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper .form-actions {
-  margin-bottom: 0 !important;
-}
-.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper fieldset select {
-  display: block;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border: 1px solid #cccccc;
-  width: 240px !important;
-  margin-top: 1em;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  text-align: center;
-  background: unset !important;
-}
-.private-zone-full-wrapper .private-zone-act-partner-inside .act-partner-switcher .act-partner-text-wrapper .form-item {
-  color: #59595A;
-}
-.private-zone-full-wrapper .private-zone-exchange-platform {
-  text-align: right;
-  background: transparent;
-  border: 2px solid #bcd75b;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 15px;
-  font-weight: 600;
-  min-height: 130px;
-  max-height: 130px;
-  position: relative;
-  width: 260px;
-  margin: 2em 20px;
-}
-.private-zone-full-wrapper .private-zone-exchange-platform a {
-  height: 100%;
-  font-weight: bold;
-  color: #003399;
-  font-size: 1em;
-  padding: 0 1em 0 105px;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  font-style: normal;
-  background: url("/sites/hwc/files/images/custom_blocks/pz-good-practice.png") 0 50% no-repeat;
-  background-position: left 15px top 30px;
-}
-.private-zone-full-wrapper .private-zone-exchange-platform a:hover {
-  text-decoration: none;
-  filter: brightness(0) invert(1);
-  border: 0 solid transparent;
-}
-.private-zone-full-wrapper .private-zone-exchange-platform:hover {
-  color: #FFFFFF;
-  background: #003399;
-  text-decoration: none;
-  border: 0 solid #003399;
-}
-@media (max-width: 1530px) {
-  .private-zone-full-wrapper .private-zone-exchange-platform {
-    width: 330px;
-  }
-}
-@media (max-width: 1199px) {
-  .private-zone-full-wrapper .private-zone-exchange-platform {
-    width: 270px;
-  }
-}
-@media (max-width: 400px) {
-  .private-zone-full-wrapper .private-zone-exchange-platform {
-    width: 250px;
-  }
-}
-.private-zone-full-wrapper .private-zone-partner-resource {
-  text-align: right;
-  background: transparent;
-  border: 2px solid #bcd75b;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 15px;
-  font-weight: 600;
-  min-height: 130px;
-  max-height: 130px;
-  position: relative;
-  width: 260px;
-  margin: 2em 20px;
-}
-.private-zone-full-wrapper .private-zone-partner-resource a {
-  height: 100%;
-  font-weight: bold;
-  color: #003399;
-  font-size: 1em;
-  padding: 0 1em 0 100px;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  font-style: normal;
-  background: url("/sites/hwc/files/images/custom_blocks/pz-partner-resource.png") 0 50% no-repeat;
-  background-position: left 15px top 30px;
-}
-.private-zone-full-wrapper .private-zone-partner-resource a:hover {
-  text-decoration: none;
-  filter: brightness(0) invert(1);
-  border: 0 solid transparent;
-}
-.private-zone-full-wrapper .private-zone-partner-resource:hover {
-  color: #FFFFFF;
-  background: #003399;
-  text-decoration: none;
-  border: 0 solid #003399;
-}
-@media (max-width: 1530px) {
-  .private-zone-full-wrapper .private-zone-partner-resource {
-    width: 330px;
-  }
-}
-@media (max-width: 1199px) {
-  .private-zone-full-wrapper .private-zone-partner-resource {
-    width: 270px;
-  }
-}
-@media (max-width: 400px) {
-  .private-zone-full-wrapper .private-zone-partner-resource {
-    width: 250px;
-  }
-}
-
 /* end /private_workbench */
 /* /good-practice-exchange-platform */
 .block-facet-blocktype-of-partner {
@@ -5506,32 +5289,42 @@ h2.node__title {
 
 .private-zone-full-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
   margin: 4rem 0;
 }
-.private-zone-full-wrapper .private-partner-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 300px;
-}
-.private-zone-full-wrapper .private-partner-wrapper .private-zone-act-partner-inside {
-  margin-top: 1.6rem;
-  text-align: center;
+@media (max-width: 990px) {
+  .private-zone-full-wrapper {
+    flex-wrap: wrap;
+  }
 }
 .private-zone-full-wrapper .private-box {
+  min-height: 130px;
+  position: relative;
+  min-width: 260px;
+  width: 260px;
+  display: flex;
   text-align: right;
   background: transparent;
   color: #00309d;
   border: 2px solid #bcd75b;
-  padding: 0 1em;
+  padding: 20px 16px !important;
+  margin: 10px 20px;
   border-radius: 12px;
   font-size: 15px;
   font-weight: 600;
-  min-height: 130px;
-  position: relative;
-  width: 300px;
-  display: flex;
+}
+@media (max-width: 990px) {
+  .private-zone-full-wrapper .private-box {
+    width: 80%;
+    min-width: 80%;
+  }
+}
+@media (max-width: 660px) {
+  .private-zone-full-wrapper .private-box {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 .private-zone-full-wrapper .private-box > a {
   min-height: 100%;
@@ -5553,6 +5346,39 @@ h2.node__title {
 .private-zone-full-wrapper .private-box:hover > a {
   color: #FFF;
   text-decoration: none;
+}
+.private-zone-full-wrapper .private-partner-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  width: 260px;
+  margin: 10px 20px;
+}
+@media (max-width: 990px) {
+  .private-zone-full-wrapper .private-partner-wrapper {
+    width: 80%;
+    min-width: 80%;
+  }
+}
+@media (max-width: 660px) {
+  .private-zone-full-wrapper .private-partner-wrapper {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+.private-zone-full-wrapper .private-partner-wrapper .private-box {
+  margin: 0;
+}
+@media (max-width: 990px) {
+  .private-zone-full-wrapper .private-partner-wrapper .private-box {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+.private-zone-full-wrapper .private-partner-wrapper .private-zone-act-partner-inside {
+  padding: 10px 10px !important;
+  margin: 20px 0 0;
+  text-align: center;
 }
 .private-zone-full-wrapper .private-zone-act-partner > a {
   background: url(../images/pz-news.png) 0 50% no-repeat;
