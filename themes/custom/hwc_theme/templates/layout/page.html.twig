@@ -7,7 +7,7 @@
           <div class="top-header-content row">
             <div class="header-logo col-xs-12 col-sm-9 toolbar-yes">
               {{ page.top_header_logos }}
-              <div class="header-text">{{ 'Safe and healthy work in a digital age 2023-2025'|t }}</div>
+              <div class="header-text">{{ 'Safe and healthy work in the digital age 2023-2025'|t }}</div>
             </div>
             <div class="header-tools col-xs-12 col-sm-3 xs-menu">
               <div class="print-resize-block">
@@ -123,6 +123,11 @@
                     <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
                   {% endif %}
                 {% endif %}
+              {% endif %}
+
+            {% elseif urlArraylength == 5 %}
+              {% if firstLevelPages in firstLevelName %}
+                <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
               {% endif %}
             {% endif %}
 

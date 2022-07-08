@@ -2,7 +2,6 @@
 
 
 {% block content %}
-
   <section class="tk-article-page">
     <div class="container-full">
       <div class="row">
@@ -10,12 +9,9 @@
           {{ page.sidebar_left.campaigntoolkit }}
         </aside>
         <section class="section col-12 col-lg-9 tk-article-content">
-                <h2>{{ node.title.0.value }}</h2>
-                {{ node.body.0.value|raw }}
-                {{ page.content }}
+          {{ page.content }}
         </section>
       </div>
     </div>
   </section>
-
 {% endblock %}

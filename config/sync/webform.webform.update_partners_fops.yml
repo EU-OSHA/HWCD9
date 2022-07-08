@@ -1,4 +1,4 @@
-uuid: 83b6d09b-8e1c-4ac6-aa68-fe7fe422ca4f
+uuid: 5dee90bb-ef5d-4233-a13b-6511152ebdb1
 langcode: en
 status: open
 dependencies: {  }
@@ -8,8 +8,8 @@ close: null
 uid: 1
 template: false
 archive: false
-id: update_partners_mps
-title: 'Update partners MPS'
+id: update_partners_fops
+title: 'Update partners FOPs'
 description: ''
 category: ''
 elements: |-
@@ -25,7 +25,7 @@ elements: |-
     '#markup': '<a class="use-ajax" data-dialog-type="modal" href="/form/help">Help ?</a>'
   about_your_organisation:
     '#type': webform_section
-    '#title': 'About your Media Outlet'
+    '#title': 'About your organisation'
     '#access_create_roles':
       - anonymous
       - administrator
@@ -40,7 +40,7 @@ elements: |-
       - campaign_partner
     organisation_name:
       '#type': textfield
-      '#title': 'Name of your Media Outlet'
+      '#title': 'Organisation name'
       '#help_title': 'Fields displayed'
       '#help_display': element_after
       '#maxlength': 255
@@ -68,6 +68,7 @@ elements: |-
         The file size must not exceed 1MB. The minimum size for logos is 220x220px.
       '#title_display': before
       '#description_display': before
+      '#required': true
       '#access_create_roles':
         - anonymous
         - administrator
@@ -76,36 +77,44 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    media_type:
-      '#type': checkboxes
-      '#title': 'Media Type'
-      '#description': 'Multiple selections are possible.'
-      '#description_display': before
+    organisation_type:
+      '#type': select
+      '#title': 'Organisation type'
+      '#description': 'Please note that your Organisation should be an international or European Organisation with representation and/or network of members in several EU Member States.'
       '#options':
-        online: Online
-        print: Print
-        newsletter: Newsletter
-        radio: Radio
-        tv: Tv
-        other: Other
+        1: 'Employers'' organisation'
+        2: 'HR professionals'
+        3: 'OSH professionals'
+        4: 'Private company'
+        5: 'Public institution'
+        6: 'Research organisation'
+        7: 'Trade union'
+        8: 'Civil Society organisation'
+        9: Other
+      '#empty_option': 'Select an option'
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
         - campaign_partner
       '#access_update_roles':
         - anonymous
+        - administrator
+        - campaign_partner
       '#access_view_roles':
         - anonymous
-    target_audience:
-      '#type': checkboxes
-      '#title': 'Target audience'
-      '#options':
-        1: 'OSH community'
-        2: SMEs
-        3: Trade
-        4: Academics
-        5: 'EU Institutions'
-        6: 'General Audience'
+        - administrator
+        - campaign_partner
+    mandate:
+      '#type': textarea
+      '#title': Mandate
+      '#required': true
+      '#label_attributes':
+        class:
+          - displayed-campaign
       '#access_create_roles':
         - anonymous
         - administrator
@@ -194,11 +203,7 @@ elements: |-
     general_email_address:
       '#type': email
       '#title': 'General email Address'
-      '#required': true
-      '#required_error': 'The field must be a valid email address'
-      '#label_attributes':
-        class:
-          - displayed-campaign
+      '#description_display': after
       '#access_create_roles':
         - anonymous
         - administrator
@@ -211,6 +216,22 @@ elements: |-
         - anonymous
         - administrator
         - campaign_partner
+    hwc_website_e_mail_contact:
+      '#type': email
+      '#title': 'HWC website e-mail contact'
+      '#description': 'Please put here the e-mail address that you wish to be displayed on your organisational profile'
+      '#description_display': after
+      '#label_attributes':
+        class:
+          - displayed-campaign
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
     general_telephone_number:
       '#type': webform_telephone
       '#title': 'General telephone number'
@@ -242,6 +263,18 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+    dedicated_campaign_url:
+      '#type': url
+      '#title': 'Dedicated Campaign URL'
+      '#description': 'Special web section dealing with issues related to occupational health and safety'
+      '#access_create_roles':
+        - anonymous
+        - administrator
+        - campaign_partner
+      '#access_update_roles':
+        - anonymous
+      '#access_view_roles':
+        - anonymous
     social_media_profiles:
       '#type': url
       '#title': 'Social media profiles'
@@ -250,34 +283,6 @@ elements: |-
       '#title_display': before
       '#description_display': before
       '#placeholder': 'Write the complete URL of the social network'
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_view_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-  about_your_ceo:
-    '#type': webform_section
-    '#title': 'Editor in Chief'
-    '#access_create_roles':
-      - anonymous
-      - administrator
-      - campaign_partner
-    '#access_update_roles':
-      - anonymous
-    '#access_view_roles':
-      - anonymous
-    ceo_s_name:
-      '#type': textfield
-      '#title': 'CEO''s name'
-      '#description': 'Name of your CEO, President, General Director or other.'
-      '#required': true
       '#label_attributes':
         class:
           - displayed-campaign
@@ -287,51 +292,12 @@ elements: |-
         - campaign_partner
       '#access_update_roles':
         - anonymous
+        - administrator
+        - campaign_partner
       '#access_view_roles':
-        - anonymous
-    ceo_s_surname:
-      '#type': textfield
-      '#title': 'CEO''s surname'
-      '#required': true
-      '#label_attributes':
-        class:
-          - displayed-campaign
-      '#access_create_roles':
         - anonymous
         - administrator
         - campaign_partner
-      '#access_update_roles':
-        - anonymous
-      '#access_view_roles':
-        - anonymous
-  your_campaign_pledge_for_publication_on_campaign_website:
-    '#type': webform_section
-    '#title': 'Your campaign Contribution'
-    '#access_create_roles':
-      - anonymous
-      - administrator
-      - campaign_partner
-    '#access_update_roles':
-      - anonymous
-    '#access_view_roles':
-      - anonymous
-    campaign_pledge:
-      '#type': textarea
-      '#title': 'Your Campaign Pledge'
-      '#description': 'Please, briefly explain how your Media Outlet is going to support / give visibility to the Campaign'
-      '#description_display': after
-      '#required': true
-      '#label_attributes':
-        class:
-          - displayed-campaign
-      '#access_create_roles':
-        - anonymous
-        - administrator
-        - campaign_partner
-      '#access_update_roles':
-        - anonymous
-      '#access_view_roles':
-        - anonymous
   about_your_main_contact_person:
     '#type': webform_section
     '#title': 'About your Main Contact Person'
@@ -397,13 +363,9 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    email_address_mc:
-      '#type': email
-      '#title': 'Email address'
-      '#description': |-
-        IMPORTANT: All future communications related to this application will be sent to this address.<br />
-        <br />
-        This field cannot be directly changed in the form. If you want to modify it, please, contact EU-OSHA in partners@healthy-workplaces.eu
+    telephone_number_mc:
+      '#type': webform_telephone
+      '#title': 'Telephone number'
       '#required': true
       '#states':
         disabled:
@@ -417,9 +379,17 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
-    position:
-      '#type': textfield
-      '#title': Position
+      '#type__access': false
+      '#ext__access': false
+      '#phone__international_initial_country': auto
+    email_address_mc:
+      '#type': email
+      '#title': 'Email address'
+      '#description': |-
+        IMPORTANT: All future communications related to this application will be sent to this address.<br />
+        <br />
+        This field cannot be directly changed in the form. If you want to modify it, please, contact EU-OSHA in partners@healthy-workplaces.eu
+      '#required': true
       '#states':
         disabled:
           ':input[name="_i_want_to_change_the_main_contact_for_my_organisation_"]':
@@ -478,10 +448,9 @@ elements: |-
           - anonymous
         '#access_view_roles':
           - anonymous
-      email_address_new:
-        '#type': email
-        '#title': 'Email address'
-        '#description': 'IMPORTANT: All future communications related to this application will be sent to this address.'
+      telephone_number_new:
+        '#type': webform_telephone
+        '#title': 'Telephone number'
         '#required': true
         '#access_create_roles':
           - anonymous
@@ -491,9 +460,14 @@ elements: |-
           - anonymous
         '#access_view_roles':
           - anonymous
-      position_new:
-        '#type': textfield
-        '#title': Position
+        '#type__access': false
+        '#ext__access': false
+        '#phone__international_initial_country': auto
+      email_address_new:
+        '#type': email
+        '#title': 'Email address'
+        '#description': 'IMPORTANT: All future communications related to this application will be sent to this address.'
+        '#required': true
         '#access_create_roles':
           - anonymous
           - administrator

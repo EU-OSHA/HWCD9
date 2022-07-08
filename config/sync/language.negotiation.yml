@@ -6,10 +6,10 @@ url:
   source: path_prefix
   prefixes:
     en: en
-    es: es
-    fr: fr
     bg: bg
     cs: cs
+    es: es
+    fr: fr
     da: da
     de: de
     el: el
@@ -25,19 +25,18 @@ url:
     mt: mt
     'no': 'no'
     pl: pl
-    pt-pt: pt-pt
+    pt-pt: pt
     ro: ro
     sk: sk
     sl: sl
     sv: sv
     tr: tr
-    '': null
   domains:
     en: ''
-    es: ''
-    fr: ''
     bg: ''
     cs: ''
+    es: ''
+    fr: ''
     da: ''
     de: ''
     el: ''

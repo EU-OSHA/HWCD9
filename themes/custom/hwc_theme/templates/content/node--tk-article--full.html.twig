@@ -1,0 +1,41 @@
+
+
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'clearfix',
+]
+%}
+
+
+  <section{{ attributes.addClass(classes) }}>
+    {% set topics = content.field_tk_topics['#items'] %}
+    {% for topic in topics %}
+      {% set nid = topic.target_id %}
+      {% set nodeloaded = drupal_entity('node', nid ) %}
+      {% set imageW = nodeloaded['#node'].field_image.0.entity.field_media_image.0.width %}
+      {% set imageH = nodeloaded['#node'].field_image.0.entity.field_media_image.0.height %}
+      {% set urlImg = nodeloaded['#node'].field_image.0.entity.field_media_image.0.entity.uri.0.value|image_style('toolkit') |file_url %}
+      {% set nodeTitle = nodeloaded['#node'].title.0.value  %}
+      {% set summary = nodeloaded['#node'].body.entity.body.0.summary  %}
+      {% set urlNode = nodeloaded['#node'].nid.0.value  %}
+      <article class="tk-article-node">
+        <div class="group-left">
+          <a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">
+            <img src="{{ urlImg }}"  >
+          </a>
+        </div>
+        <div class="group-right">
+          <h2><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">{{ nodeTitle }}</a></h2>
+          <p class="summary">{{ summary }}</p>
+          <p class="link"><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}" class="see-more">See more</a></p>
+        </div>
+      </article>
+    {% endfor %}
+</section>
+

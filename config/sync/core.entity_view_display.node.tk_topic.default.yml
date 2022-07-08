@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.tk_topic.body
     - field.field.node.tk_topic.field_image
     - field.field.node.tk_topic.field_publication_date
-    - image.style.medium
+    - image.style.medium_large_330x330_
     - node.type.tk_topic
   module:
     - media
@@ -29,7 +29,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: medium
+      image_style: medium_large_330x330_
     third_party_settings: {  }
     weight: 1
     region: content

@@ -1282,7 +1282,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 80
+            max_length: 150
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -3447,7 +3447,7 @@ display:
       pager:
         type: none
         options:
-          offset: 0
+          offset: 2
       sorts:
         changed:
           id: changed

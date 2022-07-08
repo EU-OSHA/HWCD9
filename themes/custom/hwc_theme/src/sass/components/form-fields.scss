@@ -89,6 +89,12 @@
         display: flex;
         padding-top: 0.5rem;
         padding-left: 0.3rem;
+        a{
+          color: #212529;
+          &:hover{
+            text-decoration: none;
+          }
+        }
       }
     }
     .mandatory{
@@ -150,7 +156,7 @@
       margin: 0 0 0 0.3em;
     }
 
-    input{
+    input[type=text]{
       color: $text-color-blue !important;
       font-size: 0.9rem;
       height: 39px;
@@ -245,6 +251,11 @@
     .form-item-name-mc{
       label{
         width: 225px;
+      }
+    }
+    .form-item-name-mc.form-disabled{
+      label{
+        width: auto;
       }
     }
     .form-item-surname-mc,
@@ -342,6 +353,15 @@
   }
 }
 
+.path-webform{
+  .webform-submission-update-partners-fops-form{
+    .form-item-homepage,
+    .form-item-email-address-mc{
+      clear: none;
+    }
+  }
+}
+
 .webform-section-wrapper{
   > .description{
     margin-left: 1.5%;
@@ -405,7 +425,7 @@
   width: 50px;
   height: 50px;
   top: 90%;
-  right: 23%;
+  right: 13%;
   background-color: $bg-color-blue;
   border-radius: 50%;
   text-decoration: none;
@@ -428,4 +448,44 @@
 #scroll-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+/* Help modal */
+.ui-dialog .ui-dialog-titlebar{
+  background: $bg-color-blue;
+  span{
+    color: #FFFFFF;
+  }
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background: transparent;
+  border: 0;
+}
+
+.ui-dialog-titlebar-close:after{
+  content: 'X';
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.webform-actions{
+  .btn-primary{
+    background-color: $bg-color-blue;
+    color: #FFF;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: $bg-color-blue;
+  color: #FFF;
+  border-color: $bg-color-blue;
+}
+
+.ui-dialog .button{
+  background-image: none;
 }
