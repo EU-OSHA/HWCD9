@@ -1,3 +1,23 @@
+
+@mixin h2 {
+  h2 {
+    font-style: normal;
+    color: #749b00;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 2em;
+    text-align: left;
+    margin-top: 10px;
+    &.p2{
+      font-size: 1.3em;
+      font-weight: 600;
+      color: #003399;
+      margin:25px 0 20px;
+      font-style: normal;
+    }
+  }
+}
+
 /* menu campaign toolkit */
 #block-campaigntoolkit{
   padding-left: 15px;
@@ -72,6 +92,7 @@
       }
       ul.submenu-1{
         padding: 0 0 0 15px;
+        display: none;
         > li {
           > a {
             text-decoration: none;
@@ -124,22 +145,7 @@
 /* toolkit page styles */
 .toolkit-page,
 .node--type-tk-article{
-  h2 {
-    font-style: normal;
-    color: #749b00;
-    font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 2em;
-    text-align: left;
-    margin-top: 10px;
-    &.p2{
-      font-size: 1.3em;
-      font-weight: 600;
-      color: #003399;
-      margin:25px 0 20px;
-      font-style: normal;
-    }
-  }
+  @include h2;
   .well{
     background-color: inherit;
     border: none;
@@ -387,7 +393,76 @@
   }
 }
 
-
+/** node tk-topic-node **/
+.tk-topic-node{
+  @include h2;
+  display: flex;
+  .col-left{
+    flex: 0 0 70%;
+    padding: 0 15px 0 0;
+    ul{
+      margin: 0px;
+      padding-left: 15px;
+      li{
+        margin-bottom: 15px;
+      }
+    }
+    .box-check-content{
+      background-color: #f3f3f3;
+      padding: 15px 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      h2,
+      h3{
+        border-bottom: 2px solid #749b00;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: 1.4em;
+        margin-bottom: 30px;
+        color: #749b00;
+        margin-top: 15px;
+      }
+      ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        column-count: 2;
+        li{
+          margin-bottom: 0px;
+          padding: 2px 0 0;
+          &:before {
+            content: "\e013";
+            font-family: "Glyphicons Halflings";
+            text-align: center;
+            line-height: 25px;
+            width: 25px;
+            height: 25px;
+            background-color: #749b00;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            color: white;
+            margin-right: 6px;
+            font-size: 1rem;
+            position: relative;
+            top: -2px;
+          }
+          p{
+            display: inline-block;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .col-right{
+    flex: 0 0 30%;
+    padding: 0 0 0 15px;
+    img{
+      width: 100%;
+    }
+  }
+}
 
 
 
