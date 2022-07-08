@@ -108,8 +108,15 @@
       $('#block-campaigntoolkit').addClass("opened");
       $(this).siblings("ul").slideDown();
     }
-
   });
+
+  $('#block-campaigntoolkit .submenu-1 > li').each(function( index ) {
+    if( $(this).hasClass( "active" ) ) {
+      $(this).parent().css('display','block');
+    }
+  });
+
+
 
 
 })(jQuery, Drupal);

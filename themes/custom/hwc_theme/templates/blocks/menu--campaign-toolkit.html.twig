@@ -34,10 +34,10 @@ We call a macro which calls itself to render the full tree.
         {% for item in items %}
           {%
             set classes = [
-            'nav-item',
-            item.is_expanded ? 'menu-item expanded',
-            item.is_collapsed ? 'menu-item collapsed',
-            item.in_active_trail ? 'menu-item active',
+            'nav-item menu-item ',
+            item.is_expanded ? 'expanded',
+            item.is_collapsed ? 'collapsed',
+            item.in_active_trail ? 'active',
           ]
           %}
         <li{{ item.attributes.addClass(classes) }}>
@@ -60,17 +60,19 @@ We call a macro which calls itself to render the full tree.
         {% for item in items %}
           {%
             set classes = [
-            'nav-item',
-            item.is_expanded ? 'submenu-'~menu_level~'-item expanded',
-            item.is_collapsed ? 'submenu'~menu_level~'-item collapsed',
-            item.in_active_trail ? 'submenu'~menu_level~'-item active',
+            'nav-item submenu-'~menu_level~'-item ',
+            item.is_expanded ? 'expanded',
+            item.is_collapsed ? 'collapsed',
+            item.in_active_trail ? 'active',
           ]
           %}
           <li{{ item.attributes.addClass(classes) }}>
             {%
               set link_classes = [
-              'nav-link',
+              'nav-link submenu-'~menu_level~'-item',
               item.in_active_trail ? 'active',
+              item.is_expanded ? 'expanded',
+              item.is_collapsed ? 'collapsed',
               item.url.getOption('attributes').class ? item.url.getOption('attributes').class | join(''),
               'nav-link-' ~ item.url.toString() | clean_class,
             ]

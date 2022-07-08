@@ -1,0 +1,15 @@
+uuid: e435ff1f-90ab-4a2b-997e-27e97cc06657
+langcode: en
+status: true
+dependencies: {  }
+name: medium_large_330x330_
+label: 'Medium large (330x330)'
+effects:
+  2da12550-7186-4d8d-84c6-f9b4276403d7:
+    uuid: 2da12550-7186-4d8d-84c6-f9b4276403d7
+    id: image_scale
+    weight: 1
+    data:
+      width: 330
+      height: 330
+      upscale: true

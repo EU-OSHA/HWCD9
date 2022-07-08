@@ -1,0 +1,17 @@
+
+<article  class="tk-topic-node row">
+  <div class="col-left">
+    <h2 class="toolkit-h2">{{ node.title.0.value }}</h2>
+    <div class="summary">
+      <p>{{ node.body.0.summary|raw }}</p>
+    </div>
+    <div class="body">
+      {{ node.body.0.value|raw }}
+    </div>
+    {{ page.content }}
+  </div>
+  <div class="col-right">
+    {{ content.field_image }}
+  </div>
+</article>
+
