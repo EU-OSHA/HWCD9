@@ -1,0 +1,25 @@
+_core:
+  default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg
+langcode: en
+sids:
+  osha: osha
+  osha_write: '0'
+authenticationMode: mixed
+loginUIUsernameTxt: ''
+loginUIPasswordTxt: ''
+ldapUserHelpLinkUrl: ''
+ldapUserHelpLinkText: ''
+emailOption: allow
+emailUpdate: update_notify
+emailTemplateHandling: none
+emailTemplate: '@username@example.com'
+emailTemplateUsageResolveConflict: false
+emailTemplateUsageNeverUpdate: false
+emailTemplateUsagePromptUser: false
+emailTemplateUsageRedirectOnLogin: false
+emailTemplateUsagePromptRegex: '.*@example\\.com'
+passwordOption: allow
+allowOnlyIfTextInDn: {  }
+excludeIfTextInDn: {  }
+excludeIfNoAuthorizations: false
+skipAdministrators: false

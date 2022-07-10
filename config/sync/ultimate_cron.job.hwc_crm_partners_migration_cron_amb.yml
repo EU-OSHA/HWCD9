@@ -1,12 +1,12 @@
 uuid: 1cd4e93b-4d04-4118-a5c0-5982da9f0954
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - hwc_crm_partners_migration
 title: 'Import AMB Partners'
 id: hwc_crm_partners_migration_cron_amb
-weight: -12
+weight: -13
 module: hwc_crm_partners_migration
 callback: hwc_crm_partners_migration_callback_amb
 scheduler:

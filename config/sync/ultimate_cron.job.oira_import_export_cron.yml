@@ -6,7 +6,7 @@ dependencies:
     - oira_import_export
 title: 'Default cron handler'
 id: oira_import_export_cron
-weight: 10
+weight: -5
 module: oira_import_export
 callback: oira_import_export_cron
 scheduler:
