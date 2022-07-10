@@ -1,5 +1,8 @@
 
 <h3 class="h4 mb-4">{{ content['#title']['#markup']}}</h3>
+<a href="{{ file_url('http://hwc.ddev.site/sites/hwc/files/styles/large/public/hwc/news/eu_diversity_month_220.jpg') }}">
+  Download all
+</a>
 
 <div class="">
   {% set results = content['#view'].result %}
@@ -9,18 +12,17 @@
     <article class="card" >
 
 {#      <img class="card-img-top"  alt="Card image cap">#}
-      <div class="card-img-top">{{ item.field_youtube.0.entity.field_media_oembed_video|view }}</div>
+      <div class="card-img-top">
+        {{ item.field_youtube.0.entity.field_media_oembed_video|view }}
+      </div>
       <div class="card-body">
         <div class="share-networks">
           <ul class="napo-actions">
             <li class="share-link fas fa-share-alt"><label class="sr-only">Share</label></li>
             <li class="download-film fas fa-download">
-              <label class="sr-only">
-                <a href={{tem.field_video.0.entity.uri.value}}>
-
-                </a>
-                </label>
-
+              <a href="{{file_url('item.field_video.0.entity.uri.value')}}">
+                <i class="fas fa-download"></i>
+              </a>
             </li>
           </ul>
           <ul class="list-networks d-none">
@@ -40,7 +42,9 @@
         </div>
         <h3 class="card-title">{{ item.title.value }}</h3>
         <p class="card-text">{{ item.body.value | striptags}}</p>
-        Download file:  {{item.field_video.0.entity.uri.value}}
+        <p>Download file: <a href="{{ file_url(item.field_video.0.entity.uri.value) }}"> {{item.field_video.0.entity.uri.value}} </a> </p>
+
+
       </div>
     </article>
   {% endfor %}
