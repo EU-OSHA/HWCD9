@@ -1,5 +1,7 @@
 
 {% set results = content['#view'].result %}
+
+{% if results|length > 0  %}
 <section class="tool-examples-carousel">
 
   <div id="carouselControls" class="carousel slide d-block container" data-ride="carousel" data-interval="0">
@@ -65,4 +67,4 @@
 
 
 </section>
-
+{% endif %}
