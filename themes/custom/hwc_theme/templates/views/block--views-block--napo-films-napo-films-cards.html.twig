@@ -1,16 +1,18 @@
 
 <h3 class="h4 mb-4">{{ content['#title']['#markup']}}</h3>
-<a href="{{ file_url('http://hwc.ddev.site/sites/hwc/files/styles/large/public/hwc/news/eu_diversity_month_220.jpg') }}">
+{#<a href="{{ file_url('http://hwc.ddev.site/sites/hwc/files/styles/large/public/hwc/news/eu_diversity_month_220.jpg') }}">
   Download all
-</a>
+</a>#}
+<a href="/tools-and-publications/napo-films/download-all">{{ 'Download all'|t }}</a>
 
-<div class="">
+<div class="card-list">
   {% set results = content['#view'].result %}
   {% for index, item in results %}
   {% set item = item._entity %}
 
-    <article class="card" >
+    {# Para abrir nodo como un modal #}
 
+    <article class="card" >
 {#      <img class="card-img-top"  alt="Card image cap">#}
       <div class="card-img-top">
         {{ item.field_youtube.0.entity.field_media_oembed_video|view }}
@@ -40,13 +42,17 @@
                  target="_blank"><span>linkedin</span></a> </li>
           </ul>
         </div>
-        <h3 class="card-title">{{ item.title.value }}</h3>
+        <h3 class="card-title">
+          <a class="use-ajax" data-dialog-options="{&quot;width&quot;:800}"
+             data-dialog-type="modal" href="/node/{{ item.nid.value }}">
+          {{ item.title.value }} </a></h3>
         <p class="card-text">{{ item.body.value | striptags}}</p>
         <p>Download file: <a href="{{ file_url(item.field_video.0.entity.uri.value) }}"> {{item.field_video.0.entity.uri.value}} </a> </p>
 
 
       </div>
     </article>
+
   {% endfor %}
 
 
