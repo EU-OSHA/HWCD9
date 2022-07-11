@@ -373,7 +373,7 @@
   fieldset{
     select,
     .chosen-container-single .chosen-single ,
-    .chosen-container-multi ul,
+    .chosen-container-multi > ul,
     .select2-selection{
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -413,7 +413,7 @@
 }
 
 .chosen-container-multi{
-  display: none !important;
+  //display: none !important;
 }
 
 #edit_countries_of_activity_chosen.chosen-container-multi{
