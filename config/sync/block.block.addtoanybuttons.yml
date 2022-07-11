@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - addtoany
+    - system
   theme:
     - hwc_theme
 id: addtoanybuttons
@@ -17,4 +18,8 @@ settings:
   label: 'AddToAny buttons'
   label_display: '0'
   provider: addtoany
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/tools-and-publications/campaign-toolkit/*'

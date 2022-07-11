@@ -144,7 +144,8 @@
 }
 /* toolkit page styles */
 .toolkit-page,
-.node--type-tk-article{
+.node--type-tk-article,
+.tk-tool-content{
   @include h2;
   .well{
     background-color: inherit;
@@ -464,7 +465,42 @@
   }
 }
 
-
+/** media toolkit **/
+.media-toolkit{
+  .view-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .item-media-tollkit{
+      padding: 15px 30px 15px 0;
+      margin: 0;
+      max-width: 23%;
+      .image{
+        img{
+          width: 100%;
+          max-width: inherit;
+          border: 2px solid #bcd75b;
+          border-radius: 7px;
+        }
+      }
+      h3{
+        padding: 5px 0 10px 0;
+        clear: both;
+        a{
+          font-family: 'Open Sans',sans-serif;
+          color: #003399;
+          font-size: 16px;
+          margin: 0;
+          clear: both;
+          line-height: 20px;
+          font-weight: bold;
+          font-style: normal;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
 
 //
 //
