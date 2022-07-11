@@ -12,9 +12,9 @@
   {% if  ( item['#title']['#value']|slice(0,1)  ==  item2['#title']['#value']|slice(0,1) ) %}
 
     {% else %}
-      <div class="facet-item">
-        <a class="hwc-char-link a1" href="#hwc-char-0-{{ item['#title']['#value']|slice(0,1) }}">{{ item['#title']['#value']|slice(0,1) }}</a>
-      </div>
+        <div class="facet-item-title">
+          <a class="hwc-char-link a1" href="#hwc-char-0-{{ item['#title']['#value']|slice(0,1) }}">{{ item['#title']['#value']|slice(0,1) }}</a>
+        </div>
   {% endif %}
 
  {% set item2 = item %}

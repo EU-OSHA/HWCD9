@@ -1961,9 +1961,9 @@ $grid-breakpoints: (
 .block-views-blockpartner-countries-campaign-partners--block-1{
   .view-partner-countries-campaign-partners- {
     .form-row {
-      max-height: 400px;
-      height: 400px;
+      flex-wrap: unset;
       fieldset {
+        margin-bottom: 0 !important;
         label {
           display: none;
         }
@@ -1973,7 +1973,7 @@ $grid-breakpoints: (
         ul {
           display: inline-block;
           padding-left: 0;
-
+          margin-bottom: 5px;
           li {
             border: 1px dotted #749b00;
             float: left;

@@ -10,7 +10,7 @@ dependencies:
 id: relatedresourcesnewsblock
 theme: hwc_theme
 region: content
-weight: -11
+weight: -2
 provider: null
 plugin: related_resources_news_block
 settings:
