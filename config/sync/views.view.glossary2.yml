@@ -542,24 +542,22 @@ display:
       style:
         type: default
         options:
-          grouping:
-            -
-              field: name_1
-              rendered: true
-              rendered_strip: true
           row_class: ''
-          default_row_class: true
+          default_row_class: false
+          uses_fields: false
       row:
         type: 'entity:taxonomy_term'
         options:
           relationship: none
           view_mode: default
       defaults:
+        css_class: false
         style: false
         row: false
         fields: false
         arguments: false
         header: false
+      css_class: glossary-letters
       display_description: ''
       header:
         view:
@@ -843,7 +841,7 @@ display:
               rendered: true
               rendered_strip: false
           row_class: row
-          default_row_class: true
+          default_row_class: false
           uses_fields: true
           type: ul
           wrapper_class: item-list
@@ -855,11 +853,13 @@ display:
           view_mode: default
       defaults:
         title: false
+        css_class: false
         style: false
         row: false
         fields: false
         arguments: false
         header: false
+      css_class: glossary-list-view
       display_description: ''
       header: {  }
       display_extenders: {  }
