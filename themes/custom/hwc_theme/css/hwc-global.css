@@ -1009,8 +1009,9 @@ body {
 .site-footer {
   background: #57575a;
   height: auto;
-  padding: 35px 0 0px;
+  padding: 35px 0 15px;
   font-family: "Open Sans";
+  margin-top: 3rem;
 }
 .site-footer .site-footer__bottom {
   border: 0;
@@ -2017,13 +2018,13 @@ body.user-logged-in.path-frontpage.scrolled #header {
 
 /* log in / log out */
 .nav-account .nav-link {
-  background: #003399 url(../images/header/login.png) no-repeat 7px center;
+  background: #003399 url(../images/header/login.png) no-repeat 91% center;
   border-radius: 5px;
   height: 27px;
   display: block;
   padding-top: 3px;
   color: white;
-  padding: 3px 10px 3px 25px;
+  padding: 3px 25px 3px 10px;
 }
 
 /** Section title **/
@@ -5258,6 +5259,80 @@ h2.node__title {
   font-weight: bold;
   font-style: normal;
   letter-spacing: 0;
+}
+
+.tk-example-node .tk-example-content {
+  display: flex;
+  width: 100%;
+}
+.tk-example-node .tk-example-content .group-left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.tk-example-node .tk-example-content .group-left h2.toolkit-h2 {
+  font-style: normal;
+  color: #749b00;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 2em;
+  text-align: left;
+  margin-top: 10px;
+}
+.tk-example-node .tk-example-content .group-left > p {
+  margin-bottom: 20px;
+}
+.tk-example-node .tk-example-content .group-left .description {
+  margin-bottom: 20px;
+}
+.tk-example-node .tk-example-content .group-left .description .label {
+  margin-bottom: 5px;
+}
+.tk-example-node .tk-example-content .group-left .show-links {
+  margin-bottom: 20px;
+}
+.tk-example-node .tk-example-content .group-left .show-links .label {
+  margin: 0;
+}
+.tk-example-node .tk-example-content .group-left .show-links .label a {
+  display: block;
+  background-color: #749b00;
+  color: white;
+  padding: 6px 12px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tk-example-node .tk-example-content .group-left .show-links .label a:hover {
+  background-color: #595959;
+}
+.tk-example-node .tk-example-content .group-left .show-links .label a:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  float: right;
+  vertical-align: middle;
+  font-size: 0.8em;
+  margin-top: 2px;
+}
+.tk-example-node .tk-example-content .group-left .show-links .label a[aria-expanded=true]:after {
+  content: "";
+}
+.tk-example-node .tk-example-content .group-left .show-links .links-list {
+  border: 1px solid #595959;
+  border-top: none;
+}
+.tk-example-node .tk-example-content .group-left .show-links .links-list ul {
+  list-style: none;
+  margin: 0;
+  background-color: #f3f3f3;
+  padding: 15px 12px 5px;
+}
+.tk-example-node .tk-example-content .group-left .show-links .links-list ul li {
+  margin-bottom: 0.8rem;
+}
+.tk-example-node .tk-example-content .group-right {
+  padding-left: 30px;
+  width: 30%;
 }
 
 .cm-section {
