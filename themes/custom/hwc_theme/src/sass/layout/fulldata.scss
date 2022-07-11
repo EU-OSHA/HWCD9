@@ -838,7 +838,7 @@ $grid-breakpoints: (
         color: $text-color-white;
         background: $bg-color-blue;
         text-decoration: none;
-        border: 0 solid $text-color-blue;
+        border: 2px solid $text-color-blue;
       }
     }
 
@@ -885,7 +885,7 @@ $grid-breakpoints: (
         color: $text-color-white;
         background: $bg-color-blue;
         text-decoration: none;
-        border: 0 solid $text-color-blue;
+        border: 2px solid $text-color-blue;
       }
     }
 
@@ -924,7 +924,7 @@ $grid-breakpoints: (
         &:hover {
           text-decoration: none;
           filter: brightness(0) invert(1);
-          border: 2px solid transparent;
+          border: 0 solid transparent;
         }
       }
 
@@ -971,7 +971,7 @@ $grid-breakpoints: (
         &:hover {
           text-decoration: none;
           filter: brightness(0) invert(1);
-          border: 2px solid transparent;
+          border: 0 solid transparent;
         }
       }
 
@@ -1018,7 +1018,7 @@ $grid-breakpoints: (
         &:hover {
           text-decoration: none;
           filter: brightness(0) invert(1);
-          border: 2px solid transparent;
+          border: 0 solid transparent;
         }
       }
 
@@ -1036,7 +1036,7 @@ $grid-breakpoints: (
     margin-left: 20px;
 
     .my-events-wrapper {
-      margin-right: 190px;
+      margin-right: 85px;
 
       a {
         font-weight: bold;
@@ -1573,3 +1573,431 @@ $grid-breakpoints: (
 }
 */
 /* End edit forms */
+
+
+/* /campaign-partners/campaign-media-partners */
+
+.section-center{
+  .facet-item{
+    display: inline-block;
+    padding-bottom: 15px;
+    a{
+      padding: 0px 13px 0 0;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight: bold;
+    }
+  }
+}
+
+.facet-item-title{
+  display: inline-block;
+  padding-bottom: 15px;
+  a{
+    padding: 0px 13px 0 0;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}
+
+.block-views-blockpartner-countries-solr-block-1{
+  margin-bottom: 60px;
+  border-top: 1px dotted #749b00;
+  .view-partner-countries-solr{
+    .view-grouping{
+      width: 100%;
+      .view-grouping-header{
+        .char-anchor{
+          margin-top: 1em;
+          margin-bottom: 0em;
+          display: inline-block;
+          border-bottom: 1px dotted #749b00;
+          font-size: 1.2em;
+          font-style: normal;
+          color: $text-color-green;
+          width: 100%;
+          clear: both;
+          text-transform: uppercase;
+          font-weight: bold;
+          float:left;
+        }
+      }
+      .view-grouping-content{
+        h3 {
+          width: 16.6%;
+          margin-bottom: 0;
+          .vocabulary-country {
+            float: left;
+            min-height: auto !important;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            border-bottom: 1px dotted #749b00;
+            border-left: 1px dotted #749b00;
+            padding: 30px 20px 15px;
+            height: 185px;
+
+            @media (max-width: 1199px) {
+              height: 206px;
+            }
+
+            @media (max-width: 767px) {
+              display: block;
+              width: 100%;
+            }
+
+            h2 {
+              @media (max-width: 767px) {
+                text-align: center;
+              }
+              a{
+                font-size: 14px;
+                font-weight: bold;
+
+              }
+            }
+
+            img {
+              max-width: 110px;
+              border: 0;
+              border-radius: 7px;
+              height: auto;
+            }
+            .field__item {
+              @media (max-width: 767px) {
+                justify-content: center;
+                display: flex;
+                width: 100%;
+              }
+            }
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+        .col-md-2{
+          float:left;
+          min-height: auto !important;
+          justify-content: center;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+          border-bottom: 1px dotted #749b00;
+          border-left: 1px dotted #749b00;
+          padding: 30px 20px 15px;
+          padding-bottom: 24px;
+          height: 185px;
+          padding-top: 15px;
+
+          @media (max-width: 1199px) {
+            height: 206px;
+          }
+
+          @media (max-width: 991px) {
+            max-width: 25%;
+          }
+
+          @media (max-width: 767px) {
+            //  display: block;
+            max-width: 100%;
+          }
+
+          .views-field-title{
+            text-align: center;
+          }
+
+          .views-field-field-logo{
+
+            @media (max-width: 767px) {
+              justify-content: center;
+              display: flex;
+              width: 100%;
+            }
+
+            img{
+              max-width: 110px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end /campaign-partners/campaign-media-partners */
+
+/* /campaign-partners/official-campaign-partners */
+
+.block-views-blockpartner-countries-campaign-partners--block-1{
+  .view-partner-countries-campaign-partners- {
+    .form-row {
+      flex-wrap: unset;
+      fieldset {
+        margin-bottom: 0 !important;
+        label {
+          display: none;
+        }
+      }
+
+      .form-item-field-orgtype {
+        ul {
+          display: inline-block;
+          padding-left: 0;
+          margin-bottom: 5px;
+          li {
+            border: 1px dotted #749b00;
+            float: left;
+            padding: 15px 30px;
+            margin-bottom: 5px;
+
+            @media (max-width: 767px) {
+              padding: 7.5px 15px;
+            }
+
+            a {
+              font-weight: bold;
+              font-size: 1.2em;
+
+              @media (max-width: 767px) {
+                font-size: 13px;
+              }
+
+            }
+
+            a.bef-link--selected {
+              color: $text-color-green;
+              font-style: normal;
+            }
+
+            &::marker {
+              content: none;
+            }
+          }
+        }
+      }
+
+      #edit-actions {
+        button {
+          display: none;
+        }
+      }
+
+      #edit-actions--2 {
+        button {
+          display: none;
+        }
+      }
+    }
+
+    .view-content {
+      margin-bottom: 60px;
+      border-top: 1px dotted #749b00;
+
+      h3 {
+        width: 100%;
+        margin-bottom: 0;
+
+        .char-anchor {
+          margin-top: 1em;
+          margin-bottom: 0em;
+          display: inline-block;
+          border-bottom: 1px dotted #749b00;
+          font-size: 17px;
+          font-style: normal;
+          color: $text-color-green;
+          width: 100%;
+          clear: both;
+          text-transform: uppercase;
+          font-weight: bold;
+          float: left;
+        }
+      }
+
+      .col-md-2 {
+        float: left;
+        min-height: auto !important;
+        justify-content: center;
+        //  display: flex;
+        //  flex-wrap: wrap;
+        margin: 0;
+        border-bottom: 1px dotted #749b00;
+        border-left: 1px dotted #749b00;
+        padding: 30px 20px 15px;
+        padding-bottom: 24px;
+        margin-bottom: 10px;
+        width: 250px;
+        height: 220px;
+        display: block;
+        text-align: center;
+
+        @media (max-width: 991px) {
+          max-width: 50%;
+          flex: 0 0 50%;
+          margin-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+          max-width: 100%;
+          flex: 0 0 100%;
+          height: unset;
+        }
+
+        @media (max-width: 600px) {
+          max-width: 100%;
+          display: block;
+          margin-bottom: 0;
+        }
+
+        .views-field-title-1 {
+          text-align: center;
+        }
+
+        .views-field-field-logo {
+          margin-bottom: 15px;
+
+          @media (max-width: 991px) {
+            display: flex;
+            justify-content: center;
+          }
+
+          img {
+            max-width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end /campaign-partners/official-campaign-partners */
+
+/* /campaign-partners/enterprise-europe-network */
+
+.block-views-blockpartner-countries-een-osh-ambassador--block-1{
+  margin-bottom: 60px;
+  border-top: 1px dotted #749b00;
+  .view-partner-countries-een-osh-ambassador-{
+    .view-grouping{
+      width: 100%;
+      .view-grouping-header{
+        .char-anchor{
+          margin-top: 1em;
+          margin-bottom: 0em;
+          display: inline-block;
+          border-bottom: 1px dotted #749b00;
+          font-size: 1.2em;
+          font-style: normal;
+          color: $text-color-green;
+          width: 100%;
+          clear: both;
+          text-transform: uppercase;
+          font-weight: bold;
+          float:left;
+        }
+      }
+      .view-grouping-content{
+        h3 {
+          width: 16.6%;
+          margin-bottom: 0;
+          .vocabulary-country {
+            float: left;
+            min-height: auto !important;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            border-bottom: 1px dotted #749b00;
+            border-left: 1px dotted #749b00;
+            padding: 30px 20px 15px;
+            height: 185px;
+
+            @media (max-width: 1199px) {
+              height: 206px;
+            }
+
+            @media (max-width: 767px) {
+              display: block;
+              width: 100%;
+            }
+
+            h2 {
+              @media (max-width: 767px) {
+                text-align: center;
+              }
+              a{
+                font-size: 14px;
+                font-weight: bold;
+
+              }
+            }
+
+            img {
+              max-width: 110px;
+              border: 0;
+              border-radius: 7px;
+              height: auto;
+            }
+            .field__item {
+              @media (max-width: 767px) {
+                justify-content: center;
+                display: flex;
+                width: 100%;
+              }
+            }
+          }
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+        .col-md-2{
+          float:left;
+          min-height: auto !important;
+          justify-content: center;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+          border-bottom: 1px dotted #749b00;
+          border-left: 1px dotted #749b00;
+          padding: 30px 20px 15px;
+          padding-bottom: 24px;
+          height: 185px;
+          padding-top: 15px;
+
+          @media (max-width: 1199px) {
+            height: 206px;
+          }
+
+          @media (max-width: 991px) {
+            max-width: 25%;
+          }
+
+          @media (max-width: 767px) {
+          //  display: block;
+            max-width: 100%;
+          }
+
+          .views-field-field-logo-1{
+
+            @media (max-width: 767px) {
+              justify-content: center;
+              display: flex;
+              width: 100%;
+            }
+
+              img{
+                max-width: 110px;
+                @media (max-width: 767px) {
+                  max-width: 110px;
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end /campaign-partners/enterprise-europe-network */

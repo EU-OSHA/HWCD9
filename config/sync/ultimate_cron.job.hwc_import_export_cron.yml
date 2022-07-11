@@ -6,7 +6,7 @@ dependencies:
     - hwc_import_export
 title: 'Default cron handler'
 id: hwc_import_export_cron
-weight: 5
+weight: -7
 module: hwc_import_export
 callback: hwc_import_export_cron
 scheduler:

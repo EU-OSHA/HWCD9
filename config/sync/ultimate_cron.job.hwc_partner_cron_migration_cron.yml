@@ -1,12 +1,12 @@
 uuid: 4860d0b0-f726-4a16-a0ca-cffd7c6de9f8
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - hwc_partner_cron_migration
 title: 'Import Publications'
 id: hwc_partner_cron_migration_cron
-weight: -8
+weight: -9
 module: hwc_partner_cron_migration
 callback: hwc_partner_cron_migration_cron
 scheduler:

@@ -1,4 +1,4 @@
-uuid: ae9a086d-4c42-44a0-92a3-d5ccf3d8c15d
+uuid: 98336605-36f9-48ae-8c6a-696eff3f081a
 langcode: en
 status: false
 dependencies: {  }
@@ -8,10 +8,17 @@ description: ''
 weight: 0
 folder: sites/hwc/config/production
 module:
+  authorization: 0
+  authorization_drupal_roles: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
   matomo: 0
+  externalauth: 10
 theme: {  }
 blacklist: {  }
-graylist:
-  - search_api.server.default_solr_server
+graylist: {  }
 graylist_dependents: false
 graylist_skip_equal: true

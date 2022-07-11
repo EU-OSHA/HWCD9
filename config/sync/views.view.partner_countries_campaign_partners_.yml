@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_country
     - field.storage.node.field_logo
     - field.storage.node.field_orgtype
+    - image.style.media_library
     - search_api.index.partner_countries
     - taxonomy.vocabulary.organisation_type
     - taxonomy.vocabulary.partner_types
@@ -13,6 +14,7 @@ dependencies:
     - 'taxonomy_term:partner_types:6e66be93-5a03-4920-b3d8-ac4652d11170'
   module:
     - better_exposed_filters
+    - media
     - search_api
     - taxonomy
 id: partner_countries_campaign_partners_
@@ -256,8 +258,8 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: true
-          empty_zero: true
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
           type: entity_reference_label
@@ -309,8 +311,6 @@ display:
                 display_method: label
                 view_mode: default
               country_status:
-                display_method: label
-              digitalisation_priority_area:
                 display_method: label
               document:
                 display_method: label
@@ -381,6 +381,14 @@ display:
               thesaurus:
                 display_method: label
               tools_and_examples:
+                display_method: label
+              user_mention_terms:
+                display_method: label
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
                 display_method: label
         title:
           id: title
@@ -502,9 +510,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: media_thumbnail
           settings:
-            view_mode: default
+            image_link: content
+            image_style: media_library
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -806,7 +815,7 @@ display:
               field: title
               rendered: true
               rendered_strip: false
-          row_class: ''
+          row_class: col-md-2
           default_row_class: true
       row:
         type: fields

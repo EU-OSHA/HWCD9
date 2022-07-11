@@ -1,4 +1,4 @@
-uuid: dea87525-fb92-4590-9fac-83dae8b25457
+uuid: 39b74ce7-4bca-46e4-994c-3906e6e69712
 langcode: en
 status: false
 dependencies: {  }
@@ -8,10 +8,29 @@ description: ''
 weight: 0
 folder: sites/hwc/config/staging
 module:
+  authorization: 0
+  authorization_drupal_roles: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
   matomo: 0
+  externalauth: 10
 theme: {  }
 blacklist: {  }
 graylist:
+  - authorization.authorization_profile.osha
+  - authorization.settings
+  - ldap_authentication.settings
+  - ldap_servers.server.osha
+  - ldap_servers.server.osha_write
+  - ldap_servers.settings
+  - ldap_user.settings
+  - matomo.settings
   - search_api.server.default_solr_server
+  - swiftmailer.transport
+  - system.performance
+  - ultimate_cron.job.ldap_user_cron
 graylist_dependents: false
 graylist_skip_equal: true
