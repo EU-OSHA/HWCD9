@@ -12,7 +12,7 @@ dependencies:
 id: views_block__partners_block_1
 theme: hwc_theme
 region: content
-weight: -35
+weight: -29
 provider: null
 plugin: 'views_block:partners-block_1'
 settings:
