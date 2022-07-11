@@ -116,7 +116,11 @@
     }
   });
 
-
+  $('#block-campaigntoolkit .submenu-2 > li').each(function( index ) {
+    if( $(this).hasClass( "active" ) ) {
+      $(this).parent().parent().css('display','block');
+    }
+  });
 
 
 })(jQuery, Drupal);

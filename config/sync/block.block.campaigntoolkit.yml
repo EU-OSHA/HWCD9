@@ -6,7 +6,7 @@ dependencies:
     - system.menu.campaign-toolkit
   module:
     - menu_block
-    - system
+    - node
   theme:
     - hwc_theme
 id: campaigntoolkit
@@ -30,7 +30,14 @@ settings:
   parent: 'campaign-toolkit:'
   suggestion: campaign_toolkit
 visibility:
-  request_path:
-    id: request_path
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
-    pages: "/tools-and-publications/campaign-toolkit\r\n/tools-and-publications/campaign-toolkit/*"
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      tk_article: tk_article
+      tk_example: tk_example
+      tk_tool: tk_tool
+      tk_toolkit: tk_toolkit
+      tk_topic: tk_topic
