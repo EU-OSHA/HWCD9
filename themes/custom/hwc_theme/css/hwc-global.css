@@ -336,6 +336,7 @@ nav.tabs .nav-tabs {
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 25px;
+  overflow: hidden;
 }
 
 .content-panel {
@@ -551,10 +552,13 @@ nav.tabs .nav-tabs {
   font-size: 0.85rem;
 }
 .path-webform section.form-item .form-item-name-mc label {
-  width: 225px;
+  width: 250px;
 }
 .path-webform section.form-item .form-item-name-mc.form-disabled label {
-  width: auto;
+  width: 250px;
+}
+.path-webform section.form-item .form-item-name-of-main-contact-person-for-the-campaign label {
+  width: 250px;
 }
 .path-webform section.form-item .form-item-surname-mc label,
 .path-webform section.form-item .form-item-surname-new label {
@@ -636,9 +640,17 @@ nav.tabs .nav-tabs {
   clear: both;
 }
 
+.path-webform .webform-submission-update-partners-form .js-form-item-position {
+  clear: both;
+}
 .path-webform .webform-submission-update-partners-fops-form .form-item-homepage,
-.path-webform .webform-submission-update-partners-fops-form .form-item-email-address-mc {
+.path-webform .webform-submission-update-partners-fops-form .form-item-email-address-mc,
+.path-webform .webform-submission-update-partners-fops-form .form-item-email-address-new {
   clear: none;
+}
+.path-webform .webform-submission-update-partners-fops-form #edit-telephone-number-mc--wrapper,
+.path-webform .webform-submission-update-partners-fops-form #edit-telephone-number-new--wrapper {
+  clear: both;
 }
 
 .webform-section-wrapper > .description {
@@ -648,7 +660,7 @@ nav.tabs .nav-tabs {
 
 #main-wrapper fieldset select,
 #main-wrapper fieldset .chosen-container-single .chosen-single,
-#main-wrapper fieldset .chosen-container-multi > ul,
+#main-wrapper fieldset .chosen-container-multi ul,
 #main-wrapper fieldset .select2-selection {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -667,19 +679,22 @@ nav.tabs .nav-tabs {
 }
 #main-wrapper fieldset select div b,
 #main-wrapper fieldset .chosen-container-single .chosen-single div b,
-#main-wrapper fieldset .chosen-container-multi > ul div b,
+#main-wrapper fieldset .chosen-container-multi ul div b,
 #main-wrapper fieldset .select2-selection div b {
   display: none;
 }
 #main-wrapper fieldset select li,
 #main-wrapper fieldset .chosen-container-single .chosen-single li,
-#main-wrapper fieldset .chosen-container-multi > ul li,
+#main-wrapper fieldset .chosen-container-multi ul li,
 #main-wrapper fieldset .select2-selection li {
   background-color: transparent;
   margin-top: 1px;
 }
+#main-wrapper fieldset ul.chosen-results {
+  background: transparent !important;
+}
 #main-wrapper .chosen-container .chosen-drop {
-  height: 100px;
+  height: auto;
 }
 #main-wrapper .chosen-container .chosen-drop ul {
   height: 100px;
@@ -691,8 +706,13 @@ nav.tabs .nav-tabs {
   display: none;
 }
 
+.update-partners-form-wrapper .chosen-container-multi {
+  display: none !important;
+}
+
 #edit_countries_of_activity_chosen.chosen-container-multi {
   display: block !important;
+  width: 100% !important;
 }
 
 #scroll-top {
@@ -5437,16 +5457,57 @@ h2.node__title {
   margin-bottom: 0.3rem;
 }
 
-.napo-films-card {
+.field--name-body h2 {
+  color: #003399;
+}
+
+.title-napo-film {
+  color: #003399;
+}
+
+.napo-films-view {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
 }
-.napo-films-card .card {
+.napo-films-view .card {
   width: 32%;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 2% 2% 2% 0;
+  -webkit-box-shadow: 0px 0px 6px 0px #cccccc;
+  -moz-box-shadow: 0px 0px 6px 0px #cccccc;
+  box-shadow: 0px 0px 6px 0px #cccccc;
 }
-.napo-films-card .card img {
-  height: 220px;
+.napo-films-view .card .card-img-top {
+  height: 207px;
+  position: relative;
+}
+.napo-films-view .card .card-img-top .cover {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.napo-films-view .card .card-img-top .cover a {
+  display: block;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+.napo-films-view .card .card-img-top img {
+  width: 100%;
+  height: 207px;
+}
+.napo-films-view .card .card-img-top .media-oembed-content {
+  width: 100%;
+  height: 207px;
+}
+.napo-films-view .card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.napo-films-view .card .card-body {
+  padding: 1rem 1.25rem 1.25rem;
 }
 
 .share-networks {
@@ -5456,12 +5517,13 @@ h2.node__title {
 }
 .share-networks .napo-actions {
   list-style: none;
-  margin: 0;
+  margin: 0 0 1rem 0;
   padding: 0;
   display: flex;
 }
 .share-networks .napo-actions li {
   margin-left: 0.8rem;
+  position: relative;
 }
 .share-networks .napo-actions li:nth-child(1) {
   margin-left: 0;
@@ -5479,6 +5541,19 @@ h2.node__title {
   -webkit-mask-repeat: no-repeat;
   mask-image: url(../images/svg_icons/solid/share-alt.svg);
   mask-repeat: no-repeat;
+}
+.share-networks .napo-actions li.download-film:before {
+  -webkit-mask-image: url(../images/svg_icons/solid/download.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(../images/svg_icons/solid/download.svg);
+  mask-repeat: no-repeat;
+}
+.share-networks .napo-actions li.download-film a {
+  display: block;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  width: 100%;
 }
 .share-networks .list-networks {
   background: white;
