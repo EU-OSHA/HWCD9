@@ -32,7 +32,9 @@ function hwc_theme_form_system_theme_settings_alter(&$form, FormStateInterface $
     'bg-transparent' => t('Transparent'),
   ];
 }
-
+function hwc_theme_preprocess_html(&$variables){
+  $variables['base_path'] = base_path();
+}
 function hwc_theme_theme_suggestions_views_view_field_alter(array &$suggestions, array &$variables, $hook)
 {
   if ($variables['view']->id() && $variables['view']->current_display) {
