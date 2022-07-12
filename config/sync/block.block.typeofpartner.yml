@@ -12,14 +12,15 @@ dependencies:
 id: typeofpartner
 theme: hwc_theme
 region: content
-weight: -16
+weight: -21
 provider: null
 plugin: 'facet_block:type_of_partner'
 settings:
   id: 'facet_block:type_of_partner'
-  label: 'Type of partner'
+  label: 'Type of partner:'
   label_display: '0'
   provider: facets
+  context_mapping: {  }
   block_id: typeofpartner
 visibility:
   request_path:

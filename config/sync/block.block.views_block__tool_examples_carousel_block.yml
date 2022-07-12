@@ -12,7 +12,7 @@ dependencies:
 id: views_block__tool_examples_carousel_block
 theme: hwc_theme
 region: content
-weight: 2
+weight: 3
 provider: null
 plugin: 'views_block:tool_examples_carousel-block'
 settings:
@@ -30,6 +30,4 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      tk_article: tk_article
       tk_tool: tk_tool
-      tk_topic: tk_topic
