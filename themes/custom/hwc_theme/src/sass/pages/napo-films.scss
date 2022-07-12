@@ -77,9 +77,9 @@
       }
       &.share-link{
         &:before{
-          -webkit-mask-image: url(../images/svg_icons/solid/share-alt.svg);
+          -webkit-mask-image: url(../images/svg_icons/solid/share-variant.svg);
           -webkit-mask-repeat: no-repeat;
-          mask-image: url(../images/svg_icons/solid/share-alt.svg);
+          mask-image: url(../images/svg_icons/solid/share-variant.svg);
           mask-repeat: no-repeat;
         }
       }
@@ -175,6 +175,13 @@
           //content:'\f0e1';
           -webkit-mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
           mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
+        }
+      }
+      &.copy{
+        a:before{
+          //content:'\f0e1';
+          -webkit-mask-image: url(../images/svg_icons/solid/content-copy.svg);
+          mask-image: url(../images/svg_icons/solid/content-copy.svg);
         }
       }
     }
