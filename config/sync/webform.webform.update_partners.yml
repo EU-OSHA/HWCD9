@@ -142,7 +142,7 @@ elements: |-
     other_countries:
       '#type': textfield
       '#title': 'Other Countries'
-      '#description': 'If your Organisation is active in other countries that are not displayed in the list please indicate them in the following field.'
+      '#description': 'If your Organisation is active in other countries that are not displayed in the list please indicate them here.'
       '#access_create_roles':
         - anonymous
         - administrator
@@ -366,6 +366,7 @@ elements: |-
         - anonymous
         - administrator
         - campaign_partner
+      '#required': true
     general_telephone_number:
       '#type': webform_telephone
       '#title': 'General telephone number'
@@ -385,7 +386,6 @@ elements: |-
       '#type': url
       '#title': Homepage
       '#description': 'Organisation&#39;s website.'
-      '#required': true
       '#label_attributes':
         class:
           - displayed-campaign
@@ -432,9 +432,7 @@ elements: |-
   about_your_ceo:
     '#type': webform_section
     '#title': 'About your CEO'
-    '#description': |-
-      For typo mistakes in the CEO related fields, correct directly the text in the fields.<br />
-      For change of CEO, please, activate the box and provide the new CEO details.
+    '#description': 'For typo mistakes in the CEO related fields, correct directly the text in the fields.'
     '#access_create_roles':
       - anonymous
       - administrator
@@ -585,6 +583,7 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+      '#required': true
   your_communication_representative:
     '#type': webform_section
     '#title': 'Your Communication Representative'
@@ -644,6 +643,7 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+      '#required': true
   your_campaign_pledge_for_publication_on_campaign_website:
     '#type': webform_section
     '#title': 'Your campaign pledge for Publication on Campaign Website'
