@@ -640,7 +640,8 @@ nav.tabs .nav-tabs {
   clear: both;
 }
 
-.path-webform .webform-submission-update-partners-form .js-form-item-position {
+.path-webform .webform-submission-update-partners-form .js-form-item-position,
+.path-webform .webform-submission-update-partners-form .form-item-position-new {
   clear: both;
 }
 .path-webform .webform-submission-update-partners-fops-form .form-item-homepage,
@@ -3082,7 +3083,7 @@ h2.node__title {
   color: #FFFFFF;
   background: #003399;
   text-decoration: none;
-  border: 0 solid #003399;
+  border: 2px solid #003399;
 }
 .public-profile-full-wrapper .public-profile-full-inner .create-new-wrapper {
   text-align: right;
@@ -3123,7 +3124,7 @@ h2.node__title {
   color: #FFFFFF;
   background: #003399;
   text-decoration: none;
-  border: 0 solid #003399;
+  border: 2px solid #003399;
 }
 .public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper {
   text-align: right;
@@ -3158,7 +3159,7 @@ h2.node__title {
 .public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper a:hover {
   text-decoration: none;
   filter: brightness(0) invert(1);
-  border: 2px solid transparent;
+  border: 0 solid transparent;
 }
 .public-profile-full-wrapper .public-profile-full-inner .practice-exchange-wrapper:hover {
   color: #FFFFFF;
@@ -3199,7 +3200,7 @@ h2.node__title {
 .public-profile-full-wrapper .public-profile-full-inner .partner-resources-wrapper a:hover {
   text-decoration: none;
   filter: brightness(0) invert(1);
-  border: 2px solid transparent;
+  border: 0 solid transparent;
 }
 .public-profile-full-wrapper .public-profile-full-inner .partner-resources-wrapper:hover {
   color: #FFFFFF;
@@ -3240,7 +3241,7 @@ h2.node__title {
 .public-profile-full-wrapper .public-profile-full-inner .update-profile-wrapper a:hover {
   text-decoration: none;
   filter: brightness(0) invert(1);
-  border: 2px solid transparent;
+  border: 0 solid transparent;
 }
 .public-profile-full-wrapper .public-profile-full-inner .update-profile-wrapper:hover {
   color: #FFFFFF;
@@ -3253,7 +3254,7 @@ h2.node__title {
   margin-left: 20px;
 }
 .public-profile-full-wrapper .news-events-buttons-wrapper .my-events-wrapper {
-  margin-right: 190px;
+  margin-right: 85px;
 }
 .public-profile-full-wrapper .news-events-buttons-wrapper .my-events-wrapper a {
   font-weight: bold;
@@ -3731,6 +3732,393 @@ h2.node__title {
 }
 */
 /* End edit forms */
+/* /campaign-partners/campaign-media-partners */
+.section-center .facet-item {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+.section-center .facet-item a {
+  padding: 0px 13px 0 0;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.facet-item-title {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+.facet-item-title a {
+  padding: 0px 13px 0 0;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.block-views-blockpartner-countries-solr-block-1 {
+  margin-bottom: 60px;
+  border-top: 1px dotted #749b00;
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping {
+  width: 100%;
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-header .char-anchor {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  display: inline-block;
+  border-bottom: 1px dotted #749b00;
+  font-size: 1.2em;
+  font-style: normal;
+  color: #749b00;
+  width: 100%;
+  clear: both;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 {
+  width: 16.6%;
+  margin-bottom: 0;
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 .vocabulary-country {
+  float: left;
+  min-height: auto !important;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  border-bottom: 1px dotted #749b00;
+  border-left: 1px dotted #749b00;
+  padding: 30px 20px 15px;
+  height: 185px;
+}
+@media (max-width: 1199px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 .vocabulary-country {
+    height: 206px;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 .vocabulary-country {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 .vocabulary-country h2 {
+    text-align: center;
+  }
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 .vocabulary-country h2 a {
+  font-size: 14px;
+  font-weight: bold;
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 .vocabulary-country img {
+  max-width: 110px;
+  border: 0;
+  border-radius: 7px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 .vocabulary-country .field__item {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content h3 {
+    width: 100%;
+  }
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content .col-md-2 {
+  float: left;
+  min-height: auto !important;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  border-bottom: 1px dotted #749b00;
+  border-left: 1px dotted #749b00;
+  padding: 30px 20px 15px;
+  padding-bottom: 24px;
+  height: 185px;
+  padding-top: 15px;
+}
+@media (max-width: 1199px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content .col-md-2 {
+    height: 206px;
+  }
+}
+@media (max-width: 991px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content .col-md-2 {
+    max-width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content .col-md-2 {
+    max-width: 100%;
+  }
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content .col-md-2 .views-field-title {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content .col-md-2 .views-field-field-logo {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+}
+.block-views-blockpartner-countries-solr-block-1 .view-partner-countries-solr .view-grouping .view-grouping-content .col-md-2 .views-field-field-logo img {
+  max-width: 110px;
+}
+
+/* end /campaign-partners/campaign-media-partners */
+/* /campaign-partners/official-campaign-partners */
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row {
+  flex-wrap: unset;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row fieldset {
+  margin-bottom: 0 !important;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row fieldset label {
+  display: none;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row .form-item-field-orgtype ul {
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row .form-item-field-orgtype ul li {
+  border: 1px dotted #749b00;
+  float: left;
+  padding: 15px 30px;
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row .form-item-field-orgtype ul li {
+    padding: 7.5px 15px;
+  }
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row .form-item-field-orgtype ul li a {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row .form-item-field-orgtype ul li a {
+    font-size: 13px;
+  }
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row .form-item-field-orgtype ul li a.bef-link--selected {
+  color: #749b00;
+  font-style: normal;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row .form-item-field-orgtype ul li::marker {
+  content: none;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row #edit-actions button {
+  display: none;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .form-row #edit-actions--2 button {
+  display: none;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content {
+  margin-bottom: 60px;
+  border-top: 1px dotted #749b00;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content h3 {
+  width: 100%;
+  margin-bottom: 0;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content h3 .char-anchor {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  display: inline-block;
+  border-bottom: 1px dotted #749b00;
+  font-size: 17px;
+  font-style: normal;
+  color: #749b00;
+  width: 100%;
+  clear: both;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 {
+  float: left;
+  min-height: auto !important;
+  justify-content: center;
+  margin: 0;
+  border-bottom: 1px dotted #749b00;
+  border-left: 1px dotted #749b00;
+  padding: 30px 20px 15px;
+  padding-bottom: 24px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 220px;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    height: unset;
+  }
+}
+@media (max-width: 600px) {
+  .block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0;
+  }
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 .views-field-title-1 {
+  text-align: center;
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 .views-field-field-logo {
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  .block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 .views-field-field-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+.block-views-blockpartner-countries-campaign-partners--block-1 .view-partner-countries-campaign-partners- .view-content .col-md-2 .views-field-field-logo img {
+  max-width: 110px;
+}
+
+/* end /campaign-partners/official-campaign-partners */
+/* /campaign-partners/enterprise-europe-network */
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 {
+  margin-bottom: 60px;
+  border-top: 1px dotted #749b00;
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping {
+  width: 100%;
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-header .char-anchor {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  display: inline-block;
+  border-bottom: 1px dotted #749b00;
+  font-size: 1.2em;
+  font-style: normal;
+  color: #749b00;
+  width: 100%;
+  clear: both;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 {
+  width: 16.6%;
+  margin-bottom: 0;
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 .vocabulary-country {
+  float: left;
+  min-height: auto !important;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  border-bottom: 1px dotted #749b00;
+  border-left: 1px dotted #749b00;
+  padding: 30px 20px 15px;
+  height: 185px;
+}
+@media (max-width: 1199px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 .vocabulary-country {
+    height: 206px;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 .vocabulary-country {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 .vocabulary-country h2 {
+    text-align: center;
+  }
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 .vocabulary-country h2 a {
+  font-size: 14px;
+  font-weight: bold;
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 .vocabulary-country img {
+  max-width: 110px;
+  border: 0;
+  border-radius: 7px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 .vocabulary-country .field__item {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content h3 {
+    width: 100%;
+  }
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content .col-md-2 {
+  float: left;
+  min-height: auto !important;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  border-bottom: 1px dotted #749b00;
+  border-left: 1px dotted #749b00;
+  padding: 30px 20px 15px;
+  padding-bottom: 24px;
+  height: 185px;
+  padding-top: 15px;
+}
+@media (max-width: 1199px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content .col-md-2 {
+    height: 206px;
+  }
+}
+@media (max-width: 991px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content .col-md-2 {
+    max-width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content .col-md-2 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content .col-md-2 .views-field-field-logo-1 {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+}
+.block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content .col-md-2 .views-field-field-logo-1 img {
+  max-width: 110px;
+}
+@media (max-width: 767px) {
+  .block-views-blockpartner-countries-een-osh-ambassador--block-1 .view-partner-countries-een-osh-ambassador- .view-grouping .view-grouping-content .col-md-2 .views-field-field-logo-1 img {
+    max-width: 110px;
+  }
+}
+
+/* end /campaign-partners/enterprise-europe-network */
 .node--type-news .node__date {
   padding-top: 0.3rem;
   margin-bottom: 0;
@@ -5537,9 +5925,9 @@ h2.node__title {
   width: 20px;
 }
 .share-networks .napo-actions li.share-link:before {
-  -webkit-mask-image: url(../images/svg_icons/solid/share-alt.svg);
+  -webkit-mask-image: url(../images/svg_icons/solid/share-variant.svg);
   -webkit-mask-repeat: no-repeat;
-  mask-image: url(../images/svg_icons/solid/share-alt.svg);
+  mask-image: url(../images/svg_icons/solid/share-variant.svg);
   mask-repeat: no-repeat;
 }
 .share-networks .napo-actions li.download-film:before {
@@ -5619,6 +6007,10 @@ h2.node__title {
 .share-networks .list-networks li.ln a:before {
   -webkit-mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
   mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
+}
+.share-networks .list-networks li.copy a:before {
+  -webkit-mask-image: url(../images/svg_icons/solid/content-copy.svg);
+  mask-image: url(../images/svg_icons/solid/content-copy.svg);
 }
 
 .private-zone-full-wrapper {
