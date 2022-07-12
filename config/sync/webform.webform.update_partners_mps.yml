@@ -76,6 +76,7 @@ elements: |-
         - anonymous
       '#access_view_roles':
         - anonymous
+      '#required': true
     media_type:
       '#type': checkboxes
       '#title': 'Media Type'
@@ -230,7 +231,6 @@ elements: |-
       '#type': url
       '#title': Homepage
       '#description': 'Organisation&#39;s website.'
-      '#required': true
       '#label_attributes':
         class:
           - displayed-campaign
@@ -275,7 +275,7 @@ elements: |-
       - anonymous
     ceo_s_name:
       '#type': textfield
-      '#title': 'CEO''s name'
+      '#title': 'Name of the editor in chief'
       '#description': 'Name of your CEO, President, General Director or other.'
       '#required': true
       '#label_attributes':
@@ -291,7 +291,7 @@ elements: |-
         - anonymous
     ceo_s_surname:
       '#type': textfield
-      '#title': 'CEO''s surname'
+      '#title': 'Surname of the editor in chief'
       '#required': true
       '#label_attributes':
         class:
