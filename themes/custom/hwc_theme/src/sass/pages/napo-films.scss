@@ -3,9 +3,38 @@
     color: $text-color-blue;
   }
 }
-.title-napo-film{
-  color: $text-color-blue;
+.intro-napo-films{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  p{
+    margin-bottom: 0;
+    margin-right: 2%;
+  }
+  .download-all{
+    display: flex;
+    justify-content: flex-end;
+    &:after{
+      content: '';
+      background: $text-color-blue;
+      margin-left: 5px;
+      display: block;
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+      -webkit-mask-image: url(../images/svg_icons/solid/download.svg);
+      -webkit-mask-repeat: no-repeat;
+      mask-image: url(../images/svg_icons/solid/download.svg);
+      mask-repeat: no-repeat;
+    }
+  }
+  .title-napo-film{
+    color: $text-color-blue;
+    margin-bottom: 0 !important;
+  }
 }
+
 
 .napo-films-view{
   display: flex;
@@ -76,6 +105,9 @@
         width: 20px;
       }
       &.share-link{
+        &:hover{
+          cursor: pointer;
+        }
         &:before{
           -webkit-mask-image: url(../images/svg_icons/solid/share-variant.svg);
           -webkit-mask-repeat: no-repeat;
@@ -178,10 +210,19 @@
         }
       }
       &.copy{
-        a:before{
+        span{
+          display: none;
+        }
+        &:before{
           //content:'\f0e1';
+          content: '';
+          display: block;
+          height: 20px;
+          width: 20px;
+          background: #adadad;
           -webkit-mask-image: url(../images/svg_icons/solid/content-copy.svg);
           mask-image: url(../images/svg_icons/solid/content-copy.svg);
+          cursor: pointer;
         }
       }
     }

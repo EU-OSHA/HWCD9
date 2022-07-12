@@ -474,10 +474,15 @@
 }
 
 /* Help modal */
-.ui-dialog .ui-dialog-titlebar{
-  background: $bg-color-blue;
-  span{
-    color: #FFFFFF;
+.path-webform{
+  .ui-widget.ui-widget-content{
+    z-index: 9999999 !important;
+  }
+  .ui-dialog .ui-dialog-titlebar{
+    background: $bg-color-blue;
+    span{
+      color: #FFFFFF;
+    }
   }
 }
 
@@ -511,4 +516,70 @@
 
 .ui-dialog .button{
   background-image: none;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  #scroll-top {
+    right: 14%;
+  }
+}
+
+@media only screen and (max-width: 1780px) {
+  #scroll-top {
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .path-webform {
+    section.form-item {
+      fieldset {
+        width: 96%;
+        float: none;
+        clear: both;
+      }
+    }
+    /* Fix fieldset heihts to make 2 columns */
+    .form-item-other-countries{
+      height: auto;
+    }
+    .form-item-business-sector{
+      height: auto;
+    }
+    .form-item-ceo-s-position{
+      height: auto;
+    }
+
+    section.form-item{
+      .form-item-name-mc{
+        label{
+          width: auto;
+        }
+      }
+      .form-item-name-mc.form-disabled{
+        label{
+          width: auto;
+        }
+      }
+      .form-item-name-of-main-contact-person-for-the-campaign{
+        label{
+          width: auto;
+        }
+      }
+      .form-item-surname-mc,
+      .form-item-surname-new{
+        label{
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .update-partners-form-wrapper {
+    display: inline-block;
+  }
 }

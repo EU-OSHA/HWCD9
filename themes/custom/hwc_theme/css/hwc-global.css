@@ -747,10 +747,13 @@ nav.tabs .nav-tabs {
 }
 
 /* Help modal */
-.ui-dialog .ui-dialog-titlebar {
+.path-webform .ui-widget.ui-widget-content {
+  z-index: 9999999 !important;
+}
+.path-webform .ui-dialog .ui-dialog-titlebar {
   background: #003399;
 }
-.ui-dialog .ui-dialog-titlebar span {
+.path-webform .ui-dialog .ui-dialog-titlebar span {
   color: #FFFFFF;
 }
 
@@ -784,6 +787,54 @@ nav.tabs .nav-tabs {
   background-image: none;
 }
 
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  #scroll-top {
+    right: 14%;
+  }
+}
+@media only screen and (max-width: 1780px) {
+  #scroll-top {
+    right: 2%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .path-webform {
+    /* Fix fieldset heihts to make 2 columns */
+  }
+  .path-webform section.form-item fieldset {
+    width: 96%;
+    float: none;
+    clear: both;
+  }
+  .path-webform .form-item-other-countries {
+    height: auto;
+  }
+  .path-webform .form-item-business-sector {
+    height: auto;
+  }
+  .path-webform .form-item-ceo-s-position {
+    height: auto;
+  }
+  .path-webform section.form-item .form-item-name-mc label {
+    width: auto;
+  }
+  .path-webform section.form-item .form-item-name-mc.form-disabled label {
+    width: auto;
+  }
+  .path-webform section.form-item .form-item-name-of-main-contact-person-for-the-campaign label {
+    width: auto;
+  }
+  .path-webform section.form-item .form-item-surname-mc label,
+.path-webform section.form-item .form-item-surname-new label {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .update-partners-form-wrapper {
+    display: inline-block;
+  }
+}
 .row {
   margin: 0;
 }
@@ -5849,8 +5900,36 @@ h2.node__title {
   color: #003399;
 }
 
-.title-napo-film {
+.intro-napo-films {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.intro-napo-films p {
+  margin-bottom: 0;
+  margin-right: 2%;
+}
+.intro-napo-films .download-all {
+  display: flex;
+  justify-content: flex-end;
+}
+.intro-napo-films .download-all:after {
+  content: "";
+  background: #003399;
+  margin-left: 5px;
+  display: block;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  -webkit-mask-image: url(../images/svg_icons/solid/download.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url(../images/svg_icons/solid/download.svg);
+  mask-repeat: no-repeat;
+}
+.intro-napo-films .title-napo-film {
   color: #003399;
+  margin-bottom: 0 !important;
 }
 
 .napo-films-view {
@@ -5923,6 +6002,9 @@ h2.node__title {
   cursor: pointer;
   height: 20px;
   width: 20px;
+}
+.share-networks .napo-actions li.share-link:hover {
+  cursor: pointer;
 }
 .share-networks .napo-actions li.share-link:before {
   -webkit-mask-image: url(../images/svg_icons/solid/share-variant.svg);
@@ -6008,9 +6090,18 @@ h2.node__title {
   -webkit-mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
   mask-image: url(../images/svg_icons/brands/linkedin-in.svg);
 }
-.share-networks .list-networks li.copy a:before {
+.share-networks .list-networks li.copy span {
+  display: none;
+}
+.share-networks .list-networks li.copy:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: #adadad;
   -webkit-mask-image: url(../images/svg_icons/solid/content-copy.svg);
   mask-image: url(../images/svg_icons/solid/content-copy.svg);
+  cursor: pointer;
 }
 
 .private-zone-full-wrapper {
