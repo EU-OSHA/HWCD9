@@ -16,7 +16,7 @@
     <article class="card" >
       <div class="card-img-top">
         <div class="cover">
-          <a class="use-ajax" data-dialog-options="{&quot;width&quot;:800}" data-dialog-type="modal" href="/node/{{ item.nid.value }}"></a>
+          <a class="use-ajax" data-dialog-options="{&quot;width&quot;:767}" data-dialog-type="modal" href="/node/{{ item.nid.value }}"></a>
         </div>
         {{ item.field_youtube.0.entity.field_media_oembed_video|view }}
       </div>
@@ -60,60 +60,4 @@
       </div>
     </article>
   {% endfor %}
-
-
-{#  <article class="card" >#}
-{#    <img class="card-img-top" src="http://hwc.ddev.site/sites/hwc/files/styles/large/public/hwc/news/eu_diversity_month_220.jpg?itok=1qpRY-Om" alt="Card image cap">#}
-{#    <div class="card-body">#}
-{#      <div class="share-networks">#}
-{#        <ul class="napo-actions">#}
-{#          <li class="share-link fas fa-share-alt"><label class="sr-only">Share</label></li>#}
-{#          <li class="download-film fas fa-download"><label class="sr-only">Download</label></li>#}
-{#        </ul>#}
-{#        <ul class="list-networks d-none">#}
-{#          <li class="close-share fas fa-times"></li>#}
-{#          <li class="fb">#}
-{#            <a href="https://www.facebook.com/sharer/sharer.php?u=www.google.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
-{#               target="_blank"><span>facebook</span></a>#}
-{#          </li>#}
-{#          <li class="tw">#}
-{#            <a href="https://twitter.com/share?url=URLENCODED_URL&via=TWITTER_HANDLE&text=TEXT"#}
-{#               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
-{#               target="_blank"><span>twitter</span></a> </li>#}
-{#          <li class="ln">#}
-{#            <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_URL_HERE" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
-{#               target="_blank"><span>linkedin</span></a> </li>#}
-{#        </ul>#}
-{#      </div>#}
-{#      <h3 class="card-title">Card title</h3>#}
-{#      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>#}
-{#    </div>#}
-{#  </article>#}
-{#  <article class="card" >#}
-{#    <img class="card-img-top" src="http://hwc.ddev.site/sites/hwc/files/styles/large/public/hwc/news/eu_diversity_month_220.jpg?itok=1qpRY-Om" alt="Card image cap">#}
-{#    <div class="card-body">#}
-{#      <div class="share-networks">#}
-{#        <ul class="napo-actions">#}
-{#          <li class="share-link fas fa-share-alt"><label class="sr-only">Share</label></li>#}
-{#          <li class="download-film fas fa-download"><label class="sr-only">Download</label></li>#}
-{#        </ul>#}
-{#        <ul class="list-networks d-none">#}
-{#          <li class="close-share fas fa-times"></li>#}
-{#          <li class="fb">#}
-{#            <a href="https://www.facebook.com/sharer/sharer.php?u={{ file_url('node'~node.nid.0.value)  }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
-{#               target="_blank"><span>facebook</span></a>#}
-{#          </li>#}
-{#          <li class="tw">#}
-{#            <a href="https://twitter.com/share?url=http://hwc.ddev.site/en/tools-and-publications/napo-films&via=TWITTER_HANDLE&text=TEXT"#}
-{#               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
-{#               target="_blank"><span>twitter</span></a> </li>#}
-{#          <li class="ln">#}
-{#            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://hwc.ddev.site/en/tools-and-publications/napo-films" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"#}
-{#               target="_blank"><span>linkedin</span></a> </li>#}
-{#        </ul>#}
-{#      </div>#}
-{#      <h3 class="card-title">{{ node.title.0.value }}</h3>#}
-{#      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>#}
-{#    </div>#}
-{#  </article>#}
 </div>
