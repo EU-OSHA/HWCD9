@@ -5794,6 +5794,16 @@ h2.node__title {
   width: 30%;
 }
 
+.tk-article-page h2.toolkit-h2 {
+  font-style: normal;
+  color: #749b00;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 2em;
+  text-align: left;
+  margin-top: 10px;
+}
+
 .cm-section {
   width: 100%;
 }
