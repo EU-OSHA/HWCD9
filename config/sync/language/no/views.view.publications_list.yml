@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Søk
+          exposed_sorts_label: 'Sorter etter'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Siste først'
+        title:
+          expose:
+            label: Alfabetisk
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Søk blant ressurser'
+      header:
+        result:
+          content: '<h2>Tilgjengelige publikasjoner <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Søk case-studier'
+      header:
+        result:
+          content: '<h2>Tilgjengelige case-studier <span>(@total)</span></h2>'

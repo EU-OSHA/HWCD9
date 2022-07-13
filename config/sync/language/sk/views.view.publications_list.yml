@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_pages_count:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          submit_button: Vyhľadávanie
+          exposed_sorts_label: 'Zoradiť podľa'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Od najnovších'
+        title:
+          expose:
+            label: Abecedne
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Vyhľadávať v zdrojoch'
+      header:
+        result:
+          content: '<h2>Publikácie k dispozícii <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Hľadať prípadové štúdie'
+      header:
+        result:
+          content: '<h2>Dostupné prípadové štúdie <span>(@total)</span></h2>'

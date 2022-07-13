@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_pages_count:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQDAw==
+      exposed_form:
+        options:
+          submit_button: Išči
+          exposed_sorts_label: 'Razvrsti po'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Najnovejše na vrh'
+        title:
+          expose:
+            label: 'Abecedni vrstni red'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Išči po virih'
+      header:
+        result:
+          content: '<h2>Razpoložljive publikacij <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Išči po študijah primerov'
+      header:
+        result:
+          content: '<h2>Študije primerov, ki so na voljo <span>(@total)</span></h2>'

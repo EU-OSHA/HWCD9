@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Suche
+          exposed_sorts_label: 'Sortieren nach'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Aktuelles zuerst'
+        title:
+          expose:
+            label: Alphabetisch
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Ressourcen durchsuchen'
+      header:
+        result:
+          content: '<h2>Verfügbare Veröffentlichungen <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Fallstudien durchsuchen'
+      header:
+        result:
+          content: '<h2>Verfügbare Fallstudien <span>(@total)</span></h2>'

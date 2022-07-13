@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Αναζήτηση
+          exposed_sorts_label: 'Επιλογή τρόπου αναζήτησης'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Εμφάνιση πιο πρόσφατων'
+        title:
+          expose:
+            label: Αλφαβητικά
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Αναζήτηση στους πόρους'
+      header:
+        result:
+          content: '<h2>Διαθέσιμες εκδόσεις <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Αναζήτηση στις Περιπτωσιολογικές μελέτες'
+      header:
+        result:
+          content: '<h2>Διαθέσιμες περιπτωσιολογικές μελέτες <span>(@total)</span></h2>'

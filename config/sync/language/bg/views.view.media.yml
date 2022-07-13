@@ -1,0 +1,34 @@
+label: Медия
+display:
+  default:
+    display_title: 'По подразбиране'
+    display_options:
+      title: Медия
+      fields:
+        media_bulk_form:
+          action_title: Действие
+        bundle:
+          label: Вид
+        uid:
+          label: Автор
+        status:
+          label: Статус
+        changed:
+          label: Обновено
+        operations:
+          label: Действия
+      exposed_form:
+        options:
+          reset_button_label: Рестартирай
+      filters:
+        bundle:
+          expose:
+            label: Вид
+        langcode:
+          expose:
+            label: Език
+  media_page_list:
+    display_title: Медия
+    display_options:
+      menu:
+        title: Медия

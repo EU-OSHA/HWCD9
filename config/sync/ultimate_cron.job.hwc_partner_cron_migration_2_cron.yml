@@ -1,6 +1,6 @@
 uuid: 4ac30247-3096-4d09-8348-debea60707c3
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - hwc_partner_cron_migration_2
@@ -13,7 +13,7 @@ scheduler:
   id: simple
   configuration:
     rules:
-      - '*/15+@ * * * *'
+      - '0+@ 0 * * *'
 launcher:
   id: serial
   configuration:

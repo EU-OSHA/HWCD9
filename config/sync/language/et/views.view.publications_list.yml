@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Otsing
+          exposed_sorts_label: Sordi
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Uuemad enne'
+        title:
+          expose:
+            label: 'Tähestiku järjekorras'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Otsi materjale'
+      header:
+        result:
+          content: '<h2>Olemasolevad väljaanded <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Otsi juhtumiuuringuid'
+      header:
+        result:
+          content: '<h2>Kättesaadavad juhtumiuuringud <span>(@total)</span></h2>'

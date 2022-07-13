@@ -1,0 +1,24 @@
+display:
+  default:
+    display_title: Numatytasis
+    display_options:
+      fields:
+        type:
+          label: Rūšis
+        link:
+          label: Veiksmai
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      filters:
+        type:
+          expose:
+            label: Rūšis
+  page:
+    display_title: Puslapis

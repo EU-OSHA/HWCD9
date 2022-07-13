@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Zoeken
+          exposed_sorts_label: 'Sorteren op'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Nieuwste eerst'
+        title:
+          expose:
+            label: Alfabetisch
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Hulpmiddelen zoeken'
+      header:
+        result:
+          content: '<h2>Beschikbare publicaties <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Casestudy''s zoeken'
+      header:
+        result:
+          content: '<h2>Beschikbare casestudies <span>(@total)</span></h2>'

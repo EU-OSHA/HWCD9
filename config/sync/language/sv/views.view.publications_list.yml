@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Sök
+          exposed_sorts_label: 'Sortera efter'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Senaste först'
+        title:
+          expose:
+            label: 'Alfabetisk ordning'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Sök i resurser'
+      header:
+        result:
+          content: '<h2>Tillgängliga publikationer <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Sök fallstudier'
+      header:
+        result:
+          content: '<h2>Tillgängliga fallstudier <span>(@total)</span></h2>'
