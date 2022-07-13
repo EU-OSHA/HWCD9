@@ -6104,6 +6104,62 @@ h2.node__title {
   cursor: pointer;
 }
 
+/** pop up **/
+.ui-dialog {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+  background: #003399;
+  display: flex;
+  justify-content: flex-end;
+}
+.ui-dialog .ui-dialog-titlebar span.ui-dialog-title {
+  display: none;
+}
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
+  background: transparent;
+  border: 0;
+  position: relative;
+  margin: 3px 0px;
+  height: auto;
+  padding: 0;
+}
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding: 0;
+  background: none;
+  overflow: auto;
+}
+.ui-dialog .ui-dialog-content .node--type-napo-film {
+  margin: 0rem;
+  padding: 0;
+}
+.ui-dialog .ui-dialog-content .node--type-napo-film .block-addtoany-block {
+  display: none;
+}
+.ui-dialog .ui-dialog-content .node--type-napo-film header h2 {
+  margin: 0;
+  background: #CFDDEE;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 7px 16px;
+}
+.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .media-oembed-content {
+  max-width: 100%;
+  width: 100%;
+  height: 450px;
+}
+.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .field--name-body {
+  padding: 16px 16px;
+}
+.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .field--name-field-video {
+  padding: 16px 16px;
+}
+
 .private-zone-full-wrapper {
   display: flex;
   justify-content: center;
