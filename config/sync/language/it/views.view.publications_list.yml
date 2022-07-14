@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Ricerca
+          exposed_sorts_label: 'Ordina per'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Prima l’ultimo'
+        title:
+          expose:
+            label: 'In ordine alfabetico'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Ricerca risorse'
+      header:
+        result:
+          content: '<h2>Pubblicazioni disponibili <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Ricerca casi studio'
+      header:
+        result:
+          content: '<h2>Studi di caso disponibili <span>(@total)</span></h2>'

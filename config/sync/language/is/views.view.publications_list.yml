@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Leita
+          exposed_sorts_label: 'Flokka eftir'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Það nýjasta fyrst'
+        title:
+          expose:
+            label: 'Í stafrófsröð'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Leita í úrræðum'
+      header:
+        result:
+          content: '<h2>Rit í boði <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Leita að tilfellarannsóknum'
+      header:
+        result:
+          content: '<h2>Tiltækar rannsóknir <span>(@total)</span></h2>'

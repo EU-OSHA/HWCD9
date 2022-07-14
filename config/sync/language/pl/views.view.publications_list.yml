@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_pages_count:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          submit_button: Wyszukaj
+          exposed_sorts_label: 'Sortuje według'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Od najnowszych'
+        title:
+          expose:
+            label: 'W porządku alfabetycznym'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Wyszukaj w zasobach'
+      header:
+        result:
+          content: '<h2>Dostępne publikacje <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Wyszukaj analizy przykładów'
+      header:
+        result:
+          content: '<h2>Dostępne studia przypadków <span>(@total)</span></h2>'

@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Buscar
+          exposed_sorts_label: 'Ordenar por'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Primero los más recientes'
+        title:
+          expose:
+            label: 'Por orden alfabético'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Buscar en los recursos'
+      header:
+        result:
+          content: '<h2>Publicaciones disponibles <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Buscar casos prácticos'
+      header:
+        result:
+          content: '<h2>Estudios de casos disponibles <span>(@total)</span></h2>'

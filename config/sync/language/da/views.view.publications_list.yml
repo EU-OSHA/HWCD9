@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Søg
+          exposed_sorts_label: 'Sortér efter'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Seneste først'
+        title:
+          expose:
+            label: Alfabetisk
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Søg i materialer'
+  block_1:
+    display_options:
+      header:
+        result:
+          content: '<h2>Tilgængelige publikationer <span>(@total)</span></h2>'
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Søg i materialer'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Søg efter casestudier'
+      header:
+        result:
+          content: '<h2>Foreliggende casestudier <span>(@total)</span></h2>'

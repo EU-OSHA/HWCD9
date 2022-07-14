@@ -1,0 +1,36 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_pages_count:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          submit_button: Pretraživanje
+          exposed_sorts_label: 'Razvrstaj prema'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Najprije najnovije'
+        title:
+          expose:
+            label: Abecedno
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Pretraživanje materijala'
+      header:
+        result:
+          content: '<h2>Dostupne publikacije <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Pretraživanje studija slučaja'
+      header:
+        result:
+          content: '<h2>Dostupne studije slučaja <span>(@total)</span></h2>'

@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Keresés
+          exposed_sorts_label: 'Rendezés szempontja:'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'A legújabb legyen elöl'
+        title:
+          expose:
+            label: Ábécésorrendben
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Források keresése'
+      header:
+        result:
+          content: '<h2>Elérhető kiadványok <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Esettanulmányok keresése'
+      header:
+        result:
+          content: '<h2>Elérhető esettanulmányok <span>(@total)</span></h2>'

@@ -1,6 +1,6 @@
 uuid: 1cd4e93b-4d04-4118-a5c0-5982da9f0954
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - hwc_crm_partners_migration

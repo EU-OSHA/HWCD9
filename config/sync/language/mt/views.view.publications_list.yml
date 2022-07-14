@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Fittex
+          exposed_sorts_label: 'Issortja skont'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Tal-aħħar l-ewwel'
+        title:
+          expose:
+            label: Alfabetikament
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Fittex fir-riżorsi'
+      header:
+        result:
+          content: '<h2>Pubblikazzjonijiet disponibbli <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Fittex Studji tal-każijiet'
+      header:
+        result:
+          content: '<h2>Studji ta’ każijiet disponibbli <span>(@total)</span></h2>'
