@@ -107,6 +107,7 @@
       &.share-link{
         &:hover{
           cursor: pointer;
+          opacity: 0.6;
         }
         &:before{
           -webkit-mask-image: url(../images/svg_icons/solid/share-variant.svg);
@@ -173,6 +174,10 @@
       }
       &.close-share{
         padding-bottom: 0.8rem;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.6;
+        }
         &:before{
           content: '';
           display: block;
@@ -232,13 +237,33 @@
 /** pop up **/
 .ui-dialog {
   font-family: "Open Sans", sans-serif;
+  border: 0 !important;
   border-radius: 10px;
   overflow: hidden;
   padding: 0;
+  .ui-dialog-titlebar-close:after {
+    content: '';
+    background: #FFF;
+    -webkit-mask-image: url('../images/svg_icons/close.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url('../images/svg_icons/close.svg');
+    mask-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
   .ui-dialog-titlebar{
     background: $text-color-blue;
     display: flex;
     justify-content: flex-end;
+    border: 0;
+    border-radius: 0 !important;
     span.ui-dialog-title{
       display: none;
     }
@@ -278,14 +303,24 @@
             width: 100%;
             height: 450px;
           }
-          .field--name-body{
+          .description{
             padding: 16px 16px;
-          }
-          .field--name-field-video{
-            padding: 16px 16px;
+            h2{
+              margin: 0;
+              color: $text-color-blue;
+              font-weight: bold;
+              font-size: 1rem;
+              padding: 0 0 16px 0px;
+            }
+            .share-networks .napo-actions {
+              margin: 0;
+            }
           }
         }
       }
   }
+}
+.ui-widget-overlay {
+  z-index: 10 !important;
 }
 
