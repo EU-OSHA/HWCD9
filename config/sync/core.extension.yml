@@ -71,6 +71,7 @@ module:
   hwc_custom_migrations: 0
   hwc_forms: 0
   hwc_import_export: 0
+  hwc_napo_films: 0
   hwc_partner: 0
   hwc_partner_cron_migration: 0
   hwc_partner_cron_migration_2: 0
@@ -136,6 +137,7 @@ module:
   search_autocomplete: 0
   serialization: 0
   shortcut: 0
+  sitemap: 0
   swiftmailer: 0
   system: 0
   tamper: 0

@@ -1,0 +1,26 @@
+display:
+  default:
+    display_title: Sjálfgefið
+    display_options:
+      fields:
+        type:
+          label: Tegund
+        name:
+          separator: ', '
+        link:
+          label: Aðgerðir
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      exposed_form:
+        options:
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      filters:
+        type:
+          expose:
+            label: Tegund
+  page:
+    display_title: Síða

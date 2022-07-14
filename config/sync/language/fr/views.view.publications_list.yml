@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Chercher
+          exposed_sorts_label: 'Trier par'
+      sorts:
+        field_publication_date:
+          expose:
+            label: 'Du plus récent au plus ancien'
+        title:
+          expose:
+            label: 'Par ordre alphabétique'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Rechercher dans les ressources'
+      header:
+        result:
+          content: '<h2>Publications disponibles <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Chercher des études de cas'
+      header:
+        result:
+          content: '<h2>Études de cas disponibles <span>(@total)</span></h2>'

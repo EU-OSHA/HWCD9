@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        bundle:
+          label: Tip
+      filters:
+        bundle:
+          expose:
+            label: Tip

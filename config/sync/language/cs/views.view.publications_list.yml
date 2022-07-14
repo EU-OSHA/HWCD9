@@ -1,0 +1,39 @@
+display:
+  default:
+    display_options:
+      fields:
+        field_pages_count:
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQD
+      exposed_form:
+        options:
+          submit_button: Vyhledávání
+          exposed_sorts_label: 'Seřadit podle'
+      sorts:
+        field_publication_date:
+          expose:
+            label: ' Od nejnovějších'
+        title:
+          expose:
+            label: ' Podle abecedy'
+      header:
+        result:
+          content: 'Dostupné publikace (@total)'
+  block_1:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Vyhledávání ve zdrojích'
+      header:
+        result:
+          content: '<h2>Dostupné publikace <span>(@total)</span></h2>'
+  block_2:
+    display_options:
+      filters:
+        search_api_fulltext:
+          expose:
+            placeholder: 'Hledat případové studie'
+      header:
+        result:
+          content: '<h2>Dostupné případové studie <span>(@total)</span></h2>'

@@ -564,8 +564,6 @@
   }
 }
 
-
-
 .tk-example-node{
   .tk-example-content{
     display: flex;
@@ -651,6 +649,18 @@
       padding-left: 30px;
       width: 30%;
     }
+  }
+}
+
+.tk-article-page{
+  h2.toolkit-h2 {
+    font-style: normal;
+    color: #749b00;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 2em;
+    text-align: left;
+    margin-top: 10px;
   }
 }
 

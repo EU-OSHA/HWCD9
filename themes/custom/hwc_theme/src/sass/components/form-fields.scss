@@ -15,6 +15,7 @@
   display: grid;
   grid-template-columns: 250px 1fr;
   gap: 25px;
+  overflow: hidden;
 }
 
 .content-panel{
@@ -250,12 +251,17 @@
     }
     .form-item-name-mc{
       label{
-        width: 225px;
+        width: 250px;
       }
     }
     .form-item-name-mc.form-disabled{
       label{
-        width: auto;
+        width: 250px;
+      }
+    }
+    .form-item-name-of-main-contact-person-for-the-campaign{
+      label{
+        width: 250px;
       }
     }
     .form-item-surname-mc,
@@ -354,10 +360,21 @@
 }
 
 .path-webform{
+  .webform-submission-update-partners-form{
+    .js-form-item-position,
+    .form-item-position-new{
+      clear:both;
+    }
+  }
   .webform-submission-update-partners-fops-form{
     .form-item-homepage,
-    .form-item-email-address-mc{
+    .form-item-email-address-mc,
+    .form-item-email-address-new{
       clear: none;
+    }
+    #edit-telephone-number-mc--wrapper,
+    #edit-telephone-number-new--wrapper{
+      clear: both;
     }
   }
 }
@@ -373,7 +390,7 @@
   fieldset{
     select,
     .chosen-container-single .chosen-single ,
-    .chosen-container-multi > ul,
+    .chosen-container-multi ul,
     .select2-selection{
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -397,9 +414,12 @@
         margin-top: 1px;
       }
     }
+    ul.chosen-results{
+      background: transparent !important;
+    }
   }
   .chosen-container .chosen-drop{
-    height: 100px;
+    height: auto;
     ul{
       height: 100px;
     }
@@ -412,12 +432,15 @@
   display: none;
 }
 
-.chosen-container-multi{
-  //display: none !important;
+.update-partners-form-wrapper{
+  .chosen-container-multi{
+    display: none !important;
+  }
 }
 
 #edit_countries_of_activity_chosen.chosen-container-multi{
   display: block !important;
+  width: 100% !important;
 }
 
 #scroll-top {
@@ -451,10 +474,15 @@
 }
 
 /* Help modal */
-.ui-dialog .ui-dialog-titlebar{
-  background: $bg-color-blue;
-  span{
-    color: #FFFFFF;
+.path-webform{
+  .ui-widget.ui-widget-content{
+    z-index: 9999999 !important;
+  }
+  .ui-dialog .ui-dialog-titlebar{
+    background: $bg-color-blue;
+    span{
+      color: #FFFFFF;
+    }
   }
 }
 
@@ -488,4 +516,70 @@
 
 .ui-dialog .button{
   background-image: none;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  #scroll-top {
+    right: 14%;
+  }
+}
+
+@media only screen and (max-width: 1780px) {
+  #scroll-top {
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .path-webform {
+    section.form-item {
+      fieldset {
+        width: 96%;
+        float: none;
+        clear: both;
+      }
+    }
+    /* Fix fieldset heihts to make 2 columns */
+    .form-item-other-countries{
+      height: auto;
+    }
+    .form-item-business-sector{
+      height: auto;
+    }
+    .form-item-ceo-s-position{
+      height: auto;
+    }
+
+    section.form-item{
+      .form-item-name-mc{
+        label{
+          width: auto;
+        }
+      }
+      .form-item-name-mc.form-disabled{
+        label{
+          width: auto;
+        }
+      }
+      .form-item-name-of-main-contact-person-for-the-campaign{
+        label{
+          width: auto;
+        }
+      }
+      .form-item-surname-mc,
+      .form-item-surname-new{
+        label{
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .update-partners-form-wrapper {
+    display: inline-block;
+  }
 }

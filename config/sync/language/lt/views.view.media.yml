@@ -1,0 +1,36 @@
+display:
+  default:
+    display_title: Numatytasis
+    display_options:
+      fields:
+        media_bulk_form:
+          action_title: Veiksmas
+        bundle:
+          label: Rūšis
+        uid:
+          label: Autorius
+        status:
+          label: Būsena
+        changed:
+          label: Atnaujinta
+        operations:
+          label: Veiksmai
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      exposed_form:
+        options:
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      filters:
+        bundle:
+          expose:
+            label: Rūšis
+        status:
+          expose:
+            label: 'True'
+        langcode:
+          expose:
+            label: Kalba
