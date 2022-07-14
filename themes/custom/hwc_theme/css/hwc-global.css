@@ -5906,21 +5906,21 @@ h2.node__title {
   margin-bottom: 0.3rem;
 }
 
-.page-node-33 .field--name-body {
+.page-node-33 .node-content .field--name-body {
   position: relative;
 }
-.page-node-33 .field--name-body h2 {
+.page-node-33 .node-content .field--name-body h2 {
   color: #003399;
   margin-bottom: 1rem;
 }
-.page-node-33 .field--name-body:after {
+.page-node-33 .node-content .field--name-body:after {
   content: url(../images/napo-icon.png);
   width: 4rem;
   height: 4rem;
   top: 3.5rem;
   position: absolute;
 }
-.page-node-33 .field--name-body > p {
+.page-node-33 .node-content .field--name-body > p {
   margin-left: 5rem;
 }
 
