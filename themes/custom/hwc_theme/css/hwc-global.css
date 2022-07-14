@@ -6015,6 +6015,7 @@ h2.node__title {
 }
 .share-networks .napo-actions li.share-link:hover {
   cursor: pointer;
+  opacity: 0.6;
 }
 .share-networks .napo-actions li.share-link:before {
   -webkit-mask-image: url(../images/svg_icons/solid/share-variant.svg);
@@ -6075,6 +6076,10 @@ h2.node__title {
 .share-networks .list-networks li.close-share {
   padding-bottom: 0.8rem;
 }
+.share-networks .list-networks li.close-share:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
 .share-networks .list-networks li.close-share:before {
   content: "";
   display: block;
@@ -6117,14 +6122,34 @@ h2.node__title {
 /** pop up **/
 .ui-dialog {
   font-family: "Open Sans", sans-serif;
+  border: 0 !important;
   border-radius: 10px;
   overflow: hidden;
   padding: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close:after {
+  content: "";
+  background: #FFF;
+  -webkit-mask-image: url("../images/svg_icons/close.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("../images/svg_icons/close.svg");
+  mask-repeat: no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ui-dialog .ui-dialog-titlebar-close:after:hover {
+  opacity: 0.6;
 }
 .ui-dialog .ui-dialog-titlebar {
   background: #003399;
   display: flex;
   justify-content: flex-end;
+  border: 0;
+  border-radius: 0 !important;
 }
 .ui-dialog .ui-dialog-titlebar span.ui-dialog-title {
   display: none;
@@ -6163,11 +6188,22 @@ h2.node__title {
   width: 100%;
   height: 450px;
 }
-.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .field--name-body {
+.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .description {
   padding: 16px 16px;
 }
-.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .field--name-field-video {
-  padding: 16px 16px;
+.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .description h2 {
+  margin: 0;
+  color: #003399;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 0 16px 0px;
+}
+.ui-dialog .ui-dialog-content .node--type-napo-film .node__content .description .share-networks .napo-actions {
+  margin: 0;
+}
+
+.ui-widget-overlay {
+  z-index: 10 !important;
 }
 
 .private-zone-full-wrapper {

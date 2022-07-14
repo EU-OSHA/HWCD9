@@ -61,7 +61,6 @@
             {# If isnot numeric is a view page #}
             {% set isNumeric = drupal_token('node:vid', {node: node}) matches '/^\\d+$/' %}
 
-
             {% if urlArraylength == 0 %}
               <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
 
@@ -101,6 +100,8 @@
                   <h1 class="page-header">{{ 'Events'|t }}</h1>
                 {% elseif nodeType == 'publication' %}
                   <h1 class="page-header">{{ 'Publications'|t  }}</h1>
+                {% elseif nodeType == 'napo_film' %}
+                  <h1 class="page-header">{{ 'Napo films'|t  }}</h1>
                 {% else %}
                   <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
                 {% endif %}
@@ -157,9 +158,9 @@
             {{ page.above_content.hwc_theme_local_tasks }}
             <div class="container">
               {% if has_sidebar_left or has_sidebar_right  %}
-                <div class="row">
+              <div class="row">
               {% else %}
-                  <div>
+              <div>
               {% endif %}
 
                 {% if has_sidebar_left %}
@@ -182,8 +183,7 @@
                           <section class="section section-center col-12">
                       {% endif %}
                 {% endif %}
-
-                  {{ page.content }}
+                {{ page.content.hwc_theme_content }}
                 </section>
 
                 {% if has_sidebar_right %}
@@ -191,11 +191,12 @@
                     {{ page.sidebar_right }}
                   </aside>
                 {% endif %}
+
               </div>
             </div>
         {% endblock %}
-
         </div>
+
       </div>
     </section>
 
