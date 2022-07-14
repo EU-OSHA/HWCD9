@@ -1,10 +1,9 @@
 <article class="node--type-napo-film"  {{ attributes }}>
-
+  {% if label %}
   <header>
-    {% if label %}
       <h2>{{ label }}</h2>
-    {% endif %}
   </header>
+  {% endif %}
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     <div class="video">
       {{ content.field_youtube.0 }}
