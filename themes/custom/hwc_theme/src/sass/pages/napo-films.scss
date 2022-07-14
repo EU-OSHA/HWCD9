@@ -1,19 +1,21 @@
 .page-node-33{
-  .field--name-body{
-    position: relative;
-    h2{
-      color: $text-color-blue;
-      margin-bottom: 1rem;
-    }
-    &:after{
-      content: url(../images/napo-icon.png);
-      width: 4rem;
-      height: 4rem;
-      top: 3.5rem;
-      position: absolute;;
-    }
-    > p{
-      margin-left: 5rem;
+  .node-content{
+    .field--name-body{
+      position: relative;
+      h2{
+        color: $text-color-blue;
+        margin-bottom: 1rem;
+      }
+      &:after{
+        content: url(../images/napo-icon.png);
+        width: 4rem;
+        height: 4rem;
+        top: 3.5rem;
+        position: absolute;;
+      }
+      > p{
+        margin-left: 5rem;
+      }
     }
   }
 }
