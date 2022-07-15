@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Keresés az eszköztár példái között'
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      sorts:
+        title:
+          expose:
+            label: Ábécésorrendben
+      filters:
+        title:
+          expose:
+            label: Keresés
+        field_country:
+          expose:
+            label: Ország
+      header:
+        area:
+          content:
+            value: "<p>Tudjuk, hogy szeretne jó gyakorlatokat látni a különböző kampányokra vonatkozóan, ezért itt lehetőséget kínálunk az Ön számára, hogy példákat kutasson fel egész Európából, és ezáltal inspirálódjon.</p>\r\n"
+            format: full_html

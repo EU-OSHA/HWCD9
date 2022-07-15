@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Anvend
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      sorts:
+        title:
+          expose:
+            label: Alfabetisk
+      filters:
+        title:
+          expose:
+            label: Søg
+        field_country:
+          expose:
+            label: Land
+      header:
+        area:
+          content:
+            value: "<p>Vi ved, at du er ivrig efter at se nogle eksempler på god praksis for forskellige kampagner, så vi tilbyder dig mulighed for at søge efter eksempler fra hele Europa og blive inspireret.</p>\r\n"
+            format: full_html
+      title: 'Søg i værktøjskasseeksempler'

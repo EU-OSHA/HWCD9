@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      title: 'Căutați exemple în setul de instrumente'
+      exposed_form:
+        options:
+          submit_button: 'Trimiteți cererea'
+      sorts:
+        title:
+          expose:
+            label: 'În ordine alfabetică'
+      filters:
+        title:
+          expose:
+            label: Căutare
+        field_country:
+          expose:
+            label: Țară
+      header:
+        area:
+          content:
+            value: "<p>Știm că abia așteptați să vedeți exemple de bune practici din diverse campanii, de aceea vă oferim opțiunea de a căuta exemple din toată Europa și de a vă inspira din acestea.</p>\r\n"
+            format: full_html
