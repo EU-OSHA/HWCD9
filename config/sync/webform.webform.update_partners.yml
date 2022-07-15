@@ -1,7 +1,9 @@
 uuid: ba28efb8-440f-4093-b2a3-70234b0b84f1
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - hwc_forms
 weight: 0
 open: null
 close: null
@@ -1091,5 +1093,14 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  partner_form_handler:
+    id: 'Partner Form Handler'
+    handler_id: partner_form_handler
+    label: 'Partner Form Handler'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }
