@@ -1,25 +1,15 @@
-/**
- * @file
- * Global utilities.
- *
- */
-(function ($, Drupal) {
+function openShare(element){
+  let wrapper = element.parentElement.parentElement;
+  let el = wrapper.getElementsByClassName("list-networks")[0];
+  el.classList.toggle("d-none");
+}
+function closeShare(element){
+  let wrapper = element.parentElement;
+  wrapper.classList.toggle("d-none");
+}
 
-  'use strict';
+jQuery(function ($) {
 
-  Drupal.behaviors.allages_theme = {
-    attach: function (context, settings) {
-
-      /* $('.header-tools #search-block-form .form-actions button').text(''); */
-
-    }
-  };
-
-
-})(jQuery, Drupal);
-
-(function ($, Drupal) {
-  'use strict';
   $( window ).on( "load", function() {
     $('.sidebar-first .block-facets .content').css('display','none')
     $('.sidebar-first .block-facets h2').click(function() {
@@ -35,10 +25,6 @@
     });
   });
 
-
-})(jQuery, Drupal);
-
-(function ($, Drupal) {
   $( window ).on( "resize load", function() {
 
     if( $('body').hasClass( "user-logged-in" ) ){
@@ -48,24 +34,14 @@
     }
 
     $('body').css('padding-top', height+'px'  );
-
-    $('.share-link').on( "click", function() {
-      var wrapper = $(this).parent().parent();
-      var element = wrapper.find('.list-networks');
-      element.toggleClass('d-none');
-    });
-
-    $('.close-share').on( "click", function() {
-      $(this).parent().toggleClass('d-none');
-    });
-
   });
 
-  $(document).mouseup(function(e) {
-    var container = $(".list-networks");
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.addClass('d-none');
+  //Add class active to anchor top when scroll down
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 150) {
+      $('#scroll-top').addClass('active');
+    } else {
+      $('#scroll-top').removeClass('active');
     }
   });
 
@@ -109,21 +85,36 @@
       }
     });
 
+    /* sharelink in napo films */
+
+
+
+    $('.share-link').on( "click", function() {
+      console.log($(this));
+      var wrapper = $(this).parent().parent();
+      var element = wrapper.find('.list-networks');
+      element.toggleClass('d-none');
+    });
+
+    $('.close-share').on( "click", function() {
+      $(this).parent().toggleClass('d-none');
+    });
+
+    $(document).mouseup(function(e) {
+      var container = $(".list-networks");
+      // if the target of the click isn't the container nor a descendant of the container
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.addClass('d-none');
+      }
+    });
+
+
+
   });
 
-  //Add class active to anchor top when scroll down
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 150) {
-      $('#scroll-top').addClass('active');
-    } else {
-      $('#scroll-top').removeClass('active');
-    }
-  });
 
 
-
-
-})(jQuery, Drupal);
+});
 
 
 

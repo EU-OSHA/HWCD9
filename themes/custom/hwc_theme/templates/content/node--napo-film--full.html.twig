@@ -1,0 +1,47 @@
+<article class="node--type-napo-film"  {{ attributes }}>
+  {% if label %}
+  <header>
+      <h2>{{ label }}</h2>
+  </header>
+  {% endif %}
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    <div class="video">
+      {{ content.field_youtube.0 }}
+    </div>
+    {% set urlShare =  url('entity.node.canonical', { 'node': node.nid.0.value })['#markup']  %}
+
+    <div class="description">
+      <div class="share-networks">
+        <ul class="napo-actions">
+          <li class="share-link fas fa-share-alt" onclick="openShare(this)"><label class="sr-only">{{ 'Share'|t }}</label></li>
+          <li class="download-film fas fa-download">
+            <a href="{{ file_url(node.field_video.0.entity.uri.0.value) }}">
+              <label class="sr-only">{{ 'Download film'|t }}</label>
+            </a>
+          </li>
+        </ul>
+        <ul class="list-networks d-none">
+          <li class="close-share fas fa-times" onclick="closeShare(this)"></li>
+          <li class="fb">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlShare }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=600');return false;"
+               target="_blank"><span>facebook</span></a>
+          </li>
+          <li class="tw">
+            <a href="https://twitter.com/share?url={{ urlShare }}&text={{ node.title.0.value }}"
+               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=600');return false;"
+               target="_blank"><span>twitter</span></a> </li>
+          <li class="ln">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ urlShare }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=600');return false;"
+               target="_blank"><span>linkedin</span></a> </li>
+          {#            <li class="copy">#}
+          {#              <span>{{ urlShare }} </span> </li>#}
+        </ul>
+      </div>
+      <h2>{{ label }}</h2>
+      {{ content.body.0 }}
+    </div>
+
+
+  </div>
+
+</article>
