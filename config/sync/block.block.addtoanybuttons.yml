@@ -9,7 +9,6 @@ dependencies:
     - hwc_theme
 id: addtoanybuttons
 theme: hwc_theme
-<<<<<<< Updated upstream
 region: below_content
 weight: -36
 provider: null
