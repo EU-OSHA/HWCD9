@@ -28,7 +28,7 @@ body.scrollup{
 body.user-logged-in{
   //padding-top: 230px !important;
   #header{
-    padding-top: 40px;
+    padding-top: 4rem;
   }
   &.scrolled{
     #header{
@@ -40,7 +40,7 @@ body.user-logged-in{
 body.user-logged-in.toolbar-tray-open{
   //padding-top: 260px !important;
   #header{
-    padding-top: 75px;
+    padding-top: 7.5rem;
   }
   &.scrolled{
     #header{
@@ -52,7 +52,7 @@ body.user-logged-in.toolbar-tray-open{
 body.user-logged-in.path-frontpage{
   //padding-top: 324px !important;
   #header{
-    padding-top: 80px;
+    padding-top: 8rem;
   }
   &.scrolled{
     #header{
@@ -79,7 +79,7 @@ body.user-logged-in.path-frontpage{
   align-content: space-between;
   margin-left: 0;
   margin-right: 0;
-  padding: 2rem 2rem 1rem;
+  padding: 1rem 2rem 1rem 2rem;
 
   .header-logo {
     display: flex;
@@ -94,14 +94,14 @@ body.user-logged-in.path-frontpage{
 
         > .field__item {
           border-right: 1px solid $text-color-blue;
-          padding: 0 1.75rem 0 0;
+          padding: 0 2rem 0 0;
           display: flex;
           align-items: center;
 
           &:nth-child(2) {
             border-right: 0;
-            padding-left: 0.825rem;
-            padding-right: 0.825rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
           }
 
           img {
@@ -113,13 +113,14 @@ body.user-logged-in.path-frontpage{
 
     .header-text {
       color: $text-color-blue;
-      font-size: 1.4rem;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
       font-weight: bold;
       max-width: 315px;
       padding-top: 8px;
-      padding-left: 1.5em;
+      padding-left: 2em;
       max-width: 273px;
-      padding-left: 1em;
+      padding-left: 1.4rem;
     }
   }
 
@@ -127,12 +128,12 @@ body.user-logged-in.path-frontpage{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 20rem;
+    max-width: 28rem;
     margin-left: auto;
     .print-resize-block {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: flex-end;
       justify-content: flex-start;
       margin: 0 0 5px 0;
       /* Print features */
@@ -163,16 +164,16 @@ body.user-logged-in.path-frontpage{
         flex-direction: row;
         align-items: baseline;
         padding: 0;
-        margin: 0 0 3px 6px;
-
+        margin: 0 0 0px 6px;
+        height: 2.9rem;
         li {
           a {
             color: #91afd9;
             text-transform: lowercase;
             padding: 0 2px;
             font-weight: 600;
-            font-size: 1rem;
-            line-height: 1.2rem;
+            font-size: 1.4rem;
+            line-height: 1;
             sup {
               display: none;
             }
@@ -180,12 +181,12 @@ body.user-logged-in.path-frontpage{
 
           &:nth-child(2) {
             a {
-              font-size: 1.8rem;
+              font-size: 3.2rem;
             }
           }
           &:nth-child(3) {
             a {
-              font-size: 2.286rem;
+              font-size: 4.4rem;
             }
           }
         }
@@ -282,7 +283,7 @@ body.user-logged-in.path-frontpage{
           width: 100%;
           height: 34px;
           padding: 6px 12px;
-          font-size: 0.8rem;
+          font-size: 1.2rem;
           border-top-left-radius: 5px;
           border-bottom-left-radius: 5px;
           color: $text-color-blue;
@@ -297,7 +298,7 @@ body.user-logged-in.path-frontpage{
           button[data-drupal-selector="edit-submit"] {
             border: 0;
             border-radius: 0;
-            text-indent: 10rem;
+            text-indent: 14rem;
             color: $text-color-blue;
             width: 46px;
             height: 34px;
@@ -319,7 +320,7 @@ body.user-logged-in.path-frontpage{
 /** header styles when sticky **/
 .sticky-menu{
   .top-header-content{
-    padding: 1rem 2rem 1rem;
+    padding: 1.4rem 2.8rem 1.4rem;
     .header-logo {
       display: flex;
       flex-direction: row;
@@ -378,7 +379,7 @@ body.user-logged-in.path-frontpage{
     color: #FFF;
     border-radius: 5px;
     font-weight: bold;
-    font-size: 0.89em;
+    font-size:1rem;
     display: inline-block;
     font-style: normal;
     &:before {
@@ -408,7 +409,7 @@ body.user-logged-in.path-frontpage{
       border: 1px solid $text-color-blue;
       border-radius: 5px;
       height: 27px;
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       padding: 0;
       width: 100% !important;
       color: $text-color-blue;
@@ -505,7 +506,7 @@ body.user-logged-in.path-frontpage{
   h1 {
     width: 100%;
     color: #FFF;
-    font-size: 2.8rem;
+    font-size:4.4rem;
     font-weight: 700;
     padding: 0;
     border: 0;

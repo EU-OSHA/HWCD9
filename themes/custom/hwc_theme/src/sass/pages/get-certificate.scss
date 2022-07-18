@@ -1,0 +1,42 @@
+.get-certificate{
+  display: flex;
+  .certificate-image{
+
+  }
+  .certificate-description{
+    width: 79%;
+    padding-left: 1.4rem;
+  }
+}
+
+.webform-submission-certificate-form-node-49-form{
+  display: flex;
+  flex-wrap: wrap;
+  fieldset{
+    width: 50%;
+    margin-bottom: 1.4em;
+    padding-left: 15px;
+    padding-right: 15px;
+    &.form-type-select,
+    &.form-type-textfield{
+      > label{
+        color: $text-color-blue;
+      }
+    }
+    .form-check-label {
+      margin-bottom: 0;
+      margin-left: 1rem;
+    }
+    &.checkboxes--wrapper{
+      width: 100%;
+    }
+  }
+  .form-item-confirm{
+    width: 100%;
+    margin-bottom: 3rem;
+    .form-check-label {
+      margin-bottom: 0;
+      margin-left: 1rem;
+    }
+  }
+}

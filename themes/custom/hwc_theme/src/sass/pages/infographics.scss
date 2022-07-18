@@ -8,13 +8,14 @@
   h2{
     display: block;
     margin-top: 0.5rem;
-    padding-bottom: 0.3rem;
-    line-height: 1.6rem;
-
+    margin-bottom: 1.4rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.2;
     a {
       color: $text-color-blue;
       font-style: normal;
-      font-size: 1.4rem;
+      font-weight: bold;
+      font-size: 2.2rem;
     }
   }
   .group-left{

@@ -5,7 +5,7 @@
   flex-direction: revert;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 2rem;
+  padding-bottom: 2.8rem;
   height: 340px;
   background:#acc700 url('/sites/hwc/themes/custom/hwc_theme/images/background-banner.png') top right no-repeat;
   background-size: cover;
@@ -28,11 +28,14 @@
         .content-body{
           font-weight: bold;
           .banner-tag{
-            font-size: 1.4rem;
+            font-size: 2.2rem;
             font-weight: bold;
           }
           .banner-text{
-            font-size: 2.2rem;
+            font-size: 3.6rem;
+            p{
+              line-height: 1.4;
+            }
           }
         }
         .content-img{
@@ -57,12 +60,12 @@
 
   article{
     text-align: center;
-    padding: 1.2rem;
+    padding: 1.6rem;
     h1{
-      padding: 1.6rem 15px 0.8rem;
-      margin: 0.8rem 0;
+      padding: 2.2rem 1.6rem 1rem;
+      margin: 1rem 0;
       border-bottom: 0;
-      font-size: 1.6rem;
+      font-size: 2.2rem;
       font-style: normal;
       font-weight: 400;
     }
@@ -126,7 +129,7 @@
 .line{
   margin-top: 0;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   background: url(../images/grey-h3-line.png) repeat-x 50% 60%;
   display: flex;
   flex-direction: row;
@@ -134,7 +137,7 @@
   a{
     color: #00309d;
     background-color:white;
-    padding-right: 3.125rem;
+    padding-right: 3.4rem;
   }
 }
 .line.green{
@@ -146,7 +149,7 @@
 .news-section-title{
   margin-top: 0;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   background: url(../images/grey-h3-line.png) repeat-x 50% 60%;
   display: flex;
   flex-direction: row;
@@ -167,7 +170,7 @@
 .newsletter-section-title{
   margin-top: 0;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -187,7 +190,7 @@
 .social-media-section-title{
   margin-top: 0;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -201,13 +204,13 @@
   a{
     color: #FFF;
     background: transparent;
-    padding-right: 3.125rem;
+    padding-right: 3.4rem;
   }
 }
 .events-section-title{
   margin-top: 0;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -227,18 +230,18 @@
 
 .home-news-item{
   clear: both;
-  margin-bottom: 2em;
+  margin-bottom: 2.8rem;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #bcd75b;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.4rem;
   .image-news-item{
     img{
       width: 100%;
       min-width: 220px;
       height: auto;
-      margin-top: 0.5em;
-      border-radius: 0.6rem;
+      margin-top: 01rem;
+      border-radius: 0.8rem;
     }
   }
   .body-news-item{
@@ -250,13 +253,13 @@
     width: 100%;
     .publication-date{
       color: #57575a;
-      font-size: 0.8rem !important;
+      font-size: 1rem !important;
     }
     .summary-news{
-      font-size: 1rem;
+      font-size: 1.4rem;
       h2{
         display: block;
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-top: 0.5rem;
         padding-bottom: 0.3rem;
         a{
@@ -299,7 +302,7 @@
     }
   }
   h2{
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -336,7 +339,7 @@ section.home-news-events {
     justify-content: space-between;
     > h1{
       color: white;
-      font-size: 2rem;
+      font-size: 2.8rem;
       font-weight: bold;
     }
     > p{

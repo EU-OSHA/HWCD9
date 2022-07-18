@@ -1,17 +1,19 @@
+html{
+  font-size: 10px;
+}
 body{
   font-size: 14px;
+  line-height: 1.6;
   font-family: "Open Sans", sans-serif;
+  color: $text-body;
 }
-.main-container{
-  margin: 0rem 0;
-}
+
 .page-media-centre-news .main-container,
 .page-search .main-container,
 .page-media-centre-press-room .main-container,
 .page-media-centre-press-room .main-container {
   background: #efefef;
 }
-
 
 
 

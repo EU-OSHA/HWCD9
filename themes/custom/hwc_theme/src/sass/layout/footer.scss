@@ -3,7 +3,7 @@
   height: auto;
   padding: 35px 0 15px;
   font-family:'Open Sans';
-  margin-top: 3rem;
+  margin-top: 0rem;
 
   .site-footer__bottom{
     border: 0;
@@ -110,6 +110,13 @@
           }
         }
     }
+  }
+}
+
+/* footer frontpage */
+.path-frontpage{
+  .site-footer {
+    margin-top: 0rem;
   }
 }
 

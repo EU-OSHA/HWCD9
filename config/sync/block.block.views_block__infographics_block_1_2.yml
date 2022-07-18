@@ -12,7 +12,7 @@ dependencies:
 id: views_block__infographics_block_1_2
 theme: hwc_theme
 region: content
-weight: -23
+weight: -25
 provider: null
 plugin: 'views_block:infographics-block_1'
 settings:
