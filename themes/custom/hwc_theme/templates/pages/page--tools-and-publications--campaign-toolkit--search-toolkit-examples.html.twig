@@ -1,0 +1,18 @@
+{% extends "page.html.twig" %}
+
+
+{% block content %}
+  <section class="tk-article-page">
+    <div class="container-full">
+      <div class="row">
+        <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
+          {{ page.sidebar_left.campaigntoolkit }}
+        </aside>
+        <section class="section col-12 col-lg-9 tk-article-content">
+          {#          <h2 class="toolkit-h2">{{ page.breadcrumb.hwc_theme_page_title|raw }}</h2>#}
+          {{ page.content }}
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock %}
