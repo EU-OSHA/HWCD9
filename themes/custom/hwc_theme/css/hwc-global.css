@@ -3781,6 +3781,7 @@ h2.node__title {
   border-radius: 7px;
   height: 114px;
   width: 114px;
+  overflow: hidden;
 }
 .view-osh-news .news-items-list .group-right .date {
   color: #57575a;
