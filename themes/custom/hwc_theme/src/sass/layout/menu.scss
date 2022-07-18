@@ -15,7 +15,7 @@
       border-radius: 0;
       margin-top: 0px;
       margin-bottom: 0;
-      padding: 9px 0;
+      padding: 0.9rem 0;
       > li.menu-item{
         position: relative;
         width: 100%;
@@ -53,7 +53,7 @@
             display: flex;
             align-items: baseline;
             a, span {
-              font-size: 0.875rem;
+              font-size: 1.4rem;
               padding: 6px 0;
               color: white;
               text-align: left;
@@ -133,7 +133,7 @@
     > li.menu-item{
       flex: 1 1 0px;
       border-right: 1px solid #FFF;
-      margin-right: 20px;
+      margin-right: 2rem;
       &:nth-child(1){
         display: none;
       }
@@ -142,7 +142,7 @@
       }
       > a{
         color: white;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
       }
       ul.menu-level-1{
         list-style: none;
@@ -152,10 +152,10 @@
         li{
           display: flex;
           align-items: baseline;
-          padding-right: 10px;
+          padding-right: 1rem;
           > a{
             color: white;
-            font-size: 0.8rem;
+            font-size: 1.2rem;
           }
           > span{
             color: white;
@@ -188,9 +188,18 @@
      a {
        text-decoration: none;
        padding: 0 20px 0 0;
+       &:hover{
+         color: $text-hover-green;
+         font-weight: bold;
+       }
      }
+      span{
+        color: $text-color-grey-light;
+      }
       &.menu-item--expanded{
-        border-bottom: 0;
+        ul{
+          display: none;
+        }
       }
       &.menu-item--active-trail{
         > a {
@@ -198,6 +207,12 @@
           display: block;
           width: 100%;
           font-weight: bold;
+        }
+        &.menu-item--expanded{
+          border-bottom: 0;
+          ul{
+            display: block;
+          }
         }
       }
      .menu-level-1{

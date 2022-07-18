@@ -1,0 +1,19 @@
+{% extends "page.html.twig" %}
+
+
+{% block content %}
+  <section class="glossary-page">
+    <div class="container">
+      <div class="row">
+        <aside class="section col-12 col-lg-3 sidebar-left" role="complementary">
+          {{ page.sidebar_left }}
+        </aside>
+        <section class="section section-center  col-12 col-lg-9 glossary-content">
+          {{ page.content.hwc_theme_content }}
+          {{ drupal_entity('block', 'addtoanybuttons') }}
+        </section>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+

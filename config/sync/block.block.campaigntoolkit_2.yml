@@ -1,0 +1,39 @@
+uuid: 99ca370a-25de-40e2-b922-2d86bc225c73
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.campaign-toolkit
+  module:
+    - menu_block
+    - node
+  theme:
+    - hwc_theme
+id: campaigntoolkit_2
+theme: hwc_theme
+region: sidebar_left
+weight: 0
+provider: null
+plugin: 'menu_block:campaign-toolkit'
+settings:
+  id: 'menu_block:campaign-toolkit'
+  label: 'Campaign Toolkit'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'campaign-toolkit:'
+  suggestion: campaign_toolkit
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      tk_example: tk_example

@@ -31,7 +31,7 @@
   display: none;
   a{
     float: left;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     background: $bg-color-blue;
     min-width: 120px;
     color: #FFF;
@@ -49,7 +49,7 @@
 
 .back{
   a{
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: normal;
     font-weight: bold;
     background: url(../images/pag-back.png) no-repeat 1px 5px;
@@ -66,7 +66,7 @@
   .navigation-panel{
     h3{
       color: $text-color-blue;
-      font-size: 1.1rem;
+      font-size: 1.4rem;
       font-weight: 600;
       padding-top: 1.5rem;
     }
@@ -74,7 +74,7 @@
       padding-top: 0;
     }
     h4{
-      font-size: 1rem;
+      font-size: 1.4rem;
       margin-bottom: 0;
       padding-top: 1.5rem;
       color: $text-color-blue;
@@ -159,13 +159,13 @@
 
     input[type=text]{
       color: $text-color-blue !important;
-      font-size: 0.9rem;
+      font-size: 1.4rem;
       height: 39px;
     }
 
     input.button{
       color: $text-color-white !important;
-      font-size: 0.9rem;
+      font-size: 1.4rem;
     }
 
     .button{
@@ -225,7 +225,7 @@
           margin-bottom: 0 !important;
         }
         input{
-          font-size: 0.9rem;
+          font-size: 1.4rem;
           color: $text-color-blue;
         }
         input[type="image"]{
@@ -247,7 +247,7 @@
 
     label, legend{
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 1.2rem;
     }
     .form-item-name-mc{
       label{
@@ -273,7 +273,7 @@
 
     label.error, strong.error{
       font-weight: normal;
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       color: #ca2d2d;
     }
 
@@ -284,7 +284,7 @@
     }
 
     .form-check-label{
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
 
     .form-check-input {
@@ -294,13 +294,13 @@
     .js-form-item-social-dialogue-partner{
       label{
         font-weight: normal;
-        font-size: 0.8rem;
+        font-size:1.2rem;
       }
     }
 
     label.button{
       font-weight: normal;
-      font-size: 0.8rem;
+      font-size:1.4rem;
       background: $bg-color-blue;
       color: #FFF;
       margin: 0 0 0.2rem 0;
@@ -312,7 +312,7 @@
       }
     }
     .webform-element-description, .description{
-      font-size: 0.8rem;
+      font-size: 1.2rem;
       color: #333;
       padding-top: 2px;
       padding-bottom: 0.5rem;
@@ -404,7 +404,7 @@
       color: #003399;
       cursor: pointer;
       height: 39px;
-      font-size: 0.9rem;
+      font-size: 1.4rem;
       box-shadow: unset;
       div b{
         display: none;
