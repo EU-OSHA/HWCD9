@@ -143,7 +143,7 @@ nav.tabs {
 }
 nav.tabs .nav-tabs {
   border-bottom: 1px solid #dee2e6;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /*General*/
@@ -234,7 +234,7 @@ nav.tabs .nav-tabs {
   border: 1px solid #003399;
   border-radius: 3px 15px 15px 3px;
   text-transform: uppercase;
-  padding: 4px 1.6rem 4px 7px;
+  padding: 0.2rem 2.4rem 0.2rem 0.7rem;
   font-weight: bold;
   font-style: normal;
   margin-left: 0;
@@ -317,6 +317,517 @@ nav.tabs .nav-tabs {
   font-weight: bold;
 }
 
+/* Validate */
+.s {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.s.fail {
+  color: #ca2d2d;
+}
+
+.s.ok {
+  color: green;
+}
+
+/* Menu */
+.update-partners-form-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 25px;
+  overflow: hidden;
+}
+
+.content-panel {
+  clear: both;
+}
+
+/* End menu top */
+.moved-help-js {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#edit-help {
+  display: none;
+}
+#edit-help a {
+  float: left;
+  font-size: 1.4rem;
+  background: #003399;
+  min-width: 120px;
+  color: #FFF;
+  text-align: center;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#edit-help a:hover {
+  text-decoration: none;
+  background-color: #002266;
+  border-color: #001f5c;
+}
+
+.back a {
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-weight: bold;
+  background: url(../images/pag-back.png) no-repeat 1px 5px;
+  padding-left: 17px;
+}
+
+/* Menu */
+.update-partners-form-wrapper {
+  padding-top: 1rem;
+}
+.update-partners-form-wrapper .modal {
+  z-index: 99999999;
+}
+.update-partners-form-wrapper .navigation-panel h3 {
+  color: #003399;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
+}
+.update-partners-form-wrapper .navigation-panel h3.first {
+  padding-top: 0;
+}
+.update-partners-form-wrapper .navigation-panel h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+  color: #003399;
+}
+.update-partners-form-wrapper .navigation-panel ul {
+  list-style: none;
+  margin-bottom: 0;
+  border-bottom: 1px dashed #bcd75b;
+  padding-bottom: 1.5rem;
+  padding-left: 2px;
+  padding-right: 0.875rem;
+}
+.update-partners-form-wrapper .navigation-panel ul li {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+}
+.update-partners-form-wrapper .navigation-panel ul li a {
+  color: #212529;
+}
+.update-partners-form-wrapper .navigation-panel ul li a:hover {
+  text-decoration: none;
+}
+.update-partners-form-wrapper .navigation-panel .mandatory {
+  color: #f01f1f;
+  font-weight: bold;
+  padding-left: 8px;
+}
+.update-partners-form-wrapper .navigation-panel .link-relevant:before {
+  content: "> ";
+  float: left;
+  display: inline-block;
+  height: 30px;
+  padding-right: 5px;
+}
+.update-partners-form-wrapper .navigation-panel .img-displayed {
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
+/* Sections */
+.path-webform {
+  /* Fix fieldset heihts to make 2 columns */
+}
+.path-webform section.form-item {
+  width: 100%;
+  float: left;
+  border: 1px solid #bcd75b;
+  border-radius: 5px;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  /* Tables */
+}
+.path-webform section.form-item section {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.path-webform section.form-item h2 {
+  font-size: 2.2rem;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #003399;
+}
+.path-webform section.form-item .webform-section-title {
+  width: 97%;
+  font-size: 2.8rem;
+  color: #003399;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid #003399;
+}
+.path-webform section.form-item .form-required::after {
+  margin: 0 0 0 0.3em;
+}
+.path-webform section.form-item input[type=text] {
+  color: #003399 !important;
+  font-size: 1.4rem;
+  height: 39px;
+}
+.path-webform section.form-item input.button {
+  color: #FFF !important;
+  font-size: 1.4rem;
+}
+.path-webform section.form-item .button {
+  cursor: pointer;
+}
+.path-webform section.form-item fieldset {
+  width: 46%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.path-webform section.form-item fieldset fieldset {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0 !important;
+}
+.path-webform section.form-item fieldset fieldset .iti {
+  width: 100%;
+}
+.path-webform section.form-item fieldset.webformcroppedimage--wrapper,
+.path-webform section.form-item fieldset.form-item-ceo-s-photo {
+  width: 96%;
+}
+.path-webform section.form-item fieldset.form-item-campaign-pledge,
+.path-webform section.form-item fieldset.form-type-webform-custom-composite,
+.path-webform section.form-item fieldset.form-type-webform-multiple {
+  width: 96%;
+}
+.path-webform section.form-item .webform-multiple-table th {
+  background: #003399;
+  padding: 10px 15px;
+  margin: 0;
+  vertical-align: inherit;
+}
+.path-webform section.form-item .webform-multiple-table td {
+  padding: 10px 5px;
+  margin: 0;
+  vertical-align: inherit;
+}
+.path-webform section.form-item .webform-multiple-table th.webform-multiple-table--handle {
+  display: none;
+}
+.path-webform section.form-item .webform-multiple-table td.webform-multiple-table--handle {
+  display: none;
+}
+.path-webform section.form-item .webform-multiple-table td fieldset {
+  width: 96%;
+  margin-bottom: 0 !important;
+}
+.path-webform section.form-item .webform-multiple-table td input {
+  font-size: 1.4rem;
+  color: #003399;
+}
+.path-webform section.form-item .webform-multiple-table td input[type=image] {
+  float: left;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.path-webform section.form-item .webform-multiple-table td.webform-multiple-table--operations-two,
+.path-webform section.form-item .webform-multiple-table td.webform-multiple-table--operations {
+  width: 75px;
+}
+.path-webform section.form-item label#edit-organisation-s-logo--label {
+  margin-bottom: 0;
+}
+.path-webform section.form-item label, .path-webform section.form-item legend {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.path-webform section.form-item .form-item-name-mc label {
+  width: 250px;
+}
+.path-webform section.form-item .form-item-name-mc.form-disabled label {
+  width: 250px;
+}
+.path-webform section.form-item .form-item-name-of-main-contact-person-for-the-campaign label {
+  width: 250px;
+}
+.path-webform section.form-item .form-item-surname-mc label,
+.path-webform section.form-item .form-item-surname-new label {
+  height: 39px;
+}
+.path-webform section.form-item label.error, .path-webform section.form-item strong.error {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #ca2d2d;
+}
+.path-webform section.form-item label.displayed-campaign, .path-webform section.form-item .form-composite legend span {
+  background: url("../images/screen.png") no-repeat 100% 3px;
+  background-size: 17px;
+  padding-right: 23px;
+}
+.path-webform section.form-item .form-check-label {
+  font-size: 1.2rem;
+}
+.path-webform section.form-item .form-check-input {
+  margin-top: 0.35rem;
+}
+.path-webform section.form-item .js-form-item-social-dialogue-partner label {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.path-webform section.form-item label.button {
+  font-weight: normal;
+  font-size: 1.4rem;
+  background: #003399;
+  color: #FFF;
+  margin: 0 0 0.2rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+}
+.path-webform section.form-item label.button:hover {
+  background-color: #002266;
+  border-color: #001f5c;
+}
+.path-webform section.form-item .webform-element-description, .path-webform section.form-item .description {
+  font-size: 1.2rem;
+  color: #333;
+  padding-top: 2px;
+  padding-bottom: 0.5rem;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- {
+  margin-bottom: 1rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- input[type=checkbox], .path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- input[type=radio] {
+  margin-left: 0;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- label {
+  margin-left: 1.3rem;
+}
+.path-webform section.form-item .form-item--i-want-to-change-the-main-contact-for-my-organisation- .webform-element-description {
+  padding-bottom: 0;
+}
+.path-webform section.form-item .webform-multiple-table table {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.path-webform .form-item-other-countries {
+  height: 130px;
+}
+.path-webform .form-item-business-sector {
+  height: 155px;
+}
+.path-webform .form-item-ceo-s-position {
+  height: 160px;
+}
+.path-webform .webformcroppedimage--wrapper,
+.path-webform .form-item-countries-of-activity,
+.path-webform .form-item-homepage,
+.path-webform .form-item-email-address-mc,
+.path-webform .form-item-email-address-new {
+  clear: both;
+}
+
+.path-webform .webform-submission-update-partners-form .js-form-item-position,
+.path-webform .webform-submission-update-partners-form .form-item-position-new {
+  clear: both;
+}
+.path-webform .webform-submission-update-partners-fops-form .form-item-homepage,
+.path-webform .webform-submission-update-partners-fops-form .form-item-email-address-mc,
+.path-webform .webform-submission-update-partners-fops-form .form-item-email-address-new {
+  clear: none;
+}
+.path-webform .webform-submission-update-partners-fops-form #edit-telephone-number-mc--wrapper,
+.path-webform .webform-submission-update-partners-fops-form #edit-telephone-number-new--wrapper {
+  clear: both;
+}
+
+.webform-section-wrapper > .description {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+.path-webform {
+  /* Help modal */
+}
+.path-webform #main-wrapper fieldset select,
+.path-webform #main-wrapper fieldset .chosen-container-single .chosen-single,
+.path-webform #main-wrapper fieldset .chosen-container-multi ul,
+.path-webform #main-wrapper fieldset .select2-selection {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 6px 12px;
+  border-radius: 5px !important;
+  border: 1px solid #ced4da;
+  background: url(../images/green-select.png) no-repeat scroll 96% 15px #ffffff !important;
+  width: 100% !important;
+  color: #003399;
+  cursor: pointer;
+  height: 39px;
+  font-size: 1.4rem;
+  box-shadow: unset;
+}
+.path-webform #main-wrapper fieldset select div b,
+.path-webform #main-wrapper fieldset .chosen-container-single .chosen-single div b,
+.path-webform #main-wrapper fieldset .chosen-container-multi ul div b,
+.path-webform #main-wrapper fieldset .select2-selection div b {
+  display: none;
+}
+.path-webform #main-wrapper fieldset select li,
+.path-webform #main-wrapper fieldset .chosen-container-single .chosen-single li,
+.path-webform #main-wrapper fieldset .chosen-container-multi ul li,
+.path-webform #main-wrapper fieldset .select2-selection li {
+  background-color: transparent;
+  margin-top: 1px;
+}
+.path-webform #main-wrapper fieldset ul.chosen-results {
+  background: transparent !important;
+}
+.path-webform #main-wrapper .chosen-container .chosen-drop {
+  height: auto;
+}
+.path-webform #main-wrapper .chosen-container .chosen-drop ul {
+  height: 100px;
+}
+.path-webform .tabledrag-toggle-weight,
+.path-webform .form-item-social-media-profiles-add-more-items,
+.path-webform .form-item-other-users-info-add-more-items {
+  display: none;
+}
+.path-webform .update-partners-form-wrapper .chosen-container-multi {
+  display: none !important;
+}
+.path-webform #edit_countries_of_activity_chosen.chosen-container-multi {
+  display: block !important;
+  width: 100% !important;
+}
+.path-webform .ui-widget.ui-widget-content {
+  z-index: 9999999 !important;
+}
+.path-webform .ui-dialog .ui-dialog-titlebar {
+  background: #003399;
+}
+.path-webform .ui-dialog .ui-dialog-titlebar span {
+  color: #FFFFFF;
+}
+.path-webform .ui-dialog .ui-dialog-titlebar-close {
+  background: transparent;
+  border: 0;
+}
+.path-webform .ui-dialog-titlebar-close:after {
+  content: "X";
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+.path-webform .webform-actions .btn-primary {
+  background-color: #003399;
+  color: #FFF;
+}
+.path-webform .btn-primary:not(:disabled):not(.disabled).active, .path-webform .btn-primary:not(:disabled):not(.disabled):active, .path-webform .show > .btn-primary.dropdown-toggle {
+  background-color: #003399;
+  color: #FFF;
+  border-color: #003399;
+}
+.path-webform .ui-dialog .button {
+  background-image: none;
+}
+
+#scroll-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 90%;
+  right: 13%;
+  background-color: #003399;
+  border-radius: 50%;
+  text-decoration: none;
+  transform: translate(0%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1.5s linear;
+}
+#scroll-top:before {
+  content: "";
+  display: block;
+  background: url("../images/anchor-top-v2.png") 6px 8px no-repeat;
+  width: 41px;
+  height: 33px;
+}
+#scroll-top span {
+  display: none;
+}
+
+#scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+  #scroll-top {
+    right: 14%;
+  }
+}
+@media only screen and (max-width: 1780px) {
+  #scroll-top {
+    right: 2%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .path-webform {
+    /* Fix fieldset heihts to make 2 columns */
+  }
+  .path-webform section.form-item fieldset {
+    width: 96%;
+    float: none;
+    clear: both;
+  }
+  .path-webform .form-item-other-countries {
+    height: auto;
+  }
+  .path-webform .form-item-business-sector {
+    height: auto;
+  }
+  .path-webform .form-item-ceo-s-position {
+    height: auto;
+  }
+  .path-webform section.form-item .form-item-name-mc label {
+    width: auto;
+  }
+  .path-webform section.form-item .form-item-name-mc.form-disabled label {
+    width: auto;
+  }
+  .path-webform section.form-item .form-item-name-of-main-contact-person-for-the-campaign label {
+    width: auto;
+  }
+  .path-webform section.form-item .form-item-surname-mc label,
+.path-webform section.form-item .form-item-surname-new label {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .update-partners-form-wrapper {
+    display: inline-block;
+  }
+}
 .row {
   margin: 0;
 }
@@ -1892,6 +2403,7 @@ h2.node__title {
   font-style: normal;
   font-weight: 400;
   padding-top: 1.4rem;
+  font-size: 3rem;
   clear: both;
 }
 
@@ -2016,7 +2528,7 @@ h2.node__title {
   margin-top: 0;
 }
 .block-facet-blocktype-of-partner .facets-widget-checkbox h3:after {
-  content: "\e252";
+  content: "";
   font-family: "Glyphicons Halflings";
   margin-left: 10px;
   float: right;
@@ -2087,7 +2599,7 @@ h2.node__title {
   margin-top: 0;
 }
 .block-facet-blockinformation-type .facets-widget-checkbox h3:after {
-  content: "\e252";
+  content: "";
   font-family: "Glyphicons Halflings";
   margin-left: 10px;
   float: right;
@@ -4176,7 +4688,7 @@ h2.node__title {
   background: #FFF;
 }
 .sidebar-first .block-facets h2 {
-  font-size: 1.125rem;
+  font-size: 3rem;
   color: #003399 !important;
   padding-right: 1.25px;
 }
@@ -4186,14 +4698,14 @@ h2.node__title {
 .sidebar-first .block-facets h2:after {
   color: #c1e000;
   padding-top: 2px;
-  content: "\e250";
+  content: "";
   font-family: "Glyphicons Halflings";
   margin-left: 0px;
   float: right;
   margin-right: 0px;
 }
 .sidebar-first .block-facets h2.area-shown:after {
-  content: "\e252";
+  content: "";
 }
 .sidebar-first .block-facets ul {
   list-style: none;
@@ -4222,11 +4734,11 @@ h2.node__title {
 .view-publications-list .view-header h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.875rem;
+  font-size: 3rem;
   color: #003399;
 }
 .view-publications-list .view-header h2 span {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 .view-publications-list .view-empty {
   order: 3;
@@ -4301,12 +4813,12 @@ h2.node__title {
   display: block;
   margin-top: 0.5rem;
   padding-bottom: 0.3rem;
-  line-height: 1.6rem;
+  line-height: 1;
 }
 .view-publications-list .view-content .publications-row .publications-items-list .group-right .title-list a {
   color: #003399;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   word-break: break-all;
 }
 .view-publications-list nav[aria-label=pagination-heading] {
@@ -4396,6 +4908,12 @@ h2.node__title {
 }
 
 /* publication detail */
+.return-and-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .publication-detail {
   display: flex;
   flex-direction: row;
@@ -4791,7 +5309,7 @@ h2.node__title {
 }
 .events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-row .chosen-container {
   width: 100% !important;
-  height: calc(1.5em + 0.75rem + 2px);
+  height: calc(1.5em + .75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -5107,18 +5625,16 @@ h2.node__title {
   position: absolute;
   top: 25%;
   right: 15px;
-  content: "\e250";
+  content: "";
   font-family: "Glyphicons Halflings";
   float: right;
   vertical-align: middle;
 }
 #block-campaigntoolkit ul.menu > li > span.up-arrow:after,
-#block-campaigntoolkit ul.menu > li > a.up-arrow:afte, 
 #block-campaigntoolkit ul.menu > li > a.up-arrow:after,
 #block-campaigntoolkit-2 ul.menu > li > span.up-arrow:after,
 #block-campaigntoolkit-2 ul.menu > li > a.up-arrow:after {
   content: "" !important;
-content: "\e252" !important;
   font-family: "Glyphicons Halflings";
   float: right;
   vertical-align: middle;
@@ -5176,12 +5692,9 @@ content: "\e252" !important;
   padding: 0;
   display: block;
 }
-
-#block-campaigntoolkit ul.menu > li ul.submenu-1 > li > a:afte, 
 #block-campaigntoolkit ul.menu > li ul.submenu-1 > li > a:after,
 #block-campaigntoolkit-2 ul.menu > li ul.submenu-1 > li > a:after {
   content: "";
-content: "\e250";
   font-family: "Glyphicons Halflings";
   position: relative;
   top: 3px;
@@ -5191,12 +5704,9 @@ content: "\e250";
 #block-campaigntoolkit-2 ul.menu > li ul.submenu-1 > li > a.active {
   font-weight: bold;
 }
-
-#block-campaigntoolkit ul.menu > li ul.submenu-1 > li.expanded > a:after, 
 #block-campaigntoolkit ul.menu > li ul.submenu-1 > li.expanded > a:after,
 #block-campaigntoolkit-2 ul.menu > li ul.submenu-1 > li.expanded > a:after {
   content: "";
- content: "\e252";
   font-family: "Glyphicons Halflings";
   vertical-align: middle;
   top: 0;
@@ -5546,7 +6056,7 @@ content: "\e250";
   padding: 2px 0 0;
 }
 .tk-topic-node .col-left .box-check-content ul li:before {
-  content: "\e013";
+  content: "";
   font-family: "Glyphicons Halflings";
   text-align: center;
   line-height: 25px;
@@ -5608,7 +6118,7 @@ content: "\e250";
   position: relative;
 }
 .node--type-tk-tool .node__content .field--name-field-benefits > .field__items .field__item:before {
-  content: "\e013";
+  content: "";
   font-family: "Glyphicons Halflings";
   text-align: center;
   line-height: 25px;
@@ -5705,7 +6215,7 @@ content: "\e250";
   background-color: #595959;
 }
 .tk-example-node .tk-example-content .group-left .show-links .label a:after {
-  content: "\e250";
+  content: "";
   font-family: "Glyphicons Halflings";
   float: right;
   vertical-align: middle;
@@ -5713,7 +6223,7 @@ content: "\e250";
   margin-top: 2px;
 }
 .tk-example-node .tk-example-content .group-left .show-links .label a[aria-expanded=true]:after {
-  content: "\e252";
+  content: "";
 }
 .tk-example-node .tk-example-content .group-left .show-links .links-list {
   border: 1px solid #595959;
@@ -5907,9 +6417,9 @@ content: "\e250";
   border-radius: 10px;
   overflow: hidden;
   margin: 2% 2% 2% 0;
-  -webkit-box-shadow: 0px 0px 6px 0px rgb(204, 204, 204);
-  -moz-box-shadow: 0px 0px 6px 0px rgb(204, 204, 204);
-  box-shadow: 0px 0px 6px 0px rgb(204, 204, 204);
+  -webkit-box-shadow: 0px 0px 6px 0px #cccccc;
+  -moz-box-shadow: 0px 0px 6px 0px #cccccc;
+  box-shadow: 0px 0px 6px 0px #cccccc;
 }
 .napo-films-view .card .card-img-top {
   height: 207px;
