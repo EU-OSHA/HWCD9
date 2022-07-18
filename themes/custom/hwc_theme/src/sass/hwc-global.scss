@@ -8,7 +8,7 @@
 @import 'components/accordion';
 @import 'components/breadcrumb';
 @import 'components/buttons';
-@import 'components/form-fields';
+//@import 'components/form-fields';
 @import 'components/grid';
 @import 'components/headings';
 @import 'components/helper';
@@ -40,6 +40,8 @@
 @import "pages/private-workbench.scss";
 @import 'pages/priority-areas';
 @import 'pages/glossary';
+@import 'pages/landing-pages';
+@import 'pages/get-certificate';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/desktop/desktop-responsive';

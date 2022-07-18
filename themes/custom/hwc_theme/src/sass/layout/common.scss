@@ -1,7 +1,7 @@
 .content-fluid.green-background{
   clear: both;
   background: $bg-color-green-light;
-  padding: 2rem 0;
+  padding: 2.8rem 0;
 }
 .green-background {
   background: $bg-color-green-light;
@@ -20,12 +20,7 @@
     -moz-appearance: none;
     appearance: none;
     -webkit-appearance: none;
-    padding: 6px 12px;
-    border-radius: 5px !important;
-    border: 1px solid #B0B2B3;
     background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
-    width: 100%!important;
-    color: #003399;
     cursor: pointer;
   }
   .views-exposed-form {
@@ -40,13 +35,37 @@
     label {
       color: #003399 !important;
       font-family: "Open Sans" !important;
-      font-size: 1rem !important;
+      font-size: 1.4rem !important;
       font-weight: normal !important;
       padding-bottom: 0.1em;
     }
   }
 }
-
+.chosen-container{
+  width: 100%!important;
+  font-size: 1.4rem !important;
+}
+.form-control,
+#main-wrapper fieldset select,
+#main-wrapper fieldset .chosen-container-single .chosen-single,
+#main-wrapper fieldset .chosen-container-multi ul,
+#main-wrapper fieldset .select2-selection
+.fieldset select{
+  font-size: 1.4rem !important;
+  padding: 5px 12px;
+  border-radius: 5px !important;
+  border: 1px solid #B0B2B3;
+  width: 100%;
+  color: #003399;
+  height: 3.5rem;
+}
+.chosen-container-multi .chosen-results{
+  height: auto !important;
+}
+.btn{
+  font-size: 1.4rem !important;
+  padding: 6px 12px !important;
+}
 
 /* pagination */
 .pagination, .pager{

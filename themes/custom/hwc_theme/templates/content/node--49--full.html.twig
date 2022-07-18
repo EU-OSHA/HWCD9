@@ -1,0 +1,24 @@
+
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'clearfix',
+]
+%}
+<article{{ attributes.addClass(classes) }}>
+  {{ drupal_entity('block', 'addtoanybuttons') }}
+  <div class="get-certificate">
+    <div class="certificate-image">
+      {% set urlImage = file_url( node.field_image.0.entity.field_media_image.0.entity.uri.0.value ) %}
+      <img src="{{ urlImage }}">
+    </div>
+    <div class="certificate-description">
+      {{ content.body.0 }}
+    </div>
+  </div>
+</article>
