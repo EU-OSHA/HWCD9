@@ -23,4 +23,3 @@ visibility:
     id: request_path
     negate: true
     pages: "/tools-and-publications/campaign-toolkit/*\r\n/tools-and-publications/napo-films\r\n/tools-and-publications/napo-films/*\r\n/about-topic\r\n/tools-and-publications\r\n/get-involved\r\n/campaign-partners\r\n/media-centre\r\n/previous-campaigns"
-
