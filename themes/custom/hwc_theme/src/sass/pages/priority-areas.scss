@@ -19,6 +19,7 @@
           font-size: 1.6rem;
           padding-top: 0;
           margin-top: 1rem;
+          margin-bottom: 1.6rem;
           text-align: left;
           font-weight: 600;
         }
@@ -43,7 +44,7 @@
         .content{
           width: calc(50% + 1rem);
           background: #FFF;
-          padding: 1rem;
+          padding: 1.6rem;
           //margin: 6px 6px 6px 0;
           border-radius: 0 8px 8px 0;
         }
@@ -63,7 +64,7 @@
         }
         .content{
           width: 100%;
-          padding:0 1rem;
+          padding:0 0rem;
           .description{
             display: none;
           }
@@ -81,13 +82,16 @@
     border-radius: 12px 12px 0 0;
     width: 38%;
     color: #FFF;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    font-weight: 600;
     &:before{
-      content: '';
-      width: 2.8rem;
-      height: 100%;
+      content: url(../images/svg_icons/icon-speeker.svg);
+      width: 3.5rem;
+      height: 2.5rem;
       display: inline-block;
+      position: relative;
+      top:6px;
+      margin-left: 10px;
     }
   }
   .view-content{

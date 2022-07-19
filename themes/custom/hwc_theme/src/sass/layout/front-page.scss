@@ -419,7 +419,26 @@ section.home-news-events {
     flex-wrap: nowrap;
   }
   .home-newsletter{
-
+    form{
+      margin: 2rem 1rem 4rem;
+      input{
+        border: 0;
+        width: 75%;
+        padding: 0.5rem;
+        border-radius: 8px;
+      }
+      button{
+        position: relative;
+        right: 15px;
+        color: white !important;
+        width: 24%;
+        background: #003399;
+        text-transform: lowercase;
+        border: 0;
+        border-radius: 0 15px 15px 0;
+        padding: 0.5rem;
+      }
+    }
   }
   .vertical-line{
     width: 1px;

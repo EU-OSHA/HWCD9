@@ -1650,6 +1650,26 @@ section.home-news-events {
 .home-newsletter-social-media .container > .row {
   flex-wrap: nowrap;
 }
+.home-newsletter-social-media .home-newsletter form {
+  margin: 2rem 1rem 4rem;
+}
+.home-newsletter-social-media .home-newsletter form input {
+  border: 0;
+  width: 75%;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.home-newsletter-social-media .home-newsletter form button {
+  position: relative;
+  right: 15px;
+  color: white !important;
+  width: 24%;
+  background: #003399;
+  text-transform: lowercase;
+  border: 0;
+  border-radius: 0 15px 15px 0;
+  padding: 0.5rem;
+}
 .home-newsletter-social-media .vertical-line {
   width: 1px;
   min-height: 348px;
@@ -6804,6 +6824,7 @@ h2.node__title {
   font-size: 1.6rem;
   padding-top: 0;
   margin-top: 1rem;
+  margin-bottom: 1.6rem;
   text-align: left;
   font-weight: 600;
 }
@@ -6826,7 +6847,7 @@ h2.node__title {
 .spotlight-items .view-content .spotlight-item:nth-child(1) .content {
   width: calc(50% + 1rem);
   background: #FFF;
-  padding: 1rem;
+  padding: 1.6rem;
   border-radius: 0 8px 8px 0;
 }
 .spotlight-items .view-content .spotlight-item:nth-child(2) {
@@ -6844,7 +6865,7 @@ h2.node__title {
 }
 .spotlight-items .view-content .spotlight-item:nth-child(2) .content {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 .spotlight-items .view-content .spotlight-item:nth-child(2) .content .description {
   display: none;
@@ -6858,14 +6879,17 @@ h2.node__title {
   border-radius: 12px 12px 0 0;
   width: 38%;
   color: #FFF;
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 .priority-areas-home p.spotlight-title:before {
-  content: "";
-  width: 2.8rem;
-  height: 100%;
+  content: url(../images/svg_icons/icon-speeker.svg);
+  width: 3.5rem;
+  height: 2.5rem;
   display: inline-block;
+  position: relative;
+  top: 6px;
+  margin-left: 10px;
 }
 .priority-areas-home .view-content {
   display: flex;
