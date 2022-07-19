@@ -796,6 +796,7 @@ display:
     display_plugin: attachment
     position: 10
     display_options:
+      enabled: false
       fields:
         changed:
           id: changed
@@ -1946,6 +1947,7 @@ display:
     display_plugin: embed
     position: 10
     display_options:
+      enabled: false
       fields:
         changed:
           id: changed
@@ -2735,6 +2737,7 @@ display:
     display_plugin: block
     position: 8
     display_options:
+      enabled: false
       title: ''
       fields:
         link__options:

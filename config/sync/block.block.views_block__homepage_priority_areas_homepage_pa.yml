@@ -1,0 +1,29 @@
+uuid: deed9b8f-d0f5-4479-b0dd-13718af456a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_priority_areas
+  module:
+    - system
+    - views
+  theme:
+    - hwc_theme
+id: views_block__homepage_priority_areas_homepage_pa
+theme: hwc_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:homepage_priority_areas-homepage_pa'
+settings:
+  id: 'views_block:homepage_priority_areas-homepage_pa'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/about-topic/priority-areas"
