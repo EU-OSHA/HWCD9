@@ -2445,7 +2445,7 @@ h2.node__title {
 .region-sidebar-right h2,
 .region-sidebar-left h2 {
   color: #003399;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .section-center h2 {
@@ -4708,7 +4708,7 @@ h2.node__title {
   background: #FFF;
 }
 .sidebar-first .block-facets h2 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: #003399 !important;
   padding-right: 1.25px;
 }
@@ -7054,6 +7054,85 @@ h2.node__title {
 .webform-submission-certificate-form-node-49-form .form-item-confirm .form-check-label {
   margin-bottom: 0;
   margin-left: 1rem;
+}
+
+.view-search-form .items-list-search {
+  width: 100%;
+  clear: both;
+  margin-bottom: 4.6rem;
+  background: white;
+  padding: 1.8rem;
+  border-radius: 10px;
+  position: relative;
+  border-bottom: 0;
+}
+.view-search-form .items-list-search:after {
+  content: " ";
+  background: url(../images/green-line.png) repeat-x;
+  width: 90%;
+  clear: both;
+  display: block;
+  padding-top: 1em;
+  position: absolute;
+  bottom: -36px;
+  left: 5%;
+}
+.view-search-form .items-list-search .item-search {
+  width: 100%;
+}
+.view-search-form .items-list-search .item-search strong {
+  color: #749b00;
+  font-weight: bold;
+}
+.view-search-form .items-list-search .item-search .publication-date {
+  font-weight: 600;
+}
+.view-search-form .items-list-search .item-search .title {
+  font-size: 1.8rem;
+}
+.view-search-form .items-list-search .item-search .type span {
+  color: #003399;
+}
+.view-search-form .items-list-search .item-search .type span.bold {
+  font-weight: bold;
+}
+.view-search-form .items-list-search .item-search .body {
+  margin-bottom: 1.6rem;
+}
+.view-search-form .items-list-search .item-search .see-more {
+  text-align: right;
+  margin: 1.6rem 0;
+}
+.view-search-form .items-list-search .item-search .see-more a {
+  color: #003399;
+  font-size: 1.2rem !important;
+  border: 1px solid #003399;
+  border-radius: 3px 15px 15px 3px;
+  text-transform: uppercase;
+  padding: 0.2rem 2.4rem 0.2rem 0.7rem;
+  font-weight: bold;
+  font-style: normal;
+  margin-left: 0;
+  transition: 300ms;
+  background-position: 110%;
+  text-decoration: none;
+  background: url(../images/ico-plus-green.png) no-repeat 91% 50%;
+  background-color: transparent;
+}
+.view-search-form .items-list-search .item-search .see-more a:hover {
+  color: #9cca00;
+  border: 1px solid #9cca00;
+  background-color: transparent;
+  text-decoration: none;
+}
+.view-search-form input#edit-search-api-fulltext {
+  background: url(../images/green-search.png) no-repeat 96% 55% #ffffff;
+  color: #003399;
+}
+.view-search-form #edit-reset {
+  color: #003399;
+  background: transparent;
+  border: 0;
 }
 
 /*# sourceMappingURL=hwc-global.css.map */
