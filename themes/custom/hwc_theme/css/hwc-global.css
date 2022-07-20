@@ -6109,22 +6109,22 @@ h2.node__title {
   margin: 0;
 }
 .node--type-tk-tool header h2 {
-  margin-top: 0;
+  margin-top: 1rem;
 }
-.node--type-tk-tool .node__content h2 {
+.node--type-tk-tool .introduction h2 {
   font-size: 1.8rem;
   font-weight: 600;
   color: #003399;
   margin-bottom: 10px;
   font-style: normal;
 }
-.node--type-tk-tool .node__content .field--name-field-benefits {
+.node--type-tk-tool .benefits {
   background-color: #f3f3f3;
   padding: 15px 30px;
   margin-top: 35px;
   margin-bottom: 20px;
 }
-.node--type-tk-tool .node__content .field--name-field-benefits > .field__label {
+.node--type-tk-tool .benefits h3 {
   border-bottom: 2px solid #749b00;
   padding-bottom: 2px;
   font-weight: bold;
@@ -6132,12 +6132,16 @@ h2.node__title {
   margin-bottom: 30px;
   color: #749b00;
 }
-.node--type-tk-tool .node__content .field--name-field-benefits > .field__items .field__item {
+.node--type-tk-tool .benefits ul {
+  padding: 0;
+  list-style: none;
+}
+.node--type-tk-tool .benefits ul li {
   margin-bottom: 20px;
   padding-left: 35px;
   position: relative;
 }
-.node--type-tk-tool .node__content .field--name-field-benefits > .field__items .field__item:before {
+.node--type-tk-tool .benefits ul li:before {
   content: "";
   font-family: "Glyphicons Halflings";
   text-align: center;
@@ -6154,6 +6158,19 @@ h2.node__title {
   left: 0;
   top: -4px;
   font-size: 1.4rem;
+}
+.node--type-tk-tool .body h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #003399;
+  margin-bottom: 2.5rem;
+  font-style: normal;
+}
+.node--type-tk-tool .body ul, .node--type-tk-tool .body ol {
+  padding-left: 1.8rem;
+}
+.node--type-tk-tool .body ul li, .node--type-tk-tool .body ol li {
+  margin-bottom: 15px;
 }
 
 /** media toolkit **/
@@ -6268,9 +6285,49 @@ h2.node__title {
   color: #749b00;
   font-weight: 600;
   margin-bottom: 15px;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   text-align: left;
   margin-top: 10px;
+}
+
+.node--type-tk-article {
+  margin: 0;
+}
+.node--type-tk-article .body h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #003399;
+  margin-bottom: 10px;
+  font-style: normal;
+}
+.node--type-tk-article .body .external-link {
+  color: #749b00;
+  display: block;
+  margin-top: 30px;
+}
+.node--type-tk-article .body .external-link:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  text-align: center;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  background-color: #749b00;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: white;
+  margin-right: 6px;
+  font-size: 1.4rem;
+  position: relative;
+  top: -2px;
+}
+.node--type-tk-article .body .external-link:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  vertical-align: sub;
+  margin-left: 6px;
+  font-size: 1.6rem;
 }
 
 .cm-section {
@@ -7054,6 +7111,10 @@ h2.node__title {
 .webform-submission-certificate-form-node-49-form .form-item-confirm .form-check-label {
   margin-bottom: 0;
   margin-left: 1rem;
+}
+
+.page-view-search .main-container {
+  background: #efefef;
 }
 
 .view-search-form .items-list-search {

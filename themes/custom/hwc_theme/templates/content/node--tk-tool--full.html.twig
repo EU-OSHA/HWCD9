@@ -1,0 +1,34 @@
+
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'clearfix',
+]
+%}
+
+<section{{ attributes.addClass(classes) }}>
+  <header>
+    <h2>{{ label }}</h2>
+  </header>
+  <div class="introduction">
+    {{ content.field_introduction.0 }}
+  </div>
+
+  {% set items = content.field_benefits['#items'] %}
+  <div class="benefits">
+    <h3>{{ content.field_benefits['#title'] }}</h3>
+    <ul>
+    {% for item in items %}
+      <li>{{ item.value}}</li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="body">
+    {{ content.body.0 }}
+  </div>
+</section>

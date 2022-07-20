@@ -66,16 +66,18 @@
       <!--Slides-->
       <div class="carousel-inner" role="listbox">
         {% for index, row in rows.0['#rows'] %}
+{#          {{ dd(row['#row']._entity.field_content_reference.0.target_id) }}#}
           {% set url = row['#row']._entity.field_image.entity.field_media_image.entity.uri.value %}
           {% set alt = row['#row']._entity.field_image.entity.field_media_image.alt %}
           {% set title = row['#row']._entity.title.0.value %}
-          {% set nid = 'node/' ~ row['#row']._entity.nid.0.value %}
+{#          {% set nid = 'node/' ~ row['#row']._entity.nid.0.value %}#}
+          {% set nid = 'node/' ~ row['#row']._entity.field_content_reference.0.target_id %}
         <div class="carousel-item {% if index == 0 %} active {% endif %}">
           <div class="caption" >
             <div class="content-body col-6">
               <h3 class="banner-tag h3-responsive">{{ title }}</h3>
               <div class="banner-text">{{ row['#row']._entity.body.value|raw }}</div>
-              <p class="banner-link"><a class="see-all-link" href="{{ file_url( nid )  }}">Label</a></p>
+              <p class="banner-link"><a class="see-all-link" href="{{ file_url( nid )  }}">{{ 'See more'|t }}</a></p>
             </div>
             <div class="content-img col-6">
               <img class="" src="{{ file_url( url )  }}" alt="{{ alt }}">
