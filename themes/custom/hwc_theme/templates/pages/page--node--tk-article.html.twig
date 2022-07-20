@@ -5,13 +5,17 @@
 
   <section class="tk-article-page">
     <div class="container-full">
+      {{ page.above_content.hwc_theme_local_tasks }}
       <div class="row">
         <aside class="section col-12 col-lg-3 sidebar-first" role="complementary">
           {{ page.sidebar_left.campaigntoolkit }}
         </aside>
         <section class="section col-12 col-lg-9 tk-article-content">
-                <h2>{{ node.title.0.value }}</h2>
-                {{ node.body.0.value|raw }}
+{#{{ dd( node.field_image.entity.field_media_image.0 ) }}#}
+{#{% set urlImage = node.field_image.entity.field_media_image.0.entity.uri.0.value|image_style('medium_large')  %}#}
+{#<h2>{{ node.title.0.value }}</h2>#}
+{#{{ node.body.0.value|raw }}#}
+{#<img src="{{ urlImage }}">#}
                 {{ page.content }}
         </section>
       </div>

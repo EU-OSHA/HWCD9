@@ -15,27 +15,46 @@
 
   <section{{ attributes.addClass(classes) }}>
     {% set topics = content.field_tk_topics['#items'] %}
-    {% for topic in topics %}
-      {% set nid = topic.target_id %}
-      {% set nodeloaded = drupal_entity('node', nid ) %}
-      {% set imageW = nodeloaded['#node'].field_image.0.entity.field_media_image.0.width %}
-      {% set imageH = nodeloaded['#node'].field_image.0.entity.field_media_image.0.height %}
-      {% set urlImg = nodeloaded['#node'].field_image.0.entity.field_media_image.0.entity.uri.0.value|image_style('toolkit') |file_url %}
-      {% set nodeTitle = nodeloaded['#node'].title.0.value  %}
-      {% set summary = nodeloaded['#node'].body.entity.body.0.summary  %}
-      {% set urlNode = nodeloaded['#node'].nid.0.value  %}
-      <article class="tk-article-node">
-        <div class="group-left">
-          <a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">
-            <img src="{{ urlImg }}"  >
-          </a>
+
+    {% if topics|length > 0 %}
+      {% for topic in topics %}
+        {% set nid = topic.target_id %}
+        {% set nodeloaded = drupal_entity('node', nid ) %}
+        {% set imageW = nodeloaded['#node'].field_image.0.entity.field_media_image.0.width %}
+        {% set imageH = nodeloaded['#node'].field_image.0.entity.field_media_image.0.height %}
+        {% set urlImg = nodeloaded['#node'].field_image.0.entity.field_media_image.0.entity.uri.0.value|image_style('toolkit') |file_url %}
+        {% set nodeTitle = nodeloaded['#node'].title.0.value  %}
+        {% set summary = nodeloaded['#node'].body.entity.body.0.summary  %}
+        {% set urlNode = nodeloaded['#node'].nid.0.value  %}
+        <article class="tk-article-node">
+          <div class="group-left">
+            <a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">
+              <img src="{{ urlImg }}"  >
+            </a>
+          </div>
+          <div class="group-right">
+            <h2><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">{{ nodeTitle }}</a></h2>
+            <p class="summary">{{ summary }}</p>
+            <p class="link"><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}" class="see-more">See more</a></p>
+          </div>
+        </article>
+      {% endfor %}
+    {% else %}
+      <article  class="tk-topic-node row">
+        {% if content.field_image.0  %}
+            <div class="col-left">
+          {% else %}
+              <div class="no-image">
+          {% endif %}
+          <h2 class="toolkit-h2">{{ label }}</h2>
+          <div class="body">
+            {{ content.body.0 }}
+          </div>
         </div>
-        <div class="group-right">
-          <h2><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">{{ nodeTitle }}</a></h2>
-          <p class="summary">{{ summary }}</p>
-          <p class="link"><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}" class="see-more">See more</a></p>
+        <div class="col-right">
+          {{ content.field_image }}
         </div>
       </article>
-    {% endfor %}
+    {% endif %}
 </section>
 

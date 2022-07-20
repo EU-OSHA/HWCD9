@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.tk_article.field_tk_article_type
     - field.field.node.tk_article.field_tk_topics
     - field.field.node.tk_article.field_tools_examples
+    - image.style.medium_large_330x330_
     - node.type.tk_article
   module:
     - media
@@ -32,7 +33,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: medium_large_330x330_
     third_party_settings: {  }
     weight: 3
     region: content

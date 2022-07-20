@@ -7,6 +7,7 @@ dependencies:
     - node.type.article
     - node.type.events
     - node.type.frontpage_banner
+    - node.type.gpa
     - node.type.news
     - node.type.partner
     - node.type.press_release
@@ -27,6 +28,7 @@ settings:
     target_bundles:
       article: article
       events: events
+      gpa: gpa
       news: news
       partner: partner
       press_release: press_release

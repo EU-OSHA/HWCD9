@@ -58,6 +58,8 @@
             {% set urlArray = drupal_token('node:url:args', {node: node})|split(', ') %}
             {% set urlArraylength = drupal_token('node:url:args', {node: node})|split(',')|length  %}
             {% set firstLevelPages = drupal_token('node:url:args:value:0', {node: node})|raw|upper %}
+            {% set secondLevelPages = drupal_token('node:url:args:value:1', {node: node})|replace({'-': ' '})|raw|capitalize %}
+
             {# If isnot numeric is a view page #}
             {% set isNumeric = drupal_token('node:vid', {node: node}) matches '/^\\d+$/' %}
 
@@ -120,6 +122,10 @@
                     <h1 class="page-header">{{ 'Events'|t }}</h1>
                   {% elseif nodeType == 'publication' %}
                     <h1 class="page-header">{{ 'Publications'|t  }}</h1>
+                  {% elseif nodeType == 'tk_article' %}
+                    {% if firstLevelPages in firstLevelName %}
+                      <h1 class="page-header">{{ secondLevelPages }}</h1>
+                    {% endif %}
                   {% else %}
                     <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
                   {% endif %}
@@ -129,6 +135,11 @@
             {% elseif urlArraylength == 5 %}
               {% if firstLevelPages in firstLevelName %}
                 <h1 class="page-header">{{ 'Campaign toolkit'|t }}</h1>
+              {% endif %}
+
+            {% elseif urlArraylength == 6 %}
+              {% if firstLevelPages in firstLevelName %}
+                <h1 class="page-header">{{ secondLevelPages }}</h1>
               {% endif %}
             {% endif %}
 
