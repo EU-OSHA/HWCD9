@@ -9,7 +9,7 @@
 
 {% for item in elements.content.0['#items'] %}
  {# {{  drupal_dump(item) }} #}
-  {% if  ( item['#title']['#value']|slice(0,1)  ==  item2['#title']['#value']|slice(0,1) ) %}
+  {% if  ( item['#title']['#value']|lower|slice(0,1)  ==  item2['#title']['#value']|lower|slice(0,1) ) %}
 
     {% else %}
         <div class="facet-item-title">
