@@ -4,7 +4,6 @@ display:
       exposed_form:
         options:
           submit_button: Изпълни
-          exposed_sorts_label: Ред
           sort_asc_label: Възходящ
           sort_desc_label: Низходящ
       sorts:
