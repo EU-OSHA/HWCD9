@@ -75,6 +75,7 @@ module:
   hwc_partner: 0
   hwc_partner_cron_migration: 0
   hwc_partner_cron_migration_2: 0
+  hwc_priority_areas: 0
   hwc_search: 0
   image: 0
   image_widget_crop: 0
