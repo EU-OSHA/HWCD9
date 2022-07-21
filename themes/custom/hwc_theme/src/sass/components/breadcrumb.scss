@@ -2,11 +2,12 @@
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   margin-bottom: 0.5rem;
   list-style: none;
   background-color:transparent;
   border-radius:0;
+  font-size: 1.2rem !important;
 }
 
 .breadcrumb-item {
