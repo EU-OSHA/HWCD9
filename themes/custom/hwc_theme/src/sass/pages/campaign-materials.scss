@@ -5,12 +5,12 @@
   background: #efefef;
   .view-header{
     h2{
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: 1.875rem;
+      margin-top: 4rem;
+      margin-bottom: 1.6rem;
+      font-size: 3rem;
       color: $text-color-blue;
         span{
-          font-size:1.25rem;
+          font-size:3rem;
         }
     }
   }
@@ -69,6 +69,7 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
+    padding: 2.2rem 0;
     .metadata{
       display: flex;
       flex-direction: row;
@@ -100,7 +101,7 @@
       a {
         color: $text-color-blue;
         font-style: normal;
-        font-size: 1.4rem;
+        font-size:2.2rem;
       }
     }
     .link-more{

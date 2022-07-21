@@ -55,6 +55,7 @@
             {% set customLevel = ['ABOUT-TOPIC' ] %}
             {% set nodetypes = ['news','events','publication'] %}
             {% set nodeType = drupal_token('node:type', {node: node})  %}
+
             {% set urlArray = drupal_token('node:url:args', {node: node})|split(', ') %}
             {% set urlArraylength = drupal_token('node:url:args', {node: node})|split(',')|length  %}
             {% set firstLevelPages = drupal_token('node:url:args:value:0', {node: node})|raw|upper %}
@@ -62,6 +63,7 @@
 
             {# If isnot numeric is a view page #}
             {% set isNumeric = drupal_token('node:vid', {node: node}) matches '/^\\d+$/' %}
+{#{{ dd( urlArraylength ) }}#}
 
             {% if urlArraylength == 0 %}
               <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>

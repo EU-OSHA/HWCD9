@@ -24,6 +24,11 @@ menu_breadcrumb_menus:
     weight: 0
     taxattach: 0
     langhandle: 0
+  campaign-toolkit:
+    enabled: 1
+    weight: 0
+    taxattach: 0
+    langhandle: 0
   devel:
     enabled: 0
     weight: 0

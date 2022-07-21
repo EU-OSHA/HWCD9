@@ -1,0 +1,35 @@
+
+
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  'clearfix',
+]
+%}
+
+{% set urlNode = node.nid.0.value  %}
+{% set urlImage = node.field_image.0.entity.field_media_image.0.entity.uri.0.value|image_style('toolkit') |file_url %}
+{% set nodeTitle = node.title.0.value %}
+{% set country = node.field_country.0.entity.name.0.value %}
+{% set org = node.field_organisation.0.value %}
+      <article class="node-tk-search">
+        <div class="group-left">
+          <a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">
+            <img src="{{ urlImage }}"  >
+          </a>
+        </div>
+        <div class="group-right">
+          <h2><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}">{{ nodeTitle }}</a></h2>
+          <div class="summary">{{ node.body.0.value|raw }}</div>
+          <p class="org"><span class="label">{{ 'Organization'|t }}: </span><span>{{ org }}</span> </p>
+          <p class="country"><span class="label">{{ 'Country'|t }}: </span><span>{{ country }}</span> </p>
+          <p class="link"><a href="{{ path('entity.node.canonical', {'node': urlNode}) }}" class="see-more">{{ 'See more'|t }}</a></p>
+        </div>
+      </article>
+
+

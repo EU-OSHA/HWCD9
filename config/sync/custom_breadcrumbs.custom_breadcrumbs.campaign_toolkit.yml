@@ -1,0 +1,15 @@
+uuid: 7570e895-d6e5-4b4b-b16e-151282f708e0
+langcode: en
+status: true
+dependencies: {  }
+id: campaign_toolkit
+label: 'campaign toolkit'
+description: ''
+entityType: node
+entityBundle: tk_article
+language: en
+breadcrumbPaths: "[node:menu-link:parents:first]\r\n/[node:menu-link:parents:first]/[node:menu-link:parents:value:1]\r\n/tools-and-publications/campaign-toolkit/[node:menu-link:parent:url]\r\n/tools-and-publications/campaign-toolkit/[node:menu-link:parent:url]/[node:menu-link:url]"
+breadcrumbTitles: "[node:menu-link:parents:first]\r\n[node:menu-link:parents:value:1]\r\n[node:menu-link:parent:title]\r\n[node:menu-link:title]"
+type: '1'
+pathPattern: '/tools-and-publications/campaign-toolkit/*'
+extraCacheContexts: ''

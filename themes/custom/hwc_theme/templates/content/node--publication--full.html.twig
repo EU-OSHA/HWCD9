@@ -156,21 +156,29 @@
 
             {% if file == true %}
               <div class="field-pdf-item">
-                <span class="label_multilang_file">Download</span>
-                <img class="file-icon" alt="PDF file" title="application/pdf" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/x-office-presentation.png">
-                <span class="label_multilang_file">in:</span>
-
+                <div class="label">
+                  <span class="label_multilang_file">Download</span>
+                  <img class="file-icon" alt="PDF file" title="application/pdf" src="/sites/hwc/themes/custom/hwc_theme/images/file_icons/x-office-presentation.png">
+                  <span class="label_multilang_file">in:</span>
+                </div>
+            {% endif %}
+            {% if file == true %}
+                <ul>
                 {% for languages in node.getTranslationLanguages() %}
                   {% set lang = languages.id  %}
                   {% for key, fileUrl in node.getTranslation(lang).field_file %}
                     {% set url = fileUrl.entity.field_media_document.0.entity.uri.value %}
                     {% if url %}
-                    <a href="{{ file_url( url ) }}" target="_blank">
-                      {{ lang|upper }}</a>
+                    <li>
+                      <a href="{{ file_url( url ) }}" target="_blank">
+                        <span class="lang-code">{{ lang|upper }}</span>
+                      </a>
+                      <span class="slash">|</span>
+                    </li>
                     {% endif %}
                   {% endfor %}
                 {% endfor %}
-
+                </ul>
               </div>
             {% endif %}
           </div>

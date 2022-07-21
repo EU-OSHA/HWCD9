@@ -2,7 +2,8 @@
 
 
 .node-content{
-  padding: 1rem 1rem 0;
+  margin: 2rem 0 3rem 0;
+  padding: 0 !important;
 }
 
 .available-publication{
@@ -264,6 +265,9 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+  .col-md-10, .col-md-12{
+    padding: 0;
+  }
   .publications-row{
     border-bottom: 0;
     margin-top: 2em;
@@ -282,6 +286,7 @@
     }
     .publications-detail-right-column{
       width: 100%;
+      padding: 1.6rem 0;
       .metadata{
         display: flex;
         flex-direction: row;
@@ -290,10 +295,10 @@
           color: #57575a;
         }
         .date {
-
+          font-weight: 600;
         }
         .type {
-          color: $text-color-blue;
+          color: #58595f;
           label{
             font-weight: bold;
           }
@@ -306,20 +311,49 @@
       }
       .field-pdf-item{
         display: flex;
-        flex-wrap: wrap;
-        span, img{
-          margin-right: 3px;
-          height: 20px;
-        }
-        a{
-          font-weight: bold;
-          color: $text-color-blue;
-          &:before{
-            content: " ";
-            background: url(../images/content/download.png) no-repeat center;
-            padding: 2px 15px;
+        align-items: flex-start;
+        margin: 1.6rem 0;
+        .label{
+          width: 11rem;
+          margin-right: 1.8rem;
+          display: flex;
+          span, img{
+            margin-right: 3px;
+            height: 20px;
           }
         }
+        ul{
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          li{
+            display: flex;
+            a{
+              font-weight: bold;
+              color: $text-color-blue;
+              display: flex;
+              padding: 0 3px;
+              .lang-code{
+                min-width: 1.9rem;
+              }
+              &:before{
+                content: " ";
+                background: url(../images/content/download.png) no-repeat center;
+                margin-right: 5px;
+                width: 20px;
+                height: 20px;
+                display: block;
+              }
+            }
+            .slash{
+              margin: 0 3px 0 3px;
+              font-size: 1.4rem;
+              height: 24px;
+            }
+          }
+        }
+
       }
     }
   }
