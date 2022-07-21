@@ -30,6 +30,7 @@
       > fieldset{
         flex: 1 1 auto;
         display: flex;
+        position: relative;
       }
     }
     label {
@@ -59,6 +60,27 @@
   color: #003399;
   height: 3.5rem;
 }
+.view-search-toolkit-examples{
+  fieldset.js-form-item.js-form-type-textfield.form-type-textfield.js-form-item-title.form-item-title.mb-3:after {
+    content: url(../images/header/search.png);
+    background: #003399;
+    height: 33px;
+    width: 33px;
+    bottom: 1px;
+    right: 6px;
+    position: absolute;
+    padding: 7px;
+  }
+  .form-row .form-actions {
+    align-self: flex-end;
+    flex: 100%;
+    /* text-align: right; */
+    .btn {
+      width: 10rem;
+    }
+  }
+}
+
 .chosen-container-multi .chosen-results{
   height: auto !important;
 }

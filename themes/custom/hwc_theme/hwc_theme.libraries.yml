@@ -26,6 +26,7 @@ global-styling:
   version: VERSION
   css:
     component:
+      css/chosen.css: {}
       css/hwc-global.css: {}
       css/hwc-print-version.css: {}
     theme:
