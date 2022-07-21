@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Hae esimerkkejä hyvistä kampanjoista'
+      exposed_form:
+        options:
+          submit_button: Valitse
+          sort_asc_label: Nouseva
+          sort_desc_label: Laskeva
+      sorts:
+        title:
+          expose:
+            label: Aakkosjärjestyksessä
+      filters:
+        title:
+          expose:
+            label: Haku
+        field_country:
+          expose:
+            label: Haku
+      header:
+        area:
+          content:
+            value: "<p>Haluat varmasti saada vinkkejä eri kampanjoihin soveltuvista hyvistä käytännöistä, ja siksi tarjoamme mahdollisuuden hakea esimerkkejä inspiroivista kampanjoista eri puolilta Eurooppaa.</p>\r\n"
+            format: full_html

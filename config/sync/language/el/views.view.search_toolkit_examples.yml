@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Έναρξη αναζήτησης'
+          sort_asc_label: Αύξ
+          sort_desc_label: ' Φθίν'
+      sorts:
+        title:
+          expose:
+            label: Αλφαβητικά
+      filters:
+        title:
+          expose:
+            label: Αναζήτηση
+        field_country:
+          expose:
+            label: Αναζήτηση
+      header:
+        area:
+          content:
+            value: "<p>Γνωρίζουμε ότι είστε πρόθυμοι να ενημερώνεστε για ορθές πρακτικές από διάφορες εκστρατείες, γι' αυτό και σας δίνουμε τη δυνατότητα να αναζητήσετε παραδείγματα από ολόκληρη την Ευρώπη και να εμπνευστείτε από αυτά.</p>\r\n"
+            format: full_html
+      title: 'Παραδείγματα εργαλειοθήκης αναζήτησης'

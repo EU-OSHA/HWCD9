@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Zoeken in Toolkit-voorbeelden'
+      exposed_form:
+        options:
+          submit_button: Toepassen
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
+      sorts:
+        title:
+          expose:
+            label: Alfabetisch
+      filters:
+        title:
+          expose:
+            label: Zoeken
+        field_country:
+          expose:
+            label: Land
+      header:
+        area:
+          content:
+            value: "<p>Aangezien we weten dat u graag goede praktijkvoorbeelden van andere campagnes wilt leren kennen, bieden we u de mogelijkheid om te zoeken naar voorbeelden uit heel Europa om inspiratie op te doen.</p>\r\n"
+            format: full_html

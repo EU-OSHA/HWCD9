@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Ieškoti priemonių rinkinio pavyzdžių'
+      exposed_form:
+        options:
+          submit_button: Taikyti
+          sort_asc_label: 'Didėjančia tvarka'
+          sort_desc_label: 'Mažėjančia tvarka'
+      sorts:
+        title:
+          expose:
+            label: 'Abėcėlės tvarka'
+      filters:
+        title:
+          expose:
+            label: Paieška
+        field_country:
+          expose:
+            label: Paieška
+      header:
+        area:
+          content:
+            value: "<p>Žinome, kad norėtumėte pamatyti gerų kampanijų pavyzdžių, todėl suteikiame galimybę ieškoti pavyzdžių iš visos Europos ir pasisemti idėjų.</p>\r\n"
+            format: full_html

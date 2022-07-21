@@ -1,0 +1,24 @@
+display:
+  default:
+    display_options:
+      title: 'Dæmi um leitartól'
+      exposed_form:
+        options:
+          submit_button: 'Sækja um'
+          sort_desc_label: Lækkandi
+      sorts:
+        title:
+          expose:
+            label: 'Í stafrófsröð'
+      filters:
+        title:
+          expose:
+            label: Leita
+        field_country:
+          expose:
+            label: Land
+      header:
+        area:
+          content:
+            value: "<p>Við vitum að þú hefur áhuga á að sjá góðar venjur fyrir mismunandi herferðir, við bjóðum þér möguleika á að leita að dæmum víðsvegar um Evrópu og fá innblástur.</p>\r\n"
+            format: full_html

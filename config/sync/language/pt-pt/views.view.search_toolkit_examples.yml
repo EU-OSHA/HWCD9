@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      title: 'Pesquisar exemplos de Conjuntos de Ferramentas'
+      exposed_form:
+        options:
+          submit_button: 'Apresentar candidatura'
+      sorts:
+        title:
+          expose:
+            label: 'Por ordem alfabética'
+      filters:
+        title:
+          expose:
+            label: Pesquisar
+        field_country:
+          expose:
+            label: País
+      header:
+        area:
+          content:
+            value: "<p>Sabemos que está interessado em conhecer boas práticas relativas a diferentes campanhas. Oferecemos-lhe a possibilidade de pesquisar exemplos de toda a Europa, para que possam servir-lhe de inspiração.</p>\r\n"
+            format: full_html

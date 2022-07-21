@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+      sorts:
+        title:
+          expose:
+            label: 'Por orden alfabético'
+      filters:
+        title:
+          expose:
+            label: Buscar
+        field_country:
+          expose:
+            label: País
+      header:
+        area:
+          content:
+            value: "<p>Sabemos que está interesado en ver algunas buenas prácticas de distintas campañas, de modo que le ofrecemos la posibilidad de buscar ejemplos de toda Europa que le sirvan de inspiración.</p>\r\n"
+            format: full_html
+      title: 'Buscar ejemplos de uso de las herramientas'

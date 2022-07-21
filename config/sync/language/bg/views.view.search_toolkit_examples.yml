@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Изпълни
+          sort_asc_label: Възходящ
+          sort_desc_label: Низходящ
+      sorts:
+        title:
+          expose:
+            label: 'По азбучен ред'
+      filters:
+        title:
+          expose:
+            label: Търсене
+        field_country:
+          expose:
+            label: Държава
+      header:
+        area:
+          content:
+            value: "<p>Знаем, че искате да се запознаете с добри практики за различни кампании, затова ви даваме възможност да търсите примери от цяла Европа и да се вдъхновявате.</p>\r\n"
+            format: full_html
+      title: 'Примери за набор от инструменти за търсене'
