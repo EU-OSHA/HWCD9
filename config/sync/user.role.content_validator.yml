@@ -11,7 +11,7 @@ dependencies:
     - toolbar
 id: content_validator
 label: 'Content Validator'
-weight: 6
+weight: -5
 is_admin: null
 permissions:
   - 'abort job item'

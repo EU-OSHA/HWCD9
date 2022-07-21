@@ -20,7 +20,7 @@ dependencies:
     - workbench_access
 id: news_and_events_editor_een_osh_ambassador
 label: 'News and Events Editor – EEN OSH Ambassador'
-weight: 18
+weight: 8
 is_admin: null
 permissions:
   - 'access administration pages'
