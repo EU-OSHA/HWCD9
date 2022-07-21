@@ -16,9 +16,11 @@
       </ol>
       <!--Slides-->
       <div class="carousel-inner" role="listbox">
-        {% for index, item in results %}
-          {% set result = item %}
-          {% set item = item._entity %}
+        {% for index, items in results %}
+          {% set result = items %}
+          {% set language = items.node_field_data_langcode  %}
+          {% set item = items._entity %}
+{#          {{ dd( item.translation(language).title.0.value ) }}#}
           {% set image = item.field_image|view  %}
           {% set caption = image.0['#media'].field_caption_copyrigth_.0.value %}
 
@@ -28,22 +30,32 @@
                   {%  set url = file_url(item.field_image.0.entity.field_media_image.0.entity.uri.0.value)  %}
                   {% set width = item.field_image.0.entity.field_media_image.0.width %}
                   {% set height = item.field_image.0.entity.field_media_image.0.height %}
-                  {% set title = item.field_image.0.entity.field_media_image.0.title %}
+                  {% set titleImg = item.field_image.0.entity.field_media_image.0.title %}
                   <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }} ">
-                    <img src="{{ item.field_image.0.entity.field_media_image.0.entity.uri.0.value|image_style('toolkit_example') }}"  title="{{ title }}">
+                    <img src="{{ item.field_image.0.entity.field_media_image.0.entity.uri.0.value|image_style('toolkit_example') }}"  title="{{ titleImg }}">
                   </a>
                 </div>
                 <div class="group-right">
+                  {% set title = item.translation(language).title.0.value %}
+                  {% set org = item.translation(language).field_organisation.0.value %}
+                  {% set country = item.translation(language).field_country.entity.name.0.value %}
+                  {% set body = item.translation(language).body.0.value %}
                   <h2>
                     <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }} ">
-                      {{ item.title.value }}
+                      {{ title }}
                     </a>
                   </h2>
-                  <p><label>{{'Organisation'|t }}:</label>{{ item.field_organisation.0.value }}</p>
-                  <p><label>{{ 'Country'|t }}:</label>{{ item.field_country.entity.name.0.value }}</p>
+                  {% if org %}
+                  <p><label>{{'Organisation'|t }}:</label> {{ org }}</p>
+                  {% endif %}
+                  {% if country %}
+                  <p><label>{{ 'Country'|t }}:</label> {{ country }}</p>
+                  {% endif %}
+                  {% if body %}
                   <div class="description">
-                    {{ item.body.0.value|raw }}
+                    {{ body|raw  }}
                   </div>
+                  {% endif %}
                   <p class="align-right"><a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }}" class="see-more">{{ 'See more'|t }}</a> </p>
                 </div>
             </div>

@@ -10,36 +10,70 @@
       <section class="section tk-example-content">
         <div class="group-left">
           <h2 class="toolkit-h2">{{ label }}</h2>
+          {% if org %}
           <p class="org">
             <strong>{{ label_org }}: </strong>
             <span>{{ org }}</span>
           </p>
+          {% endif %}
+          {% if country %}
           <p class="country">
             <strong>{{ label_country }}: </strong>
             <span>{{ country }}</span>
           </p>
+          {% endif %}
           <div class="description">
             <p class="label"><strong>{{ 'Description'|t }}: </strong></p>
             {{ description|raw }}
           </div>
-          {% set links = content.field_external_link['#items'] %}
-          {% set label = content.field_external_link['#title'] %}
-          {% if links|length > 0 %}
-            <div class="show-links">
+
+          {% set numFiles = content.field_download_pdf['#items']|length   %}
+          {% set labelFile = content.field_download_pdf['#title'] %}
+          {% if numFiles > 0 %}
+            <div class="show-files">
               <p class="label">
-                <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  {{ label }}
+                <a class="" data-toggle="collapse" href="#collapseFiles" role="button" aria-expanded="false" aria-controls="collapseFiles">
+                  {{ labelFile }}
                 </a>
-               </p>
-              <div class="links-list collapse" id="collapseExample">
+              </p>
+              <div class="files-list collapse" id="collapseFiles">
                 <ul>
-                  {% for index, link in links %}
-                      <li><a href="{{ link.uri }}">{{ link.title }}</a> </li>
+                  {% set urlFile = node.field_download_pdf %}
+                  {% for index, file in urlFile %}
+                    {% set url =  file.entity.field_media_document.0.entity.uri.0.value|file_url %}
+                    {% set filesize = file.entity.field_media_document.0.entity.filesize.0.value %}
+                    <li class="">
+                      <a href="{{ url }}" class="download-file" target="_blank" title="{{ 'download file'|t }}">
+                        {{ file.entity.name.0.value }}
+                        <span class="file_size">{{ filesize|number_format(2) }} MB</span>
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                    </li>
                   {% endfor %}
                 </ul>
               </div>
             </div>
           {% endif %}
+
+          {% set links = content.field_external_link['#items'] %}
+          {% set label = content.field_external_link['#title'] %}
+          {% if links|length > 0 %}
+            <div class="show-links">
+              <p class="label">
+                <a class="" data-toggle="collapse" href="#collapseLink" role="button" aria-expanded="false" aria-controls="collapseLink">
+                  {{ label }}
+                </a>
+               </p>
+              <div class="links-list collapse" id="collapseLink">
+                <ul>
+                  {% for index, link in links %}
+                      <li><a href="{{ link.uri }}" class="external-link">{{ link.title }}</a> </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          {% endif %}
+
         </div>
         <div class="group-right">
           {{ content.field_image }}
