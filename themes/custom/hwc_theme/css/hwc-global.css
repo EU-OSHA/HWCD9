@@ -908,6 +908,7 @@ body {
 #main-wrapper .views-exposed-form .form-row > fieldset {
   flex: 1 1 auto;
   display: flex;
+  position: relative;
 }
 #main-wrapper .views-exposed-form label {
   color: #003399 !important;
@@ -934,6 +935,25 @@ body {
   width: 100%;
   color: #003399;
   height: 3.5rem;
+}
+
+.view-search-toolkit-examples fieldset.js-form-item.js-form-type-textfield.form-type-textfield.js-form-item-title.form-item-title.mb-3:after {
+  content: url(../images/header/search.png);
+  background: #003399;
+  height: 33px;
+  width: 33px;
+  bottom: 1px;
+  right: 6px;
+  position: absolute;
+  padding: 7px;
+}
+.view-search-toolkit-examples .form-row .form-actions {
+  align-self: flex-end;
+  flex: 100%;
+  /* text-align: right; */
+}
+.view-search-toolkit-examples .form-row .form-actions .btn {
+  width: 10rem;
 }
 
 .chosen-container-multi .chosen-results {
@@ -2400,7 +2420,7 @@ body.user-logged-in.path-frontpage.scrolled #header {
 }
 
 .region-sidebar-left {
-  padding-top: 4.9rem;
+  padding-top: 2.8rem;
 }
 
 .region-sidebar-right {
@@ -4709,7 +4729,7 @@ h2.node__title {
   padding: 0.8rem 0.8rem 0.4rem;
   border: 1px solid #B0B2B3;
   border-radius: 5px;
-  margin-top: 2rem;
+  margin-bottom: 1.6rem;
   width: 100%;
   background: #FFF;
 }
@@ -5073,6 +5093,7 @@ h2.node__title {
 .related-resources .related-resources-item .group-left {
   padding: 0;
   min-width: 155px;
+  width: 155px;
   margin-right: 1.5rem;
 }
 .related-resources .related-resources-item .group-left .field--type-image {
@@ -5112,15 +5133,15 @@ h2.node__title {
 }
 .related-resources .related-resources-item .group-right .title-list {
   display: block;
-  margin-top: 0.5rem;
-  padding-bottom: 0.3rem;
-  line-height: 1.6rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
   width: 90%;
 }
 .related-resources .related-resources-item .group-right .title-list a {
   color: #003399;
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 2.2rem;
 }
 
 .infographic-item {
@@ -5771,6 +5792,19 @@ h2.node__title {
   font-family: "Glyphicons Halflings";
   vertical-align: middle;
   top: 0;
+}
+#block-campaigntoolkit ul.menu > li ul.submenu-1 > li:nth-child(1) > a,
+#block-campaigntoolkit-2 ul.menu > li ul.submenu-1 > li:nth-child(1) > a {
+  font-weight: bold;
+}
+#block-campaigntoolkit ul.menu > li ul.submenu-1 > li:nth-child(1) > a:before,
+#block-campaigntoolkit-2 ul.menu > li ul.submenu-1 > li:nth-child(1) > a:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  padding-left: 0px;
+  padding-right: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 #block-campaigntoolkit ul.menu > li ul.submenu-2,
 #block-campaigntoolkit-2 ul.menu > li ul.submenu-2 {
