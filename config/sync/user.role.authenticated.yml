@@ -1,9 +1,38 @@
 uuid: 7bbff9bf-155a-4dbf-9208-43026a7efa6c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - taxonomy_access_fix
 id: authenticated
 label: authenticated
-weight: 20
+weight: -10
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view terms in activity'
+  - 'view terms in article_types'
+  - 'view terms in biological_hazard'
+  - 'view terms in business_sector'
+  - 'view terms in campaign_material_types'
+  - 'view terms in chemical_and_biological_hazards_'
+  - 'view terms in chemical_hazards_related_to_heal'
+  - 'view terms in contact_type'
+  - 'view terms in contact_type_of_sender'
+  - 'view terms in country'
+  - 'view terms in country_status'
+  - 'view terms in digitalisation_priority_area'
+  - 'view terms in document'
+  - 'view terms in document_partner_type'
+  - 'view terms in hashtag_terms'
+  - 'view terms in msd_priority_area'
+  - 'view terms in nace_codes'
+  - 'view terms in newsletter_sections'
+  - 'view terms in nodequeue_help_text'
+  - 'view terms in organisation_type'
+  - 'view terms in partner_types'
+  - 'view terms in publication_types'
+  - 'view terms in related_resources'
+  - 'view terms in section'
+  - 'view terms in tags'
+  - 'view terms in thesaurus'
+  - 'view terms in tools_and_examples'

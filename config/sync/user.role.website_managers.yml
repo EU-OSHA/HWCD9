@@ -27,6 +27,7 @@ dependencies:
     - node.type.practical_tool
     - node.type.press_contact
     - node.type.press_release
+    - node.type.priority_area
     - node.type.publication
     - node.type.slideshare
     - node.type.spotlight
@@ -54,7 +55,7 @@ dependencies:
     - workbench_access
 id: website_managers
 label: 'Website Managers'
-weight: 13
+weight: 3
 is_admin: null
 permissions:
   - 'abort job item'

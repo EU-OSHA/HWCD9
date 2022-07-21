@@ -24,7 +24,7 @@ dependencies:
     - workbench_access
 id: hwc_staff_reviewers
 label: 'HWC Staff - Reviewers'
-weight: 14
+weight: 4
 is_admin: null
 permissions:
   - 'access administration pages'

@@ -20,7 +20,7 @@ dependencies:
     - workbench_access
 id: campaign_partner
 label: 'campaign partner'
-weight: 11
+weight: 0
 is_admin: null
 permissions:
   - 'access content'

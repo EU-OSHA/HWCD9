@@ -7,7 +7,7 @@ dependencies:
     - workbench_access
 id: approver
 label: Approver
-weight: 9
+weight: -2
 is_admin: null
 permissions:
   - 'use exclude node title'

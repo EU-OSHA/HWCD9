@@ -7,7 +7,7 @@ dependencies:
     - workbench_access
 id: project_manager
 label: 'Project Manager'
-weight: 7
+weight: -4
 is_admin: null
 permissions:
   - 'accept job item translation'
