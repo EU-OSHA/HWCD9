@@ -37,11 +37,10 @@ content:
     weight: 103
     region: content
   field_download_pdf:
-    type: entity_reference_entity_view
+    type: entity_reference_label
     label: above
     settings:
-      view_mode: default
-      link: false
+      link: true
     third_party_settings: {  }
     weight: 105
     region: content

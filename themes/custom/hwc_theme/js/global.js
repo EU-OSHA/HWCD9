@@ -58,7 +58,6 @@ jQuery(function ($) {
     });
 
     //menu toolkit
-
     function OpenMenu(element, menu){
       if($(element).siblings("ul").is(":visible")){
         $(element).removeClass("up-arrow");
@@ -132,12 +131,27 @@ jQuery(function ($) {
         window.location.href= urlLink;
     });
 
+    /* increase and decrease the body text size */
+    var fontSize = 10;
+    $('#text_resize_decrease').on( "click", function() {
+      var currentVal = parseInt( $('html').css('font-size') );
+      if (currentVal != NaN) {
+        $('html').css('font-size',currentVal - 1)
+      } else {
+        $('html').css('font-size',fontSize - 1)
+      }
 
+    });
+    $('#text_resize_increase').on( "click", function() {
+      var currentVal = parseInt( $('html').css('font-size') );
+      if (currentVal != NaN) {
+        $('html').css('font-size',currentVal + 1)
+      } else{
+        $('html').css('font-size',fontSize + 1)
+      }
+    });
 
   });
-
-
-
 });
 
 

@@ -18,7 +18,7 @@ plugin: 'menu_block:campaign-toolkit'
 settings:
   id: 'menu_block:campaign-toolkit'
   label: 'Campaign Toolkit'
-  label_display: visible
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child

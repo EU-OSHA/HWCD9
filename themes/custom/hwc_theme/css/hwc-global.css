@@ -6279,6 +6279,73 @@ h2.node__title {
 .tk-example-node .tk-example-content .group-left .show-links .links-list ul li {
   margin-bottom: 0.8rem;
 }
+.tk-example-node .tk-example-content .group-left .show-links .links-list ul li a.external-link {
+  font-weight: normal;
+  display: block;
+}
+.tk-example-node .tk-example-content .group-left .show-links .links-list ul li a.external-link:after {
+  color: #749b00;
+  content: "";
+  font-family: "Glyphicons Halflings";
+  vertical-align: sub;
+  margin-left: 6px;
+  font-size: 1.6rem;
+}
+.tk-example-node .tk-example-content .group-left .show-files {
+  margin-bottom: 20px;
+}
+.tk-example-node .tk-example-content .group-left .show-files .label {
+  margin: 0;
+}
+.tk-example-node .tk-example-content .group-left .show-files .label a {
+  display: block;
+  background-color: #749b00;
+  color: white;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tk-example-node .tk-example-content .group-left .show-files .label a:hover {
+  background-color: #595959;
+}
+.tk-example-node .tk-example-content .group-left .show-files .label a:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  float: right;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+.tk-example-node .tk-example-content .group-left .show-files .label a[aria-expanded=true]:after {
+  content: "";
+}
+.tk-example-node .tk-example-content .group-left .show-files .files-list {
+  border: 1px solid #595959;
+  border-top: none;
+}
+.tk-example-node .tk-example-content .group-left .show-files .files-list ul {
+  list-style: none;
+  margin: 0;
+  background-color: #f3f3f3;
+  padding: 15px 12px 5px;
+}
+.tk-example-node .tk-example-content .group-left .show-files .files-list ul li {
+  margin-bottom: 0.8rem;
+}
+.tk-example-node .tk-example-content .group-left .show-files .files-list ul li a {
+  font-weight: bold;
+}
+.tk-example-node .tk-example-content .group-left .show-files .files-list ul li a .glyphicon-chevron-right:before {
+  content: url(../images/file_icons/application-pdf.png);
+  padding-left: 0px;
+  padding-right: 0px;
+  vertical-align: middle;
+}
+.tk-example-node .tk-example-content .group-left .show-files .files-list ul li a span {
+  color: #59595A;
+  font-weight: normal;
+}
 .tk-example-node .tk-example-content .group-right {
   padding-left: 30px;
   width: 30%;

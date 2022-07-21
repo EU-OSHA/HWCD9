@@ -656,6 +656,77 @@
             padding: 15px 12px 5px;
             li{
               margin-bottom: 0.8rem;
+              a{
+                &.external-link{
+                  font-weight: normal;
+                  display: block;
+                  &:after {
+                    color: $text-color-green;
+                    content: "\e066";
+                    font-family: "Glyphicons Halflings";
+                    vertical-align: sub;
+                    margin-left: 6px;
+                    font-size: 1.6rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .show-files{
+        margin-bottom: 20px;
+        .label{
+          margin: 0;
+          a{
+            display: block;
+            background-color: #749b00;
+            color: white;
+            padding: 6px 12px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+              background-color: #595959;
+            }
+            &:after {
+              content: "\e250";
+              font-family: "Glyphicons Halflings";
+              float: right;
+              vertical-align: middle;
+              font-size: 1.2rem;
+              margin-top: 2px;
+            }
+            &[aria-expanded="true"]{
+              &:after{
+                content: "\e252";
+              }
+            }
+          }
+        }
+        .files-list{
+          border: 1px solid #595959;
+          border-top: none;
+          ul{
+            list-style: none;
+            margin: 0;
+            background-color: #f3f3f3;
+            padding: 15px 12px 5px;
+            li{
+              margin-bottom: 0.8rem;
+              a{
+                font-weight: bold;
+                .glyphicon-chevron-right:before {
+                  content: url(../images/file_icons/application-pdf.png);
+                  padding-left: 0px;
+                  padding-right: 0px;
+                  vertical-align: middle;
+                }
+                span{
+                  color: #59595A;
+                  font-weight: normal;
+                }
+              }
             }
           }
         }

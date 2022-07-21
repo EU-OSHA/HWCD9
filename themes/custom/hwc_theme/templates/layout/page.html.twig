@@ -67,13 +67,18 @@
               <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
 
             {% elseif urlArraylength == 1 %}
+
               {% if isNumeric %}
                 <h1 class="page-header">{{ drupal_token('node:menu-link:parent', {node: node})|raw }}</h1>
               {% else %}
                 {% if node.field_splash_title %}
                   <h1 class="page-header">{{ node.field_splash_title.0.value }}</h1>
                 {% else %}
-                  <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                    {% if node == 'null' %}
+                      <h1 class="page-header">{{ page.breadcrumb.hwc_theme_page_title }}</h1>
+                    {% else %}
+                      <h1>{{ 'Glossary'|t }}</h1>
+                    {% endif %}
                 {% endif %}
               {% endif %}
 
@@ -228,8 +233,8 @@
 
               <div class="row">
                 <div class="col-8 footer-intro">
-                    <p>Safety and health at work is everyone's concern. It's good for you. It's good for business.</p>
-                    <p>European Agency for Safety and Health at Work | an agency of the European Union</p>
+                    <p>{{ "Safety and health at work is everyone's concern. It's good for you. It's good for business."|t }}</p>
+                    <p>{{ '© 2021 EU-OSHA | an agency of the European Union'|t }}</p>
                 </div>
                 <div class="col-4 footer-network">
                   <p> {{ 'Follow us:'|t }}</p>
