@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Ricerca esempi di kit di strumenti'
+      exposed_form:
+        options:
+          submit_button: Applica
+          sort_asc_label: Cres
+          sort_desc_label: Decres
+      sorts:
+        title:
+          expose:
+            label: 'In ordine alfabetico'
+      filters:
+        title:
+          expose:
+            label: Ricerca
+        field_country:
+          expose:
+            label: Ricerca
+      header:
+        area:
+          content:
+            value: "<p>Vuoi vedere alcune buone pratiche relative a campagne diverse? Eccoti la possibilità di cercare esempi provenienti da tutta Europa per trarne spunto.</p>\r\n"
+            format: full_html

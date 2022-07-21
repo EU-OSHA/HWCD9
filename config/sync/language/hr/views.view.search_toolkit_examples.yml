@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Pretraži primjere alata'
+      exposed_form:
+        options:
+          submit_button: Primijeni
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      sorts:
+        title:
+          expose:
+            label: Abecedno
+      filters:
+        title:
+          expose:
+            label: Pretraživanje
+        field_country:
+          expose:
+            label: Pretraživanje
+      header:
+        area:
+          content:
+            value: "<p>Svjesni smo toga da želite vidjeti primjere dobre prakse za različite kampanje. Stoga vam omogućujemo da pretražite primjere iz cijele Europe i pronađete inspiraciju za svoju kampanju.</p>\r\n"
+            format: full_html

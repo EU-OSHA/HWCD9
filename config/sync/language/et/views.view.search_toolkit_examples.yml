@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Otsige vahendite näiteid'
+      exposed_form:
+        options:
+          submit_button: Taotle
+          sort_asc_label: 'Kasvavas järjestuses'
+          sort_desc_label: 'Kahanevas järjestuses'
+      sorts:
+        title:
+          expose:
+            label: 'Tähestiku järjekorras'
+      filters:
+        title:
+          expose:
+            label: Otsing
+        field_country:
+          expose:
+            label: Riik
+      header:
+        area:
+          content:
+            value: "<p>Teame, et sooviksite näha näiteid headest tavadest eri kampaaniate elluviimisel ning pakume võimalust otsida näiteid ja saada inspiratsiooni kogu Euroopast.</p>\r\n"
+            format: full_html

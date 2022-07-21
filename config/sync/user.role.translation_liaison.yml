@@ -11,7 +11,7 @@ dependencies:
     - toolbar
 id: translation_liaison
 label: 'Translation Liaison'
-weight: 4
+weight: -7
 is_admin: null
 permissions:
   - 'access toolbar'

@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Meklēšanas rīkkopu piemēri'
+      exposed_form:
+        options:
+          submit_button: Pieteikties
+          sort_asc_label: Pieaug
+          sort_desc_label: Dilst
+      sorts:
+        title:
+          expose:
+            label: 'Alfabēta secībā'
+      filters:
+        title:
+          expose:
+            label: Meklēt
+        field_country:
+          expose:
+            label: Valsts
+      header:
+        area:
+          content:
+            value: "<p>Mēs zinām, ka nepacietīgi vēlaties iepazīties ar dažādu kampaņu veidu paraugpraksi, tādēļ piedāvājam meklēšanas iespēju, kurā pieejami piemēri no visas Eiropas. Tie jūs noteikti iedvesmos!</p>\r\n"
+            format: full_html

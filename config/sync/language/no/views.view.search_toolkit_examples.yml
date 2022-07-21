@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Søk etter verktøykasseeksempler'
+      exposed_form:
+        options:
+          submit_button: Bruk
+          sort_asc_label: Stig
+          sort_desc_label: Synk
+      sorts:
+        title:
+          expose:
+            label: Alfabetisk
+      filters:
+        title:
+          expose:
+            label: Søk
+        field_country:
+          expose:
+            label: Land
+      header:
+        area:
+          content:
+            value: "<p>Vi vet at du er ivrig etter å se god praksis for forskjellige kampanjer, så vi gir deg mulighet til å søke etter eksempler fra hele Europa og bli inspirert.</p>\r\n"
+            format: full_html

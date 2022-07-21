@@ -7,7 +7,7 @@ dependencies:
     - workbench_access
 id: superadministrators
 label: Superadministrators
-weight: 10
+weight: -1
 is_admin: null
 permissions:
   - 'use exclude node title'

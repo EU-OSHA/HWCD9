@@ -23,7 +23,7 @@ dependencies:
     - workbench_access
 id: eu_osha_een_reviewers
 label: 'EU-OSHA EEN Reviewers'
-weight: 15
+weight: 5
 is_admin: null
 permissions:
   - 'access administration pages'

@@ -11,7 +11,7 @@ dependencies:
     - workbench_access
 id: gpe_platform_editors
 label: 'GPE Platform Editors'
-weight: 17
+weight: 7
 is_admin: null
 permissions:
   - 'access administration pages'

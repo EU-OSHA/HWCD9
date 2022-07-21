@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Eżempji ta’ Sett ta’ Għodod ta’ Tfittxija'
+      exposed_form:
+        options:
+          submit_button: Applika
+          sort_asc_label: 'Ordni axxendenti'
+          sort_desc_label: 'Ordni dixxendenti'
+      sorts:
+        title:
+          expose:
+            label: Alfabetikament
+      filters:
+        title:
+          expose:
+            label: Fittex
+        field_country:
+          expose:
+            label: ' Pajjiż'
+      header:
+        area:
+          content:
+            value: "<p>Nafu li inti ħerqan li tara xi prattika tajba għal kampanji differenti, qed noffrulek l-għażla li tfittex eżempji mill-Ewropa kollha u tispira ruħek.</p>\r\n"
+            format: full_html

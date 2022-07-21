@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Übernehmen
+          sort_asc_label: Auf
+          sort_desc_label: Ab
+      sorts:
+        title:
+          expose:
+            label: Alphabetisch
+      filters:
+        title:
+          expose:
+            label: Suche
+        field_country:
+          expose:
+            label: Land
+      header:
+        area:
+          content:
+            value: "<p>Wir wissen, dass Sie an bewährten Vorgehensweisen für verschiedene Kampagnen interessiert sind. Wir bieten Ihnen die Möglichkeit, nach Beispielen aus ganz Europa zu suchen und sich inspirieren zu lassen.</p>\r\n"
+            format: full_html
+      title: 'Suche nach Beispielen'
