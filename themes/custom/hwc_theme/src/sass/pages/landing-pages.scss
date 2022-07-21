@@ -1,0 +1,44 @@
+.landing-menu-page {
+  .landing-menu-item{
+    margin-bottom: 3rem;
+    > a {
+      display: block;
+      width: 100%;
+      height: 160px;
+      border: 2px solid #bcd75b;
+      border-radius: 7px;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    .copy{
+      display: block;
+      clear: both;
+      min-height: 14px;
+      font-size: 1rem;
+    }
+    .title{
+      font-size: 1.6rem;
+      margin: 0;
+      line-height: 20px;
+      padding: 1rem;
+      font-weight: bold;
+      font-style: normal;
+      padding-left: 0;
+      letter-spacing: 0;
+      a{
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .description{
+      font-size: 1.2rem;
+    }
+    &:hover{
+      opacity: 0.6;
+      cursor:pointer;
+    }
+  }
+}

@@ -12,7 +12,7 @@ dependencies:
 id: countrytaxonomytermiso2een
 theme: hwc_theme
 region: content
-weight: -19
+weight: -18
 provider: null
 plugin: 'facet_block:country_taxonomy_term_iso2_een'
 settings:

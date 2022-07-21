@@ -28,12 +28,6 @@
             {{ text|length > 150 ? text|slice(0, 125)|raw ~ '...' : text|raw }}
           {% endif %}
         </p>
-
-
-
-
-
-
         <a href="{{ path('entity.node.canonical', {'node': item.nid.value}) }}" class="more-link">{{ 'See more'|t }}</a>
       </div>
     </div>

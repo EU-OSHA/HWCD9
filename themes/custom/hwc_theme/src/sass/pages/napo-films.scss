@@ -1,13 +1,31 @@
-.field--name-body{
-  h2{
-    color: $text-color-blue;
+.page-node-33{
+  .node-content{
+    .field--name-body{
+      position: relative;
+      h2{
+        color: $text-color-blue;
+        margin-bottom: 1.4rem;
+        font-size: 3.2rem;
+      }
+      &:after{
+        content: url(../images/napo-icon.png);
+        width: 5.6rem;
+        height: 5.6rem;
+        top: 5.6rem;
+        position: absolute;;
+      }
+      > p{
+        margin-left: 7.5rem;
+      }
+    }
   }
 }
+
 .intro-napo-films{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 4.2rem;
   p{
     margin-bottom: 0;
     margin-right: 2%;
@@ -15,14 +33,15 @@
   .download-all{
     display: flex;
     justify-content: flex-end;
+    font-weight: bold;
     &:after{
       content: '';
       background: $text-color-blue;
       margin-left: 5px;
       display: block;
       cursor: pointer;
-      height: 20px;
-      width: 20px;
+      height: 2rem;
+      width: 2rem;
       -webkit-mask-image: url(../images/svg_icons/solid/download.svg);
       -webkit-mask-repeat: no-repeat;
       mask-image: url(../images/svg_icons/solid/download.svg);
@@ -32,6 +51,7 @@
   .title-napo-film{
     color: $text-color-blue;
     margin-bottom: 0 !important;
+    font-size: 2.4rem;
   }
 }
 
@@ -41,7 +61,7 @@
   flex-wrap: nowrap;
   .card{
     width: 32%;
-    border-radius: 1rem;
+    border-radius: 10px;
     overflow: hidden;
     margin: 2% 2% 2% 0;
     -webkit-box-shadow: 0px 0px 6px 0px rgba(204,204,204,1);
@@ -72,7 +92,7 @@
       }
     }
     h3{
-      font-size: 1rem;
+      font-size: 1.6rem;
       font-weight: 700;
     }
     .card-body {
@@ -87,11 +107,11 @@
   justify-content: flex-end;
   .napo-actions{
     list-style: none;
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.4rem 0;
     padding: 0;
     display: flex;
     li{
-      margin-left: 0.8rem;
+      margin-left: 1rem;
       position: relative;
       &:nth-child(1){
         margin-left: 0;
@@ -107,6 +127,7 @@
       &.share-link{
         &:hover{
           cursor: pointer;
+          opacity: 0.6;
         }
         &:before{
           -webkit-mask-image: url(../images/svg_icons/solid/share-variant.svg);
@@ -144,11 +165,11 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: -1.4rem;
+    top: -1.8rem;
     right: 23px;
     padding: 7px 11px;
     li {
-      padding: 0.3rem 0;
+      padding: 0.5rem 0;
       a {
         span {
           display: none;
@@ -172,7 +193,11 @@
         }
       }
       &.close-share{
-        padding-bottom: 0.8rem;
+        padding-bottom: 1rem;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.6;
+        }
         &:before{
           content: '';
           display: block;
@@ -232,13 +257,33 @@
 /** pop up **/
 .ui-dialog {
   font-family: "Open Sans", sans-serif;
+  border: 0 !important;
   border-radius: 10px;
   overflow: hidden;
   padding: 0;
+  .ui-dialog-titlebar-close:after {
+    content: '';
+    background: #FFF;
+    -webkit-mask-image: url('../images/svg_icons/close.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url('../images/svg_icons/close.svg');
+    mask-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
   .ui-dialog-titlebar{
     background: $text-color-blue;
     display: flex;
     justify-content: flex-end;
+    border: 0;
+    border-radius: 0 !important;
     span.ui-dialog-title{
       display: none;
     }
@@ -268,7 +313,7 @@
             margin: 0;
             background: #CFDDEE;
             font-weight: bold;
-            font-size: 1rem;
+            font-size: 1.6rem;
             padding: 7px 16px;
           }
         }
@@ -278,14 +323,24 @@
             width: 100%;
             height: 450px;
           }
-          .field--name-body{
+          .description{
             padding: 16px 16px;
-          }
-          .field--name-field-video{
-            padding: 16px 16px;
+            h2{
+              margin: 0;
+              color: $text-color-blue;
+              font-weight: bold;
+              font-size: 1.6rem;
+              padding: 0 0 16px 0px;
+            }
+            .share-networks .napo-actions {
+              margin: 0;
+            }
           }
         }
       }
   }
+}
+.ui-widget-overlay {
+  z-index: 10 !important;
 }
 

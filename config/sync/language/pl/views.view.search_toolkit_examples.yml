@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Przykłady zestawu narzędzi do wyszukiwania'
+      exposed_form:
+        options:
+          submit_button: Zastosuj
+          sort_asc_label: Rosnąca
+          sort_desc_label: Malejąca
+      sorts:
+        title:
+          expose:
+            label: 'W porządku alfabetycznym'
+      filters:
+        title:
+          expose:
+            label: Wyszukaj
+        field_country:
+          expose:
+            label: Państwo
+      header:
+        area:
+          content:
+            value: "<p>Wiemy, że chcesz zobaczyć kilka dobrych praktyk w różnych kampaniach, dlatego oferujemy Ci możliwość wyszukania przykładów z całej Europy i czerpania inspiracji.</p>\r\n"
+            format: full_html

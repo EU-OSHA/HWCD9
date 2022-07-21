@@ -8,8 +8,8 @@ _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
 id: hwc_theme_local_tasks
 theme: hwc_theme
-region: content
-weight: -26
+region: above_content
+weight: -36
 provider: null
 plugin: local_tasks_block
 settings:

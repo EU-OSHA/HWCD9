@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použít
+          sort_asc_label: Vzest.
+          sort_desc_label: Sest
+      sorts:
+        title:
+          expose:
+            label: 'Podle abecedy'
+      filters:
+        title:
+          expose:
+            label: Vyhledávání
+        field_country:
+          expose:
+            label: Země
+      header:
+        area:
+          content:
+            value: "<p>Víme, že se zajímáte o osvědčené postupy různých kampaní, proto vám nabízíme možnost vyhledat příklady z celé Evropy a nechat se inspirovat.</p>\r\n"
+            format: full_html
+      title: 'Příklady souboru nástrojů pro vyhledávání'

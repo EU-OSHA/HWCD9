@@ -1,8 +1,17 @@
 .main-container{
   padding: 0;
 }
+.region-sidebar-left{
+  padding-top:4.9rem;
+}
+.region-sidebar-right{
+  padding-top: 1rem;
+}
+.main-container{
+  margin: 0rem 0;
+}
 .path-media-centre .main-container {
-  padding: 2rem 0 ;
+  padding: 2.8rem 0 ;
 }
 .sidebar-first{
   padding-left: 0;
@@ -15,15 +24,16 @@ h2.node__title{
   color: $text-color-blue;
   font-style: normal;
   font-weight: 400;
-  padding-top: 1rem;
+  padding-top: 1.4rem;
+  font-size: 3rem;
   clear: both;
 }
 .node{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
   ul{
     list-style: disc;
-    padding-left: 3rem;
+    padding-left: 4.2rem;
     li{
       a{
         background-color: transparent;
@@ -35,20 +45,26 @@ h2.node__title{
   }
 }
 
-.region-sidebar-right{
+.region-sidebar-right,
+.region-sidebar-left {
   h2{
-    color: #003399;
-    font-size: 1.4rem;
+    color: $text-color-blue;
+    font-size: 1.8rem;
   }
 }
-.section-center  h2 {
-  color: $text-color-blue;
-  font-weight: 400;
-  padding-top: 0;
-  margin-top: 0;
-}
-
-.region-sidebar-left h2 {
-  color: #003399;
-  font-size: 1.6rem;
+.section-center {
+  h2{
+    color: $text-color-blue;
+    font-weight: 400;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  .field--name-body{
+    p, li{
+      a{
+        font-weight: bold;
+      }
+    }
+  }
 }

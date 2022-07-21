@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_image
     - media.type.image
+    - media.type.image_caption
     - node.type.tk_article
 id: node.tk_article.field_image
 field_name: field_image
@@ -21,9 +22,10 @@ settings:
   handler_settings:
     target_bundles:
       image: image
+      image_caption: image_caption
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: image
 field_type: entity_reference

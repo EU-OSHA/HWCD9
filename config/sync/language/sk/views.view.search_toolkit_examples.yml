@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Príklady súborov nástrojov na vyhľadávanie'
+      exposed_form:
+        options:
+          submit_button: Použiť
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+      sorts:
+        title:
+          expose:
+            label: Abecedne
+      filters:
+        title:
+          expose:
+            label: Vyhľadávanie
+        field_country:
+          expose:
+            label: Krajina
+      header:
+        area:
+          content:
+            value: "<p>Vieme, že chcete vidieť nejaké osvedčené postupy pre rôzne kampane. Ponúkame vám možnosť vyhľadávať príklady z&nbsp;celej Európy, aby ste sa mohli inšpirovať.</p>\r\n"
+            format: full_html

@@ -322,9 +322,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: copy
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -387,9 +387,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: h2
+          element_wrapper_class: title
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -450,9 +450,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: description
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -633,10 +633,15 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'col-3 py-3'
-          default_row_class: true
+          row_class: 'col-3 py-3 landing-menu-item'
+          default_row_class: false
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -647,6 +652,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: landing-menu-page
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -790,6 +796,7 @@ display:
     display_plugin: attachment
     position: 10
     display_options:
+      enabled: false
       fields:
         changed:
           id: changed
@@ -1282,7 +1289,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 150
+            max_length: 80
             word_boundary: true
             ellipsis: true
             more_link: false
@@ -1940,6 +1947,7 @@ display:
     display_plugin: embed
     position: 10
     display_options:
+      enabled: false
       fields:
         changed:
           id: changed
@@ -2729,6 +2737,7 @@ display:
     display_plugin: block
     position: 8
     display_options:
+      enabled: false
       title: ''
       fields:
         link__options:

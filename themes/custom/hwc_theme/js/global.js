@@ -1,25 +1,15 @@
-/**
- * @file
- * Global utilities.
- *
- */
-(function ($, Drupal) {
+function openShare(element){
+  let wrapper = element.parentElement.parentElement;
+  let el = wrapper.getElementsByClassName("list-networks")[0];
+  el.classList.toggle("d-none");
+}
+function closeShare(element){
+  let wrapper = element.parentElement;
+  wrapper.classList.toggle("d-none");
+}
 
-  'use strict';
+jQuery(function ($) {
 
-  Drupal.behaviors.allages_theme = {
-    attach: function (context, settings) {
-
-      /* $('.header-tools #search-block-form .form-actions button').text(''); */
-
-    }
-  };
-
-
-})(jQuery, Drupal);
-
-(function ($, Drupal) {
-  'use strict';
   $( window ).on( "load", function() {
     $('.sidebar-first .block-facets .content').css('display','none')
     $('.sidebar-first .block-facets h2').click(function() {
@@ -35,10 +25,6 @@
     });
   });
 
-
-})(jQuery, Drupal);
-
-(function ($, Drupal) {
   $( window ).on( "resize load", function() {
 
     if( $('body').hasClass( "user-logged-in" ) ){
@@ -48,24 +34,14 @@
     }
 
     $('body').css('padding-top', height+'px'  );
-
-    $('.share-link').on( "click", function() {
-      var wrapper = $(this).parent().parent();
-      var element = wrapper.find('.list-networks');
-      element.toggleClass('d-none');
-    });
-
-    $('.close-share').on( "click", function() {
-      $(this).parent().toggleClass('d-none');
-    });
-
   });
 
-  $(document).mouseup(function(e) {
-    var container = $(".list-networks");
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.addClass('d-none');
+  //Add class active to anchor top when scroll down
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 150) {
+      $('#scroll-top').addClass('active');
+    } else {
+      $('#scroll-top').removeClass('active');
     }
   });
 
@@ -82,48 +58,87 @@
     });
 
     //menu toolkit
-    $("#block-campaigntoolkit > .menu >.menu-item.expanded > span").click(function(){
-      if($(this).siblings("ul").is(":visible")){
-        $(this).removeClass("up-arrow");
-        $(this).addClass("closed-down-arrow");
-        $('#block-campaigntoolkit').removeClass("opened");
-        $(this).siblings("ul").slideUp();
+
+    function OpenMenu(element, menu){
+      if($(element).siblings("ul").is(":visible")){
+        $(element).removeClass("up-arrow");
+        $(element).addClass("closed-down-arrow");
+        $(menu).removeClass("opened");
+        $(element).siblings("ul").slideUp();
       }
       else {
-        $(this).addClass("up-arrow");
-        $(this).removeClass("closed-down-arrow");
-        $('#block-campaigntoolkit').addClass("opened");
-        $(this).siblings("ul").slideDown();
+        $(element).addClass("up-arrow");
+        $(element).removeClass("closed-down-arrow");
+        $(menu).addClass("opened");
+        $(element).siblings("ul").slideDown();
       }
+    }
+    function OpenMenuLevel1(element){
+      if( $(element).hasClass( "active" ) ) {
+        $(element).parent().css('display','block');
+      }
+    }
+    function OpenMenuLevel2(element){
+      if( $(element).hasClass( "active" ) ) {
+        $(element).parent().parent().css('display','block');
+      }
+    }
+
+    $("#block-campaigntoolkit > .menu >.menu-item.expanded > span").click(function(){
+      OpenMenu( $(this), '#block-campaigntoolkit' )
+    });
+    $("#block-campaigntoolkit-2 > .menu >.menu-item.expanded > span").click(function(){
+      OpenMenu( $(this), '#block-campaigntoolkit-2' )
     });
 
     $('#block-campaigntoolkit .submenu-1 > li').each(function( index ) {
-      if( $(this).hasClass( "active" ) ) {
-        $(this).parent().css('display','block');
-      }
+      OpenMenuLevel1( $(this) )
+    });
+    $('#block-campaigntoolkit-2 .submenu-1 > li').each(function( index ) {
+      OpenMenuLevel1( $(this) )
     });
 
     $('#block-campaigntoolkit .submenu-2 > li').each(function( index ) {
-      if( $(this).hasClass( "active" ) ) {
-        $(this).parent().parent().css('display','block');
+      OpenMenuLevel2( $(this) )
+    });
+    $('#block-campaigntoolkit-2 .submenu-2 > li').each(function( index ) {
+      OpenMenuLevel2( $(this) )
+    });
+
+    /* sharelink in napo films */
+    $('.share-link').on( "click", function() {
+      console.log($(this));
+      var wrapper = $(this).parent().parent();
+      var element = wrapper.find('.list-networks');
+      element.toggleClass('d-none');
+    });
+
+    $('.close-share').on( "click", function() {
+      $(this).parent().toggleClass('d-none');
+    });
+
+    /* hide sharelinks when the user clicks out */
+    $(document).mouseup(function(e) {
+      var container = $(".list-networks");
+      // if the target of the click isn't the container nor a descendant of the container
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.addClass('d-none');
       }
     });
 
+    /* landing pages grid: go to specefic url when the user clicks into the item div  */
+    $('.landing-menu-item').on( "click", function() {
+        var urlLink = $('>a',this).attr('href');
+        window.location.href= urlLink;
+    });
+
+
+
   });
 
-  //Add class active to anchor top when scroll down
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 150) {
-      $('#scroll-top').addClass('active');
-    } else {
-      $('#scroll-top').removeClass('active');
-    }
-  });
 
 
-
-
-})(jQuery, Drupal);
+});
 
 
 

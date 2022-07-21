@@ -11,7 +11,7 @@ _core:
 id: hwc_theme_content
 theme: hwc_theme
 region: content
-weight: -28
+weight: -33
 provider: null
 plugin: system_main_block
 settings:

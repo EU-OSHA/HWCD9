@@ -17,7 +17,7 @@
   width: 100%;
   background: #FFF;
   h2{
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     color: #003399 !important;
     padding-right: 1.25px;
     &:hover{
@@ -67,10 +67,10 @@
     h2{
       margin-top: 1rem;
       margin-bottom: 1rem;
-      font-size: 1.875rem;
+      font-size: 3rem;
       color: $text-color-blue;
       span{
-        font-size:1.25rem;
+        font-size:1.4rem;
       }
     }
   }
@@ -149,12 +149,13 @@
             display: block;
             margin-top: 0.5rem;
             padding-bottom: 0.3rem;
-            line-height: 1.6rem;
+            line-height: 1;
 
             a {
               color: $text-color-blue;
               font-style: normal;
-              font-size: 1.4rem;
+              font-size: 2.2rem;
+              word-break: break-all;
             }
           }
         }
@@ -254,6 +255,11 @@
 
 
 /* publication detail */
+.return-and-share{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .publication-detail{
   display: flex;
   flex-direction: row;

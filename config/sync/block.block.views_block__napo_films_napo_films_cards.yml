@@ -12,7 +12,7 @@ dependencies:
 id: views_block__napo_films_napo_films_cards
 theme: hwc_theme
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:napo_films-napo_films_cards'
 settings:

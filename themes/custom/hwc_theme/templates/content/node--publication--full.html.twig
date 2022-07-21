@@ -72,22 +72,25 @@
   'clearfix publication-detail',
 ]
 %}
-
-{% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
-  <div class="back-to-publications pull-right">
-    <a href="{{ drupal_url('tools-and-publications/campaign-materials')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
-      <span>Back to campaign materials list</span>
-    </a>
-  </div>
-{% else %}
-  <div class="back-to-publications pull-right">
-    <a href="{{ drupal_url('tools-and-publications/publications')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
-      <span>Back to publications list</span>
-    </a>
-  </div>
-{% endif %}
-
 {{ drupal_block('local_tasks_block') }}
+<section class="return-and-share">
+  {% if node.field_publication_type.0.entity.label == 'Campaign/Promotion Material' %}
+
+    <div class="back-to-publications pull-right">
+      <a href="{{ drupal_url('tools-and-publications/campaign-materials')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+        <span>Back to campaign materials list</span>
+      </a>
+    </div>
+  {% else %}
+    <div class="back-to-publications pull-right">
+      <a href="{{ drupal_url('tools-and-publications/publications')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+        <span>Back to publications list</span>
+      </a>
+    </div>
+  {% endif %}
+  {{ drupal_entity('block', 'addtoanybuttons') }}
+</section>
+
 {% if content.content_moderation_control %}
   {{ content.content_moderation_control}}
 {% endif %}
@@ -116,7 +119,7 @@
 
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-10">
         <h2 class="node__title">{{ label.0 }}</h2>
       </div>
       <div class="col-md-12">

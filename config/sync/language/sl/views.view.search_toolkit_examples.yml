@@ -1,0 +1,25 @@
+display:
+  default:
+    display_options:
+      title: 'Išči po primerih naborov orodij'
+      exposed_form:
+        options:
+          submit_button: Uporabi
+          sort_asc_label: Naraščajoče
+          sort_desc_label: Padajoče
+      sorts:
+        title:
+          expose:
+            label: 'Abecedni vrstni red'
+      filters:
+        title:
+          expose:
+            label: Išči
+        field_country:
+          expose:
+            label: Država
+      header:
+        area:
+          content:
+            value: "<p>Vemo, da si želite ogledati nekaj dobrih praks za različne kampanje, zato vam ponujamo možnost, da poiščete primere iz celotne Evrope in dobite navdih.</p>\r\n"
+            format: full_html

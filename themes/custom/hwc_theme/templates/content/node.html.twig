@@ -74,18 +74,16 @@
 %}
 
 <article{{ attributes.addClass(classes) }}>
-  {% if node.id != 24 and node.id != 27 and node.id != 38  %}
     {{ drupal_entity('block', 'addtoanybuttons') }}
-  {% endif %}
   <header>
     {{ title_prefix }}
     {% if drupal_token('node:url:args:value:0', {node: node})|raw|upper == 'ABOUT-TOPIC' %}
       <h2{{ title_attributes.addClass('node__title') }}>{{ label.0 }}</h2>
     {% endif %}
 
-    {% if label and node.getType() != 'article' %}
-      <h2{{ title_attributes.addClass('node__title') }}>{{ label.0 }}</h2>
-    {% endif %}
+{#    {% if label and node.getType() != 'article' %}#}
+{#      <h2{{ title_attributes.addClass('node__title') }}>{{ label.0 }}</h2>#}
+{#    {% endif %}#}
 {#    {% if label and not page %}#}
 {#      <h2{{ title_attributes.addClass('node__title') }}>#}
 {#        <a href="{{ url }}" rel="bookmark">{{ label }}</a>#}
@@ -107,9 +105,5 @@
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
   </div>
-  {% set noShare = [24,27,38,8,6321 ] %}
-  {% if node.id in noShare %}
-    {% else %}
     {{ drupal_entity('block', 'addtoanybuttons') }}
-  {% endif %}
 </article>

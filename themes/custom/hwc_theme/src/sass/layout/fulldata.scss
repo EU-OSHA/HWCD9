@@ -2001,3 +2001,401 @@ $grid-breakpoints: (
 }
 
 /* end /campaign-partners/enterprise-europe-network */
+
+
+
+
+
+
+
+
+
+
+/* get-involved/become-campaign-partner */
+.field--type-text-with-summary{
+  .field-item{
+    .become-partner-text{
+      text-align: center;
+      padding-bottom: 1em;
+      width: 66%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .became-green-block{
+      background: #FFF;
+      padding: 1em;
+      color: #59595A;
+      text-align: left;
+      float: none;
+      margin: 0.5em auto 2em;
+      border-radius: 5px;
+      border: 1px solid #78AD00;
+      max-width: 52%;
+      text-align: center;
+      p{
+        margin: 0 0 10px;
+        a{
+          background-color: transparent;
+          color: #003399;
+          font-weight: bold;
+          font-style: normal;
+        }
+      }
+    }
+    .become-partner{
+      .coments{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .col-1{
+          padding-right: 1.5em;
+          padding-left: 1.5em;
+          display: flex;
+          flex-direction: column;
+          h2{
+            &:before{
+              background:url(/sites/hwc/themes/custom/hwc_theme/images/content/gain-visibility.png)no-repeat center;
+              content: " ";
+              margin-bottom: 10px;
+              display: block;
+              min-width: 130px;
+              min-height: 118px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+          p{
+            padding-left: 1em;
+            padding-right: 1em;
+          }
+          .more_link{
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            background: transparent;
+          }
+
+
+        }
+        .col-2{
+          padding-right: 1.5em;
+          padding-left: 1.5em;
+          display: flex;
+          flex-direction: column;
+
+          h2{
+            &:before{
+              background:url(/sites/hwc/themes/custom/hwc_theme/images/content/promote-your-news.png)no-repeat center;
+              content: " ";
+              margin-bottom: 10px;
+              display: block;
+              min-width: 130px;
+              min-height: 118px;
+              margin-left: auto;
+              margin-right: auto;
+
+            }
+          }
+          p{
+            padding-left: 1em;
+            padding-right: 1em;
+            a{
+              background-color: transparent;
+              color: #003399;
+              font-weight: bold;
+              font-style: normal;
+            }
+          }
+          .more_link{
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            background: transparent;
+          }
+        }
+        .col-3{
+          padding-right: 1.5em;
+          padding-left: 1.5em;
+          display: flex;
+          flex-direction: column;
+
+          h2{
+            &:before{
+              background:url(/sites/hwc/themes/custom/hwc_theme/images/content/extend-your-network.png)no-repeat center;
+              content: " ";
+              margin-bottom: 10px;
+              display: block;
+              min-width: 130px;
+              min-height: 118px;
+              margin-left: auto;
+              margin-right: auto;
+
+            }
+          }
+          p{
+            padding-left: 1em;
+            padding-right: 1em;
+            a{
+              background-color: transparent;
+              color: #003399;
+              font-weight: bold;
+              font-style: normal;
+            }
+          }
+          .more_link{
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+.how-to-apply{
+  background:url(/sites/hwc/themes/custom/hwc_theme/images/background-timeline.png) no-repeat;
+  background-size: cover;
+  color: #FFF;
+  text-align: center;
+  float: left;
+  width: 100%;
+  height: 392px;
+  margin-top: 1.5em;
+  margin-bottom: 1.7em;
+  h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 1em;
+  }
+  .timeline{
+    width: 100%;
+    text-align: center;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url(/sites/hwc/themes/custom/hwc_theme/images/time-line-v2.png) no-repeat 50%;
+    padding-top: 70px;
+    padding-bottom: 1em;
+    position: relative;
+
+    > div:nth-child(1){
+      position: absolute;
+      left: 250px;
+      top: 9px;
+      font-weight: bold;
+      &:after{
+        content: ' ';
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: #FFF;
+        border-radius: 16px;
+        border: 3px solid #3b7d46;
+      }
+
+    }
+    > div:nth-child(2){
+      position: absolute;
+      left: 40.5%;
+      top: 9px;
+      font-weight: bold;
+      &:after{
+      content: ' ';
+      display: block;
+      width: 25px;
+      height: 25px;
+      background: #FFF;
+      border-radius: 16px;
+      border: 3px solid #3b7d46;
+      position: absolute;
+      left: 42%;
+      top: 21px;
+    }
+
+    }
+    > div:nth-child(3){
+      position: absolute;
+      right: 203px;
+      top: 9px;
+      font-weight: bold;
+      &:after{
+        content: ' ';
+        display: block;
+        width: 25px;
+        height: 25px;
+        background: #FFF;
+        border-radius: 16px;
+        border: 3px solid #3b7d46;
+      }
+
+    }
+  }
+  .boxes{
+    position: relative;
+    .box{
+      width: 197px;
+      min-height: 175px;
+      border: 0;
+      background: #FFF;
+      height: auto;
+      padding-bottom: 1em;
+      margin-right: 2em;
+      border-radius: 5px;
+      h4{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1em;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #0030a0;
+        line-height: 19px;
+        font-weight: bold;
+        word-break: break-word;
+
+      }
+      p{
+        color: #333;
+        font-size: 0.8em;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      div{
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        .btn-become-partner-download{
+          width: auto;
+          min-height: 36px;
+          background: url(/sites/hwc/themes/custom/hwc_theme/images/timeline-button-active.png) repeat #65b44b;
+          text-align: left;
+          color: #FFF;
+          padding: 7px 30px 7px 10px;
+          border-radius: 3px;
+          text-decoration: none;
+          display: inline-block;
+          position: absolute;
+          left: 8px;
+          right: 8px;
+          bottom: 10px;
+          &:hover{
+            opacity: 0.8;
+          }
+          &:after{
+            content: '';
+            display: block;
+            background: url(/sites/hwc/themes/custom/hwc_theme/images/download-ico-white.png) no-repeat;
+            width: 17px;
+            height: 17px;
+            right: 11px;
+            position: absolute;
+            top: 7px;
+          }
+        }
+        .btn-become-partner-register{
+          background: url(/sites/hwc/themes/custom/hwc_theme/images/timeline-button-no-active.png) repeat;
+          width: auto;
+          min-height: 36px;
+          text-align: left;
+          color: #b3bccc;
+          padding-top: 7px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-radius: 3px;
+          text-decoration: none;
+          display: inline-block;
+          pointer-events: none;
+          cursor: pointer;
+          position: absolute;
+          left: 8px;
+          right: 8px;
+          bottom: 10px;
+          &:after{
+            content: '';
+            display: block;
+            background: url(/sites/hwc/themes/custom/hwc_theme/images/no-active-next.png) no-repeat;
+            width: 17px;
+            height: 17px;
+            float: right;
+            right: 11px;
+            position: absolute;
+            top: 14px;
+          }
+        }
+      }
+    }
+
+  > div:nth-child(1){
+    position: absolute;
+    left: 15%;
+    top: 73px;
+  }
+  > div:nth-child(2){
+    position: absolute;
+    left: 41.5%;
+    top: 73px;
+
+  }
+  > div:nth-child(3){
+    position: absolute;
+    right: 12%;
+    top: 73px;
+
+  }
+  }
+}
+.block-views-blockmeet-our-official-campaign-partners-block-1{
+  padding: 1em 0;
+
+  .view-content{
+    .views-row{
+      padding: 1em 0;
+      width: 20%;
+      .views-field{
+        border-left: 1px solid #efeff0;
+        height: 120px;
+        img{
+          border: 0;
+          width: 110px;
+          height: 110px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+.more_link{
+  background: transparent;
+  a{
+    text-decoration: none;
+    background: url(/sites/hwc/themes/custom/hwc_theme/images/ico-plus-20.png) no-repeat 98.5% 3px #0030a0;
+    text-transform: uppercase;
+    color: #FFF;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 3px 3.5em 3px 0.7em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    float: left;
+    margin-top: 1em;
+    &:hover{
+      color: #FFF;
+      background: url(/sites/hwc/themes/custom/hwc_theme/images/ico-next-20-white-hover.png) no-repeat 98.5% 3px #acc700!important;
+      text-decoration: none;
+    }
+  }
+}
+
+/* end /get-involved/become-campaign-partner */
