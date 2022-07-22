@@ -125,6 +125,8 @@ permissions:
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition creating_final_draft'
   - 'use news_and_events_created_by_een transition final_draft_edit_'
+  - 'use news_and_events_created_by_een transition publishing_approved'
+  - 'use news_and_events_created_by_een transition reject_approved_to_reviewed'
   - 'use panels in place editing'
   - 'use text format audio_visual'
   - 'use text format basic_html'

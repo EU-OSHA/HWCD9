@@ -50,6 +50,7 @@ permissions:
   - 'use news_and_events_created_by_een transition create_new_draft'
   - 'use news_and_events_created_by_een transition creating_final_draft'
   - 'use news_and_events_created_by_een transition final_draft_edit_'
+  - 'use news_and_events_created_by_een transition reviewing_final_draft'
   - 'use text format basic_html'
   - 'use text format full_html'
   - 'use workbench access'
