@@ -177,6 +177,7 @@ $grid-breakpoints: (
   width: 75%;
   float: right;
   margin-top: 30px;
+  position: relative;
   @media (max-width: 1070px) {
     margin-top: 400px;
     width: 100%;
@@ -428,7 +429,6 @@ $grid-breakpoints: (
 
         select {
           border: 1px solid $text-color-grey-border-event !important;
-          padding: 6px 12px !important;
           background: unset !important;
           width: auto !important;
         }
@@ -445,7 +445,7 @@ $grid-breakpoints: (
       top: 0;
       display: inherit;
       label{
-        width: 80px;
+        width: 55px;
         padding-top: 10px;
         font-size: 14px !important;
       }
@@ -471,14 +471,14 @@ $grid-breakpoints: (
       position: absolute;
       top: 0;
       display: inherit;
-      left: 225px;
+      left: 190px;
 
       @media (max-width: 450px) {
         left:0;
         top:40px;
       }
       label{
-        width: 80px;
+        width: 45px;
         padding-top: 10px;
         font-size: 14px;
       }
@@ -499,6 +499,7 @@ $grid-breakpoints: (
         border: 1px solid $text-color-grey-border-event;
         margin-top: 7.5px;
         text-transform: uppercase;
+        padding-right: 20px !important;
         option{
           text-transform: uppercase;
         }
@@ -1404,11 +1405,11 @@ $grid-breakpoints: (
       background: $bg-color-white;
       float: left;
       padding: 1em;
-      width: 31%;
+      width: 30%;
       border-radius: 15px;
       margin-left: 2em;
       height: 100%;
-      min-height: 650px;
+      min-height: 665px;
 
       @media (max-width: 1199px) {
         width: 100%;
@@ -1649,6 +1650,8 @@ $grid-breakpoints: (
             }
 
             h2 {
+              order: 2;
+
               @media (max-width: 767px) {
                 text-align: center;
               }
@@ -1657,6 +1660,10 @@ $grid-breakpoints: (
                 font-weight: bold;
 
               }
+            }
+
+            .content{
+              order: 1;
             }
 
             img {
@@ -1690,6 +1697,9 @@ $grid-breakpoints: (
           padding-bottom: 24px;
           height: 185px;
           padding-top: 15px;
+          margin-bottom: 10px;
+          display: block;
+          text-align: center;
 
           @media (max-width: 1199px) {
             height: 206px;
@@ -1709,6 +1719,11 @@ $grid-breakpoints: (
           }
 
           .views-field-field-logo{
+            margin-bottom: 20px;
+
+            @media (max-width: 1199px) {
+              margin-bottom: 30px;
+            }
 
             @media (max-width: 767px) {
               justify-content: center;
@@ -1827,7 +1842,7 @@ $grid-breakpoints: (
         border-left: 1px dotted #749b00;
         padding: 30px 20px 15px;
         padding-bottom: 24px;
-        margin-bottom: 10px;
+      //  margin-bottom: 10px;
         width: 250px;
         height: 220px;
         display: block;
@@ -1856,7 +1871,7 @@ $grid-breakpoints: (
         }
 
         .views-field-field-logo {
-          margin-bottom: 15px;
+          margin-bottom: 25px;
 
           @media (max-width: 991px) {
             display: flex;
@@ -1924,6 +1939,8 @@ $grid-breakpoints: (
             }
 
             h2 {
+              order: 2;
+
               @media (max-width: 767px) {
                 text-align: center;
               }
@@ -1932,6 +1949,10 @@ $grid-breakpoints: (
                 font-weight: bold;
 
               }
+            }
+
+            .content{
+              order: 1;
             }
 
             img {
@@ -1965,6 +1986,8 @@ $grid-breakpoints: (
           padding-bottom: 24px;
           height: 185px;
           padding-top: 15px;
+          display: block;
+          text-align: center;
 
           @media (max-width: 1199px) {
             height: 206px;
@@ -1980,6 +2003,11 @@ $grid-breakpoints: (
           }
 
           .views-field-field-logo-1{
+            margin-bottom: 20px;
+
+            @media (max-width: 1199px) {
+              margin-bottom: 30px;
+            }
 
             @media (max-width: 767px) {
               justify-content: center;
