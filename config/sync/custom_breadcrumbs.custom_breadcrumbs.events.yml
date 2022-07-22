@@ -7,7 +7,7 @@ label: Events
 description: ''
 entityType: node
 entityBundle: events
-language: en
+language: und
 breadcrumbPaths: "/media-centre\r\n/media-centre/events"
 breadcrumbTitles: "Media Centre\r\nEvents"
 type: '1'

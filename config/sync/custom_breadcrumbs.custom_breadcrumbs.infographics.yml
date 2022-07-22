@@ -7,7 +7,7 @@ label: Infographics
 description: ''
 entityType: node
 entityBundle: infographic
-language: en
+language: und
 breadcrumbPaths: "/tools-and-publications/\r\n/tools-and-publications/infographics/"
 breadcrumbTitles: "Tools and Publications\r\nInfographics"
 type: '1'
