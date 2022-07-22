@@ -151,6 +151,15 @@ jQuery(function ($) {
       }
     });
 
+
+    /* Replace & character to and in the breadcrumbs texts */
+    $('.breadcrumb > li' ).each(function() {
+      var itemText = $('>a',this).text();
+      var modifiedText = itemText.replace('&', 'and');
+      // update breadcrumb text
+      $('>a',this).text(modifiedText);
+    });
+
   });
 });
 

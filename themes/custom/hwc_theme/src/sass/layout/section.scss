@@ -49,7 +49,11 @@ h2.node__title{
 .region-sidebar-left {
   h2{
     color: $text-color-blue;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+  .block-menu.navigation{
+    margin-top: 2rem;
+    width: 100%;
   }
 }
 .section-center {
