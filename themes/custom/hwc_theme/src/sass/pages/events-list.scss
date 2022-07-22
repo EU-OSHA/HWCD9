@@ -9,7 +9,7 @@
         h3{
           border-top: 0;
           color: $text-color-blue;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           font-weight: 400;
           padding-top: 1em;
           padding-bottom: 0.2em;
@@ -29,7 +29,7 @@
       .field__date{
         width: 100%;
         border-top: 3px solid #B0B1B2;
-        padding-top: 6.5rem;
+        padding-top: 7rem;
         padding-bottom: 2rem;
         background: url(../images/content/calendar-event-detail.png) no-repeat center 2rem;
         display: flex;
@@ -38,7 +38,7 @@
         .date-start-end{
           text-align: center;
           color: $text-color-blue;
-          font-size: 1rem!important;
+          font-size: 1.4rem!important;
           font-weight: bold;
           display: flex;
           flex-direction: column;
@@ -52,14 +52,14 @@
         float: none;
         clear: both;
         width: 100%;
-        padding-top: 4.5rem;
+        padding-top: 7.5rem;
         padding-bottom: 2rem;
         background: url(../images/content/location-event-detail.png) no-repeat center 25px;
         border-top: 3px solid #B0B1B2;
         .country-city{
           text-align: center;
           color: $text-color-blue;
-          font-size: 1rem!important;
+          font-size: 1.4rem!important;
           font-weight: bold;
           display: flex;
           flex-direction: column;
@@ -80,8 +80,9 @@
   .sidebar-first{
     .form-item-field-country-code,
     .form-item-search-api-views-fulltext,
+    .form-item-field-start-date-1,
     .form-actions {
-      display: none;
+      display: none !important;
     }
   }
   .events-list{
@@ -91,9 +92,8 @@
       flex-direction: column;
     }
     .form-item-field-start-date,
-    .form-item-end-value,
-    .js-form-item-field-start-date-1{
-      display: none;
+    .form-item-end-value {
+      display: none !important;
     }
   }
 }
@@ -107,15 +107,15 @@
       display: block;
       width: 100%;
       color: #003399;
-      font-size: 1.4rem;
+      font-size: 2.2rem;
       padding-bottom: 0.7rem;
     }
     #block-exposedformevents-searchpage-1{
       border: 1px solid #B0B1B2;
       border-radius: 7px;
-      padding: 0.8rem;
-      margin-top: 34px;
-      margin-bottom: 3em;
+      padding: 1rem;
+      margin-top: 2.8rem;
+      margin-bottom: 3rem;
       margin-left: auto;
       width: 288px;
       .form-row{
@@ -126,7 +126,7 @@
         flex-wrap: nowrap;
         fieldset{
           label{
-            font-size: 1rem;
+            font-size: 1.4rem;
             font-weight: normal;
           }
           input{
@@ -136,7 +136,8 @@
             height: 100%;
             border-radius: 5px !important;
             padding: 0.4rem;
-            color: #003399;
+            color: $text-color-blue;
+            border: 1px solid $text-color-blue;
             cursor: pointer;
 
             &::-webkit-datetime-edit{
@@ -150,7 +151,7 @@
               padding: 0;
             }
             &::-webkit-datetime-edit-fields-wrapper{
-              font-size: 0.8rem;
+              font-size: 1.4rem;
             }
           }
         }
@@ -160,54 +161,41 @@
       background: url(../images/background-newsletter-event.png) no-repeat;
       border-radius: 1rem;
       color: #FFF;
-      padding: 1.2rem;
+      padding: 1.4rem;
       margin-left: auto;
       width: 288px;
       h2{
-        background: url(../images/ico-newsletter.png) no-repeat 1px 5px;
-        color: #FFF;
-        font-weight: 400;
-        padding-left: 1.3em;
-        a {
-          color: white;
-        }
+        @include subtitle-section('','ico-newsletter.png',transparent,#FFF,3rem);
+        margin-bottom: 1rem;
+      }
+      > p {
+        padding: 0 1rem;
       }
     }
   }
   .events-list{
     #block-exposedformevents-searchpage-1--2{
       width: 60%;
+      .form-item-search-api-views-fulltext{
+        > input {
+          height: 34px;
+          border: 1px solid #B0B2B3;
+          border-radius: 5px !important;
+          background: url(../images/green-search.png) no-repeat 96% 55% #ffffff;
+          width: 100% !important;
+          float: left;
+          margin-top: 25px;
+          padding-left: 10px;
+          color: #003399;
+        }
+      }
       .form-row{
         flex-wrap: nowrap;
         label {
           color: $text-color-blue;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           font-weight: normal;
           padding-bottom: 0.1rem;
-        }
-        .chosen-container{
-          width: 100% !important;
-          height: calc(1.5em + .75rem + 2px);
-          padding: .375rem .75rem;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 1.5;
-          color: #495057;
-          background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
-          border: 1px solid #ced4da;
-          border-radius: .25rem;
-          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-          .chosen-drop{
-            left: 0;
-          }
-          ul{
-            border: 0;
-            box-shadow: none;
-            background-image: none;
-            background-color:transparent;
-            padding: 0;
-            margin: 0;
-          }
         }
       }
       > h2 {
@@ -224,7 +212,7 @@
       display: flex;
       flex-direction: row;
       border-bottom: 1px solid #749b00;
-      padding:1.5rem 1rem ;
+      padding: 2rem 1rem 3rem 1rem;
       min-height: 220px;
       .group-left{
         min-width: 180px;
@@ -233,11 +221,9 @@
         display: flex;
         flex-direction: column;
         h2{
-          line-height: 1.6rem;
           a{
             color: $text-color-blue;
-            font-size: 1.4rem;
-            line-height: 1.6rem;
+            font-size: 2.2rem;
           }
         }
         .date-start-end{

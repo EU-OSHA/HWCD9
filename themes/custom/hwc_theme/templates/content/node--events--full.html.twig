@@ -89,9 +89,9 @@
 {% set url = path('entity.node.canonical', {'node': node.id})  %}
 
 <div class="back-to-publications pull-right">
-  <a href="{{ drupal_url('my-content?type=events')}}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
-    <span>Back to events list</span>
-    {{ path }}
+{#  <a href="{{ drupal_url('my-content?type=events') }}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">#}
+  <a href="{{ drupal_url('/media-centre/events') }}"><img alt="back page" src="/sites/hwc/themes/custom/hwc_theme/images/pag-back.png">
+    <span>{{ 'Back to events list'|t }}</span>
   </a>
 </div>
 

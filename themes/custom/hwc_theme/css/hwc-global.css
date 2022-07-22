@@ -1300,14 +1300,24 @@ body {
   font-weight: bold;
 }
 .homepage-banner-view .carousel .carousel-item .caption .content-body .banner-tag {
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .homepage-banner-view .carousel .carousel-item .caption .content-body .banner-text {
-  font-size: 3.6rem;
+  font-size: 4rem;
+  font-weight: 600;
 }
 .homepage-banner-view .carousel .carousel-item .caption .content-body .banner-text p {
-  line-height: 1.4;
+  line-height: 1.2;
+}
+.homepage-banner-view .carousel .carousel-item .caption .content-body .banner-link {
+  margin-top: 4rem;
+}
+.homepage-banner-view .carousel .carousel-item .caption .content-body .banner-link .see-all-link {
+  border: 1px solid #003399;
+}
+.homepage-banner-view .carousel .carousel-item .caption .content-body .banner-link .see-all-link:hover {
+  border: 1px solid white;
 }
 .homepage-banner-view .carousel .carousel-item .caption .content-img img {
   margin: auto;
@@ -1396,7 +1406,7 @@ body {
 .line {
   margin-top: 0;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 3rem;
   background: url(../images/grey-h3-line.png) repeat-x 50% 60%;
   display: flex;
   flex-direction: row;
@@ -1405,7 +1415,7 @@ body {
 .line a {
   color: #00309d;
   background-color: white;
-  padding-right: 3.4rem;
+  padding-right: 2.2rem;
 }
 
 .line.green a {
@@ -1413,88 +1423,87 @@ body {
 }
 
 .news-section-title {
-  margin-top: 0;
+  margin: 0 0 2.2rem 0;
   font-weight: 400;
   font-size: 2.4rem;
-  background: url(../images/grey-h3-line.png) repeat-x 50% 60%;
+  background: url("../images/grey-h3-line.png") repeat-x 50% 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .news-section-title:before {
-  content: url(../images/news-h3-ico.png);
+  content: "";
+  background: #FFF url("../images/news-h3-ico.png") 50% no-repeat;
   width: 49px;
   display: block;
   height: 45px;
-  background: #FFF;
 }
 .news-section-title a {
-  color: #00309d;
-  background-color: #FFF;
-  padding-right: 3.125rem;
+  color: #003399;
+  padding-right: 3.4rem;
+}
+
+.events-section-title {
+  margin: 0 0 2.2rem 0;
+  font-weight: 400;
+  font-size: 2.4rem;
+  background: url("../images/grey-h3-line.png") repeat-x 50% 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.events-section-title:before {
+  content: "";
+  background: #FFF url("../images/events-h3-ico.png") 50% no-repeat;
+  width: 49px;
+  display: block;
+  height: 45px;
+}
+.events-section-title a {
+  color: #003399;
+  padding-right: 3.4rem;
 }
 
 .newsletter-section-title {
-  margin-top: 0;
+  margin: 0 0 2.2rem 0;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 3rem;
+  background: url("../images/") repeat-x 50% 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .newsletter-section-title:before {
   content: "";
-  background: url(../images/ico-newsletter.png) 50% no-repeat;
+  background: transparent url("../images/ico-newsletter.png") 50% no-repeat;
   width: 49px;
   display: block;
   height: 45px;
 }
 .newsletter-section-title a {
   color: #FFF;
-  background: transparent;
-  padding-right: 3.125rem;
+  padding-right: 3.4rem;
 }
 
 .social-media-section-title {
-  margin-top: 0;
+  margin: 0 0 2.2rem 0;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 3rem;
+  background: url("../images/") repeat-x 50% 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .social-media-section-title:before {
   content: "";
-  background: url(../images/ico-social-media.png) 50% no-repeat;
+  background: transparent url("../images/ico-social-media.png") 50% no-repeat;
   width: 49px;
   display: block;
   height: 45px;
 }
 .social-media-section-title a {
   color: #FFF;
-  background: transparent;
   padding-right: 3.4rem;
-}
-
-.events-section-title {
-  margin-top: 0;
-  font-weight: 400;
-  font-size: 2.4rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.events-section-title:before {
-  content: url(../images/events-h3-ico.png);
-  width: 49px;
-  display: block;
-  height: 45px;
-  background: #FFF;
-}
-.events-section-title a {
-  color: #003399;
-  background: #FFF;
-  padding-right: 3.125rem;
 }
 
 .home-news-item {
@@ -1522,7 +1531,8 @@ body {
 }
 .home-news-item .body-news-item .publication-date {
   color: #57575a;
-  font-size: 1rem !important;
+  font-size: 1.4rem !important;
+  font-weight: 600;
 }
 .home-news-item .body-news-item .summary-news {
   font-size: 1.4rem;
@@ -1556,8 +1566,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.6rem;
   border-bottom: 1px solid #CCC;
 }
 .event-items-list-home:last-child {
@@ -1578,7 +1588,8 @@ section.home-news-events {
 }
 
 .oficial-campaign-partner {
-  margin: 2rem auto 4rem auto;
+  margin: 4rem auto 4rem auto;
+  padding: 0;
 }
 .oficial-campaign-partner .homepage-partners .attachment.attachment-before {
   text-align: center;
@@ -1587,14 +1598,14 @@ section.home-news-events {
 }
 .oficial-campaign-partner h2.line {
   color: #00309d;
-  margin-top: 0;
+  margin: 1.4rem 0;
   font-weight: 400;
   background: url(../images/grey-h3-line.png) repeat-x 50% 75%;
   margin-bottom: 0;
 }
 .oficial-campaign-partner h2.line span {
   background: #FFF;
-  padding-right: 0.7em;
+  padding-right: 0em;
 }
 
 .campaign-partners-home {
@@ -1676,7 +1687,7 @@ section.home-news-events {
   flex-wrap: nowrap;
 }
 .home-newsletter-social-media .home-newsletter form {
-  margin: 2rem 1rem 4rem;
+  margin: 0rem 1rem 4rem;
 }
 .home-newsletter-social-media .home-newsletter form input {
   border: 0;
@@ -2278,7 +2289,7 @@ body.user-logged-in.path-frontpage.scrolled #header {
   font-weight: bold;
   text-decoration: none;
 }
-#navbar #block-hwc-theme-main-menu ul.menu-level-0 > li.menu-item ul.menu-level-1 li a.menu-item--active-trail, #navbar #block-hwc-theme-main-menu ul.menu-level-0 > li.menu-item ul.menu-level-1 li span.menu-item--active-trail {
+#navbar #block-hwc-theme-main-menu ul.menu-level-0 > li.menu-item ul.menu-level-1 li.menu-item--active-trail > a {
   font-weight: bold;
 }
 #navbar #block-hwc-theme-main-menu ul.menu-level-0 > li.menu-item ul.menu-level-1 li:before {
@@ -2370,6 +2381,9 @@ body.user-logged-in.path-frontpage.scrolled #header {
   font-weight: bold;
 }
 
+.sidebar-left {
+  padding-left: 0;
+}
 .sidebar-left .menu-level-0 {
   list-style: none;
   margin: 0;
@@ -2470,7 +2484,12 @@ h2.node__title {
 .region-sidebar-right h2,
 .region-sidebar-left h2 {
   color: #003399;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
+}
+.region-sidebar-right .block-menu.navigation,
+.region-sidebar-left .block-menu.navigation {
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .section-center h2 {
@@ -5064,9 +5083,9 @@ h2.node__title {
 .related-resources h2.title-section {
   padding: 1.4rem 0 0;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 3rem;
   color: #003399;
-  margin-bottom: 0;
+  margin: 2.2rem 0;
   line-height: 2rem;
 }
 .related-resources h3.subtitle-section {
@@ -5228,7 +5247,7 @@ h2.node__title {
 .node--type-events .node__content .content-left-column .futher-info h3 {
   border-top: 0;
   color: #003399;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   padding-top: 1em;
   padding-bottom: 0.2em;
@@ -5247,7 +5266,7 @@ h2.node__title {
 .node--type-events .node__content .content-right-column .field__date {
   width: 100%;
   border-top: 3px solid #B0B1B2;
-  padding-top: 6.5rem;
+  padding-top: 7rem;
   padding-bottom: 2rem;
   background: url(../images/content/calendar-event-detail.png) no-repeat center 2rem;
   display: flex;
@@ -5257,7 +5276,7 @@ h2.node__title {
 .node--type-events .node__content .content-right-column .field__date .date-start-end {
   text-align: center;
   color: #003399;
-  font-size: 1rem !important;
+  font-size: 1.4rem !important;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -5270,7 +5289,7 @@ h2.node__title {
   float: none;
   clear: both;
   width: 100%;
-  padding-top: 4.5rem;
+  padding-top: 7.5rem;
   padding-bottom: 2rem;
   background: url(../images/content/location-event-detail.png) no-repeat center 25px;
   border-top: 3px solid #B0B1B2;
@@ -5278,7 +5297,7 @@ h2.node__title {
 .node--type-events .node__content .content-right-column .field__country .country-city {
   text-align: center;
   color: #003399;
-  font-size: 1rem !important;
+  font-size: 1.4rem !important;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -5293,8 +5312,9 @@ h2.node__title {
 
 .events-list-page .sidebar-first .form-item-field-country-code,
 .events-list-page .sidebar-first .form-item-search-api-views-fulltext,
+.events-list-page .sidebar-first .form-item-field-start-date-1,
 .events-list-page .sidebar-first .form-actions {
-  display: none;
+  display: none !important;
 }
 .events-list-page .events-list .view-content.row {
   margin: 1rem;
@@ -5302,9 +5322,8 @@ h2.node__title {
   flex-direction: column;
 }
 .events-list-page .events-list .form-item-field-start-date,
-.events-list-page .events-list .form-item-end-value,
-.events-list-page .events-list .js-form-item-field-start-date-1 {
-  display: none;
+.events-list-page .events-list .form-item-end-value {
+  display: none !important;
 }
 
 .events-list-page .container {
@@ -5314,15 +5333,15 @@ h2.node__title {
   display: block;
   width: 100%;
   color: #003399;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   padding-bottom: 0.7rem;
 }
 .events-list-page .sidebar-first #block-exposedformevents-searchpage-1 {
   border: 1px solid #B0B1B2;
   border-radius: 7px;
-  padding: 0.8rem;
-  margin-top: 34px;
-  margin-bottom: 3em;
+  padding: 1rem;
+  margin-top: 2.8rem;
+  margin-bottom: 3rem;
   margin-left: auto;
   width: 288px;
 }
@@ -5334,7 +5353,7 @@ h2.node__title {
   flex-wrap: nowrap;
 }
 .events-list-page .sidebar-first #block-exposedformevents-searchpage-1 .form-row fieldset label {
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-weight: normal;
 }
 .events-list-page .sidebar-first #block-exposedformevents-searchpage-1 .form-row fieldset input {
@@ -5345,6 +5364,7 @@ h2.node__title {
   border-radius: 5px !important;
   padding: 0.4rem;
   color: #003399;
+  border: 1px solid #003399;
   cursor: pointer;
 }
 .events-list-page .sidebar-first #block-exposedformevents-searchpage-1 .form-row fieldset input::-webkit-datetime-edit {
@@ -5358,60 +5378,62 @@ h2.node__title {
   padding: 0;
 }
 .events-list-page .sidebar-first #block-exposedformevents-searchpage-1 .form-row fieldset input::-webkit-datetime-edit-fields-wrapper {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
 }
 .events-list-page .sidebar-first #block-newsletter {
   background: url(../images/background-newsletter-event.png) no-repeat;
   border-radius: 1rem;
   color: #FFF;
-  padding: 1.2rem;
+  padding: 1.4rem;
   margin-left: auto;
   width: 288px;
 }
 .events-list-page .sidebar-first #block-newsletter h2 {
-  background: url(../images/ico-newsletter.png) no-repeat 1px 5px;
-  color: #FFF;
+  margin: 0 0 2.2rem 0;
   font-weight: 400;
-  padding-left: 1.3em;
+  font-size: 3rem;
+  background: url("../images/") repeat-x 50% 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.events-list-page .sidebar-first #block-newsletter h2:before {
+  content: "";
+  background: transparent url("../images/ico-newsletter.png") 50% no-repeat;
+  width: 49px;
+  display: block;
+  height: 45px;
 }
 .events-list-page .sidebar-first #block-newsletter h2 a {
-  color: white;
+  color: #FFF;
+  padding-right: 3.4rem;
+}
+.events-list-page .sidebar-first #block-newsletter > p {
+  padding: 0 1rem;
 }
 .events-list-page .events-list #block-exposedformevents-searchpage-1--2 {
   width: 60%;
+}
+.events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-item-search-api-views-fulltext > input {
+  height: 34px;
+  border: 1px solid #B0B2B3;
+  border-radius: 5px !important;
+  background: url(../images/green-search.png) no-repeat 96% 55% #ffffff;
+  width: 100% !important;
+  float: left;
+  margin-top: 25px;
+  padding-left: 10px;
+  color: #003399;
 }
 .events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-row {
   flex-wrap: nowrap;
 }
 .events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-row label {
   color: #003399;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
   padding-bottom: 0.1rem;
-}
-.events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-row .chosen-container {
-  width: 100% !important;
-  height: calc(1.5em + .75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background: url(../images/green-select.png) no-repeat scroll 94% 13px #ffffff !important;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-.events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-row .chosen-container .chosen-drop {
-  left: 0;
-}
-.events-list-page .events-list #block-exposedformevents-searchpage-1--2 .form-row .chosen-container ul {
-  border: 0;
-  box-shadow: none;
-  background-image: none;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
 }
 .events-list-page .events-list #block-exposedformevents-searchpage-1--2 > h2 {
   display: none;
@@ -5426,7 +5448,7 @@ h2.node__title {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #749b00;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem 3rem 1rem;
   min-height: 220px;
 }
 .events-list-page .events-list .event-items-list .group-left {
@@ -5436,13 +5458,9 @@ h2.node__title {
   display: flex;
   flex-direction: column;
 }
-.events-list-page .events-list .event-items-list .group-right h2 {
-  line-height: 1.6rem;
-}
 .events-list-page .events-list .event-items-list .group-right h2 a {
   color: #003399;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
+  font-size: 2.2rem;
 }
 .events-list-page .events-list .event-items-list .group-right .date-start-end {
   font-weight: 600;
